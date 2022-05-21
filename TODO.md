@@ -1,1 +1,1 @@
-- [ ] Notebook: Youtube channel links
+- [x] Notebook: Youtube channel links
