@@ -15,7 +15,8 @@ Space
 - [Payload Space Jobs](https://payload-space.pallet.com/jobs): space jobs portal from [Payload](https://payloadspace.com/), who also write an excellent space [newsletter](https://payloadspace.com/newsletter/archive/sleuthing-02-23-22-newsletter/) about the business and policy of space. 
 - [Careers in Space](https://www.careersin.space/): space jobs portal.
 - [Space Talent jobs](https://jobs.spacetalent.org/jobs): jobs in space and space-enabled companies.
-- [SpaceCarreers Twitter bot](https://twitter.com/SpaceCareers)
+- [SpaceCareers Twitter bot](https://twitter.com/SpaceCareers)
+- [SpaceCareers.uk](https://spacecareers.uk/): Early careers portal for space jobs in the UK, maintained by UKSEDS
 
 Climate
 - [Climatebase](https://climatebase.org/jobs?l=&q=&p=0)
