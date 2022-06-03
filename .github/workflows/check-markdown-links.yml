@@ -4,6 +4,11 @@ on:
   push:
     branches:
       - main
+    paths:
+      - '**.md'
+  pull_request:
+    paths:
+      - '**.md'
   schedule:
     - cron: "0 9 * * *"
 
