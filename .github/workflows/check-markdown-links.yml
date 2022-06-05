@@ -22,3 +22,4 @@ jobs:
       with:
         use-verbose-mode: 'yes'
         config-file: '.mlc_config.json'
+        check-modified-files-only: 'no'
