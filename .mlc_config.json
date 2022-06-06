@@ -4,7 +4,7 @@
       "pattern": "^https?://twitter.com"
     },
     {
-      "pattern": "^https?://linkedin.com"
+      "pattern": "^https?://[w\.]*linkedin.com"
     }
   ]
 }
