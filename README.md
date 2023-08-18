@@ -10,6 +10,7 @@
 Geospatial
 - [Geospatial jobs newsletter](https://geospatial.substack.com/p/welcome-to-geospatial-jobs-newsletter?utm_source=url): ~biweekly newsletter with geospatial jobs by [Ali Ahmadalipour](https://twitter.com/hydroclimali). Often contains EO jobs in non-EO companies that are not covered by this list.
 - [Pangeo Jobs](https://discourse.pangeo.io/c/news/jobs/14): job board from the [Pangeo](https://pangeo.io/) community.
+- [Z_GIS](https://groups.google.com/g/geospatial-job-offer): DACH-area focus, German & English
 
 Space
 - [Payload Space Jobs](https://payload-space.pallet.com/jobs): space jobs portal from [Payload](https://payloadspace.com/), who also write an excellent space [newsletter](https://payloadspace.com/newsletter/archive/sleuthing-02-23-22-newsletter/) about the business and policy of space. 
