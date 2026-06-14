@@ -4,7 +4,7 @@ status: "active"
 website: "https://www.carbomap.xyz/"
 careers_urls: []
 locations: ["🇬🇧 Edinburgh, UK"]
-remote: "No jobs"
+remote: ""
 remote_evidence: "Network security restriction prevented verification."
 description: "Carbon mapping and monitoring technology company."
 satellites: ""

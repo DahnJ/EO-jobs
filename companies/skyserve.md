@@ -11,9 +11,9 @@ description: "Satellite edge computing and onboard AI platform for real-time geo
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://in.linkedin.com/company/skyserve-ai", "twitter": "https://twitter.com/SkyServe_AI", "youtube": "https://www.youtube.com/@SkyServe"}
+links: {"linkedin": "https://in.linkedin.com/company/skyserve-ai", "twitter": "https://twitter.com/SkyServe_AI", "youtube": "https://www.youtube.com/@SkyServe", "crunchbase": "https://crunchbase.com/organization/skyserve"}
 source: "awesome 2026-06"
-last_checked: "2026-06-14"
+last_checked: "2026-06-15"
 type: "commercial-eo"
 type_reason: "EO/satellite core business [agent]"
 ---

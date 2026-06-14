@@ -11,9 +11,9 @@ description: "Flood mapping"
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/fathom-global/", "twitter": "https://twitter.com/fathom_global", "youtube": "https://www.youtube.com/channel/UCeMu9yOWDuk1kUzc2_rOZAw"}
+links: {"linkedin": "https://www.linkedin.com/company/fathom-global/", "twitter": "https://twitter.com/fathom_global", "youtube": "https://www.youtube.com/channel/UCeMu9yOWDuk1kUzc2_rOZAw", "crunchbase": "https://www.crunchbase.com/organization/fathom-global"}
 source: "original list"
-last_checked: "2026-06-14"
+last_checked: "2026-06-15"
 type: "commercial-eo"
 type_reason: "Flood mapping from satellite data [agent]"
 ---

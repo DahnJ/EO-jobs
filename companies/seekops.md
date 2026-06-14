@@ -11,9 +11,9 @@ description: "Operations and monitoring platform."
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/seekops-inc./"}
+links: {"linkedin": "https://www.linkedin.com/company/seekops-inc./", "crunchbase": "https://www.crunchbase.com/organization/seekops"}
 source: "discovery-sweep 2026-06"
-last_checked: "2026-06-14"
+last_checked: "2026-06-15"
 type: "commercial-eo"
 type_reason: "Hyperspectral drone-based emissions monitoring system. [agent]"
 ---

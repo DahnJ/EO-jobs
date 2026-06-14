@@ -4,7 +4,7 @@ status: "active"
 website: "https://geosat.space/"
 careers_urls: ["https://geosat.space/recruitment/"]
 locations: ["🇵🇹 Lisbon, Portugal"]
-remote: "No jobs"
+remote: ""
 remote_evidence: "Recruitment page invites resume submissions for future roles; no current job listings or remote work policy stated"
 remote_confidence: "low"
 description: "Very High-Resolution satellite imagery and analytics services with AI feature detection."

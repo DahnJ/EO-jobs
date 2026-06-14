@@ -11,9 +11,9 @@ description: "European cloud computing provider specializing in Earth Observatio
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/clfr/"}
+links: {"linkedin": "https://www.linkedin.com/company/clfr/", "crunchbase": "https://www.crunchbase.com/organization/cloudferro"}
 source: "discovery-sweep 2026-06"
-last_checked: "2026-06-14"
+last_checked: "2026-06-15"
 type: "commercial-eo"
 type_reason: "EO data infrastructure and platforms. [agent]"
 ---

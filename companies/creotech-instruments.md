@@ -11,9 +11,9 @@ description: "Satellite and Earth Observation company designing and building spa
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/402258", "twitter": "https://x.com/CreotechSa", "youtube": "https://www.youtube.com/channel/UCeT-bIbhkwlB1C5K097ky1Q"}
+links: {"linkedin": "https://www.linkedin.com/company/402258", "twitter": "https://x.com/CreotechSa", "youtube": "https://www.youtube.com/channel/UCeT-bIbhkwlB1C5K097ky1Q", "crunchbase": "https://www.crunchbase.com/organization/creotech-instruments"}
 source: "discovery-sweep 2026-06"
-last_checked: "2026-06-14"
+last_checked: "2026-06-15"
 type: "commercial-eo"
 type_reason: "Satellite systems and geospatial processing. [agent]"
 ---

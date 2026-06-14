@@ -11,9 +11,9 @@ description: "Satellite-based geospatial solutions."
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://za.linkedin.com/company/astrofica-technologies", "twitter": "https://twitter.com/astrofica_sa"}
+links: {"linkedin": "https://za.linkedin.com/company/astrofica-technologies", "twitter": "https://twitter.com/astrofica_sa", "crunchbase": "https://www.crunchbase.com/organization/astrofica-technologies"}
 source: "discovery-sweep 2026-06"
-last_checked: "2026-06-14"
+last_checked: "2026-06-15"
 type: "commercial-eo"
 type_reason: "Satellite data and intelligence services. [agent]"
 ---

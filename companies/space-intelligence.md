@@ -4,7 +4,7 @@ status: "active"
 website: "https://www.space-intelligence.com/"
 careers_urls: ["https://www.space-intelligence.com/careers/"]
 locations: ["🇬🇧 Edinburgh, UK"]
-remote: "No jobs"
+remote: ""
 remote_evidence: "Working-for-us page returns 404; unable to access job listings."
 remote_confidence: "low"
 description: "Geospatial analytics and carbon science company specializing in forest monitoring and EUDR compliance."

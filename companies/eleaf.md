@@ -11,9 +11,9 @@ description: "EO: Solutions for crop production and water management"
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/eleaf"}
+links: {"linkedin": "https://www.linkedin.com/company/eleaf", "crunchbase": "https://www.crunchbase.com/organization/eleaf"}
 source: "awesome 2026-06"
-last_checked: "2026-06-14"
+last_checked: "2026-06-15"
 type: "commercial-eo"
 type_reason: "EO solutions for crop and water management [agent]"
 ---

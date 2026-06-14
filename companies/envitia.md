@@ -11,9 +11,9 @@ description: "Geospatial intelligence solutions "
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/envitia/", "twitter": "https://twitter.com/Envitia", "youtube": "https://www.youtube.com/user/EnvitiaLtd"}
+links: {"linkedin": "https://www.linkedin.com/company/envitia/", "twitter": "https://twitter.com/Envitia", "youtube": "https://www.youtube.com/user/EnvitiaLtd", "crunchbase": "https://www.crunchbase.com/organization/envitia"}
 source: "google-sheet 2026-06"
-last_checked: "2026-06-14"
+last_checked: "2026-06-15"
 type: "commercial-eo"
 type_reason: "Geospatial intelligence solutions from EO [agent]"
 ---

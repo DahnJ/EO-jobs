@@ -11,9 +11,9 @@ description: "Geospatial intelligence and Earth observation services."
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/pole-star-global"}
+links: {"linkedin": "https://www.linkedin.com/company/pole-star-global", "crunchbase": "https://www.crunchbase.com/organization/pole-star-0f8b"}
 source: "discovery-sweep 2026-06"
-last_checked: "2026-06-14"
+last_checked: "2026-06-15"
 type: "commercial-eo"
 type_reason: "EO/satellite core business [agent]"
 ---

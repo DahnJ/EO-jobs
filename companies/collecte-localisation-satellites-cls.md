@@ -11,9 +11,9 @@ description: "EO: Environmental monitoring, maritime services, energy"
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/cls", "twitter": "https://x.com/CLS_Group", "youtube": "https://www.youtube.com/user/CLSatellites"}
+links: {"linkedin": "https://www.linkedin.com/company/cls", "twitter": "https://x.com/CLS_Group", "youtube": "https://www.youtube.com/user/CLSatellites", "crunchbase": "https://www.crunchbase.com/organization/cls-groupe"}
 source: "google-sheet 2026-06"
-last_checked: "2026-06-14"
+last_checked: "2026-06-15"
 type: "commercial-eo"
 type_reason: "Environmental monitoring and maritime EO services [agent]"
 ---

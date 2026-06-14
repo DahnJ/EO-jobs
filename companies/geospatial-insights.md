@@ -4,7 +4,7 @@ status: "active"
 website: "https://geospatial-insight.com/"
 careers_urls: ["https://www.linkedin.com/company/geospatial-insight/jobs"]
 locations: ["🇬🇧 Birmingham, UK"]
-remote: "No jobs"
+remote: ""
 remote_evidence: "Website blocked by enterprise security policy; could not verify careers information"
 remote_confidence: "low"
 description: "Climate intelligence and AI-based geospatial analytics: emissions monitoring, wildfire/flood detection."

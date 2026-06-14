@@ -4,7 +4,7 @@ status: "active"
 website: "https://www.wildsense.co/"
 careers_urls: ["https://www.wildsense.co/contact"]
 locations: ["🇫🇷 Paris, France"]
-remote: "No jobs"
+remote: ""
 remote_evidence: "Stored value maintained; contact page shown, no careers board found"
 remote_confidence: "medium"
 description: "Environmental intelligence and Earth observation company providing satellite data solutions."

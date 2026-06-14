@@ -11,7 +11,7 @@ description: "AI-powered Earth observation analytics platform."
 satellites: ""
 category: ""
 listed: true
-links: {"crunchbase": "https://www.crunchbase.com/organization/neural-labs-f956"}
+links: {"crunchbase": "https://www.crunchbase.com/organization/neural-labs-f956", "linkedin": "https://www.linkedin.com/company/neural-io"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

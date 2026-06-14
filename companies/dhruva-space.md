@@ -11,9 +11,9 @@ description: "Space technology company providing satellite platforms, launch sol
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://linkedin.com/company/dhruva-space"}
+links: {"linkedin": "https://linkedin.com/company/dhruva-space", "crunchbase": "https://www.crunchbase.com/organization/dhruva-space"}
 source: "discovery-sweep 2026-06"
-last_checked: "2026-06-14"
+last_checked: "2026-06-15"
 type: "commercial-eo"
 type_reason: "Satellite platforms and EO imagery provider [agent]"
 ---

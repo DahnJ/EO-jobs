@@ -22,6 +22,8 @@ REMOTE_MAP = {
     "Some roles remote": "Hybrid", "Some": "Hybrid", "Occasionally": "Hybrid",
     "No (Partial)": "Hybrid",
     "Maybe": "", "?": "",
+    # a careers *state*, not a remote policy — clear it (the README hides it anyway)
+    "No jobs": "", "No Jobs": "", "None": "", "N/A": "", "TBD": "",
     "Yes (UK, Luxembroug, France, Belgium, Germany)":
         "Yes (UK, Luxembourg, France, Belgium, Germany)",
 }

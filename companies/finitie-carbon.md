@@ -11,9 +11,9 @@ description: "North America's leading forest carbon project developer with offse
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/finite-carbon/"}
+links: {"linkedin": "https://www.linkedin.com/company/finite-carbon/", "crunchbase": "https://www.crunchbase.com/organization/finite-carbon"}
 source: "google-sheet 2026-06"
-last_checked: "2026-06-14"
+last_checked: "2026-06-15"
 type: "commercial-eo"
 type_reason: "Forest carbon project monitoring via satellite [agent]"
 ---

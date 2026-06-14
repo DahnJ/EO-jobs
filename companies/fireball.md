@@ -4,7 +4,7 @@ status: "active"
 website: "https://fireballit.com/"
 careers_urls: []
 locations: []
-remote: "No jobs"
+remote: ""
 remote_evidence: ""
 description: "Early wildfire detection"
 satellites: ""
