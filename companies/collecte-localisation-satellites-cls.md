@@ -4,9 +4,9 @@ status: "active"
 website: "https://www.cls.fr/en/"
 careers_urls: ["https://www.cls.fr/en/careers/job-offers/"]
 locations: ["🇫🇷 Ramonville-Saint-Agne, France"]
-remote: ""
-remote_evidence: "Careers page domain blocked by network security policy; cannot access"
-remote_confidence: "low"
+remote: "No"
+remote_evidence: "Jobs page lists office-based positions across French and Middle Eastern locations with no remote options"
+remote_confidence: "medium"
 description: "EO: Environmental monitoring, maritime services, energy"
 satellites: ""
 category: "Earth Observation"

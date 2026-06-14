@@ -4,9 +4,9 @@ status: "active"
 website: "https://www.2excelgeo.com"
 careers_urls: ["https://2excel.talosats-careers.com/view-all-vacancies"]
 locations: ["🇬🇧 Sywell, Northamptonshire, UK"]
-remote: ""
-remote_evidence: "TalosATS careers board shows UK-based positions (Doncaster, Lasham, Humberside) with no remote designation."
-remote_confidence: "low"
+remote: "No"
+remote_evidence: "All job listings specify UK locations (Doncaster, Lasham, Humberside) with no remote option."
+remote_confidence: "medium"
 description: "Aerial remote sensing specializing in hyperspectral imagery acquisition and processing."
 satellites: ""
 category: "Earth Observation"

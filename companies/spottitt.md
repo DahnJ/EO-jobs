@@ -4,9 +4,9 @@ status: "active"
 website: "https://www.spottitt.com"
 careers_urls: ["https://www.linkedin.com/company/spottitt/jobs"]
 locations: ["🇬🇧 Harwell, United Kingdom"]
-remote: ""
-remote_evidence: "No careers URL available (marked as 'x'), unable to verify"
-remote_confidence: "low"
+remote: "Hybrid (UK)"
+remote_evidence: "Business Development Manager role: 'Ideally based in Manchester, UK (hybrid flexibility)'"
+remote_confidence: "high"
 description: "Satellite and AI monitoring solutions for Earth observation."
 satellites: ""
 category: "Earth Observation"

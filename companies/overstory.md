@@ -4,9 +4,9 @@ status: "active"
 website: "https://www.overstory.com/"
 careers_urls: ["https://www.overstory.com/careers"]
 locations: ["🇳🇱 Amsterdam, Netherlands", "🌐 Remote"]
-remote: "Yes"
-remote_evidence: "Stored value retained - domain security verification failed"
-remote_confidence: "low"
+remote: "Yes (Europe/North America)"
+remote_evidence: "\"We're a remote-first team working across Europe and North America.\""
+remote_confidence: "high"
 description: "AI-powered forest health and fire risk analytics from satellite data."
 satellites: ""
 category: ""

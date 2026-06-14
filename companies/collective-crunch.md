@@ -5,8 +5,8 @@ website: "https://www.collectivecrunch.com/"
 careers_urls: ["https://www.collectivecrunch.com/careers/"]
 locations: ["🇫🇮 Espoo, Finland"]
 remote: "Yes"
-remote_evidence: "Careers page domain blocked by network security policy; cannot verify but existing value retained"
-remote_confidence: "low"
+remote_evidence: "Team member explicitly described as 'working remotely from Brazil'; page emphasizes international distributed team"
+remote_confidence: "high"
 description: "Forestry solutions"
 satellites: ""
 category: ""
