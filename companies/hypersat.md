@@ -3,10 +3,10 @@ name: "HyperSat"
 status: "active"
 website: "https://hypersat.com/"
 careers_urls: []
-locations: ["McLean, Virginia, US"]
+locations: ["McLean, Virginia, USA"]
 remote: ""
 remote_evidence: ""
-description: "Earth observation satellite company specializing in hyperspectral imaging across 500 spectral bands."
+description: "Earth observation satellite company specializing in hyperspectral imaging and analytics."
 satellites: ""
 category: ""
 listed: false

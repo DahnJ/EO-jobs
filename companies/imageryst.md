@@ -6,7 +6,7 @@ careers_urls: []
 locations: []
 remote: ""
 remote_evidence: ""
-description: "EO insights platform"
+description: "Satellite data analytics and monitoring for renewable energy project planning."
 satellites: ""
 category: ""
 listed: false

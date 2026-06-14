@@ -3,14 +3,14 @@ name: "Mundialis"
 status: "active"
 website: "https://www.mundialis.de"
 careers_urls: ["https://www.mundialis.de/en/karriere/"]
-locations: ["🇩🇪 Bonn, Germany"]
+locations: ["Bonn, Germany"]
 remote: ""
 remote_evidence: ""
-description: "EO+GIS: All-purpose, EO data infrastructure"
+description: "Geoinformation solutions using remote sensing for environment and sustainability."
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {}
+links: {"linkedin": "https://www.linkedin.com/company/10446572", "github": "https://github.com/mundialis", "twitter": "https://mastodon.social/@mundialis"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

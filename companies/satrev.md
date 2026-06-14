@@ -3,14 +3,14 @@ name: "SatRev"
 status: "active"
 website: "https://www.satrev.space/"
 careers_urls: ["https://www.satrev.space/careers"]
-locations: ["🇵🇱 Wrocław, Poland"]
+locations: ["Wrocław, Poland"]
 remote: "No"
 remote_evidence: "Junior GIS Analyst listing 'Wroclaw, Poland', no remote (satrev.space/careers)"
-description: "EO satellite construction & mission design"
+description: "Satellite technology company."
 satellites: ""
 category: ""
 listed: true
-links: {}
+links: {"linkedin": "https://www.linkedin.com/company/satrev-s-a/"}
 source: "awesome 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

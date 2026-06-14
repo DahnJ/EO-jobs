@@ -3,14 +3,14 @@ name: "UrbanSky"
 status: "active"
 website: "https://www.urbansky.com/"
 careers_urls: ["https://urbansky.com/careers"]
-locations: ["🇺🇸 Denver, USA"]
+locations: ["Denver, USA"]
 remote: ""
 remote_evidence: ""
-description: "Microballoons for EO"
+description: "Stratospheric balloon technology for persistent surveillance and sensing."
 satellites: ""
 category: ""
 listed: true
-links: {}
+links: {"linkedin": "https://www.linkedin.com/company/urban-sky-strato"}
 source: "awesome 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

@@ -3,14 +3,14 @@ name: "Nara Space"
 status: "active"
 website: "https://naraspace.com/"
 careers_urls: ["https://naraspace.careers.team"]
-locations: ["🇰🇷 Seoul, South Korea"]
+locations: ["Seoul, South Korea"]
 remote: ""
 remote_evidence: ""
-description: "Korea's integrated satellite service provider; satellite development, imagery, and Earth observation."
+description: "Korea's integrated satellite service provider for Earth observation and imagery analysis."
 satellites: ""
 category: ""
 listed: true
-links: {}
+links: {"linkedin": "https://www.linkedin.com/company/naraspace", "facebook": "https://www.facebook.com/naraspace", "instagram": "https://www.instagram.com/naraspace.official", "youtube": "https://www.youtube.com/@naraspace"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

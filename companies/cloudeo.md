@@ -3,7 +3,7 @@ name: "CloudEO"
 status: "active"
 website: "https://www.cloudeo.group/"
 careers_urls: ["https://www.cloudeo.group/join-us"]
-locations: ["🇩🇪 Munich, Germany"]
+locations: ["Munich, Germany"]
 remote: "No"
 remote_evidence: ""
 description: "Marketplace"

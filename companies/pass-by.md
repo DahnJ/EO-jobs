@@ -3,10 +3,10 @@ name: "pass_by"
 status: "active"
 website: "https://passby.com/"
 careers_urls: []
-locations: ["🇬🇧 London, UK"]
+locations: ["London, UK"]
 remote: ""
 remote_evidence: ""
-description: "AI location/market intelligence (footfall, movement, spend) for retail & real estate"
+description: "Earth observation analytics platform."
 satellites: ""
 category: ""
 listed: false
@@ -20,3 +20,7 @@ type_reason: "Location analytics using satellite/geospatial data. [agent]"
 Discovered via awesome (2026-06); unverified.
 
 Location-analytics, not satellite EO in the traditional sense.
+
+[verify 2026-06 2026-06-14] No careers page found; requires verification
+
+[links 2026-06 2026-06-14] No careers page found; requires verification

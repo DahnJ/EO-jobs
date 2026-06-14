@@ -3,7 +3,7 @@ name: "Mapizy"
 status: "active"
 website: "https://www.mapizy.com"
 careers_urls: ["x"]
-locations: ["🇦🇺 Australia"]
+locations: ["Australia"]
 remote: ""
 remote_evidence: ""
 description: "GeoAI: property analytics, urban planning, insurance via aerial imagery (Mapizy Studio)"
@@ -18,3 +18,7 @@ type_reason: "GeoAI from aerial imagery [agent]"
 ---
 
 Discovered via the EO companies Google Sheet (2026-06); unverified.
+
+[verify 2026-06 2026-06-14] Website unreachable; unable to verify status
+
+[links 2026-06 2026-06-14] Website unreachable; unable to verify status

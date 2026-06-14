@@ -2,15 +2,15 @@
 name: "Skyserve"
 status: "active"
 website: "https://www.skyserve.ai/"
-careers_urls: []
-locations: ["🇮🇳 Bengaluru, India"]
+careers_urls: ["https://skyservehq.notion.site/Culture-Teams-SkyServe-bd3685f3bf6540e2b11b57b13a80b839"]
+locations: ["Bengaluru, India"]
 remote: ""
 remote_evidence: ""
-description: "Edge Computing for satellite Onboard GeoAI & MLOps"
+description: "Satellite edge computing and onboard AI platform for real-time geospatial data processing."
 satellites: ""
 category: ""
-listed: false
-links: {}
+listed: true
+links: {"linkedin": "https://in.linkedin.com/company/skyserve-ai", "twitter": "https://twitter.com/SkyServe_AI", "youtube": "https://www.youtube.com/@SkyServe"}
 source: "awesome 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

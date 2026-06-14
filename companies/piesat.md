@@ -6,7 +6,7 @@ careers_urls: []
 locations: []
 remote: ""
 remote_evidence: ""
-description: "Remote sensing software and satellite constellation operator; Nüwa Constellation for global observation."
+description: "Satellite remote sensing and geospatial information services."
 satellites: ""
 category: ""
 listed: false
@@ -18,3 +18,7 @@ type_reason: "Remote sensing and satellite constellation operator [agent]"
 ---
 
 [discovery-sweep 2026-06-14] HQ and careers page not found on website
+
+[verify 2026-06 2026-06-14] No careers page found; requires verification
+
+[links 2026-06 2026-06-14] No careers page found; requires verification

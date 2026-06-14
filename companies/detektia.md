@@ -6,11 +6,11 @@ careers_urls: []
 locations: ["Madrid, Spain"]
 remote: ""
 remote_evidence: ""
-description: "Earth observation and geospatial company specializing in infrastructure monitoring using satellite InSAR technology."
+description: "Satellite-based infrastructure monitoring using RADAR and AI for structural health assessment."
 satellites: ""
 category: ""
 listed: false
-links: {}
+links: {"linkedin": "https://linkedin.com/company/detektia"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

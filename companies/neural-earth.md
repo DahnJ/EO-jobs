@@ -6,7 +6,7 @@ careers_urls: ["https://www.neuralearth.ai/careers"]
 locations: []
 remote: ""
 remote_evidence: ""
-description: "AI-powered geospatial intelligence platform for property risk assessment and underwriting."
+description: "AI-powered Earth observation analytics platform."
 satellites: ""
 category: ""
 listed: true

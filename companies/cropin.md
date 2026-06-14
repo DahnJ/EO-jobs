@@ -3,14 +3,14 @@ name: "Cropin"
 status: "active"
 website: "https://www.cropin.com/"
 careers_urls: ["https://www.cropin.com/career/"]
-locations: ["🇮🇳 Bangalore, India"]
+locations: ["Bangalore, India"]
 remote: ""
 remote_evidence: ""
 description: "Farm management solutions"
 satellites: ""
 category: ""
 listed: true
-links: {}
+links: {"linkedin": "https://www.linkedin.com/company/cropin-technology/", "twitter": "https://x.com/CropInTech", "youtube": "https://www.youtube.com/channel/UCvlca6utL2wBUIvUlKlgObg"}
 source: "sheet:Digital Farming 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

@@ -3,14 +3,14 @@ name: "vorteX-io"
 status: "active"
 website: "https://www.vortex-io.fr/"
 careers_urls: ["https://rh-vortex-io.taleez.com"]
-locations: []
+locations: ["🇫🇷 France"]
 remote: "Hybrid"
-remote_evidence: "Flexible working conditions offered; 30+ open positions available."
-description: "Water monitoring platform providing real-time hydrological data supporting flood prevention and satellite data calibration."
+remote_evidence: "Stored value retained; no contradictory info found."
+description: "French hydrological monitoring platform providing real-time water surveillance and sustainable water resource management solutions."
 satellites: ""
 category: ""
 listed: true
-links: {}
+links: {"linkedin": "https://www.linkedin.com/company/vortex-io/", "youtube": "https://www.youtube.com/@vortex-io805"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

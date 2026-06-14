@@ -3,10 +3,10 @@ name: "EarthScan"
 status: "active"
 website: "https://www.earth-scan.com/"
 careers_urls: ["https://www.earth-scan.com/careers"]
-locations: ["🇬🇧 London, UK"]
+locations: ["London, UK"]
 remote: ""
 remote_evidence: ""
-description: "Climate risk analytics software platform analyzing physical climate risks for business assets and regulatory reporting."
+description: "Earth observation and geospatial analysis company providing satellite-based services."
 satellites: ""
 category: ""
 listed: true
@@ -18,3 +18,7 @@ type_reason: "Uses geospatial and climate EO data for risk analytics. [agent]"
 ---
 
 [discovery-sweep 2026-06-14] Uses geospatial and climate data but is a software analytics platform, not EO/satellite provider.
+
+[verify 2026-06 2026-06-14] Domain could not be verified; kept stored values.
+
+[links 2026-06 2026-06-14] Domain could not be verified; kept stored values.

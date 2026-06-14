@@ -12,7 +12,11 @@ category: ""
 listed: false
 links: {}
 source: "original list"
-last_checked: ""
+last_checked: "2026-06-14"
 type: "commercial-eo"
 type_reason: "Early wildfire detection via satellite [agent]"
 ---
+
+[verify 2026-06 2026-06-14] Site returned 403 Forbidden; unable to verify.
+
+[links 2026-06 2026-06-14] Site returned 403 Forbidden; unable to verify.

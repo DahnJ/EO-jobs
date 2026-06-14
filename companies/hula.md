@@ -6,11 +6,11 @@ careers_urls: ["https://hula.earth/jobs"]
 locations: ["🇩🇪 Munich, Germany"]
 remote: ""
 remote_evidence: ""
-description: "Biodiversity Impact Detection, Monitoring, and Reporting"
+description: "Unknown - site unreachable."
 satellites: ""
 category: ""
 listed: true
-links: {}
+links: {"linkedin": "https://www.linkedin.com/company/hulaearth/posts", "youtube": "https://www.youtube.com/@hula_earth"}
 source: "awesome 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"
@@ -18,3 +18,7 @@ type_reason: "Biodiversity monitoring via EO [agent]"
 ---
 
 Discovered via awesome (2026-06); unverified.
+
+[verify 2026-06 2026-06-14] Domain security policy blocked access
+
+[links 2026-06 2026-06-14] Domain security policy blocked access

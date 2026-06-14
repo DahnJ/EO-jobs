@@ -3,14 +3,14 @@ name: "Geoimage"
 status: "active"
 website: "https://www.geoimage.com.au"
 careers_urls: ["https://www.geoimage.com.au/careers"]
-locations: ["🇦🇺 Brisbane, Australia"]
-remote: ""
-remote_evidence: ""
-description: "EO: All-purpose"
+locations: ["Brisbane, Australia"]
+remote: "No"
+remote_evidence: "Careers page describes a close-knit Brisbane-based team with no mention of remote options."
+description: "Satellite imagery and geospatial intelligence consulting."
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {}
+links: {"linkedin": "https://www.linkedin.com/company/geoimage"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

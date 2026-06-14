@@ -1,16 +1,16 @@
 ---
 name: "Spacemetric"
 status: "active"
-website: "http://spacemetric.com"
-careers_urls: ["http://spacemetric.com/vacancies/"]
+website: "https://spacemetric.com"
+careers_urls: ["https://spacemetric.com/vacancies/"]
 locations: ["🇳🇱 Zwolle, Netherlands"]
 remote: ""
 remote_evidence: ""
-description: "EO image managment solutions"
+description: "Software solutions to generate analytics-ready data from satellite and airborne sensors."
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {}
+links: {"linkedin": "https://www.linkedin.com/company/spacemetric"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

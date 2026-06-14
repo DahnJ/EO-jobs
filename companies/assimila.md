@@ -3,14 +3,14 @@ name: "Assimila"
 status: "active"
 website: "https://www.assimila.earth"
 careers_urls: ["https://www.assimila.earth/about/#careers"]
-locations: ["🇬🇧 Reading, UK"]
+locations: ["Reading, UK"]
 remote: ""
 remote_evidence: ""
-description: "EO: environmental monitoring, modelling and prediction"
+description: "Earth Observation data processing and analysis."
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {}
+links: {"linkedin": "https://www.linkedin.com/company/assimila-ltd/", "twitter": "https://twitter.com/assimilaltd"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

@@ -3,10 +3,10 @@ name: "FYBR"
 status: "active"
 website: "https://www.fybrsolutions.com"
 careers_urls: ["https://www.fybrsolutions.com/careers"]
-locations: ["🇨🇦 Vancouver, Canada"]
+locations: ["Vancouver, Canada"]
 remote: ""
-remote_evidence: ""
-description: "EO: Forestry and supply-chain intelligence solutions"
+remote_evidence: "Careers page does not specify remote work options."
+description: "Fiber inventory measurement and management for forestry operations."
 satellites: ""
 category: "Earth Observation"
 listed: true

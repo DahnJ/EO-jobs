@@ -3,10 +3,10 @@ name: "Agrooffico"
 status: "active"
 website: "https://www.agrofficio.com.br/"
 careers_urls: []
-locations: ["🇧🇷 Piracicaba, Brazil"]
+locations: ["Piracicaba, Brazil"]
 remote: ""
 remote_evidence: ""
-description: "EO: All-purpose"
+description: "Engineering firm specializing in property valuations using satellite remote sensing."
 satellites: ""
 category: ""
 listed: false

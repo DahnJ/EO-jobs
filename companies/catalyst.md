@@ -6,11 +6,11 @@ careers_urls: ["https://catalyst.earth/about/careers/"]
 locations: ["🇨🇦 Markham, Canada"]
 remote: ""
 remote_evidence: ""
-description: "\"Geomatica\" for remote sensing, photogrammetry, geospatial analysis"
+description: "Climate and sustainability technology company."
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {}
+links: {"linkedin": "https://www.linkedin.com/company/pci-geomatics", "twitter": "https://x.com/pcigeomatics", "youtube": "https://www.youtube.com/channel/UC5m2DT5ZhnzyA_Yuv3IGqnw"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"
@@ -20,3 +20,7 @@ type_reason: "Remote sensing and photogrammetry software for EO analysis. [agent
 Discovered via the EO companies Google Sheet (2026-06); unverified. Ex-name/note: PCI Geomatics.
 
 CATALYST is the brand of PCI Geomatics (est. 1982).
+
+[verify 2026-06 2026-06-14] HTTP 403 Forbidden prevented verification; keeping stored values.
+
+[links 2026-06 2026-06-14] HTTP 403 Forbidden prevented verification; keeping stored values.

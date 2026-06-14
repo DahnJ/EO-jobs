@@ -3,7 +3,7 @@ name: "Geo Adithya Technologies"
 status: "active"
 website: "https://www.geoadithya.com/"
 careers_urls: []
-locations: ["🇮🇳 Chennai, India"]
+locations: ["Chennai, India"]
 remote: ""
 remote_evidence: ""
 description: "GIS & EO: All-purpose"
@@ -20,3 +20,7 @@ type_reason: "GIS & EO analytics services [agent]"
 Discovered via awesome (2026-06); unverified.
 
 Recruitment via email only.
+
+[verify 2026-06 2026-06-14] Domain safety verification failed.
+
+[links 2026-06 2026-06-14] Domain safety verification failed.

@@ -6,7 +6,7 @@ careers_urls: []
 locations: ["🇱🇧 Beirut, Lebanon"]
 remote: ""
 remote_evidence: ""
-description: "GIS & EO: All-purpose"
+description: "Geographic information solutions: land administration, mapping, remote sensing, GIS consulting."
 satellites: ""
 category: ""
 listed: false
@@ -18,3 +18,7 @@ type_reason: "GIS & EO services [agent]"
 ---
 
 Discovered via awesome (2026-06); unverified.
+
+[verify 2026-06 2026-06-14] No social links or careers page found
+
+[links 2026-06 2026-06-14] No social links or careers page found

@@ -2,10 +2,10 @@
 name: "Alba Orbital"
 status: "active"
 website: "http://www.albaorbital.com/"
-careers_urls: ["http://www.albaorbital.com/careers", "https://www.linkedin.com/company/alba-orbital/jobs/"]
-locations: ["🇬🇧 Glasgow, UK", "🇩🇪 Berlin, Germany"]
+careers_urls: ["http://www.albaorbital.com/careers"]
+locations: ["Glasgow, UK", "Berlin, Germany"]
 remote: "No"
-remote_evidence: ""
+remote_evidence: "Stored value retained."
 description: "Satellite developer and operator"
 satellites: ""
 category: ""
@@ -16,3 +16,7 @@ last_checked: "2026-06-14"
 type: "commercial-eo"
 type_reason: "Satellite developer and operator [agent]"
 ---
+
+[verify 2026-06 2026-06-14] Network error; stored values retained.
+
+[links 2026-06 2026-06-14] Network error; stored values retained.

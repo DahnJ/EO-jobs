@@ -3,16 +3,16 @@ name: "Sinergise"
 status: "active"
 website: "https://www.sinergise.com/"
 careers_urls: ["https://www.sinergise.com/en/careers/openpositions"]
-locations: ["🇸🇮 Ljubljana, Slovenia"]
+locations: ["Ljubljana, Slovenia"]
 remote: "No"
-remote_evidence: ""
-description: "Sentinel hub, data infrastructure"
+remote_evidence: "No open positions at this time; office located in Ljubljana only."
+description: "Geospatial software company providing cloud platforms and Earth observation solutions for satellite data analysis."
 satellites: ""
 category: ""
 listed: true
-links: {"crunchbase": "https://www.crunchbase.com/organization/sinergise", "linkedin": "https://www.linkedin.com/company/sinergise/?originalSubdomain=si", "twitter": "https://twitter.com/sinergise"}
+links: {"crunchbase": "https://www.crunchbase.com/organization/sinergise", "linkedin": "https://www.linkedin.com/company/sinergise/?originalSubdomain=si", "twitter": "https://twitter.com/sinergise", "youtube": "https://www.youtube.com/user/Sinergise"}
 source: "original list"
-last_checked: ""
+last_checked: "2026-06-14"
 type: "commercial-eo"
 type_reason: "EO/satellite core business [agent]"
 ---

@@ -10,7 +10,7 @@ description: "European cloud computing provider specializing in Earth Observatio
 satellites: ""
 category: ""
 listed: true
-links: {}
+links: {"linkedin": "https://www.linkedin.com/company/clfr/"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

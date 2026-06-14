@@ -6,7 +6,7 @@ careers_urls: ["https://www.spcsft.com/recruit/"]
 locations: []
 remote: ""
 remote_evidence: ""
-description: "Earth Observation and satellite analytics company offering AI solutions for change detection, object detection, and monitoring via SAR and imagery."
+description: "SAR satellite data processing platform with AI analytics for urban, agricultural, and maritime monitoring."
 satellites: ""
 category: ""
 listed: true
@@ -16,3 +16,7 @@ last_checked: "2026-06-14"
 type: "commercial-eo"
 type_reason: "SAR and imagery analytics platform. [agent]"
 ---
+
+[verify 2026-06 2026-06-14] No social links or careers info found on homepage.
+
+[links 2026-06 2026-06-14] No social links or careers info found on homepage.

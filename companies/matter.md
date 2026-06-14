@@ -18,3 +18,7 @@ type_reason: "Ultraspectral sensors for satellite/aerial monitoring. [agent]"
 ---
 
 [discovery-sweep 2026-06-14] Primarily a vision/imaging technology company, not an EO/satellite company despite satellite application mentions.
+
+[verify 2026-06 2026-06-14] Website unreachable; unable to verify
+
+[links 2026-06 2026-06-14] Website unreachable; unable to verify

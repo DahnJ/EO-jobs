@@ -6,11 +6,11 @@ careers_urls: []
 locations: ["🇱🇺 Luxembourg City, Luxembourg"]
 remote: ""
 remote_evidence: ""
-description: "EO for environmental analytics"
+description: "Environmental analytics company creating satellite data and AI solutions for urban resilience and risk management."
 satellites: ""
 category: ""
 listed: false
-links: {}
+links: {"linkedin": "https://www.linkedin.com/company/weo-water/", "twitter": "https://twitter.com/weo_water"}
 source: "awesome 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

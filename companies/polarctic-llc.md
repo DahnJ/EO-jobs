@@ -3,14 +3,14 @@ name: "PolArctic LLC"
 status: "active"
 website: "https://polarcticllc.com/"
 careers_urls: ["https://polarcticllc.com/join-us"]
-locations: ["🇺🇸 USA"]
+locations: ["USA"]
 remote: "Yes"
 remote_evidence: "'In our small remote team...' (polarcticllc.com/join-us)"
-description: "EO for sea ice modeling, nearshore mapping and water quality mapping"
+description: "Arctic and polar region remote sensing and data services."
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {}
+links: {"linkedin": "https://www.linkedin.com/company/polarctic"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

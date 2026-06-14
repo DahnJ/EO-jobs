@@ -2,11 +2,11 @@
 name: "SatelliteVu"
 status: "active"
 website: "https://www.satellitevu.com/"
-careers_urls: ["https://apply.workable.com/satellitevu/", "https://www.linkedin.com/company/satellitevu/jobs/"]
+careers_urls: ["https://apply.workable.com/satellitevu/"]
 locations: ["🇬🇧 London, UK"]
 remote: "Hybrid (UK-based; ~2 days/wk London, 6 wks WFA)"
 remote_evidence: ""
-description: "Thermal constellation, energy efficiency, carbon footprint"
+description: "Thermal Earth Observation satellite company."
 satellites: "Yes (2023)"
 category: ""
 listed: true
@@ -18,3 +18,7 @@ type_reason: "EO/satellite core business [agent]"
 ---
 
 Brand now 'SatVu'
+
+[verify 2026-06 2026-06-14] Network restrictions prevented website verification
+
+[links 2026-06 2026-06-14] Network restrictions prevented website verification

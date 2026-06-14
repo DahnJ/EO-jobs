@@ -3,14 +3,14 @@ name: "Ariespace"
 status: "active"
 website: "https://www.ariespace.com/"
 careers_urls: []
-locations: ["🇮🇹 Naples, Italy"]
+locations: ["Naples, Italy"]
 remote: ""
 remote_evidence: ""
-description: "EO based agriculture irrigiation advisory service, crop insights"
+description: "Remote sensing and satellite data analysis for agriculture."
 satellites: ""
 category: ""
 listed: false
-links: {}
+links: {"linkedin": "https://www.linkedin.com/company/ariespace-s.r.l/", "twitter": "https://twitter.com/ariespacesrl"}
 source: "awesome 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

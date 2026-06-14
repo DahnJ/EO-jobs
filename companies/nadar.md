@@ -6,11 +6,11 @@ careers_urls: []
 locations: []
 remote: ""
 remote_evidence: ""
-description: "Satellite and AI-powered ecosystem monitoring for deforestation, carbon stocks, and EUDR compliance."
+description: "Satellite-based deforestation monitoring and EUDR compliance for supply chains."
 satellites: ""
 category: ""
 listed: false
-links: {}
+links: {"linkedin": "https://www.linkedin.com/company/nadar-earth/"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

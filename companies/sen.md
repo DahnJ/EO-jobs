@@ -6,7 +6,7 @@ careers_urls: []
 locations: []
 remote: ""
 remote_evidence: ""
-description: "Earth observation service offering live 4K imagery from space."
+description: "Unknown company focus."
 satellites: ""
 category: ""
 listed: false
@@ -18,3 +18,7 @@ type_reason: "EO/satellite core business [agent]"
 ---
 
 [discovery-sweep 2026-06-14] Limited website content; location and careers unclear
+
+[verify 2026-06 2026-06-14] Unable to determine details; generic domain name.
+
+[links 2026-06 2026-06-14] Unable to determine details; generic domain name.

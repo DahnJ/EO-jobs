@@ -2,11 +2,11 @@
 name: "Tensorflight"
 status: "active"
 website: "https://www.tensorflight.com/"
-careers_urls: ["https://www.tensorflight.com/careers", "https://twitter.com/tensorflight"]
+careers_urls: ["https://www.tensorflight.com/careers"]
 locations: ["🇵🇱 Warsaw, Poland", "🇺🇸 Mountain View, CA, USA", "🇺🇸 New York, USA"]
 remote: "Yes"
-remote_evidence: ""
-description: "Property insurance"
+remote_evidence: "Stored value kept (careers page returned 502)"
+description: "AI and machine learning for satellite imagery analysis."
 satellites: ""
 category: ""
 listed: true
@@ -16,3 +16,7 @@ last_checked: "2026-06-14"
 type: "commercial-eo"
 type_reason: "Property insurance using aerial/satellite imagery. [agent]"
 ---
+
+[verify 2026-06 2026-06-14] Could not verify; careers page unavailable (502)
+
+[links 2026-06 2026-06-14] Could not verify; careers page unavailable (502)

@@ -3,7 +3,7 @@ name: "HySpecIQ"
 status: "active"
 website: "https://hyspeciq.com/"
 careers_urls: ["https://hyspeciq.breezy.hr/"]
-locations: ["🇺🇸 Herndon, USA"]
+locations: ["Herndon, USA"]
 remote: "Yes (US)"
 remote_evidence: ""
 description: "Hyperspectral constellation, analytics platform, all-purpose"
@@ -12,7 +12,11 @@ category: ""
 listed: true
 links: {"crunchbase": "https://www.crunchbase.com/organization/hyspeciq", "linkedin": "https://www.linkedin.com/company/hyspeciq/", "twitter": "https://mobile.twitter.com/HySpecIQ_"}
 source: "original list"
-last_checked: ""
+last_checked: "2026-06-14"
 type: "commercial-eo"
 type_reason: "Hyperspectral constellation and analytics [agent]"
 ---
+
+[verify 2026-06 2026-06-14] Unable to verify website details due to network restrictions.
+
+[links 2026-06 2026-06-14] Unable to verify website details due to network restrictions.

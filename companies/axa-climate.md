@@ -3,10 +3,10 @@ name: "AXA Climate"
 status: "active"
 website: "https://www.climate.axa/"
 careers_urls: ["https://jobs.axa/careersection/1/moresearch.ftl"]
-locations: ["🇫🇷 Paris, France"]
+locations: ["Paris, France"]
 remote: "No"
 remote_evidence: ""
-description: "Insurance"
+description: "Climate risk and sustainability solutions."
 satellites: ""
 category: ""
 listed: true

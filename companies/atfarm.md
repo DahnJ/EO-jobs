@@ -6,7 +6,7 @@ careers_urls: []
 locations: []
 remote: ""
 remote_evidence: ""
-description: "EO based fertilizer optimization tool & field manager"
+description: "Agricultural technology company."
 satellites: ""
 category: ""
 listed: false

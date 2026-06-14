@@ -2,11 +2,11 @@
 name: "Vito Remote Sensing"
 status: "active"
 website: "https://remotesensing.vito.be/"
-careers_urls: ["https://vito.be/en/jobs", "https://jobs.vito.be/l/en"]
-locations: ["🇧🇪 Mol, Belgium", "🇧🇪 Mol and other locations, Belgium"]
+careers_urls: ["https://vito.be/en/jobs"]
+locations: ["🇧🇪 Mol, Belgium"]
 remote: ""
 remote_evidence: ""
-description: "Large scale EO image processing, UAV image acquisition, analysis"
+description: "Earth observation company providing geo intelligence and satellite analytics across agriculture, climate, environment, and water sectors."
 satellites: ""
 category: "Earth Observation"
 listed: true

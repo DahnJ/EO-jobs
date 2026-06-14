@@ -3,10 +3,10 @@ name: "Aerospacelab"
 status: "active"
 website: "https://www.aerospacelab.com/"
 careers_urls: ["https://www.aerospacelab.com/join-our-team/"]
-locations: ["🇧🇪 Mont-Saint-Guibert, Belgium", "🇫🇷 Toulouse, France", "🇨🇭 Lausanne, Switzerland", "🇺🇸 Los Angeles, USA"]
+locations: ["Mont-Saint-Guibert, Belgium", "Toulouse, France", "Lausanne, Switzerland", "Los Angeles, USA"]
 remote: "Hybrid"
-remote_evidence: ""
-description: "EO Analytics, satellite platforms"
+remote_evidence: "Stored value retained."
+description: "Satellite manufacturer designing complete mission solutions and Earth observation payloads."
 satellites: "Yes"
 category: ""
 listed: true

@@ -2,15 +2,15 @@
 name: "52Impact"
 status: "active"
 website: "https://www.52impact.nl/"
-careers_urls: []
-locations: ["🇳🇱 Amersfoort, Netherlands"]
+careers_urls: ["https://www.52impact.nl/jobs"]
+locations: ["Amersfoort, Netherlands"]
 remote: ""
 remote_evidence: ""
-description: "Risk assessment & mapping"
+description: "Sustainability consultancy using geospatial insights for environmental risk management."
 satellites: ""
 category: ""
-listed: false
-links: {}
+listed: true
+links: {"linkedin": "https://www.linkedin.com/company/52impact"}
 source: "awesome 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

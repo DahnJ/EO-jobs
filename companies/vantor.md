@@ -6,13 +6,17 @@ careers_urls: ["https://www.vantor.com/careers/"]
 locations: []
 remote: ""
 remote_evidence: ""
-description: "Spatial intelligence company operating imaging satellite constellation for defense and government sectors."
+description: "Spatial intelligence platform providing satellite imagery, geospatial data, and AI."
 satellites: ""
 category: ""
 listed: true
-links: {}
+links: {"linkedin": "https://www.linkedin.com/company/vantortech", "twitter": "https://x.com/vantortech", "youtube": "https://www.youtube.com/@VantorTech"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"
 type_reason: "EO/satellite core business [agent]"
 ---
+
+[verify 2026-06 2026-06-14] No HQ location found on homepage; check careers page for details.
+
+[links 2026-06 2026-06-14] No HQ location found on homepage; check careers page for details.

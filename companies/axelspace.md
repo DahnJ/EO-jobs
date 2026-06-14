@@ -3,10 +3,10 @@ name: "Axelspace"
 status: "active"
 website: "https://www.axelspace.com/"
 careers_urls: ["https://www.axelspacehd.com/careers/"]
-locations: ["🇯🇵 Tokyo, Japan"]
+locations: ["Tokyo, Japan"]
 remote: "No"
 remote_evidence: ""
-description: "Microsatellite developer and satellite imagery provider."
+description: "Satellite and space technology company."
 satellites: ""
 category: ""
 listed: true

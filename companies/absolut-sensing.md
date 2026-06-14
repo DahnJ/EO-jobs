@@ -1,18 +1,22 @@
 ---
 name: "Absolut Sensing"
 status: "active"
-website: "https://absolut-sensing.com/"
-careers_urls: ["https://absolut-sensing.com/fr/carriere-fr/"]
-locations: ["🇫🇷 Toulouse, France"]
+website: "https://sensing-ai.eu/"
+careers_urls: ["https://sensing-ai.eu/careers/"]
+locations: ["Toulouse, France"]
 remote: "No"
-remote_evidence: ""
-description: "Monitoring changes in bio/atmo/geo-sphere, hyperspectral constellation"
+remote_evidence: "Stored value retained."
+description: "Satellite-based atmospheric monitoring for detecting methane and greenhouse gas emissions."
 satellites: ""
 category: ""
 listed: true
 links: {"linkedin": "https://www.linkedin.com/company/absolut-sensing/"}
 source: "original list"
-last_checked: ""
+last_checked: "2026-06-14"
 type: "commercial-eo"
 type_reason: "Hyperspectral constellation for monitoring biosphere/atmosphere [agent]"
 ---
+
+[verify 2026-06 2026-06-14] Website redirected from absolut-sensing.com to sensing-ai.eu
+
+[links 2026-06 2026-06-14] Website redirected from absolut-sensing.com to sensing-ai.eu

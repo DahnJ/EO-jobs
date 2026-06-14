@@ -3,14 +3,14 @@ name: "Pixalytics"
 status: "active"
 website: "https://www.pixalytics.com"
 careers_urls: ["x"]
-locations: ["🇬🇧 Plymouth, UK"]
+locations: ["Plymouth, UK"]
 remote: ""
 remote_evidence: ""
-description: "EO: All-purpose"
+description: "Satellite image analysis and geospatial intelligence."
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {}
+links: {"linkedin": "https://uk.linkedin.com/company/pixalytics-ltd"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"
@@ -18,3 +18,7 @@ type_reason: "All-purpose EO analytics provider [agent]"
 ---
 
 Discovered via the EO companies Google Sheet (2026-06); unverified.
+
+[verify 2026-06 2026-06-14] Careers page marked invalid; requires verification
+
+[links 2026-06 2026-06-14] Careers page marked invalid; requires verification

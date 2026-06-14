@@ -5,8 +5,8 @@ website: "https://wyvern.space/"
 careers_urls: ["https://wyvern.space/company/join-us"]
 locations: ["🇨🇦 Edmonton, Canada"]
 remote: "Yes"
-remote_evidence: ""
-description: "hyperspectral, multi-purpose"
+remote_evidence: "Careers page lists 'Remote • Edmonton, AB' and mentions flexible working hours and hybrid opportunities."
+description: "Canadian space technology company operating commercial hyperspectral imaging satellites for Earth observation."
 satellites: ""
 category: ""
 listed: true

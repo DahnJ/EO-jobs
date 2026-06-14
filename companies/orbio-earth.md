@@ -3,10 +3,10 @@ name: "Orbio Earth"
 status: "active"
 website: "https://www.orbio.earth/"
 careers_urls: ["https://www.orbio.earth/careers"]
-locations: ["🇩🇪 Cologne, Germany"]
+locations: ["Cologne, Germany"]
 remote: ""
 remote_evidence: ""
-description: "Global methane emission tracking"
+description: "German satellite-based Earth observation and climate tech company."
 satellites: ""
 category: ""
 listed: true

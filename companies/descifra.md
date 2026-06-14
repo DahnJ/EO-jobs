@@ -3,14 +3,14 @@ name: "Descifra"
 status: "active"
 website: "https://www.descifra.com/"
 careers_urls: []
-locations: ["🇲🇽 Mexico"]
+locations: ["Mexico City, Mexico"]
 remote: ""
 remote_evidence: ""
-description: "Geospatial intelligence for retail site selection & market expansion"
+description: "Geointelligence platform applying AI to territorial decision-making for retail and enterprises."
 satellites: ""
 category: ""
 listed: false
-links: {}
+links: {"linkedin": "https://linkedin.com/company/descifra"}
 source: "awesome 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

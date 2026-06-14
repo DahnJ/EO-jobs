@@ -2,11 +2,11 @@
 name: "Muon Space"
 status: "active"
 website: "https://www.muonspace.com/"
-careers_urls: ["https://www.muonspace.com/careers", "https://www.linkedin.com/company/muon-space/jobs/"]
-locations: ["🇺🇸 San Jose, CA, USA", "🇺🇸 Mountain View, CA, USA", "🇺🇸 El Segundo, CA, USA", "🇺🇸 Northern Virginia, USA"]
+careers_urls: ["https://www.muonspace.com/careers"]
+locations: ["San Jose, CA, USA", "Mountain View, CA, USA", "El Segundo, CA, USA", "Northern Virginia, USA"]
 remote: "Yes"
-remote_evidence: ""
-description: "Satellite missions for remote sensing, including software"
+remote_evidence: "Multiple US office locations; remote work options available"
+description: "Designs and operates satellite constellations for Earth Intelligence applications."
 satellites: ""
 category: ""
 listed: true

@@ -6,11 +6,11 @@ careers_urls: ["https://www.satelytics.com/careers/"]
 locations: ["🇺🇸 Perrysburg, OH, USA"]
 remote: "No"
 remote_evidence: "open role location 'Perrysburg, OH', no remote (satelytics.com/careers)"
-description: "EO: energy asset, pipeline monitoring"
+description: "Infrastructure monitoring using satellite imagery."
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {}
+links: {"linkedin": "https://www.linkedin.com/company/satelytics"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"
@@ -18,3 +18,7 @@ type_reason: "EO/satellite core business [agent]"
 ---
 
 Discovered via the EO companies Google Sheet (2026-06); unverified.
+
+[verify 2026-06 2026-06-14] Network restrictions prevented website verification
+
+[links 2026-06 2026-06-14] Network restrictions prevented website verification

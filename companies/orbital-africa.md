@@ -6,7 +6,7 @@ careers_urls: ["https://orbital.co.ke/careers"]
 locations: ["Kenya"]
 remote: ""
 remote_evidence: ""
-description: "Geospatial consulting and technology company; mapping, surveying, GIS, satellite imagery, drones, LiDAR, and 3D laser scanning."
+description: "African Earth observation and geospatial data services provider."
 satellites: ""
 category: ""
 listed: true

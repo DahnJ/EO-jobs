@@ -3,10 +3,10 @@ name: "Geocento"
 status: "active"
 website: "https://geocento.com/"
 careers_urls: []
-locations: ["🇪🇸 Madrid, Spain", "🇬🇧 Oxfordshire, UK"]
+locations: ["Madrid, Spain", "Oxfordshire, UK"]
 remote: "No"
-remote_evidence: ""
-description: "Analytics platform, marketplace"
+remote_evidence: "Stored value indicates no remote work."
+description: "Earth observation and geospatial consulting services."
 satellites: ""
 category: ""
 listed: false
@@ -16,3 +16,7 @@ last_checked: "2026-06-14"
 type: "commercial-eo"
 type_reason: "EO analytics platform and marketplace [agent]"
 ---
+
+[verify 2026-06 2026-06-14] No dedicated careers page found; limited page content retrieved.
+
+[links 2026-06 2026-06-14] No dedicated careers page found; limited page content retrieved.

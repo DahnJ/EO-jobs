@@ -6,7 +6,7 @@ careers_urls: []
 locations: []
 remote: ""
 remote_evidence: ""
-description: "EO to decarbonize rice farming"
+description: "Carbon farm technology company."
 satellites: ""
 category: ""
 listed: false
@@ -18,3 +18,7 @@ type_reason: "EO-based rice farming decarbonization [agent]"
 ---
 
 Discovered via awesome (2026-06); unverified.
+
+[verify 2026-06 2026-06-14] Network security restriction prevented verification; no careers page stored.
+
+[links 2026-06 2026-06-14] Network security restriction prevented verification; no careers page stored.

@@ -3,14 +3,14 @@ name: "Chloris Geospatial"
 status: "active"
 website: "https://chloris.earth/"
 careers_urls: ["https://chloris.bamboohr.com/careers"]
-locations: ["🇺🇸 Boston, USA"]
+locations: ["Boston, USA"]
 remote: ""
 remote_evidence: ""
-description: "Global biomass measurements"
+description: "Forest carbon monitoring using satellite data with 25+ years of coverage."
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {}
+links: {"linkedin": "https://www.linkedin.com/company/chloris-geospatial", "youtube": "https://www.youtube.com/channel/UC7WyEjReNFjjE84l5Y1qKfg"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

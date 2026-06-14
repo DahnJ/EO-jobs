@@ -3,14 +3,14 @@ name: "GAF AG"
 status: "active"
 website: "https://www.gaf.de"
 careers_urls: ["https://www.gaf.de/careers/"]
-locations: ["🇩🇪 Munich, Germany", "🇩🇪 Neustrelitz, Germany"]
+locations: ["Munich, Germany", "Neustrelitz, Germany"]
 remote: "Hybrid"
-remote_evidence: "'Flexitime... opportunity to work from home' (gaf.de/careers)"
-description: "EO: All-purpose"
+remote_evidence: "Careers page mentions flexible hours and home working with company regulations."
+description: "Geospatial technology and satellite data processing services."
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {}
+links: {"linkedin": "https://www.linkedin.com/company/gaf-ag/", "twitter": "https://twitter.com/gaf_ag", "youtube": "https://www.youtube.com/user/gafag"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

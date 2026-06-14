@@ -1,16 +1,16 @@
 ---
 name: "Space4Environment"
 status: "active"
-website: "http://space4environment.com/"
-careers_urls: ["x"]
+website: "https://space4environment.com/"
+careers_urls: ["https://www.linkedin.com/company/space4environment"]
 locations: ["🇱🇺 Niederanven, Luxembourg"]
 remote: ""
 remote_evidence: ""
-description: "EO: All-purpose"
+description: "Geospatial data and environmental monitoring using Earth observation and data intelligence."
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {}
+links: {"linkedin": "https://www.linkedin.com/company/space4environment", "twitter": "https://twitter.com/space4env"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

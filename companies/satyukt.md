@@ -3,14 +3,14 @@ name: "Satyukt"
 status: "active"
 website: "https://www.satyukt.com/"
 careers_urls: ["https://www.satyukt.com/career.html"]
-locations: ["🇮🇳 Bengaluru, India"]
+locations: ["Bengaluru, India"]
 remote: ""
 remote_evidence: ""
-description: "EO for preciscion farming"
+description: "Earth observation and geospatial analytics company."
 satellites: ""
 category: ""
 listed: true
-links: {}
+links: {"linkedin": "https://in.linkedin.com/company/satyukt"}
 source: "awesome 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

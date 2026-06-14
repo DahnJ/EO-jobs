@@ -6,7 +6,7 @@ careers_urls: []
 locations: []
 remote: ""
 remote_evidence: ""
-description: "Spatial data platform providing 40+ commercial and open geospatial datasets including satellite data."
+description: "Spatial data platform for enterprise and developer teams."
 satellites: ""
 category: ""
 listed: false
@@ -18,3 +18,7 @@ type_reason: "Geospatial platform with satellite data [agent]"
 ---
 
 [discovery-sweep 2026-06-14] Pure Earth Observation/geospatial company; no careers page found.
+
+[verify 2026-06 2026-06-14] Cecil Earth is a spatial data aggregation platform; no careers page found.
+
+[links 2026-06 2026-06-14] Cecil Earth is a spatial data aggregation platform; no careers page found.

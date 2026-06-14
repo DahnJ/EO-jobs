@@ -2,11 +2,11 @@
 name: "EarthDaily"
 status: "active"
 website: "https://earthdaily.com/"
-careers_urls: ["https://earthdaily.com/careers/career-opportunities/", "https://www.linkedin.com/company/earthdailyanalytics/jobs/"]
-locations: ["🇨🇦 Vancouver, Canada"]
+careers_urls: ["https://earthdaily.com/careers/career-opportunities/"]
+locations: ["Vancouver, Canada"]
 remote: "Yes"
 remote_evidence: ""
-description: "Analytics, agriculture"
+description: "Satellite constellation and Earth observation data provider with API-first platform."
 satellites: ""
 category: ""
 listed: true
@@ -16,3 +16,7 @@ last_checked: "2026-06-14"
 type: "commercial-eo"
 type_reason: "EO analytics for agriculture [agent]"
 ---
+
+[verify 2026-06 2026-06-14] Domain could not be verified; kept stored values.
+
+[links 2026-06 2026-06-14] Domain could not be verified; kept stored values.

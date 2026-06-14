@@ -6,7 +6,7 @@ careers_urls: []
 locations: ["🇨🇳 Beijing, China", "🇱🇺 Luxembourg"]
 remote: ""
 remote_evidence: ""
-description: "Satellite operator, Satellite-as-a-service, DaaS"
+description: "Global new space company specializing in small satellites and satellite-based services."
 satellites: "Yes"
 category: ""
 listed: false
@@ -18,3 +18,7 @@ type_reason: "EO/satellite core business [agent]"
 ---
 
 OFAC SDN-listed (Changsha entity) since Jan 2023; China office is Changsha, not Beijing
+
+[verify 2026-06 2026-06-14] No active careers page found
+
+[links 2026-06 2026-06-14] No active careers page found

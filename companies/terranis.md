@@ -6,7 +6,7 @@ careers_urls: []
 locations: ["🇫🇷 France"]
 remote: ""
 remote_evidence: ""
-description: "EO: precision agriculture and viticulture services"
+description: "Geospatial services for agriculture, environment and territorial management."
 satellites: ""
 category: ""
 listed: false
@@ -18,3 +18,7 @@ type_reason: "EO/satellite core business [agent]"
 ---
 
 Discovered via awesome (2026-06); unverified.
+
+[verify 2026-06 2026-06-14] No careers page found despite search
+
+[links 2026-06 2026-06-14] No careers page found despite search

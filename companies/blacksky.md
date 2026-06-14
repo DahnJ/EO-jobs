@@ -1,18 +1,18 @@
 ---
 name: "BlackSky"
 status: "active"
-website: "https://www.blacksky.com/"
+website: "http://blacksky.com/"
 careers_urls: ["https://www.blacksky.com/careers/"]
-locations: ["🇺🇸 Herndon, USA"]
-remote: "Yes (US)"
-remote_evidence: ""
-description: "Optical constellation, high temporal resolution"
+locations: ["🇺🇸 Herndon, Virginia, USA"]
+remote: "Hybrid"
+remote_evidence: "Mentions flexible scheduling and on-site gym facilities; references Colorado and Virginia teams."
+description: "Space-based intelligence and tactical ISR platform with real-time AI-enhanced satellite imaging."
 satellites: "Yes"
 category: ""
 listed: true
-links: {"crunchbase": "https://www.crunchbase.com/organization/blacksky-global", "linkedin": "https://www.linkedin.com/company/blackskyinc/", "twitter": "https://twitter.com/BlackSky_Inc", "spac": "https://www.osprey-technology.com/s/BlackSky_Investor-Presentation-September-2021_v11-as-Filed.pdf", "stocks": "$BKSY"}
+links: {"crunchbase": "https://www.crunchbase.com/organization/blacksky-global", "linkedin": "https://www.linkedin.com/company/blackskyinc/", "twitter": "https://twitter.com/BlackSky_Inc", "spac": "https://www.osprey-technology.com/s/BlackSky_Investor-Presentation-September-2021_v11-as-Filed.pdf", "stocks": "$BKSY", "youtube": "https://www.youtube.com/@blacksky_inc"}
 source: "original list"
-last_checked: ""
+last_checked: "2026-06-14"
 type: "commercial-eo"
 type_reason: "Optical satellite constellation [agent]"
 ---

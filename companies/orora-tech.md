@@ -3,10 +3,10 @@ name: "Orora Tech"
 status: "active"
 website: "https://ororatech.com"
 careers_urls: ["https://ororatech.com/careers/"]
-locations: ["🇩🇪 Munich, Germany", "🇺🇸 USA", "🇨🇦 Canada", "🇬🇷 Athens, Greece"]
+locations: ["Munich, Germany", "USA", "Canada", "Athens, Greece"]
 remote: "Yes"
-remote_evidence: ""
-description: "Satellites for wildfire detection"
+remote_evidence: "Multi-country office locations across three continents."
+description: "AI-powered satellite data analytics for supply chain and industrial monitoring."
 satellites: "Planned"
 category: ""
 listed: true
