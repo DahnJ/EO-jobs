@@ -5,8 +5,8 @@ website: "https://www.lobelia.earth/"
 careers_urls: ["https://www.lobelia.earth/about-us#careers"]
 locations: ["🇪🇸 Barcelona, Spain"]
 remote: "No"
-remote_evidence: "Careers page not accessible; stored value 'No' retained based on previous assessment"
-remote_confidence: "low"
+remote_evidence: "Two job openings both located in Barcelona; team physically located in Barcelona"
+remote_confidence: "medium"
 description: "Earth observation software for environmental monitoring and analysis."
 satellites: ""
 category: ""

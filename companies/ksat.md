@@ -4,9 +4,9 @@ status: "active"
 website: "https://ksat.no"
 careers_urls: ["https://karriere.ksat.no"]
 locations: ["🇳🇴 Tromsø, Norway"]
-remote: ""
-remote_evidence: "Careers page not accessible due to domain verification failure"
-remote_confidence: "low"
+remote: "No"
+remote_evidence: "Job posting specifies work location in Tromsø, Norway with travel expected"
+remote_confidence: "medium"
 description: "Satellite ground network and Earth observation services."
 satellites: ""
 category: ""

@@ -4,9 +4,9 @@ status: "active"
 website: "https://cloudferro.com"
 careers_urls: ["https://cloudferro.com/career/job-offers/"]
 locations: ["🇵🇱 Warsaw, Poland"]
-remote: ""
-remote_evidence: "Job offers page shows 11 open positions but no remote work mention visible; job details require clicking through (JS-rendered)"
-remote_confidence: "low"
+remote: "No"
+remote_evidence: "Job listings show multiple roles but only Warsaw, Poland offices mentioned; no remote positions indicated"
+remote_confidence: "medium"
 description: "European cloud computing provider specializing in Earth Observation data infrastructure and platforms like CREODIAS."
 satellites: ""
 category: ""

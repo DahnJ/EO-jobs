@@ -4,9 +4,9 @@ status: "active"
 website: "https://www.landiq.com/"
 careers_urls: ["https://www.landiq.com/careers"]
 locations: ["🇺🇸 Sacramento, USA", "🇺🇸 Los Angeles, USA"]
-remote: ""
-remote_evidence: "Careers page not accessible due to domain verification failure"
-remote_confidence: "low"
+remote: "No"
+remote_evidence: "Remote Sensing Scientist position in Sacramento, California office specified"
+remote_confidence: "medium"
 description: "Agricultural and environmental solutions using remote sensing."
 satellites: ""
 category: ""

@@ -4,9 +4,9 @@ status: "active"
 website: "https://www.taranis.com/"
 careers_urls: ["https://www.taranis.com/careers/"]
 locations: ["🇺🇸 Westfield, Indiana, United States"]
-remote: ""
-remote_evidence: "Careers page mentions 'flexible work models' but no explicit remote policy; job listings shown are location-specific (IL, Midwest)"
-remote_confidence: "low"
+remote: "No"
+remote_evidence: "Open positions (Regional Account Manager - IL, VP of Sales - Midwest) listed with US locations; no remote mentioned despite 'flexible work models' benefits note"
+remote_confidence: "medium"
 description: "Agricultural monitoring platform using satellite imagery and AI."
 satellites: ""
 category: ""

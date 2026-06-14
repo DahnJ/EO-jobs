@@ -4,9 +4,9 @@ status: "active"
 website: "https://live-eo.com/"
 careers_urls: ["https://liveeo-gmbh.jobs.personio.de"]
 locations: ["🇩🇪 Berlin, Germany"]
-remote: "Hybrid"
-remote_evidence: "Careers page returns 404 error; stored value 'Hybrid' retained as reasonable given company location"
-remote_confidence: "low"
+remote: "Yes (US/EU)"
+remote_evidence: "Multiple remote positions including 'Account Executive North America (Remote)' and 'LiveEO EMEA (Remote)'; Account Executive based in North-East USA"
+remote_confidence: "high"
 description: "AI-powered satellite monitoring for crop health and agricultural insights."
 satellites: ""
 category: ""
