@@ -39,9 +39,12 @@ Design rationale: `docs/superpowers/specs/2026-06-14-eo-jobs-refresh-agent-desig
 ## Steps
 
 1. **Pick the batch.** Refresh the stalest entries (oldest `last_checked`) or a
-   slice — not all ~530 every run. `just check` (link-rot sweep) finds companies
-   with dead sites/careers links — **these are top priority, because a dead careers
-   link is never an acceptable end state.** The per-company prompt requires
+   slice — not all ~530 every run. Two cheap no-LLM sweeps point you at what needs
+   attention: `just check` (link-rot) finds dead site/careers links, and
+   `just redirects` finds listed companies whose domain now redirects to a DIFFERENT
+   domain — almost always an acquisition/rebrand to mark `acquired`/`renamed` and
+   de-list (it catches what bot-blocked WebFetch agents miss, e.g. Pachama→Carbon
+   Direct, Maxar→Vantor). A dead careers link is **never an acceptable end state.** The per-company prompt requires
    re-resolving a 404 careers URL (footer link → search for the ATS → LinkedIn jobs
    page) rather than flagging it; a non-empty `careers_urls` that 404s is a bug, not
    a valid listing. The **EO job boards** (see discover-eo-companies) are the other
