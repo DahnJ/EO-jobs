@@ -1,5 +1,5 @@
 ---
-name: "Geo Image"
+name: "Geoimage"
 status: "active"
 website: "https://www.geoimage.com.au"
 careers_urls: ["https://www.geoimage.com.au/careers"]

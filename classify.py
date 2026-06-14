@@ -25,7 +25,8 @@ def classify(rec: dict) -> tuple:
     slug = rec.get("name", "")
     text = (rec.get("description", "") + " " + rec.get("body", "")).lower()
 
-    if "not-eo" in text or "not an earth observation" in text or "not a geospatial" in text:
+    if any(w in text for w in ["not-eo", "not an earth observation", "not an eo",
+                                "not a geospatial", "not a satellite"]):
         return "not-eo", "flagged not-EO during verification"
     # "foundation" alone is too broad ("foundation model" is an AI term), so
     # only treat it as nonprofit signal when not immediately an AI-model phrase.
