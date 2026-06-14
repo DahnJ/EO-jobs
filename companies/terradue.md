@@ -1,9 +1,9 @@
 ---
 name: "Terradue"
-status: "unknown"
+status: "active"
 website: "https://www.terradue.com/portal/"
 careers_urls: ["https://www.terradue.com/portal/jobs"]
-locations: ["Rome, Italy"]
+locations: ["🇮🇹 Rome, Italy"]
 remote: ""
 remote_evidence: ""
 description: "EO data cloud infrastructure services"
@@ -12,7 +12,7 @@ category: "Earth Observation"
 listed: false
 links: {}
 source: "google-sheet 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via the EO companies Google Sheet (2026-06); unverified.

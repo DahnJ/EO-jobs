@@ -1,9 +1,9 @@
 ---
 name: "GVL Geomatic Ventures"
-status: "unknown"
-website: "https://www.geomaticventures.com"
+status: "renamed"
+website: "https://www.geospatialventures.co.uk/"
 careers_urls: ["x"]
-locations: ["Nottingham, UK"]
+locations: ["🇬🇧 Nottingham, UK"]
 remote: ""
 remote_evidence: ""
 description: "SAR/InSAR ground monitoring"
@@ -12,7 +12,9 @@ category: "Earth Observation"
 listed: false
 links: {}
 source: "google-sheet 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via the EO companies Google Sheet (2026-06); unverified.
+
+Rebranded to Geospatial Ventures Limited; geomaticventures.com redirects there.

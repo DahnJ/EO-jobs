@@ -1,18 +1,18 @@
 ---
 name: "Ecopia"
-status: "unknown"
+status: "active"
 website: "https://www.ecopiatech.com"
-careers_urls: ["https://www.ecopiatech.com/careers#openings"]
-locations: ["Torronto, Canada"]
-remote: ""
-remote_evidence: ""
+careers_urls: ["https://www.ecopiatech.com/careers"]
+locations: ["🇨🇦 Toronto, Canada"]
+remote: "Hybrid"
+remote_evidence: "'choice to work in-office, remote, or a combination' (ecopiatech.com/careers)"
 description: "High-res mapping"
 satellites: ""
 category: "Earth Observation"
 listed: false
 links: {}
 source: "google-sheet 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via the EO companies Google Sheet (2026-06); unverified.

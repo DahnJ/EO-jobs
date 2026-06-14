@@ -1,9 +1,9 @@
 ---
 name: "IsardSat"
-status: "unknown"
-website: "http://www.isardsat.co.uk"
+status: "active"
+website: "https://www.isardsat.co.uk"
 careers_urls: ["https://www.isardsat.co.uk/work-with-us"]
-locations: ["Barcelona, Italy"]
+locations: ["🇪🇸 Barcelona, Spain", "🇬🇧 Guildford, UK"]
 remote: ""
 remote_evidence: ""
 description: "EO: R&D focus on altimetry, Passive Microwaves and SAR imaging"
@@ -12,7 +12,7 @@ category: "Earth Observation"
 listed: false
 links: {}
 source: "google-sheet 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via the EO companies Google Sheet (2026-06); unverified.

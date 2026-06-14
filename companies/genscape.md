@@ -1,7 +1,7 @@
 ---
 name: "Genscape"
-status: "unknown"
-website: "https://www.genscape.com"
+status: "acquired"
+website: "https://www.woodmac.com"
 careers_urls: ["https://careers.smartrecruiters.com/Verisk/wood-mackenzie"]
 locations: ["Boston, USA"]
 remote: ""
@@ -12,7 +12,9 @@ category: "Earth Observation"
 listed: false
 links: {}
 source: "google-sheet 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via the EO companies Google Sheet (2026-06); unverified.
+
+Acquired by Verisk 2019 ($364M), folded into Wood Mackenzie; genscape.com redirects to woodmac.com.

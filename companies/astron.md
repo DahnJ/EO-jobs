@@ -1,9 +1,9 @@
 ---
 name: "Astron"
-status: "unknown"
+status: "active"
 website: "http://www.astron.com.au"
 careers_urls: ["http://www.astron.com.au/careers/"]
-locations: ["Perth, Australia"]
+locations: ["🇦🇺 Perth, Australia"]
 remote: ""
 remote_evidence: ""
 description: "Environmental consulting, remote sensing"
@@ -12,7 +12,9 @@ category: "Earth Observation"
 listed: false
 links: {}
 source: "google-sheet 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via the EO companies Google Sheet (2026-06); unverified.
+
+WA environmental consultancy est. 1985; site intermittently refused fetch, confirmed via search.

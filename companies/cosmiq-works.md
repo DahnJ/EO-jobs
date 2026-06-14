@@ -1,6 +1,6 @@
 ---
 name: "Cosmiq works"
-status: "unknown"
+status: "defunct"
 website: "http://www.cosmiqworks.org"
 careers_urls: ["x"]
 locations: ["Arlington, USA"]
@@ -12,7 +12,9 @@ category: "Earth Observation"
 listed: false
 links: {}
 source: "google-sheet 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via the EO companies Google Sheet (2026-06); unverified.
+
+CosmiQ Works closed 2021, folded into IQT Labs; SpaceNet moved to Maxar. cosmiqworks.org redirects to iqt.org.

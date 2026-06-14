@@ -1,9 +1,9 @@
 ---
 name: "Space4Environment"
-status: "unknown"
-website: "http://www.space4environment.com"
+status: "active"
+website: "http://space4environment.com/"
 careers_urls: ["x"]
-locations: ["Niederanven, Luxembourg"]
+locations: ["🇱🇺 Niederanven, Luxembourg"]
 remote: ""
 remote_evidence: ""
 description: "EO: All-purpose"
@@ -12,7 +12,7 @@ category: "Earth Observation"
 listed: false
 links: {}
 source: "google-sheet 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via the EO companies Google Sheet (2026-06); unverified.

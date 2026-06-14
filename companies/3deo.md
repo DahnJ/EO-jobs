@@ -1,9 +1,9 @@
 ---
 name: "3DEO"
-status: "unknown"
-website: "https://www.3deo.com/"
+status: "acquired"
+website: "https://mapbi.com/"
 careers_urls: ["https://www.4earthintelligence.com/about-us/careers/vacancies/"]
-locations: ["Belfast, UK"]
+locations: ["🇬🇧 Belfast, UK"]
 remote: ""
 remote_evidence: ""
 description: "Business insights (Ports, Defence, Smart City)"
@@ -12,7 +12,9 @@ category: "Earth Observation"
 listed: false
 links: {}
 source: "google-sheet 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via the EO companies Google Sheet (2026-06); unverified.
+
+3DEO (NI) Ltd entered liquidation; assets/Active Maps acquired by Built Cybernetics (subsidiary MapBI), Nov 2025; 3deo.com unreachable, continues as mapbi.com.

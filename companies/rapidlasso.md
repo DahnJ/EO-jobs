@@ -1,9 +1,9 @@
 ---
 name: "Rapidlasso"
-status: "unknown"
-website: "https://rapidlasso.com"
+status: "active"
+website: "https://www.rapidlasso.de/"
 careers_urls: ["x"]
-locations: ["Gilching, Germany"]
+locations: ["🇩🇪 Gilching, Germany"]
 remote: ""
 remote_evidence: ""
 description: "\"LasTools\" point cloud processing/analysis software"
@@ -12,7 +12,9 @@ category: "Earth Observation"
 listed: false
 links: {}
 source: "google-sheet 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via the EO companies Google Sheet (2026-06); unverified.
+
+rapidlasso.com redirects to rapidlasso.de; makes LAStools/LASzip.

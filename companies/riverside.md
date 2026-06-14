@@ -1,6 +1,6 @@
 ---
 name: "Riverside"
-status: "unknown"
+status: "defunct"
 website: "https://www.riverside.com"
 careers_urls: ["https://www.riverside.com/careers"]
 locations: ["Fort Collins, USA"]
@@ -12,7 +12,9 @@ category: "Earth Observation"
 listed: false
 links: {}
 source: "google-sheet 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via the EO companies Google Sheet (2026-06); unverified.
+
+NOT an EO company — riverside.com is RiversideFM, an AI media/podcast production SaaS. Mistaken listing; exclude from EO list.

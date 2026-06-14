@@ -1,18 +1,18 @@
 ---
 name: "Satelytics"
-status: "unknown"
+status: "active"
 website: "https://www.satelytics.com"
 careers_urls: ["https://www.satelytics.com/careers/"]
-locations: ["Toledo, USA"]
-remote: ""
-remote_evidence: ""
+locations: ["🇺🇸 Perrysburg, OH, USA"]
+remote: "No"
+remote_evidence: "open role location 'Perrysburg, OH', no remote (satelytics.com/careers)"
 description: "EO: energy asset, pipeline monitoring"
 satellites: ""
 category: "Earth Observation"
 listed: false
 links: {}
 source: "google-sheet 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via the EO companies Google Sheet (2026-06); unverified.

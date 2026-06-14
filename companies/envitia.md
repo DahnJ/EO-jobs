@@ -1,9 +1,9 @@
 ---
 name: "Envitia"
-status: "unknown"
+status: "active"
 website: "https://www.envitia.com/"
 careers_urls: ["https://www.envitia.com/careers/"]
-locations: ["Horsham, UK"]
+locations: ["🇬🇧 Horsham, UK"]
 remote: ""
 remote_evidence: ""
 description: "Geospatial intelligence solutions "
@@ -12,7 +12,7 @@ category: "Earth Observation"
 listed: false
 links: {}
 source: "google-sheet 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via the EO companies Google Sheet (2026-06); unverified.

@@ -1,9 +1,9 @@
 ---
 name: "eomap"
-status: "unknown"
-website: "http://www.eomap.com"
+status: "active"
+website: "https://www.eomap.com"
 careers_urls: ["https://www.eomap.com/jobs/"]
-locations: ["Seefeld, Germany"]
+locations: ["🇩🇪 Seefeld, Germany", "🇦🇺 Perth, Australia", "🇺🇸 Santa Barbara, USA"]
 remote: ""
 remote_evidence: ""
 description: "EO: Aquatic"
@@ -12,7 +12,9 @@ category: "Earth Observation"
 listed: false
 links: {}
 source: "google-sheet 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via the EO companies Google Sheet (2026-06); unverified.
+
+Now a Fugro company; jobs page lists no open positions currently.

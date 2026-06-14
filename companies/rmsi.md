@@ -1,9 +1,9 @@
 ---
 name: "RMSI"
-status: "unknown"
+status: "active"
 website: "https://www.rmsi.com"
 careers_urls: ["https://rmsi.zohorecruit.com/jobs/Careers"]
-locations: ["Hyderabad, India"]
+locations: ["🇮🇳 Noida, India"]
 remote: ""
 remote_evidence: ""
 description: "EO+GIS: All-purpose, mapping software, insight platforms"
@@ -12,7 +12,9 @@ category: "Earth Observation"
 listed: false
 links: {}
 source: "google-sheet 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via the EO companies Google Sheet (2026-06); unverified.
+
+Founded 1992; global offices.

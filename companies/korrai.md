@@ -1,18 +1,20 @@
 ---
 name: "KorrAI"
-status: "unknown"
+status: "active"
 website: "https://www.korrai.com/"
-careers_urls: ["x"]
+careers_urls: ["https://www.ycombinator.com/companies/korrai/jobs"]
 locations: ["Halifax, Canada"]
 remote: ""
 remote_evidence: ""
-description: "Satellite data analysis for mining"
+description: "AI platform (TRAIL) for geotechnical & natural-hazard site risk for asset owners and insurers"
 satellites: ""
 category: "Earth Observation"
 listed: false
 links: {}
 source: "google-sheet 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via the EO companies Google Sheet (2026-06); unverified.
+
+Y Combinator-backed; broader than mining.
