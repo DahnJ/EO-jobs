@@ -3,7 +3,7 @@ name: "Restor"
 status: "active"
 website: "https://restor.eco/"
 careers_urls: []
-locations: ["Switzerland"]
+locations: ["🇨🇭 Switzerland"]
 remote: ""
 remote_evidence: ""
 description: "Global hub for nature restoration connecting projects with funding, datasets, and visibility."

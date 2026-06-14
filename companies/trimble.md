@@ -3,7 +3,7 @@ name: "Trimble"
 status: "active"
 website: "https://geospatial.trimble.com/en/products/software/trimble-ecognition"
 careers_urls: ["x"]
-locations: ["Munich, Germany"]
+locations: ["🇩🇪 Munich, Germany"]
 remote: ""
 remote_evidence: ""
 description: "eCognition Software"

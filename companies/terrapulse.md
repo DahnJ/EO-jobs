@@ -3,7 +3,7 @@ name: "Terrapulse"
 status: "active"
 website: "https://www.terrapulse.com"
 careers_urls: ["x"]
-locations: ["North Potomac, USA"]
+locations: ["🇺🇸 North Potomac, USA"]
 remote: ""
 remote_evidence: ""
 description: "EO: Land monitoring & insights"

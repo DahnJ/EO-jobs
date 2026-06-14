@@ -3,7 +3,7 @@ name: "Utilis"
 status: "renamed"
 website: "https://asterra.io/"
 careers_urls: ["x"]
-locations: ["Rosh Haayin, Israel"]
+locations: ["🇮🇱 Rosh Haayin, Israel"]
 remote: ""
 remote_evidence: ""
 description: "EO: water utility leakage detection"

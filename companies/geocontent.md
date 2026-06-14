@@ -3,7 +3,7 @@ name: "Geocontent"
 status: "unknown"
 website: "http://www.geocontent.de"
 careers_urls: ["x"]
-locations: ["Magdeburg, Germany"]
+locations: ["🇩🇪 Magdeburg, Germany"]
 remote: ""
 remote_evidence: ""
 description: "Sat/Aerial data reseller, Webmap services"

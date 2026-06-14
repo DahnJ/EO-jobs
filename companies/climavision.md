@@ -4,7 +4,7 @@ status: "active"
 website: "https://www.climavision.com/"
 careers_urls: ["https://boards.greenhouse.io/climavision", "https://www.linkedin.com/company/climavision/jobs/"]
 locations: ["🇺🇸 Louisville, USA"]
-remote: "US based"
+remote: "Yes (US)"
 remote_evidence: ""
 description: "Climate change resiliency, weather data and forecasting tools"
 satellites: ""

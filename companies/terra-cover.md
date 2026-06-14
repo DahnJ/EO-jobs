@@ -3,7 +3,7 @@ name: "Terra Cover"
 status: "active"
 website: "http://www.terracover.ai/"
 careers_urls: ["x"]
-locations: ["USA"]
+locations: ["🇺🇸 USA"]
 remote: ""
 remote_evidence: ""
 description: "EO: Reservoir, Lake & Flood Monitoring"

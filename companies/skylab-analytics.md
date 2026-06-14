@@ -3,7 +3,7 @@ name: "Skylab Analytics"
 status: "active"
 website: "http://skylabanalytics.com"
 careers_urls: ["x"]
-locations: ["Amsterdam, Netherlands"]
+locations: ["🇳🇱 Amsterdam, Netherlands"]
 remote: ""
 remote_evidence: ""
 description: "EO: All-purpose"

@@ -4,7 +4,7 @@ status: "active"
 website: "https://rendered.ai/"
 careers_urls: ["https://apply.workable.com/rendered-ai/?lng=en", "https://www.linkedin.com/company/rendered-ai/jobs/"]
 locations: ["🇺🇸 Bellevue, Washington, USA"]
-remote: "US resident"
+remote: "Yes (US)"
 remote_evidence: ""
 description: "Creating synthetic data for training ML/AI systems"
 satellites: ""

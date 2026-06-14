@@ -4,7 +4,7 @@ status: "active"
 website: "http://en.spacewillinfo.com/"
 careers_urls: []
 locations: ["🇨🇳 Beijing, China"]
-remote: "?"
+remote: ""
 remote_evidence: ""
 description: "SuperView constellation, imagery provider"
 satellites: ""

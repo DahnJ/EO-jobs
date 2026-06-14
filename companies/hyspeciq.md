@@ -4,7 +4,7 @@ status: "active"
 website: "https://hyspeciq.com/"
 careers_urls: ["https://hyspeciq.breezy.hr/"]
 locations: ["🇺🇸 Herndon, USA"]
-remote: "US based"
+remote: "Yes (US)"
 remote_evidence: ""
 description: "Hyperspectral constellation, analytics platform, all-purpose"
 satellites: "Planned"

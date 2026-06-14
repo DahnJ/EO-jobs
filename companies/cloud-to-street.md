@@ -3,7 +3,7 @@ name: "Cloud to Street"
 status: "renamed"
 website: "https://www.floodbase.com/"
 careers_urls: ["https://boards.greenhouse.io/floodbase"]
-locations: ["New York City, USA"]
+locations: ["🇺🇸 New York City, USA"]
 remote: ""
 remote_evidence: ""
 description: "Parametric flood insurance using satellite imaging and AI flood mapping"

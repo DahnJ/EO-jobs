@@ -4,7 +4,7 @@ status: "active"
 website: "https://www.blacksky.com/"
 careers_urls: ["https://www.blacksky.com/careers/"]
 locations: ["🇺🇸 Herndon, USA"]
-remote: "US based"
+remote: "Yes (US)"
 remote_evidence: ""
 description: "Optical constellation, high temporal resolution"
 satellites: "Yes"

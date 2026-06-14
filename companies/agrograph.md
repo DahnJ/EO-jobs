@@ -4,7 +4,7 @@ status: "active"
 website: "https://agrograph.com/"
 careers_urls: ["https://angel.co/company/agrograph-1"]
 locations: ["🇺🇸 Madison, WI"]
-remote: "US-based"
+remote: "Yes (US)"
 remote_evidence: ""
 description: "Providing credit/risk score for aggriculture"
 satellites: ""

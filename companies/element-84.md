@@ -4,7 +4,7 @@ status: "active"
 website: "https://element84.com/"
 careers_urls: ["https://element84.com/careers"]
 locations: ["🇺🇸 Alexandria, USA"]
-remote: "US based"
+remote: "Yes (US)"
 remote_evidence: ""
 description: "Cloud-based geospatial data processing"
 satellites: ""

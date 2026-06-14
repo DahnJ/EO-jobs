@@ -3,7 +3,7 @@ name: "HANCOM InSpace"
 status: "active"
 website: "https://www.inspace.co.kr/"
 careers_urls: []
-locations: ["Daejeon, South Korea"]
+locations: ["🇰🇷 Daejeon, South Korea"]
 remote: ""
 remote_evidence: ""
 description: "Integrated satellite imagery service: data collection, management, analysis, and Earth observation."

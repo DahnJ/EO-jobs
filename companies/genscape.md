@@ -3,7 +3,7 @@ name: "Genscape"
 status: "acquired"
 website: "https://www.woodmac.com"
 careers_urls: ["https://careers.smartrecruiters.com/Verisk/wood-mackenzie"]
-locations: ["Boston, USA"]
+locations: ["🇺🇸 Boston, USA"]
 remote: ""
 remote_evidence: ""
 description: "EO: Oil storage and infrastructure monitoring"

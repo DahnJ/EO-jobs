@@ -3,7 +3,7 @@ name: "Bridger Photonics"
 status: "active"
 website: "https://www.bridgerphotonics.com/"
 careers_urls: ["https://www.bridgerphotonics.com/careers"]
-locations: ["Bozeman, Montana, US"]
+locations: ["🇺🇸 Bozeman, Montana, US"]
 remote: ""
 remote_evidence: ""
 description: "Aerial methane detection using Gas Mapping LiDAR technology for emissions monitoring."

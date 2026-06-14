@@ -4,7 +4,7 @@ status: "active"
 website: "https://www.capellaspace.com/"
 careers_urls: ["https://www.capellaspace.com/about-us/careers/"]
 locations: ["🇺🇸 San Francisco, USA", "🇺🇸 Boulder, CO, USA"]
-remote: "US based"
+remote: "Yes (US)"
 remote_evidence: ""
 description: "SAR constellation, analytics"
 satellites: "Yes"

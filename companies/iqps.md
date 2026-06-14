@@ -4,7 +4,7 @@ status: "active"
 website: "https://i-qps.net/"
 careers_urls: ["https://i-qps.net/career#section3"]
 locations: ["🇯🇵 Fukuoka, Japan"]
-remote: "?"
+remote: ""
 remote_evidence: ""
 description: "SAR constellation"
 satellites: "Yes"

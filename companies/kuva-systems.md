@@ -3,7 +3,7 @@ name: "Kuva Systems"
 status: "active"
 website: "https://www.kuvasystems.com/"
 careers_urls: ["https://kuvasystems.com/careers"]
-locations: ["Boston, US; Calgary, Canada"]
+locations: ["🇨🇦 Boston, US; Calgary, Canada"]
 remote: ""
 remote_evidence: ""
 description: "Optical gas imaging for methane and VOC emissions detection in oil and gas operations."

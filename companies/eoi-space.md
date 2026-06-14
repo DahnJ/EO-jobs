@@ -3,7 +3,7 @@ name: "EOI Space"
 status: "active"
 website: "https://eoi.space/"
 careers_urls: ["https://earthobservantinc.applytojob.com/apply/"]
-locations: ["Lafayette, Colorado, US"]
+locations: ["🇺🇸 Lafayette, Colorado, US"]
 remote: ""
 remote_evidence: ""
 description: "High-resolution satellite imagery and Earth observation via Very Low Earth Orbit constellation."

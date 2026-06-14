@@ -3,7 +3,7 @@ name: "Spacemetric"
 status: "active"
 website: "http://spacemetric.com"
 careers_urls: ["http://spacemetric.com/vacancies/"]
-locations: ["Zwolle, Netherlands"]
+locations: ["🇳🇱 Zwolle, Netherlands"]
 remote: ""
 remote_evidence: ""
 description: "EO image managment solutions"

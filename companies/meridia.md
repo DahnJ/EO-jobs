@@ -3,7 +3,7 @@ name: "Meridia"
 status: "active"
 website: "https://www.meridia.land/"
 careers_urls: ["https://meridiaverify.com/career"]
-locations: ["Global operations (35+ countries)"]
+locations: ["🌐 Global operations (35+ countries)"]
 remote: ""
 remote_evidence: ""
 description: "Commodity sourcing compliance platform using satellite imagery for EUDR/DCF verification."

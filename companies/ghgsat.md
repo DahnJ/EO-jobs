@@ -4,7 +4,7 @@ status: "active"
 website: "https://www.ghgsat.com/en/"
 careers_urls: ["https://www.linkedin.com/company/ghgsat/jobs/"]
 locations: ["🇨🇦 Montreal, Canada"]
-remote: "Canada-based"
+remote: "Yes (Canada)"
 remote_evidence: ""
 description: "Hyperspectral constellation, greenhouse gases, monitoring tools"
 satellites: ""

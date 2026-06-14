@@ -4,7 +4,7 @@ status: "active"
 website: "https://www.cyient.com/"
 careers_urls: ["https://cyient.wd3.myworkdayjobs.com/careers", "https://www.linkedin.com/company/cyient/jobs/"]
 locations: ["🇮🇳 🇬🇧 🇦🇺 Many locations worldwide (India, UK, Australia, ..)"]
-remote: "Some"
+remote: "Hybrid"
 remote_evidence: ""
 description: "Large technology company, has teams focusing on EO & geospatial"
 satellites: ""

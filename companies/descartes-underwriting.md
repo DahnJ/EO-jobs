@@ -3,7 +3,7 @@ name: "Descartes Underwriting"
 status: "active"
 website: "https://www.descartesunderwriting.com/"
 careers_urls: ["https://careers.descartesunderwriting.com/"]
-locations: ["Paris, France", "Singapore", "London", "Sydney"]
+locations: ["🇫🇷 Paris, France", "🇸🇬 Singapore", "🇬🇧 London", "🇦🇺 Sydney"]
 remote: ""
 remote_evidence: "20+ offices in 10 countries with international opportunities mentioned, but no explicit remote policy stated."
 description: "Parametric insurance using high-resolution Earth Observation data for climate and emerging risks."

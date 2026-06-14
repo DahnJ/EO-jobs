@@ -4,7 +4,7 @@ status: "active"
 website: "https://ursaspace.com/"
 careers_urls: ["https://twitter.com/ursaspace?lang=en"]
 locations: ["🇺🇸 Ithaca, USA"]
-remote: "US based"
+remote: "Yes (US)"
 remote_evidence: ""
 description: "SAR platform & marketplace"
 satellites: ""

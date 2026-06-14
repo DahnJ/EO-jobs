@@ -4,7 +4,7 @@ status: "active"
 website: "https://descarteslabs.com/"
 careers_urls: ["https://jobs.lever.co/descarteslabs.com"]
 locations: ["🇺🇸 Santa Fe, USA"]
-remote: "Yes (~US?)"
+remote: "Yes (US)"
 remote_evidence: ""
 description: "Agriculture, sustainability, monitoring, data & AI"
 satellites: ""

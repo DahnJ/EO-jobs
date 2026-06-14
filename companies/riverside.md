@@ -3,7 +3,7 @@ name: "Riverside"
 status: "defunct"
 website: "https://www.riverside.com"
 careers_urls: ["https://www.riverside.com/careers"]
-locations: ["Fort Collins, USA"]
+locations: ["🇺🇸 Fort Collins, USA"]
 remote: ""
 remote_evidence: ""
 description: "EO: river/environmental decision support"

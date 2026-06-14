@@ -4,7 +4,7 @@ status: "active"
 website: "https://umbra.space/"
 careers_urls: ["https://careers.umbra.space/"]
 locations: ["🇺🇸 Santa Barbara, USA", "🇺🇸 Austin, USA"]
-remote: "US based"
+remote: "Yes (US)"
 remote_evidence: ""
 description: "SAR & RF constellation"
 satellites: "Yes"

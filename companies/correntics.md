@@ -3,7 +3,7 @@ name: "Correntics"
 status: "active"
 website: "https://www.correntics.com/"
 careers_urls: ["https://www.correntics.com/careers/"]
-locations: ["Zürich, Switzerland"]
+locations: ["🇨🇭 Zürich, Switzerland"]
 remote: ""
 remote_evidence: "No explicit remote policy stated on careers page."
 description: "Climate risk analytics and sustainability SaaS platform for enterprise value chain risk assessment."

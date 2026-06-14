@@ -3,7 +3,7 @@ name: "Veritree"
 status: "active"
 website: "https://www.veritree.com/"
 careers_urls: ["https://apply.workable.com/veritree/"]
-locations: ["Canada (Coast Salish Nations territories)", "Global operations"]
+locations: ["🇨🇦 Canada (Coast Salish Nations territories)", "🌐 Global operations"]
 remote: ""
 remote_evidence: ""
 description: "Tree-planting and reforestation platform with geospatial monitoring and impact dashboards."

@@ -3,7 +3,7 @@ name: "Auracle Remote Sensing"
 status: "active"
 website: "http://www.auracleremotesensing.com"
 careers_urls: ["x"]
-locations: ["Vancouver, Canada"]
+locations: ["🇨🇦 Vancouver, Canada"]
 remote: ""
 remote_evidence: ""
 description: "Deep-penetrating SAR (MUD SAR) for subsurface, water, utilities and geohazard monitoring"

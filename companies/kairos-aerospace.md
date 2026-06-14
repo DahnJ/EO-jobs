@@ -3,7 +3,7 @@ name: "Kairos Aerospace"
 status: "unknown"
 website: "http://kairosaerospace.com"
 careers_urls: ["https://jobs.lever.co/kairosaerospace/"]
-locations: ["Mountain View, USA"]
+locations: ["🇺🇸 Mountain View, USA"]
 remote: ""
 remote_evidence: ""
 description: "Oil & gas industry infrastructure leak detection"

@@ -4,7 +4,7 @@ status: "active"
 website: "https://www.spinergie.com/"
 careers_urls: ["https://www.spinergie.com/careers", "https://www.linkedin.com/company/spinergie/jobs/"]
 locations: ["🇫🇷 Paris, France", "🇺🇸 Houston, USA"]
-remote: "Yes (France-based?)"
+remote: "Yes (France)"
 remote_evidence: ""
 description: "Maritime technology, operations optimization, emission reduction, leverages satellite data"
 satellites: ""

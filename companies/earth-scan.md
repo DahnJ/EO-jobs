@@ -3,7 +3,7 @@ name: "EarthScan"
 status: "active"
 website: "https://www.earth-scan.com/"
 careers_urls: ["https://www.earth-scan.com/careers"]
-locations: ["London, UK"]
+locations: ["🇬🇧 London, UK"]
 remote: ""
 remote_evidence: ""
 description: "Climate risk analytics software platform analyzing physical climate risks for business assets and regulatory reporting."

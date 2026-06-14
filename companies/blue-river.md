@@ -4,7 +4,7 @@ status: "active"
 website: "https://bluerivertechnology.com/"
 careers_urls: ["https://bluerivertechnology.com/join-us/", "https://www.linkedin.com/company/bluerivertech/jobs/"]
 locations: ["🇺🇸 Multiple locations, USA"]
-remote: "US based"
+remote: "Yes (US)"
 remote_evidence: ""
 description: "AggTech, intelligent machinery"
 satellites: ""

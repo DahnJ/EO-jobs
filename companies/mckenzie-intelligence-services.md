@@ -4,7 +4,7 @@ status: "active"
 website: "https://www.mckenzieintelligence.com/"
 careers_urls: ["https://www.mckenzieintelligence.com/careers/"]
 locations: ["🇬🇧 London, UK"]
-remote: "Yes (UK-based?)"
+remote: "Yes (UK)"
 remote_evidence: ""
 description: "Analytics, consulting, insurance"
 satellites: ""

@@ -4,7 +4,7 @@ status: "active"
 website: "https://planetobserver.com/"
 careers_urls: []
 locations: ["🇫🇷 Clermont, France"]
-remote: "?"
+remote: ""
 remote_evidence: ""
 description: "Geospatial data provider (satellite imagery & elevation data)"
 satellites: ""

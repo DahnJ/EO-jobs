@@ -4,7 +4,7 @@ status: "active"
 website: "https://orbitalsidekick.com/"
 careers_urls: ["https://jobs.lever.co/orbitalsidekick", "https://www.linkedin.com/company/orbital-sidekick/jobs/"]
 locations: ["🇺🇸 San Francisco, USA"]
-remote: "US based"
+remote: "Yes (US)"
 remote_evidence: ""
 description: "Hyperspectral constellation, sustainability & energy"
 satellites: "Yes"

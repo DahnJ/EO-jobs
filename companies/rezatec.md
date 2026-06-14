@@ -3,7 +3,7 @@ name: "Rezatec"
 status: "active"
 website: "https://www.rezatec.com"
 careers_urls: ["https://www.rezatec.com/about/working-for-rezatec/"]
-locations: ["Didcot, UK"]
+locations: ["🇬🇧 Didcot, UK"]
 remote: ""
 remote_evidence: ""
 description: "EO+GIS: All-purpose"

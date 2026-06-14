@@ -3,7 +3,7 @@ name: "Airbus Defence and Space"
 status: "active"
 website: "https://space-solutions.airbus.com/"
 careers_urls: ["x"]
-locations: ["Toulouse, France"]
+locations: ["🇫🇷 Toulouse, France"]
 remote: ""
 remote_evidence: ""
 description: "EO: All-purpose, Government/Defence intelligence"

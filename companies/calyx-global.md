@@ -3,7 +3,7 @@ name: "Calyx Global"
 status: "active"
 website: "https://calyxglobal.com/"
 careers_urls: ["https://www.linkedin.com/company/calyx-global/jobs/"]
-locations: ["Global operations"]
+locations: ["🌐 Global operations"]
 remote: ""
 remote_evidence: ""
 description: "Independent carbon credit ratings and analysis platform; not Earth Observation."

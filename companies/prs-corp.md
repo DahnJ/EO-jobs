@@ -3,7 +3,7 @@ name: "PRS Corp"
 status: "unknown"
 website: "https://prscorp.ca/"
 careers_urls: ["x"]
-locations: ["Vancouver, Canada"]
+locations: ["🇨🇦 Vancouver, Canada"]
 remote: ""
 remote_evidence: ""
 description: "EO: All-purpose"
