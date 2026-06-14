@@ -14,7 +14,7 @@ links: {}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"
-type_reason: "default (no exclusion signal)"
+type_reason: "AI-powered vegetation intelligence from satellite/aerial data [agent]"
 ---
 
 [discovery-sweep 2026-06-14] 20tree.ai redirects to Overstory.ai, which now operates as Overstory.com.

@@ -14,5 +14,5 @@ links: {"crunchbase": "https://www.crunchbase.com/organization/environment-syste
 source: "original list"
 last_checked: ""
 type: "consultancy"
-type_reason: "describes itself as a consultancy"
+type_reason: "Environmental and agricultural data consultancy [agent]"
 ---

@@ -14,5 +14,5 @@ links: {"linkedin": "https://www.linkedin.com/company/lobelia-earth/?originalSub
 source: "original list"
 last_checked: ""
 type: "commercial-eo"
-type_reason: "default (no exclusion signal)"
+type_reason: "Climate risk assessment using EO/satellite data. [agent]"
 ---

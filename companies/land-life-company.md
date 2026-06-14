@@ -9,12 +9,12 @@ remote_evidence: ""
 description: "Nature restoration and reforestation company operating high-integrity restoration at scale."
 satellites: ""
 category: ""
-listed: true
+listed: false
 links: {}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"
-type: "commercial-eo"
-type_reason: "default (no exclusion signal)"
+type: "not-eo"
+type_reason: "Land restoration and reforestation; not EO-focused. [agent]"
 ---
 
 [discovery-sweep 2026-06-14] Not Earth Observation; land restoration and tree-planting focused.

@@ -14,5 +14,5 @@ links: {"crunchbase": "https://www.crunchbase.com/organization/climate-x", "link
 source: "original list"
 last_checked: ""
 type: "commercial-eo"
-type_reason: "default (no exclusion signal)"
+type_reason: "Climate resilience using satellite/weather data. [agent]"
 ---

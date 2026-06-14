@@ -13,8 +13,8 @@ listed: false
 links: {}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
-type: "commercial-eo"
-type_reason: "default (no exclusion signal)"
+type: "conglomerate"
+type_reason: "Subsidiary of Swedish Space Corp [agent]"
 ---
 
 Discovered via the EO companies Google Sheet (2026-06); unverified.

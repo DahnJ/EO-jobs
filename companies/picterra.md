@@ -14,5 +14,5 @@ links: {"crunchbase": "https://www.crunchbase.com/organization/picterra", "linke
 source: "original list"
 last_checked: ""
 type: "commercial-eo"
-type_reason: "default (no exclusion signal)"
+type_reason: "AI analysis platform for satellite EO imagery. [agent]"
 ---

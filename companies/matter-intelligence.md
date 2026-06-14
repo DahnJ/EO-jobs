@@ -13,8 +13,8 @@ listed: false
 links: {}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"
-type: "commercial-eo"
-type_reason: "default (no exclusion signal)"
+type: "not-eo"
+type_reason: "Website unavailable; cannot verify EO focus. [agent]"
 ---
 
 [discovery-sweep 2026-06-14] Website connection refused after retry

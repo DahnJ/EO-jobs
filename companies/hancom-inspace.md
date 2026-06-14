@@ -14,7 +14,7 @@ links: {}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"
-type_reason: "default (no exclusion signal)"
+type_reason: "Satellite imagery data collection/analysis [agent]"
 ---
 
 [discovery-sweep 2026-06-14] No dedicated careers page found

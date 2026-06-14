@@ -14,7 +14,7 @@ links: {"crunchbase": "https://www.crunchbase.com/organization/kayrros", "linked
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"
-type_reason: "default (no exclusion signal)"
+type_reason: "EO analytics for climate risk [agent]"
 ---
 
 Acquired by Energy Aspects (2026-05); brand & site still operational

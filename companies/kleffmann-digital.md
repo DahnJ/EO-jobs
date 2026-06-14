@@ -13,8 +13,8 @@ listed: false
 links: {}
 source: "awesome 2026-06"
 last_checked: "2026-06-14"
-type: "commercial-eo"
-type_reason: "default (no exclusion signal)"
+type: "not-eo"
+type_reason: "Farm management telemetry; no EO/satellite input. [agent]"
 ---
 
 Discovered via awesome (2026-06); unverified.

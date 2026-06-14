@@ -14,5 +14,5 @@ links: {"crunchbase": "https://www.crunchbase.com/organization/hydrosat", "linke
 source: "original list"
 last_checked: ""
 type: "commercial-eo"
-type_reason: "default (no exclusion signal)"
+type_reason: "Thermal satellite constellation for agriculture [agent]"
 ---

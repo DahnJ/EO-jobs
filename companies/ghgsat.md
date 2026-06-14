@@ -14,7 +14,7 @@ links: {"crunchbase": "https://www.crunchbase.com/organization/ghgsat", "linkedi
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"
-type_reason: "default (no exclusion signal)"
+type_reason: "Hyperspectral satellite constellation [agent]"
 ---
 
 /en/careers/ page is dead (404) 2026-06 — careers URL needs updating; remote unverified

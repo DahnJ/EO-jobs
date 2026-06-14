@@ -14,5 +14,5 @@ links: {"crunchbase": "https://www.crunchbase.com/organization/eagleview-technol
 source: "original list"
 last_checked: ""
 type: "commercial-eo"
-type_reason: "default (no exclusion signal)"
+type_reason: "Aerial imagery and property analytics [agent]"
 ---

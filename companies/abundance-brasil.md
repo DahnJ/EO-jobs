@@ -14,7 +14,7 @@ links: {}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"
 type: "not-eo"
-type_reason: "flagged not-EO during verification"
+type_reason: "Business coaching and consulting; no Earth Observation. [agent]"
 ---
 
 [discovery-sweep 2026-06-14] NOT an Earth Observation company; business coaching only. May be duplicate name.

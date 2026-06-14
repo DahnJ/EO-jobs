@@ -14,5 +14,5 @@ links: {"crunchbase": "https://www.crunchbase.com/organization/planetwatchers", 
 source: "original list"
 last_checked: ""
 type: "commercial-eo"
-type_reason: "default (no exclusion signal)"
+type_reason: "SAR satellite data analysis provider [agent]"
 ---

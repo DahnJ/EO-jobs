@@ -14,5 +14,5 @@ links: {"crunchbase": "https://www.crunchbase.com/organization/makepath", "linke
 source: "original list"
 last_checked: ""
 type: "commercial-eo"
-type_reason: "default (no exclusion signal)"
+type_reason: "Spatial data science FOSS tools for geospatial/EO. [agent]"
 ---

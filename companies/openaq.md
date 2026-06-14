@@ -14,7 +14,7 @@ links: {}
 source: "awesome 2026-06"
 last_checked: "2026-06-14"
 type: "nonprofit"
-type_reason: "nonprofit/NGO language"
+type_reason: "Nonprofit open air-quality data platform [agent]"
 ---
 
 Discovered via awesome (2026-06); unverified.

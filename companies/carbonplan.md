@@ -14,5 +14,5 @@ links: {"crunchbase": "https://carbonplan.org/funding", "linkedin": "https://www
 source: "original list"
 last_checked: ""
 type: "nonprofit"
-type_reason: "nonprofit/NGO language"
+type_reason: "Nonprofit data science for carbon removal [agent]"
 ---

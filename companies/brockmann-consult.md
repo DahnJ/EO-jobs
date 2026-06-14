@@ -9,10 +9,10 @@ remote_evidence: ""
 description: "Environmental data and EO, software solutions"
 satellites: ""
 category: ""
-listed: true
+listed: false
 links: {"crunchbase": "https://www.crunchbase.com/organization/brockmann-consult", "linkedin": "https://www.linkedin.com/company/brockmann-consult/", "twitter": "https://twitter.com/BrockmannCon"}
 source: "original list"
 last_checked: ""
-type: "commercial-eo"
-type_reason: "default (no exclusion signal)"
+type: "consultancy"
+type_reason: "Environmental data and EO consultancy firm [agent]"
 ---

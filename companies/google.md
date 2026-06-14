@@ -9,10 +9,10 @@ remote_evidence: ""
 description: "GEE, Maps, AI"
 satellites: ""
 category: ""
-listed: true
+listed: false
 links: {"crunchbase": "https://www.crunchbase.com/organization/google", "linkedin": "https://www.linkedin.com/company/google/", "twitter": "https://twitter.com/Google"}
 source: "original list"
 last_checked: ""
-type: "commercial-eo"
-type_reason: "default (no exclusion signal)"
+type: "conglomerate"
+type_reason: "GEE/Maps is small part of conglomerate [agent]"
 ---

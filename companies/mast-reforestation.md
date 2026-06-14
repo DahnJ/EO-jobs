@@ -9,12 +9,12 @@ remote_evidence: ""
 description: "Post-wildfire forest restoration and carbon removal through biomass operations."
 satellites: ""
 category: ""
-listed: true
+listed: false
 links: {}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"
-type: "commercial-eo"
-type_reason: "default (no exclusion signal)"
+type: "not-eo"
+type_reason: "Forest restoration and carbon removal; not EO-focused. [agent]"
 ---
 
 [discovery-sweep 2026-06-14] Not Earth Observation; focused on reforestation and carbon credits.

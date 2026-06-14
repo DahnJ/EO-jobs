@@ -14,5 +14,5 @@ links: {"crunchbase": "https://www.crunchbase.com/organization/array-labs", "lin
 source: "original list"
 last_checked: ""
 type: "commercial-eo"
-type_reason: "default (no exclusion signal)"
+type_reason: "3D imaging satellite constellation [agent]"
 ---

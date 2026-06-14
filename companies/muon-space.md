@@ -14,7 +14,7 @@ links: {"crunchbase": "https://www.crunchbase.com/organization/muon-space", "lin
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"
-type_reason: "default (no exclusion signal)"
+type_reason: "Remote sensing satellite missions [agent]"
 ---
 
 https://twitter.com/amlewis4/status/1544434763313713153

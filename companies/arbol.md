@@ -14,5 +14,5 @@ links: {"crunchbase": "https://www.crunchbase.com/organization/arbol-markets", "
 source: "original list"
 last_checked: ""
 type: "commercial-eo"
-type_reason: "default (no exclusion signal)"
+type_reason: "Parametric insurance using weather/climate satellite data indices. [agent]"
 ---

@@ -13,8 +13,8 @@ listed: false
 links: {}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
-type: "not-eo"
-type_reason: "flagged not-EO during verification"
+type: "commercial-eo"
+type_reason: "EO river/environmental decision support [agent]"
 ---
 
 Discovered via the EO companies Google Sheet (2026-06); unverified.

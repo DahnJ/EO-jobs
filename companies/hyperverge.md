@@ -14,7 +14,7 @@ links: {}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "not-eo"
-type_reason: "flagged not-EO during verification"
+type_reason: "Identity verification and KYC; not Earth Observation. [agent]"
 ---
 
 Discovered via the EO companies Google Sheet (2026-06); unverified.

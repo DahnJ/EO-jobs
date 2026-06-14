@@ -9,12 +9,12 @@ remote_evidence: "Some team members work remotely, others collaborate in person;
 description: "Wildfire and extreme weather risk intelligence software for forecasting, spread predictions and flood risk assessment."
 satellites: ""
 category: ""
-listed: true
+listed: false
 links: {}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"
-type: "commercial-eo"
-type_reason: "default (no exclusion signal)"
+type: "not-eo"
+type_reason: "Risk modeling platform; not primary EO/satellite provider. [agent]"
 ---
 
 [discovery-sweep 2026-06-14] Risk modeling platform, not EO/satellite company.

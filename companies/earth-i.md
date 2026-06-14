@@ -9,12 +9,12 @@ remote_evidence: ""
 description: "Future sat constellation (optical, VHR, launch 2019), EO data reseller"
 satellites: ""
 category: ""
-listed: false
+listed: true
 links: {}
 source: "awesome 2026-06"
 last_checked: "2026-06-14"
-type: "reseller"
-type_reason: "describes itself as a data reseller"
+type: "commercial-eo"
+type_reason: "Satellite constellation and EO data reseller [agent]"
 ---
 
 Discovered via awesome (2026-06); unverified.

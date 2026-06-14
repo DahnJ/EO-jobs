@@ -14,5 +14,5 @@ links: {"crunchbase": "https://www.crunchbase.com/organization/liveeo", "linkedi
 source: "original list"
 last_checked: ""
 type: "commercial-eo"
-type_reason: "default (no exclusion signal)"
+type_reason: "Infrastructure monitoring via EO [agent]"
 ---

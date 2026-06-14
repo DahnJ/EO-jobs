@@ -14,5 +14,5 @@ links: {"crunchbase": "https://www.crunchbase.com/organization/aistech", "linked
 source: "original list"
 last_checked: ""
 type: "commercial-eo"
-type_reason: "default (no exclusion signal)"
+type_reason: "Thermal imagery and remote sensing from aircraft/satellites [agent]"
 ---

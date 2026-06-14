@@ -14,7 +14,7 @@ links: {"crunchbase": "https://www.crunchbase.com/organization/utilis-israel-inc
 source: "original list"
 last_checked: ""
 type: "commercial-eo"
-type_reason: "default (no exclusion signal)"
+type_reason: "SAR satellite for leak detection [agent]"
 ---
 
 [dedup] merged duplicate(s) utilis — Utilis rebranded to ASTERRA; same site asterra.io

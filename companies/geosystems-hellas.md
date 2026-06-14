@@ -14,7 +14,7 @@ links: {}
 source: "awesome 2026-06"
 last_checked: "2026-06-14"
 type: "reseller"
-type_reason: "describes itself as a data reseller"
+type_reason: "Geospatial software reseller [agent]"
 ---
 
 Discovered via awesome (2026-06); unverified.

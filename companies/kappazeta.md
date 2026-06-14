@@ -14,5 +14,5 @@ links: {"linkedin": "https://www.linkedin.com/company/kappazeta-ltd/"}
 source: "original list"
 last_checked: ""
 type: "commercial-eo"
-type_reason: "default (no exclusion signal)"
+type_reason: "SAR monitoring and agriculture analytics [agent]"
 ---

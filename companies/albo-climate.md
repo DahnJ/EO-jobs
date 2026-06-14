@@ -14,5 +14,5 @@ links: {"crunchbase": "https://www.crunchbase.com/organization/albo-systems", "l
 source: "original list"
 last_checked: ""
 type: "commercial-eo"
-type_reason: "default (no exclusion signal)"
+type_reason: "Carbon sequestration evaluation via satellite [agent]"
 ---

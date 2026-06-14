@@ -14,5 +14,5 @@ links: {"crunchbase": "https://www.crunchbase.com/organization/iqps", "twitter":
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"
-type_reason: "default (no exclusion signal)"
+type_reason: "SAR satellite constellation [agent]"
 ---

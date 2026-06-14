@@ -14,7 +14,7 @@ links: {}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "software"
-type_reason: "point-cloud / photogrammetry software tool"
+type_reason: "3D point cloud analysis software tool. [agent]"
 ---
 
 Discovered via the EO companies Google Sheet (2026-06); unverified.
