@@ -20,3 +20,5 @@ type_reason: "default (no exclusion signal)"
 Discovered via sheet:Satellite Operator (2026-06); unverified.
 
 Acquired by Redwire (Sept 2024); herasys.com redirects to rdw.com.
+
+[data-check] website rdw.com is Redwire, not Hera Systems — wrong URL, needs re-verification

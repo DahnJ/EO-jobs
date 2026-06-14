@@ -1,0 +1,8 @@
+[
+  {"slugs": ["asterra", "utilis"], "keep": "asterra",
+   "reason": "Utilis rebranded to ASTERRA; same site asterra.io"},
+  {"slugs": ["mckenzie-intelligence", "mckenzie-intelligence-services"], "keep": "mckenzie-intelligence",
+   "reason": "same company, redundant 'services' suffix; same site mckenzieintelligence.com"},
+  {"slugs": ["vito-remote-sensing", "vito-rs"], "keep": "vito-remote-sensing",
+   "reason": "same org VITO; keep the EO-specific remote-sensing entry"}
+]
