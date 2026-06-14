@@ -1,9 +1,9 @@
 ---
 name: "CultiVision"
-status: "unknown"
+status: "active"
 website: "https://culti-vision.com/"
 careers_urls: []
-locations: []
+locations: ["🇮🇶 Erbil, Iraq"]
 remote: ""
 remote_evidence: ""
 description: "EO: All-purpose"
@@ -12,7 +12,7 @@ category: ""
 listed: false
 links: {}
 source: "awesome 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via awesome (2026-06); unverified.

@@ -1,9 +1,9 @@
 ---
 name: "Hera Systems"
-status: "unknown"
-website: "http://www.herasys.com"
+status: "acquired"
+website: "https://rdw.com/"
 careers_urls: []
-locations: []
+locations: ["🇺🇸 San Jose, USA"]
 remote: ""
 remote_evidence: ""
 description: "12U EO cubesats (optical, launch 2017)"
@@ -12,7 +12,9 @@ category: ""
 listed: false
 links: {}
 source: "sheet:Satellite Operator 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via sheet:Satellite Operator (2026-06); unverified.
+
+Acquired by Redwire (Sept 2024); herasys.com redirects to rdw.com.

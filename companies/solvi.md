@@ -1,18 +1,20 @@
 ---
 name: "Solvi"
-status: "unknown"
-website: "https://solvi.nu"
+status: "active"
+website: "https://solvi.ag"
 careers_urls: []
-locations: []
+locations: ["🇸🇪 Gothenburg, Sweden"]
 remote: ""
 remote_evidence: ""
-description: "Software for drone-based crop management"
+description: "Drone-imagery analytics for ag field-trial assessment"
 satellites: ""
 category: ""
 listed: false
 links: {}
 source: "sheet:Digital Farming 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via sheet:Digital Farming (2026-06); unverified.
+
+solvi.nu redirects to solvi.ag; drone-focused.

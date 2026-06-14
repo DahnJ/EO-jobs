@@ -1,6 +1,6 @@
 ---
 name: "Granular"
-status: "unknown"
+status: "acquired"
 website: "https://www.granular.ag"
 careers_urls: []
 locations: []
@@ -12,7 +12,9 @@ category: ""
 listed: false
 links: {}
 source: "sheet:Digital Farming 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via sheet:Digital Farming (2026-06); unverified.
+
+Acquired by Corteva. not-EO (farm management).

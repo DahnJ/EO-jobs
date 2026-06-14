@@ -1,9 +1,9 @@
 ---
 name: "Apollo Agriculture"
-status: "unknown"
+status: "active"
 website: "https://www.apolloagriculture.com/"
-careers_urls: []
-locations: []
+careers_urls: ["https://www.apolloagriculture.com/work-with-us"]
+locations: ["🇰🇪 Nairobi, Kenya"]
 remote: ""
 remote_evidence: ""
 description: "Agri support and finances platform"
@@ -12,7 +12,9 @@ category: ""
 listed: false
 links: {}
 source: "sheet:Digital Farming 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via sheet:Digital Farming (2026-06); unverified.
+
+not-EO: farmer financing/inputs/insurance platform.

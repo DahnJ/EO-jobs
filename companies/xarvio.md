@@ -1,9 +1,9 @@
 ---
 name: "xarvio"
-status: "unknown"
-website: "https://www.xarvio.com/de/de.html"
+status: "active"
+website: "https://ag.xarvio.com/germany"
 careers_urls: []
-locations: []
+locations: ["🇩🇪 Germany"]
 remote: ""
 remote_evidence: ""
 description: "Crop Insights"
@@ -12,7 +12,9 @@ category: ""
 listed: false
 links: {}
 source: "sheet:Digital Farming 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via sheet:Digital Farming (2026-06); unverified.
+
+Brand of BASF Digital Farming GmbH; jobs via BASF careers.

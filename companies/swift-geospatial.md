@@ -1,9 +1,9 @@
 ---
 name: "Swift Geospatial"
-status: "unknown"
-website: "https://swiftgeospatial.solutions/"
+status: "active"
+website: "https://swiftgeospatial.com/"
 careers_urls: []
-locations: []
+locations: ["🇿🇦 Pretoria, South Africa"]
 remote: ""
 remote_evidence: ""
 description: "EO for Forest, Mine, Agriculture"
@@ -12,7 +12,9 @@ category: ""
 listed: false
 links: {}
 source: "awesome 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via awesome (2026-06); unverified.
+
+swiftgeospatial.solutions redirects to .com.

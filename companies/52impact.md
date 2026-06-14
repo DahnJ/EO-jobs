@@ -1,9 +1,9 @@
 ---
 name: "52Impact"
-status: "unknown"
+status: "active"
 website: "https://www.52impact.nl/"
 careers_urls: []
-locations: []
+locations: ["🇳🇱 Amersfoort, Netherlands"]
 remote: ""
 remote_evidence: ""
 description: "Risk assessment & mapping"
@@ -12,7 +12,9 @@ category: ""
 listed: false
 links: {}
 source: "awesome 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via awesome (2026-06); unverified.
+
+Linked to sister company NEO.

@@ -1,18 +1,20 @@
 ---
 name: "3vGeomatics"
-status: "unknown"
-website: "https://3vgeomatics.com/"
+status: "acquired"
+website: "https://www.orica.com/digital-solutions/geosolutions/3vgeomatics"
 careers_urls: []
-locations: []
+locations: ["🇨🇦 Vancouver, Canada"]
 remote: ""
 remote_evidence: ""
-description: "InSAR for hazard monitoring"
+description: "InSAR ground deformation & hazard monitoring; now part of Orica Digital Solutions"
 satellites: ""
 category: ""
 listed: false
 links: {}
 source: "awesome 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via awesome (2026-06); unverified.
+
+3vgeomatics.com redirects to orica.com; acquired by Orica.

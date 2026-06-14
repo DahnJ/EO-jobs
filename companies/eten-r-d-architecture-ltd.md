@@ -1,18 +1,20 @@
 ---
 name: "ETEN R&D Architecture Ltd."
-status: "unknown"
-website: "eten.com.tr"
+status: "active"
+website: "https://eten.com.tr"
 careers_urls: []
-locations: []
+locations: ["🇹🇷 Antalya, Turkey"]
 remote: ""
 remote_evidence: ""
-description: "InSAR Analysis & Disaster risk assesment"
+description: "InSAR satellite deformation monitoring (mm precision) for risk detection, plus architecture services"
 satellites: ""
 category: ""
 listed: false
 links: {}
 source: "awesome 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via awesome (2026-06); unverified.
+
+TLS cert mismatch on fetch; confirmed via search.

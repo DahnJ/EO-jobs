@@ -1,9 +1,9 @@
 ---
 name: "RSS-Hydro"
-status: "unknown"
-website: "https://rss-hydro.lu/"
+status: "active"
+website: "https://www.rsshydro.lu/"
 careers_urls: []
-locations: []
+locations: ["🇱🇺 Kayl, Luxembourg"]
 remote: ""
 remote_evidence: ""
 description: "R&D, Remote Sensing, Environmental consulting, UAV, flooding"
@@ -12,7 +12,9 @@ category: ""
 listed: false
 links: {}
 source: "awesome 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via awesome (2026-06); unverified.
+
+rss-hydro.lu redirects to rsshydro.lu.

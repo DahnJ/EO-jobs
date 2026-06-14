@@ -1,9 +1,9 @@
 ---
 name: "iFarmer Asia"
-status: "unknown"
-website: "https://ifarmer.asia/en/home"
-careers_urls: []
-locations: []
+status: "active"
+website: "https://ifarmer.asia"
+careers_urls: ["https://ifarmer.asia/careers"]
+locations: ["🇧🇩 Dhaka, Bangladesh"]
 remote: ""
 remote_evidence: ""
 description: "Farming supply chain platform"
@@ -12,7 +12,9 @@ category: ""
 listed: false
 links: {}
 source: "sheet:Digital Farming 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via sheet:Digital Farming (2026-06); unverified.
+
+not-EO: agri supply-chain/fintech.

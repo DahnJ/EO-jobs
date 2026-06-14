@@ -1,9 +1,9 @@
 ---
 name: "eLEAF"
-status: "unknown"
+status: "active"
 website: "https://eleaf.com/"
-careers_urls: []
-locations: []
+careers_urls: ["https://eleaf.com/careers/"]
+locations: ["🇳🇱 Wageningen, Netherlands"]
 remote: ""
 remote_evidence: ""
 description: "EO: Solutions for crop production and water management"
@@ -12,7 +12,7 @@ category: ""
 listed: false
 links: {}
 source: "awesome 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via awesome (2026-06); unverified.

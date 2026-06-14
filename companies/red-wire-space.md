@@ -1,18 +1,20 @@
 ---
 name: "Red Wire Space"
-status: "unknown"
-website: "https://redwirespace.com/"
-careers_urls: []
-locations: []
+status: "active"
+website: "https://rdw.com/"
+careers_urls: ["https://rdw.com/careers/"]
+locations: ["🇺🇸 Jacksonville, USA"]
 remote: ""
 remote_evidence: ""
-description: "12U EO cubesats (optical, launch 2017)"
+description: "Aerospace & defense company building space infrastructure"
 satellites: ""
 category: ""
 listed: false
 links: {}
 source: "awesome 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via awesome (2026-06); unverified.
+
+redwirespace.com redirects to rdw.com (Redwire Corp, NYSE: RDW).

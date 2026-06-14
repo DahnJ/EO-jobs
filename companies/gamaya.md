@@ -1,18 +1,20 @@
 ---
 name: "Gamaya"
-status: "unknown"
-website: "https://gamaya.com/en_us/"
+status: "active"
+website: "https://gamaya.com/"
 careers_urls: []
 locations: []
 remote: ""
 remote_evidence: ""
-description: "Hyperspectral UAV data for crop insights"
+description: "AI platform for sugarcane crop and yield optimization"
 satellites: ""
 category: ""
 listed: false
 links: {}
 source: "awesome 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via awesome (2026-06); unverified.
+
+gamaya.com/en_us/ 404; corrected to root. Focus narrowed to sugarcane.

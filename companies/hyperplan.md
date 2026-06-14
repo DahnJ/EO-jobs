@@ -1,18 +1,20 @@
 ---
 name: "Hyperplan"
-status: "unknown"
-website: "https://www.hyperplan.fr/en"
+status: "active"
+website: "https://hyperplan.ag/"
 careers_urls: []
-locations: []
+locations: ["🇫🇷 Bidart, France"]
 remote: ""
 remote_evidence: ""
-description: "Agriculture & crop insights"
+description: "Digital agriculture: parcel-level crop intelligence across 25 countries"
 satellites: ""
 category: ""
 listed: false
 links: {}
 source: "awesome 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via awesome (2026-06); unverified.
+
+hyperplan.fr redirects to hyperplan.ag.

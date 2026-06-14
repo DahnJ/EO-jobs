@@ -1,9 +1,9 @@
 ---
 name: "Farmshots"
-status: "unknown"
+status: "acquired"
 website: "http://farmshots.com"
 careers_urls: []
-locations: []
+locations: ["🇺🇸 USA"]
 remote: ""
 remote_evidence: ""
 description: "EO crop insights platform"
@@ -12,7 +12,9 @@ category: ""
 listed: false
 links: {}
 source: "sheet:Digital Farming 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via sheet:Digital Farming (2026-06); unverified.
+
+Acquired by Syngenta (2018), into AgriEdge; farmshots.com no longer resolves.
