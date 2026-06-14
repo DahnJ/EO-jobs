@@ -68,13 +68,31 @@ def process(row: pd.Series) -> pd.Series:
     })
 
 
+def to_markdown_minimal(df: pd.DataFrame) -> str:
+    """Render a left-aligned pipe table with minimal-width cells.
+
+    Unlike ``DataFrame.to_markdown`` (which pads every column to its widest
+    cell), this keeps each row independent: changing one cell only changes that
+    row's line, so refresh diffs stay row-local and reviewable. GitHub renders
+    this identically to the padded form.
+    """
+    cols = list(df.columns)
+    lines = [
+        "| " + " | ".join(cols) + " |",
+        "|" + "|".join([":---"] * len(cols)) + "|",
+    ]
+    for _, row in df.iterrows():
+        lines.append("| " + " | ".join(str(row[c]) for c in cols) + " |")
+    return "\n".join(lines)
+
+
 def main() -> None:
     df = pd.read_csv(CSV_PATH, usecols=COLUMNS, na_values=NA_VALUES)
     df = df.iloc[df["Name"].str.lower().argsort()]
     result = df.fillna("").apply(process, axis=1)
 
     intro = INTRO_PATH.read_text()
-    md = intro + result.to_markdown(index=False)
+    md = intro + to_markdown_minimal(result)
     README_PATH.write_text(md)
     print(f"Wrote {README_PATH} ({len(df)} companies)")
 
