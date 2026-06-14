@@ -1,9 +1,9 @@
 ---
 name: "Agroapps"
-status: "unknown"
-website: "https://agroapps.gr/en/home/"
+status: "active"
+website: "https://agroapps.gr/en/"
 careers_urls: []
-locations: []
+locations: ["🇬🇷 Greece"]
 remote: ""
 remote_evidence: ""
 description: "Services for farm management advisory, climate and weather forecast"
@@ -12,7 +12,9 @@ category: ""
 listed: false
 links: {}
 source: "sheet:Digital Farming 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via sheet:Digital Farming (2026-06); unverified.
+
+/en/home/ 404s; /en/ works.

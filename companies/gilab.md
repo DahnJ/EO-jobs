@@ -1,9 +1,9 @@
 ---
 name: "Gilab"
-status: "unknown"
+status: "active"
 website: "https://gilab.rs/"
 careers_urls: []
-locations: []
+locations: ["🇷🇸 Belgrade, Serbia"]
 remote: ""
 remote_evidence: ""
 description: "GIS + EO: All-purpose"
@@ -12,7 +12,7 @@ category: ""
 listed: false
 links: {}
 source: "awesome 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via awesome (2026-06); unverified.

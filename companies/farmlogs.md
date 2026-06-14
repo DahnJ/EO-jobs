@@ -1,9 +1,9 @@
 ---
 name: "Farmlogs"
-status: "unknown"
-website: "https://farmlogs.com"
+status: "renamed"
+website: "https://www.bushelpowered.com/farmers"
 careers_urls: []
-locations: []
+locations: ["🇺🇸 Fargo, USA"]
 remote: ""
 remote_evidence: ""
 description: "Farm managment software"
@@ -12,7 +12,9 @@ category: ""
 listed: false
 links: {}
 source: "sheet:Digital Farming 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via sheet:Digital Farming (2026-06); unverified.
+
+farmlogs.com redirects to Bushel; consolidated as Bushel Farm. not-EO.

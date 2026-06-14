@@ -1,9 +1,9 @@
 ---
 name: "Chesapeake Conservancy"
-status: "unknown"
+status: "active"
 website: "https://chesapeakeconservancy.org"
 careers_urls: []
-locations: []
+locations: ["🇺🇸 Annapolis, USA"]
 remote: ""
 remote_evidence: ""
 description: "GIS&EO for conversation"
@@ -12,7 +12,9 @@ category: ""
 listed: false
 links: {}
 source: "awesome 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via awesome (2026-06); unverified.
+
+501(c)(3) nonprofit conservation org.

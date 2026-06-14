@@ -1,9 +1,9 @@
 ---
 name: "earth-i"
-status: "unknown"
+status: "active"
 website: "https://earthi.space/"
-careers_urls: []
-locations: []
+careers_urls: ["https://earthi.space/careers/"]
+locations: ["🇬🇧 Guildford, UK"]
 remote: ""
 remote_evidence: ""
 description: "Future sat constellation (optical, VHR, launch 2019), EO data reseller"
@@ -12,7 +12,7 @@ category: ""
 listed: false
 links: {}
 source: "awesome 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via awesome (2026-06); unverified.

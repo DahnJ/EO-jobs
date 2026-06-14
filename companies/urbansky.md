@@ -1,9 +1,9 @@
 ---
 name: "UrbanSky"
-status: "unknown"
+status: "active"
 website: "https://www.urbansky.com/"
-careers_urls: []
-locations: []
+careers_urls: ["https://urbansky.com/careers"]
+locations: ["🇺🇸 Denver, USA"]
 remote: ""
 remote_evidence: ""
 description: "Microballoons for EO"
@@ -12,7 +12,7 @@ category: ""
 listed: false
 links: {}
 source: "awesome 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via awesome (2026-06); unverified.

@@ -1,9 +1,9 @@
 ---
 name: "Floodlight"
-status: "unknown"
-website: "https://floodlightinvest.com/"
+status: "active"
+website: "https://floodlightglobal.com/"
 careers_urls: []
-locations: []
+locations: ["🇺🇸 Los Angeles, USA"]
 remote: ""
 remote_evidence: ""
 description: "Satellite emission & risk data platform"
@@ -12,7 +12,9 @@ category: ""
 listed: false
 links: {}
 source: "awesome 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via awesome (2026-06); unverified.
+
+floodlightinvest.com redirects to floodlightglobal.com.

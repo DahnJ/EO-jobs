@@ -1,18 +1,20 @@
 ---
 name: "Planet IQ"
-status: "unknown"
+status: "active"
 website: "https://planetiq.com/"
-careers_urls: []
-locations: []
-remote: ""
-remote_evidence: ""
+careers_urls: ["https://planetiq.com/company/careers/"]
+locations: ["🇺🇸 Golden, USA"]
+remote: "Hybrid"
+remote_evidence: "'Hybrid (Golden, CO) Preferred, Remote Considered' (planetiq.com careers)"
 description: "Weather satellite constellation"
 satellites: ""
 category: ""
 listed: false
 links: {}
 source: "awesome 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via awesome (2026-06); unverified.
+
+GNSS-RO weather satellite constellation.

@@ -1,9 +1,9 @@
 ---
 name: "Indigo Ag"
-status: "unknown"
+status: "active"
 website: "https://www.indigoag.com/"
-careers_urls: []
-locations: []
+careers_urls: ["https://www.indigoag.com/careers"]
+locations: ["🇺🇸 Boston, USA"]
 remote: ""
 remote_evidence: ""
 description: "Crop intelligence platform"
@@ -12,7 +12,7 @@ category: ""
 listed: false
 links: {}
 source: "sheet:Digital Farming 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via sheet:Digital Farming (2026-06); unverified.

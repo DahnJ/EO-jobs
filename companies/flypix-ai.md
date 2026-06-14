@@ -1,9 +1,9 @@
 ---
 name: "Flypix AI"
-status: "unknown"
+status: "active"
 website: "https://flypix.ai/"
-careers_urls: []
-locations: []
+careers_urls: ["https://flypix.ai/careers/"]
+locations: ["🇩🇪 Darmstadt, Germany"]
 remote: ""
 remote_evidence: ""
 description: "EO: AI object analysis"
@@ -12,7 +12,7 @@ category: ""
 listed: false
 links: {}
 source: "awesome 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via awesome (2026-06); unverified.

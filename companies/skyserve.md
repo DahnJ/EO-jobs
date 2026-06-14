@@ -1,9 +1,9 @@
 ---
 name: "Skyserve"
-status: "unknown"
+status: "active"
 website: "https://www.skyserve.ai/"
 careers_urls: []
-locations: []
+locations: ["🇮🇳 Bengaluru, India"]
 remote: ""
 remote_evidence: ""
 description: "Edge Computing for satellite Onboard GeoAI & MLOps"
@@ -12,7 +12,9 @@ category: ""
 listed: false
 links: {}
 source: "awesome 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via awesome (2026-06); unverified.
+
+Edge compute for satellite onboard GeoAI.

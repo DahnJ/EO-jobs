@@ -1,9 +1,9 @@
 ---
 name: "Gim"
-status: "unknown"
+status: "active"
 website: "https://www.gim.be/en"
-careers_urls: []
-locations: []
+careers_urls: ["https://www.gim.be/en/about-us/working-at-gim"]
+locations: ["🇧🇪 Leuven, Belgium"]
 remote: ""
 remote_evidence: ""
 description: "GIS+EO: All-purpose"
@@ -12,7 +12,9 @@ category: ""
 listed: false
 links: {}
 source: "awesome 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via awesome (2026-06); unverified.
+
+Part of the Merkator group.

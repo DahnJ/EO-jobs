@@ -1,7 +1,7 @@
 ---
 name: "Hexagon Geospatial"
-status: "unknown"
-website: "https://www.hexagongeospatial.com"
+status: "renamed"
+website: "https://hexagon.com/company/divisions/safety-infrastructure-geospatial"
 careers_urls: []
 locations: []
 remote: ""
@@ -12,7 +12,9 @@ category: ""
 listed: false
 links: {}
 source: "awesome 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via awesome (2026-06); unverified.
+
+hexagongeospatial.com redirects to Hexagon's SI&G division; part of Hexagon AB.

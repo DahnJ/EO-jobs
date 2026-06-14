@@ -1,9 +1,9 @@
 ---
 name: "Solafune"
-status: "unknown"
+status: "active"
 website: "https://company.solafune.com/"
-careers_urls: []
-locations: []
+careers_urls: ["https://company.solafune.com/career"]
+locations: ["🇯🇵 Tokyo, Japan"]
 remote: ""
 remote_evidence: ""
 description: "Geospatial data analytics and satellite data competitions"
@@ -12,7 +12,7 @@ category: ""
 listed: false
 links: {}
 source: "awesome 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via awesome (2026-06); unverified.

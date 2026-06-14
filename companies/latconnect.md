@@ -1,18 +1,20 @@
 ---
 name: "Latconnect"
-status: "unknown"
-website: "https://latconnect60.com/"
+status: "active"
+website: "https://www.lc60.ai/"
 careers_urls: []
-locations: []
+locations: ["🇦🇺 Perth, Australia"]
 remote: ""
 remote_evidence: ""
-description: "Multispectral and hyperspectral satellites"
+description: "EO company: high-res multispectral and SWIR satellite imaging for agriculture, sustainability, climate"
 satellites: ""
 category: ""
 listed: false
 links: {}
 source: "awesome 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via awesome (2026-06); unverified.
+
+latconnect60.com refused connection; now operates as lc60.ai.

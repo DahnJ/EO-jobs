@@ -1,9 +1,9 @@
 ---
 name: "Agrian"
-status: "unknown"
-website: "https://home.agrian.com"
+status: "acquired"
+website: "https://www.telus.com/agcg/agribusiness"
 careers_urls: []
-locations: []
+locations: ["🇺🇸 Fresno, USA"]
 remote: ""
 remote_evidence: ""
 description: "Farm managment software"
@@ -12,7 +12,9 @@ category: ""
 listed: false
 links: {}
 source: "sheet:Digital Farming 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via sheet:Digital Farming (2026-06); unverified.
+
+Acquired by TELUS (2020), now TELUS Agriculture. not-EO (farm management software).

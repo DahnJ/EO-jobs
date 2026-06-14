@@ -1,9 +1,9 @@
 ---
 name: "Geosystems Hellas"
-status: "unknown"
+status: "active"
 website: "https://geosystems-hellas.gr/"
-careers_urls: []
-locations: []
+careers_urls: ["https://geosystems-hellas.gr/career/"]
+locations: ["🇬🇷 Athens, Greece"]
 remote: ""
 remote_evidence: ""
 description: "Geospatial Analysis Software reseller, GIS+EO: All-purpose"
@@ -12,7 +12,7 @@ category: ""
 listed: false
 links: {}
 source: "awesome 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via awesome (2026-06); unverified.

@@ -1,9 +1,9 @@
 ---
 name: "HyVista Corporation"
-status: "unknown"
+status: "active"
 website: "https://hyvista.com/"
 careers_urls: []
-locations: []
+locations: ["🇦🇺 Castle Hill, Australia"]
 remote: ""
 remote_evidence: ""
 description: "Hyperspectral aerial RS & photogrammetry"
@@ -12,7 +12,7 @@ category: ""
 listed: false
 links: {}
 source: "awesome 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via awesome (2026-06); unverified.

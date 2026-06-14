@@ -1,9 +1,9 @@
 ---
 name: "Datum"
-status: "unknown"
+status: "active"
 website: "https://datum.az/"
 careers_urls: []
-locations: []
+locations: ["🇦🇿 Baku, Azerbaijan"]
 remote: ""
 remote_evidence: ""
 description: "GIS + EO: All-purpose"
@@ -12,7 +12,7 @@ category: ""
 listed: false
 links: {}
 source: "awesome 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via awesome (2026-06); unverified.

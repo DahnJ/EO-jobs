@@ -1,9 +1,9 @@
 ---
 name: "SarVision"
-status: "unknown"
+status: "active"
 website: "https://www.sarvision.nl/"
 careers_urls: []
-locations: []
+locations: ["🇳🇱 Wageningen, Netherlands"]
 remote: ""
 remote_evidence: ""
 description: "EO: Sar analytics"
@@ -12,7 +12,7 @@ category: ""
 listed: false
 links: {}
 source: "awesome 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via awesome (2026-06); unverified.

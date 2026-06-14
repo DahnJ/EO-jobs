@@ -1,18 +1,20 @@
 ---
 name: "Hummingbirdtechnology"
-status: "unknown"
+status: "acquired"
 website: "https://hummingbirdtech.com"
 careers_urls: []
-locations: []
+locations: ["🇬🇧 London, UK"]
 remote: ""
 remote_evidence: ""
-description: "Crop insights platform"
+description: "AI crop analytics from satellite/drone/plane imagery"
 satellites: ""
 category: ""
 listed: false
 links: {}
 source: "sheet:Digital Farming 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via sheet:Digital Farming (2026-06); unverified.
+
+Acquired by Agreena.
