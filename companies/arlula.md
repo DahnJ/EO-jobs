@@ -13,4 +13,6 @@ listed: true
 links: {"crunchbase": "https://www.crunchbase.com/organization/arlula", "linkedin": "https://www.linkedin.com/company/arlula/", "twitter": "https://twitter.com/Arlula_Space"}
 source: "original list"
 last_checked: ""
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

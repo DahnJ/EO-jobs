@@ -13,4 +13,6 @@ listed: true
 links: {"linkedin": "https://www.linkedin.com/company/crop-safe/", "twitter": "https://twitter.com/crop_safe", "instagram": "https://www.instagram.com/crop_safe/"}
 source: "original list"
 last_checked: ""
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

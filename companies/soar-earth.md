@@ -13,4 +13,6 @@ listed: true
 links: {"crunchbase": "https://www.crunchbase.com/organization/soar-c90e", "linkedin": "https://www.linkedin.com/company/soar-earth/", "twitter": "https://twitter.com/Soar_Earth", "youtube": "https://www.youtube.com/channel/UCklyklf0WEeHZtlY-X-q28g", "medium": "https://medium.com/soar-earth"}
 source: "original list"
 last_checked: ""
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

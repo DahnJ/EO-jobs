@@ -13,4 +13,6 @@ listed: true
 links: {"crunchbase": "https://www.crunchbase.com/organization/cloud-to-street", "linkedin": "https://www.linkedin.com/company/cloud-to-street/", "twitter": "https://twitter.com/cloud2street?lang=en"}
 source: "original list"
 last_checked: ""
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

@@ -13,4 +13,6 @@ listed: true
 links: {"crunchbase": "https://www.crunchbase.com/organization/mckenzie-intelligence-services-ltd", "linkedin": "https://www.linkedin.com/company/mckenzie-intelligence-services-ltd/", "twitter": "https://twitter.com/mckenzie_int", "youtube": "https://www.youtube.com/channel/UC2756RlVQipvKxgqUtZyCLA/playlists"}
 source: "original list"
 last_checked: ""
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

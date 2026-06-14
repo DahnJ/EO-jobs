@@ -13,4 +13,6 @@ listed: true
 links: {"crunchbase": "https://www.crunchbase.com/organization/development-seed", "linkedin": "https://www.linkedin.com/company/development-seed/", "twitter": "https://twitter.com/developmentseed"}
 source: "original list"
 last_checked: ""
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

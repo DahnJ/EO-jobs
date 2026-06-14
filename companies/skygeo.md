@@ -13,4 +13,6 @@ listed: true
 links: {"crunchbase": "https://www.crunchbase.com/organization/skygeo", "linkedin": "https://www.linkedin.com/company/skygeo/", "twitter": "https://twitter.com/SkyGeoInc"}
 source: "original list"
 last_checked: ""
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

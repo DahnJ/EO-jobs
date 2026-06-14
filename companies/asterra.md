@@ -13,4 +13,6 @@ listed: true
 links: {"crunchbase": "https://www.crunchbase.com/organization/utilis-israel-inc", "linkedin": "https://www.linkedin.com/company/utilisltd/", "twitter": "https://twitter.com/asterratech", "youtube": "https://www.youtube.com/channel/UC0GiZovioMK-mMpOZZmUSAA"}
 source: "original list"
 last_checked: ""
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

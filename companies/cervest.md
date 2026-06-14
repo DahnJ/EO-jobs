@@ -13,4 +13,6 @@ listed: true
 links: {"crunchbase": "https://www.crunchbase.com/organization/cervest", "linkedin": "https://www.linkedin.com/company/cervest/", "twitter": "https://twitter.com/CervestEarth", "github": "https://github.com/Cervest"}
 source: "original list"
 last_checked: ""
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

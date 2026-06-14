@@ -13,4 +13,6 @@ listed: true
 links: {"crunchbase": "https://www.crunchbase.com/organization/onesoil", "linkedin": "https://www.linkedin.com/company/onesoil/?originalSubdomain=ch", "twitter": "https://twitter.com/onesoilplatform", "github": "https://github.com/OneSoil-Platform", "youtube": "https://www.youtube.com/channel/UCRZaRW_DZs_d3XTxg9axRIA"}
 source: "original list"
 last_checked: ""
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

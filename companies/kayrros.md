@@ -9,10 +9,12 @@ remote_evidence: ""
 description: "Analytics, climate risk for energy & environment"
 satellites: ""
 category: ""
-listed: true
+listed: false
 links: {"crunchbase": "https://www.crunchbase.com/organization/kayrros", "linkedin": "https://www.linkedin.com/company/kayrros/", "twitter": "https://twitter.com/Kayrros"}
 source: "original list"
 last_checked: "2026-06-14"
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---
 
 Acquired by Energy Aspects (2026-05); brand & site still operational

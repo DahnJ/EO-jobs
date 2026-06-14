@@ -13,4 +13,6 @@ listed: true
 links: {"crunchbase": "https://www.crunchbase.com/organization/pixxel-81c6", "linkedin": "https://www.linkedin.com/company/pixxelspace/", "twitter": "https://twitter.com/PixxelSpace"}
 source: "original list"
 last_checked: "2026-06-14"
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

@@ -13,6 +13,8 @@ listed: false
 links: {}
 source: "awesome 2026-06"
 last_checked: "2026-06-14"
+type: "consultancy"
+type_reason: "describes itself as a consultancy"
 ---
 
 Discovered via awesome (2026-06); unverified.

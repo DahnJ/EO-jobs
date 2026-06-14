@@ -9,8 +9,10 @@ remote_evidence: ""
 description: "ESG emissions monitoring"
 satellites: ""
 category: ""
-listed: true
+listed: false
 links: {"linkedin": "https://www.linkedin.com/company/scepterair/", "twitter": "https://mobile.twitter.com/scepterinc"}
 source: "original list"
 last_checked: ""
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

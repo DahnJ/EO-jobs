@@ -13,6 +13,8 @@ listed: true
 links: {"crunchbase": "https://www.crunchbase.com/organization/muon-space", "linkedin": "https://www.linkedin.com/company/muon-space/", "twitter": "https://twitter.com/MuonSpace"}
 source: "original list"
 last_checked: "2026-06-14"
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---
 
 https://twitter.com/amlewis4/status/1544434763313713153

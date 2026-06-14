@@ -13,4 +13,6 @@ listed: true
 links: {"crunchbase": "https://www.crunchbase.com/organization/aerospacelab", "linkedin": "https://www.linkedin.com/company/aerospacelab/", "twitter": "https://twitter.com/aerospacelab_be"}
 source: "original list"
 last_checked: "2026-06-14"
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

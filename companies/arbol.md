@@ -13,4 +13,6 @@ listed: true
 links: {"crunchbase": "https://www.crunchbase.com/organization/arbol-markets", "linkedin": "https://www.linkedin.com/company/arbolinc/", "twitter": "https://twitter.com/arbolMarket", "github": "https://github.com/arbol-Project", "medium": "https://arbolmarket.medium.com/"}
 source: "original list"
 last_checked: ""
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

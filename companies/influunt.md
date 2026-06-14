@@ -9,8 +9,10 @@ remote_evidence: ""
 description: "Water risk intelligence"
 satellites: ""
 category: ""
-listed: true
+listed: false
 links: {"crunchbase": "https://www.crunchbase.com/organization/influunt", "linkedin": "https://www.linkedin.com/company/influuntai/about/", "twitter": "https://twitter.com/InfluuntAI", "github": "https://github.com/Influunt-Systems"}
 source: "original list"
 last_checked: ""
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

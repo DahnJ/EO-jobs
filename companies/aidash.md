@@ -13,4 +13,6 @@ listed: true
 links: {"crunchbase": "https://www.crunchbase.com/organization/aidash", "linkedin": "https://www.linkedin.com/company/aidash/", "twitter": "https://twitter.com/aidashinc", "youtube": "https://www.youtube.com/channel/UCdU1Xuncxsn0YXY-YigOoJg"}
 source: "original list"
 last_checked: ""
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

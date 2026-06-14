@@ -13,4 +13,6 @@ listed: true
 links: {"crunchbase": "https://www.crunchbase.com/organization/satsure-d0b9", "linkedin": "https://www.linkedin.com/company/satsure/", "twitter": "https://twitter.com/sat_sure"}
 source: "original list"
 last_checked: ""
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

@@ -13,4 +13,6 @@ listed: true
 links: {"crunchbase": "https://www.crunchbase.com/organization/solargis", "linkedin": "https://www.linkedin.com/company/solargis?originalSubdomain=sk", "twitter": "https://twitter.com/solargis", "youtube": "https://www.youtube.com/channel/UCJ3mbAUcrsT4kM9YEONd3kQ"}
 source: "original list"
 last_checked: ""
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

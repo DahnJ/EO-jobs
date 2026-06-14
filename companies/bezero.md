@@ -13,4 +13,6 @@ listed: true
 links: {"crunchbase": "https://pitchbook.com/profiles/company/484082-74", "linkedin": "https://www.linkedin.com/company/bezero-carbon/", "twitter": "https://twitter.com/BeZeroCarbon", "github": "https://github.com/BeZeroCarbon", "medium": "https://medium.com/@bezerocarbon"}
 source: "original list"
 last_checked: ""
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

@@ -13,4 +13,6 @@ listed: true
 links: {"crunchbase": "https://www.crunchbase.com/organization/nearmap-com", "linkedin": "https://www.linkedin.com/company/nearmap-com/", "twitter": "https://twitter.com/nearmap"}
 source: "original list"
 last_checked: ""
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

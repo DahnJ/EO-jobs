@@ -13,4 +13,6 @@ listed: true
 links: {"crunchbase": "https://www.crunchbase.com/organization/earthshot-labs", "linkedin": "https://www.linkedin.com/company/earthshotlabs/", "twitter": "https://twitter.com/earthshotlabs?lang=en", "youtube": "https://www.youtube.com/channel/UCNaBNNZi9zi0OG_Lva4VycQ"}
 source: "original list"
 last_checked: ""
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

@@ -13,4 +13,6 @@ listed: true
 links: {"crunchbase": "https://www.crunchbase.com/organization/pachama", "linkedin": "https://www.linkedin.com/company/pachama/", "twitter": "https://twitter.com/pachamainc?lang=en"}
 source: "original list"
 last_checked: ""
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

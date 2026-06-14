@@ -13,4 +13,6 @@ listed: true
 links: {"crunchbase": "https://www.crunchbase.com/organization/breezo", "linkedin": "https://www.linkedin.com/company/blueskyhq/", "twitter": "https://twitter.com/blueskylab", "github": "https://github.com/blueskyanalytics", "youtube": "https://www.youtube.com/channel/UCTcGB8IhXWop5QXnYUJmRag"}
 source: "original list"
 last_checked: ""
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

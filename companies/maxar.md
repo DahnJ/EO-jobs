@@ -13,4 +13,6 @@ listed: true
 links: {"crunchbase": "https://www.crunchbase.com/organization/macdonald-dettwiler-and-associates", "linkedin": "https://www.linkedin.com/company/maxar-technologies-ltd/", "twitter": "https://twitter.com/Maxar"}
 source: "original list"
 last_checked: ""
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

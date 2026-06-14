@@ -13,4 +13,6 @@ listed: true
 links: {"crunchbase": "https://www.crunchbase.com/organization/xailient", "linkedin": "https://www.linkedin.com/company/xailient/", "twitter": "https://twitter.com/xailient", "youtube": "https://www.youtube.com/channel/UCCv1TVIY3KmJbern-edBRvw"}
 source: "original list"
 last_checked: ""
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

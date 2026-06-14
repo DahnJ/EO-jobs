@@ -9,8 +9,10 @@ remote_evidence: ""
 description: "Forest mapping products & consulting, SAR, LiDAR"
 satellites: ""
 category: ""
-listed: true
+listed: false
 links: {"crunchbase": "https://www.crunchbase.com/organization/carbomap", "linkedin": "https://www.linkedin.com/company/carbomap/", "twitter": "https://twitter.com/Carbomap"}
 source: "original list"
 last_checked: ""
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

@@ -13,4 +13,6 @@ listed: true
 links: {"crunchbase": "https://www.crunchbase.com/organization/geospatial-insight", "linkedin": "https://www.linkedin.com/company/geospatial-insight-limited/", "twitter": "https://twitter.com/geo_insight"}
 source: "original list"
 last_checked: ""
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

@@ -9,10 +9,12 @@ remote_evidence: ""
 description: "Satellite imagery + AI daily crop monitoring for rural credit & ag insurance"
 satellites: ""
 category: ""
-listed: false
+listed: true
 links: {}
 source: "sheet:Digital Farming 2026-06"
 last_checked: "2026-06-14"
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---
 
 Discovered via sheet:Digital Farming (2026-06); unverified.

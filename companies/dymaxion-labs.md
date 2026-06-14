@@ -13,4 +13,6 @@ listed: true
 links: {"crunchbase": "https://www.crunchbase.com/organization/dymaxion-labs", "linkedin": "https://www.linkedin.com/company/dymaxion-labs/", "twitter": "https://twitter.com/DymaxionLabs", "github": "https://github.com/dymaxionlabs", "youtube": "https://www.youtube.com/channel/UCoUy_EpsH_QaHeLdYvfJlaQ"}
 source: "original list"
 last_checked: ""
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

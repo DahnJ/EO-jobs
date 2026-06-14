@@ -9,8 +9,10 @@ remote_evidence: ""
 description: "Early wildfire detection"
 satellites: ""
 category: ""
-listed: true
+listed: false
 links: {}
 source: "original list"
 last_checked: ""
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

@@ -13,4 +13,6 @@ listed: true
 links: {"crunchbase": "https://www.crunchbase.com/organization/apollo-mapping", "linkedin": "https://www.linkedin.com/company/apollo-mapping/", "twitter": "https://twitter.com/ApolloMapping", "youtube": "https://www.youtube.com/user/ApolloMapping?app=desktop"}
 source: "original list"
 last_checked: ""
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

@@ -13,4 +13,6 @@ listed: true
 links: {"crunchbase": "https://www.crunchbase.com/organization/unseenlabs", "linkedin": "https://www.linkedin.com/company/unseenlabs/", "twitter": "https://twitter.com/unseenlabs"}
 source: "original list"
 last_checked: ""
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

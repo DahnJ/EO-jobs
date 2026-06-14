@@ -13,4 +13,6 @@ listed: true
 links: {"crunchbase": "https://www.crunchbase.com/organization/climavision", "linkedin": "https://www.linkedin.com/company/climavision/", "twitter": "https://mobile.twitter.com/climavision"}
 source: "original list"
 last_checked: ""
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

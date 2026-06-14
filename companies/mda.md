@@ -13,4 +13,6 @@ listed: true
 links: {"crunchbase": "https://www.crunchbase.com/organization/mda-b944", "linkedin": "https://www.linkedin.com/company/mdaspace/?originalSubdomain=ca", "twitter": "https://twitter.com/MDA_space"}
 source: "original list"
 last_checked: ""
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

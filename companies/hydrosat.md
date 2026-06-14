@@ -13,4 +13,6 @@ listed: true
 links: {"crunchbase": "https://www.crunchbase.com/organization/hydrosat", "linkedin": "https://www.linkedin.com/company/hydrosat/", "twitter": "https://twitter.com/hydrosati"}
 source: "original list"
 last_checked: ""
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---
