@@ -25,14 +25,25 @@ truth (full coverage). `README.md` is a *generated, curated view* — only
 
 ## Steps
 
-1. **Sweep sources** (subagents in parallel, each returning a terse `Name|website`
-   list — multiple lenses, because no single source is complete):
-   - GitHub `chrieke/awesome-geospatial-companies` (the 🛰️ EO-focus marker).
-   - Google Sheet CSV export (not the editor URL), across its categories — Earth
-     Observation, Satellite Operator, Digital Farming, UAV/Aerial, GIS/Spatial:
-     `https://docs.google.com/spreadsheets/d/1YieNiDHVTC5CfX13n72fXuceDaubSuyrghgAnxipsbY/export?format=csv&gid=0`
-   - Multi-lens WebSearch (by application: maritime, methane/emissions, forestry/
-     carbon, insurance/risk; by region; by recent funding).
+> **Source strategy (learned).** The DB now has broad coverage, so static rosters
+> are ~saturated (a 2026-06 sweep found 52% of candidates already present) and broad
+> WebSearch is low-SNR (~36% useful, lots of comms/IoT/agtech noise). Discovery's job
+> is now *incremental*: monitor **pre-filtered feeds that refresh over time** and diff
+> new names against the DB. Don't re-scrape static corpora every run.
+
+1. **Sweep recurring, pre-filtered feeds** (subagents in parallel, each returning a
+   terse `Name|website` list):
+   - **EO/space job boards** — the ones in README's "Portals & Jobs" section: Space
+     Talent (`jobs.spacetalent.org`), Payload Jobs, Careers in Space, SpaceCareers.uk,
+     ai-jobs.net, Climatebase. A company posting here is **active and hiring** — so
+     this doubles as the freshness signal for `refresh-eo-jobs`. Highest-leverage
+     source: pull the hiring companies, diff against the DB.
+   - **Funding / news feeds** — TerraWatch Space, Payload, SpaceNews, the Seraphim
+     Space index/quarterly reports, Space Capital. Pull recently-announced EO/space
+     companies and funding rounds (real + new entrants).
+   - *Occasional / gap-fill only* (saturated — don't run every time): GitHub
+     `chrieke/awesome-geospatial-companies`, the Google Sheet categories, or a
+     targeted WebSearch for one specific under-covered region.
 
 2. **B1 dedup.** Concatenate candidates, then drop any whose slug or website domain
    already exists in the DB, plus any matching a known alias in
