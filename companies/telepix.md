@@ -11,7 +11,7 @@ description: "End-to-end satellite solutions from payload development to AI anal
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/telepix-korea/?originalSubdomain=kr", "youtube": "https://www.youtube.com/@telepix110/playlists"}
+links: {"linkedin": "https://www.linkedin.com/company/telepix-korea/?originalSubdomain=kr", "youtube": "https://www.youtube.com/@telepix110/playlists", "crunchbase": "https://www.crunchbase.com/organization/telepix"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

@@ -11,7 +11,7 @@ description: "Unknown - site unreachable."
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/hulaearth/posts", "youtube": "https://www.youtube.com/@hula_earth"}
+links: {"linkedin": "https://www.linkedin.com/company/hulaearth/posts", "youtube": "https://www.youtube.com/@hula_earth", "crunchbase": "https://crunchbase.com/organization/hula-earth", "twitter": "https://twitter.com/hula_earth"}
 source: "awesome 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

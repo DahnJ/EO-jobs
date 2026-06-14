@@ -3,7 +3,7 @@ name: "Space Shift"
 status: "active"
 website: "https://www.spcsft.com"
 careers_urls: ["https://www.spcsft.com/recruit/"]
-locations: []
+locations: ["🇯🇵 Tokyo, Japan"]
 remote: "Yes"
 remote_evidence: "Recruitment page states 'エンジニアはリモートが基本で' (remote work is the standard for engineers)."
 remote_confidence: "high"

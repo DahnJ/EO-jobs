@@ -11,7 +11,7 @@ description: "Earth Observation data processing and analysis."
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/assimila-ltd/", "twitter": "https://twitter.com/assimilaltd"}
+links: {"linkedin": "https://www.linkedin.com/company/assimila-ltd/", "twitter": "https://twitter.com/assimilaltd", "github": "https://github.com/Assimila"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

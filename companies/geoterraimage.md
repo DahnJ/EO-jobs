@@ -11,7 +11,7 @@ description: "Geospatial intelligence and earth observation: agriculture monitor
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/geoterra-image/", "twitter": "https://twitter.com/GeoTerra_Image"}
+links: {"linkedin": "https://www.linkedin.com/company/geoterra-image/", "twitter": "https://twitter.com/GeoTerra_Image", "crunchbase": "https://crunchbase.com/organization/geoterraimage", "youtube": "https://www.youtube.com/c/geoterraimage"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

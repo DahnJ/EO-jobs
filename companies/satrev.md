@@ -11,7 +11,7 @@ description: "Satellite technology company."
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/satrev-s-a/"}
+links: {"linkedin": "https://www.linkedin.com/company/satrev-s-a/", "crunchbase": "https://www.crunchbase.com/organization/satrev"}
 source: "awesome 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

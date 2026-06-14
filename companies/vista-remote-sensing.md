@@ -11,7 +11,7 @@ description: "EO: All-purpose"
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/vistaremotesensingingeosciencesgmbh"}
+links: {"linkedin": "https://www.linkedin.com/company/vistaremotesensingingeosciencesgmbh", "crunchbase": "https://crunchbase.com/organization/vista-geowissenschaftliche-fernerkundung"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

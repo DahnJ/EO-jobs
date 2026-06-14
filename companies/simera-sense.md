@@ -11,7 +11,7 @@ description: "Designs satellite imaging cameras and optical payloads for Earth o
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/simera-sense/"}
+links: {"linkedin": "https://www.linkedin.com/company/simera-sense/", "crunchbase": "https://www.crunchbase.com/organization/simera-sense"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

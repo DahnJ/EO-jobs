@@ -11,7 +11,7 @@ description: "Digital farming solutions using remote sensing and AI for crop mon
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://gr.linkedin.com/company/agroapps-pcc"}
+links: {"linkedin": "https://gr.linkedin.com/company/agroapps-pcc", "crunchbase": "https://www.crunchbase.com/organization/agroapps"}
 source: "sheet:Digital Farming 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

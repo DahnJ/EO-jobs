@@ -11,7 +11,7 @@ description: "GeoAI: property analytics, urban planning, insurance via aerial im
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {}
+links: {"crunchbase": "https://www.crunchbase.com/organization/mapizy", "linkedin": "https://www.linkedin.com/company/mapizy"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

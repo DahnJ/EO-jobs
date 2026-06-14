@@ -11,7 +11,7 @@ description: "Remote sensing consulting services."
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/auracle-geospatial-science-inc-", "youtube": "https://www.youtube.com/@AuracleGeospatial"}
+links: {"linkedin": "https://www.linkedin.com/company/auracle-geospatial-science-inc-", "youtube": "https://www.youtube.com/@AuracleGeospatial", "crunchbase": "https://www.crunchbase.com/organization/auracle-geospatial", "github": "https://github.com/auracle"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

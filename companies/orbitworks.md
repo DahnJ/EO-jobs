@@ -11,7 +11,7 @@ description: "Middle Eastern satellite and Earth observation technology company.
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/Orbitworksuae/", "youtube": "https://www.youtube.com/@Orbitworks-UAE"}
+links: {"linkedin": "https://www.linkedin.com/company/Orbitworksuae/", "youtube": "https://www.youtube.com/@Orbitworks-UAE", "crunchbase": "https://www.crunchbase.com/organization/orbitworks"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

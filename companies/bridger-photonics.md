@@ -11,7 +11,7 @@ description: "Aerial methane detection using Gas Mapping LiDAR technology for en
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "linkedin.com/company/bridger-photonics-inc", "instagram": "instagram.com/bridgerphotonics", "youtube": "youtube.com/@bridgerphotonics"}
+links: {"linkedin": "linkedin.com/company/bridger-photonics-inc", "instagram": "instagram.com/bridgerphotonics", "youtube": "youtube.com/@bridgerphotonics", "crunchbase": "https://www.crunchbase.com/organization/bridger-photonics", "twitter": "https://twitter.com/BridgerPhotonic"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

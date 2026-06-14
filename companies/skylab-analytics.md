@@ -11,7 +11,7 @@ description: "Geospatial data analytics company providing satellite imagery anal
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {}
+links: {"linkedin": "https://www.linkedin.com/company/skylab-analytics", "crunchbase": "https://www.crunchbase.com/organization/skylab-analytics"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

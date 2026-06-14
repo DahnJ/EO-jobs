@@ -11,7 +11,7 @@ description: "Aerial remote sensing specializing in hyperspectral imagery acquis
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {"linkedin": "https://uk.linkedin.com/company/2excelgeo", "twitter": "https://twitter.com/2excelgeo"}
+links: {"linkedin": "https://uk.linkedin.com/company/2excelgeo", "twitter": "https://twitter.com/2excelgeo", "crunchbase": "https://www.crunchbase.com/organization/2excel-aviation"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

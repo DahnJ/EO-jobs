@@ -11,7 +11,7 @@ description: "Satellite-based geospatial solutions."
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://za.linkedin.com/company/astrofica-technologies"}
+links: {"linkedin": "https://za.linkedin.com/company/astrofica-technologies", "twitter": "https://twitter.com/astrofica_sa"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

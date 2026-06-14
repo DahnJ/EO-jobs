@@ -11,7 +11,7 @@ description: "Geospatial analytics and carbon science company specializing in fo
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/space-intelligence/", "twitter": "https://twitter.com/SpaceIntelli"}
+links: {"linkedin": "https://www.linkedin.com/company/space-intelligence/", "twitter": "https://twitter.com/SpaceIntelli", "crunchbase": "https://www.crunchbase.com/organization/space-intelligence"}
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"

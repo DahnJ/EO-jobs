@@ -11,7 +11,7 @@ description: "African Earth observation and geospatial data services provider."
 satellites: ""
 category: ""
 listed: true
-links: {}
+links: {"linkedin": "https://ke.linkedin.com/company/orbital-africa"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

@@ -11,7 +11,7 @@ description: "Forest carbon monitoring using satellite data with 25+ years of co
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/chloris-geospatial", "youtube": "https://www.youtube.com/channel/UC7WyEjReNFjjE84l5Y1qKfg"}
+links: {"linkedin": "https://www.linkedin.com/company/chloris-geospatial", "youtube": "https://www.youtube.com/channel/UC7WyEjReNFjjE84l5Y1qKfg", "crunchbase": "https://www.crunchbase.com/organization/chloris-geospatial", "twitter": "https://twitter.com/chlorisgeo", "github": "https://github.com/chloris-geospatial"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

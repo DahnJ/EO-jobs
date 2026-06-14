@@ -11,7 +11,7 @@ description: "Earth observation and geospatial analytics company."
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://in.linkedin.com/company/satyukt"}
+links: {"linkedin": "https://in.linkedin.com/company/satyukt", "crunchbase": "https://www.crunchbase.com/organization/satyukt"}
 source: "awesome 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

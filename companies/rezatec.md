@@ -3,7 +3,7 @@ name: "Rezatec"
 status: "active"
 website: "https://www.rezatec.com"
 careers_urls: ["https://www.rezatec.com/about/working-for-rezatec/"]
-locations: ["🇬🇧 Didcot, UK"]
+locations: ["🇬🇧 Didcot, Oxfordshire, UK"]
 remote: ""
 remote_evidence: "Careers page accessible but no clear listings visible; insufficient data"
 remote_confidence: "low"
@@ -11,7 +11,7 @@ description: "Geospatial analytics for dam monitoring, pipeline risk analysis, a
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/rezatec/"}
+links: {"linkedin": "https://www.linkedin.com/company/rezatec/", "crunchbase": "https://www.crunchbase.com/organization/rezatec"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

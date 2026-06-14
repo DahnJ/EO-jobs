@@ -3,7 +3,7 @@ name: "Progressive Systems"
 status: "active"
 website: "https://progressivesystems.it/"
 careers_urls: ["https://progressivesystems.it/about-us/work-with-us/"]
-locations: ["🇮🇹 Frascati, Italy"]
+locations: ["🇮🇹 Frascati, Rome, Italy"]
 remote: "No"
 remote_evidence: "Job listing doesn't specify remote work; only office location mentioned (Frascati, Rome)."
 remote_confidence: "medium"

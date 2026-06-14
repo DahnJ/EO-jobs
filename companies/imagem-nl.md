@@ -11,7 +11,7 @@ description: "Geospatial data solutions for climate resilience, urban developmen
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/imagemnl", "youtube": "https://www.youtube.com/channel/UCQvUpDBOeuDifsYqaueveQg"}
+links: {"linkedin": "https://www.linkedin.com/company/imagemnl", "youtube": "https://www.youtube.com/channel/UCQvUpDBOeuDifsYqaueveQg", "crunchbase": "https://crunchbase.com/organization/imagem-nl", "twitter": "https://twitter.com/imagembv"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

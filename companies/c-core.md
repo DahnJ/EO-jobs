@@ -11,7 +11,7 @@ description: "Research-based geotechnical engineering and remote sensing advisor
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/c-core"}
+links: {"linkedin": "https://www.linkedin.com/company/c-core", "github": "https://github.com/C-Core"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

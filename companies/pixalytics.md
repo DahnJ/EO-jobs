@@ -11,7 +11,7 @@ description: "Satellite image analysis and geospatial intelligence."
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {"linkedin": "https://uk.linkedin.com/company/pixalytics-ltd"}
+links: {"linkedin": "https://uk.linkedin.com/company/pixalytics-ltd", "crunchbase": "https://www.crunchbase.com/organization/pixalytics", "github": "https://github.com/pixalytics", "twitter": "https://twitter.com/pixalytics"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

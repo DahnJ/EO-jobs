@@ -11,7 +11,7 @@ description: "Continuous emissions monitoring using hardware sensors and physics
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/qubeiot/", "youtube": "https://www.youtube.com/@qubetechnologies"}
+links: {"linkedin": "https://www.linkedin.com/company/qubeiot/", "youtube": "https://www.youtube.com/@qubetechnologies", "crunchbase": "https://www.crunchbase.com/organization/qube-technologies", "twitter": "https://twitter.com/qubeiot"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

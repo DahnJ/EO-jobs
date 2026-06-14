@@ -3,7 +3,7 @@ name: "Terra Cover"
 status: "active"
 website: "http://www.terracover.ai/"
 careers_urls: ["x"]
-locations: ["🇺🇸 USA"]
+locations: ["🇺🇸 Denver, Colorado, United States"]
 remote: ""
 remote_evidence: "No careers URL available (marked as 'x'), unable to verify"
 remote_confidence: "low"
@@ -11,7 +11,7 @@ description: "Satellite-based Earth observation and geospatial analysis platform
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {}
+links: {"crunchbase": "https://www.crunchbase.com/organization/terra-cover"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

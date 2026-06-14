@@ -11,7 +11,7 @@ description: "Hyperlocal climate risk scoring using machine learning and Earth o
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/terrafuse/"}
+links: {"linkedin": "https://www.linkedin.com/company/terrafuse/", "crunchbase": "https://crunchbase.com/organization/terrafuse"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

@@ -11,7 +11,7 @@ description: "Geospatial information solutions: Open Data, Digital Twins, Earth 
 satellites: ""
 category: ""
 listed: true
-links: {"twitter": "https://twitter.com/getmapgr", "youtube": "https://www.youtube.com/c/getmap"}
+links: {"twitter": "https://twitter.com/getmapgr", "youtube": "https://www.youtube.com/c/getmap", "crunchbase": "https://crunchbase.com/organization/geospatial-enabling-technologies-get", "github": "https://github.com/getmap"}
 source: "awesome 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

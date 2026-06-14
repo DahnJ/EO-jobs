@@ -11,7 +11,7 @@ description: "Small satellite technologies and space-based data services for Ear
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/aac-clyde-space/", "twitter": "https://twitter.com/AACClydeSpace"}
+links: {"linkedin": "https://www.linkedin.com/company/aac-clyde-space/", "twitter": "https://twitter.com/AACClydeSpace", "crunchbase": "https://www.crunchbase.com/organization/aac-clyde-space", "github": "https://github.com/clydespace", "youtube": "https://www.youtube.com/c/Clydespace"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

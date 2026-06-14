@@ -11,7 +11,7 @@ description: "Sensing and geospatial company."
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/sensarbv/"}
+links: {"linkedin": "https://www.linkedin.com/company/sensarbv/", "crunchbase": "https://www.crunchbase.com/organization/sensar"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

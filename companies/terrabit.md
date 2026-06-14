@@ -11,7 +11,7 @@ description: "Satellite intelligence platform for land, mining, and environmenta
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://linkedin.com/company/terrabit-pty-ltd/", "github": "https://github.com/terrabitptyltd", "youtube": "https://youtube.com/@terrabitptyltd"}
+links: {"linkedin": "https://linkedin.com/company/terrabit-pty-ltd/", "github": "https://github.com/terrabitptyltd", "youtube": "https://youtube.com/@terrabitptyltd", "crunchbase": "https://crunchbase.com/organization/terrabit"}
 source: "awesome 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

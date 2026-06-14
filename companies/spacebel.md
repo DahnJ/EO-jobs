@@ -11,7 +11,7 @@ description: "Space systems and software engineering for satellite missions and 
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/spacebel", "youtube": "https://www.youtube.com/@spacebelsa5597"}
+links: {"linkedin": "https://www.linkedin.com/company/spacebel", "youtube": "https://www.youtube.com/@spacebelsa5597", "crunchbase": "https://www.crunchbase.com/organization/spacebel"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

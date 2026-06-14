@@ -3,7 +3,7 @@ name: "Kanop"
 status: "active"
 website: "https://www.kanop.io/"
 careers_urls: ["https://kanop.notion.site/kanop/Careers-kanop-c3b4779be5f34baea604292bc737da2c"]
-locations: ["🇫🇷 France"]
+locations: ["🇫🇷 Gif-sur-Yvette, France"]
 remote: ""
 remote_evidence: "Notion careers page not accessible via web fetch"
 remote_confidence: "low"
@@ -11,7 +11,7 @@ description: "Voluntary Carbon Market reporting"
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/kanop/"}
+links: {"linkedin": "https://www.linkedin.com/company/kanop/", "crunchbase": "https://crunchbase.com/organization/kanop"}
 source: "awesome 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

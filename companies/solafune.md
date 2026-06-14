@@ -11,7 +11,7 @@ description: "Planetary intelligence platform providing geospatial AI analysis f
 satellites: ""
 category: ""
 listed: true
-links: {"github": "https://github.com/Solafune-Inc/solafune-tools"}
+links: {"github": "https://github.com/Solafune-Inc/solafune-tools", "crunchbase": "https://www.crunchbase.com/organization/solafune"}
 source: "awesome 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

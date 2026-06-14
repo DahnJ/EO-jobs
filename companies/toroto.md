@@ -11,7 +11,7 @@ description: "Environmental restoration company using nature-based solutions for
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/toroto/"}
+links: {"linkedin": "https://www.linkedin.com/company/toroto/", "crunchbase": "https://crunchbase.com/organization/toroto"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

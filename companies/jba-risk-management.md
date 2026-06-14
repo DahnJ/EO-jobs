@@ -3,7 +3,7 @@ name: "JBA Risk Management"
 status: "active"
 website: "https://www.jbarisk.com/"
 careers_urls: ["https://www.jbarisk.com/careers/"]
-locations: ["🇬🇧 Skipton, UK", "🇺🇸 United States", "🌍 Europe", "🌏 Asia Pacific"]
+locations: ["🇬🇧 Skipton, United Kingdom"]
 remote: ""
 remote_evidence: "Careers page not accessible (404 error)"
 remote_confidence: "low"
@@ -11,7 +11,7 @@ description: "Global leader in flood risk science providing flood maps, catastro
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "http://www.linkedin.com/company/jba-risk-management/"}
+links: {"linkedin": "http://www.linkedin.com/company/jba-risk-management/", "crunchbase": "https://crunchbase.com/organization/jba-risk-management"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"
