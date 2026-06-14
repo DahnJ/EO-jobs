@@ -69,9 +69,30 @@ Claude Code. A single run executes these stages in order:
     the Agent/Workflow `schema` option so results come back validated, not as
     prose to parse.
 - A subagent that cannot fetch a page (timeout, empty body) returns the row
-  **unchanged** and notes "could not verify" rather than guessing. WebFetch only
-  for this build; JS-heavy pages that come back empty are reported, not retried
-  with a browser.
+  **unchanged** and notes "could not verify" rather than guessing.
+
+#### Fetch strategy: WebFetch-first, browser-fallback
+
+Validated against the sample: hosted ATS boards (BambooHR, Lever, Greenhouse,
+Darwinbox) frequently return **HTTP 403** to WebFetch — and that is exactly
+where per-role remote tags live, so it directly degrades the Remote column.
+
+- **Pass 1 (parallel):** WebFetch subagents, ~10 concurrent. Handles the
+  majority of companies and their own `/careers` pages.
+- **Pass 2 (browser fallback, more sequential):** any company whose careers/ATS
+  URL returned 403 or an empty body in pass 1 is retried through Chrome
+  (`navigate` + `get_page_text`). There is one shared Chrome instance, so this
+  pass is largely sequential — expect ~30–50 of 185 companies to need it.
+
+The browser does two distinct jobs, both confirmed on the sample:
+- Reads genuinely bot-blocked boards (Satellogic's BambooHR board loaded fully
+  in Chrome after a WebFetch 403 → Remote went `low`/unverified → `high`).
+- Disambiguates WebFetch 403s into "alive but blocked" vs "actually gone"
+  (Albedo's Lever board returned a real 404 in Chrome → the jobs-site URL is
+  dead, not blocked).
+
+Only after both passes is a careers page declared truly unreadable and the row
+left unchanged with a "could not verify" note.
 
 ### Stage 2 — Discover new companies
 
@@ -131,5 +152,5 @@ in the data.
 | Unit | Purpose | Depends on |
 |------|---------|------------|
 | `generate_readme.py` | CSV → README.md, headless, deterministic | CSV, pandas |
-| `.claude/skills/refresh-eo-jobs/` | Orchestrates refresh + discovery + PR | WebFetch, subagents, `generate_readme.py`, `gh` |
+| `.claude/skills/refresh-eo-jobs/` | Orchestrates refresh + discovery + PR | WebFetch, Chrome browser tools (fallback), subagents, `generate_readme.py`, `gh` |
 | CSV (in-repo) | Source of truth, edited by agent | — |
