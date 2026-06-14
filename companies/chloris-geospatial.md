@@ -20,3 +20,7 @@ type_reason: "Global biomass measurements from EO [agent]"
 Discovered via the EO companies Google Sheet (2026-06); unverified.
 
 Careers page (BambooHR) 403'd to automated fetch but is the official portal.
+
+[browser 2026-06 2026-06-14] BambooHR board live, only a general-interest form, no open roles (2026-06)
+
+[browser 2026-06 2026-06-14] BambooHR board live, only a general-interest form, no open roles (2026-06)

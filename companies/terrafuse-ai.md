@@ -20,3 +20,7 @@ type_reason: "EO/satellite core business [agent]"
 Discovered via the EO companies Google Sheet (2026-06); unverified.
 
 Careers page no confirmed listings; copyright 2021 (possibly dormant).
+
+[browser 2026-06 2026-06-14] Workable board live but no open roles (2026-06); remote undetermined
+
+[browser 2026-06 2026-06-14] Workable board live but no open roles (2026-06); remote undetermined

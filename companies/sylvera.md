@@ -2,10 +2,10 @@
 name: "Sylvera"
 status: "active"
 website: "https://www.sylvera.com/"
-careers_urls: ["https://jobs.lever.co/sylvera"]
-locations: ["🇬🇧 London, UK"]
-remote: "Yes (GMT +-4)"
-remote_evidence: "Stored value kept (WebFetch blocked)"
+careers_urls: ["https://jobs.ashbyhq.com/sylvera"]
+locations: ["🇬🇧 London, UK", "🇺🇸 New York, USA", "🇧🇷 São Paulo, Brazil", "🇸🇬 Singapore", "🇯🇵 Tokyo, Japan"]
+remote: "Some positions"
+remote_evidence: "Some positions remote (owner-confirmed); other roles Hybrid London/NY (Ashby board, 2026-06)"
 description: "Carbon credits and environmental impact measurement platform."
 satellites: ""
 category: ""
