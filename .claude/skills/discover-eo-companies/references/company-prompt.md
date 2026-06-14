@@ -16,7 +16,11 @@ For each company produce a JSON object with these exact keys:
 - "slug": lowercase the name, replace each run of non-alphanumeric chars with a
   single hyphen, strip leading/trailing hyphens ("Salo Sciences" → "salo-sciences").
 - "name": the company name as given.
-- "status": "active" | "acquired" | "defunct" | "renamed" | "unknown".
+- "status": "active" | "acquired" | "defunct" | "renamed" | "unknown". **Follow
+  redirects.** If the company's own domain redirects to a DIFFERENT company's site,
+  that's an acquisition/merger — set "acquired"/"renamed" and name the acquirer in
+  `note`. A site that won't load via WebFetch (bot-blocked) is NOT evidence it's
+  active — say so and set "unknown" rather than silently keeping "active".
 - "website": canonical homepage (https).
 - "careers_url": careers/jobs page URL, else "". **Verify it resolves; re-resolve a
   dead one — never leave or report a 404.** ATS boards go stale: a 404 usually means

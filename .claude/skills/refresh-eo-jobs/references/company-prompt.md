@@ -17,7 +17,12 @@ For each company produce a JSON object with these exact keys:
 
 - "slug": the slug given (do not change it).
 - "name": the company name.
-- "status": "active" | "acquired" | "defunct" | "renamed" | "unknown".
+- "status": "active" | "acquired" | "defunct" | "renamed" | "unknown". **Follow
+  redirects.** If the company's own domain redirects to a DIFFERENT company's site
+  (e.g. pachama.com → carbon-direct.com), that's an acquisition/merger — set
+  "acquired" (or "renamed") and name the acquirer in `note`. A site that won't load
+  via WebFetch (bot-blocked / "security verification") is NOT evidence it's active —
+  say so in `note` and set status "unknown" rather than silently keeping "active".
 - "website": canonical homepage (https). If it redirects, use the new URL.
 - "careers_url": careers/jobs page URL, else "". **You MUST verify it resolves and
   re-resolve a dead one — never leave or report a 404.** ATS boards go stale
