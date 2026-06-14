@@ -14,7 +14,7 @@ links: {}
 source: "sheet:Digital Farming 2026-06"
 last_checked: "2026-06-14"
 type: "not-eo"
-type_reason: "flagged not-EO during verification"
+type_reason: "Farm management software without imagery or EO data. [agent]"
 ---
 
 Discovered via sheet:Digital Farming (2026-06); unverified.

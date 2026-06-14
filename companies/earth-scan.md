@@ -14,7 +14,7 @@ links: {}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"
-type_reason: "default (no exclusion signal)"
+type_reason: "Uses geospatial and climate EO data for risk analytics. [agent]"
 ---
 
 [discovery-sweep 2026-06-14] Uses geospatial and climate data but is a software analytics platform, not EO/satellite provider.

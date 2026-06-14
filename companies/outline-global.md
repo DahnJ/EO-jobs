@@ -14,7 +14,7 @@ links: {}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "reseller"
-type_reason: "describes itself as a data reseller"
+type_reason: "EO data reseller and GIS services [agent]"
 ---
 
 Discovered via the EO companies Google Sheet (2026-06); unverified.

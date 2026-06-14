@@ -14,7 +14,7 @@ links: {}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"
-type_reason: "default (no exclusion signal)"
+type_reason: "Ecosystem restoration with satellite EO monitoring. [agent]"
 ---
 
 [discovery-sweep 2026-06-14] Not primarily Earth Observation; on-the-ground restoration with satellite monitoring support.

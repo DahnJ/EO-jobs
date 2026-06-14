@@ -14,7 +14,7 @@ links: {}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"
-type_reason: "default (no exclusion signal)"
+type_reason: "Forest restoration with AI monitoring using EO data. [agent]"
 ---
 
 [discovery-sweep 2026-06-14] Not primarily Earth Observation; on-ground restoration with AI monitoring support.

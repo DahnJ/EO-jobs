@@ -14,7 +14,7 @@ links: {}
 source: "sheet:Digital Farming 2026-06"
 last_checked: "2026-06-14"
 type: "not-eo"
-type_reason: "flagged not-EO during verification"
+type_reason: "Agronomy consulting and seed sales; no satellite or aerial input. [agent]"
 ---
 
 Discovered via sheet:Digital Farming (2026-06); unverified.

@@ -14,5 +14,5 @@ links: {"linkedin": "https://www.linkedin.com/company/first-street-foundation/?o
 source: "original list"
 last_checked: ""
 type: "nonprofit"
-type_reason: "nonprofit/NGO language"
+type_reason: "Nonprofit research on climate risk [agent]"
 ---

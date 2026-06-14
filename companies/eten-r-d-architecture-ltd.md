@@ -14,7 +14,7 @@ links: {}
 source: "awesome 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"
-type_reason: "default (no exclusion signal)"
+type_reason: "InSAR deformation monitoring for risk detection [agent]"
 ---
 
 Discovered via awesome (2026-06); unverified.

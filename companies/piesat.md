@@ -14,7 +14,7 @@ links: {}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"
-type_reason: "default (no exclusion signal)"
+type_reason: "Remote sensing and satellite constellation operator [agent]"
 ---
 
 [discovery-sweep 2026-06-14] HQ and careers page not found on website

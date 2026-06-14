@@ -13,8 +13,8 @@ listed: false
 links: {}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"
-type: "commercial-eo"
-type_reason: "default (no exclusion signal)"
+type: "not-eo"
+type_reason: "Carbon removal company; limited EO verification possible. [agent]"
 ---
 
 [discovery-sweep 2026-06-14] Limited website content; cannot confirm Earth Observation focus or active status details.

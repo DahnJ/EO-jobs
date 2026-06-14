@@ -14,7 +14,7 @@ links: {"crunchbase": "https://www.crunchbase.com/organization/astraea-inc", "li
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"
-type_reason: "default (no exclusion signal)"
+type_reason: "EO analytics platform; analytics arm of Nuview [agent]"
 ---
 
 Acquired by NUVIEW (Feb 2024); operates as its AI/analytics arm

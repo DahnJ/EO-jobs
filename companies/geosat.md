@@ -14,5 +14,5 @@ links: {"linkedin": "https://www.linkedin.com/company/globaleosatellites/", "twi
 source: "original list"
 last_checked: ""
 type: "commercial-eo"
-type_reason: "default (no exclusion signal)"
+type_reason: "Multi-purpose satellite operator [agent]"
 ---

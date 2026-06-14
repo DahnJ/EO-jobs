@@ -14,5 +14,5 @@ links: {"linkedin": "https://www.linkedin.com/company/absolut-sensing/"}
 source: "original list"
 last_checked: ""
 type: "commercial-eo"
-type_reason: "default (no exclusion signal)"
+type_reason: "Hyperspectral constellation for monitoring biosphere/atmosphere [agent]"
 ---

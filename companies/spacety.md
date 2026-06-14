@@ -14,7 +14,7 @@ links: {"crunchbase": "https://www.crunchbase.com/organization/tianyi-research-i
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"
-type_reason: "default (no exclusion signal)"
+type_reason: "EO/satellite core business [agent]"
 ---
 
 OFAC SDN-listed (Changsha entity) since Jan 2023; China office is Changsha, not Beijing

@@ -14,7 +14,7 @@ links: {}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"
-type_reason: "default (no exclusion signal)"
+type_reason: "Aerial LiDAR for methane emissions monitoring [agent]"
 ---
 
 [discovery-sweep 2026-06-14] Not a traditional EO company; specialized emissions monitoring focus

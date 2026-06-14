@@ -9,12 +9,12 @@ remote_evidence: ""
 description: "Digital Agriculture"
 satellites: ""
 category: ""
-listed: true
+listed: false
 links: {}
 source: "sheet:Digital Farming 2026-06"
 last_checked: "2026-06-14"
-type: "commercial-eo"
-type_reason: "default (no exclusion signal)"
+type: "not-eo"
+type_reason: "Ground-based in-field sensors; weak EO framing. [agent]"
 ---
 
 Discovered via sheet:Digital Farming (2026-06); unverified.

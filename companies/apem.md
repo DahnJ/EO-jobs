@@ -14,7 +14,7 @@ links: {}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "consultancy"
-type_reason: "describes itself as a consultancy"
+type_reason: "Environmental and geospatial consultancy firm [agent]"
 ---
 
 Discovered via the EO companies Google Sheet (2026-06); unverified.

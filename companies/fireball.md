@@ -14,5 +14,5 @@ links: {}
 source: "original list"
 last_checked: ""
 type: "commercial-eo"
-type_reason: "default (no exclusion signal)"
+type_reason: "Early wildfire detection via satellite [agent]"
 ---

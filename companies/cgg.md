@@ -9,10 +9,10 @@ remote_evidence: ""
 description: "Solutions for environmental and infrastructure challenges."
 satellites: ""
 category: ""
-listed: true
+listed: false
 links: {"linkedin": "https://www.linkedin.com/company/cgg/", "twitter": "https://twitter.com/CGGcompany"}
 source: "original list"
 last_checked: ""
-type: "commercial-eo"
-type_reason: "default (no exclusion signal)"
+type: "conglomerate"
+type_reason: "Large diversified company; EO is side business [agent]"
 ---

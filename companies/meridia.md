@@ -14,7 +14,7 @@ links: {}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"
-type_reason: "default (no exclusion signal)"
+type_reason: "Supply chain compliance via satellite imagery [agent]"
 ---
 
 [discovery-sweep 2026-06-14] Uses satellite imagery for supply chain compliance verification; geospatial component.

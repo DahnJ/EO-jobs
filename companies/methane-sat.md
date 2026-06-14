@@ -14,5 +14,5 @@ links: {"twitter": "https://twitter.com/MethaneSAT?ref_src=twsrc%5Egoogle%7Ctwca
 source: "original list"
 last_checked: ""
 type: "commercial-eo"
-type_reason: "default (no exclusion signal)"
+type_reason: "Methane-tracking satellite (planned) [agent]"
 ---

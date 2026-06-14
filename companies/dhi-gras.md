@@ -14,7 +14,7 @@ links: {}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"
-type_reason: "default (no exclusion signal)"
+type_reason: "EO for environmental and water monitoring [agent]"
 ---
 
 Discovered via the EO companies Google Sheet (2026-06); unverified.

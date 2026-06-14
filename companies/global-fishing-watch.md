@@ -14,5 +14,5 @@ links: {}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"
 type: "nonprofit"
-type_reason: "nonprofit/NGO language"
+type_reason: "Non-profit organization using satellite data [agent]"
 ---

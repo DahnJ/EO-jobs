@@ -14,5 +14,5 @@ links: {"crunchbase": "https://www.crunchbase.com/organization/nearmap-com", "li
 source: "original list"
 last_checked: ""
 type: "commercial-eo"
-type_reason: "default (no exclusion signal)"
+type_reason: "High-resolution aerial mapping and imagery [agent]"
 ---

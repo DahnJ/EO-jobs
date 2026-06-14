@@ -14,5 +14,5 @@ links: {"crunchbase": "https://www.crunchbase.com/organization/wyvern-d3f9", "li
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"
-type_reason: "default (no exclusion signal)"
+type_reason: "EO/satellite core business [agent]"
 ---

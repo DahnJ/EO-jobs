@@ -14,5 +14,5 @@ links: {"linkedin": "https://www.linkedin.com/company/spacewill/", "twitter": "h
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"
-type_reason: "default (no exclusion signal)"
+type_reason: "EO/satellite core business [agent]"
 ---

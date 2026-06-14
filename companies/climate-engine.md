@@ -14,5 +14,5 @@ links: {"linkedin": "https://linkedin.com/company/climateengine", "twitter": "ht
 source: "original list"
 last_checked: ""
 type: "commercial-eo"
-type_reason: "default (no exclusion signal)"
+type_reason: "Google Earth Engine enterprise EO analytics platform. [agent]"
 ---

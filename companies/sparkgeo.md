@@ -14,5 +14,5 @@ links: {"crunchbase": "https://www.crunchbase.com/organization/sparkgeo", "linke
 source: "original list"
 last_checked: ""
 type: "commercial-eo"
-type_reason: "default (no exclusion signal)"
+type_reason: "Web mapping solutions for geospatial/EO data. [agent]"
 ---

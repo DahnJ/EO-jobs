@@ -100,14 +100,32 @@ remote / can't click approvals** — leave those rows with a "could not verify" 
 
 ## Stage 3 — Classify, regenerate, hand off
 
-1. `.venv/bin/python classify.py` — sets `type` and `listed` on every file. Review
-   its summary: spot obvious misclassifications (e.g. an EO company tagged
-   consultancy/nonprofit) and fix `type` by hand, then re-run.
-2. `.venv/bin/python generate_readme.py` — rebuilds the README from `listed` rows.
-3. **Sanity-check:** `git diff --stat README.md` — changes should be row-local.
+**Classification is an agent judgment, not keyword matching.** The `type` taxonomy
+(commercial-eo | consultancy | reseller | software | conglomerate | nonprofit |
+not-eo) decides README inclusion, and the commercial-eo boundary is genuinely
+fuzzy — so an agent reads each company's stored description and decides.
+
+1. **Classify (agent, A2).** Generate a compact `{slug, name, desc, body}` JSONL of
+   the companies to (re)classify — new ones at minimum, or all — split into batches
+   of ~175. Dispatch Haiku subagents that read a batch and write
+   `companies/_inbox/class_N.json` as `[{slug, type, reason}]`. **Use the BROAD
+   definition** (repo owner's standing decision): a company is `commercial-eo` if it
+   uses EO / satellite / aerial / remote-sensing data as a *core input* — including
+   climate-risk, parametric insurance, carbon MRV, precision-ag, and emissions/
+   methane monitoring built on EO. Reserve `not-eo` for genuinely unrelated
+   businesses (farm-management software, KYC, supply-chain finance, generic AI).
+   *Verify each agent wrote one record per input line* — they sometimes under-deliver
+   and lie in the status line; re-run any shortfall.
+2. `.venv/bin/python classify.py` — applies the agent verdicts from the inbox, plus a
+   CONGLOMERATES safety net, and sets `listed = commercial-eo + active + has careers`.
+   Prints what changed vs the previous types — review it. With no inbox files present
+   it just recomputes `listed` from existing types (use after a hand-edit).
+3. `.venv/bin/python generate_readme.py` — rebuilds the README from `listed` rows.
+4. **Sanity-check:** `git diff --stat README.md` — changes should be row-local.
    A full-table reflow means something regressed; stop and investigate.
-4. `rm -rf companies/_inbox`, then commit the DB files + README together.
-5. **Do not open a PR unless explicitly asked** (repo owner's standing rule). Push
+5. `rm -rf companies/_inbox`, then commit the DB files + README together. (Agent
+   `type`/`reason` are persisted into each file, so the inbox is safe to delete.)
+6. **Do not open a PR unless explicitly asked** (repo owner's standing rule). Push
    the branch and hand over the compare/PR-create link. If asked for a PR, keep the
    body to the changelog in `references/pr-template.md`, nothing else.
 

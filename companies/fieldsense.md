@@ -14,7 +14,7 @@ links: {}
 source: "sheet:Digital Farming 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"
-type_reason: "default (no exclusion signal)"
+type_reason: "Satellite-based crop field monitoring [agent]"
 ---
 
 Discovered via sheet:Digital Farming (2026-06); unverified.

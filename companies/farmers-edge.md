@@ -14,7 +14,7 @@ links: {"crunchbase": "https://www.crunchbase.com/organization/farmers-edge-inc"
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"
-type_reason: "default (no exclusion signal)"
+type_reason: "Precision agriculture with satellite component [agent]"
 ---
 
 Website redirects to corvian.com (likely rebrand to Corvian, unconfirmed); applicantpro jobs site dead

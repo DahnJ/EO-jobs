@@ -14,5 +14,5 @@ links: {"crunchbase": "https://www.crunchbase.com/organization/near-space-labs",
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"
-type_reason: "default (no exclusion signal)"
+type_reason: "High-resolution balloon-based imagery provider [agent]"
 ---

@@ -14,5 +14,5 @@ links: {"crunchbase": "https://www.crunchbase.com/organization/agreena", "linked
 source: "original list"
 last_checked: ""
 type: "commercial-eo"
-type_reason: "default (no exclusion signal)"
+type_reason: "Carbon credits and monitoring from farmland using EO/satellite data. [agent]"
 ---

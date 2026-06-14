@@ -9,12 +9,12 @@ remote_evidence: "Remote-first organization with flexible working hours and days
 description: "AI-powered climate risk analytics for infrastructure assets quantifying physical climate risk and adaptation ROI."
 satellites: ""
 category: ""
-listed: true
+listed: false
 links: {}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"
-type: "commercial-eo"
-type_reason: "default (no exclusion signal)"
+type: "consultancy"
+type_reason: "Climate risk analytics [agent]"
 ---
 
 [discovery-sweep 2026-06-14] Uses EO data in analytics but primarily climate risk modeling, not EO/satellite provider.

@@ -9,10 +9,10 @@ remote_evidence: ""
 description: "IT business consulting, has space/EO teams"
 satellites: ""
 category: ""
-listed: true
+listed: false
 links: {"crunchbase": "https://www.crunchbase.com/organization/cgi", "linkedin": "https://www.linkedin.com/company/cgi/", "twitter": "https://twitter.com/CGI_Global"}
 source: "original list"
 last_checked: ""
-type: "commercial-eo"
-type_reason: "default (no exclusion signal)"
+type: "conglomerate"
+type_reason: "Large IT consulting; space/EO teams within [agent]"
 ---

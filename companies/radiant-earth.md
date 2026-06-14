@@ -14,7 +14,7 @@ links: {}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "nonprofit"
-type_reason: "nonprofit/NGO language"
+type_reason: "Nonprofit/NGO [agent]"
 ---
 
 Discovered via the EO companies Google Sheet (2026-06); unverified.

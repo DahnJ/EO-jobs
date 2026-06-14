@@ -14,7 +14,7 @@ links: {"crunchbase": "https://www.crunchbase.com/organization/blacksky-global",
 source: "original list"
 last_checked: ""
 type: "commercial-eo"
-type_reason: "default (no exclusion signal)"
+type_reason: "Optical satellite constellation [agent]"
 ---
 
 Doesn't develop the satellites in-house (https://twitter.com/spacecasemartin/status/1494401608641396736)
