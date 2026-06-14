@@ -1,0 +1,7 @@
+[project]
+name = "eo-jobs"
+version = "0.1.0"
+description = "Earth Observation company directory: per-company database + generated README"
+requires-python = ">=3.11"
+# Intentionally no dependencies — the pipeline is stdlib-only.
+dependencies = []
