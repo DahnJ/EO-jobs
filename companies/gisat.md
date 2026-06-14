@@ -2,7 +2,7 @@
 name: "Gisat"
 status: "active"
 website: "https://www.gisat.cz/"
-careers_urls: ["https://www.gisat.cz/company/#careers"]
+careers_urls: ["https://www.linkedin.com/company/gisat"]
 locations: ["🇨🇿 Prague, Czech Republic"]
 remote: ""
 remote_evidence: "Careers section URL (gisat.cz/company/#careers) returned 404; unable to access"
@@ -25,3 +25,5 @@ First private remote-sensing firm in Czech Republic.
 [verify 2026-06 2026-06-14] Careers page (404); no social links found
 
 [links 2026-06 2026-06-14] Careers page (404); no social links found
+
+[careers-resolve 2026-06 2026-06-14] No own careers page; using LinkedIn company page

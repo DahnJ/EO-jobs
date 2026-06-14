@@ -60,8 +60,11 @@ def main() -> None:
             typ, reason = old or "commercial-eo", rec.get("type_reason", "unclassified")
 
         rec["type"], rec["type_reason"] = typ, reason
+        # a careers link must be a real http(s) URL — not "" / "x" / "None?" junk
+        has_careers = any(isinstance(u, str) and u.startswith("http")
+                          for u in (rec.get("careers_urls") or []))
         is_listed = (typ == "commercial-eo" and rec["status"] == "active"
-                     and bool(rec["careers_urls"]))
+                     and has_careers)
         rec["listed"] = is_listed
         counts[typ] += 1
         if is_listed:

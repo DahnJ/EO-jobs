@@ -2,7 +2,7 @@
 name: "Global Surface Intelligence"
 status: "active"
 website: "https://www.surfaceintelligence.com/"
-careers_urls: ["https://www.surfaceintelligence.com/careers"]
+careers_urls: ["https://www.linkedin.com/company/global-surface-intelligence"]
 locations: ["🇬🇧 Edinburgh, UK"]
 remote: "No"
 remote_evidence: "Careers page (surfaceintelligence.com/careers) returned 403 Forbidden; retained stored value"
@@ -17,3 +17,5 @@ last_checked: "2026-06-14"
 type: "commercial-eo"
 type_reason: "EO-based data refinery for resources [agent]"
 ---
+
+[careers-resolve 2026-06 2026-06-14] Original careers URL 403 Forbidden; using LinkedIn company page

@@ -2,7 +2,7 @@
 name: "Geosoluciones"
 status: "active"
 website: "http://www.geosoluciones.cl"
-careers_urls: ["x"]
+careers_urls: ["https://www.linkedin.com/company/geosoluciones/jobs"]
 locations: ["🇨🇱 Santiago, Chile"]
 remote: ""
 remote_evidence: "Website blocked by enterprise security policy; could not access"
@@ -23,3 +23,5 @@ Discovered via the EO companies Google Sheet (2026-06); unverified.
 [verify 2026-06 2026-06-14] No careers page found
 
 [links 2026-06 2026-06-14] No careers page found
+
+[careers-resolve 2026-06 2026-06-14] No own careers page found; using LinkedIn company page

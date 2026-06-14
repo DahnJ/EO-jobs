@@ -2,7 +2,7 @@
 name: "Plotlogic"
 status: "active"
 website: "https://www.plotlogic.com/"
-careers_urls: ["x"]
+careers_urls: ["https://www.linkedin.com/company/plotlogic"]
 locations: ["🇦🇺 Zillmere, Queensland, Australia"]
 remote: ""
 remote_evidence: "No careers page or remote work policies mentioned on homepage; 'Work with us' link found but no job listings."
@@ -25,3 +25,5 @@ Mining sensing/AI (OreSense).
 [verify 2026-06 2026-06-14] Careers page marked invalid; requires verification
 
 [links 2026-06 2026-06-14] Careers page marked invalid; requires verification
+
+[careers-resolve 2026-06 2026-06-14] No careers page on own site; using LinkedIn company page

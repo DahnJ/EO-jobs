@@ -2,7 +2,7 @@
 name: "FloodMapp"
 status: "active"
 website: "https://www.floodmapp.com/"
-careers_urls: ["https://www.floodmapp.com/jobs"]
+careers_urls: ["https://www.floodmapp.com/careers"]
 locations: ["🇦🇺 Brisbane, Australia", "🇦🇺 Melbourne, Australia"]
 remote: "Yes (Australia)"
 remote_evidence: "No confirmation found on website or careers page (404); stored value retained"
@@ -21,3 +21,5 @@ type_reason: "Flood forecasting from satellite data [agent]"
 [verify 2026-06 2026-06-14] Jobs page returned 404; verify current link status.
 
 [links 2026-06 2026-06-14] Jobs page returned 404; verify current link status.
+
+[careers-resolve 2026-06 2026-06-14] Working careers page with open positions

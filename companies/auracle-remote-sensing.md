@@ -2,7 +2,7 @@
 name: "Auracle Remote Sensing"
 status: "active"
 website: "http://www.auracleremotesensing.com"
-careers_urls: ["x"]
+careers_urls: []
 locations: ["🇨🇦 Vancouver, Canada"]
 remote: ""
 remote_evidence: "No reachable careers URL (marked 'x' in batch); unable to assess"
@@ -10,7 +10,7 @@ remote_confidence: "low"
 description: "Remote sensing consulting services."
 satellites: ""
 category: "Earth Observation"
-listed: true
+listed: false
 links: {"linkedin": "https://www.linkedin.com/company/auracle-geospatial-science-inc-", "youtube": "https://www.youtube.com/@AuracleGeospatial", "crunchbase": "https://www.crunchbase.com/organization/auracle-geospatial", "github": "https://github.com/auracle"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
@@ -25,3 +25,7 @@ Operates as Auracle Geospatial Science Inc.
 [verify 2026-06 2026-06-14] Stored careers_url marked as 'x', no active careers page found
 
 [links 2026-06 2026-06-14] Stored careers_url marked as 'x', no active careers page found
+
+[careers-resolve 2026-06 2026-06-14] No own careers page found; using LinkedIn company page
+
+[data-check 2026-06] Careers link dead (404): https://www.linkedin.com/company/auracle-remote-sensing/jobs — removed. No verified working careers page; de-listed pending re-resolution.

@@ -2,7 +2,7 @@
 name: "Visioterra"
 status: "active"
 website: "https://www.visioterra.fr/web/?lang=en"
-careers_urls: ["x"]
+careers_urls: ["https://www.linkedin.com/company/visioterra/jobs/"]
 locations: ["🇫🇷 Champs-sur-Marne, France"]
 remote: ""
 remote_evidence: "No careers section found on website; physical address listed but no remote policy or jobs information"
@@ -23,3 +23,5 @@ Discovered via the EO companies Google Sheet (2026-06); unverified.
 [verify 2026-06 2026-06-14] Website domain blocked; unable to verify company details.
 
 [links 2026-06 2026-06-14] Website domain blocked; unable to verify company details.
+
+[careers-resolve 2026-06 2026-06-14] no own careers page, using LinkedIn jobs (France-based, founded 2004)

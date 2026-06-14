@@ -2,7 +2,7 @@
 name: "GeoTerraImage"
 status: "active"
 website: "http://www.geoterraimage.com"
-careers_urls: ["x"]
+careers_urls: ["https://www.linkedin.com/company/geoterra-image/jobs"]
 locations: ["🇿🇦 Pretoria, South Africa"]
 remote: ""
 remote_evidence: "Homepage contains no mention of remote work policies"
@@ -25,3 +25,5 @@ Active (Nov 2025 news, CSIR partnership).
 [verify 2026-06 2026-06-14] No careers page found
 
 [links 2026-06 2026-06-14] No careers page found
+
+[careers-resolve 2026-06 2026-06-14] No own careers page found; using LinkedIn company page

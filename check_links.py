@@ -27,15 +27,15 @@ def check(url: str, timeout: float) -> tuple:
     for method in ("HEAD", "GET"):
         try:
             req = urllib.request.Request(url, method=method,
-                                         headers={"User-Agent": UA,
-                                                  "Range": "bytes=0-2047"})
+                                         headers={"User-Agent": UA})
             with urllib.request.urlopen(req, timeout=timeout) as resp:
                 return True, f"{resp.status}"
         except urllib.error.HTTPError as e:
-            # 403/405 to HEAD is common; retry as GET before judging.
-            if method == "HEAD" and e.code in (403, 405, 501):
+            # HEAD is often rejected (403/405/416/501); retry as GET before judging.
+            if method == "HEAD" and e.code in (403, 405, 416, 501):
                 continue
-            return (e.code < 400), f"HTTP {e.code}"
+            # 416 (range) / 403 (bot-block) don't mean the page is dead.
+            return (e.code < 400 or e.code in (403, 416)), f"HTTP {e.code}"
         except Exception as e:  # noqa: BLE001 — timeout, DNS, SSL, etc.
             if method == "HEAD":
                 continue

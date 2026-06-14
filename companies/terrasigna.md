@@ -2,7 +2,7 @@
 name: "Terrasigna"
 status: "active"
 website: "http://www.terrasigna.com/"
-careers_urls: ["x"]
+careers_urls: ["https://www.linkedin.com/company/terrasigna/jobs/"]
 locations: ["🇷🇴 Bucharest, Romania"]
 remote: ""
 remote_evidence: "Careers URL placeholder (x) - not available"
@@ -23,3 +23,5 @@ Discovered via the EO companies Google Sheet (2026-06); unverified.
 [verify 2026-06 2026-06-14] Careers URL marked 'x' in input; no careers page found
 
 [links 2026-06 2026-06-14] Careers URL marked 'x' in input; no careers page found
+
+[careers-resolve 2026-06 2026-06-14] no own careers page, using LinkedIn jobs (Romania-based)

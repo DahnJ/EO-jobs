@@ -2,7 +2,7 @@
 name: "eofactory"
 status: "active"
 website: "https://eofactory.ai/"
-careers_urls: ["x"]
+careers_urls: ["https://www.linkedin.com/company/eofactory/jobs"]
 locations: ["🇸🇬 Singapore"]
 remote: ""
 remote_evidence: "Website fetch timed out; cannot access careers page or remote policy"
@@ -21,3 +21,5 @@ type_reason: "EO platform for geospatial insights [agent]"
 Discovered via the EO companies Google Sheet (2026-06); unverified.
 
 Homepage fetch timed out; confirmed via search (Singapore + SE Asia).
+
+[careers-resolve 2026-06 2026-06-14] No current job openings; using LinkedIn company page

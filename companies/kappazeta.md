@@ -2,7 +2,7 @@
 name: "Kappazeta"
 status: "active"
 website: "https://kappazeta.ee/"
-careers_urls: ["https://kappazeta.ee/jobs"]
+careers_urls: ["https://kappazeta.ee/#careers"]
 locations: ["🇪🇪 Tartu, Estonia"]
 remote: "No"
 remote_evidence: "Company page states team works from multiple offices in Estonia, Sweden, Netherlands; no remote work mentioned"
@@ -21,3 +21,5 @@ type_reason: "SAR monitoring and agriculture analytics [agent]"
 [verify 2026-06 2026-06-14] Unable to verify website details due to network restrictions.
 
 [links 2026-06 2026-06-14] Unable to verify website details due to network restrictions.
+
+[careers-resolve 2026-06 2026-06-14] Careers section via anchor link; no current openings

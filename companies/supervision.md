@@ -2,7 +2,7 @@
 name: "Supervision"
 status: "active"
 website: "https://www.supervision.earth"
-careers_urls: ["x"]
+careers_urls: ["https://www.linkedin.com/company/supervisionearth/jobs"]
 locations: ["🇩🇪 Darmstadt, Germany"]
 remote: ""
 remote_evidence: "No careers URL available (marked as 'x'), unable to verify"
@@ -23,3 +23,5 @@ Discovered via the EO companies Google Sheet (2026-06); unverified.
 [verify 2026-06 2026-06-14] No careers page found
 
 [links 2026-06 2026-06-14] No careers page found
+
+[careers-resolve 2026-06 2026-06-14] no own careers page found, using LinkedIn jobs

@@ -2,7 +2,7 @@
 name: "spottitt"
 status: "active"
 website: "https://www.spottitt.com"
-careers_urls: ["x"]
+careers_urls: ["https://www.linkedin.com/company/spottitt/jobs"]
 locations: ["🇬🇧 Harwell, United Kingdom"]
 remote: ""
 remote_evidence: "No careers URL available (marked as 'x'), unable to verify"
@@ -23,3 +23,5 @@ Discovered via the EO companies Google Sheet (2026-06); unverified.
 [verify 2026-06 2026-06-14] No active careers page found
 
 [links 2026-06 2026-06-14] No active careers page found
+
+[careers-resolve 2026-06 2026-06-14] no own careers page found, using LinkedIn jobs

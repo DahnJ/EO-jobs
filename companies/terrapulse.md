@@ -2,7 +2,7 @@
 name: "Terrapulse"
 status: "active"
 website: "https://www.terrapulse.com/"
-careers_urls: ["x"]
+careers_urls: ["https://www.linkedin.com/company/terrapulse/jobs/"]
 locations: ["🇺🇸 North Potomac, USA"]
 remote: ""
 remote_evidence: "Careers URL placeholder (x) - not available"
@@ -23,3 +23,5 @@ Discovered via the EO companies Google Sheet (2026-06); unverified.
 [verify 2026-06 2026-06-14] Careers URL marked 'x' in input; no careers page found
 
 [links 2026-06 2026-06-14] Careers URL marked 'x' in input; no careers page found
+
+[careers-resolve 2026-06 2026-06-14] no own careers page, using LinkedIn jobs (small team: 2-10 employees)

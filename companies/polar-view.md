@@ -2,7 +2,7 @@
 name: "Polar View"
 status: "active"
 website: "http://www.polarview.org"
-careers_urls: ["x"]
+careers_urls: ["https://www.linkedin.com/company/polar-view"]
 locations: ["🇬🇧 Didcot, UK"]
 remote: ""
 remote_evidence: "No careers page or job listings found; no remote work policies mentioned."
@@ -25,3 +25,5 @@ Satellite-based polar/cryosphere monitoring.
 [verify 2026-06 2026-06-14] Careers page marked invalid; potentially non-profit or defunct
 
 [links 2026-06 2026-06-14] Careers page marked invalid; potentially non-profit or defunct
+
+[careers-resolve 2026-06 2026-06-14] No careers page on own site; using LinkedIn company page
