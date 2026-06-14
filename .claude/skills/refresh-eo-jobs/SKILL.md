@@ -57,6 +57,12 @@ Design rationale: `docs/superpowers/specs/2026-06-14-eo-jobs-refresh-agent-desig
    approve per-domain prompts), load the Chrome tools (one `ToolSearch` call) and
    re-fetch those URLs **one at a time**. **Skip entirely when the user is remote /
    can't click approvals** — leave those rows with a "could not verify" note.
+   Two things observed in practice: (a) **stored ATS URLs go stale constantly** — a
+   404 usually means the company switched ATS, so re-resolve via the site's own
+   Careers link rather than concluding it's dead; (b) **`get_page_text` returns
+   nothing on BambooHR/Workday** (JS-rendered) — use `read_page` or a screenshot;
+   (c) the board's "Remote" chip is not enough — open the posting for the geographic
+   eligibility ("Remote — US/EU only" → `Yes (US/EU)`).
 
 4. **Merge:** `just merge` (existing slugs are updated in place; `last_checked`
    restamped, `note` appended to the body).
