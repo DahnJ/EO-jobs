@@ -1,15 +1,25 @@
 ---
 name: refresh-eo-jobs
-description: Use when refreshing or updating the EO-jobs company directory — re-verifies each company's links, locations, and remote-work policy against their live sites/careers pages, discovers new Earth Observation companies, and opens a PR with the changes. Run on demand.
+description: Use when refreshing or updating the EO-jobs company directory — re-verifies each company's links, locations, and remote-work policy against their live sites/careers pages, discovers new Earth Observation companies, and regenerates the README. Run on demand.
 ---
 
 # Refresh EO-jobs
 
-Automates upkeep of the Earth Observation company directory. The CSV
-`earth-observation-jobs - Companies.csv` is the source of truth (plain LF, so
-ordinary pandas edits give clean diffs); `generate_readme.py` renders it into
-`README.md`. A run re-verifies existing companies, discovers new ones, and opens
-**one PR for review**.
+Automates upkeep of the Earth Observation company directory.
+
+**Architecture.** The per-company database `companies/<slug>.md` is the source of
+truth — full coverage, including acquired/defunct/non-EO companies. The public
+`README.md` is a *generated, curated view*: only companies with `listed == True`
+(commercial-EO + active + has a careers page) appear in the table. Never hand-edit
+the README table.
+
+```
+companies/*.md  ──classify.py──▶  type + listed
+       │                                │
+   (db.py loader)              generate_readme.py
+       │                                │
+       └────────────────────────────────▶  README.md  (listed only)
+```
 
 Design rationale and the validated fetch strategy live in
 `docs/superpowers/specs/2026-06-14-eo-jobs-refresh-agent-design.md`.
@@ -18,96 +28,93 @@ Design rationale and the validated fetch strategy live in
 
 - **Conservative edits.** Only change a field when the page clearly contradicts
   the current value. When unsure, leave it and note "could not verify".
-- **Evidence for every `Remote` change.** Record a short quote/observation and
-  which page it came from. This is the column users care about most.
-- **Regenerate, don't hand-edit, the README.** After editing the CSV, run
-  `generate_readme.py`. Never edit the table in `README.md` directly.
+- **Evidence for every `remote` change.** Record a short quote/observation in
+  `remote_evidence`. This is the column users care about most.
+- **Regenerate, don't hand-edit, the README.** Run `generate_readme.py` after any
+  DB change. Verify `git diff --stat README.md` stays row-local.
+- **The DB record schema** (JSON-valued YAML frontmatter, parseable without a YAML
+  lib) is defined by `db.py`'s `FIELD_ORDER`. See any `companies/*.md` for the shape.
+
+## Cost discipline (this skill is token-heavy at scale — keep it cheap)
+
+These four rules are baked into the stages below; follow them, don't re-derive them:
+
+- **A1 — terse agent returns.** Verification subagents return a single status line,
+  never the per-company data. The orchestrator never re-transcribes records.
+- **A2 — agents write to files.** Each subagent writes its results as a JSON array
+  directly to `companies/_inbox/<batch>.json`. No data flows back through chat.
+- **A3 — Haiku for verification.** Dispatch verification/triage subagents with
+  `model: haiku`. Reserve larger models for genuine judgment calls.
+- **B1 — dedup before verifying.** Match discovery candidates against the existing
+  DB (by slug + website domain) and drop known ones *before* spending fetches.
 
 ## Setup
 
 1. Per the repo's worktree rule, work on a branch off `master` in a worktree
    (e.g. `refresh/YYYY-MM-DD`).
-2. Ensure the venv exists with deps:
-   `python3 -m venv .venv && .venv/bin/pip install -q pandas tabulate`
-   Use `.venv/bin/python` for the script runs below.
+2. Ensure the venv exists with deps: `python3 -m venv .venv && .venv/bin/pip install -q pandas`
+   Use `.venv/bin/python` for all script runs. (`db.py`/`classify.py`/`merge_inbox.py`
+   need no third-party deps; only legacy tooling used pandas.)
+3. `mkdir -p companies/_inbox` (scratch space; delete it before committing).
 
-## Stage 1 — Refresh existing companies (parallel WebFetch)
+## Stage 1 — Refresh existing companies
 
-1. Read the CSV columns `Name, Description, Satellites, Website, Jobs site,
-   Jobs 2, Locations, Remote` for all rows.
-2. Fan out **subagents in parallel, ~10 concurrent** (Agent tool, multiple
-   calls per message), one per company, using the prompt template in
-   `references/company-prompt.md`. Each returns a structured report
-   (link health, field suggestions, and `Remote` with evidence + confidence).
-3. Collect the reports. Track every company whose Website / Jobs site / ATS URL
-   returned **HTTP 403 or an empty body** — these go to Stage 1.5.
+Refresh the entries most likely to be stale (oldest `last_checked`, or a slice).
+Don't blindly re-verify all ~530 every run.
 
-## Stage 1.5 — Browser fallback (sequential)
+1. Pick the batch of slugs to refresh. Split into groups of ~18.
+2. Fan out **Haiku subagents in parallel** (Agent tool, `model: haiku`, multiple
+   calls per message), one per batch, using the prompt in
+   `references/company-prompt.md`. Each agent WebFetches its companies and **writes
+   a JSON array to `companies/_inbox/refresh_N.json`** (A2), returning only a
+   one-line status (A1).
+3. Apply: `.venv/bin/python merge_inbox.py` (existing slugs are updated in place;
+   `last_checked` is restamped, `note` appended to the body).
 
-Hosted ATS boards (BambooHR, Lever, Greenhouse, Darwinbox, …) routinely return
-403 to WebFetch, and that is exactly where per-role remote tags live. For each
-company flagged in Stage 1:
+### Browser fallback (optional, sequential, interactive)
 
-1. Load the Chrome browser tools (one `ToolSearch` call — see the MCP guidance
-   in the system prompt). There is one shared Chrome instance, so process these
-   **one at a time**.
-2. `navigate` to the blocked URL, then `get_page_text`.
-   - Real content → re-derive the company's findings (especially `Remote`),
-     raising confidence.
-   - 404 / "not found" → the URL is genuinely **dead**, not blocked; propose a
-     replacement (the company's own embedded careers board) or flag it.
-3. Only after both passes fail is a page declared truly unreadable; leave that
-   row unchanged with a "could not verify" note.
+Hosted ATS boards (BambooHR, Lever, Greenhouse, Workday, …) often return 403 to
+WebFetch — and that is exactly where per-role remote tags live. If a batch reports
+many 403s and the run is interactive (the user can approve per-domain prompts),
+load the Chrome tools (one `ToolSearch` call) and re-fetch those URLs **one at a
+time** with `navigate` + `get_page_text`. **Skip this entirely when the user is
+remote / can't click approvals** — leave those rows with a "could not verify" note.
 
 ## Stage 2 — Discover new companies
 
-Sweep these sources for EO companies **not already in the CSV** (match on Name +
-Website, case-insensitive; when unsure if it's a duplicate, skip):
+1. **Sweep sources** for EO companies. Use several lenses (subagents can run these
+   in parallel, each returning a terse `Name|website` list):
+   - GitHub `chrieke/awesome-geospatial-companies` (the 🛰️ EO-focus marker).
+   - Google Sheet CSV export (not the editor URL), across its categories — Earth
+     Observation, Satellite Operator, Digital Farming, UAV/Aerial, GIS/Spatial:
+     `https://docs.google.com/spreadsheets/d/1YieNiDHVTC5CfX13n72fXuceDaubSuyrghgAnxipsbY/export?format=csv&gid=0`
+   - Multi-lens WebSearch (by application: maritime, methane/emissions, forestry/
+     carbon, insurance/risk; by region; by recent funding).
+2. **B1 dedup.** Concatenate candidates, then drop any whose slug or website domain
+   already exists in the DB. Only the genuinely-new remainder gets verified.
+3. **Verify (Haiku, A1+A2+A3).** Split the new candidates into batches of ~18 and
+   dispatch Haiku subagents with the `references/company-prompt.md` discovery
+   variant — each writes `companies/_inbox/disc_N.json`, returns one status line.
+4. **Merge:** `.venv/bin/python merge_inbox.py --source "discovery-sweep YYYY-MM"`
+   (creates new files; existing ones, if any slipped past dedup, are updated).
 
-- GitHub `chrieke/awesome-geospatial-companies`.
-- Google Sheet (fetch the CSV export form, not the editor URL):
-  `https://docs.google.com/spreadsheets/d/1YieNiDHVTC5CfX13n72fXuceDaubSuyrghgAnxipsbY/export?format=csv&gid=0`
-- The geospatial / climate job newsletters cited in `README.md`.
+## Stage 3 — Classify, regenerate, hand off
 
-For each genuinely new EO company, gather what can be verified (at minimum Name,
-Website, Description, Locations) and add it as a new row. Flag every addition as
-`[NEW]` in the PR body — these need extra scrutiny.
-
-## Stage 3 — Apply, regenerate, open PR
-
-Apply all collected changes to the CSV with a few lines of pandas, then
-regenerate. New companies are just Names not yet present:
-
-```python
-import pandas as pd
-f = "earth-observation-jobs - Companies.csv"
-df = pd.read_csv(f, dtype=str, keep_default_na=False).set_index("Name")
-for name, fields in CHANGES.items():       # {"Company": {"Column": "value"}}
-    for col, val in fields.items():
-        df.loc[name, col] = val            # a new Name creates a new row
-df.reset_index().to_csv(f, index=False)    # LF in, LF out — diffs stay row-local
-```
-
-(Use the internal `Notes` column for provenance like acquisitions — it is not
-rendered in the README.)
-
-Then:
-
-1. `.venv/bin/python generate_readme.py`
-2. Sanity-check: `git diff --stat` — both diffs should be **row-local** (only
-   changed companies). A full-table reflow means something regressed; stop and
-   investigate.
-3. Commit (CSV + README together), push the branch.
-4. Open one PR. Body = the changelog template in `references/pr-template.md`,
-   nothing else. The **Remote changes** section (with evidence) is what the
-   reviewer checks closely.
-
-Note: opening the PR is the final step; if PR creation is gated, push the branch
-and hand over the PR-create link.
+1. `.venv/bin/python classify.py` — sets `type` and `listed` on every file. Review
+   its summary: spot obvious misclassifications (e.g. an EO company tagged
+   consultancy/nonprofit) and fix `type` by hand, then re-run.
+2. `.venv/bin/python generate_readme.py` — rebuilds the README from `listed` rows.
+3. **Sanity-check:** `git diff --stat README.md` — changes should be row-local.
+   A full-table reflow means something regressed; stop and investigate.
+4. `rm -rf companies/_inbox`, then commit the DB files + README together.
+5. **Do not open a PR unless explicitly asked** (repo owner's standing rule). Push
+   the branch and hand over the compare/PR-create link. If asked for a PR, keep the
+   body to the changelog in `references/pr-template.md`, nothing else.
 
 ## Scaling notes
 
-- Stage 1 parallelizes well (185 companies in batches of ~10). Stage 1.5 is the
-  sequential bottleneck — expect ~30–50 companies to need the browser.
-- To keep PRs reviewable at full scale, running a slice per PR (e.g. the
-  companies most likely stale) is fine rather than all 185 at once.
+- Stage 1 and Stage 2 verification both parallelize well in Haiku batches of ~18;
+  a 73-company discovery verification ran for ~100k tokens total.
+- The browser fallback is the only sequential, interactive bottleneck — treat it as
+  opt-in, not part of the default unattended run.
+- To keep diffs reviewable, refresh a slice per run rather than the whole DB.

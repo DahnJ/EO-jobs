@@ -1,28 +1,43 @@
 #!/usr/bin/env python3
-"""Merge verified discovery records from companies/_inbox/*.json into the DB.
+"""Apply verified company records from companies/_inbox/*.json into the DB.
 
-Each inbox record (from the discovery-sweep verification agents) has:
+This is the single entry point for both refreshing existing companies and
+adding newly discovered ones — verification subagents write JSON here, this
+merges it in.
+
+Each inbox record has:
   slug, name, status, website, careers_url, locations, remote,
   remote_evidence, description, note
 
-For each record: if companies/<slug>.md exists, update non-empty fields;
-otherwise create a new file. New files get source "discovery-sweep 2026-06"
-and listed=false (classify.py sets type/listed afterwards). The agent's `note`
-is appended to the body. last_checked is stamped 2026-06-14.
+For each record: if companies/<slug>.md exists, update its non-empty verified
+fields; otherwise create a new file (source defaults to the --source value).
+The agent's `note` is appended to the body with a dated stamp. `last_checked`
+is stamped with today's date. `type`/`listed` are NOT set here — run
+classify.py afterwards.
+
+Usage:
+  python merge_inbox.py [--source "discovery-sweep 2026-06"]
 """
+import argparse
+import datetime
 import json
+
 import db
 
 INBOX = db.DB / "_inbox"
-CHECKED = "2026-06-14"
-SOURCE = "discovery-sweep 2026-06"
 
 
 def main() -> None:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--source", default="discovery-sweep",
+                    help="source tag for NEWLY created files")
+    args = ap.parse_args()
+    today = datetime.date.today().isoformat()
+
     created, updated, skipped = [], [], []
-    for f in sorted(INBOX.glob("disc_*.json")):
+    for f in sorted(INBOX.glob("*.json")):
         for r in json.load(f.open()):
-            slug = r.get("slug", "").strip()
+            slug = (r.get("slug") or "").strip()
             if not slug:
                 skipped.append(r.get("name", "?"))
                 continue
@@ -31,19 +46,18 @@ def main() -> None:
                 rec = db.parse(path.read_text())
                 is_new = False
             else:
-                rec = {"name": r["name"], "status": "unknown", "website": "",
-                       "careers_urls": [], "locations": [], "remote": "",
-                       "remote_evidence": "", "description": "", "satellites": "",
-                       "category": "", "listed": False, "links": {},
-                       "source": SOURCE, "body": ""}
+                rec = {"name": r.get("name", slug), "status": "unknown",
+                       "website": "", "careers_urls": [], "locations": [],
+                       "remote": "", "remote_evidence": "", "description": "",
+                       "satellites": "", "category": "", "listed": False,
+                       "links": {}, "source": args.source, "body": ""}
                 is_new = True
 
-            # apply non-empty verified fields
             if r.get("status"):
                 rec["status"] = r["status"]
             if r.get("website"):
                 rec["website"] = r["website"]
-            cu = r.get("careers_url", "").strip()
+            cu = (r.get("careers_url") or "").strip()
             if cu:
                 rec["careers_urls"] = [cu]
             if r.get("locations"):
@@ -54,12 +68,12 @@ def main() -> None:
                 rec["remote_evidence"] = r["remote_evidence"]
             if r.get("description"):
                 rec["description"] = r["description"]
-            rec["last_checked"] = CHECKED
+            rec["last_checked"] = today
 
-            note = r.get("note", "").strip()
+            note = (r.get("note") or "").strip()
             if note:
+                stamp = f"[{args.source} {today}] {note}"
                 body = rec.get("body", "")
-                stamp = f"[discovery-sweep {CHECKED}] {note}"
                 rec["body"] = (body + "\n\n" + stamp).strip() if body else stamp
 
             db.save(slug, rec)
@@ -67,7 +81,7 @@ def main() -> None:
 
     print(f"created {len(created)}, updated {len(updated)}, skipped {len(skipped)}")
     if updated:
-        print("updated (already in DB):", ", ".join(sorted(updated)))
+        print("updated:", ", ".join(sorted(updated)))
     if skipped:
         print("skipped (no slug):", ", ".join(skipped))
 
