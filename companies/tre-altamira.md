@@ -3,14 +3,14 @@ name: "Tre Altamira"
 status: "active"
 website: "https://site.tre-altamira.com/"
 careers_urls: ["https://site.tre-altamira.com/work-with-us/"]
-locations: ["🇮🇹 Milan, Italy", "🇪🇸 Barcelona, Spain", "🇨🇦 Vancouver, Canada"]
+locations: ["Milan, Italy", "Barcelona, Spain", "Vancouver, Canada"]
 remote: "Hybrid"
-remote_evidence: "'Hybrid Work: flexible model combining office time with remote work' (tre-altamira work-with-us)"
-description: "EO: InSAR"
+remote_evidence: "Multiple office locations suggest hybrid work arrangement."
+description: "InSAR technology for infrastructure and geological hazard monitoring from satellites."
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {}
+links: {"linkedin": "https://www.linkedin.com/company/tre-altamira", "twitter": "https://twitter.com/TRE_ALTAMIRA", "youtube": "https://www.youtube.com/channel/UC7BHZ2tCBOoDJhfLR_-onpg"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

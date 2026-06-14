@@ -3,7 +3,7 @@ name: "KatRisk"
 status: "active"
 website: "https://www.katrisk.com/"
 careers_urls: ["https://katrisk.bamboohr.com/careers"]
-locations: ["🇺🇸 La Jolla, CA, USA", "🇩🇪 Freiburg, Germany", "🇮🇪 Dublin, Ireland"]
+locations: ["La Jolla, CA, USA", "Freiburg, Germany", "Dublin, Ireland"]
 remote: ""
 remote_evidence: ""
 description: "Risk quantification: flood, wind, and other"
@@ -16,3 +16,7 @@ last_checked: "2026-06-14"
 type: "commercial-eo"
 type_reason: "Risk quantification using satellite/geospatial data. [agent]"
 ---
+
+[verify 2026-06 2026-06-14] Unable to verify website details due to network restrictions.
+
+[links 2026-06 2026-06-14] Unable to verify website details due to network restrictions.

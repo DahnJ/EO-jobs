@@ -6,7 +6,7 @@ careers_urls: []
 locations: []
 remote: ""
 remote_evidence: ""
-description: "Digital MRV platform using satellite and AI to monitor carbon sequestration and emissions at farm, field, and forest level globally."
+description: "Carbon space technology company."
 satellites: ""
 category: ""
 listed: false
@@ -16,3 +16,7 @@ last_checked: "2026-06-14"
 type: "commercial-eo"
 type_reason: "Satellite-based carbon MRV platform. [agent]"
 ---
+
+[verify 2026-06 2026-06-14] Network security restriction prevented verification; no careers page stored.
+
+[links 2026-06 2026-06-14] Network security restriction prevented verification; no careers page stored.

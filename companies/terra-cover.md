@@ -6,7 +6,7 @@ careers_urls: ["x"]
 locations: ["🇺🇸 USA"]
 remote: ""
 remote_evidence: ""
-description: "EO: Reservoir, Lake & Flood Monitoring"
+description: "Satellite-based Earth observation and geospatial analysis platform."
 satellites: ""
 category: "Earth Observation"
 listed: true
@@ -18,3 +18,7 @@ type_reason: "EO/satellite core business [agent]"
 ---
 
 Discovered via the EO companies Google Sheet (2026-06); unverified.
+
+[verify 2026-06 2026-06-14] Careers URL marked 'x' in input; no careers page found
+
+[links 2026-06 2026-06-14] Careers URL marked 'x' in input; no careers page found

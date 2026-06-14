@@ -10,7 +10,7 @@ description: "High-resolution satellite imagery and Earth observation via Very L
 satellites: ""
 category: ""
 listed: true
-links: {}
+links: {"linkedin": "https://www.linkedin.com/company/eoi-space", "twitter": "https://twitter.com/EOI_Space"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

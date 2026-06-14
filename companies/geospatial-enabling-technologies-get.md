@@ -5,12 +5,12 @@ website: "https://www.getmap.eu/"
 careers_urls: ["https://www.getmap.eu/company/careers/"]
 locations: ["🇬🇷 Athens, Greece"]
 remote: ""
-remote_evidence: ""
-description: "Spatial data infrastructure & webportal development, EO&GIS: All purpose"
+remote_evidence: "One Full Stack Developer position open; no remote policy stated."
+description: "Geospatial information solutions: Open Data, Digital Twins, Earth Observation, Environmental monitoring."
 satellites: ""
 category: ""
 listed: true
-links: {}
+links: {"twitter": "https://twitter.com/getmapgr", "youtube": "https://www.youtube.com/c/getmap"}
 source: "awesome 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

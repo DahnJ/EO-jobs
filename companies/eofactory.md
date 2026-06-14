@@ -10,7 +10,7 @@ description: "EO platform for geo insights"
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {}
+links: {"linkedin": "https://sg.linkedin.com/company/eofactory", "crunchbase": "https://www.crunchbase.com/organization/eofactory"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

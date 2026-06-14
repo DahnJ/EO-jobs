@@ -4,13 +4,13 @@ status: "active"
 website: "https://qapl.in/"
 careers_urls: ["https://qapl.in/careers/"]
 locations: ["🇮🇳 Hyderabad, India"]
-remote: ""
-remote_evidence: ""
-description: "GIS+EO: All-purpose"
+remote: "No"
+remote_evidence: "Careers page does not mention remote or hybrid arrangements; focus on office-based work."
+description: "GIS mapping, CAD drafting, IT solutions, and staffing services specializing in geospatial work."
 satellites: ""
 category: ""
 listed: true
-links: {}
+links: {"linkedin": "https://www.linkedin.com/company/quantum-asia-p-ltd.", "twitter": "https://x.com/quantum_asia", "facebook": "https://www.facebook.com/Quantum.Asia.Pvt.Ltd"}
 source: "awesome 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"
@@ -18,3 +18,7 @@ type_reason: "EO/satellite core business [agent]"
 ---
 
 Discovered via awesome (2026-06); unverified.
+
+[verify 2026-06 2026-06-14] Not primarily an EO company; provides supporting services
+
+[links 2026-06 2026-06-14] Not primarily an EO company; provides supporting services

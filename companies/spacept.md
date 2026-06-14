@@ -3,14 +3,14 @@ name: "Spacept"
 status: "active"
 website: "https://spacept.com/"
 careers_urls: ["https://spacept.com/careers/"]
-locations: ["🇸🇪 Stockholm, Sweden"]
+locations: ["🇺🇸 Brooklyn, NY, USA", "🇸🇪 Stockholm, Sweden", "🇳🇴 Oslo, Norway"]
 remote: ""
 remote_evidence: ""
-description: "EO: Powerline inspection, Light Inspection, Leak detection"
+description: "AI-powered Earth observation and geospatial intelligence platform."
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {}
+links: {"linkedin": "https://www.linkedin.com/company/spacept/", "twitter": "https://twitter.com/SpaceptAI"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

@@ -1,16 +1,16 @@
 ---
 name: "2Excel Geospatial"
 status: "active"
-website: "http://www.2excelgeo.com"
+website: "https://www.2excelgeo.com"
 careers_urls: ["https://2excel.talosats-careers.com/view-all-vacancies"]
-locations: ["🇬🇧 Sywell, Northamptonshire, UK"]
+locations: ["Sywell, Northamptonshire, UK"]
 remote: ""
 remote_evidence: ""
-description: "Forestry/Environment monitoring, Aerial surveying"
+description: "Aerial remote sensing specializing in hyperspectral imagery acquisition and processing."
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {}
+links: {"linkedin": "https://uk.linkedin.com/company/2excelgeo", "twitter": "https://twitter.com/2excelgeo"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

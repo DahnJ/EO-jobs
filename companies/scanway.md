@@ -6,11 +6,11 @@ careers_urls: ["https://scanway.pl/kariera/"]
 locations: ["Wrocław, Poland"]
 remote: ""
 remote_evidence: ""
-description: "Space technology company developing advanced optical systems and instruments for Earth observation and space missions."
+description: "Geospatial data and remote sensing company."
 satellites: ""
 category: ""
 listed: true
-links: {}
+links: {"linkedin": "https://www.linkedin.com/company/scanway-s-a/", "twitter": "https://x.com/Scanway_SA", "youtube": "https://www.youtube.com/channel/UCCqSRV8sZ4BMK2pFRHZ-7qw"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

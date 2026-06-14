@@ -3,10 +3,10 @@ name: "Planet Observer"
 status: "active"
 website: "https://planetobserver.com/"
 careers_urls: []
-locations: ["🇫🇷 Clermont, France"]
+locations: ["Clermont, France"]
 remote: ""
 remote_evidence: ""
-description: "Geospatial data provider (satellite imagery & elevation data)"
+description: "Earth observation and satellite imagery analysis."
 satellites: ""
 category: ""
 listed: false
@@ -16,3 +16,7 @@ last_checked: "2026-06-14"
 type: "commercial-eo"
 type_reason: "Satellite imagery and elevation data provider [agent]"
 ---
+
+[verify 2026-06 2026-06-14] No careers page found; requires verification
+
+[links 2026-06 2026-06-14] No careers page found; requires verification

@@ -3,14 +3,14 @@ name: "Pina Earth"
 status: "active"
 website: "https://pina.earth/en"
 careers_urls: ["https://pina.jobs.personio.com"]
-locations: ["🇩🇪 Munich, Germany"]
+locations: ["Munich, Germany"]
 remote: ""
 remote_evidence: ""
-description: "Forest carbon certification digitilaization"
+description: "Climate tech and Earth observation for environmental monitoring."
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {}
+links: {"linkedin": "https://www.linkedin.com/company/pina-de"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

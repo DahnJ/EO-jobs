@@ -6,7 +6,7 @@ careers_urls: ["https://titan4.it/about#work-with-us"]
 locations: ["Rome, Italy", "Benevento, Italy"]
 remote: ""
 remote_evidence: ""
-description: "Earth observation and geospatial analytics company providing AI-powered infrastructure monitoring and risk management."
+description: "AI-powered Earth observation platform for infrastructure monitoring and risk management."
 satellites: ""
 category: ""
 listed: true

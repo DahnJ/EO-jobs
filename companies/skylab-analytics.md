@@ -1,12 +1,12 @@
 ---
 name: "Skylab Analytics"
 status: "active"
-website: "http://skylabanalytics.com"
+website: "https://skylabanalytics.com"
 careers_urls: ["x"]
-locations: ["🇳🇱 Amsterdam, Netherlands"]
+locations: ["Amsterdam, Netherlands"]
 remote: ""
 remote_evidence: ""
-description: "EO: All-purpose"
+description: "Geospatial data analytics company providing satellite imagery analysis and insights."
 satellites: ""
 category: "Earth Observation"
 listed: true
@@ -18,3 +18,7 @@ type_reason: "EO/satellite core business [agent]"
 ---
 
 Discovered via the EO companies Google Sheet (2026-06); unverified.
+
+[verify 2026-06 2026-06-14] No careers page found; no social links identified.
+
+[links 2026-06 2026-06-14] No careers page found; no social links identified.

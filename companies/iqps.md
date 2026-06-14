@@ -3,7 +3,7 @@ name: "iQPS"
 status: "active"
 website: "https://i-qps.net/"
 careers_urls: ["https://i-qps.net/career#section3"]
-locations: ["🇯🇵 Fukuoka, Japan"]
+locations: ["Fukuoka, Japan"]
 remote: ""
 remote_evidence: ""
 description: "SAR constellation"
@@ -16,3 +16,7 @@ last_checked: "2026-06-14"
 type: "commercial-eo"
 type_reason: "SAR satellite constellation [agent]"
 ---
+
+[verify 2026-06 2026-06-14] Unable to verify website details due to network restrictions.
+
+[links 2026-06 2026-06-14] Unable to verify website details due to network restrictions.

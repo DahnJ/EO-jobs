@@ -6,7 +6,7 @@ careers_urls: []
 locations: ["🇳🇱 Wageningen, Netherlands"]
 remote: ""
 remote_evidence: ""
-description: "EO: Sar analytics"
+description: "Systematic satellite and airborne monitoring for forest, water, agriculture, and carbon tracking."
 satellites: ""
 category: ""
 listed: false
@@ -18,3 +18,7 @@ type_reason: "EO/satellite core business [agent]"
 ---
 
 Discovered via awesome (2026-06); unverified.
+
+[verify 2026-06 2026-06-14] No social media links or careers page found
+
+[links 2026-06 2026-06-14] No social media links or careers page found

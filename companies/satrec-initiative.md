@@ -6,11 +6,11 @@ careers_urls: ["https://blog.naver.com/sicareers"]
 locations: ["Daejeon, South Korea"]
 remote: ""
 remote_evidence: ""
-description: "Earth observation and satellite company offering GEOINT solutions including satellites, ground systems, imagery, and AI-based geospatial analytics."
+description: "Satellite technology and remote sensing company."
 satellites: ""
 category: ""
 listed: true
-links: {}
+links: {"linkedin": "https://www.linkedin.com/company/satrec-initiative"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

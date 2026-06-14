@@ -6,11 +6,11 @@ careers_urls: ["https://www.kpler.com/company/careers"]
 locations: []
 remote: ""
 remote_evidence: ""
-description: "Global trade intelligence platform using AIS and satellite data for maritime commodity tracking."
+description: "Real-time trade intelligence and maritime vessel tracking via satellite."
 satellites: ""
 category: ""
 listed: true
-links: {}
+links: {"linkedin": "https://www.linkedin.com/company/kpler"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

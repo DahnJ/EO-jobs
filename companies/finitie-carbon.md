@@ -3,14 +3,14 @@ name: "Finitie Carbon"
 status: "active"
 website: "https://www.finitecarbon.com/"
 careers_urls: ["https://www.finitecarbon.com/about/careers/"]
-locations: ["🇺🇸 USA"]
+locations: ["San Francisco, USA"]
 remote: "Yes"
-remote_evidence: "'fast-paced remote work environments' (finitecarbon.com/about/careers)"
-description: "Forest carbon project monitoring"
+remote_evidence: "Careers page mentions fast-paced remote work environments."
+description: "North America's leading forest carbon project developer with offset credit services."
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {}
+links: {"linkedin": "https://www.linkedin.com/company/finite-carbon/"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

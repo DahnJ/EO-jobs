@@ -6,7 +6,7 @@ careers_urls: []
 locations: ["🇿🇼 Harare, Zimbabwe"]
 remote: ""
 remote_evidence: ""
-description: "EO & GIS"
+description: "Remote sensing and geospatial solutions provider offering mapping, drone imagery, and environmental consultancy."
 satellites: ""
 category: ""
 listed: false

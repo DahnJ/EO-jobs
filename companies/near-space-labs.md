@@ -3,10 +3,10 @@ name: "Near Space Labs"
 status: "active"
 website: "https://nearspacelabs.com/"
 careers_urls: ["https://job-boards.greenhouse.io/nearspacelabs"]
-locations: ["🇺🇸 Multiple in USA", "🇪🇸 Barcelona, Spain"]
+locations: ["Multiple in USA", "Barcelona, Spain"]
 remote: "Yes"
-remote_evidence: ""
-description: "Balloon fleet providing high-resolution imagery at a low price"
+remote_evidence: "Greenhouse careers board shows remote-friendly roles."
+description: "High-resolution geospatial imagery from stratospheric platforms."
 satellites: ""
 category: ""
 listed: true

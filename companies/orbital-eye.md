@@ -3,16 +3,20 @@ name: "Orbital Eye"
 status: "active"
 website: "https://orbitaleye.nl/"
 careers_urls: ["https://orbitaleye.nl/about-us-concept/"]
-locations: ["🇳🇱 Delft, Netherlands"]
-remote: "No jobs"
-remote_evidence: ""
-description: "Monitoring of infrastructure, assets and environment"
+locations: ["Delft, Netherlands"]
+remote: "No"
+remote_evidence: "Listed as 'No jobs'; based in Delft office location."
+description: "Dutch Earth observation and satellite intelligence company."
 satellites: ""
 category: ""
 listed: true
-links: {"crunchbase": "https://www.crunchbase.com/organization/orbital-eye", "linkedin": "https://www.linkedin.com/company/orbitaleye/"}
+links: {"crunchbase": "https://www.crunchbase.com/organization/orbital-eye", "linkedin": "https://www.linkedin.com/company/orbitaleye/", "twitter": "https://twitter.com/OrbitalEye"}
 source: "original list"
-last_checked: ""
+last_checked: "2026-06-14"
 type: "commercial-eo"
 type_reason: "Infrastructure and environment monitoring EO [agent]"
 ---
+
+[verify 2026-06 2026-06-14] No active job postings currently.
+
+[links 2026-06 2026-06-14] No active job postings currently.

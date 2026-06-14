@@ -53,7 +53,8 @@ def main() -> None:
                        "links": {}, "source": args.source, "body": ""}
                 is_new = True
 
-            if r.get("status"):
+            # never downgrade a known status to "unknown" (e.g. a fetch failure)
+            if r.get("status") and not (r["status"] == "unknown" and rec.get("status") not in ("", "unknown", None)):
                 rec["status"] = r["status"]
             if r.get("website"):
                 rec["website"] = r["website"]
@@ -68,6 +69,10 @@ def main() -> None:
                 rec["remote_evidence"] = r["remote_evidence"]
             if r.get("description"):
                 rec["description"] = r["description"]
+            # union social/business links without clobbering existing ones
+            for k, v in (r.get("links") or {}).items():
+                if v:
+                    rec.setdefault("links", {}).setdefault(k, v)
             rec["last_checked"] = today
 
             note = (r.get("note") or "").strip()

@@ -10,7 +10,7 @@ description: "EO: Aquatic"
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {}
+links: {"linkedin": "https://www.linkedin.com/company/eomap-gmbh-&-co--kg"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

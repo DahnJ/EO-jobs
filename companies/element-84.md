@@ -12,7 +12,7 @@ category: ""
 listed: true
 links: {"crunchbase": "https://www.crunchbase.com/organization/element-84", "linkedin": "https://www.linkedin.com/company/element84/", "twitter": "https://twitter.com/Element84"}
 source: "original list"
-last_checked: ""
+last_checked: "2026-06-14"
 type: "commercial-eo"
 type_reason: "Cloud geospatial data processing for EO analytics. [agent]"
 ---

@@ -3,10 +3,10 @@ name: "Open Cosmos"
 status: "active"
 website: "https://www.open-cosmos.com/"
 careers_urls: ["https://opencosmos.bamboohr.com/jobs/"]
-locations: ["🇬🇧 Harwell, UK", "🇪🇸 Barcelona, Spain", "🇵🇹 Porto, Portugal", "🇬🇷 Athens, Greece"]
+locations: ["Harwell, UK", "Barcelona, Spain", "Porto, Portugal", "Athens, Greece"]
 remote: "Yes"
-remote_evidence: ""
-description: "Mission services, small satellites, data platform"
+remote_evidence: "Multi-country office footprint; BambooHR ATS suggests distributed hiring."
+description: "Satellite Earth observation and space technology company."
 satellites: ""
 category: ""
 listed: true

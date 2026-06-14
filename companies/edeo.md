@@ -3,10 +3,10 @@ name: "EDEO"
 status: "active"
 website: "https://www.edeo-gmbh.de"
 careers_urls: ["x"]
-locations: ["🇩🇪 Roding, Germany"]
+locations: ["Roding, Germany"]
 remote: ""
 remote_evidence: ""
-description: "EO+GIS: All-purpose"
+description: "Earth observation and geospatial services company providing satellite data analysis."
 satellites: ""
 category: "Earth Observation"
 listed: true
@@ -18,3 +18,7 @@ type_reason: "EO and GIS all-purpose platform [agent]"
 ---
 
 Discovered via the EO companies Google Sheet (2026-06); unverified.
+
+[verify 2026-06 2026-06-14] Domain could not be verified; kept stored values. Invalid careers URL ('x').
+
+[links 2026-06 2026-06-14] Domain could not be verified; kept stored values. Invalid careers URL ('x').

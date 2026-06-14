@@ -3,14 +3,14 @@ name: "PierSight"
 status: "active"
 website: "https://www.piersight.space/"
 careers_urls: ["https://piersight.space/careers"]
-locations: ["🇮🇳 India"]
+locations: ["India"]
 remote: ""
 remote_evidence: ""
-description: "SAR and AIS satellite constellation for maritime monitoring and persistent ocean awareness."
+description: "Earth observation and geospatial intelligence services."
 satellites: ""
 category: ""
 listed: true
-links: {}
+links: {"linkedin": "https://www.linkedin.com/company/piersight-space"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

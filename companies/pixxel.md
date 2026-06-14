@@ -2,11 +2,11 @@
 name: "Pixxel"
 status: "active"
 website: "https://www.pixxel.space/"
-careers_urls: ["https://www.pixxel.space/careers", "https://www.linkedin.com/company/pixxelspace/jobs/"]
-locations: ["🇮🇳 Bangalore, India", "🇺🇸 Los Angeles, CA, USA"]
+careers_urls: ["https://www.pixxel.space/careers"]
+locations: ["Bangalore, India", "Los Angeles, CA, USA"]
 remote: "Hybrid"
 remote_evidence: ""
-description: "Hyperspectral constellation, multipurpose"
+description: "Hyperspectral satellite imagery and Earth observation data."
 satellites: "Yes (planned)"
 category: ""
 listed: true

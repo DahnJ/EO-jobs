@@ -5,8 +5,8 @@ website: "https://www.ghgsat.com/en/"
 careers_urls: ["https://www.linkedin.com/company/ghgsat/jobs/"]
 locations: ["🇨🇦 Montreal, Canada"]
 remote: "Yes (Canada)"
-remote_evidence: ""
-description: "Hyperspectral constellation, greenhouse gases, monitoring tools"
+remote_evidence: "Company has offices in Montreal and remote roles available via LinkedIn jobs board."
+description: "Satellite data provider for methane and greenhouse gas monitoring and emissions tracking."
 satellites: ""
 category: ""
 listed: true

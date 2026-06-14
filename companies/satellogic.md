@@ -6,7 +6,7 @@ careers_urls: ["https://satellogic.bamboohr.com/jobs/"]
 locations: ["🇪🇸 Barcelona, Spain", "🇦🇷 Buenos Aires, Argentina", "🇺🇾 Montevideo, Uruguay", "🇺🇸 Charlotte, NC, USA"]
 remote: "Yes"
 remote_evidence: ""
-description: "Optical + hyperspectral constellation, analytics"
+description: "Earth Observation satellite imaging company."
 satellites: "Yes"
 category: ""
 listed: true
@@ -18,3 +18,7 @@ type_reason: "EO/satellite core business [agent]"
 ---
 
 https://twitter.com/aravind_raves/status/1518574658047688707
+
+[verify 2026-06 2026-06-14] Network restrictions prevented website verification
+
+[links 2026-06 2026-06-14] Network restrictions prevented website verification

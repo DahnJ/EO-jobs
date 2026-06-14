@@ -2,17 +2,17 @@
 name: "Asterra"
 status: "active"
 website: "https://asterra.io/"
-careers_urls: ["https://asterra.io/about/careers/", "https://www.linkedin.com/company/asterratech/jobs/", "x"]
-locations: ["🇮🇱 Rosh Ha’ayin, Israel", "🇺🇸 San Diego, CA, USA", "🇮🇱 Rosh Haayin, Israel"]
+careers_urls: ["https://asterra.io/about/careers/"]
+locations: ["Rosh Ha'ayin, Israel", "San Diego, CA, USA"]
 remote: "Yes"
 remote_evidence: ""
-description: "Using SAR to detect leaks"
+description: "Underground mapping and subsurface imaging technology."
 satellites: ""
 category: ""
 listed: true
 links: {"crunchbase": "https://www.crunchbase.com/organization/utilis-israel-inc", "linkedin": "https://www.linkedin.com/company/utilisltd/", "twitter": "https://twitter.com/asterratech", "youtube": "https://www.youtube.com/channel/UC0GiZovioMK-mMpOZZmUSAA"}
 source: "original list"
-last_checked: ""
+last_checked: "2026-06-14"
 type: "commercial-eo"
 type_reason: "SAR satellite for leak detection [agent]"
 ---

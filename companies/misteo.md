@@ -5,12 +5,12 @@ website: "https://misteo.co/"
 careers_urls: ["https://misteo.co/careers/"]
 locations: []
 remote: ""
-remote_evidence: ""
-description: "Climate fintech integrating satellite imagery and IoT data for climate risk management in agriculture and renewable energy."
+remote_evidence: "Actively hiring"
+description: "Climate fintech providing satellite-based weather forecasting and risk intelligence."
 satellites: ""
 category: ""
 listed: true
-links: {}
+links: {"linkedin": "https://www.linkedin.com/company/misteo/"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

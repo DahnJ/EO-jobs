@@ -6,7 +6,7 @@ careers_urls: ["x"]
 locations: ["🇨🇴 Bogota, Colombia"]
 remote: ""
 remote_evidence: ""
-description: "EO: All-purpose"
+description: "Geospatial solutions for infrastructure: BIM, UAV photography, satellite imagery, 3D scanning."
 satellites: ""
 category: "Earth Observation"
 listed: true
@@ -18,3 +18,7 @@ type_reason: "All-purpose EO analytics [agent]"
 ---
 
 Discovered via the EO companies Google Sheet (2026-06); unverified.
+
+[verify 2026-06 2026-06-14] No careers page or social links found
+
+[links 2026-06 2026-06-14] No careers page or social links found

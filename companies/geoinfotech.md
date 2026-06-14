@@ -5,12 +5,12 @@ website: "https://geoinfotech.ng"
 careers_urls: ["https://staff.geoinfotech.ng/careers"]
 locations: ["Lagos, Nigeria", "Abuja, Nigeria"]
 remote: ""
-remote_evidence: ""
-description: "Geospatial and surveying services; drone surveying, GIS software development, remote sensing, satellite image processing, and engineering geology."
+remote_evidence: "Online training program suggests digital capability but no explicit remote work policy stated."
+description: "Nigerian geospatial technology firm offering GIS, drone surveying, and remote sensing services."
 satellites: ""
 category: ""
 listed: true
-links: {}
+links: {"linkedin": "https://www.linkedin.com/in/geoinfotech-enterprise-128759121/", "twitter": "https://x.com/geoinfotech_ng", "youtube": "https://www.youtube.com/channel/UCLOn1kuYuXeKwjPJ9FZ-itw"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

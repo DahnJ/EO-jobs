@@ -3,14 +3,14 @@ name: "Nuview"
 status: "active"
 website: "https://nuview.space/"
 careers_urls: ["https://nuview.space/careers"]
-locations: ["🇺🇸 Orlando, USA"]
+locations: ["Orlando, USA"]
 remote: ""
 remote_evidence: ""
-description: "Elevation data from Lidar satellites"
+description: "Space-based Earth observation and analytics company."
 satellites: ""
 category: ""
 listed: true
-links: {}
+links: {"linkedin": "https://www.linkedin.com/company/nuviewspace/", "twitter": "https://twitter.com/NUVIEWspace"}
 source: "awesome 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

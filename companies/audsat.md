@@ -3,14 +3,14 @@ name: "Audsat"
 status: "active"
 website: "https://www.audsat.com.br/"
 careers_urls: ["https://audsat.vagas.solides.com.br/"]
-locations: ["🇧🇷 Brazil"]
+locations: ["Brazil"]
 remote: ""
 remote_evidence: ""
-description: "Satellite imagery + AI daily crop monitoring for rural credit & ag insurance"
+description: "Satellite data and remote sensing services."
 satellites: ""
 category: ""
 listed: true
-links: {}
+links: {"linkedin": "https://www.linkedin.com/company/audsatbr", "youtube": "https://www.youtube.com/@Audsatbr"}
 source: "sheet:Digital Farming 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

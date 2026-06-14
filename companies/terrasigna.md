@@ -1,12 +1,12 @@
 ---
 name: "Terrasigna"
 status: "active"
-website: "http://www.terrasigna.com"
+website: "http://www.terrasigna.com/"
 careers_urls: ["x"]
 locations: ["🇷🇴 Bucharest, Romania"]
 remote: ""
 remote_evidence: ""
-description: "EO: All-purpose, InSAR / PSI"
+description: "Earth observation and satellite radar interferometry for ground motion monitoring."
 satellites: ""
 category: "Earth Observation"
 listed: true
@@ -18,3 +18,7 @@ type_reason: "EO/satellite core business [agent]"
 ---
 
 Discovered via the EO companies Google Sheet (2026-06); unverified.
+
+[verify 2026-06 2026-06-14] Careers URL marked 'x' in input; no careers page found
+
+[links 2026-06 2026-06-14] Careers URL marked 'x' in input; no careers page found

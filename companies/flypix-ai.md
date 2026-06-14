@@ -3,14 +3,14 @@ name: "Flypix AI"
 status: "active"
 website: "https://flypix.ai/"
 careers_urls: ["https://flypix.ai/careers/"]
-locations: ["🇩🇪 Darmstadt, Germany"]
+locations: ["Darmstadt, Germany"]
 remote: ""
-remote_evidence: ""
-description: "EO: AI object analysis"
+remote_evidence: "Careers page does not specify remote work options."
+description: "AI-powered geospatial analysis from satellite, aerial, and drone imagery."
 satellites: ""
 category: ""
 listed: true
-links: {}
+links: {"linkedin": "https://www.linkedin.com/company/flypix-ai/"}
 source: "awesome 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

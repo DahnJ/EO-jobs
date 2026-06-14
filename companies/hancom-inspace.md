@@ -6,7 +6,7 @@ careers_urls: []
 locations: ["🇰🇷 Daejeon, South Korea"]
 remote: ""
 remote_evidence: ""
-description: "Integrated satellite imagery service: data collection, management, analysis, and Earth observation."
+description: "Unknown - site unreachable."
 satellites: ""
 category: ""
 listed: false
@@ -18,3 +18,7 @@ type_reason: "Satellite imagery data collection/analysis [agent]"
 ---
 
 [discovery-sweep 2026-06-14] No dedicated careers page found
+
+[verify 2026-06 2026-06-14] Domain security policy blocked access
+
+[links 2026-06 2026-06-14] Domain security policy blocked access

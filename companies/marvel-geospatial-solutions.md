@@ -2,11 +2,11 @@
 name: "Marvel Geospatial Solutions"
 status: "active"
 website: "https://www.marvelgeospatial.com"
-careers_urls: ["https://marvelgeospatial.com/pages/careers/"]
-locations: ["🇮🇳 Hyderabad, India"]
+careers_urls: ["https://www.marvelgeospatial.com/pages/careers/"]
+locations: ["Hyderabad, India"]
 remote: ""
 remote_evidence: ""
-description: "GIS+EO: All-purpose"
+description: "Drone surveying, GIS/CAD, LiDAR mapping, and digital twins for multiple industries."
 satellites: ""
 category: ""
 listed: true

@@ -10,7 +10,7 @@ description: "Satellite manufacturer and space service provider offering CubeSat
 satellites: ""
 category: ""
 listed: true
-links: {}
+links: {"linkedin": "https://www.linkedin.com/company/endurosat", "twitter": "https://x.com/endurosat", "youtube": "https://www.youtube.com/@endurosat/"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

@@ -2,17 +2,21 @@
 name: "Geosat"
 status: "active"
 website: "https://geosat.space/"
-careers_urls: []
+careers_urls: ["https://geosat.space/recruitment/"]
 locations: ["🇵🇹 Lisbon, Portugal"]
 remote: "No jobs"
 remote_evidence: ""
-description: "Two Geosat satellites, multi-purpose"
+description: "Very High-Resolution satellite imagery and analytics services with AI feature detection."
 satellites: "Yes"
 category: ""
-listed: false
+listed: true
 links: {"linkedin": "https://www.linkedin.com/company/globaleosatellites/", "twitter": "https://twitter.com/geosat_sat", "youtube": "https://www.youtube.com/channel/UC1WWTLsYpFCMw_GwK4dZfUQ"}
 source: "original list"
-last_checked: ""
+last_checked: "2026-06-14"
 type: "commercial-eo"
 type_reason: "Multi-purpose satellite operator [agent]"
 ---
+
+[verify 2026-06 2026-06-14] Found careers page at /recruitment/
+
+[links 2026-06 2026-06-14] Found careers page at /recruitment/

@@ -4,13 +4,13 @@ status: "active"
 website: "https://www.qubeiot.com/"
 careers_urls: ["https://www.qubeiot.com/careers"]
 locations: ["🇨🇦 Calgary, Alberta, Canada"]
-remote: ""
-remote_evidence: ""
-description: "Field-deployed hardware and machine learning for emissions monitoring detection."
+remote: "No"
+remote_evidence: "Careers page does not mention remote or hybrid work arrangements."
+description: "Continuous emissions monitoring using hardware sensors and physics-guided machine learning."
 satellites: ""
 category: ""
 listed: true
-links: {}
+links: {"linkedin": "https://www.linkedin.com/company/qubeiot/", "youtube": "https://www.youtube.com/@qubetechnologies"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

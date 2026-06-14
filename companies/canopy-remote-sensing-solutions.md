@@ -6,11 +6,11 @@ careers_urls: ["x"]
 locations: ["🇧🇷 Brazil"]
 remote: ""
 remote_evidence: ""
-description: "Forest mapping, inventory, and monitoring"
+description: "Geospatial monitoring solutions for forest management and carbon credit measurement."
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {}
+links: {"linkedin": "https://www.linkedin.com/company/canopy-remote-sensing-solutions/"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"
@@ -20,3 +20,7 @@ type_reason: "Forest mapping and monitoring from satellite [agent]"
 Discovered via the EO companies Google Sheet (2026-06); unverified.
 
 canopyrss.tech redirects to canopyrss.com.br.
+
+[verify 2026-06 2026-06-14] Careers link marked 'x' in source; no careers page accessible.
+
+[links 2026-06 2026-06-14] Careers link marked 'x' in source; no careers page accessible.

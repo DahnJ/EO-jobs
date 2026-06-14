@@ -3,10 +3,10 @@ name: "Agrospace"
 status: "active"
 website: "https://agrospace.cl/"
 careers_urls: []
-locations: ["🇨🇱 Chile"]
+locations: ["Chile"]
 remote: ""
 remote_evidence: ""
-description: "Chilean firm using satellite imagery for water management across mining, agriculture, aquaculture"
+description: "Satellite-based water management technology for mining, agriculture, and aquaculture."
 satellites: ""
 category: ""
 listed: false

@@ -3,10 +3,10 @@ name: "Skyline Partners"
 status: "active"
 website: "https://www.skyline.partners/"
 careers_urls: []
-locations: ["🇬🇧 London, UK"]
+locations: ["London, UK"]
 remote: ""
 remote_evidence: ""
-description: "Parametric insurance services using satellite and oceanographic data sources for custom insurance products."
+description: "Parametric insurance specialist; not an Earth Observation company."
 satellites: ""
 category: ""
 listed: false
@@ -18,3 +18,7 @@ type_reason: "Parametric insurance using satellite and oceanographic EO data. [a
 ---
 
 [discovery-sweep 2026-06-14] Insurance company using EO data, not primarily EO/satellite provider.
+
+[verify 2026-06 2026-06-14] not an EO company - focuses on parametric insurance products
+
+[links 2026-06 2026-06-14] not an EO company - focuses on parametric insurance products

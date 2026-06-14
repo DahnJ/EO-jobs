@@ -6,7 +6,7 @@ careers_urls: []
 locations: []
 remote: ""
 remote_evidence: ""
-description: "AI for energy exploration"
+description: "AI and analytics platform for Earth science and geospatial data processing."
 satellites: ""
 category: ""
 listed: false
@@ -18,3 +18,7 @@ type_reason: "AI for satellite data in energy exploration [agent]"
 ---
 
 Discovered via awesome (2026-06); unverified.
+
+[verify 2026-06 2026-06-14] Domain could not be verified; kept stored values. No location or careers info available.
+
+[links 2026-06 2026-06-14] Domain could not be verified; kept stored values. No location or careers info available.

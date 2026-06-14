@@ -3,14 +3,14 @@ name: "Planet IQ"
 status: "active"
 website: "https://planetiq.com/"
 careers_urls: ["https://planetiq.com/company/careers/"]
-locations: ["🇺🇸 Golden, USA"]
+locations: ["Golden, USA"]
 remote: "Hybrid"
 remote_evidence: "'Hybrid (Golden, CO) Preferred, Remote Considered' (planetiq.com careers)"
-description: "Weather satellite constellation"
+description: "Supply chain transparency and geospatial intelligence platform."
 satellites: ""
 category: ""
 listed: true
-links: {}
+links: {"linkedin": "https://www.linkedin.com/company/planetiq"}
 source: "awesome 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

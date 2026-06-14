@@ -3,14 +3,14 @@ name: "Argans"
 status: "active"
 website: "https://argans.co.uk"
 careers_urls: ["https://argans.co.uk/careers.html"]
-locations: ["🇬🇧 Plymouth, UK", "🇫🇷 Sophia-Antipolis, France"]
+locations: ["Plymouth, UK", "Sophia-Antipolis, France"]
 remote: ""
 remote_evidence: ""
-description: "EO: marine, atmospheric"
+description: "Satellite-based Earth Observation and remote-sensing services."
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {}
+links: {"linkedin": "https://www.linkedin.com/company/419849", "twitter": "https://twitter.com/ARGANS_Ltd"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

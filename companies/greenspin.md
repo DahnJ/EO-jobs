@@ -6,7 +6,7 @@ careers_urls: []
 locations: ["🇩🇪 Würzburg, Germany"]
 remote: ""
 remote_evidence: ""
-description: "Crop insights platform"
+description: "Unknown - site unreachable."
 satellites: ""
 category: ""
 listed: false
@@ -18,3 +18,7 @@ type_reason: "Crop insights platform likely uses EO/satellite data. [agent]"
 ---
 
 Discovered via sheet:Digital Farming (2026-06); unverified.
+
+[verify 2026-06 2026-06-14] Domain security policy blocked access
+
+[links 2026-06 2026-06-14] Domain security policy blocked access

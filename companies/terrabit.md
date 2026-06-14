@@ -6,11 +6,11 @@ careers_urls: ["https://terrabit.com.au/careers"]
 locations: ["🇦🇺 Australia"]
 remote: ""
 remote_evidence: ""
-description: "Platform for actionable satellite intelligence"
+description: "Satellite intelligence platform for land, mining, and environmental monitoring."
 satellites: ""
 category: ""
 listed: true
-links: {}
+links: {"linkedin": "https://linkedin.com/company/terrabit-pty-ltd/", "github": "https://github.com/terrabitptyltd", "youtube": "https://youtube.com/@terrabitptyltd"}
 source: "awesome 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

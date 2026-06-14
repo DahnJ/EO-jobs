@@ -19,7 +19,11 @@ For each company produce a JSON object with these exact keys:
 - "name": the company name.
 - "status": "active" | "acquired" | "defunct" | "renamed" | "unknown".
 - "website": canonical homepage (https). If it redirects, use the new URL.
-- "careers_url": careers/jobs page URL, else "".
+- "careers_url": careers/jobs page URL, else "". Look for it — a footer "Careers"/
+  "Jobs" link, a `/careers` path, or an ATS board (Lever/Greenhouse/Ashby/Workable).
+  This field decides whether the company appears in the public README, so try.
+- "links": object with any of these you can find (omit keys you can't): "linkedin",
+  "crunchbase", "twitter", "github", "youtube". Check the homepage footer/header.
 - "locations": array, HQ + major offices (e.g. ["San Francisco, US"]). [] if unknown.
 - "remote": "Yes" | "Hybrid" | "No" | "", optionally with a region — "Yes (US)".
   Read between the lines from job listings / careers-page language.

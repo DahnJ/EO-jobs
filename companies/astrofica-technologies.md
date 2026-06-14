@@ -6,11 +6,11 @@ careers_urls: ["https://www.astrofica.com/careers"]
 locations: ["Johannesburg, South Africa"]
 remote: ""
 remote_evidence: ""
-description: "Satellite service provider specializing in space-based data and intelligence; satellite system integration and application development."
+description: "Satellite-based geospatial solutions."
 satellites: ""
 category: ""
 listed: true
-links: {}
+links: {"linkedin": "https://za.linkedin.com/company/astrofica-technologies"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

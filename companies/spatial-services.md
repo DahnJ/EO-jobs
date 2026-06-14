@@ -6,11 +6,11 @@ careers_urls: ["https://www.spatial-services.com/en/jobs-en/"]
 locations: ["🇦🇹 Salzburg, Austria"]
 remote: ""
 remote_evidence: ""
-description: "GIS+EO: All-purpose"
+description: "Geospatial intelligence and GIS solutions for decision-making."
 satellites: ""
 category: ""
 listed: true
-links: {}
+links: {"linkedin": "https://www.linkedin.com/company/spatial-services"}
 source: "awesome 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

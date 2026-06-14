@@ -10,7 +10,7 @@ description: "Satellite and Earth Observation company designing and building spa
 satellites: ""
 category: ""
 listed: true
-links: {}
+links: {"linkedin": "https://www.linkedin.com/company/402258", "twitter": "https://x.com/CreotechSa", "youtube": "https://www.youtube.com/channel/UCeT-bIbhkwlB1C5K097ky1Q"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

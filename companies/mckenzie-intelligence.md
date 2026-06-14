@@ -3,7 +3,7 @@ name: "McKenzie Intelligence"
 status: "active"
 website: "https://www.mckenzieintelligence.com/"
 careers_urls: ["https://www.mckenzieintelligence.com/careers/"]
-locations: ["🇬🇧 London, UK"]
+locations: ["London, UK"]
 remote: ""
 remote_evidence: ""
 description: "Catastrophe intelligence: rapid observed damage assessment for insurers (GEO platform)"
@@ -22,3 +22,7 @@ Discovered via the EO companies Google Sheet (2026-06); unverified.
 .co.uk redirects to .com (canonical).
 
 [dedup] merged duplicate(s) mckenzie-intelligence-services — same company, redundant 'services' suffix; same site mckenzieintelligence.com
+
+[verify 2026-06 2026-06-14] Website unreachable; keeping stored values
+
+[links 2026-06 2026-06-14] Website unreachable; keeping stored values

@@ -3,14 +3,14 @@ name: "Solafune"
 status: "active"
 website: "https://company.solafune.com/"
 careers_urls: ["https://company.solafune.com/career"]
-locations: ["🇯🇵 Tokyo, Japan"]
+locations: ["Tokyo, Japan"]
 remote: ""
 remote_evidence: ""
-description: "Geospatial data analytics and satellite data competitions"
+description: "Planetary intelligence platform providing geospatial AI analysis for government and institutional decision-making."
 satellites: ""
 category: ""
 listed: true
-links: {}
+links: {"github": "https://github.com/Solafune-Inc/solafune-tools"}
 source: "awesome 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"
