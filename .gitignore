@@ -2,3 +2,5 @@ spac-slides
 .ipynb_checkpoints
 
 .venv/
+__pycache__/
+*.pyc

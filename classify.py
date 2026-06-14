@@ -27,7 +27,11 @@ def classify(rec: dict) -> tuple:
 
     if "not-eo" in text or "not an earth observation" in text or "not a geospatial" in text:
         return "not-eo", "flagged not-EO during verification"
-    if any(w in text for w in ["nonprofit", "non-profit", "not-for-profit", " ngo", "501(c)", "foundation"]):
+    # "foundation" alone is too broad ("foundation model" is an AI term), so
+    # only treat it as nonprofit signal when not immediately an AI-model phrase.
+    has_foundation = "foundation" in text and "foundation model" not in text
+    if has_foundation or any(w in text for w in
+            ["nonprofit", "non-profit", "not-for-profit", " ngo", "501(c)"]):
         return "nonprofit", "nonprofit/NGO language"
     return None, ""  # placeholder; real slug-based checks happen in main()
 
