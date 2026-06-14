@@ -3,7 +3,7 @@ name: "4pi Lab"
 status: "active"
 website: "https://site.4pilab.com/"
 careers_urls: []
-locations: ["Calgary, Canada"]
+locations: ["🇨🇦 Calgary, Canada"]
 remote: "No jobs"
 remote_evidence: ""
 description: "Satellite constellation for early wildfire detection with real-time alerts."

@@ -3,7 +3,7 @@ name: "Ariespace"
 status: "active"
 website: "https://www.ariespace.com/"
 careers_urls: []
-locations: ["Naples, Italy"]
+locations: ["🇮🇹 Naples, Italy"]
 remote: ""
 remote_evidence: ""
 description: "Remote sensing and satellite data analysis for agriculture."

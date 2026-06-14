@@ -3,7 +3,7 @@ name: "Sistema GmbH"
 status: "active"
 website: "https://www.sistema.at/"
 careers_urls: ["https://sistema.at/join-us/"]
-locations: ["Vienna, Austria"]
+locations: ["🇦🇹 Vienna, Austria"]
 remote: ""
 remote_evidence: "Website timeouts; unable to access careers page or job listings"
 remote_confidence: "low"

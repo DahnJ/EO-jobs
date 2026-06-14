@@ -3,7 +3,7 @@ name: "Polar View"
 status: "active"
 website: "http://www.polarview.org"
 careers_urls: ["x"]
-locations: ["Didcot, UK"]
+locations: ["🇬🇧 Didcot, UK"]
 remote: ""
 remote_evidence: "No careers page or job listings found; no remote work policies mentioned."
 remote_confidence: "low"

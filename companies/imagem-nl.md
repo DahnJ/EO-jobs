@@ -3,7 +3,7 @@ name: "Imagem nl"
 status: "active"
 website: "https://imagem.nl/en/"
 careers_urls: ["https://imagem.nl/en/werken-bij/"]
-locations: ["Apeldoorn, Netherlands"]
+locations: ["🇳🇱 Apeldoorn, Netherlands"]
 remote: "Hybrid"
 remote_evidence: "Careers page states 'You can use workspaces at office, but also have the option to work from home' with flexible work policy"
 remote_confidence: "medium"

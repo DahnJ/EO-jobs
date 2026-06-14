@@ -3,7 +3,7 @@ name: "EarthPulse"
 status: "active"
 website: "https://earthpulse.ai/"
 careers_urls: ["https://earthpulse.ai/about#hiring"]
-locations: ["Barcelona, Spain"]
+locations: ["🇪🇸 Barcelona, Spain"]
 remote: "No"
 remote_evidence: "Careers page lists 3 open positions (Geospatial Data BD Lead, Senior BD Lead, Finance Specialist) with no remote work mentioned; does not explicitly state remote not available"
 remote_confidence: "medium"

@@ -3,7 +3,7 @@ name: "Agroapps"
 status: "active"
 website: "https://agroapps.gr/en/"
 careers_urls: ["https://agroapps.gr/career"]
-locations: ["Greece"]
+locations: ["🇬🇷 Greece"]
 remote: ""
 remote_evidence: "Unable to access careers page."
 remote_confidence: "low"

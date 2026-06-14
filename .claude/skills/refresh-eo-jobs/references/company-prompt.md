@@ -40,6 +40,10 @@ For each company produce a JSON object with these exact keys:
   summary chip.** A role shown as "Remote" on the board listing usually restricts
   eligibility to a region in the posting body (e.g. "Remote — US or EU only") — open
   a representative posting and capture that geography. Bare "Yes" is rarely correct.
+  **Export-control / work-authorization language scopes remoteness:** a "remote"
+  role that mentions ITAR/EAR, "US export control", "must be a US person", or "US
+  work authorization required" is effectively "Yes (US)"; the equivalent for other
+  countries applies too.
 - "remote_evidence": one short sentence with the evidence (quote/observation). "".
 - "description": one sentence (≤ ~25 words) on what the company does.
 - "note": "" normally; flag acquired/defunct/renamed, a dead careers link, or if

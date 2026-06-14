@@ -3,7 +3,7 @@ name: "SatLeo Labs"
 status: "active"
 website: "https://www.satleolabs.com/"
 careers_urls: []
-locations: ["Ahmedabad, India"]
+locations: ["🇮🇳 Ahmedabad, India"]
 remote: ""
 remote_evidence: ""
 description: "Satellite technology company."

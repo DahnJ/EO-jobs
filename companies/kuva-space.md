@@ -3,7 +3,7 @@ name: "Kuva Space"
 status: "active"
 website: "https://kuvaspace.com/"
 careers_urls: ["https://careers.kuvaspace.com/"]
-locations: ["Espoo, Finland"]
+locations: ["🇫🇮 Espoo, Finland"]
 remote: "Yes (Finland +- 2 hours)"
 remote_evidence: "Careers page lists Senior Marketing Manager as 'Hybrid' in Espoo; retained stored value as it specifies location constraint"
 remote_confidence: "high"

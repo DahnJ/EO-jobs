@@ -3,7 +3,7 @@ name: "Specim"
 status: "active"
 website: "https://specim.com"
 careers_urls: ["https://www.specim.com/careers/"]
-locations: ["Oulu, Finland"]
+locations: ["🇫🇮 Oulu, Finland"]
 remote: ""
 remote_evidence: ""
 description: "Manufacturer of hyperspectral imaging cameras and systems for industrial, research, and airborne applications."

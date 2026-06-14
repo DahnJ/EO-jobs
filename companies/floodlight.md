@@ -3,7 +3,7 @@ name: "Floodlight"
 status: "active"
 website: "https://floodlightglobal.com/"
 careers_urls: []
-locations: ["Los Angeles, USA"]
+locations: ["🇺🇸 Los Angeles, USA"]
 remote: ""
 remote_evidence: ""
 description: "Satellite-based climate intelligence for financial risk assessment."

@@ -3,7 +3,7 @@ name: "Orbitworks"
 status: "active"
 website: "https://orbitworks.space"
 careers_urls: ["https://orbitworks.space/careers"]
-locations: ["Abu Dhabi, UAE"]
+locations: ["🇦🇪 Abu Dhabi, UAE"]
 remote: ""
 remote_evidence: "Careers page states 'building a team in Abu Dhabi' with no mention of remote work options (2026-06)"
 remote_confidence: "low"

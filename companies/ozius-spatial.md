@@ -3,7 +3,7 @@ name: "Ozius Spatial"
 status: "active"
 website: "https://ozius.earth/"
 careers_urls: ["x"]
-locations: ["Australia"]
+locations: ["🇦🇺 Australia"]
 remote: ""
 remote_evidence: "No careers URL available (marked as 'x' in input)"
 remote_confidence: "low"

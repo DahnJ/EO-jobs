@@ -3,7 +3,7 @@ name: "Cloud to Sreet"
 status: "active"
 website: "https://www.cloudtostreet.ai/"
 careers_urls: ["https://www.cloudtostreet.ai/careers"]
-locations: ["New York, USA"]
+locations: ["🇺🇸 New York, USA"]
 remote: "No jobs"
 remote_evidence: "Page redirects to floodbase.com/careers; VP of Product role shown with Hybrid arrangement in New York/Boston"
 remote_confidence: "low"

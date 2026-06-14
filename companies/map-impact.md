@@ -3,7 +3,7 @@ name: "Map Impact"
 status: "active"
 website: "https://www.mapimpact.io/"
 careers_urls: []
-locations: ["UK"]
+locations: ["🇬🇧 UK"]
 remote: ""
 remote_evidence: ""
 description: "Satellite data and impact measurement platform."

@@ -3,7 +3,7 @@ name: "PolArctic LLC"
 status: "active"
 website: "https://polarcticllc.com/"
 careers_urls: ["https://polarcticllc.com/join-us"]
-locations: ["USA"]
+locations: ["🇺🇸 USA"]
 remote: "Yes"
 remote_evidence: "Job posting describes 'small remote team' with work-from-home and flexible schedules emphasized."
 remote_confidence: "high"

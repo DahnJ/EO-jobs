@@ -3,7 +3,7 @@ name: "Satim"
 status: "active"
 website: "https://www.satim.co/"
 careers_urls: []
-locations: ["Kraków, Poland", "Dover, US", "London, UK"]
+locations: ["🇵🇱 Kraków, Poland", "🇺🇸 Dover, US", "🇬🇧 London, UK"]
 remote: ""
 remote_evidence: ""
 description: "AI-powered SAR imagery analysis for ISR operations."

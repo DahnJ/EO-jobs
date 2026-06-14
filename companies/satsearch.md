@@ -3,7 +3,7 @@ name: "satsearch"
 status: "active"
 website: "https://satsearch.co/"
 careers_urls: ["https://satsearch.co/about"]
-locations: ["Remote"]
+locations: ["🌐 Remote"]
 remote: "Yes"
 remote_evidence: "Careers page indicates remote-first company"
 remote_confidence: "medium"

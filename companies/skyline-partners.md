@@ -3,7 +3,7 @@ name: "Skyline Partners"
 status: "active"
 website: "https://www.skyline.partners/"
 careers_urls: []
-locations: ["London, UK"]
+locations: ["🇬🇧 London, UK"]
 remote: ""
 remote_evidence: ""
 description: "Parametric insurance specialist; not an Earth Observation company."

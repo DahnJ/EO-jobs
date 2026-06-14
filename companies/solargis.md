@@ -3,7 +3,7 @@ name: "Solargis"
 status: "active"
 website: "https://solargis.com/"
 careers_urls: ["https://solargis.com/about-us/jobs"]
-locations: ["Bratislava, Slovakia"]
+locations: ["🇸🇰 Bratislava, Slovakia"]
 remote: "No"
 remote_evidence: "Careers page states 'flexible working hours and possibility for occasional home-office' but all positions are 'Full-time, Bratislava' in-office."
 remote_confidence: "high"

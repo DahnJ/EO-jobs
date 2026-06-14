@@ -3,7 +3,7 @@ name: "Tesselo"
 status: "defunct"
 website: "https://tesselo.com/"
 careers_urls: ["https://tesselo.com/about#job-offers"]
-locations: ["Lisbon, Portugal"]
+locations: ["🇵🇹 Lisbon, Portugal"]
 remote: ""
 remote_evidence: ""
 description: "EO: Sustainability, mapping"

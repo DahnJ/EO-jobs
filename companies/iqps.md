@@ -3,7 +3,7 @@ name: "iQPS"
 status: "active"
 website: "https://i-qps.net/"
 careers_urls: ["https://i-qps.net/career#section3"]
-locations: ["Fukuoka, Japan"]
+locations: ["🇯🇵 Fukuoka, Japan"]
 remote: ""
 remote_evidence: "Career page domain blocked by enterprise security policy; unable to fetch"
 remote_confidence: "low"

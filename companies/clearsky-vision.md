@@ -3,7 +3,7 @@ name: "Clearsky Vision"
 status: "active"
 website: "https://clearsky.vision/"
 careers_urls: []
-locations: ["Aalborg, Denmark"]
+locations: ["🇩🇰 Aalborg, Denmark"]
 remote: ""
 remote_evidence: ""
 description: "Optical and SAR fusion satellite imagery provider for cloud-free analysis."

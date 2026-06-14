@@ -3,7 +3,7 @@ name: "Assimila"
 status: "active"
 website: "https://www.assimila.earth"
 careers_urls: ["https://www.assimila.earth/about/#careers"]
-locations: ["Reading, UK"]
+locations: ["🇬🇧 Reading, UK"]
 remote: ""
 remote_evidence: "Careers section exists on about page but no job listings visible; couldn't access listing-level confirmation"
 remote_confidence: "low"

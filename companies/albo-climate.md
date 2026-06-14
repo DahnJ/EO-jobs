@@ -3,7 +3,7 @@ name: "Albo Climate"
 status: "active"
 website: "https://www.albosys.com/"
 careers_urls: []
-locations: ["Tel Aviv, Israel"]
+locations: ["🇮🇱 Tel Aviv, Israel"]
 remote: "No jobs"
 remote_evidence: ""
 description: "Carbon sequestration evaluation through satellite imagery"

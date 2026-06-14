@@ -3,7 +3,7 @@ name: "NEO BV"
 status: "active"
 website: "https://www.neo.nl"
 careers_urls: ["https://www.neo.nl/vacatures-bij-neo/"]
-locations: ["Amersfoort, Netherlands"]
+locations: ["🇳🇱 Amersfoort, Netherlands"]
 remote: ""
 remote_evidence: "Careers page emphasizes central office location in Amersfoort, Netherlands; no remote work policy mentioned in listings."
 remote_confidence: "low"

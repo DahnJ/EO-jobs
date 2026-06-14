@@ -3,7 +3,7 @@ name: "GalaxEye Space"
 status: "active"
 website: "https://galaxeye.space/"
 careers_urls: ["https://careers.galaxeye.space/jobs/Careers"]
-locations: ["Bengaluru, India"]
+locations: ["🇮🇳 Bengaluru, India"]
 remote: ""
 remote_evidence: "Careers page content truncated; could not assess remote work options or list jobs"
 remote_confidence: "low"

@@ -3,7 +3,7 @@ name: "Agrospace"
 status: "active"
 website: "https://agrospace.cl/"
 careers_urls: []
-locations: ["Chile"]
+locations: ["🇨🇱 Chile"]
 remote: ""
 remote_evidence: ""
 description: "Satellite-based water management technology for mining, agriculture, and aquaculture."

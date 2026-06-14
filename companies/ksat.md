@@ -3,7 +3,7 @@ name: "KSAT"
 status: "active"
 website: "https://ksat.no"
 careers_urls: ["https://karriere.ksat.no"]
-locations: ["Tromsø, Norway"]
+locations: ["🇳🇴 Tromsø, Norway"]
 remote: ""
 remote_evidence: "Careers page not accessible due to domain verification failure"
 remote_confidence: "low"

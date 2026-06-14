@@ -3,7 +3,7 @@ name: "Creotech Instruments"
 status: "active"
 website: "https://creotech.pl"
 careers_urls: ["https://creotech.pl/careers/"]
-locations: ["Piaseczno, Poland", "Warsaw, Poland", "Kraków, Poland"]
+locations: ["🇵🇱 Piaseczno, Poland", "🇵🇱 Warsaw, Poland", "🇵🇱 Kraków, Poland"]
 remote: "Hybrid"
 remote_evidence: "Careers page explicitly states 'Hybrid model of work as an option' under attractive work conditions; individual job postings do not specify remote details"
 remote_confidence: "medium"

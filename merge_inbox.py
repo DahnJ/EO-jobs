@@ -23,6 +23,7 @@ import datetime
 import json
 
 import db
+import flags
 
 INBOX = db.DB / "_inbox"
 
@@ -62,7 +63,7 @@ def main() -> None:
             if cu:
                 rec["careers_urls"] = [cu]
             if r.get("locations"):
-                rec["locations"] = r["locations"]
+                rec["locations"] = flags.flag_all(r["locations"])
             # don't let a lower-confidence remote finding overwrite a higher one
             _co = {"high": 3, "medium": 2, "low": 1, "": 0}
             _inc = _co.get(r.get("remote_confidence") or "", 0)

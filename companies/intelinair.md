@@ -3,7 +3,7 @@ name: "Intelinair"
 status: "active"
 website: "https://www.intelinair.com"
 careers_urls: ["https://www.intelinair.com/careers/"]
-locations: ["Indianapolis, USA"]
+locations: ["🇺🇸 Indianapolis, USA"]
 remote: ""
 remote_evidence: "Careers page domain blocked by enterprise security policy; unable to fetch"
 remote_confidence: "low"

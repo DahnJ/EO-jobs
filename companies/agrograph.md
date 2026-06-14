@@ -3,7 +3,7 @@ name: "Agrograph"
 status: "active"
 website: "https://agrograph.com/"
 careers_urls: ["https://angel.co/company/agrograph-1"]
-locations: ["Madison, WI"]
+locations: ["🇺🇸 Madison, WI"]
 remote: "Yes (US)"
 remote_evidence: "Stored value retained; AngelList/Wellfound requires additional permissions to access."
 remote_confidence: "low"

@@ -3,7 +3,7 @@ name: "Scepter"
 status: "active"
 website: "https://scepterair.com/"
 careers_urls: []
-locations: ["San Francisco, CA, USA"]
+locations: ["🇺🇸 San Francisco, CA, USA"]
 remote: "No"
 remote_evidence: ""
 description: "Drone and aerial imaging company."

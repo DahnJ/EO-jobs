@@ -3,7 +3,7 @@ name: "HySpecIQ"
 status: "active"
 website: "https://hyspeciq.com/"
 careers_urls: ["https://hyspeciq.breezy.hr/"]
-locations: ["Herndon, USA"]
+locations: ["🇺🇸 Herndon, USA"]
 remote: "Yes (US)"
 remote_evidence: "Breezy.hr careers board redirected from hyspeciq.breezy.hr; unable to extract specific listings from redirect"
 remote_confidence: "low"

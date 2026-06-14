@@ -3,7 +3,7 @@ name: "Nara Space"
 status: "active"
 website: "https://naraspace.com/"
 careers_urls: ["https://naraspace.careers.team"]
-locations: ["Seoul, South Korea"]
+locations: ["🇰🇷 Seoul, South Korea"]
 remote: ""
 remote_evidence: "Careers page in Korean; insufficient content to assess remote policy."
 remote_confidence: "low"

@@ -3,7 +3,7 @@ name: "Marvel Geospatial Solutions"
 status: "active"
 website: "https://www.marvelgeospatial.com"
 careers_urls: ["https://www.marvelgeospatial.com/pages/careers/"]
-locations: ["Hyderabad, India"]
+locations: ["🇮🇳 Hyderabad, India"]
 remote: "No"
 remote_evidence: "Careers page lists positions in Hyderabad, India only with no remote designation mentioned."
 remote_confidence: "medium"

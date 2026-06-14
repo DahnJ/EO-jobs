@@ -3,7 +3,7 @@ name: "Indigo Ag"
 status: "active"
 website: "https://www.indigoag.com/"
 careers_urls: ["https://www.indigoag.com/careers"]
-locations: ["Boston, USA"]
+locations: ["🇺🇸 Boston, USA"]
 remote: ""
 remote_evidence: "Careers page domain blocked by enterprise security policy; unable to fetch"
 remote_confidence: "low"

@@ -3,7 +3,7 @@ name: "Orora Tech"
 status: "active"
 website: "https://ororatech.com"
 careers_urls: ["https://ororatech.com/careers/"]
-locations: ["Munich, Germany", "USA", "Canada", "Athens, Greece"]
+locations: ["🇩🇪 Munich, Germany", "🇺🇸 USA", "🇨🇦 Canada", "🇬🇷 Athens, Greece"]
 remote: "Yes"
 remote_evidence: "Stored value retained - domain security verification failed"
 remote_confidence: "low"

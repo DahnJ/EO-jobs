@@ -3,7 +3,7 @@ name: "Arbol"
 status: "active"
 website: "https://www.arbol.io/"
 careers_urls: ["https://jobs.lever.co/Arbol"]
-locations: ["New York, USA"]
+locations: ["🇺🇸 New York, USA"]
 remote: "Yes"
 remote_evidence: "Lever jobs board shows 'Remote —' tag on multiple listings (Senior Underwriter, Sales Manager, Platform Engineer, 2026-06)."
 remote_confidence: "high"

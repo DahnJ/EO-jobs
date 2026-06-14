@@ -3,7 +3,7 @@ name: "IBISA"
 status: "active"
 website: "https://www.ibisa.network/"
 careers_urls: []
-locations: ["Luxembourg"]
+locations: ["🇱🇺 Luxembourg"]
 remote: ""
 remote_evidence: ""
 description: "Parametric climate insurance products for farmers and renewable energy operators."

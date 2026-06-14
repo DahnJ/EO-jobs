@@ -3,7 +3,7 @@ name: "Kappazeta"
 status: "active"
 website: "https://kappazeta.ee/"
 careers_urls: ["https://kappazeta.ee/jobs"]
-locations: ["Tartu, Estonia"]
+locations: ["🇪🇪 Tartu, Estonia"]
 remote: "No"
 remote_evidence: "Company page states team works from multiple offices in Estonia, Sweden, Netherlands; no remote work mentioned"
 remote_confidence: "medium"

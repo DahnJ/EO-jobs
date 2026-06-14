@@ -3,7 +3,7 @@ name: "Marlan Space"
 status: "active"
 website: "https://www.marlan.space"
 careers_urls: ["https://www.marlan.space/careers"]
-locations: ["Abu Dhabi, UAE"]
+locations: ["🇦🇪 Abu Dhabi, UAE"]
 remote: ""
 remote_evidence: "Careers page returned HTTP 404; unable to access."
 remote_confidence: "low"

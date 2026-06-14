@@ -3,7 +3,7 @@ name: "DynaCrop"
 status: "active"
 website: "https://dynacrop.space/en/"
 careers_urls: ["https://worldfrom.space/about/careers/"]
-locations: ["Brno, Czech Republic"]
+locations: ["🇨🇿 Brno, Czech Republic"]
 remote: ""
 remote_evidence: "Homepage references careers link to worldfrom.space/about/careers/ but does not detail positions or remote status; unable to improve on stored value"
 remote_confidence: "low"

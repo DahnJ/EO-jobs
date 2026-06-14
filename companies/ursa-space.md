@@ -3,7 +3,7 @@ name: "Ursa Space"
 status: "active"
 website: "https://ursaspace.com/"
 careers_urls: ["https://twitter.com/ursaspace?lang=en"]
-locations: ["Ithaca, USA"]
+locations: ["🇺🇸 Ithaca, USA"]
 remote: "Yes (US)"
 remote_evidence: "Stored value confirmed; careers URL is Twitter profile (not accessible for verification)"
 remote_confidence: "medium"

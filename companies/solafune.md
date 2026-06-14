@@ -3,7 +3,7 @@ name: "Solafune"
 status: "active"
 website: "https://company.solafune.com/"
 careers_urls: ["https://company.solafune.com/career"]
-locations: ["Tokyo, Japan"]
+locations: ["🇯🇵 Tokyo, Japan"]
 remote: ""
 remote_evidence: "No job listings or remote work policy visible on career page."
 remote_confidence: "low"

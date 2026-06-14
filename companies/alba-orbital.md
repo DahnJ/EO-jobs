@@ -3,7 +3,7 @@ name: "Alba Orbital"
 status: "active"
 website: "http://www.albaorbital.com/"
 careers_urls: ["http://www.albaorbital.com/careers"]
-locations: ["Glasgow, UK", "Berlin, Germany"]
+locations: ["🇬🇧 Glasgow, UK", "🇩🇪 Berlin, Germany"]
 remote: "No"
 remote_evidence: "Stored value retained; unable to access careers page."
 remote_confidence: "low"

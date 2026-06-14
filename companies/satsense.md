@@ -3,7 +3,7 @@ name: "Satsense"
 status: "unknown"
 website: "https://satsense.com/"
 careers_urls: ["x"]
-locations: ["Leeds, UK"]
+locations: ["🇬🇧 Leeds, UK"]
 remote: ""
 remote_evidence: ""
 description: "InSAR ground stability data, geotechnical consultancy"

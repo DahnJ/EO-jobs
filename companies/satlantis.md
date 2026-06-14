@@ -3,7 +3,7 @@ name: "satlantis"
 status: "active"
 website: "https://satlantis.com/"
 careers_urls: ["https://satlantis.com/work-at-satlantis/"]
-locations: ["Leioa-Bilbao, Spain", "Gainesville, FL, USA"]
+locations: ["🇪🇸 Leioa-Bilbao, Spain", "🇺🇸 Gainesville, FL, USA"]
 remote: "No"
 remote_evidence: "Careers page shows on-site positions; no remote designation"
 remote_confidence: "medium"

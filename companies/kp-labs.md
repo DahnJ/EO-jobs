@@ -3,7 +3,7 @@ name: "KP Labs"
 status: "active"
 website: "https://kplabs.space/"
 careers_urls: ["https://kplabs.space/space-company-career/"]
-locations: ["Gliwice, Poland", "Warsaw, Poland"]
+locations: ["🇵🇱 Gliwice, Poland", "🇵🇱 Warsaw, Poland"]
 remote: "Yes (Hybrid)"
 remote_evidence: "Careers page lists hybrid positions in Gliwice and remote-eligible roles; benefits include flexible working hours"
 remote_confidence: "high"

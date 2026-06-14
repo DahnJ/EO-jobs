@@ -3,7 +3,7 @@ name: "Mayday.ai"
 status: "active"
 website: "https://mayday.ai/"
 careers_urls: ["https://mayday.ai/careers/"]
-locations: ["Darmstadt, Germany"]
+locations: ["🇩🇪 Darmstadt, Germany"]
 remote: "No"
 remote_evidence: "Domain security check blocked access; stored value retained."
 remote_confidence: "low"

@@ -3,7 +3,7 @@ name: "Vercator"
 status: "defunct"
 website: "https://vercator.com/"
 careers_urls: ["https://vercator.com/careers/"]
-locations: ["UK"]
+locations: ["🇬🇧 UK"]
 remote: ""
 remote_evidence: ""
 description: "Point cloud processing"

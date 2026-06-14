@@ -3,7 +3,7 @@ name: "MDA"
 status: "active"
 website: "https://mda.space/en/"
 careers_urls: ["https://mda.space/en/careers"]
-locations: ["Canada, US, UK"]
+locations: ["🇨🇦 Canada, US, UK"]
 remote: "No"
 remote_evidence: "Domain security check blocked access; stored value retained."
 remote_confidence: "low"

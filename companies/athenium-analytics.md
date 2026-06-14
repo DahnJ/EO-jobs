@@ -3,7 +3,7 @@ name: "Athenium analytics"
 status: "active"
 website: "https://www.athenium.com/"
 careers_urls: ["https://www.athenium.com/about-us/careers/"]
-locations: ["Dover, NH, USA"]
+locations: ["🇺🇸 Dover, NH, USA"]
 remote: "Yes (US)"
 remote_evidence: "Stored value indicates US remote capability; unable to confirm in this batch"
 remote_confidence: "medium"

@@ -3,7 +3,7 @@ name: "Latconnect"
 status: "active"
 website: "https://www.lc60.ai/"
 careers_urls: []
-locations: ["Perth, Australia"]
+locations: ["🇦🇺 Perth, Australia"]
 remote: ""
 remote_evidence: ""
 description: "AI-powered satellite Earth observation for agriculture and emissions."

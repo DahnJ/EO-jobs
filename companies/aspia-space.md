@@ -3,7 +3,7 @@ name: "Aspia Space"
 status: "active"
 website: "https://aspiaspace.com/"
 careers_urls: []
-locations: ["Pool, Cornwall, UK"]
+locations: ["🇬🇧 Pool, Cornwall, UK"]
 remote: ""
 remote_evidence: ""
 description: "Space technology company."

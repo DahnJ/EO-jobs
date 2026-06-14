@@ -3,7 +3,7 @@ name: "Pina Earth"
 status: "active"
 website: "https://pina.earth/en"
 careers_urls: ["https://pina.jobs.personio.com"]
-locations: ["Munich, Germany"]
+locations: ["🇩🇪 Munich, Germany"]
 remote: "No"
 remote_evidence: "Listings in Munich require on-site presence; no remote options mentioned (Personio)."
 remote_confidence: "high"

@@ -3,7 +3,7 @@ name: "PlanetWatchers"
 status: "active"
 website: "https://www.planetwatchers.com/"
 careers_urls: ["https://www.planetwatchers.com/careers/"]
-locations: ["New York, USA", "London, UK", "Tel Aviv, Israel"]
+locations: ["🇺🇸 New York, USA", "🇬🇧 London, UK", "🇮🇱 Tel Aviv, Israel"]
 remote: "Yes"
 remote_evidence: "Careers page states 'fully remote or hybrid roles' available across US, UK, and Israel teams."
 remote_confidence: "high"

@@ -3,7 +3,7 @@ name: "Pixxel"
 status: "active"
 website: "https://www.pixxel.space/"
 careers_urls: ["https://www.pixxel.space/careers"]
-locations: ["Bangalore, India", "Los Angeles, CA, USA"]
+locations: ["🇮🇳 Bangalore, India", "🇺🇸 Los Angeles, CA, USA"]
 remote: "Hybrid"
 remote_evidence: "Careers page lists 'Hybrid work flexibility' as employee benefit (Darwin Box portal)."
 remote_confidence: "medium"

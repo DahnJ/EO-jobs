@@ -3,7 +3,7 @@ name: "Astrosat"
 status: "active"
 website: "https://astrosat.net"
 careers_urls: ["https://astrosat.net/career/"]
-locations: ["Musselburgh, UK"]
+locations: ["🇬🇧 Musselburgh, UK"]
 remote: ""
 remote_evidence: "Unable to access career listings; career page may be JS-rendered or behind bot detection"
 remote_confidence: "low"

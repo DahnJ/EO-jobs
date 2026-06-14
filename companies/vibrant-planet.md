@@ -3,7 +3,7 @@ name: "Vibrant Planet"
 status: "active"
 website: "https://www.vibrantplanet.net/"
 careers_urls: []
-locations: ["Incline Village, NV, USA"]
+locations: ["🇺🇸 Incline Village, NV, USA"]
 remote: "No jobs"
 remote_evidence: "Stored value retained; unable to fetch website."
 description: "Forest management platform"

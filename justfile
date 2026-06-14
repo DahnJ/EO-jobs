@@ -33,6 +33,10 @@ check args="--listed-only":
 fixup:
     uv run python fixup_data.py
 
+# backfill a flag emoji on every location that lacks one (locations must have flags)
+flags:
+    uv run python flags.py
+
 # DB summary (counts by status / source / listed)
 stats:
     uv run python db.py

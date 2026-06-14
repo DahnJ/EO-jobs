@@ -3,7 +3,7 @@ name: "Aistech"
 status: "active"
 website: "https://aistechspace.com/"
 careers_urls: ["https://aistechspace.com/careers/"]
-locations: ["Barcelona, Spain"]
+locations: ["🇪🇸 Barcelona, Spain"]
 remote: "Yes"
 remote_evidence: "Stored value retained; unable to access careers page."
 remote_confidence: "low"

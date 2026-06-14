@@ -3,7 +3,7 @@ name: "Satyukt"
 status: "active"
 website: "https://www.satyukt.com/"
 careers_urls: ["https://www.satyukt.com/career.html"]
-locations: ["Bengaluru, India"]
+locations: ["🇮🇳 Bengaluru, India"]
 remote: "Some positions"
 remote_evidence: "Career page lists 'Remote Sensing Intern' as remote role; other positions (Business Development) mention travel, suggesting office-based work"
 remote_confidence: "medium"

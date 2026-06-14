@@ -3,7 +3,7 @@ name: "JBA Risk Management"
 status: "active"
 website: "https://www.jbarisk.com/"
 careers_urls: ["https://www.jbarisk.com/careers/"]
-locations: ["Skipton, UK", "United States", "Europe", "Asia Pacific"]
+locations: ["🇬🇧 Skipton, UK", "🇺🇸 United States", "🌍 Europe", "🌏 Asia Pacific"]
 remote: ""
 remote_evidence: "Careers page not accessible (404 error)"
 remote_confidence: "low"

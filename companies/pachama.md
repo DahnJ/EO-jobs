@@ -3,7 +3,7 @@ name: "Pachama"
 status: "active"
 website: "https://pachama.com/"
 careers_urls: ["https://pachama.com/careers"]
-locations: ["Remote"]
+locations: ["🌐 Remote"]
 remote: "Yes (PCT +-3)"
 remote_evidence: "Stored value retained - domain security verification failed"
 remote_confidence: "low"

@@ -3,7 +3,7 @@ name: "Absolut Sensing"
 status: "active"
 website: "https://sensing-ai.eu/"
 careers_urls: ["https://sensing-ai.eu/careers/"]
-locations: ["Toulouse, France"]
+locations: ["🇫🇷 Toulouse, France"]
 remote: "No"
 remote_evidence: "Stored value retained; unable to access careers page."
 remote_confidence: "low"

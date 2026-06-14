@@ -3,7 +3,7 @@ name: "SkyGeo"
 status: "active"
 website: "https://skygeo.com/"
 careers_urls: ["https://skygeo.com/geotechnical-careers/"]
-locations: ["Houston, USA", "California, USA", "Delft, Netherlands", "Calgary, Canada", "Australia", "Chile", "South Africa", "Singapore"]
+locations: ["🇺🇸 Houston, USA", "🇺🇸 California, USA", "🇳🇱 Delft, Netherlands", "🇨🇦 Calgary, Canada", "🇦🇺 Australia", "🇨🇱 Chile", "🇿🇦 South Africa", "🇸🇬 Singapore"]
 remote: "Yes"
 remote_evidence: "Stored value; homepage lists offices in multiple countries but doesn't specify work arrangement; careers page (404) not accessible"
 remote_confidence: "medium"

@@ -3,7 +3,7 @@ name: "Space Intelligence"
 status: "active"
 website: "https://www.space-intelligence.com/"
 careers_urls: ["https://www.space-intelligence.com/working-for-us/"]
-locations: ["Edinburgh, UK"]
+locations: ["🇬🇧 Edinburgh, UK"]
 remote: "No jobs"
 remote_evidence: "Working-for-us page returns 404; unable to access job listings."
 remote_confidence: "low"

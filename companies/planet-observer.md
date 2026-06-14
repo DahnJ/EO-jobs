@@ -3,7 +3,7 @@ name: "Planet Observer"
 status: "active"
 website: "https://planetobserver.com/"
 careers_urls: []
-locations: ["Clermont, France"]
+locations: ["🇫🇷 Clermont, France"]
 remote: ""
 remote_evidence: ""
 description: "Earth observation and satellite imagery analysis."

@@ -3,7 +3,7 @@ name: "Kleos"
 status: "active"
 website: "https://kleos.space/"
 careers_urls: ["https://kleos.space/category/careers/"]
-locations: ["Luxembourg", "Leicester, UK", "Denver, USA"]
+locations: ["🇱🇺 Luxembourg", "🇬🇧 Leicester, UK", "🇺🇸 Denver, USA"]
 remote: "Yes (UK, Luxembourg, France, Belgium, Germany)"
 remote_evidence: "Careers page not accessible (404 error); stored value retained as unverifiable"
 remote_confidence: "low"

@@ -3,7 +3,7 @@ name: "Development Seed"
 status: "active"
 website: "https://developmentseed.org/"
 careers_urls: ["https://developmentseed.org/careers/"]
-locations: ["Washington D.C, US", "Lisbon, Portugal", "Ayacucho, Peru"]
+locations: ["🇺🇸 Washington D.C, US", "🇵🇹 Lisbon, Portugal", "🇵🇪 Ayacucho, Peru"]
 remote: "Yes"
 remote_evidence: "Careers page states 'We're remote friendly, because wonderful teammates can come from anywhere'; Technical Project Lead listed as Remote (US) with travel to Huntsville, AL"
 remote_confidence: "high"

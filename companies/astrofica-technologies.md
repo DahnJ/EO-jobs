@@ -3,7 +3,7 @@ name: "Astrofica Technologies"
 status: "active"
 website: "https://www.astrofica.com"
 careers_urls: ["https://www.astrofica.com/careers"]
-locations: ["Johannesburg, South Africa"]
+locations: ["🇿🇦 Johannesburg, South Africa"]
 remote: ""
 remote_evidence: "Unable to access careers page at https://www.astrofica.com/careers"
 remote_confidence: "low"

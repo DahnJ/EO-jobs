@@ -3,7 +3,7 @@ name: "LiveEO"
 status: "active"
 website: "https://live-eo.com/"
 careers_urls: ["https://live-eo.com/jobs/"]
-locations: ["Berlin, Germany"]
+locations: ["🇩🇪 Berlin, Germany"]
 remote: "Hybrid"
 remote_evidence: "Careers page returns 404 error; stored value 'Hybrid' retained as reasonable given company location"
 remote_confidence: "low"

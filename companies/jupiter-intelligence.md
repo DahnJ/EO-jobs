@@ -3,7 +3,7 @@ name: "Jupiter Intelligence"
 status: "active"
 website: "https://jupiterintel.com/"
 careers_urls: ["https://jobs.lever.co/jupiterintel/"]
-locations: ["San Mateo, USA"]
+locations: ["🇺🇸 San Mateo, USA"]
 remote: ""
 remote_evidence: "Lever job board returns 403 Forbidden; cannot access listings"
 remote_confidence: "low"

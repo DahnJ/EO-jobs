@@ -3,7 +3,7 @@ name: "Descifra"
 status: "active"
 website: "https://www.descifra.com/"
 careers_urls: []
-locations: ["Mexico City, Mexico"]
+locations: ["🇲🇽 Mexico City, Mexico"]
 remote: ""
 remote_evidence: ""
 description: "Geointelligence platform applying AI to territorial decision-making for retail and enterprises."

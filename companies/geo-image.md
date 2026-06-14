@@ -3,7 +3,7 @@ name: "Geoimage"
 status: "active"
 website: "https://www.geoimage.com.au"
 careers_urls: ["https://www.geoimage.com.au/careers"]
-locations: ["Brisbane, Australia"]
+locations: ["🇦🇺 Brisbane, Australia"]
 remote: "No"
 remote_evidence: "Careers page states team is 'Brisbane-based'; no mention of remote work flexibility. No current job listings."
 remote_confidence: "medium"

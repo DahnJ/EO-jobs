@@ -3,7 +3,7 @@ name: "Descartes Labs"
 status: "active"
 website: "https://descarteslabs.com/"
 careers_urls: ["https://jobs.lever.co/descarteslabs.com"]
-locations: ["Santa Fe, US"]
+locations: ["🇺🇸 Santa Fe, US"]
 remote: "Yes (US)"
 remote_evidence: "Stored value retained; Lever job board (403 forbidden) unreachable; unable to confirm current listings"
 remote_confidence: "low"

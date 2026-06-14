@@ -3,7 +3,7 @@ name: "Aerobotics"
 status: "active"
 website: "https://aerobotics.com"
 careers_urls: ["https://aerobotics.com/careers"]
-locations: ["Cape Town, South Africa"]
+locations: ["🇿🇦 Cape Town, South Africa"]
 remote: "Hybrid"
 remote_evidence: "Careers page states 'We prioritise in-person collaboration, so our Cape Town team works mostly from the office with the flexibility to work remotely when needed.'"
 description: "Yield forecasting platform using AI and smartphone imagery for fruit companies; drone scanning also available."

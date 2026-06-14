@@ -3,7 +3,7 @@ name: "Scanway"
 status: "active"
 website: "https://scanway.pl"
 careers_urls: ["https://scanway.pl/kariera/"]
-locations: ["Wrocław, Poland"]
+locations: ["🇵🇱 Wrocław, Poland"]
 remote: "No"
 remote_evidence: "All job listings specify physical locations in Wrocław, Poland only; no mention of remote options"
 remote_confidence: "high"

@@ -3,7 +3,7 @@ name: "Aerospacelab"
 status: "active"
 website: "https://www.aerospacelab.com/"
 careers_urls: ["https://www.aerospacelab.com/join-our-team/"]
-locations: ["Mont-Saint-Guibert, Belgium", "Toulouse, France", "Lausanne, Switzerland", "Los Angeles, USA"]
+locations: ["🇧🇪 Mont-Saint-Guibert, Belgium", "🇫🇷 Toulouse, France", "🇺🇸 Lausanne, Switzerland", "🇺🇸 Los Angeles, USA"]
 remote: "Hybrid"
 remote_evidence: "Stored value retained; unable to access careers page."
 remote_confidence: "low"

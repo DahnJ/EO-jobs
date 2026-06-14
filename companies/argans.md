@@ -3,7 +3,7 @@ name: "Argans"
 status: "active"
 website: "https://argans.co.uk"
 careers_urls: ["https://argans.co.uk/careers.html"]
-locations: ["Plymouth, UK", "Sophia-Antipolis, France"]
+locations: ["🇬🇧 Plymouth, UK", "🇫🇷 Sophia-Antipolis, France"]
 remote: ""
 remote_evidence: "Careers page shows no current job vacancies; unable to access listing-level confirmation"
 remote_confidence: "low"

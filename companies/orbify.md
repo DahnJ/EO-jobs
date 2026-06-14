@@ -3,7 +3,7 @@ name: "Orbify"
 status: "active"
 website: "https://orbify.com/"
 careers_urls: []
-locations: ["Krakow, Poland"]
+locations: ["🇵🇱 Krakow, Poland"]
 remote: "No"
 remote_evidence: "Listed as 'No jobs' in stored data; likely not hiring or office-based."
 description: "Polish Earth observation and satellite analytics platform."

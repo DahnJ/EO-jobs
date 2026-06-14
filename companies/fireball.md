@@ -3,7 +3,7 @@ name: "Fireball"
 status: "active"
 website: "https://fireballit.com/"
 careers_urls: []
-locations: ["?"]
+locations: []
 remote: "No jobs"
 remote_evidence: ""
 description: "Early wildfire detection"

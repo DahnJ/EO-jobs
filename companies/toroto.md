@@ -3,7 +3,7 @@ name: "Toroto"
 status: "active"
 website: "https://toroto.com/"
 careers_urls: ["https://careers.toroto.com/"]
-locations: ["Mexico"]
+locations: ["🇲🇽 Mexico"]
 remote: ""
 remote_evidence: "Careers page is JS-rendered and did not load content for analysis. Unable to determine remote policy."
 remote_confidence: "low"

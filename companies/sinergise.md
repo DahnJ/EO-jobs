@@ -3,7 +3,7 @@ name: "Sinergise"
 status: "active"
 website: "https://www.sinergise.com/"
 careers_urls: ["https://www.sinergise.com/en/careers/openpositions"]
-locations: ["Ljubljana, Slovenia"]
+locations: ["🇸🇮 Ljubljana, Slovenia"]
 remote: "No"
 remote_evidence: "Careers page states 'We have no open positions at this time'; no remote policy mentioned"
 remote_confidence: "low"

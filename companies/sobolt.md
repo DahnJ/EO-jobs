@@ -3,7 +3,7 @@ name: "Sobolt"
 status: "active"
 website: "https://www.sobolt.com/"
 careers_urls: ["https://sobolt.com/werken-bij/"]
-locations: ["Rotterdam, Netherlands"]
+locations: ["🇳🇱 Rotterdam, Netherlands"]
 remote: "Hybrid"
 remote_evidence: "Careers page states 'Hybride ritme & flexibele uren' (hybrid rhythm with flexible hours) with Rotterdam office."
 remote_confidence: "high"

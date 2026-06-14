@@ -3,7 +3,7 @@ name: "CloudFerro"
 status: "active"
 website: "https://cloudferro.com"
 careers_urls: ["https://cloudferro.com/career/job-offers/"]
-locations: ["Warsaw, Poland"]
+locations: ["🇵🇱 Warsaw, Poland"]
 remote: ""
 remote_evidence: "Job offers page shows 11 open positions but no remote work mention visible; job details require clicking through (JS-rendered)"
 remote_confidence: "low"

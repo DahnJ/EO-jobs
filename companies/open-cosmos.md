@@ -3,7 +3,7 @@ name: "Open Cosmos"
 status: "active"
 website: "https://www.open-cosmos.com/"
 careers_urls: ["https://opencosmos.bamboohr.com/jobs/"]
-locations: ["Harwell, UK", "Barcelona, Spain", "Porto, Portugal", "Athens, Greece"]
+locations: ["🇬🇧 Harwell, UK", "🇪🇸 Barcelona, Spain", "🇵🇹 Porto, Portugal", "🇬🇷 Athens, Greece"]
 remote: "Yes"
 remote_evidence: "Stored value retained - BambooHR job board returned 403 (JS-rendered, bot-blocked)"
 remote_confidence: "low"

@@ -3,7 +3,7 @@ name: "Land IQ"
 status: "active"
 website: "https://www.landiq.com/"
 careers_urls: ["https://www.landiq.com/careers"]
-locations: ["Sacramento, USA", "Los Angeles, USA"]
+locations: ["🇺🇸 Sacramento, USA", "🇺🇸 Los Angeles, USA"]
 remote: ""
 remote_evidence: "Careers page not accessible due to domain verification failure"
 remote_confidence: "low"

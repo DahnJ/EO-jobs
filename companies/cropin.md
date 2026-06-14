@@ -3,7 +3,7 @@ name: "Cropin"
 status: "active"
 website: "https://www.cropin.com/"
 careers_urls: ["https://www.cropin.com/career/"]
-locations: ["Bangalore, India"]
+locations: ["🇮🇳 Bangalore, India"]
 remote: "Hybrid"
 remote_evidence: "Careers page states 'Our hybrid work culture blends office and remote work'; specific job openings not listed on page"
 remote_confidence: "medium"

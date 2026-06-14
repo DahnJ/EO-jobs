@@ -3,7 +3,7 @@ name: "Tre Altamira"
 status: "active"
 website: "https://site.tre-altamira.com/"
 careers_urls: ["https://site.tre-altamira.com/work-with-us/"]
-locations: ["Milan, Italy", "Barcelona, Spain", "Vancouver, Canada"]
+locations: ["🇮🇹 Milan, Italy", "🇪🇸 Barcelona, Spain", "🇨🇦 Vancouver, Canada"]
 remote: "Hybrid"
 remote_evidence: "Stored value from previous research."
 remote_confidence: "high"

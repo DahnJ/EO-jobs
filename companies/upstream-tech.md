@@ -3,7 +3,7 @@ name: "Upstream Tech"
 status: "active"
 website: "https://www.upstream.tech/"
 careers_urls: ["https://jobs.upstream.tech/"]
-locations: ["Remote"]
+locations: ["🌐 Remote"]
 remote: "Yes (US)"
 remote_evidence: "Stored value from previous research."
 remote_confidence: "high"

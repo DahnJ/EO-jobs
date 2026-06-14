@@ -3,7 +3,7 @@ name: "Hydrosat"
 status: "active"
 website: "https://www.hydrosat.com/"
 careers_urls: ["https://www.hydrosat.com/careers/"]
-locations: ["Washington D.C., USA", "Carlsbad, CA, USA", "Luxembourg", "Wageningen, Netherlands"]
+locations: ["🇺🇸 Washington D.C., USA", "🇺🇸 Carlsbad, CA, USA", "🇱🇺 Luxembourg", "🇳🇱 Wageningen, Netherlands"]
 remote: "Yes"
 remote_evidence: "Careers page lists 'Remote (3)' positions available; also has hybrid and on-site roles across Luxembourg, US (Carlsbad CA, Washington DC), Netherlands"
 remote_confidence: "high"

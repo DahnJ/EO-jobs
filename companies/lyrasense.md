@@ -3,7 +3,7 @@ name: "Lyrasense"
 status: "active"
 website: "https://lyrasense.com"
 careers_urls: []
-locations: ["London, UK"]
+locations: ["🇬🇧 London, UK"]
 remote: ""
 remote_evidence: ""
 description: "Hyperspectral satellite imaging and AI analysis for Earth observation."

@@ -3,7 +3,7 @@ name: "Perennial"
 status: "active"
 website: "https://www.perennial.earth/"
 careers_urls: ["https://www.perennial.earth/careers#job-openings"]
-locations: ["Boulder, CO, USA", "Adelaide, SA, Australia"]
+locations: ["🇺🇸 Boulder, CO, USA", "🇦🇺 Adelaide, SA, Australia"]
 remote: "Yes (US / Australia)"
 remote_evidence: "Stored value retained - domain security verification failed"
 remote_confidence: "low"

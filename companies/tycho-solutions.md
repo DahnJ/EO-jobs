@@ -3,7 +3,7 @@ name: "Tycho Solutions"
 status: "active"
 website: "https://tycho.solutions/"
 careers_urls: ["x"]
-locations: ["Mexico City, Mexico"]
+locations: ["🇲🇽 Mexico City, Mexico"]
 remote: ""
 remote_evidence: "Careers URL placeholder (x) - not available"
 remote_confidence: "low"

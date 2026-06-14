@@ -3,7 +3,7 @@ name: "NatureMetrics"
 status: "active"
 website: "https://www.naturemetrics.com"
 careers_urls: ["https://naturemetrics.jobs.personio.de"]
-locations: ["Guildford, United Kingdom", "London, United Kingdom", "Ontario, Canada"]
+locations: ["🇬🇧 Guildford, United Kingdom", "🇬🇧 London, United Kingdom", "🇨🇦 Ontario, Canada"]
 remote: ""
 remote_evidence: ""
 description: "Biodiversity monitoring using environmental DNA (eDNA) testing; offers geospatial analysis but not primarily an Earth Observation company."

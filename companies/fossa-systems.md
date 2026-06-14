@@ -3,7 +3,7 @@ name: "FOSSA Systems"
 status: "active"
 website: "https://fossa.systems"
 careers_urls: ["https://careers.fossa.systems/jobs"]
-locations: ["Madrid, Spain", "Lisbon, Portugal"]
+locations: ["🇪🇸 Madrid, Spain", "🇵🇹 Lisbon, Portugal"]
 remote: ""
 remote_evidence: ""
 description: "Space-based communications company providing satellite IoT solutions and infrastructure for remote asset monitoring."

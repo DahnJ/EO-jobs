@@ -3,7 +3,7 @@ name: "Climate Engine"
 status: "active"
 website: "https://climateengine.com/"
 careers_urls: ["https://www.linkedin.com/company/climateengine/jobs/"]
-locations: ["Carson City, USA"]
+locations: ["🇺🇸 Carson City, USA"]
 remote: "Yes"
 remote_evidence: "Active (Reno NV, 11-50 staff) but no open jobs anywhere right now (LinkedIn jobs, 2026-06); own /careers 404s and site 403s. Remote unverifiable — no listings to confirm."
 remote_confidence: "low"

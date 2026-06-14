@@ -3,7 +3,7 @@ name: "Orbital Eye"
 status: "active"
 website: "https://orbitaleye.nl/"
 careers_urls: ["https://orbitaleye.nl/about-us-concept/"]
-locations: ["Delft, Netherlands"]
+locations: ["🇳🇱 Delft, Netherlands"]
 remote: "No"
 remote_evidence: "Stored value retained - original URL redirected to different domain (301), alternate site returned 404"
 remote_confidence: "low"

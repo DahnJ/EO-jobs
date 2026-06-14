@@ -3,7 +3,7 @@ name: "Online Oceans"
 status: "active"
 website: "https://www.onlineoceans.com/"
 careers_urls: []
-locations: ["UK"]
+locations: ["🇬🇧 UK"]
 remote: ""
 remote_evidence: ""
 description: "Ocean robotics company developing autonomous surface vehicles for maritime domain awareness and monitoring."

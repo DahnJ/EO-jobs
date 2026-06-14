@@ -3,7 +3,7 @@ name: "EagleView"
 status: "active"
 website: "https://www.eagleview.com/"
 careers_urls: ["https://www.eagleview.com/careers/job-postings/"]
-locations: ["USA", "India", "Canada", "Australia"]
+locations: ["🇺🇸 USA", "🇮🇳 India", "🇨🇦 Canada", "🇦🇺 Australia"]
 remote: "Yes (US)"
 remote_evidence: "Stored value retained; careers portal redirects to iCIMS system (unable to parse listings); unable to confirm current remote status"
 remote_confidence: "low"

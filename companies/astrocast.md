@@ -3,7 +3,7 @@ name: "Astrocast"
 status: "active"
 website: "https://astrocast.com"
 careers_urls: ["https://www.astrocast.com/careers/"]
-locations: ["Lausanne, Switzerland"]
+locations: ["🇺🇸 Lausanne, Switzerland"]
 remote: ""
 remote_evidence: ""
 description: "Satellite IoT connectivity service provider using nanosatellite network for remote device connectivity."

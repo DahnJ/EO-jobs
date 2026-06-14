@@ -3,7 +3,7 @@ name: "Arlula"
 status: "active"
 website: "https://www.arlula.com/"
 careers_urls: ["https://www.arlula.com/careers/"]
-locations: ["Ultimo, Australia"]
+locations: ["🇦🇺 Ultimo, Australia"]
 remote: "Hybrid"
 remote_evidence: "Careers page lists positions as 'Sydney (hybrid)' (Arlula internal careers site, 2026)"
 remote_confidence: "high"

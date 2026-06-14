@@ -3,7 +3,7 @@ name: "AiDash"
 status: "active"
 website: "https://www.aidash.com/"
 careers_urls: ["https://www.aidash.com/careers/"]
-locations: ["San Jose, CA, USA"]
+locations: ["🇺🇸 San Jose, CA, USA"]
 remote: "No"
 remote_evidence: "Careers page visible with team categories but no specific job listings shown; stored value retained."
 remote_confidence: "low"

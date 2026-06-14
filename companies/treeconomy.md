@@ -3,7 +3,7 @@ name: "Treeconomy"
 status: "active"
 website: "https://www.treeconomy.co/"
 careers_urls: []
-locations: ["London, UK"]
+locations: ["🇬🇧 London, UK"]
 remote: ""
 remote_evidence: ""
 description: "Carbon removal platform using satellite imagery and AI for ecosystem restoration."

@@ -3,7 +3,7 @@ name: "Map"
 status: "active"
 website: "https://map4u.gr/?lang=el"
 careers_urls: []
-locations: ["Athens, Greece"]
+locations: ["🇬🇷 Athens, Greece"]
 remote: ""
 remote_evidence: ""
 description: "Geoinformatics services including aerial photography, 3D modeling, and geospatial analysis."

@@ -3,7 +3,7 @@ name: "Scopito"
 status: "active"
 website: "https://scopito.com/"
 careers_urls: []
-locations: ["Aarhus, Denmark"]
+locations: ["🇩🇰 Aarhus, Denmark"]
 remote: ""
 remote_evidence: ""
 description: "Underwater imaging and robotics company."

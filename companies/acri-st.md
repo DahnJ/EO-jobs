@@ -3,7 +3,7 @@ name: "ACRI-ST"
 status: "active"
 website: "http://www.acri-st.fr"
 careers_urls: ["https://www.acri-st.fr/en/careers"]
-locations: ["Sophia-Antipolis, France"]
+locations: ["🇫🇷 Sophia-Antipolis, France"]
 remote: ""
 remote_evidence: "Unable to access careers board."
 remote_confidence: "low"
