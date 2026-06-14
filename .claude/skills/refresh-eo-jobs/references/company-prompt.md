@@ -37,6 +37,13 @@ For each company produce a JSON object with these exact keys:
   showing "no jobs right now" — record that in `note` ("no current openings") and
   set careers_url to the working LinkedIn jobs page anyway (a valid pointer beats a
   404). This field decides README inclusion.
+  **NEVER fabricate a URL.** Do not guess a LinkedIn slug from the company name —
+  `linkedin.com/company/<name>` is a 404 unless that exact slug exists. Only build a
+  `/jobs` URL from the LinkedIn company slug you actually verified for the "linkedin"
+  link (i.e. append `/jobs` to a page you confirmed loads). Every careers_url you
+  return must be one you fetched and saw resolve — an unverified or invented link is
+  worse than "" (it gets the company listed with a broken link). If you can't verify
+  any, return "" and explain in `note`.
 - "links": object with any of these you can find (omit keys you can't): "linkedin",
   "crunchbase", "twitter", "github", "youtube". Check the homepage footer/header.
 - "locations": array, HQ + major offices (e.g. ["San Francisco, US"]). [] if unknown.
