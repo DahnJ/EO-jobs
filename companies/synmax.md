@@ -4,9 +4,9 @@ status: "active"
 website: "https://www.synmax.com/"
 careers_urls: ["https://www.synmax.com/careers/"]
 locations: ["🇺🇸 Houston, USA"]
-remote: ""
-remote_evidence: "Careers page exists but no job listings visible; page suggests positions available via careers@synmax.com but remote policy not stated"
-remote_confidence: "low"
+remote: "Hybrid"
+remote_evidence: "All 3 open roles (London, D.C., Houston) listed Full-time - Hybrid."
+remote_confidence: "high"
 description: "Maritime, energy, and strategic market intelligence through satellite data."
 satellites: ""
 category: ""
