@@ -1,7 +1,7 @@
 ---
 name: "VISTA Remote Sensing"
 status: "active"
-website: "https://www.vista-geo.de/en/"
+website: "https://www.vista-geo.de/"
 careers_urls: ["https://www.vista-geo.de/about-vista/career/"]
 locations: ["🇩🇪 Munich, Germany"]
 remote: "Hybrid"
