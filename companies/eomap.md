@@ -11,9 +11,9 @@ description: "EO: Aquatic"
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/eomap-gmbh-&-co--kg"}
+links: {"linkedin": "https://www.linkedin.com/company/eomap-gmbh-&-co--kg", "crunchbase": "https://www.crunchbase.com/organization/eomap"}
 source: "google-sheet 2026-06"
-last_checked: "2026-06-14"
+last_checked: "2026-06-15"
 type: "commercial-eo"
 type_reason: "EO for aquatic monitoring; now Fugro company [agent]"
 ---

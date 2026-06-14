@@ -11,9 +11,9 @@ description: "Maritime AI company fusing multi-source data into intelligence for
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/windward-ltd-/", "twitter": "https://x.com/WindwardAI", "youtube": "https://www.youtube.com/channel/UCRiZ6MI5mP_oLWwnnblB1KA", "facebook": "https://www.facebook.com/WindwardMaritimeAI"}
+links: {"linkedin": "https://www.linkedin.com/company/windward-ltd-/", "twitter": "https://x.com/WindwardAI", "youtube": "https://www.youtube.com/channel/UCRiZ6MI5mP_oLWwnnblB1KA", "facebook": "https://www.facebook.com/WindwardMaritimeAI", "crunchbase": "https://crunchbase.com/organization/windward-naval"}
 source: "discovery-sweep 2026-06"
-last_checked: "2026-06-14"
+last_checked: "2026-06-15"
 type: "commercial-eo"
 type_reason: "EO/satellite core business [agent]"
 ---

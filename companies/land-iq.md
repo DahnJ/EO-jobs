@@ -11,9 +11,9 @@ description: "Agricultural and environmental solutions using remote sensing."
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/land-iq"}
+links: {"linkedin": "https://www.linkedin.com/company/land-iq", "crunchbase": "https://www.crunchbase.com/organization/land-iq"}
 source: "awesome 2026-06"
-last_checked: "2026-06-14"
+last_checked: "2026-06-15"
 type: "commercial-eo"
 type_reason: "GIS & EO services [agent]"
 ---

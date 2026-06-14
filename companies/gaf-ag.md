@@ -11,9 +11,9 @@ description: "Geospatial technology and satellite data processing services."
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/gaf-ag/", "twitter": "https://twitter.com/gaf_ag", "youtube": "https://www.youtube.com/user/gafag"}
+links: {"linkedin": "https://www.linkedin.com/company/gaf-ag/", "twitter": "https://twitter.com/gaf_ag", "youtube": "https://www.youtube.com/user/gafag", "crunchbase": "https://www.crunchbase.com/organization/gaf-ag"}
 source: "google-sheet 2026-06"
-last_checked: "2026-06-14"
+last_checked: "2026-06-15"
 type: "commercial-eo"
 type_reason: "All-purpose EO analytics [agent]"
 ---

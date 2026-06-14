@@ -4,7 +4,7 @@ status: "active"
 website: "https://www.globalxplorer.org/"
 careers_urls: ["https://www.linkedin.com/company/globalxplorer/jobs/"]
 locations: ["🇺🇸 Birmingham, USA"]
-remote: "No jobs"
+remote: ""
 remote_evidence: ""
 description: "Archeology"
 satellites: ""

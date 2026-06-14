@@ -11,9 +11,9 @@ description: "GIS mapping, CAD drafting, IT solutions, and staffing services spe
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/quantum-asia-p-ltd.", "twitter": "https://x.com/quantum_asia", "facebook": "https://www.facebook.com/Quantum.Asia.Pvt.Ltd"}
+links: {"linkedin": "https://www.linkedin.com/company/quantum-asia-p-ltd.", "twitter": "https://x.com/quantum_asia", "facebook": "https://www.facebook.com/Quantum.Asia.Pvt.Ltd", "crunchbase": "https://www.crunchbase.com/organization/quantum-asia"}
 source: "awesome 2026-06"
-last_checked: "2026-06-14"
+last_checked: "2026-06-15"
 type: "commercial-eo"
 type_reason: "EO/satellite core business [agent]"
 ---

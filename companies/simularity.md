@@ -11,9 +11,9 @@ description: "AI-powered geospatial analysis platform for detecting and classify
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/simularity/", "twitter": "https://twitter.com/simularity"}
+links: {"linkedin": "https://www.linkedin.com/company/simularity/", "twitter": "https://twitter.com/simularity", "crunchbase": "https://www.crunchbase.com/organization/simularity"}
 source: "google-sheet 2026-06"
-last_checked: "2026-06-14"
+last_checked: "2026-06-15"
 type: "commercial-eo"
 type_reason: "EO/satellite core business [agent]"
 ---

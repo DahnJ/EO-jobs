@@ -13,7 +13,7 @@ category: "Earth Observation"
 listed: true
 links: {"linkedin": "https://www.linkedin.com/company/assimila-ltd/", "twitter": "https://twitter.com/assimilaltd", "github": "https://github.com/Assimila"}
 source: "google-sheet 2026-06"
-last_checked: "2026-06-14"
+last_checked: "2026-06-15"
 type: "commercial-eo"
 type_reason: "EO environmental monitoring and modeling [agent]"
 ---

@@ -11,9 +11,9 @@ description: "Satellite manufacturer and space service provider offering CubeSat
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/endurosat", "twitter": "https://x.com/endurosat", "youtube": "https://www.youtube.com/@endurosat/"}
+links: {"linkedin": "https://www.linkedin.com/company/endurosat", "twitter": "https://x.com/endurosat", "youtube": "https://www.youtube.com/@endurosat/", "crunchbase": "https://www.crunchbase.com/organization/endurosat"}
 source: "discovery-sweep 2026-06"
-last_checked: "2026-06-14"
+last_checked: "2026-06-15"
 type: "commercial-eo"
 type_reason: "Satellite manufacturer and data services. [agent]"
 ---

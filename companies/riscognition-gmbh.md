@@ -11,9 +11,9 @@ description: "Analysis-ready location intelligence via geospatial APIs and data 
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/riscognition", "medium": "https://medium.com/riscognition"}
+links: {"linkedin": "https://www.linkedin.com/company/riscognition", "medium": "https://medium.com/riscognition", "crunchbase": "https://www.crunchbase.com/organization/riscognition"}
 source: "google-sheet 2026-06"
-last_checked: "2026-06-14"
+last_checked: "2026-06-15"
 type: "commercial-eo"
 type_reason: "EO/satellite core business [agent]"
 ---

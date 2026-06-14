@@ -4,7 +4,7 @@ status: "active"
 website: "https://www.influunt.ai/"
 careers_urls: []
 locations: ["🇺🇸 San Francisco, CA, USA"]
-remote: "No jobs"
+remote: ""
 remote_evidence: ""
 description: "Water risk intelligence"
 satellites: ""

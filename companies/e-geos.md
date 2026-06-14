@@ -4,7 +4,7 @@ status: "active"
 website: "https://www.e-geos.it/en/"
 careers_urls: ["https://www.linkedin.com/company/e-geos/jobs"]
 locations: ["🇮🇹 Rome, Italy"]
-remote: "No jobs"
+remote: ""
 remote_evidence: "Careers page unreachable (SSL certificate error); unable to verify current job listings or remote policy"
 remote_confidence: "low"
 description: "Earth observation and geospatial services company providing satellite imagery and analysis."

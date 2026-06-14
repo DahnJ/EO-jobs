@@ -11,9 +11,9 @@ description: "Geoinformation solutions using remote sensing for environment and 
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/10446572", "github": "https://github.com/mundialis", "twitter": "https://mastodon.social/@mundialis"}
+links: {"linkedin": "https://www.linkedin.com/company/10446572", "github": "https://github.com/mundialis", "twitter": "https://mastodon.social/@mundialis", "crunchbase": "https://www.crunchbase.com/organization/mundialis"}
 source: "google-sheet 2026-06"
-last_checked: "2026-06-14"
+last_checked: "2026-06-15"
 type: "commercial-eo"
 type_reason: "EO data infrastructure and analytics [agent]"
 ---

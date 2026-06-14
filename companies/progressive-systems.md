@@ -11,9 +11,9 @@ description: "Earth Observation services platform and data analysis tools for sa
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://it.linkedin.com/company/progressive-systems", "twitter": "https://twitter.com/progressive_EO"}
+links: {"linkedin": "https://it.linkedin.com/company/progressive-systems", "twitter": "https://twitter.com/progressive_EO", "crunchbase": "https://www.crunchbase.com/organization/progressive-systems"}
 source: "awesome 2026-06"
-last_checked: "2026-06-14"
+last_checked: "2026-06-15"
 type: "commercial-eo"
 type_reason: "EO/satellite core business [agent]"
 ---

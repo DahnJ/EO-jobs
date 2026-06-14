@@ -11,9 +11,9 @@ description: "Climate and sustainability technology company."
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/pci-geomatics", "twitter": "https://x.com/pcigeomatics", "youtube": "https://www.youtube.com/channel/UC5m2DT5ZhnzyA_Yuv3IGqnw"}
+links: {"linkedin": "https://www.linkedin.com/company/pci-geomatics", "twitter": "https://x.com/pcigeomatics", "youtube": "https://www.youtube.com/channel/UC5m2DT5ZhnzyA_Yuv3IGqnw", "crunchbase": "https://www.crunchbase.com/organization/pci-geomatics"}
 source: "google-sheet 2026-06"
-last_checked: "2026-06-14"
+last_checked: "2026-06-15"
 type: "commercial-eo"
 type_reason: "Remote sensing and photogrammetry software for EO analysis. [agent]"
 ---

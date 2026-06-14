@@ -11,9 +11,9 @@ description: "Geospatial consulting and digital transformation with services in 
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/rmsi", "twitter": "https://twitter.com/RMSI_Global", "youtube": "https://www.youtube.com/channel/UCPWAhT3yDOewQ_5eBuICiSA"}
+links: {"linkedin": "https://www.linkedin.com/company/rmsi", "twitter": "https://twitter.com/RMSI_Global", "youtube": "https://www.youtube.com/channel/UCPWAhT3yDOewQ_5eBuICiSA", "crunchbase": "https://www.crunchbase.com/organization/rmsi"}
 source: "google-sheet 2026-06"
-last_checked: "2026-06-14"
+last_checked: "2026-06-15"
 type: "commercial-eo"
 type_reason: "EO/satellite core business [agent]"
 ---
