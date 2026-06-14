@@ -18,14 +18,19 @@ For each company produce a JSON object with these exact keys:
 - "name": the company name as given.
 - "status": "active" | "acquired" | "defunct" | "renamed" | "unknown".
 - "website": canonical homepage (https).
-- "careers_url": careers/jobs page URL, else "". Look for it — a footer "Careers"/
-  "Jobs" link, a `/careers` path, or an ATS board (Lever/Greenhouse/Ashby/Workable).
-  This field decides whether the company appears in the public README, so try.
+- "careers_url": careers/jobs page URL, else "". **Re-resolve it — ATS boards go
+  stale.** A 404 almost always means the company switched ATS (Lever↔Greenhouse↔
+  Ashby↔JazzHR↔BambooHR↔Workable↔Personio), not that they stopped hiring. Find the
+  live one: follow the site's own "Careers"/"Jobs" footer/header link (don't give up
+  if `/careers` 404s), or search "<name> careers". This decides README inclusion.
 - "links": object with any of these you can find (omit keys you can't): "linkedin",
   "crunchbase", "twitter", "github", "youtube". Check the homepage footer/header.
 - "locations": array, HQ + major offices. [] if unknown.
-- "remote": "Yes" | "Hybrid" | "No" | "", optionally with a region — "Yes (US)".
-  Read between the lines from job listings / careers-page language.
+- "remote": "Yes" | "Hybrid" | "No" | "", optionally with a region — "Yes (US)",
+  "Yes (US/EU)", "Yes (Europe)". **Read an ACTUAL job posting, not the board's
+  summary chip.** A role shown as "Remote" on the listing index usually restricts
+  eligibility to a region in the posting body (e.g. "Remote — US or EU only") — open
+  a representative posting and capture that geography. Bare "Yes" is rarely correct.
 - "remote_evidence": one short sentence with the evidence. "".
 - "description": one sentence (≤ ~25 words) on what the company does, noting
   whether it is an Earth Observation / satellite / geospatial company.
