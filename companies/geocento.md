@@ -3,7 +3,7 @@ name: "Geocento"
 status: "active"
 website: "https://geocento.com/"
 careers_urls: []
-locations: ["Madrid, Spain", "Oxfordshire, UK"]
+locations: ["🇪🇸 Madrid, Spain", "🇬🇧 Oxfordshire, UK"]
 remote: "No"
 remote_evidence: "Stored value indicates no remote work."
 description: "Earth observation and geospatial consulting services."

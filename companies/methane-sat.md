@@ -3,7 +3,7 @@ name: "Methane sat"
 status: "active"
 website: "https://www.methanesat.org/"
 careers_urls: ["https://www.methanesat.org/careers/"]
-locations: ["Austin, TX, USA"]
+locations: ["🇺🇸 Austin, TX, USA"]
 remote: "Yes (US)"
 remote_evidence: "Domain security check blocked access; stored value retained."
 remote_confidence: "low"

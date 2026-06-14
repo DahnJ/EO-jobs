@@ -3,7 +3,7 @@ name: "Mapizy"
 status: "active"
 website: "https://www.mapizy.com"
 careers_urls: ["x"]
-locations: ["Australia"]
+locations: ["🇦🇺 Australia"]
 remote: ""
 remote_evidence: "Website connection failed; unable to access."
 remote_confidence: "low"

@@ -3,7 +3,7 @@ name: "Opegieka"
 status: "active"
 website: "https://opegieka.pl//english"
 careers_urls: []
-locations: ["Elbląg, Poland"]
+locations: ["🇵🇱 Elbląg, Poland"]
 remote: ""
 remote_evidence: ""
 description: "Polish geospatial technology and Earth observation services."

@@ -3,7 +3,7 @@ name: "ICEYE"
 status: "active"
 website: "https://www.iceye.com/"
 careers_urls: ["https://www.iceye.com/careers?hsLang=en"]
-locations: ["Espoo, Finland"]
+locations: ["🇫🇮 Espoo, Finland"]
 remote: ""
 remote_evidence: "Careers page emphasizes office-based 'inspiring and collaborating offices' and relocation support; no remote work mentioned"
 remote_confidence: "low"

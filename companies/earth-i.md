@@ -3,7 +3,7 @@ name: "earth-i"
 status: "active"
 website: "https://earthi.space/"
 careers_urls: ["https://earthi.space/careers/"]
-locations: ["Guildford, UK"]
+locations: ["🇬🇧 Guildford, UK"]
 remote: ""
 remote_evidence: "Careers page indicates hiring 'based around Guildford in the UK' with no remote work mentioned; unable to improve on stored value or confirm absence"
 remote_confidence: "low"

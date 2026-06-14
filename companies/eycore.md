@@ -3,7 +3,7 @@ name: "Eycore"
 status: "active"
 website: "https://eycore.com"
 careers_urls: []
-locations: ["Warsaw, Poland", "Bristol, UK"]
+locations: ["🇵🇱 Warsaw, Poland", "🇬🇧 Bristol, UK"]
 remote: ""
 remote_evidence: ""
 description: "Satellite and Earth Observation company specializing in Synthetic Aperture Radar technology for independent SAR constellations."

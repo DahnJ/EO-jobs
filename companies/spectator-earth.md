@@ -3,7 +3,7 @@ name: "Spectator.earth"
 status: "unknown"
 website: "https://spectator.earth"
 careers_urls: ["x"]
-locations: ["Krakow, Poland"]
+locations: ["🇵🇱 Krakow, Poland"]
 remote: ""
 remote_evidence: ""
 description: "Acquisition planning, satellite tracking, data management"

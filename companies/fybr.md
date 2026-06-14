@@ -3,7 +3,7 @@ name: "FYBR"
 status: "active"
 website: "https://www.fybrsolutions.com"
 careers_urls: ["https://www.fybrsolutions.com/careers"]
-locations: ["Vancouver, Canada"]
+locations: ["🇨🇦 Vancouver, Canada"]
 remote: ""
 remote_evidence: "Careers URL redirects to product page; no job listings or remote work information accessible"
 remote_confidence: "low"

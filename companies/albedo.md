@@ -3,7 +3,7 @@ name: "Albedo"
 status: "active"
 website: "https://albedo.com/"
 careers_urls: ["https://albedo.com/company#join"]
-locations: ["Denver, USA"]
+locations: ["🇺🇸 Denver, USA"]
 remote: "Yes (US)"
 remote_evidence: "Stored value retained; unable to access careers page."
 remote_confidence: "low"

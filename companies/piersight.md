@@ -3,7 +3,7 @@ name: "PierSight"
 status: "active"
 website: "https://www.piersight.space/"
 careers_urls: ["https://piersight.space/careers"]
-locations: ["India"]
+locations: ["🇮🇳 India"]
 remote: ""
 remote_evidence: "Cannot access careers page - domain security verification failed"
 remote_confidence: "low"

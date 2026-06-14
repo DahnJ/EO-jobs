@@ -3,7 +3,7 @@ name: "GAF AG"
 status: "active"
 website: "https://www.gaf.de"
 careers_urls: ["https://www.gaf.de/careers/"]
-locations: ["Munich, Germany", "Neustrelitz, Germany"]
+locations: ["🇩🇪 Munich, Germany", "🇩🇪 Neustrelitz, Germany"]
 remote: "Hybrid"
 remote_evidence: "Careers page mentions 'flexible working hours as well as the opportunity to work from home in line with company regulations'; workation possible depending on role and security aspects. No positions explicitly labeled remote."
 remote_confidence: "medium"

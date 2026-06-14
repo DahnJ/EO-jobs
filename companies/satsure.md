@@ -3,7 +3,7 @@ name: "SatSure"
 status: "active"
 website: "https://satsure.co/"
 careers_urls: ["https://satsure.co/career.html"]
-locations: ["Bangalore, India"]
+locations: ["🇮🇳 Bangalore, India"]
 remote: "No"
 remote_evidence: "Careers page links to external portal (Keka) with no remote policy statement on main careers page"
 remote_confidence: "low"

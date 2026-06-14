@@ -3,7 +3,7 @@ name: "Geocledian"
 status: "active"
 website: "https://geocledian.com"
 careers_urls: ["https://www.geocledian.com/jobs/"]
-locations: ["Landshut, Germany"]
+locations: ["🇩🇪 Landshut, Germany"]
 remote: "Yes"
 remote_evidence: "Jobs page explicitly states 'Working remotely is standard, but we also like to meet regularly at our headquarters in the attractive old town of Landshut.' No specific current job listings."
 remote_confidence: "medium"

@@ -3,7 +3,7 @@ name: "Tomorrow.io"
 status: "active"
 website: "https://www.tomorrow.io/"
 careers_urls: ["https://www.tomorrow.io/careers/"]
-locations: ["USA", "Tel Aviv, Israel", "Singapore"]
+locations: ["🇺🇸 USA", "🇮🇱 Tel Aviv, Israel", "🇸🇬 Singapore"]
 remote: "Yes"
 remote_evidence: "Stored value from previous research."
 remote_confidence: "high"

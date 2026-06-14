@@ -3,7 +3,7 @@ name: "Earthwave"
 status: "active"
 website: "https://earthwave.co.uk/"
 careers_urls: ["https://earthwave.co.uk/careers/"]
-locations: ["Edinburgh, UK"]
+locations: ["🇬🇧 Edinburgh, UK"]
 remote: "Hybrid"
 remote_evidence: "Careers page lists Software Engineer position (12-month FTC) as Hybrid, Edinburgh-based; requires UK work rights and office presence on some days"
 remote_confidence: "high"

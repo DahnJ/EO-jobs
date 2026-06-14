@@ -3,7 +3,7 @@ name: "Lemu"
 status: "active"
 website: "https://le.mu"
 careers_urls: []
-locations: ["Frutillar, Chile"]
+locations: ["🇨🇱 Frutillar, Chile"]
 remote: ""
 remote_evidence: ""
 description: "Nature intelligence platform using biodiversity-focused satellite."

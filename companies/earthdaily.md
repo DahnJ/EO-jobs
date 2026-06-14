@@ -3,7 +3,7 @@ name: "EarthDaily"
 status: "active"
 website: "https://earthdaily.com/"
 careers_urls: ["https://earthdaily.com/careers/career-opportunities/"]
-locations: ["Vancouver, Canada"]
+locations: ["🇨🇦 Vancouver, Canada"]
 remote: "Yes"
 remote_evidence: "Stored value retained; careers page does not mention remote work but links to separate job openings page (not fetched); unable to confirm or contradict"
 remote_confidence: "low"

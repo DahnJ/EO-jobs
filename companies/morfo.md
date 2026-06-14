@@ -3,7 +3,7 @@ name: "Morfo"
 status: "active"
 website: "https://www.morfo.rest/"
 careers_urls: []
-locations: ["Rio de Janeiro, Brazil", "Montpellier, France"]
+locations: ["🇧🇷 Rio de Janeiro, Brazil", "🇫🇷 Montpellier, France"]
 remote: ""
 remote_evidence: ""
 description: "Forest restoration company using drone seeding and AI monitoring."

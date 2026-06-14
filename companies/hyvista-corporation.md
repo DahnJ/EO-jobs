@@ -3,7 +3,7 @@ name: "HyVista Corporation"
 status: "active"
 website: "https://hyvista.com/"
 careers_urls: []
-locations: ["Castle Hill, NSW, Australia"]
+locations: ["🇦🇺 Castle Hill, NSW, Australia"]
 remote: ""
 remote_evidence: ""
 description: "Airborne hyperspectral remote sensing and digital aerial photography data services."

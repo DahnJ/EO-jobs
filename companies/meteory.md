@@ -3,7 +3,7 @@ name: "Meteory"
 status: "active"
 website: "https://www.meteory.eu/"
 careers_urls: []
-locations: ["Amsterdam, Netherlands"]
+locations: ["🇳🇱 Amsterdam, Netherlands"]
 remote: ""
 remote_evidence: ""
 description: "Environmental monitoring and climate intelligence platform for territorial planning."

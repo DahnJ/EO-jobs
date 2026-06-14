@@ -3,7 +3,7 @@ name: "Simularity"
 status: "active"
 website: "https://simularity.com"
 careers_urls: ["x"]
-locations: ["Richmond, USA"]
+locations: ["🇺🇸 Richmond, USA"]
 remote: ""
 remote_evidence: "No careers section on website; no job listings or employment information accessible"
 remote_confidence: "low"

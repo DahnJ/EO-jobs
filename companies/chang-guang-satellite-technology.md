@@ -3,7 +3,7 @@ name: "Chang Guang Satellite Technology"
 status: "active"
 website: "https://www.jl1.cn/"
 careers_urls: ["https://www.jl1.cn/personnel1.aspx"]
-locations: ["Changchun, Jilin Province, China"]
+locations: ["🇨🇳 Changchun, Jilin Province, China"]
 remote: ""
 remote_evidence: "Chinese careers page shows 2026 campus recruitment but no remote work details visible"
 remote_confidence: "low"

@@ -3,7 +3,7 @@ name: "SI Imaging Services (SIIS)"
 status: "active"
 website: "https://www.si-imaging.com/"
 careers_urls: ["https://www.si-imaging.com/careers/"]
-locations: ["Dae-jeon, South Korea"]
+locations: ["🇰🇷 Dae-jeon, South Korea"]
 remote: "No"
 remote_evidence: "Stored value; careers page redirect failed, homepage does not mention remote work"
 remote_confidence: "low"

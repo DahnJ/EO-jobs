@@ -3,7 +3,7 @@ name: "Collecte Localisation Satellites (CLS)"
 status: "active"
 website: "https://www.cls.fr/en/"
 careers_urls: ["https://www.cls.fr/en/careers/job-offers/"]
-locations: ["Ramonville-Saint-Agne, France"]
+locations: ["🇫🇷 Ramonville-Saint-Agne, France"]
 remote: ""
 remote_evidence: "Careers page domain blocked by network security policy; cannot access"
 remote_confidence: "low"

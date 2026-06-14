@@ -3,7 +3,7 @@ name: "makepath"
 status: "active"
 website: "https://makepath.com"
 careers_urls: ["https://makepath.com/careers/"]
-locations: ["Austin, TX, USA"]
+locations: ["🇺🇸 Austin, TX, USA"]
 remote: "Yes"
 remote_evidence: "Careers page explicitly states 'Full flexibility to work anywhere, and live where you want'"
 remote_confidence: "high"

@@ -3,7 +3,7 @@ name: "Ecopia"
 status: "active"
 website: "https://www.ecopiatech.com"
 careers_urls: ["https://www.ecopiatech.com/careers"]
-locations: ["Toronto, Canada"]
+locations: ["🇨🇦 Toronto, Canada"]
 remote: "Hybrid"
 remote_evidence: "Careers page states 'Flexible work environment' - employees can work in-office, remote, or hybrid with office in Toronto MaRS"
 remote_confidence: "high"

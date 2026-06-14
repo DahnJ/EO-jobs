@@ -3,7 +3,7 @@ name: "Datum"
 status: "active"
 website: "https://datum.az/"
 careers_urls: []
-locations: ["Baku, Azerbaijan"]
+locations: ["🇦🇿 Baku, Azerbaijan"]
 remote: ""
 remote_evidence: ""
 description: "GIS + EO: All-purpose"

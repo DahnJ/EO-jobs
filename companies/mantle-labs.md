@@ -3,7 +3,7 @@ name: "Mantle Labs"
 status: "active"
 website: "https://mantle-labs.com/"
 careers_urls: []
-locations: ["London, UK"]
+locations: ["🇬🇧 London, UK"]
 remote: ""
 remote_evidence: ""
 description: "Earth observation and satellite data analytics platform."

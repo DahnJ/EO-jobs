@@ -3,7 +3,7 @@ name: "2Excel Geospatial"
 status: "active"
 website: "https://www.2excelgeo.com"
 careers_urls: ["https://2excel.talosats-careers.com/view-all-vacancies"]
-locations: ["Sywell, Northamptonshire, UK"]
+locations: ["🇬🇧 Sywell, Northamptonshire, UK"]
 remote: ""
 remote_evidence: "TalosATS careers board shows UK-based positions (Doncaster, Lasham, Humberside) with no remote designation."
 remote_confidence: "low"

@@ -3,7 +3,7 @@ name: "SatRevolution"
 status: "active"
 website: "https://www.satrevolution.com/"
 careers_urls: ["https://www.linkedin.com/company/satrev-s-a/jobs/"]
-locations: ["Wrocław, Poland"]
+locations: ["🇵🇱 Wrocław, Poland"]
 remote: "Hybrid"
 remote_evidence: "LinkedIn jobs page (accessible); stored value indicates hybrid"
 remote_confidence: "medium"

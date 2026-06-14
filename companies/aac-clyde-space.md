@@ -3,7 +3,7 @@ name: "AAC Clyde Space"
 status: "active"
 website: "https://www.aac-clyde.space/"
 careers_urls: ["https://www.aac-clyde.space/careers"]
-locations: ["Glasgow, United Kingdom"]
+locations: ["🇬🇧 Glasgow, United Kingdom"]
 remote: "Hybrid"
 remote_evidence: "Stored value retained; unable to access Lever/careers board to confirm."
 remote_confidence: "low"

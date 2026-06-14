@@ -3,7 +3,7 @@ name: "Geo-Insights"
 status: "active"
 website: "https://geo-insights.ai"
 careers_urls: []
-locations: ["Singapore"]
+locations: ["🇸🇬 Singapore"]
 remote: ""
 remote_evidence: ""
 description: "Satellite-based geospatial intelligence with optical and SAR imagery."

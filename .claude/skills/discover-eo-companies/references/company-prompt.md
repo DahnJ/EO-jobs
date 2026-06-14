@@ -36,6 +36,9 @@ For each company produce a JSON object with these exact keys:
   summary chip.** A role shown as "Remote" on the listing index usually restricts
   eligibility to a region in the posting body (e.g. "Remote — US or EU only") — open
   a representative posting and capture that geography. Bare "Yes" is rarely correct.
+  **Export-control / work-authorization language scopes remoteness:** a "remote"
+  role mentioning ITAR/EAR, "US export control", "must be a US person", or "US work
+  authorization required" is effectively "Yes (US)" (same idea for other countries).
 - "remote_evidence": one short sentence with the evidence. "".
 - "description": one sentence (≤ ~25 words) on what the company does, noting
   whether it is an Earth Observation / satellite / geospatial company.

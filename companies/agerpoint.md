@@ -3,7 +3,7 @@ name: "Agerpoint"
 status: "active"
 website: "https://www.agerpoint.com"
 careers_urls: ["https://www.agerpoint.com/careers"]
-locations: ["Research Triangle Park, USA"]
+locations: ["🇺🇸 Research Triangle Park, USA"]
 remote: "Yes"
 remote_evidence: "Stored value retained; unable to access careers page."
 remote_confidence: "low"

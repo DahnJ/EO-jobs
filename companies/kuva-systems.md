@@ -3,7 +3,7 @@ name: "Kuva Systems"
 status: "active"
 website: "https://www.kuvasystems.com/"
 careers_urls: ["https://kuvasystems.com/careers"]
-locations: ["Boston, US", "Calgary, Canada", "Houston, TX", "Midland, TX"]
+locations: ["🇺🇸 Boston, US", "🇨🇦 Calgary, Canada", "🇺🇸 Houston, TX", "🇺🇸 Midland, TX"]
 remote: ""
 remote_evidence: "Careers page not accessible due to domain verification failure"
 remote_confidence: "low"

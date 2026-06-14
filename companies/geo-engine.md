@@ -3,7 +3,7 @@ name: "Geo Engine"
 status: "active"
 website: "https://www.geoengine.de/"
 careers_urls: []
-locations: ["Marburg, Germany"]
+locations: ["🇩🇪 Marburg, Germany"]
 remote: ""
 remote_evidence: ""
 description: "Cloud-based data science platform for spatial-temporal geospatial processing."

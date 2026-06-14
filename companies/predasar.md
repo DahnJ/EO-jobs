@@ -3,7 +3,7 @@ name: "PredaSAR"
 status: "active"
 website: "https://www.predasar.com/"
 careers_urls: ["https://www.predasar.com/careers"]
-locations: ["Boca Raton, USA"]
+locations: ["🇺🇸 Boca Raton, USA"]
 remote: "No"
 remote_evidence: "Stored value confirmed; Greenhouse job board referenced but no listings displayed."
 remote_confidence: "medium"

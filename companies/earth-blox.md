@@ -3,7 +3,7 @@ name: "Earth Blox"
 status: "active"
 website: "https://www.earthblox.io/"
 careers_urls: ["https://www.earthblox.io/careers"]
-locations: ["Edinburgh, UK", "Remote"]
+locations: ["🇬🇧 Edinburgh, UK", "🌐 Remote"]
 remote: "Yes"
 remote_evidence: "Careers page explicitly states 'Remote-first culture' with 'access to co-working or meetups as needed'; no specific job listings shown"
 remote_confidence: "medium"

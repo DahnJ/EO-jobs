@@ -3,7 +3,7 @@ name: "Detektia"
 status: "active"
 website: "https://detektia.com"
 careers_urls: []
-locations: ["Madrid, Spain"]
+locations: ["🇪🇸 Madrid, Spain"]
 remote: ""
 remote_evidence: ""
 description: "Satellite-based infrastructure monitoring using RADAR and AI for structural health assessment."

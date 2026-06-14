@@ -3,7 +3,7 @@ name: "SatShipAI"
 status: "active"
 website: "https://satshipai.eu"
 careers_urls: ["x"]
-locations: ["Greece"]
+locations: ["🇬🇷 Greece"]
 remote: ""
 remote_evidence: "Careers URL marked as 'x' (invalid); cannot access"
 remote_confidence: "low"

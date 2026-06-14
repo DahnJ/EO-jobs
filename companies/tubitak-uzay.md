@@ -3,7 +3,7 @@ name: "TUBITAK UZAY"
 status: "active"
 website: "https://uzay.tubitak.gov.tr"
 careers_urls: ["https://kariyer.tubitak.gov.tr"]
-locations: ["Ankara, Turkey"]
+locations: ["🇹🇷 Ankara, Turkey"]
 remote: ""
 remote_evidence: ""
 description: "Turkey's leading space R&D organization; develops indigenous satellites, communication systems, and space exploration missions."

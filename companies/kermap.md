@@ -3,7 +3,7 @@ name: "Kermap"
 status: "active"
 website: "https://kermap.com/en/"
 careers_urls: ["https://www.linkedin.com/company/kermap/jobs/"]
-locations: ["Rennes, France"]
+locations: ["🇫🇷 Rennes, France"]
 remote: "No"
 remote_evidence: "Homepage does not mention remote work or careers/jobs section"
 remote_confidence: "medium"

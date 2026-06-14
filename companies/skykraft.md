@@ -3,7 +3,7 @@ name: "Skykraft"
 status: "active"
 website: "https://www.skykraft.com.au"
 careers_urls: ["https://www.skykraft.com.au/careers"]
-locations: ["Reid, ACT, Australia"]
+locations: ["🇦🇺 Reid, ACT, Australia"]
 remote: ""
 remote_evidence: ""
 description: "Space-enabled air traffic management service provider using satellite technology for aviation safety and communications."

@@ -3,7 +3,7 @@ name: "Climate AI"
 status: "active"
 website: "https://climate.ai/"
 careers_urls: ["https://climate.ai/careers/"]
-locations: ["San Francisco, CA, USA"]
+locations: ["🇺🇸 San Francisco, CA, USA"]
 remote: "Yes (Americas)"
 remote_evidence: "Careers page states '100% remote work, unless you live in or near San Francisco, CA or Queretaro, Mexico'; Americas locations referenced"
 remote_confidence: "high"

@@ -3,7 +3,7 @@ name: "pass_by"
 status: "active"
 website: "https://passby.com/"
 careers_urls: []
-locations: ["London, UK"]
+locations: ["🇬🇧 London, UK"]
 remote: ""
 remote_evidence: ""
 description: "Earth observation analytics platform."

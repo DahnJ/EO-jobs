@@ -3,7 +3,7 @@ name: "Pixalytics"
 status: "active"
 website: "https://www.pixalytics.com"
 careers_urls: ["x"]
-locations: ["Plymouth, UK"]
+locations: ["🇬🇧 Plymouth, UK"]
 remote: ""
 remote_evidence: "No current job listings; vacancies page shows no openings available."
 remote_confidence: "low"

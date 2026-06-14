@@ -3,7 +3,7 @@ name: "Solvi"
 status: "active"
 website: "https://solvi.ag"
 careers_urls: []
-locations: ["Gothenburg, Sweden"]
+locations: ["🇸🇪 Gothenburg, Sweden"]
 remote: ""
 remote_evidence: ""
 description: "Drone imagery analytics platform for agricultural field trial digitization and data extraction."

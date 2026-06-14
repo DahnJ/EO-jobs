@@ -3,7 +3,7 @@ name: "Ubotica"
 status: "active"
 website: "https://ubotica.com/"
 careers_urls: ["https://ubotica.com/careers/"]
-locations: ["Dublin, Ireland", "Madrid, Spain", "Ottawa, Canada", "Delft, Netherlands"]
+locations: ["🇮🇪 Dublin, Ireland", "🇪🇸 Madrid, Spain", "🇨🇦 Ottawa, Canada", "🇳🇱 Delft, Netherlands"]
 remote: "No"
 remote_evidence: "Stored value from previous research."
 remote_confidence: "high"

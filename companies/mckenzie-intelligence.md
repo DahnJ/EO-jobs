@@ -3,7 +3,7 @@ name: "McKenzie Intelligence"
 status: "active"
 website: "https://www.mckenzieintelligence.com/"
 careers_urls: ["https://www.mckenzieintelligence.com/careers/"]
-locations: ["London, UK"]
+locations: ["🇬🇧 London, UK"]
 remote: ""
 remote_evidence: "Domain security check blocked access; unable to verify."
 remote_confidence: "low"

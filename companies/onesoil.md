@@ -3,7 +3,7 @@ name: "OneSoil"
 status: "active"
 website: "https://onesoil.ai/en/"
 careers_urls: ["https://onesoil.ai/en/careers"]
-locations: ["Minsk, Belarus", "Warsaw, Poland", "Zurich, Switzerland"]
+locations: ["🇧🇾 Minsk, Belarus", "🇵🇱 Warsaw, Poland", "🇨🇭 Zurich, Switzerland"]
 remote: "Yes"
 remote_evidence: "Stored value retained - careers page returned 404, cannot verify but stored value appears reasonable"
 remote_confidence: "low"

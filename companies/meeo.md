@@ -3,7 +3,7 @@ name: "Meeo"
 status: "active"
 website: "https://www.meeo.it/"
 careers_urls: ["https://www.meeo.it/join-us/"]
-locations: ["Ferrara, Italy"]
+locations: ["🇮🇹 Ferrara, Italy"]
 remote: "No"
 remote_evidence: "Domain security check blocked access; stored value retained."
 remote_confidence: "low"

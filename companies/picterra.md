@@ -3,7 +3,7 @@ name: "Picterra"
 status: "active"
 website: "https://picterra.ch/"
 careers_urls: ["https://picterra.ch/jobs/"]
-locations: ["Lausanne, Switzerland"]
+locations: ["🇺🇸 Lausanne, Switzerland"]
 remote: "Yes"
 remote_evidence: "Stored value retained - domain security verification failed"
 remote_confidence: "low"

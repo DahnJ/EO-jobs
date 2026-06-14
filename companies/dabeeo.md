@@ -3,7 +3,7 @@ name: "Dabeeo"
 status: "active"
 website: "https://www.dabeeo.com"
 careers_urls: []
-locations: ["Seoul, South Korea", "San Jose, USA", "Hanoi, Vietnam", "Jakarta, Indonesia"]
+locations: ["🇰🇷 Seoul, South Korea", "🇺🇸 San Jose, USA", "🇻🇳 Hanoi, Vietnam", "🇮🇩 Jakarta, Indonesia"]
 remote: ""
 remote_evidence: ""
 description: "Spatial data and mapping technology company that digitalizes spatial information through digital maps, AI analysis, and satellite/aerial image processing."

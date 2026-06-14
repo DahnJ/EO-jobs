@@ -3,7 +3,7 @@ name: "Soar.Earth"
 status: "active"
 website: "https://about.soaratlas.com/index.html"
 careers_urls: ["https://www.linkedin.com/company/soar-earth/jobs/"]
-locations: ["Perth, Australia"]
+locations: ["🇦🇺 Perth, Australia"]
 remote: "Hybrid (Australia)"
 remote_evidence: "No remote policy found on company homepage; relying on stored value."
 remote_confidence: "low"

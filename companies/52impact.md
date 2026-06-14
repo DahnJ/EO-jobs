@@ -3,7 +3,7 @@ name: "52Impact"
 status: "active"
 website: "https://www.52impact.nl/"
 careers_urls: ["https://www.52impact.nl/jobs"]
-locations: ["Amersfoort, Netherlands"]
+locations: ["🇳🇱 Amersfoort, Netherlands"]
 remote: ""
 remote_evidence: "URL redirects to Kappazeta (unrelated company); unclear if original careers page exists."
 remote_confidence: "low"

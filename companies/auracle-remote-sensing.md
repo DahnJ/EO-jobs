@@ -3,7 +3,7 @@ name: "Auracle Remote Sensing"
 status: "active"
 website: "http://www.auracleremotesensing.com"
 careers_urls: ["x"]
-locations: ["Vancouver, Canada"]
+locations: ["🇨🇦 Vancouver, Canada"]
 remote: ""
 remote_evidence: "No reachable careers URL (marked 'x' in batch); unable to assess"
 remote_confidence: "low"

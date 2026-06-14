@@ -3,7 +3,7 @@ name: "Deep Planet"
 status: "active"
 website: "https://www.deepplanet.ai/"
 careers_urls: ["https://www.deepplanet.ai/we-are-hiring"]
-locations: ["Oxford, UK"]
+locations: ["🇬🇧 Oxford, UK"]
 remote: "Yes"
 remote_evidence: "Stored value retained; careers page (404) unreachable; unable to verify specific remote designation or geographic restrictions"
 remote_confidence: "low"

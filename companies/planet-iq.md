@@ -3,7 +3,7 @@ name: "Planet IQ"
 status: "active"
 website: "https://planetiq.com/"
 careers_urls: ["https://planetiq.com/company/careers/"]
-locations: ["Golden, USA"]
+locations: ["🇺🇸 Golden, USA"]
 remote: "Hybrid"
 remote_evidence: "Listings show 'Hybrid (Golden, CO)' and 'Hybrid preferred, Remote Considered' (PlanetiQ careers)."
 remote_confidence: "high"

@@ -3,7 +3,7 @@ name: "EDEO"
 status: "active"
 website: "https://www.edeo-gmbh.de"
 careers_urls: ["x"]
-locations: ["Roding, Germany"]
+locations: ["🇩🇪 Roding, Germany"]
 remote: ""
 remote_evidence: "No careers page reachable (website is German); no remote policy information available"
 remote_confidence: "low"

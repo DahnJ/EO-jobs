@@ -3,7 +3,7 @@ name: "EnduroSat"
 status: "active"
 website: "https://endurosat.com"
 careers_urls: ["https://www.endurosat.com/careers/"]
-locations: ["Sofia, Bulgaria"]
+locations: ["🇧🇬 Sofia, Bulgaria"]
 remote: "No"
 remote_evidence: "EnduroSat careers page lists 8 specific office locations (Sofia, Denver, DC, LA, Berlin, Munich, Naples, Toulouse) with no remote options mentioned"
 remote_confidence: "high"

@@ -3,7 +3,7 @@ name: "FloodMapp"
 status: "active"
 website: "https://www.floodmapp.com/"
 careers_urls: ["https://www.floodmapp.com/jobs"]
-locations: ["Brisbane, Australia", "Melbourne, Australia"]
+locations: ["🇦🇺 Brisbane, Australia", "🇦🇺 Melbourne, Australia"]
 remote: "Yes (Australia)"
 remote_evidence: "No confirmation found on website or careers page (404); stored value retained"
 remote_confidence: "low"

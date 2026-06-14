@@ -3,7 +3,7 @@ name: "ImageSat Intl."
 status: "active"
 website: "https://www.imagesatintl.com/"
 careers_urls: ["https://www.imagesatintl.com/careers/"]
-locations: ["Or Yehuda, Israel"]
+locations: ["🇮🇱 Or Yehuda, Israel"]
 remote: "No"
 remote_evidence: "Careers page (imagesatintl.com/careers/) returned 404; retained stored value"
 remote_confidence: "low"

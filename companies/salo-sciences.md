@@ -3,7 +3,7 @@ name: "Salo Sciences"
 status: "acquired"
 website: "https://salo.ai/"
 careers_urls: ["https://salo.ai/careers"]
-locations: ["San Francisco, US"]
+locations: ["🇺🇸 San Francisco, US"]
 remote: ""
 remote_evidence: ""
 description: "High-resolution satellite data and AI for forest monitoring, carbon quantification, and climate."

@@ -3,7 +3,7 @@ name: "Satrec Initiative"
 status: "active"
 website: "https://www.satreci.com"
 careers_urls: ["https://blog.naver.com/sicareers"]
-locations: ["Daejeon, South Korea"]
+locations: ["🇰🇷 Daejeon, South Korea"]
 remote: ""
 remote_evidence: "Careers URL is Naver blog (non-standard); cannot assess remote status"
 remote_confidence: "low"

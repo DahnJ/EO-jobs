@@ -3,7 +3,7 @@ name: "SkyWatch"
 status: "active"
 website: "https://www.skywatch.com/"
 careers_urls: ["https://www.skywatch.com/careers"]
-locations: ["New York, USA", "Waterloo, Canada"]
+locations: ["🇺🇸 New York, USA", "🇨🇦 Waterloo, Canada"]
 remote: "Yes"
 remote_evidence: "Careers page mentions 'flexible work environment' and globally distributed team across four continents."
 remote_confidence: "medium"

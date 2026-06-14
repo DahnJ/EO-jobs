@@ -3,7 +3,7 @@ name: "Anditi"
 status: "active"
 website: "https://www.anditi.com/"
 careers_urls: []
-locations: ["Newcastle, Australia"]
+locations: ["🇦🇺 Newcastle, Australia"]
 remote: "No"
 remote_evidence: "'analytics powered by real people, in-house and onshore' (anditi.com)"
 description: "Provides LiDAR-based AI analytics for transportation safety and environmental analysis."

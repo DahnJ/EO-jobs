@@ -3,7 +3,7 @@ name: "Orbital Insight"
 status: "active"
 website: "https://orbitalinsight.com/"
 careers_urls: ["https://orbitalinsight.com/company/careers/job-openings"]
-locations: ["New York, USA", "Washington D.C., USA", "Roseville, USA"]
+locations: ["🇺🇸 New York, USA", "🇺🇸 Washington D.C., USA", "🇺🇸 Roseville, USA"]
 remote: "No"
 remote_evidence: "Stored value retained - careers page returned 404, cannot verify"
 remote_confidence: "low"

@@ -3,7 +3,7 @@ name: "Vida"
 status: "active"
 website: "https://vida.place/"
 careers_urls: []
-locations: ["Munich, Germany"]
+locations: ["🇩🇪 Munich, Germany"]
 remote: ""
 remote_evidence: ""
 description: "Infrastructure location risk reporting"

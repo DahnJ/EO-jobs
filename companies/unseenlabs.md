@@ -3,7 +3,7 @@ name: "unseenlabs"
 status: "active"
 website: "https://www.unseenlabs.com/"
 careers_urls: ["https://careers.werecruit.io/en/unseenlabs"]
-locations: ["France"]
+locations: ["🇫🇷 France"]
 remote: "No jobs"
 remote_evidence: "Stored value from previous research."
 remote_confidence: "high"

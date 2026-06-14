@@ -3,7 +3,7 @@ name: "Geoinfotech"
 status: "active"
 website: "https://geoinfotech.ng"
 careers_urls: ["https://staff.geoinfotech.ng/careers"]
-locations: ["Lagos, Nigeria", "Abuja, Nigeria"]
+locations: ["🇳🇬 Lagos, Nigeria", "🇳🇬 Abuja, Nigeria"]
 remote: ""
 remote_evidence: "Main website contains no mention of remote work policy; careers board returned 403 Forbidden"
 remote_confidence: "low"

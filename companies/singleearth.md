@@ -3,7 +3,7 @@ name: "SingleEarth"
 status: "active"
 website: "https://www.single.earth/"
 careers_urls: ["https://careers.single.earth/"]
-locations: ["Talinn, Estonia"]
+locations: ["🇪🇪 Talinn, Estonia"]
 remote: "Yes"
 remote_evidence: "Stored value; careers page at careers.single.earth/ returns 404, cannot verify current listings"
 remote_confidence: "medium"

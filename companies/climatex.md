@@ -3,7 +3,7 @@ name: "ClimateX"
 status: "active"
 website: "https://www.climate-x.com/"
 careers_urls: ["https://www.climate-x.com/careers"]
-locations: ["London, UK"]
+locations: ["🇬🇧 London, UK"]
 remote: "Hybrid"
 remote_evidence: "Careers page exists but no job listings displayed; no remote policy details found"
 remote_confidence: "low"

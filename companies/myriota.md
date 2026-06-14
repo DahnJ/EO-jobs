@@ -3,7 +3,7 @@ name: "Myriota"
 status: "active"
 website: "https://myriota.com"
 careers_urls: ["https://myriota.com/careers-and-culture/"]
-locations: ["Adelaide, Australia"]
+locations: ["🇦🇺 Adelaide, Australia"]
 remote: ""
 remote_evidence: ""
 description: "Satellite IoT connectivity provider offering ultra low-power satellite networks for sensing, tracking, and monitoring applications."

@@ -3,7 +3,7 @@ name: "Geo4i"
 status: "active"
 website: "https://geo4i.com/en/"
 careers_urls: ["x"]
-locations: ["Copenhagen, France"]
+locations: ["🇫🇷 Copenhagen, France"]
 remote: ""
 remote_evidence: "Website contains no information about employment or remote work arrangements"
 remote_confidence: "low"

@@ -3,7 +3,7 @@ name: "Marble Visions"
 status: "active"
 website: "https://marble-visions.com"
 careers_urls: []
-locations: ["Japan"]
+locations: ["🇯🇵 Japan"]
 remote: ""
 remote_evidence: ""
 description: "High-frequency 3D satellite observation for digital twins and land management."

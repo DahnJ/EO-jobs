@@ -3,7 +3,7 @@ name: "Near Space Labs"
 status: "active"
 website: "https://nearspacelabs.com/"
 careers_urls: ["https://job-boards.greenhouse.io/nearspacelabs"]
-locations: ["Multiple in USA", "Barcelona, Spain"]
+locations: ["🇺🇸 Multiple in USA", "🇪🇸 Barcelona, Spain"]
 remote: "Yes"
 remote_evidence: "Job listings show specific locations (Barcelona, NYC, Nationwide) but no explicit Remote tags; stored value retained."
 remote_confidence: "low"

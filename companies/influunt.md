@@ -3,7 +3,7 @@ name: "Influunt"
 status: "active"
 website: "https://www.influunt.ai/"
 careers_urls: []
-locations: ["San Francisco, CA, USA"]
+locations: ["🇺🇸 San Francisco, CA, USA"]
 remote: "No jobs"
 remote_evidence: ""
 description: "Water risk intelligence"

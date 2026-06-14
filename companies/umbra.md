@@ -3,7 +3,7 @@ name: "Umbra"
 status: "active"
 website: "https://umbra.space/"
 careers_urls: ["https://careers.umbra.space/"]
-locations: ["Santa Barbara, USA", "Austin, USA"]
+locations: ["🇺🇸 Santa Barbara, USA", "🇺🇸 Austin, USA"]
 remote: "Yes (US)"
 remote_evidence: "Stored value from previous research."
 remote_confidence: "high"

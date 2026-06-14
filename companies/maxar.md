@@ -3,7 +3,7 @@ name: "Maxar"
 status: "active"
 website: "https://www.maxar.com/"
 careers_urls: ["https://maxar.wd1.myworkdayjobs.com/MAXAR"]
-locations: ["USA, Canada, Sweden"]
+locations: ["🇺🇸 USA, Canada, Sweden"]
 remote: "Yes (US, UK, AU, BR)"
 remote_evidence: "Stored value verified; Workday job board (requires browser access)."
 remote_confidence: "medium"

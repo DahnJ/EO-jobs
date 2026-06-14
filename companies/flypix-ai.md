@@ -3,7 +3,7 @@ name: "Flypix AI"
 status: "active"
 website: "https://flypix.ai/"
 careers_urls: ["https://flypix.ai/careers/"]
-locations: ["Darmstadt, Germany"]
+locations: ["🇩🇪 Darmstadt, Germany"]
 remote: ""
 remote_evidence: "Careers page found but no current job listings and no mention of remote work policy"
 remote_confidence: "low"

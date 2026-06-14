@@ -3,7 +3,7 @@ name: "Space Will"
 status: "active"
 website: "http://en.spacewillinfo.com/"
 careers_urls: ["https://htsjzhaopin.zhiye.com"]
-locations: ["Beijing, China"]
+locations: ["🇨🇳 Beijing, China"]
 remote: ""
 remote_evidence: "Recruitment page exists but no remote work policy details disclosed."
 remote_confidence: "low"

@@ -3,7 +3,7 @@ name: "KorrAI"
 status: "active"
 website: "https://www.korrai.com/"
 careers_urls: ["https://www.ycombinator.com/companies/korrai/jobs"]
-locations: ["Halifax, Canada"]
+locations: ["🇨🇦 Halifax, Canada"]
 remote: "Yes (US, Canada)"
 remote_evidence: "YCombinator profile shows all three job postings include 'Remote (CA; US)' or 'Remote (CA)' options alongside office locations"
 remote_confidence: "high"

@@ -3,7 +3,7 @@ name: "New Space Intelligence"
 status: "active"
 website: "https://www.newspaceint.com"
 careers_urls: []
-locations: ["Ube, Yamaguchi Prefecture, Japan", "Tokyo, Japan"]
+locations: ["🇯🇵 Ube, Yamaguchi Prefecture, Japan", "🇯🇵 Tokyo, Japan"]
 remote: ""
 remote_evidence: ""
 description: "Japanese space technology and satellite Earth observation company."

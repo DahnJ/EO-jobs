@@ -3,7 +3,7 @@ name: "Orbital Sidekick"
 status: "active"
 website: "https://orbitalsidekick.com/"
 careers_urls: ["https://jobs.lever.co/orbitalsidekick"]
-locations: ["San Francisco, USA"]
+locations: ["🇺🇸 San Francisco, USA"]
 remote: "Yes (US)"
 remote_evidence: "Stored value retained - Lever job board returned 403 (JS-rendered, bot-blocked)"
 remote_confidence: "low"

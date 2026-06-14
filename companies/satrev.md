@@ -3,7 +3,7 @@ name: "SatRev"
 status: "active"
 website: "https://www.satrev.space/"
 careers_urls: ["https://www.satrev.space/careers"]
-locations: ["Wrocław, Poland"]
+locations: ["🇵🇱 Wrocław, Poland"]
 remote: "No"
 remote_evidence: "Careers page shows office-based roles; no remote mention"
 remote_confidence: "medium"

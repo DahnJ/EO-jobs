@@ -3,7 +3,7 @@ name: "Skylab Analytics"
 status: "active"
 website: "https://skylabanalytics.com"
 careers_urls: ["x"]
-locations: ["Amsterdam, Netherlands"]
+locations: ["🇳🇱 Amsterdam, Netherlands"]
 remote: ""
 remote_evidence: "No careers section on website; homepage does not mention remote work"
 remote_confidence: "low"

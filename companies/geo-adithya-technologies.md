@@ -3,7 +3,7 @@ name: "Geo Adithya Technologies"
 status: "active"
 website: "https://www.geoadithya.com/"
 careers_urls: []
-locations: ["Chennai, India"]
+locations: ["🇮🇳 Chennai, India"]
 remote: ""
 remote_evidence: ""
 description: "GIS & EO: All-purpose"

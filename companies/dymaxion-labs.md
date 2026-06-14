@@ -3,7 +3,7 @@ name: "Dymaxion Labs"
 status: "active"
 website: "https://dymaxionlabs.com/"
 careers_urls: ["https://dymaxionlabs.com/company/"]
-locations: ["Buenos Aires, Argentina"]
+locations: ["🇦🇷 Buenos Aires, Argentina"]
 remote: "No jobs"
 remote_evidence: "Company page does not contain careers section or job listings; no remote work information available"
 remote_confidence: "low"

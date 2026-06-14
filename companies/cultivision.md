@@ -3,7 +3,7 @@ name: "CultiVision"
 status: "active"
 website: "https://culti-vision.com/"
 careers_urls: []
-locations: ["Erbil, Iraq"]
+locations: ["🇮🇶 Erbil, Iraq"]
 remote: ""
 remote_evidence: ""
 description: "EO: All-purpose"

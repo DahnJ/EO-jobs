@@ -3,7 +3,7 @@ name: "CosmosIndex GmbH "
 status: "active"
 website: "https://cosmos-index.com/"
 careers_urls: ["https://cosmos-index.com/jobs/"]
-locations: ["Germany"]
+locations: ["🇩🇪 Germany"]
 remote: ""
 remote_evidence: "Jobs page domain blocked by network security policy; cannot access"
 remote_confidence: "low"

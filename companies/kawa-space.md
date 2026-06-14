@@ -3,7 +3,7 @@ name: "Kawa Space"
 status: "active"
 website: "https://kawaspace.com/"
 careers_urls: ["https://kawaspace.com/philosophy"]
-locations: ["India", "Remote"]
+locations: ["🇮🇳 India", "🌐 Remote"]
 remote: "No"
 remote_evidence: "Philosophy page explicitly states 'All roles at Kawa Space are forward-deployed engineering roles' requiring on-site presence with end users"
 remote_confidence: "high"

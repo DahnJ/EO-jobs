@@ -3,7 +3,7 @@ name: "Muon Space"
 status: "active"
 website: "https://www.muonspace.com/"
 careers_urls: ["https://www.muonspace.com/careers"]
-locations: ["San Jose, CA, USA", "Mountain View, CA, USA", "El Segundo, CA, USA", "Northern Virginia, USA"]
+locations: ["🇺🇸 San Jose, CA, USA", "🇺🇸 Mountain View, CA, USA", "🇺🇸 El Segundo, CA, USA", "🇺🇸 Northern Virginia, USA"]
 remote: "Yes"
 remote_evidence: "Careers page emphasizes office amenities (HQ kitchen, dog-friendly office) suggesting in-office focus; stored value retained pending verification."
 remote_confidence: "low"

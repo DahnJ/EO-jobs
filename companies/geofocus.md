@@ -3,7 +3,7 @@ name: "Geofocus"
 status: "active"
 website: "https://www.geofocus.kr"
 careers_urls: []
-locations: ["Daejeon, South Korea"]
+locations: ["🇰🇷 Daejeon, South Korea"]
 remote: ""
 remote_evidence: ""
 description: "Remote sensing specialist providing satellite imagery and analysis services."
