@@ -5,7 +5,8 @@ website: "http://www.terrasigna.com/"
 careers_urls: ["x"]
 locations: ["🇷🇴 Bucharest, Romania"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "Careers URL placeholder (x) - not available"
+remote_confidence: "low"
 description: "Earth observation and satellite radar interferometry for ground motion monitoring."
 satellites: ""
 category: "Earth Observation"

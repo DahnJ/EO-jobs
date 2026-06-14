@@ -5,7 +5,8 @@ website: "https://progressivesystems.it/"
 careers_urls: ["https://progressivesystems.it/about-us/work-with-us/"]
 locations: ["🇮🇹 Frascati, Italy"]
 remote: "No"
-remote_evidence: "Job postings indicate on-site work at Frascati office with no remote flexibility mentioned."
+remote_evidence: "Job listing doesn't specify remote work; only office location mentioned (Frascati, Rome)."
+remote_confidence: "medium"
 description: "Earth Observation services platform and data analysis tools for satellite imagery exploitation."
 satellites: ""
 category: ""

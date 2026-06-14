@@ -5,7 +5,8 @@ website: "https://www.agerpoint.com"
 careers_urls: ["https://www.agerpoint.com/careers"]
 locations: ["Research Triangle Park, USA"]
 remote: "Yes"
-remote_evidence: "Stored value retained."
+remote_evidence: "Stored value retained; unable to access careers page."
+remote_confidence: "low"
 description: "Field intelligence platform integrating satellite, drone, and sensor data for agriculture."
 satellites: ""
 category: ""

@@ -5,7 +5,8 @@ website: "https://www.regrow.ag/"
 careers_urls: ["https://boards.greenhouse.io/regrow"]
 locations: ["🇺🇸 San Francisco, USA", "🇦🇺 Sydney, Australia", "🌐 Remote"]
 remote: "Yes (US, AU)"
-remote_evidence: "Locations include remote option; multiple international offices suggest distributed team."
+remote_evidence: "Stored value verified - Greenhouse board shows US/AU remote positions"
+remote_confidence: "high"
 description: "AI platform for agricultural sustainability, emissions tracking, and regenerative program management."
 satellites: ""
 category: ""

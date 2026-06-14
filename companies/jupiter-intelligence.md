@@ -5,7 +5,8 @@ website: "https://jupiterintel.com/"
 careers_urls: ["https://jobs.lever.co/jupiterintel/"]
 locations: ["San Mateo, USA"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "Lever job board returns 403 Forbidden; cannot access listings"
+remote_confidence: "low"
 description: "Climate change risk analytics"
 satellites: ""
 category: "Earth Observation"

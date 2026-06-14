@@ -5,7 +5,8 @@ website: "https://www.spymesat.com/"
 careers_urls: ["https://www.orbitlogic.com/careers.html"]
 locations: ["🇺🇸 Greenbelt, MD, USA"]
 remote: "No"
-remote_evidence: "Office location in Greenbelt, Maryland."
+remote_evidence: "SpyMeSat homepage has no remote policy mentioned; Orbit Logic careers page unreachable (connection refused)"
+remote_confidence: "low"
 description: "Real-time EO satellite tracking and on-demand access to satellite imagery."
 satellites: ""
 category: ""

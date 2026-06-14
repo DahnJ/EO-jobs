@@ -5,7 +5,8 @@ website: "https://www.marlan.space"
 careers_urls: ["https://www.marlan.space/careers"]
 locations: ["Abu Dhabi, UAE"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "Careers page returned HTTP 404; unable to access."
+remote_confidence: "low"
 description: "Space infrastructure company building satellites, launch vehicles, and space services."
 satellites: ""
 category: ""

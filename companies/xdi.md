@@ -5,7 +5,8 @@ website: "https://xdi.systems/"
 careers_urls: ["https://jobs.swagapp.com/"]
 locations: []
 remote: ""
-remote_evidence: ""
+remote_evidence: "Jobs redirected to EmploymentHero portal with no XDI listings visible; careers page doesn't mention remote policy"
+remote_confidence: "low"
 description: "Physical climate risk analysis firm quantifying extreme weather and climate impacts to assets globally."
 satellites: ""
 category: ""

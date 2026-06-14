@@ -5,7 +5,8 @@ website: "https://www.mallontechnology.com"
 careers_urls: ["https://www.mallontechnology.com/company/careers"]
 locations: ["Dublin, Ireland"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "Careers page has no job vacancies; no remote work policy mentioned."
+remote_confidence: "low"
 description: "Geospatial and satellite data analytics platform."
 satellites: ""
 category: ""

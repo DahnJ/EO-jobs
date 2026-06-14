@@ -5,7 +5,8 @@ website: "https://www.urbansky.com/"
 careers_urls: ["https://urbansky.com/careers"]
 locations: ["Denver, USA"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "Careers page visible but contains no remote work policy information or job listings. Company based in Denver, CO but specific arrangements not disclosed."
+remote_confidence: "low"
 description: "Stratospheric balloon technology for persistent surveillance and sensing."
 satellites: ""
 category: ""

@@ -5,7 +5,8 @@ website: "https://riscognition.com/"
 careers_urls: ["x"]
 locations: ["🇩🇪 Geltendorf, Germany"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "Careers URL marked as 'x' (invalid); cannot access"
+remote_confidence: "low"
 description: "Analysis-ready location intelligence via geospatial APIs and data hosting services."
 satellites: ""
 category: "Earth Observation"

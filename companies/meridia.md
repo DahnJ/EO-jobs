@@ -5,7 +5,8 @@ website: "https://www.meridia.land/"
 careers_urls: ["https://www.meridia.land/career"]
 locations: ["Global operations (35+ countries)"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "Domain security check blocked access; unable to verify."
+remote_confidence: "low"
 description: "Supply chain compliance and risk verification using satellite imagery."
 satellites: ""
 category: ""

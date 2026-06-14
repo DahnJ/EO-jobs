@@ -5,7 +5,8 @@ website: "https://geoalert.io"
 careers_urls: ["https://geoalert.io/docs/openings.pdf"]
 locations: ["Tashkent, Uzbekistan", "Wilmington, Delaware, USA"]
 remote: "Yes"
-remote_evidence: "Distributed offices (Uzbekistan, USA) and active recruitment indicate remote-capable operations."
+remote_evidence: "Stored value; PDF careers document could not be fully parsed for confirmation"
+remote_confidence: "low"
 description: "AI-powered geospatial analysis using satellite and aerial imagery (Mapflow platform)."
 satellites: ""
 category: ""

@@ -5,7 +5,8 @@ website: "https://www.intelinair.com"
 careers_urls: ["https://www.intelinair.com/careers/"]
 locations: ["Indianapolis, USA"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "Careers page domain blocked by enterprise security policy; unable to fetch"
+remote_confidence: "low"
 description: "UAV crop insights"
 satellites: ""
 category: ""

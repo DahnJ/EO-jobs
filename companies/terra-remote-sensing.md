@@ -5,7 +5,8 @@ website: "http://www.terraremote.com/"
 careers_urls: ["https://www.terraremote.com/careers"]
 locations: ["🇨🇦 North Saanich, Canada"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "Careers page exists but no detailed job listings visible; mentions students in remote sensing encouraged to apply but no remote work policy stated"
+remote_confidence: "low"
 description: "Geospatial data acquisition, processing and delivery in terrestrial and marine environments."
 satellites: ""
 category: "Earth Observation"

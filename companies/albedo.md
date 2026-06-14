@@ -5,7 +5,8 @@ website: "https://albedo.com/"
 careers_urls: ["https://albedo.com/company#join"]
 locations: ["Denver, USA"]
 remote: "Yes (US)"
-remote_evidence: "Stored value retained."
+remote_evidence: "Stored value retained; unable to access careers page."
+remote_confidence: "low"
 description: "High-resolution optical constellation (10cm constellation planned), thermal"
 satellites: "Yes (future?)"
 category: ""

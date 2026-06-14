@@ -5,7 +5,8 @@ website: "https://www.spacesur.com"
 careers_urls: ["https://www.spacesur.com/we-are-hiring/"]
 locations: ["🇦🇷 Buenos Aires, Argentina", "🇪🇸 Barcelona, Spain"]
 remote: "Hybrid"
-remote_evidence: "Careers page mentions 'home office one day a week' benefit."
+remote_evidence: "Careers page states 'Home office one day a week' as employee benefit; offices in Buenos Aires and Barcelona."
+remote_confidence: "high"
 description: "Geospatial solutions and software engineering for digital transformation."
 satellites: ""
 category: "Earth Observation"

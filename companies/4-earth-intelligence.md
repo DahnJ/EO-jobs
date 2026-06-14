@@ -5,7 +5,8 @@ website: "https://www.4earthintelligence.com/"
 careers_urls: ["https://www.4earthintelligence.com/about-us/careers/vacancies/"]
 locations: ["Bristol, UK"]
 remote: "Yes"
-remote_evidence: "Stored value retained; careers page does not specify remote policy."
+remote_evidence: "Stored value retained; vacancies page visible but no active listings displayed to confirm or refute."
+remote_confidence: "low"
 description: "AI-powered sustainability decisions combining Earth observation with machine learning."
 satellites: ""
 category: ""

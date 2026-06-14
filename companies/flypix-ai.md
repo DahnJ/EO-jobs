@@ -5,7 +5,8 @@ website: "https://flypix.ai/"
 careers_urls: ["https://flypix.ai/careers/"]
 locations: ["Darmstadt, Germany"]
 remote: ""
-remote_evidence: "Careers page does not specify remote work options."
+remote_evidence: "Careers page found but no current job listings and no mention of remote work policy"
+remote_confidence: "low"
 description: "AI-powered geospatial analysis from satellite, aerial, and drone imagery."
 satellites: ""
 category: ""

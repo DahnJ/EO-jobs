@@ -5,7 +5,8 @@ website: "https://terranorbital.com/"
 careers_urls: ["https://terranorbital.com/careers/"]
 locations: ["🇺🇸 Irvine, California, USA", "🇺🇸 Santa Maria, California, USA"]
 remote: "No"
-remote_evidence: "Stored value kept; multiple onsite offices with gym mentioned"
+remote_evidence: "Stored value from previous research."
+remote_confidence: "high"
 description: "Satellite manufacturer providing spacecraft platforms for government and commercial clients."
 satellites: ""
 category: ""

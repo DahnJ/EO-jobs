@@ -5,7 +5,8 @@ website: "https://chloris.earth/"
 careers_urls: ["https://chloris.bamboohr.com/careers"]
 locations: ["Boston, USA"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "BambooHR careers board returns 403 Forbidden; cannot access listings (JS-rendered, needs browser)"
+remote_confidence: "low"
 description: "Forest carbon monitoring using satellite data with 25+ years of coverage."
 satellites: ""
 category: "Earth Observation"

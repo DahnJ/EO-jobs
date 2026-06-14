@@ -5,7 +5,8 @@ website: "https://www.satelytics.com"
 careers_urls: ["https://www.satelytics.com/careers/"]
 locations: ["🇺🇸 Perrysburg, OH, USA"]
 remote: "No"
-remote_evidence: "open role location 'Perrysburg, OH', no remote (satelytics.com/careers)"
+remote_evidence: "Careers page shows office-based positions; no remote option"
+remote_confidence: "medium"
 description: "Infrastructure monitoring using satellite imagery."
 satellites: ""
 category: "Earth Observation"

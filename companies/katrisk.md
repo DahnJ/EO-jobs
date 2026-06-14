@@ -5,7 +5,8 @@ website: "https://www.katrisk.com/"
 careers_urls: ["https://katrisk.bamboohr.com/careers"]
 locations: ["La Jolla, CA, USA", "Freiburg, Germany", "Dublin, Ireland"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "BambooHR careers board returns 403 Forbidden; cannot access listings"
+remote_confidence: "low"
 description: "Risk quantification: flood, wind, and other"
 satellites: ""
 category: ""

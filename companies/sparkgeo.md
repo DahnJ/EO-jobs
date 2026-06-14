@@ -5,7 +5,8 @@ website: "https://sparkgeo.com/"
 careers_urls: ["https://sparkgeo.com/careers/"]
 locations: ["🇨🇦 Prince George, Canada", "🇬🇧 UK"]
 remote: "Yes"
-remote_evidence: "Company emphasizes distributed team and global operations."
+remote_evidence: "Careers page returns 403 Forbidden; unable to access."
+remote_confidence: "low"
 description: "Geospatial software development and Earth observation solutions."
 satellites: ""
 category: ""

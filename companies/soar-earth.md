@@ -5,7 +5,8 @@ website: "https://about.soaratlas.com/index.html"
 careers_urls: ["https://www.linkedin.com/company/soar-earth/jobs/"]
 locations: ["Perth, Australia"]
 remote: "Hybrid (Australia)"
-remote_evidence: "Stored value indicates Hybrid (Australia); company is digital-first but based in Perth."
+remote_evidence: "No remote policy found on company homepage; relying on stored value."
+remote_confidence: "low"
 description: "Digital atlas platform for community-driven maps, satellite imagery, and geospatial content discovery."
 satellites: ""
 category: ""

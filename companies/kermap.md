@@ -5,7 +5,8 @@ website: "https://kermap.com/en/"
 careers_urls: ["https://www.linkedin.com/company/kermap/jobs/"]
 locations: ["Rennes, France"]
 remote: "No"
-remote_evidence: "Single location (Rennes) with no remote designation mentioned."
+remote_evidence: "Homepage does not mention remote work or careers/jobs section"
+remote_confidence: "medium"
 description: "Satellite and airborne imagery processing for agriculture and environment."
 satellites: ""
 category: ""

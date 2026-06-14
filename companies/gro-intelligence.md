@@ -5,7 +5,8 @@ website: "https://gro-intelligence.com/"
 careers_urls: ["https://gro-intelligence.com/careers"]
 locations: ["🇺🇸 New York, USA", "🇰🇪 Nairobi, Kenya", "🇸🇬 Singapore"]
 remote: "Hybrid"
-remote_evidence: "Company has offices across multiple countries (US, Kenya, Singapore)."
+remote_evidence: "Careers page (gro-intelligence.com/careers) returned empty content; retained stored value"
+remote_confidence: "low"
 description: "Unknown - site unreachable."
 satellites: ""
 category: ""

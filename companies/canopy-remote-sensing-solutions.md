@@ -5,7 +5,8 @@ website: "https://canopyrss.com.br"
 careers_urls: ["x"]
 locations: ["🇧🇷 Brazil"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "No careers page found on website; unable to access job listings"
+remote_confidence: "low"
 description: "Geospatial monitoring solutions for forest management and carbon credit measurement."
 satellites: ""
 category: "Earth Observation"

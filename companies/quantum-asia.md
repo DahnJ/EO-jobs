@@ -5,7 +5,8 @@ website: "https://qapl.in/"
 careers_urls: ["https://qapl.in/careers/"]
 locations: ["🇮🇳 Hyderabad, India"]
 remote: "No"
-remote_evidence: "Careers page does not mention remote or hybrid arrangements; focus on office-based work."
+remote_evidence: "4 listings show physical locations (Chennai, Hyderabad, West Bengal); no remote work mentioned."
+remote_confidence: "high"
 description: "GIS mapping, CAD drafting, IT solutions, and staffing services specializing in geospatial work."
 satellites: ""
 category: ""

@@ -5,7 +5,8 @@ website: "https://www.qubeiot.com/"
 careers_urls: ["https://www.qubeiot.com/careers"]
 locations: ["🇨🇦 Calgary, Alberta, Canada"]
 remote: "No"
-remote_evidence: "Careers page does not mention remote or hybrid work arrangements."
+remote_evidence: "Careers page uses BambooHR, listings blocked (JS-rendered); no remote mention on main website"
+remote_confidence: "low"
 description: "Continuous emissions monitoring using hardware sensors and physics-guided machine learning."
 satellites: ""
 category: ""

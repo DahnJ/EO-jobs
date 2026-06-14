@@ -5,7 +5,8 @@ website: "https://www.vista-geo.de/en/"
 careers_urls: ["https://www.vista-geo.de/about-vista/career/"]
 locations: ["Munich, Germany"]
 remote: "Hybrid"
-remote_evidence: "Stored value retained; website returned 404."
+remote_evidence: "Career page explicitly states 40% remote work flexibility for staff; DevOps Engineer role shows Munich location with remote option"
+remote_confidence: "high"
 description: "EO: All-purpose"
 satellites: ""
 category: "Earth Observation"

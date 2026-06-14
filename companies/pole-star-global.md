@@ -5,7 +5,8 @@ website: "https://www.polestarglobal.com/"
 careers_urls: ["https://www.polestarglobal.com/careers/"]
 locations: []
 remote: ""
-remote_evidence: ""
+remote_evidence: "Careers page lists external portals but doesn't display listings or specify remote policies; offices in 5 regions."
+remote_confidence: "low"
 description: "Geospatial intelligence and Earth observation services."
 satellites: ""
 category: ""

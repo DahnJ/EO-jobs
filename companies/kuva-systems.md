@@ -5,7 +5,8 @@ website: "https://www.kuvasystems.com/"
 careers_urls: ["https://kuvasystems.com/careers"]
 locations: ["Boston, US", "Calgary, Canada", "Houston, TX", "Midland, TX"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "Careers page not accessible due to domain verification failure"
+remote_confidence: "low"
 description: "Methane emissions detection and monitoring using optical imaging."
 satellites: ""
 category: ""

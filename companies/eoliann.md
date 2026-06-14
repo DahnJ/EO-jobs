@@ -4,8 +4,9 @@ status: "active"
 website: "https://www.eoliann.com/"
 careers_urls: ["https://www.eoliann.com/careers/"]
 locations: ["🇮🇹 Turin, Italy"]
-remote: "Yes"
-remote_evidence: "'Full remote da tutta Europa' (eoliann.com/careers)"
+remote: "Yes (Europe)"
+remote_evidence: "Careers page explicitly states 'Full remote da tutta Europa e orari di lavoro flessibili' (full remote across all of Europe with flexible hours)"
+remote_confidence: "high"
 description: "EO for climate resilience"
 satellites: ""
 category: ""

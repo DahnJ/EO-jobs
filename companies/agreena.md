@@ -5,7 +5,8 @@ website: "https://agreena.com/"
 careers_urls: ["https://jobs.ashbyhq.com/agreena"]
 locations: ["🇩🇰 Copenhagen, Denmark", "🇬🇧 London, UK"]
 remote: "Yes (Europe)"
-remote_evidence: "Offers many remote roles across Europe; offices Copenhagen & London (Ashby board, 2026-06)"
+remote_evidence: "Careers page: 'many remote roles across Europe'; offices Copenhagen & London (Ashby, 2026-06)"
+remote_confidence: "high"
 description: "Europe's leading soil carbon project enabling farmers to transition to regenerative agriculture."
 satellites: ""
 category: ""

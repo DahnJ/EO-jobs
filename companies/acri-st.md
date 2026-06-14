@@ -5,7 +5,8 @@ website: "http://www.acri-st.fr"
 careers_urls: ["https://www.acri-st.fr/en/careers"]
 locations: ["Sophia-Antipolis, France"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "Unable to access careers board."
+remote_confidence: "low"
 description: "EO mission simulation, environmental monitoring"
 satellites: ""
 category: "Earth Observation"

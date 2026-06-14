@@ -5,7 +5,8 @@ website: "https://orbitalinsight.com/"
 careers_urls: ["https://orbitalinsight.com/company/careers/job-openings"]
 locations: ["New York, USA", "Washington D.C., USA", "Roseville, USA"]
 remote: "No"
-remote_evidence: "Careers page lists specific US office locations with no remote roles indicated."
+remote_evidence: "Stored value retained - careers page returned 404, cannot verify"
+remote_confidence: "low"
 description: "AI and satellite imagery analytics for business intelligence."
 satellites: ""
 category: ""

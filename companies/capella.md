@@ -5,7 +5,8 @@ website: "https://www.capellaspace.com/"
 careers_urls: ["https://www.capellaspace.com/about-us/careers/"]
 locations: ["🇺🇸 Boulder, Colorado, USA", "🇺🇸 San Francisco, California, USA", "🇺🇸 Washington DC, Virginia, USA"]
 remote: "Yes (US)"
-remote_evidence: "International team spanning key regions with multiple US office locations."
+remote_evidence: "Careers page indicates international distributed team across US locations (Colorado, DC, California); no explicit remote policy stated but existing value retained"
+remote_confidence: "medium"
 description: "Synthetic Aperture Radar satellites providing 24/7 all-weather Earth intelligence from space."
 satellites: "Yes"
 category: ""

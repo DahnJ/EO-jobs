@@ -5,7 +5,8 @@ website: "https://www.shadowbreakintl.com/"
 careers_urls: ["https://www.shadowbreakintl.com/careers.html"]
 locations: ["London, UK"]
 remote: "Yes"
-remote_evidence: "Company has multiple remote positions."
+remote_evidence: "Careers page states 'team members are free to work from where they want and when they want as long as they respect deadlines'"
+remote_confidence: "high"
 description: "Intelligence and monitoring services company."
 satellites: ""
 category: ""

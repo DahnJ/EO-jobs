@@ -5,7 +5,8 @@ website: "https://www.plotlogic.com/"
 careers_urls: ["x"]
 locations: ["Brisbane, Australia"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "No careers page or remote work policies mentioned on homepage; 'Work with us' link found but no job listings."
+remote_confidence: "low"
 description: "Agricultural monitoring and geospatial intelligence."
 satellites: ""
 category: "Earth Observation"

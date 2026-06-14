@@ -5,7 +5,8 @@ website: "https://www.aidash.com/"
 careers_urls: ["https://www.aidash.com/careers/"]
 locations: ["San Jose, CA, USA"]
 remote: "No"
-remote_evidence: "Stored value retained; homepage does not specify remote policy."
+remote_evidence: "Careers page visible with team categories but no specific job listings shown; stored value retained."
+remote_confidence: "low"
 description: "AI-powered satellite technology for managing critical infrastructure and utility assets."
 satellites: ""
 category: ""

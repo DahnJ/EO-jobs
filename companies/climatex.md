@@ -5,7 +5,8 @@ website: "https://www.climate-x.com/"
 careers_urls: ["https://www.climate-x.com/careers"]
 locations: ["London, UK"]
 remote: "Hybrid"
-remote_evidence: ""
+remote_evidence: "Careers page exists but no job listings displayed; no remote policy details found"
+remote_confidence: "low"
 description: "Climate change resiliency, weather risk"
 satellites: ""
 category: ""

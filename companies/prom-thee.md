@@ -5,7 +5,8 @@ website: "https://www.promethee.earth/en/home/"
 careers_urls: ["https://www.linkedin.com/company/prom%C3%A9th%C3%A9e-newspace/jobs/"]
 locations: ["🇫🇷 Paris, France", "🇫🇷 Toulouse, France"]
 remote: "No"
-remote_evidence: ""
+remote_evidence: "Homepage returned 404 Not Found; cannot access careers information."
+remote_confidence: "low"
 description: "Space technology company focused on Earth Observation applications."
 satellites: ""
 category: ""

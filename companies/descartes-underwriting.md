@@ -5,7 +5,8 @@ website: "https://www.descartesunderwriting.com/"
 careers_urls: ["https://careers.descartesunderwriting.com/"]
 locations: ["Paris, France", "London, UK", "Singapore", "Sydney, Australia"]
 remote: "Hybrid"
-remote_evidence: "Careers page lists all positions as 'Hybrid' with multiple global offices."
+remote_evidence: "Careers page confirms hybrid status in 7 current job listings: Paris HQ and Singapore positions all marked Hybrid"
+remote_confidence: "high"
 description: "Parametric insurance provider using Earth observation and AI for climate and emerging risks."
 satellites: ""
 category: ""

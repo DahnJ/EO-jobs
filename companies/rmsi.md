@@ -5,7 +5,8 @@ website: "https://www.rmsi.com"
 careers_urls: ["https://rmsi.zohorecruit.com/jobs/Careers"]
 locations: ["🇮🇳 Noida, India"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "ZohoRecruit board (JS-rendered); cannot access listings"
+remote_confidence: "low"
 description: "Geospatial consulting and digital transformation with services in data processing, mapping, and AI."
 satellites: ""
 category: "Earth Observation"

@@ -4,8 +4,9 @@ status: "active"
 website: "https://geocledian.com"
 careers_urls: ["https://www.geocledian.com/jobs/"]
 locations: ["Landshut, Germany"]
-remote: ""
-remote_evidence: "Careers page domain safety verification failed; unable to confirm remote status."
+remote: "Yes"
+remote_evidence: "Jobs page explicitly states 'Working remotely is standard, but we also like to meet regularly at our headquarters in the attractive old town of Landshut.' No specific current job listings."
+remote_confidence: "medium"
 description: "Earth observation data analytics for agriculture and EUDR compliance."
 satellites: ""
 category: ""

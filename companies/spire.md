@@ -5,7 +5,8 @@ website: "https://spire.com/"
 careers_urls: ["https://spire.com/careers/job-openings/"]
 locations: ["🇩🇪 Munich, Germany", "🇬🇧 Oxfordshire, UK", "🇨🇦 Cambridge Ontario, Canada", "🇺🇸 Washington DC, USA", "🇱🇺 Luxembourg", "🇬🇧 Glasgow, UK", "🇺🇸 Boulder, Colorado, USA"]
 remote: "Yes (mainly US and UK)"
-remote_evidence: "Some roles listed as 'Remote - Based in Europe'; multi-location offices support global operations."
+remote_evidence: "One job listing explicitly states 'Remote - Based in Europe' for Sales Manager role; most other positions are office-based in Boulder, Glasgow, DC, Munich"
+remote_confidence: "medium"
 description: "Satellite data and services for aviation, weather, and space intelligence."
 satellites: "Yes"
 category: ""

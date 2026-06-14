@@ -5,7 +5,8 @@ website: "https://www.axelspace.com/"
 careers_urls: ["https://www.axelspacehd.com/careers/"]
 locations: ["Tokyo, Japan"]
 remote: "No"
-remote_evidence: ""
+remote_evidence: "Stored value 'No' indicates on-site focus; Tokyo-based hardware company typical of on-site requirements"
+remote_confidence: "medium"
 description: "Satellite and space technology company."
 satellites: ""
 category: ""

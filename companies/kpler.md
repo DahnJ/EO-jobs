@@ -5,7 +5,8 @@ website: "https://www.kpler.com/"
 careers_urls: ["https://www.kpler.com/company/careers"]
 locations: []
 remote: ""
-remote_evidence: ""
+remote_evidence: "Careers page not accessible due to domain verification failure"
+remote_confidence: "low"
 description: "Real-time trade intelligence and maritime vessel tracking via satellite."
 satellites: ""
 category: ""

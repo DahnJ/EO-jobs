@@ -5,7 +5,8 @@ website: "https://terrabit.com.au/"
 careers_urls: ["https://terrabit.com.au/careers"]
 locations: ["🇦🇺 Australia"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "Careers page functions as contact form only; describes growth in engineering/geospatial across Australia but no remote policy stated"
+remote_confidence: "low"
 description: "Satellite intelligence platform for land, mining, and environmental monitoring."
 satellites: ""
 category: ""

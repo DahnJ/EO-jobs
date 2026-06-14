@@ -5,7 +5,8 @@ website: "https://spaceknow.com/"
 careers_urls: ["https://spaceknow.com/careers/#positions"]
 locations: ["🇨🇿 Prague, Czech Republic", "🇺🇸 New York, USA"]
 remote: "No"
-remote_evidence: "Office locations listed: New York and Prague branch."
+remote_evidence: "Careers page shows offices in New York and Prague but no remote work details; stored value 'No' maintained."
+remote_confidence: "medium"
 description: "Satellite data analysis and AI-driven intelligence for defense, intelligence and construction."
 satellites: ""
 category: ""

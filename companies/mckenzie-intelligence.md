@@ -5,7 +5,8 @@ website: "https://www.mckenzieintelligence.com/"
 careers_urls: ["https://www.mckenzieintelligence.com/careers/"]
 locations: ["London, UK"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "Domain security check blocked access; unable to verify."
+remote_confidence: "low"
 description: "Catastrophe intelligence: rapid observed damage assessment for insurers (GEO platform)"
 satellites: ""
 category: "Earth Observation"

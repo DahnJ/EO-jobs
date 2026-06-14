@@ -4,8 +4,9 @@ status: "active"
 website: "https://nuview.space/"
 careers_urls: ["https://nuview.space/careers"]
 locations: ["Orlando, USA"]
-remote: ""
-remote_evidence: ""
+remote: "No"
+remote_evidence: "Careers page lists 5 positions with specific office locations (Berlin, Germany and Orlando, Florida) with no mention of remote work options (2026-06)"
+remote_confidence: "high"
 description: "Space-based Earth observation and analytics company."
 satellites: ""
 category: ""

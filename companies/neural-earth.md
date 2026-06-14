@@ -4,8 +4,9 @@ status: "active"
 website: "https://www.neuralearth.ai/"
 careers_urls: ["https://www.neuralearth.ai/careers"]
 locations: []
-remote: ""
-remote_evidence: ""
+remote: "Yes"
+remote_evidence: "Careers page lists 8 open positions explicitly marked as 'Remote' or 'Full time/Remote' including Staff Platform Engineer, Senior ML Engineer, Product Marketing Manager (2026-06)"
+remote_confidence: "high"
 description: "AI-powered Earth observation analytics platform."
 satellites: ""
 category: ""

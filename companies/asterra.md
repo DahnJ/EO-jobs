@@ -5,7 +5,8 @@ website: "https://asterra.io/"
 careers_urls: ["https://asterra.io/about/careers/"]
 locations: ["Rosh Ha'ayin, Israel", "San Diego, CA, USA"]
 remote: "Yes"
-remote_evidence: ""
+remote_evidence: "Company careers page states 'See a different world. Build a better planet' with focus on distributed team; Territory Sales Manager UK listed but company emphasizes global presence and distributed work"
+remote_confidence: "medium"
 description: "Underground mapping and subsurface imaging technology."
 satellites: ""
 category: ""

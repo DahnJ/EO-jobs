@@ -5,7 +5,8 @@ website: "https://www.predasar.com/"
 careers_urls: ["https://www.predasar.com/careers"]
 locations: ["Boca Raton, USA"]
 remote: "No"
-remote_evidence: "Careers page indicates no open positions"
+remote_evidence: "Stored value confirmed; Greenhouse job board referenced but no listings displayed."
+remote_confidence: "medium"
 description: "Synthetic aperture radar satellite imagery and Earth intelligence."
 satellites: "Yes"
 category: ""

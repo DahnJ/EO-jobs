@@ -5,7 +5,8 @@ website: "https://edgybees.com/"
 careers_urls: ["https://edgybees.com/about-us/careers/"]
 locations: ["🇺🇸 Washington DC, USA"]
 remote: "Hybrid"
-remote_evidence: ""
+remote_evidence: "Careers page shows '0 Open positions'; no remote policy mentioned but stored value suggests previous confirmation"
+remote_confidence: "medium"
 description: "Georeferencing drone footage using satellite imagery"
 satellites: ""
 category: ""

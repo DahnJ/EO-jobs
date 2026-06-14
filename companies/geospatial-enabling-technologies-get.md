@@ -5,7 +5,8 @@ website: "https://www.getmap.eu/"
 careers_urls: ["https://www.getmap.eu/company/careers/"]
 locations: ["🇬🇷 Athens, Greece"]
 remote: ""
-remote_evidence: "One Full Stack Developer position open; no remote policy stated."
+remote_evidence: "Careers page URL blocked by enterprise security policy; could not access"
+remote_confidence: "low"
 description: "Geospatial information solutions: Open Data, Digital Twins, Earth Observation, Environmental monitoring."
 satellites: ""
 category: ""

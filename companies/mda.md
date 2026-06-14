@@ -5,7 +5,8 @@ website: "https://mda.space/en/"
 careers_urls: ["https://mda.space/en/careers"]
 locations: ["Canada, US, UK"]
 remote: "No"
-remote_evidence: ""
+remote_evidence: "Domain security check blocked access; stored value retained."
+remote_confidence: "low"
 description: "Satellite and space technology company."
 satellites: ""
 category: ""

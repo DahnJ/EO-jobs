@@ -5,7 +5,8 @@ website: "https://nearspacelabs.com/"
 careers_urls: ["https://job-boards.greenhouse.io/nearspacelabs"]
 locations: ["Multiple in USA", "Barcelona, Spain"]
 remote: "Yes"
-remote_evidence: "Greenhouse careers board shows remote-friendly roles."
+remote_evidence: "Job listings show specific locations (Barcelona, NYC, Nationwide) but no explicit Remote tags; stored value retained."
+remote_confidence: "low"
 description: "High-resolution geospatial imagery from stratospheric platforms."
 satellites: ""
 category: ""

@@ -4,8 +4,9 @@ status: "active"
 website: "https://titan4.it"
 careers_urls: ["https://titan4.it/about#work-with-us"]
 locations: ["Rome, Italy", "Benevento, Italy"]
-remote: ""
-remote_evidence: ""
+remote: "Hybrid"
+remote_evidence: "Job listings show mix of Remote positions (Country Manager roles for France and DACH region) and Hybrid positions (Rome office-based roles)."
+remote_confidence: "high"
 description: "AI-powered Earth observation platform for infrastructure monitoring and risk management."
 satellites: ""
 category: ""

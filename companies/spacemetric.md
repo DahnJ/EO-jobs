@@ -5,7 +5,8 @@ website: "https://spacemetric.com"
 careers_urls: ["https://spacemetric.com/vacancies/"]
 locations: ["🇳🇱 Zwolle, Netherlands"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "Vacancies page returns 404; main website has no remote policy information."
+remote_confidence: "low"
 description: "Software solutions to generate analytics-ready data from satellite and airborne sensors."
 satellites: ""
 category: "Earth Observation"

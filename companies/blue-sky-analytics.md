@@ -5,7 +5,8 @@ website: "https://blueskyhq.io/"
 careers_urls: ["https://blueskyhq.io/careers/"]
 locations: ["🇮🇳 Gurgaon, India"]
 remote: "Yes"
-remote_evidence: "Connection refused on careers page; keeping stored value."
+remote_evidence: "Stored value indicates remote capability; blueskyhq.io careers page exists but couldn't access listings"
+remote_confidence: "medium"
 description: "Remote sensing and geospatial analytics company."
 satellites: ""
 category: ""

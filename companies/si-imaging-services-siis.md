@@ -5,7 +5,8 @@ website: "https://www.si-imaging.com/"
 careers_urls: ["https://www.si-imaging.com/careers/"]
 locations: ["Dae-jeon, South Korea"]
 remote: "No"
-remote_evidence: ""
+remote_evidence: "Stored value; careers page redirect failed, homepage does not mention remote work"
+remote_confidence: "low"
 description: "Satellite imaging and services company."
 satellites: ""
 category: ""

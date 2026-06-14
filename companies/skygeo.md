@@ -5,7 +5,8 @@ website: "https://skygeo.com/"
 careers_urls: ["https://skygeo.com/geotechnical-careers/"]
 locations: ["Houston, USA", "California, USA", "Delft, Netherlands", "Calgary, Canada", "Australia", "Chile", "South Africa", "Singapore"]
 remote: "Yes"
-remote_evidence: "Stored value indicates Yes; careers page returned 404 but multiple global offices suggest remote-friendly."
+remote_evidence: "Stored value; homepage lists offices in multiple countries but doesn't specify work arrangement; careers page (404) not accessible"
+remote_confidence: "medium"
 description: "InSAR-based ground motion monitoring platform for mining, energy, and civil infrastructure assessment."
 satellites: ""
 category: ""

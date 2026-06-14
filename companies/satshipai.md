@@ -5,7 +5,8 @@ website: "https://satshipai.eu"
 careers_urls: ["x"]
 locations: ["Greece"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "Careers URL marked as 'x' (invalid); cannot access"
+remote_confidence: "low"
 description: "AI-based satellite ship detection platform."
 satellites: ""
 category: "Earth Observation"

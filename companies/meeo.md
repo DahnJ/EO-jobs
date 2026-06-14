@@ -5,7 +5,8 @@ website: "https://www.meeo.it/"
 careers_urls: ["https://www.meeo.it/join-us/"]
 locations: ["Ferrara, Italy"]
 remote: "No"
-remote_evidence: "No dedicated careers page found; no remote work information available"
+remote_evidence: "Domain security check blocked access; stored value retained."
+remote_confidence: "low"
 description: "Satellite-based environmental monitoring for agriculture, climate, and disaster response."
 satellites: ""
 category: "Earth Observation"

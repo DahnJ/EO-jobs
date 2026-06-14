@@ -5,7 +5,8 @@ website: "https://wyvern.space/"
 careers_urls: ["https://wyvern.space/company/join-us"]
 locations: ["🇨🇦 Edmonton, Canada"]
 remote: "Yes"
-remote_evidence: "Careers page lists 'Remote • Edmonton, AB' and mentions flexible working hours and hybrid opportunities."
+remote_evidence: "Career page lists 'Hybrid work opportunities' and 'Flexible working hours' as benefits; DevOps Specialist and Space Operations Intern marked 'Remote • Edmonton, AB'"
+remote_confidence: "high"
 description: "Canadian space technology company operating commercial hyperspectral imaging satellites for Earth observation."
 satellites: ""
 category: ""

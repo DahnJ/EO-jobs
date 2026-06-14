@@ -5,7 +5,8 @@ website: "https://www.envitia.com/"
 careers_urls: ["https://www.envitia.com/careers/"]
 locations: ["🇬🇧 Horsham, UK"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "Careers page mentions 'Flexible Work Arrangements' benefit but does not clarify remote vs hybrid vs on-site; references BambooHR job board"
+remote_confidence: "low"
 description: "Geospatial intelligence solutions "
 satellites: ""
 category: "Earth Observation"

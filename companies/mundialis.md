@@ -5,7 +5,8 @@ website: "https://www.mundialis.de"
 careers_urls: ["https://www.mundialis.de/en/karriere/"]
 locations: ["Bonn, Germany"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "Careers page shows office in Bonn, Germany; positions (Sales, Sales Manager) have no remote designation mentioned."
+remote_confidence: "low"
 description: "Geoinformation solutions using remote sensing for environment and sustainability."
 satellites: ""
 category: "Earth Observation"

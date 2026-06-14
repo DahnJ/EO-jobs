@@ -5,7 +5,8 @@ website: "https://dhruvaspace.com/"
 careers_urls: ["https://www.dhruvaspace.com/careers"]
 locations: ["Hyderabad, India", "Graz, Austria"]
 remote: "No"
-remote_evidence: "All positions listed as 'Full-time & On-site' with offices in Hyderabad and Dehradun."
+remote_evidence: "Careers page explicitly marks all 12 open positions as 'Full-time & On-site' in Hyderabad, Dehradun; no remote work mentioned"
+remote_confidence: "high"
 description: "Space technology company providing satellite platforms, launch solutions, and Earth observation."
 satellites: ""
 category: ""

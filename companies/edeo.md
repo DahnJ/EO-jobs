@@ -5,7 +5,8 @@ website: "https://www.edeo-gmbh.de"
 careers_urls: ["x"]
 locations: ["Roding, Germany"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "No careers page reachable (website is German); no remote policy information available"
+remote_confidence: "low"
 description: "Earth observation and geospatial services company providing satellite data analysis."
 satellites: ""
 category: "Earth Observation"

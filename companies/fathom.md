@@ -4,8 +4,9 @@ status: "active"
 website: "https://www.fathom.global/"
 careers_urls: ["https://careers.fathom.global/"]
 locations: ["🇬🇧 Bristol, UK"]
-remote: "Yes (UK)"
-remote_evidence: ""
+remote: "Hybrid"
+remote_evidence: "Job board shows 'Digital Marketing Executive' role marked 'Hybrid' at 'Fathom Bristol - UK' (Lever/Ashby job board, 2026)"
+remote_confidence: "high"
 description: "Flood mapping"
 satellites: ""
 category: ""

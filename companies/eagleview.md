@@ -5,7 +5,8 @@ website: "https://www.eagleview.com/"
 careers_urls: ["https://www.eagleview.com/careers/job-postings/"]
 locations: ["USA", "India", "Canada", "Australia"]
 remote: "Yes (US)"
-remote_evidence: ""
+remote_evidence: "Stored value retained; careers portal redirects to iCIMS system (unable to parse listings); unable to confirm current remote status"
+remote_confidence: "low"
 description: "Aerial imagery and geospatial technology company providing property and infrastructure data."
 satellites: ""
 category: ""

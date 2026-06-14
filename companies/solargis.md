@@ -4,8 +4,9 @@ status: "active"
 website: "https://solargis.com/"
 careers_urls: ["https://solargis.com/about-us/jobs"]
 locations: ["Bratislava, Slovakia"]
-remote: "Yes"
-remote_evidence: "Stored value indicates Yes; company provides software and data services suitable for remote work."
+remote: "No"
+remote_evidence: "Careers page states 'flexible working hours and possibility for occasional home-office' but all positions are 'Full-time, Bratislava' in-office."
+remote_confidence: "high"
 description: "Solar resource data and software provider for photovoltaic project development and operations."
 satellites: ""
 category: ""

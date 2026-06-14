@@ -5,7 +5,8 @@ website: "https://i-qps.net/"
 careers_urls: ["https://i-qps.net/career#section3"]
 locations: ["Fukuoka, Japan"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "Career page domain blocked by enterprise security policy; unable to fetch"
+remote_confidence: "low"
 description: "SAR constellation"
 satellites: "Yes"
 category: ""

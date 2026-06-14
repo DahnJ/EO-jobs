@@ -5,7 +5,8 @@ website: "https://www.planetwatchers.com/"
 careers_urls: ["https://www.planetwatchers.com/careers/"]
 locations: ["New York, USA", "London, UK", "Tel Aviv, Israel"]
 remote: "Yes"
-remote_evidence: ""
+remote_evidence: "Careers page states 'fully remote or hybrid roles' available across US, UK, and Israel teams."
+remote_confidence: "high"
 description: "Earth observation and satellite monitoring for environmental intelligence."
 satellites: ""
 category: ""

@@ -5,7 +5,8 @@ website: "https://descarteslabs.com/"
 careers_urls: ["https://jobs.lever.co/descarteslabs.com"]
 locations: ["Santa Fe, US"]
 remote: "Yes (US)"
-remote_evidence: "Lever jobs board indicates US-based remote positions available."
+remote_evidence: "Stored value retained; Lever job board (403 forbidden) unreachable; unable to confirm current listings"
+remote_confidence: "low"
 description: "AI and Earth observation platform providing geospatial insights for satellite data analysis."
 satellites: ""
 category: ""

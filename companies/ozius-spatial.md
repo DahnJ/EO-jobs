@@ -5,7 +5,8 @@ website: "https://ozius.earth/"
 careers_urls: ["x"]
 locations: ["Australia"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "No careers URL available (marked as 'x' in input)"
+remote_confidence: "low"
 description: "Australian spatial technology and Earth observation company."
 satellites: ""
 category: "Earth Observation"

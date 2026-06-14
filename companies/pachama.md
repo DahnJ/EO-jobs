@@ -5,7 +5,8 @@ website: "https://pachama.com/"
 careers_urls: ["https://pachama.com/careers"]
 locations: ["Remote"]
 remote: "Yes (PCT +-3)"
-remote_evidence: ""
+remote_evidence: "Stored value retained - domain security verification failed"
+remote_confidence: "low"
 description: "Carbon removal and climate tech via satellite monitoring and verification."
 satellites: ""
 category: ""

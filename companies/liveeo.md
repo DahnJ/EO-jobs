@@ -5,7 +5,8 @@ website: "https://live-eo.com/"
 careers_urls: ["https://live-eo.com/jobs/"]
 locations: ["Berlin, Germany"]
 remote: "Hybrid"
-remote_evidence: "Careers page shows hybrid work arrangement."
+remote_evidence: "Careers page returns 404 error; stored value 'Hybrid' retained as reasonable given company location"
+remote_confidence: "low"
 description: "AI-powered satellite monitoring for crop health and agricultural insights."
 satellites: ""
 category: ""

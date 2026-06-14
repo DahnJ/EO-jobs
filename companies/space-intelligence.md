@@ -5,7 +5,8 @@ website: "https://www.space-intelligence.com/"
 careers_urls: ["https://www.space-intelligence.com/working-for-us/"]
 locations: ["Edinburgh, UK"]
 remote: "No jobs"
-remote_evidence: "Stored value indicates 'No jobs'; careers page exists but likely not actively hiring."
+remote_evidence: "Working-for-us page returns 404; unable to access job listings."
+remote_confidence: "low"
 description: "Geospatial analytics and carbon science company specializing in forest monitoring and EUDR compliance."
 satellites: ""
 category: ""

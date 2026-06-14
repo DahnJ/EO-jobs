@@ -5,7 +5,8 @@ website: "https://www.aac-clyde.space/"
 careers_urls: ["https://www.aac-clyde.space/careers"]
 locations: ["Glasgow, United Kingdom"]
 remote: "Hybrid"
-remote_evidence: "FAQs state 'open to discussions around flexible working and/or hybrid working, depending on the nature of the role and business needs.'"
+remote_evidence: "Stored value retained; unable to access Lever/careers board to confirm."
+remote_confidence: "low"
 description: "Small satellite technologies and space-based data services for Earth observation."
 satellites: ""
 category: ""

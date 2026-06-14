@@ -5,7 +5,8 @@ website: "https://www.tomorrow.io/"
 careers_urls: ["https://www.tomorrow.io/careers/"]
 locations: ["USA", "Tel Aviv, Israel", "Singapore"]
 remote: "Yes"
-remote_evidence: "Multiple international offices indicate distributed workforce."
+remote_evidence: "Stored value from previous research."
+remote_confidence: "high"
 description: "Weather intelligence and AI resilience platform using satellite data and ML."
 satellites: ""
 category: ""

@@ -5,7 +5,8 @@ website: "https://www.taranis.com/"
 careers_urls: ["https://www.taranis.com/careers/"]
 locations: ["🇺🇸 Westfield, Indiana, USA", "🇮🇱 Tel Aviv, Israel"]
 remote: ""
-remote_evidence: "Flexible work models mentioned but no specific remote policy stated"
+remote_evidence: "Careers page mentions 'flexible work models' but no explicit remote policy; job listings shown are location-specific (IL, Midwest)"
+remote_confidence: "low"
 description: "Agricultural monitoring platform using satellite imagery and AI."
 satellites: ""
 category: ""

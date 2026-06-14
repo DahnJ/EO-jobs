@@ -5,7 +5,8 @@ website: "https://rsmetrics.com/"
 careers_urls: ["https://rsmetrics.com/careers/"]
 locations: ["🇺🇸 Chicago, USA", "🇺🇸 New York, USA", "🇱🇰 Pita Kotte, Sri Lanka", "🌍 Europe", "🌏 Asia"]
 remote: "No"
-remote_evidence: "Multiple office locations and no mention of remote work on careers page."
+remote_evidence: "Careers page shows no remote designation; appears office-based"
+remote_confidence: "medium"
 description: "Real-time asset-level environmental and climate risk data using geospatial technology."
 satellites: ""
 category: ""

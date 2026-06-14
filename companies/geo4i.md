@@ -5,7 +5,8 @@ website: "https://geo4i.com/en/"
 careers_urls: ["x"]
 locations: ["Copenhagen, France"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "Website contains no information about employment or remote work arrangements"
+remote_confidence: "low"
 description: "Geospatial and imagery intelligence (GEOINT/IMINT) services."
 satellites: ""
 category: "Earth Observation"

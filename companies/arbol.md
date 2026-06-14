@@ -5,7 +5,8 @@ website: "https://www.arbol.io/"
 careers_urls: ["https://jobs.lever.co/Arbol"]
 locations: ["New York, USA"]
 remote: "Yes"
-remote_evidence: "Multiple offices across 15+ countries indicating remote operations."
+remote_evidence: "Lever jobs board shows 'Remote —' tag on multiple listings (Senior Underwriter, Sales Manager, Platform Engineer, 2026-06)."
+remote_confidence: "high"
 description: "Parametric climate risk insurance using AI and climate data."
 satellites: ""
 category: ""

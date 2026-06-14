@@ -5,7 +5,8 @@ website: "https://climateengine.com/"
 careers_urls: ["https://climateengine.com/careers/"]
 locations: ["Carson City, USA"]
 remote: "Yes"
-remote_evidence: ""
+remote_evidence: "Careers page returns 404 Not Found; cannot verify listings"
+remote_confidence: "low"
 description: "Climate, Google Earth Engine enterprise solution"
 satellites: ""
 category: ""

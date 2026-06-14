@@ -5,7 +5,8 @@ website: "https://www.envirometrics.io/"
 careers_urls: ["x"]
 locations: ["🇦🇺 Brisbane, Australia"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "Website connection refused (ERR_CONN_REFUSED); cannot access careers or remote policy"
+remote_confidence: "low"
 description: "EO: environmental monitoring & mining rehabilitation"
 satellites: ""
 category: "Earth Observation"

@@ -5,7 +5,8 @@ website: "https://ksat.no"
 careers_urls: ["https://karriere.ksat.no"]
 locations: ["Tromsø, Norway"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "Careers page not accessible due to domain verification failure"
+remote_confidence: "low"
 description: "Satellite ground network and Earth observation services."
 satellites: ""
 category: ""

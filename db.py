@@ -30,8 +30,9 @@ def load_all() -> list:
 
 
 FIELD_ORDER = ["name", "status", "website", "careers_urls", "locations",
-               "remote", "remote_evidence", "description", "satellites",
-               "category", "listed", "links", "source", "last_checked"]
+               "remote", "remote_evidence", "remote_confidence", "description",
+               "satellites", "category", "listed", "links", "source",
+               "last_checked"]
 
 
 def dump(rec: dict) -> str:

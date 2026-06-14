@@ -5,7 +5,8 @@ website: "https://www.sinergise.com/"
 careers_urls: ["https://www.sinergise.com/en/careers/openpositions"]
 locations: ["Ljubljana, Slovenia"]
 remote: "No"
-remote_evidence: "No open positions at this time; office located in Ljubljana only."
+remote_evidence: "Careers page states 'We have no open positions at this time'; no remote policy mentioned"
+remote_confidence: "low"
 description: "Geospatial software company providing cloud platforms and Earth observation solutions for satellite data analysis."
 satellites: ""
 category: ""

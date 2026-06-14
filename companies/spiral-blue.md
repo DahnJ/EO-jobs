@@ -5,7 +5,8 @@ website: "https://www.spiralblue.space/"
 careers_urls: ["https://www.spiralblue.space/careers"]
 locations: ["🇦🇺 Sydney, Australia"]
 remote: "Hybrid"
-remote_evidence: "Careers page shows 'Hybrid' work arrangement for multiple positions."
+remote_evidence: "Careers page states hybrid work arrangements for Sydney-based roles; one Global Leaders position listed as 'Anywhere'"
+remote_confidence: "high"
 description: "LiDAR in space for Earth observation and space control systems."
 satellites: ""
 category: ""

@@ -5,7 +5,8 @@ website: "https://www.terradue.com/portal/"
 careers_urls: ["https://www.terradue.com/portal/jobs"]
 locations: ["🇮🇹 Rome, Italy"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "Jobs page exists but no job listings visible in page content. Unable to determine remote policy."
+remote_confidence: "low"
 description: "Earth observation research and collaboration platform advancing Earth science."
 satellites: ""
 category: "Earth Observation"

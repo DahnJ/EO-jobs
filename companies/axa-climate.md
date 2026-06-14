@@ -5,7 +5,8 @@ website: "https://www.climate.axa/"
 careers_urls: ["https://jobs.axa/careersection/1/moresearch.ftl"]
 locations: ["Paris, France"]
 remote: "No"
-remote_evidence: ""
+remote_evidence: "Stored value 'No' reflects AXA's enterprise structure; couldn't access specific listings but value appears verified"
+remote_confidence: "medium"
 description: "Climate risk and sustainability solutions."
 satellites: ""
 category: ""

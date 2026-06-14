@@ -5,7 +5,8 @@ website: "https://www.aerospacelab.com/"
 careers_urls: ["https://www.aerospacelab.com/join-our-team/"]
 locations: ["Mont-Saint-Guibert, Belgium", "Toulouse, France", "Lausanne, Switzerland", "Los Angeles, USA"]
 remote: "Hybrid"
-remote_evidence: "Stored value retained."
+remote_evidence: "Stored value retained; unable to access careers page."
+remote_confidence: "low"
 description: "Satellite manufacturer designing complete mission solutions and Earth observation payloads."
 satellites: "Yes"
 category: ""

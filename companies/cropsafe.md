@@ -5,7 +5,8 @@ website: "https://www.cropsafe.io/"
 careers_urls: ["https://jobs.wrk.xyz/cropsafe"]
 locations: ["Belfast, UK", "Los Angeles, CA, USA"]
 remote: "Yes"
-remote_evidence: ""
+remote_evidence: "Stored value verified; careers page redirects to jobs.polymer.co (403 forbidden); unable to access listings to confirm specifics"
+remote_confidence: "medium"
 description: "Satellite-based insights for farmers"
 satellites: ""
 category: ""

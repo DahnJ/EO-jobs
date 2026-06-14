@@ -5,7 +5,8 @@ website: "https://www.telepix.ai/"
 careers_urls: ["https://recruit-telepix.careers.team/"]
 locations: ["🇰🇷 Seoul, South Korea"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "Careers page returned 404 Not Found, unable to access"
+remote_confidence: "low"
 description: "End-to-end satellite solutions from payload development to AI analytics."
 satellites: ""
 category: ""

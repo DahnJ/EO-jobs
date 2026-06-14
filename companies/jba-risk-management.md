@@ -5,7 +5,8 @@ website: "https://www.jbarisk.com/"
 careers_urls: ["https://www.jbarisk.com/careers/"]
 locations: ["Skipton, UK", "United States", "Europe", "Asia Pacific"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "Careers page not accessible (404 error)"
+remote_confidence: "low"
 description: "Global leader in flood risk science providing flood maps, catastrophe models and hazard management services."
 satellites: ""
 category: ""

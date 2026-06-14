@@ -5,7 +5,8 @@ website: "https://kappazeta.ee/"
 careers_urls: ["https://kappazeta.ee/jobs"]
 locations: ["Tartu, Estonia"]
 remote: "No"
-remote_evidence: ""
+remote_evidence: "Company page states team works from multiple offices in Estonia, Sweden, Netherlands; no remote work mentioned"
+remote_confidence: "medium"
 description: "SAR monitoring, change detection, precision agriculture"
 satellites: ""
 category: ""

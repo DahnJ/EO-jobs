@@ -5,7 +5,8 @@ website: "https://satellogic.com/"
 careers_urls: ["https://satellogic.bamboohr.com/jobs/"]
 locations: ["🇪🇸 Barcelona, Spain", "🇦🇷 Buenos Aires, Argentina", "🇺🇾 Montevideo, Uruguay", "🇺🇸 Charlotte, NC, USA"]
 remote: "Yes"
-remote_evidence: ""
+remote_evidence: "BambooHR board (JS-rendered); stored value indicates full remote"
+remote_confidence: "medium"
 description: "Earth Observation satellite imaging company."
 satellites: "Yes"
 category: ""

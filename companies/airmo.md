@@ -5,7 +5,8 @@ website: "https://www.airmo.io/"
 careers_urls: ["https://airmo.io/careers"]
 locations: ["Munich, Germany", "Esch-sur-Alzette, Luxembourg"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "Unable to access careers page."
+remote_confidence: "low"
 description: "LiDAR for emissions measurement"
 satellites: ""
 category: ""

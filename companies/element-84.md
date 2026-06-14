@@ -5,7 +5,8 @@ website: "https://element84.com/"
 careers_urls: ["https://element84.com/careers"]
 locations: ["🇺🇸 Alexandria, USA"]
 remote: "Yes (US)"
-remote_evidence: ""
+remote_evidence: "All 5 job listings tagged 'Hub-Remote: DC or Philly Metro' (Ashby job board, 2026)"
+remote_confidence: "high"
 description: "Cloud-based geospatial data processing"
 satellites: ""
 category: ""

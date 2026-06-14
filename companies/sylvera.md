@@ -6,6 +6,7 @@ careers_urls: ["https://jobs.ashbyhq.com/sylvera"]
 locations: ["🇬🇧 London, UK", "🇺🇸 New York, USA", "🇧🇷 São Paulo, Brazil", "🇸🇬 Singapore", "🇯🇵 Tokyo, Japan"]
 remote: "Some positions"
 remote_evidence: "Some positions remote (owner-confirmed); other roles Hybrid London/NY (Ashby board, 2026-06)"
+remote_confidence: "high"
 description: "Carbon credits and environmental impact measurement platform."
 satellites: ""
 category: ""

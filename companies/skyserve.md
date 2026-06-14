@@ -5,7 +5,8 @@ website: "https://www.skyserve.ai/"
 careers_urls: ["https://skyservehq.notion.site/Culture-Teams-SkyServe-bd3685f3bf6540e2b11b57b13a80b839"]
 locations: ["Bengaluru, India"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "Notion careers page link not readable; main website does not mention remote work arrangements"
+remote_confidence: "low"
 description: "Satellite edge computing and onboard AI platform for real-time geospatial data processing."
 satellites: ""
 category: ""

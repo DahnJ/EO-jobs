@@ -4,8 +4,9 @@ status: "active"
 website: "https://www.planetek.gr"
 careers_urls: ["https://www.planetek.gr/company/contact_us/job_opportunities"]
 locations: ["Athens, Greece"]
-remote: ""
-remote_evidence: ""
+remote: "Hybrid"
+remote_evidence: "Careers page states 'hybrid working model, mostly from home with office time'; 2 positions listed (Athens)."
+remote_confidence: "high"
 description: "Geospatial intelligence and Earth observation services."
 satellites: ""
 category: "Earth Observation"

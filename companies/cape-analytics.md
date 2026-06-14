@@ -5,7 +5,8 @@ website: "https://capeanalytics.com/"
 careers_urls: ["https://jobs.lever.co/capeanalytics"]
 locations: ["🇺🇸 Palo Alto, USA", "🇩🇪 Munich, Germany"]
 remote: "Yes"
-remote_evidence: "Part of Moody's Corporation; leverages geospatial analysis capabilities across locations."
+remote_evidence: "Lever job board returns 403 Forbidden; cannot access listings (JS-rendered board, needs browser)"
+remote_confidence: "low"
 description: "Property intelligence using geospatial imagery and computer vision for insurance underwriting."
 satellites: ""
 category: ""

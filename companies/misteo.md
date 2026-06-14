@@ -5,7 +5,8 @@ website: "https://misteo.co/"
 careers_urls: ["https://misteo.co/careers/"]
 locations: []
 remote: ""
-remote_evidence: "Actively hiring"
+remote_evidence: "Careers page lists positions (Weather Modeller, GIS Analyst, Sales Manager) but no remote work policy mentioned; no location specified in listings."
+remote_confidence: "low"
 description: "Climate fintech providing satellite-based weather forecasting and risk intelligence."
 satellites: ""
 category: ""

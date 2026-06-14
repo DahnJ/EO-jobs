@@ -4,8 +4,9 @@ status: "active"
 website: "https://kawaspace.com/"
 careers_urls: ["https://kawaspace.com/philosophy"]
 locations: ["India", "Remote"]
-remote: "Yes"
-remote_evidence: "Multiple India offices and Remote location listed."
+remote: "No"
+remote_evidence: "Philosophy page explicitly states 'All roles at Kawa Space are forward-deployed engineering roles' requiring on-site presence with end users"
+remote_confidence: "high"
 description: "RF geospatial intelligence from satellite-based signal collection."
 satellites: ""
 category: ""

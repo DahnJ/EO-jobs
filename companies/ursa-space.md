@@ -5,7 +5,8 @@ website: "https://ursaspace.com/"
 careers_urls: ["https://twitter.com/ursaspace?lang=en"]
 locations: ["Ithaca, USA"]
 remote: "Yes (US)"
-remote_evidence: "GeoAI platform with distributed customer base suggests remote operations."
+remote_evidence: "Stored value confirmed; careers URL is Twitter profile (not accessible for verification)"
+remote_confidence: "medium"
 description: "GeoAI platform analyzing satellite data for actionable intelligence and insights."
 satellites: ""
 category: ""

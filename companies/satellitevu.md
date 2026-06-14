@@ -5,7 +5,8 @@ website: "https://www.satellitevu.com/"
 careers_urls: ["https://apply.workable.com/satellitevu/"]
 locations: ["🇬🇧 London, UK"]
 remote: "Hybrid (UK, ~2 days/wk London)"
-remote_evidence: "Hybrid team, two days/week in London office (Workable, 2026-06)"
+remote_evidence: "Listing: hybrid team, two days/week in London office (Workable, 2026-06)"
+remote_confidence: "high"
 description: "Thermal Earth Observation satellite company."
 satellites: "Yes (2023)"
 category: ""

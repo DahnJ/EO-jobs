@@ -5,7 +5,8 @@ website: "https://skylabanalytics.com"
 careers_urls: ["x"]
 locations: ["Amsterdam, Netherlands"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "No careers section on website; homepage does not mention remote work"
+remote_confidence: "low"
 description: "Geospatial data analytics company providing satellite imagery analysis and insights."
 satellites: ""
 category: "Earth Observation"

@@ -5,7 +5,8 @@ website: "https://simera-sense.com"
 careers_urls: ["https://simera-sense.breezy.hr/"]
 locations: ["Belgium", "South Africa", "France", "United Kingdom"]
 remote: "No"
-remote_evidence: "Careers page lists specific office locations with no mention of remote work."
+remote_evidence: "Breezy HR listings show 23 full-time positions with specific physical locations only (Leuven, Toulouse, Glasgow, Somerset West); no remote options mentioned"
+remote_confidence: "high"
 description: "Designs satellite imaging cameras and optical payloads for Earth observation missions."
 satellites: ""
 category: ""

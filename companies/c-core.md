@@ -5,7 +5,8 @@ website: "https://www.c-core.ca"
 careers_urls: ["https://c-core.ca/careers/"]
 locations: ["🇨🇦 St. John's, Canada", "🇨🇦 Kanata, Canada"]
 remote: "No"
-remote_evidence: "Listed office locations with no remote work mentioned."
+remote_evidence: "Careers page emphasizes physical office locations in St. John's and Kanata with 'Living Here' relocation content; no remote work mentioned"
+remote_confidence: "medium"
 description: "Research-based geotechnical engineering and remote sensing advisory services."
 satellites: ""
 category: "Earth Observation"

@@ -5,7 +5,8 @@ website: "https://eleaf.com/"
 careers_urls: ["https://eleaf.com/careers/"]
 locations: ["🇳🇱 Wageningen, Netherlands"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "Careers page mentions 'dynamic mix' of specialists with some in R&D vs client-facing, but no explicit remote policy stated"
+remote_confidence: "low"
 description: "EO: Solutions for crop production and water management"
 satellites: ""
 category: ""

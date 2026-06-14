@@ -5,7 +5,8 @@ website: "https://www.geollect.com/"
 careers_urls: ["https://www.geollect.com/about/careers/"]
 locations: ["🇬🇧 Bristol, UK"]
 remote: "No"
-remote_evidence: ""
+remote_evidence: "Stored value; careers page URL returned TLS certificate error, could not access for confirmation"
+remote_confidence: "low"
 description: "Unknown - site unreachable."
 satellites: ""
 category: ""

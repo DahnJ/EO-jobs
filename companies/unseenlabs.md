@@ -5,7 +5,8 @@ website: "https://www.unseenlabs.com/"
 careers_urls: ["https://careers.werecruit.io/en/unseenlabs"]
 locations: ["France"]
 remote: "No jobs"
-remote_evidence: "Limited hiring activity evident from homepage."
+remote_evidence: "Stored value from previous research."
+remote_confidence: "high"
 description: "Space-based RF detection system for maritime surveillance and dark vessel tracking."
 satellites: ""
 category: ""

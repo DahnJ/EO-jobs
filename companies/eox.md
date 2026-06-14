@@ -5,7 +5,8 @@ website: "https://eox.at"
 careers_urls: ["https://eox.at/careers/"]
 locations: ["🇦🇹 Vienna, Austria"]
 remote: "Yes"
-remote_evidence: ""
+remote_evidence: "Stored value 'Yes'; careers page does not display full job listings or remote policy confirmation"
+remote_confidence: "medium"
 description: "Analytics and consulting"
 satellites: ""
 category: ""

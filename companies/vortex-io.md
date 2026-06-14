@@ -5,7 +5,8 @@ website: "https://www.vortex-io.fr/"
 careers_urls: ["https://rh-vortex-io.taleez.com"]
 locations: ["🇫🇷 France"]
 remote: "Hybrid"
-remote_evidence: "Stored value retained; no contradictory info found."
+remote_evidence: "Stored value maintained; careers page title visible but job listings not accessible (Taleez JS-rendered board)"
+remote_confidence: "medium"
 description: "French hydrological monitoring platform providing real-time water surveillance and sustainable water resource management solutions."
 satellites: ""
 category: ""

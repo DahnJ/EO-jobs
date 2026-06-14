@@ -5,7 +5,8 @@ website: "https://www.geoambiente.com.br"
 careers_urls: ["https://geoambiente.gupy.io/"]
 locations: ["São José dos Campos, Brazil"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "Gupy careers board found with one position (Gerente Comercial, São Paulo, Hybrid) but no overall remote work policy stated"
+remote_confidence: "low"
 description: "Google Cloud Premier Partner offering geospatial analysis and remote sensing services."
 satellites: ""
 category: ""

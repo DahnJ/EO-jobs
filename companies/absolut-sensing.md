@@ -5,7 +5,8 @@ website: "https://sensing-ai.eu/"
 careers_urls: ["https://sensing-ai.eu/careers/"]
 locations: ["Toulouse, France"]
 remote: "No"
-remote_evidence: "Stored value retained."
+remote_evidence: "Stored value retained; unable to access careers page."
+remote_confidence: "low"
 description: "Satellite-based atmospheric monitoring for detecting methane and greenhouse gas emissions."
 satellites: ""
 category: ""

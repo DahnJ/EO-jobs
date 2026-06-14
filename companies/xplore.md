@@ -5,7 +5,8 @@ website: "https://www.xplore.com/"
 careers_urls: ["https://www.xplore.com/pages/careers.html"]
 locations: []
 remote: ""
-remote_evidence: ""
+remote_evidence: "Careers page indicates open positions exist but no specific job listings or location details shown"
+remote_confidence: "low"
 description: "Space technology company providing 'Space as a Service' through hyperspectral satellite imaging and orbital computing."
 satellites: ""
 category: ""

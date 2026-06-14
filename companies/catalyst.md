@@ -5,7 +5,8 @@ website: "https://catalyst.earth"
 careers_urls: ["https://catalyst.earth/about/careers/"]
 locations: ["🇨🇦 Markham, Canada"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "Careers page returns 403 Forbidden; cannot access listings"
+remote_confidence: "low"
 description: "Climate and sustainability technology company."
 satellites: ""
 category: "Earth Observation"
