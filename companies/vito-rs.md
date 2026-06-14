@@ -4,7 +4,7 @@ status: "active"
 website: "https://vito.be/en"
 careers_urls: ["https://jobs.vito.be/l/en"]
 locations: ["🇧🇪 Mol and other locations, Belgium"]
-remote: "Maybe"
+remote: ""
 remote_evidence: ""
 description: "Remote sensing branch of the VITO research institute. Has commercial customers and Terrascope platform."
 satellites: ""

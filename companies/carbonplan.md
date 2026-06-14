@@ -4,7 +4,7 @@ status: "active"
 website: "https://carbonplan.org/"
 careers_urls: ["https://apply.workable.com/carbonplan/", "https://www.linkedin.com/company/carbonplan/jobs/"]
 locations: ["🇺🇸 San Francisco, CA, USA"]
-remote: "?"
+remote: ""
 remote_evidence: ""
 description: "Non-profit, data science for carbon removal"
 satellites: ""

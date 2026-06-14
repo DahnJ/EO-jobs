@@ -4,7 +4,7 @@ status: "active"
 website: "https://www.upstream.tech/"
 careers_urls: ["https://jobs.upstream.tech/"]
 locations: ["🌐🇺🇸 Remote"]
-remote: "US based"
+remote: "Yes (US)"
 remote_evidence: ""
 description: "Climate solutions: Hydropower generation prediction and landscape monitoring"
 satellites: ""

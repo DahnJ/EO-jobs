@@ -4,7 +4,7 @@ status: "active"
 website: "https://skytruth.org/"
 careers_urls: ["https://skytruth.org/about/careers/", "https://skytruth.org/about/internships/"]
 locations: ["🇺🇸 Shepherdstown, WV, USA"]
-remote: "Yes (US-based?)"
+remote: "Yes (US)"
 remote_evidence: ""
 description: "Non-profit, enviromental protection"
 satellites: ""

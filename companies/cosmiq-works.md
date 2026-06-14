@@ -3,7 +3,7 @@ name: "Cosmiq works"
 status: "defunct"
 website: "http://www.cosmiqworks.org"
 careers_urls: ["x"]
-locations: ["Arlington, USA"]
+locations: ["🇺🇸 Arlington, USA"]
 remote: ""
 remote_evidence: ""
 description: "Geospatial capabilities research for US intelligence community"

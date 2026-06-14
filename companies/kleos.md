@@ -4,7 +4,7 @@ status: "active"
 website: "https://kleos.space/"
 careers_urls: ["https://kleos.space/category/careers/"]
 locations: ["🇱🇺 Luxembourgh", "🇬🇧 Leicester, UK", "🇺🇸 Denver, USA"]
-remote: "Yes (UK, Luxembroug, France, Belgium, Germany)"
+remote: "Yes (UK, Luxembourg, France, Belgium, Germany)"
 remote_evidence: ""
 description: "Satelilites: RF constellation, analytics"
 satellites: "Yes"

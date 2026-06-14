@@ -4,7 +4,7 @@ status: "active"
 website: "https://www.iceye.com/"
 careers_urls: ["https://www.iceye.com/careers?hsLang=en"]
 locations: ["🇫🇮 Espoo, Finland"]
-remote: "Maybe"
+remote: ""
 remote_evidence: ""
 description: "SAR constellation, analytics"
 satellites: "Yes"

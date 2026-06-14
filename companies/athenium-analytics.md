@@ -4,7 +4,7 @@ status: "active"
 website: "https://www.athenium.com/"
 careers_urls: ["https://www.athenium.com/about-us/careers/", "https://www.linkedin.com/company/athenium-analytics/jobs/"]
 locations: ["🇺🇸 Dover, NH, USA"]
-remote: "Yes (US-based?)"
+remote: "Yes (US)"
 remote_evidence: ""
 description: "Insurance"
 satellites: ""

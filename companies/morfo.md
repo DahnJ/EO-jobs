@@ -3,7 +3,7 @@ name: "Morfo"
 status: "active"
 website: "https://www.morfo.rest/"
 careers_urls: []
-locations: ["Rio de Janeiro, Brazil", "Montpellier, France"]
+locations: ["🇧🇷 Rio de Janeiro, Brazil", "🇫🇷 Montpellier, France"]
 remote: ""
 remote_evidence: ""
 description: "Tropical forest restoration using AI-powered monitoring to track ecosystem recovery at scale."

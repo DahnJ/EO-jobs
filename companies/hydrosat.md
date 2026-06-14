@@ -4,7 +4,7 @@ status: "active"
 website: "https://www.hydrosat.com/"
 careers_urls: ["https://apply.workable.com/hydrosat/?lng=en", "https://www.linkedin.com/company/hydrosat/jobs/"]
 locations: ["🇱🇺 Luxembourg", "🇺🇸 Washington D.C., USA"]
-remote: "US based"
+remote: "Yes (US)"
 remote_evidence: ""
 description: "Thermal constellation, agriculture"
 satellites: "Planned"

@@ -3,8 +3,8 @@ name: "Palantir"
 status: "active"
 website: "https://www.palantir.com/"
 careers_urls: ["https://www.palantir.com/careers/"]
-locations: ["Many countries across the world"]
-remote: "?"
+locations: ["🌐 Many countries across the world"]
+remote: ""
 remote_evidence: ""
 description: "Large data analysis and consultancy company. MetaConstellation product."
 satellites: ""

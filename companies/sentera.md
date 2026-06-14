@@ -4,7 +4,7 @@ status: "active"
 website: "https://sentera.com/"
 careers_urls: ["https://apply.workable.com/sentera/#jobs", "https://www.linkedin.com/company/sentera/jobs/"]
 locations: ["🇺🇸 Saint Paul, MN, USA"]
-remote: "US-based"
+remote: "Yes (US)"
 remote_evidence: ""
 description: "Drones for agriculture monitoring"
 satellites: ""

@@ -4,7 +4,7 @@ status: "active"
 website: "https://www.climate-x.com/"
 careers_urls: ["https://www.climate-x.com/careers"]
 locations: ["🇬🇧 London, UK"]
-remote: "No (Partial)"
+remote: "Hybrid"
 remote_evidence: ""
 description: "Climate change resiliency, weather risk"
 satellites: ""

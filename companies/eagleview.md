@@ -4,7 +4,7 @@ status: "active"
 website: "https://www.eagleview.com/"
 careers_urls: ["https://www.eagleview.com/careers/job-postings/", "https://www.linkedin.com/company/eagleview-technologies-inc/jobs/"]
 locations: ["🇺🇸🇮🇳🇦🇺🇨🇦 Multiple locations (USA, India, Canada, Australia)"]
-remote: "Yes (US-based)"
+remote: "Yes (US)"
 remote_evidence: ""
 description: "Aerial imagery and property insights"
 satellites: ""

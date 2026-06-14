@@ -3,7 +3,7 @@ name: "Aersys"
 status: "unknown"
 website: "http://www.aresys.it"
 careers_urls: ["https://www.aresys.it/careers/#open-positions"]
-locations: ["Milan, Italy"]
+locations: ["🇮🇹 Milan, Italy"]
 remote: ""
 remote_evidence: ""
 description: "SAR/InSAR ground monitoring"

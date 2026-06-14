@@ -4,7 +4,7 @@ status: "active"
 website: "https://earthdaily.com/"
 careers_urls: ["https://earthdaily.com/careers/career-opportunities/", "https://www.linkedin.com/company/earthdailyanalytics/jobs/"]
 locations: ["🇨🇦 Vancouver, Canada"]
-remote: "~Yes"
+remote: "Yes"
 remote_evidence: ""
 description: "Analytics, agriculture"
 satellites: ""

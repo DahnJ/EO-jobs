@@ -3,7 +3,7 @@ name: "Chang Guang Satellite Technology"
 status: "active"
 website: "https://www.jl1.cn/"
 careers_urls: ["http://personnel1.aspx"]
-locations: ["Changchun, Jilin Province, China"]
+locations: ["🇨🇳 Changchun, Jilin Province, China"]
 remote: ""
 remote_evidence: ""
 description: "Commercial high-resolution remote sensing satellites; Jilin-1 constellation for Earth observation."

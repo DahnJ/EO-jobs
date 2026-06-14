@@ -3,7 +3,7 @@ name: "Dhruva Space"
 status: "active"
 website: "https://dhruvaspace.com/"
 careers_urls: ["https://www.dhruvaspace.com/careers"]
-locations: ["Hyderabad, India"]
+locations: ["🇮🇳 Hyderabad, India"]
 remote: ""
 remote_evidence: ""
 description: "Full-stack space engineering solutions including satellite platforms, launch, and earth observation imagery."

@@ -3,7 +3,7 @@ name: "Polar View"
 status: "active"
 website: "http://www.polarview.org"
 careers_urls: ["x"]
-locations: ["Didcot, UK"]
+locations: ["🇬🇧 Didcot, UK"]
 remote: ""
 remote_evidence: ""
 description: "EO: Polar ice monitoring"

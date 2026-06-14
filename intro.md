@@ -3,7 +3,7 @@
 
 ![](https://i.imgur.com/KDcXsBZ.png)
 
-[<div align="center"><em>source</em></div>](https://terrawatch.substack.com/p/demystifying-earth-observation-the?utm_source=url)
+<div align="center"><a href="https://terrawatch.substack.com/p/demystifying-earth-observation-the?utm_source=url"><em>source</em></a></div>
 
 ## Portals & Jobs
 

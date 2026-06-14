@@ -4,7 +4,7 @@ status: "active"
 website: "https://wegaw.com/"
 careers_urls: []
 locations: ["🇨🇭 Lausanne, Switzerland"]
-remote: "?"
+remote: ""
 remote_evidence: ""
 description: "Clean energy production optimization through satellite imagery"
 satellites: ""

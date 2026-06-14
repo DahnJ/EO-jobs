@@ -3,7 +3,7 @@ name: "Abundance Brasil"
 status: "active"
 website: "https://www.abundance.global/"
 careers_urls: ["https://www.abundance.global/careers/"]
-locations: ["Brisbane, Queensland, Australia"]
+locations: ["🇦🇺 Brisbane, Queensland, Australia"]
 remote: ""
 remote_evidence: ""
 description: "Business coaching and consulting firm; not Earth Observation."

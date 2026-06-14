@@ -3,7 +3,7 @@ name: "CGI"
 status: "active"
 website: "https://www.cgi.com/uk/en-gb"
 careers_urls: ["https://cgi.njoyn.com/CGI/xweb/xweb.asp?page=JobListing&CLID=21001&CountryID=UK&lang=1"]
-locations: ["Many locations across the world"]
+locations: ["🌐 Many locations across the world"]
 remote: ""
 remote_evidence: ""
 description: "IT business consulting, has space/EO teams"

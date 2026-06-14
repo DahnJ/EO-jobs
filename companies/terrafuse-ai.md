@@ -3,7 +3,7 @@ name: "Terrafuse AI"
 status: "active"
 website: "https://www.terrafuse-ai.com/"
 careers_urls: ["https://apply.workable.com/terrafuse/"]
-locations: ["Berkeley, USA"]
+locations: ["🇺🇸 Berkeley, USA"]
 remote: ""
 remote_evidence: ""
 description: "Climate and weather risk prediction solution"

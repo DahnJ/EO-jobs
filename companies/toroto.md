@@ -3,7 +3,7 @@ name: "Toroto"
 status: "active"
 website: "https://toroto.com/"
 careers_urls: ["https://careers.toroto.com/"]
-locations: ["Mexico"]
+locations: ["🇲🇽 Mexico"]
 remote: ""
 remote_evidence: ""
 description: "Environmental regeneration company providing ecosystem restoration for carbon and water security."

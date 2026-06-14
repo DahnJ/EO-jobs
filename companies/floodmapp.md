@@ -4,7 +4,7 @@ status: "active"
 website: "https://www.floodmapp.com/"
 careers_urls: ["https://www.floodmapp.com/jobs", "https://www.linkedin.com/company/floodmapp/jobs/"]
 locations: ["🇦🇺 Brisbane, Australia", "🇦🇺 Melbourne, Australia"]
-remote: "Australia-based"
+remote: "Yes (Australia)"
 remote_evidence: ""
 description: "Flood forecasting"
 satellites: ""

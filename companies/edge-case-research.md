@@ -3,7 +3,7 @@ name: "Edge Case Research"
 status: "defunct"
 website: "http://www.terraloupe.com"
 careers_urls: ["x"]
-locations: ["Munich, Germany"]
+locations: ["🇩🇪 Munich, Germany"]
 remote: ""
 remote_evidence: ""
 description: "Precise EO mapping for cars nav. etc."

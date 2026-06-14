@@ -4,7 +4,7 @@ status: "active"
 website: "https://live-eo.com/"
 careers_urls: ["https://live-eo.com/jobs/"]
 locations: ["🇩🇪 Berlin, Germany"]
-remote: "Occasionally"
+remote: "Hybrid"
 remote_evidence: ""
 description: "Infrastructure monitoring"
 satellites: ""

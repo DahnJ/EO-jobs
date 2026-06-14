@@ -3,7 +3,7 @@ name: "Geosys"
 status: "acquired"
 website: "http://www.geosys.com"
 careers_urls: ["https://earthdaily.com/careers/career-opportunities/earthdaily-analytics-careers/"]
-locations: ["Toulouse, France"]
+locations: ["🇫🇷 Toulouse, France"]
 remote: ""
 remote_evidence: ""
 description: "EO: Agriculture, insurance, commodity insights and monitoring"

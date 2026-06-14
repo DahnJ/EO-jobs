@@ -4,7 +4,7 @@ status: "active"
 website: "https://www.fathom.global/"
 careers_urls: ["https://careers.fathom.global/", "https://www.linkedin.com/company/fathom-global/jobs/"]
 locations: ["🇬🇧 Bristol, UK"]
-remote: "Yes (UK-elligible)"
+remote: "Yes (UK)"
 remote_evidence: ""
 description: "Flood mapping"
 satellites: ""

@@ -4,7 +4,7 @@ status: "active"
 website: "https://aurorainsight.com/"
 careers_urls: ["https://jobs.lever.co/aurorainsight", "https://www.linkedin.com/company/aurorainsight/jobs/"]
 locations: ["🇺🇸 Washington, USA"]
-remote: "US based"
+remote: "Yes (US)"
 remote_evidence: ""
 description: "Analytics & insights on spectrum and wireless technologies"
 satellites: ""

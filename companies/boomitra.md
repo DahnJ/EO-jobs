@@ -3,7 +3,7 @@ name: "Boomitra"
 status: "active"
 website: "https://boomitra.com/"
 careers_urls: ["https://boomitra.com/careers/"]
-locations: ["Multiple continents: Mexico, South America, Africa, India, Central America"]
+locations: ["🇮🇳 Multiple continents: Mexico, South America, Africa, India, Central America"]
 remote: ""
 remote_evidence: ""
 description: "Uses satellites and AI to monitor soil carbon restoration on 5M+ acres across regenerative agriculture projects."

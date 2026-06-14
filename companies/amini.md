@@ -3,7 +3,7 @@ name: "Amini"
 status: "active"
 website: "https://www.amini.ai/"
 careers_urls: ["https://www.amini.ai/about#careers"]
-locations: ["Kenya"]
+locations: ["🇰🇪 Kenya"]
 remote: ""
 remote_evidence: ""
 description: "Sovereign data infrastructure for Global South with edge AI for environmental and disaster resilience."

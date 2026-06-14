@@ -3,7 +3,7 @@ name: "Geo4i"
 status: "active"
 website: "https://geo4i.com/en/"
 careers_urls: ["x"]
-locations: ["Copenhagen, France"]
+locations: ["🇫🇷 Copenhagen, France"]
 remote: ""
 remote_evidence: ""
 description: "Geospatial defence intelligence"

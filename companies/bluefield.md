@@ -4,7 +4,7 @@ status: "defunct"
 website: "https://bluefield.co/"
 careers_urls: []
 locations: ["🇺🇸 San Francisco, USA"]
-remote: "?"
+remote: ""
 remote_evidence: ""
 description: "Methane leak detection via microsatellites"
 satellites: "Yes (planned)"

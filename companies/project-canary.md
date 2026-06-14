@@ -3,7 +3,7 @@ name: "Project Canary"
 status: "active"
 website: "https://www.projectcanary.com/"
 careers_urls: ["https://projectcanary.pinpointhq.com/"]
-locations: ["Denver, Colorado, US"]
+locations: ["🇺🇸 Denver, Colorado, US"]
 remote: ""
 remote_evidence: ""
 description: "Methane detection and emissions reporting aggregating satellite and sensor data."

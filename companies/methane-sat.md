@@ -4,7 +4,7 @@ status: "active"
 website: "https://www.methanesat.org/"
 careers_urls: ["https://www.methanesat.org/careers/"]
 locations: ["🇺🇸 Austin, TX, USA"]
-remote: "US-based"
+remote: "Yes (US)"
 remote_evidence: ""
 description: "Planned methane-tracking satellite"
 satellites: ""

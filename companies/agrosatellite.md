@@ -3,7 +3,7 @@ name: "Agrosatellite"
 status: "acquired"
 website: "https://agrosatelite.com.br"
 careers_urls: ["x"]
-locations: ["Florianópolis, Brazil"]
+locations: ["🇧🇷 Florianópolis, Brazil"]
 remote: ""
 remote_evidence: ""
 description: "EO for agriculture, GIS development"

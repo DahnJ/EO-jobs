@@ -3,7 +3,7 @@ name: "Jua"
 status: "active"
 website: "https://www.jua.ai/"
 careers_urls: ["https://jua.ai/careers"]
-locations: ["Zurich, Switzerland"]
+locations: ["🇨🇭 Zurich, Switzerland"]
 remote: ""
 remote_evidence: ""
 description: "AI foundation models for physical reality including atmospheric prediction and energy optimization."

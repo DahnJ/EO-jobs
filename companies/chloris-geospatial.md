@@ -3,7 +3,7 @@ name: "Chloris Geospatial"
 status: "active"
 website: "https://chloris.earth/"
 careers_urls: ["https://chloris.bamboohr.com/careers"]
-locations: ["Boston, USA"]
+locations: ["🇺🇸 Boston, USA"]
 remote: ""
 remote_evidence: ""
 description: "Global biomass measurements"

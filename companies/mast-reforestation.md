@@ -3,7 +3,7 @@ name: "Mast Reforestation"
 status: "active"
 website: "https://www.mastreforest.com/"
 careers_urls: ["https://www.mastreforest.com/careers"]
-locations: ["Seattle, WA", "Montana", "California"]
+locations: ["🇺🇸 Seattle, WA", "🇺🇸 Montana", "🇺🇸 California"]
 remote: ""
 remote_evidence: ""
 description: "Post-wildfire forest restoration and carbon removal through biomass operations."

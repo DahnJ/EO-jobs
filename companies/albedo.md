@@ -4,7 +4,7 @@ status: "active"
 website: "https://albedo.com/"
 careers_urls: ["https://albedo.com/company#join"]
 locations: ["🇺🇸 Denver, USA"]
-remote: "US based"
+remote: "Yes (US)"
 remote_evidence: ""
 description: "High-resolution optical constellation (10cm constellation planned), thermal"
 satellites: "Yes (future?)"

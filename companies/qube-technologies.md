@@ -3,7 +3,7 @@ name: "Qube Technologies"
 status: "active"
 website: "https://www.qubeiot.com/"
 careers_urls: ["https://www.qubeiot.com/careers"]
-locations: ["Calgary, Alberta, Canada"]
+locations: ["🇨🇦 Calgary, Alberta, Canada"]
 remote: ""
 remote_evidence: ""
 description: "Field-deployed hardware and machine learning for emissions monitoring detection."

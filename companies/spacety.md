@@ -4,7 +4,7 @@ status: "active"
 website: "https://en.spacety.com/"
 careers_urls: []
 locations: ["🇨🇳 Beijing, China", "🇱🇺 Luxembourg"]
-remote: "?"
+remote: ""
 remote_evidence: ""
 description: "Satellite operator, Satellite-as-a-service, DaaS"
 satellites: "Yes"

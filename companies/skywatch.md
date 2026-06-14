@@ -4,7 +4,7 @@ status: "active"
 website: "https://www.skywatch.com/"
 careers_urls: ["https://www.skywatch.com/careers"]
 locations: ["🇺🇸 New York, USA", "🇨🇦 Waterloo, Canada"]
-remote: "Canada-based"
+remote: "Yes (Canada)"
 remote_evidence: ""
 description: "Making imagery available, B2B"
 satellites: ""

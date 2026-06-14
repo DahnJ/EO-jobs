@@ -3,7 +3,7 @@ name: "Repath"
 status: "active"
 website: "https://repath.earth/"
 careers_urls: ["https://repath.earth/jobs/"]
-locations: ["Hamburg, Germany"]
+locations: ["🇩🇪 Hamburg, Germany"]
 remote: "Yes"
 remote_evidence: "Remote-first organization with flexible working hours and days; quarterly physical team meetings."
 description: "AI-powered climate risk analytics for infrastructure assets quantifying physical climate risk and adaptation ROI."

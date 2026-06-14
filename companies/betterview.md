@@ -4,7 +4,7 @@ status: "active"
 website: "https://www.betterview.com/"
 careers_urls: ["https://apply.workable.com/betterview/#jobs", "https://www.linkedin.com/company/betterview/jobs/"]
 locations: ["🇺🇸 New York, USA", "🇺🇸 Carlsbad, CA, USA", "🇺🇸 Chicago, IL, USA", "🇺🇸 San Francisco, USA"]
-remote: "Yes (US-based?)"
+remote: "Yes (US)"
 remote_evidence: ""
 description: "Insurance"
 satellites: ""

@@ -4,7 +4,7 @@ status: "active"
 website: "https://ororatech.com"
 careers_urls: ["https://ororatech.com/careers/"]
 locations: ["🇩🇪 Munich, Germany", "🇺🇸 USA", "🇨🇦 Canada", "🇬🇷 Athens, Greece"]
-remote: "~Yes"
+remote: "Yes"
 remote_evidence: ""
 description: "Satellites for wildfire detection"
 satellites: "Planned"
