@@ -11,7 +11,7 @@ description: "Geodata-driven solutions and AI digital twins: FME data integratio
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/gim-nv", "twitter": "https://twitter.com/gim_nv"}
+links: {"linkedin": "https://www.linkedin.com/company/gim-nv", "twitter": "https://twitter.com/gim_nv", "crunchbase": "https://crunchbase.com/organization/gim"}
 source: "awesome 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

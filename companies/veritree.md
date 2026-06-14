@@ -11,7 +11,7 @@ description: "Tree-planting and reforestation platform with geospatial monitorin
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://ca.linkedin.com/company/veritree", "youtube": "https://www.youtube.com/@veritree"}
+links: {"linkedin": "https://ca.linkedin.com/company/veritree", "youtube": "https://www.youtube.com/@veritree", "crunchbase": "https://crunchbase.com/organization/veritree"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

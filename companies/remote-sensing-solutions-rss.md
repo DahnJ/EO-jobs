@@ -11,7 +11,7 @@ description: "Forest and carbon monitoring, deforestation tracking, and environm
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/remote-sensing-solutions-rss/", "youtube": "https://www.youtube.com/channel/UCq-9Jo-J5rED6ftCMdPXGBg", "twitter": "https://twitter.com/rssgmbh"}
+links: {"linkedin": "https://www.linkedin.com/company/remote-sensing-solutions-rss/", "youtube": "https://www.youtube.com/channel/UCq-9Jo-J5rED6ftCMdPXGBg", "twitter": "https://twitter.com/rssgmbh", "crunchbase": "https://www.crunchbase.com/organization/remote-sensing-solutions", "github": "https://github.com/Remote-Sensing-Systems"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

@@ -11,7 +11,7 @@ description: "Earth observation research and collaboration platform advancing Ea
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {"github": "https://github.com/terradue", "twitter": "https://twitter.com/terradue", "linkedin": "https://www.linkedin.com/company/terradue/", "facebook": "https://www.facebook.com/Terradue/"}
+links: {"github": "https://github.com/terradue", "twitter": "https://twitter.com/terradue", "linkedin": "https://www.linkedin.com/company/terradue/", "facebook": "https://www.facebook.com/Terradue/", "crunchbase": "https://crunchbase.com/organization/terradue"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

@@ -11,7 +11,7 @@ description: "Earth observation and geospatial analysis company providing satell
 satellites: ""
 category: ""
 listed: true
-links: {}
+links: {"linkedin": "https://www.linkedin.com/company/earthscan.io/"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

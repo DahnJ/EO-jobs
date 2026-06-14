@@ -11,7 +11,7 @@ description: "Earth observation and satellite radar interferometry for ground mo
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {}
+links: {"linkedin": "https://linkedin.com/company/terrasigna", "crunchbase": "https://crunchbase.com/organization/terrasigna", "twitter": "https://twitter.com/TERRASIGNA"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

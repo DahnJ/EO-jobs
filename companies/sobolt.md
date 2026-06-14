@@ -11,7 +11,7 @@ description: "Building sustainability and energy transition software using AI-dr
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/sobolt"}
+links: {"linkedin": "https://www.linkedin.com/company/sobolt", "crunchbase": "https://www.crunchbase.com/organization/sobolt", "twitter": "https://twitter.com/Sobolt_AI"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

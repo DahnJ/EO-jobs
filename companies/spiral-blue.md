@@ -11,7 +11,7 @@ description: "LiDAR in space for Earth observation and space control systems."
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/spiralblue/?originalSubdomain=au"}
+links: {"linkedin": "https://www.linkedin.com/company/spiralblue/?originalSubdomain=au", "crunchbase": "https://www.crunchbase.com/organization/spiral-blue"}
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"

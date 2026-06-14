@@ -11,7 +11,7 @@ description: "China's first commercial remote sensing satellite operator with Ji
 satellites: ""
 category: ""
 listed: true
-links: {"weibo": "http://weibo.com/u/5838191069"}
+links: {"weibo": "http://weibo.com/u/5838191069", "linkedin": "https://www.linkedin.com/company/chang-guang-satellite-technology-co-ltd/", "crunchbase": "https://www.crunchbase.com/organization/chang-guang-satellite-technology-cgstl", "youtube": "https://www.youtube.com/@changguangsatellitetechnol3284"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

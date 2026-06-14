@@ -3,7 +3,7 @@ name: "Plotlogic"
 status: "active"
 website: "https://www.plotlogic.com/"
 careers_urls: ["x"]
-locations: ["🇦🇺 Brisbane, Australia"]
+locations: ["🇦🇺 Zillmere, Queensland, Australia"]
 remote: ""
 remote_evidence: "No careers page or remote work policies mentioned on homepage; 'Work with us' link found but no job listings."
 remote_confidence: "low"
@@ -11,7 +11,7 @@ description: "Agricultural monitoring and geospatial intelligence."
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/plotlogic"}
+links: {"linkedin": "https://www.linkedin.com/company/plotlogic", "crunchbase": "https://www.crunchbase.com/organization/plotlogic"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

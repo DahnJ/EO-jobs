@@ -11,7 +11,7 @@ description: "Infrastructure monitoring using satellite imagery."
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/satelytics"}
+links: {"linkedin": "https://www.linkedin.com/company/satelytics", "crunchbase": "https://www.crunchbase.com/organization/satelytics"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

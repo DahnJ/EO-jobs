@@ -11,7 +11,7 @@ description: "Methane detection and leak survey software for oil & gas operators
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/projectcanary/", "youtube": "https://www.youtube.com/@projectcanary"}
+links: {"linkedin": "https://www.linkedin.com/company/projectcanary/", "youtube": "https://www.youtube.com/@projectcanary", "crunchbase": "https://www.crunchbase.com/organization/project-canary"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

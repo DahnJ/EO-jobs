@@ -11,7 +11,7 @@ description: "French hydrological monitoring platform providing real-time water 
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/vortex-io/", "youtube": "https://www.youtube.com/@vortex-io805"}
+links: {"linkedin": "https://www.linkedin.com/company/vortex-io/", "youtube": "https://www.youtube.com/@vortex-io805", "crunchbase": "https://crunchbase.com/organization/vortex-io"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

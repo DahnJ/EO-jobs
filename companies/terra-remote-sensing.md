@@ -11,7 +11,7 @@ description: "Geospatial data acquisition, processing and delivery in terrestria
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/terra-remote-sensing"}
+links: {"linkedin": "https://www.linkedin.com/company/terra-remote-sensing", "crunchbase": "https://crunchbase.com/organization/terra-remote-sensing"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

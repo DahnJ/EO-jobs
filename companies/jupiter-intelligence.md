@@ -3,7 +3,7 @@ name: "Jupiter Intelligence"
 status: "active"
 website: "https://jupiterintel.com/"
 careers_urls: ["https://jobs.lever.co/jupiterintel/"]
-locations: ["🇺🇸 San Mateo, USA"]
+locations: ["🇺🇸 San Mateo, United States"]
 remote: ""
 remote_evidence: "Lever job board returns 403 Forbidden; cannot access listings"
 remote_confidence: "low"
@@ -11,7 +11,7 @@ description: "Climate change risk analytics"
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/27218084/"}
+links: {"linkedin": "https://www.linkedin.com/company/27218084/", "crunchbase": "https://crunchbase.com/organization/jupiter-intelligence"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

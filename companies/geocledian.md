@@ -11,7 +11,7 @@ description: "Earth observation data analytics for agriculture and EUDR complian
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/geocledian-gmbh/"}
+links: {"linkedin": "https://www.linkedin.com/company/geocledian-gmbh/", "github": "https://github.com/geocledian"}
 source: "sheet:Digital Farming 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

@@ -11,7 +11,7 @@ description: "Sustainability consultancy using geospatial insights for environme
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/52impact"}
+links: {"linkedin": "https://www.linkedin.com/company/52impact", "crunchbase": "https://www.crunchbase.com/organization/52impact"}
 source: "awesome 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

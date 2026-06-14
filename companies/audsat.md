@@ -11,7 +11,7 @@ description: "Satellite data and remote sensing services."
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/audsatbr", "youtube": "https://www.youtube.com/@Audsatbr"}
+links: {"linkedin": "https://www.linkedin.com/company/audsatbr", "youtube": "https://www.youtube.com/@Audsatbr", "crunchbase": "https://www.crunchbase.com/organization/audsat"}
 source: "sheet:Digital Farming 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

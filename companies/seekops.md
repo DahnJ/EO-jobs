@@ -3,7 +3,7 @@ name: "SeekOps"
 status: "active"
 website: "https://seekops.com/"
 careers_urls: ["https://seekops.com/careers/"]
-locations: []
+locations: ["🇺🇸 Austin, United States"]
 remote: ""
 remote_evidence: "Careers page does not mention remote work; external ADP portal not accessible via fetch"
 remote_confidence: "low"

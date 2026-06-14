@@ -11,7 +11,7 @@ description: "Satellite-based Earth Observation and remote-sensing services."
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/419849", "twitter": "https://twitter.com/ARGANS_Ltd"}
+links: {"linkedin": "https://www.linkedin.com/company/419849", "twitter": "https://twitter.com/ARGANS_Ltd", "crunchbase": "https://www.crunchbase.com/organization/argans", "github": "https://github.com/ARGANS"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

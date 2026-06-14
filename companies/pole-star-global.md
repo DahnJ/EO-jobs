@@ -3,7 +3,7 @@ name: "Pole Star Global"
 status: "active"
 website: "https://www.polestarglobal.com/"
 careers_urls: ["https://www.polestarglobal.com/careers/"]
-locations: []
+locations: ["🇬🇧 London, UK"]
 remote: ""
 remote_evidence: "Careers page lists external portals but doesn't display listings or specify remote policies; offices in 5 regions."
 remote_confidence: "low"

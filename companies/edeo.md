@@ -11,7 +11,7 @@ description: "Earth observation and geospatial services company providing satell
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {}
+links: {"linkedin": "https://de.linkedin.com/company/edeo", "crunchbase": "https://www.crunchbase.com/organization/edeo"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

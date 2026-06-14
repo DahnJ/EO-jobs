@@ -11,7 +11,7 @@ description: "Google Cloud Premier Partner offering geospatial analysis and remo
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/geoambientebr", "youtube": "https://www.youtube.com/@geoambiente-br", "twitter": "https://twitter.com/geoamb", "instagram": "https://www.instagram.com/geoambiente.br/", "facebook": "https://www.facebook.com/geoambiente.br"}
+links: {"linkedin": "https://www.linkedin.com/company/geoambientebr", "youtube": "https://www.youtube.com/@geoambiente-br", "twitter": "https://twitter.com/geoamb", "instagram": "https://www.instagram.com/geoambiente.br/", "facebook": "https://www.facebook.com/geoambiente.br", "crunchbase": "https://www.crunchbase.com/organization/geoambiente"}
 source: "awesome 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

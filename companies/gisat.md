@@ -11,7 +11,7 @@ description: "Geospatial analytics company providing advanced earth observation 
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/gisat/"}
+links: {"linkedin": "https://www.linkedin.com/company/gisat/", "twitter": "https://twitter.com/gisat_cz", "crunchbase": "https://crunchbase.com/organization/gisat"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

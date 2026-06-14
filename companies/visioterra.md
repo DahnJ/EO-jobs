@@ -11,7 +11,7 @@ description: "EO: All-purpose"
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/visioterra/", "twitter": "https://twitter.com/VisioTerra"}
+links: {"linkedin": "https://www.linkedin.com/company/visioterra/", "twitter": "https://twitter.com/VisioTerra", "crunchbase": "https://crunchbase.com/organization/visioterra"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

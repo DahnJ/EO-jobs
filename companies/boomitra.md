@@ -11,7 +11,7 @@ description: "Large-scale carbon removal projects using satellite monitoring and
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/boomitra/", "twitter": "https://twitter.com/Boomitra"}
+links: {"linkedin": "https://www.linkedin.com/company/boomitra/", "twitter": "https://twitter.com/Boomitra", "crunchbase": "https://www.crunchbase.com/organization/conserwater-technologies"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

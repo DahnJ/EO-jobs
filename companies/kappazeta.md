@@ -11,7 +11,7 @@ description: "SAR monitoring, change detection, precision agriculture"
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/kappazeta-ltd/"}
+links: {"linkedin": "https://www.linkedin.com/company/kappazeta-ltd/", "crunchbase": "https://crunchbase.com/organization/kappazeta", "youtube": "https://youtube.com/c/kappazeta"}
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"

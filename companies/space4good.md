@@ -11,7 +11,7 @@ description: "Earth observation for social and environmental impact using geospa
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/space4good"}
+links: {"linkedin": "https://www.linkedin.com/company/space4good", "crunchbase": "https://www.crunchbase.com/organization/space4good"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

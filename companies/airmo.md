@@ -11,7 +11,7 @@ description: "LiDAR for emissions measurement"
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/airmo"}
+links: {"linkedin": "https://www.linkedin.com/company/airmo", "crunchbase": "https://www.crunchbase.com/organization/airmo-1c11"}
 source: "awesome 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

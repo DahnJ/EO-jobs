@@ -3,7 +3,7 @@ name: "Kuva Systems"
 status: "active"
 website: "https://www.kuvasystems.com/"
 careers_urls: ["https://kuvasystems.com/careers"]
-locations: ["🇺🇸 Boston, US", "🇨🇦 Calgary, Canada", "🇺🇸 Houston, TX", "🇺🇸 Midland, TX"]
+locations: ["🇺🇸 Cambridge, United States"]
 remote: ""
 remote_evidence: "Careers page not accessible due to domain verification failure"
 remote_confidence: "low"
@@ -11,7 +11,7 @@ description: "Methane emissions detection and monitoring using optical imaging."
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/kuva-systems"}
+links: {"linkedin": "https://www.linkedin.com/company/kuva-systems", "crunchbase": "https://crunchbase.com/organization/kuva-systems"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

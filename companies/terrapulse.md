@@ -11,7 +11,7 @@ description: "Satellite-based monitoring for land, forest, crop and natural reso
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/terrapulse/", "twitter": "https://twitter.com/terrapulse", "facebook": "https://www.facebook.com/terrapulse"}
+links: {"linkedin": "https://www.linkedin.com/company/terrapulse/", "twitter": "https://twitter.com/terrapulse", "facebook": "https://www.facebook.com/terrapulse", "crunchbase": "https://crunchbase.com/organization/terrapulse-inc"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

@@ -11,7 +11,7 @@ description: "EO for climate resilience"
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/eoliann/"}
+links: {"linkedin": "https://www.linkedin.com/company/eoliann/", "crunchbase": "https://www.crunchbase.com/organization/eoliann", "github": "https://github.com/eoliann"}
 source: "awesome 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

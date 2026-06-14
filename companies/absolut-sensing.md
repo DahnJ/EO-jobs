@@ -11,7 +11,7 @@ description: "Satellite-based atmospheric monitoring for detecting methane and g
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/absolut-sensing/"}
+links: {"linkedin": "https://www.linkedin.com/company/absolut-sensing/", "crunchbase": "https://www.crunchbase.com/organization/absolut-sensing"}
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"

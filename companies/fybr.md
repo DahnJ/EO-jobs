@@ -11,7 +11,7 @@ description: "Fiber inventory measurement and management for forestry operations
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {}
+links: {"linkedin": "https://www.linkedin.com/company/fybr", "crunchbase": "https://www.crunchbase.com/organization/fybr-afaf"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

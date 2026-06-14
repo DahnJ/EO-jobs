@@ -3,7 +3,7 @@ name: "QED"
 status: "active"
 website: "https://about.qed.ai/"
 careers_urls: ["https://about.qed.ai/careers"]
-locations: ["🇺🇸 USA", "🇰🇪 Kenya"]
+locations: ["🇺🇸 California, USA"]
 remote: "No"
 remote_evidence: "Stored value confirmed; careers page references positions but no listings or remote details visible."
 remote_confidence: "medium"

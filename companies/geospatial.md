@@ -3,7 +3,7 @@ name: "Geospatial"
 status: "active"
 website: "https://www.geospatial.com.co/"
 careers_urls: ["x"]
-locations: ["🇨🇴 Bogota, Colombia"]
+locations: ["🇨🇴 Bogotá, Colombia"]
 remote: ""
 remote_evidence: "Website blocked by enterprise security policy; could not access"
 remote_confidence: "low"

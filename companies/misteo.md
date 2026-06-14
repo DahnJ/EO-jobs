@@ -3,7 +3,7 @@ name: "mistEO"
 status: "active"
 website: "https://misteo.co/"
 careers_urls: ["https://misteo.co/careers/"]
-locations: []
+locations: ["🇮🇳 Thiruvananthapuram, India"]
 remote: ""
 remote_evidence: "Careers page lists positions (Weather Modeller, GIS Analyst, Sales Manager) but no remote work policy mentioned; no location specified in listings."
 remote_confidence: "low"
@@ -11,7 +11,7 @@ description: "Climate fintech providing satellite-based weather forecasting and 
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/misteo/"}
+links: {"linkedin": "https://www.linkedin.com/company/misteo/", "crunchbase": "https://www.crunchbase.com/organization/misteo"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

@@ -11,7 +11,7 @@ description: "Earth observation analytics and geospatial data company providing 
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/world-from-space"}
+links: {"linkedin": "https://www.linkedin.com/company/world-from-space", "twitter": "https://x.com/worldfrom_space", "crunchbase": "https://www.crunchbase.com/organization/world-from-space"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

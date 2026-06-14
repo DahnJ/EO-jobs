@@ -11,7 +11,7 @@ description: "EO: Energy, Mobility, Land Ressources"
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/tychosolutionsmx/"}
+links: {"linkedin": "https://www.linkedin.com/company/tychosolutionsmx/", "crunchbase": "https://crunchbase.com/organization/tycho-solutions-f61a"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

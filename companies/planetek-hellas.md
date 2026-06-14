@@ -11,7 +11,7 @@ description: "Geospatial intelligence and Earth observation services."
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {"linkedin": "https://gr.linkedin.com/company/planetek-hellas"}
+links: {"linkedin": "https://gr.linkedin.com/company/planetek-hellas", "crunchbase": "https://www.crunchbase.com/organization/planetek-hellas"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

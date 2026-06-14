@@ -11,7 +11,7 @@ description: "German satellite-based Earth observation and climate tech company.
 satellites: ""
 category: ""
 listed: true
-links: {}
+links: {"github": "https://github.com/Orbio-Earth", "linkedin": "https://www.linkedin.com/company/orbioearth", "crunchbase": "https://www.crunchbase.com/organization/orbio-world"}
 source: "awesome 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

@@ -11,7 +11,7 @@ description: "Geospatial analysis and mapping company."
 satellites: "Planned"
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/scanworldeo/?originalSubdomain=be", "twitter": "https://twitter.com/scanworld2?lang=en"}
+links: {"linkedin": "https://www.linkedin.com/company/scanworldeo/?originalSubdomain=be", "twitter": "https://twitter.com/scanworld2?lang=en", "crunchbase": "https://www.crunchbase.com/organization/scanworld"}
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"
