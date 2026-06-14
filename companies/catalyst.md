@@ -1,9 +1,9 @@
 ---
 name: "Catalyst"
-status: "unknown"
-website: "https://www.pcigeomatics.com"
+status: "active"
+website: "https://catalyst.earth"
 careers_urls: ["https://catalyst.earth/about/careers/"]
-locations: ["Markham, Canada"]
+locations: ["🇨🇦 Markham, Canada"]
 remote: ""
 remote_evidence: ""
 description: "\"Geomatica\" for remote sensing, photogrammetry, geospatial analysis"
@@ -12,7 +12,9 @@ category: "Earth Observation"
 listed: false
 links: {}
 source: "google-sheet 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via the EO companies Google Sheet (2026-06); unverified. Ex-name/note: PCI Geomatics.
+
+CATALYST is the brand of PCI Geomatics (est. 1982).

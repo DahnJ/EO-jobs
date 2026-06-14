@@ -1,6 +1,6 @@
 ---
 name: "Tesselo"
-status: "unknown"
+status: "defunct"
 website: "https://tesselo.com/"
 careers_urls: ["https://tesselo.com/about#job-offers"]
 locations: ["Lisbon, Portugal"]
@@ -12,7 +12,9 @@ category: "Earth Observation"
 listed: false
 links: {}
 source: "google-sheet 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via the EO companies Google Sheet (2026-06); unverified.
+
+Defunct: site states 'Tesselo has come to an end' (Jan 2023); now archive.

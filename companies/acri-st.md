@@ -1,9 +1,9 @@
 ---
 name: "ACRI-ST"
-status: "unknown"
+status: "active"
 website: "http://www.acri-st.fr"
 careers_urls: ["https://www.acri-st.fr/en/careers"]
-locations: ["Garbejaire, France"]
+locations: ["🇫🇷 Sophia-Antipolis, France"]
 remote: ""
 remote_evidence: ""
 description: "EO mission simulation, environmental monitoring"
@@ -12,7 +12,9 @@ category: "Earth Observation"
 listed: false
 links: {}
 source: "google-sheet 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via the EO companies Google Sheet (2026-06); unverified.
+
+Direct fetch bot-blocked; confirmed active via listings. Parent of ARGANS.

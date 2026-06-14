@@ -1,18 +1,20 @@
 ---
 name: "Finitie Carbon"
-status: "unknown"
+status: "active"
 website: "https://www.finitecarbon.com/"
-careers_urls: ["https://finitecarbon.bamboohr.com/careers/"]
-locations: ["Wayne, USA"]
-remote: ""
-remote_evidence: ""
+careers_urls: ["https://www.finitecarbon.com/about/careers/"]
+locations: ["🇺🇸 USA"]
+remote: "Yes"
+remote_evidence: "'fast-paced remote work environments' (finitecarbon.com/about/careers)"
 description: "Forest carbon project monitoring"
 satellites: ""
 category: "Earth Observation"
 listed: false
 links: {}
 source: "google-sheet 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via the EO companies Google Sheet (2026-06); unverified.
+
+Real name FiniteCarbon (slug typo 'finitie'). bamboohr careers URL 403'd; correct page is /about/careers.

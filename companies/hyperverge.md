@@ -1,18 +1,20 @@
 ---
 name: "Hyperverge"
-status: "unknown"
+status: "active"
 website: "https://hyperverge.co/"
 careers_urls: ["https://apply.workable.com/hyperverge/#jobs"]
-locations: ["Los Altos, USA"]
+locations: ["🇮🇳 Bangalore, India", "🇺🇸 Palo Alto, USA"]
 remote: ""
 remote_evidence: ""
-description: "HyperVerge Geospatial Platform for object detection & change detection"
+description: "AI identity verification / KYC platform"
 satellites: ""
 category: "Earth Observation"
 listed: false
 links: {}
 source: "google-sheet 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via the EO companies Google Sheet (2026-06); unverified.
+
+NOT an Earth Observation company — identity verification/KYC. Candidate for exclusion from the EO list.

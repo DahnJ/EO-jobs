@@ -1,6 +1,6 @@
 ---
 name: "Terrafuse AI"
-status: "unknown"
+status: "active"
 website: "https://www.terrafuse-ai.com/"
 careers_urls: ["https://apply.workable.com/terrafuse/"]
 locations: ["Berkeley, USA"]
@@ -12,7 +12,9 @@ category: "Earth Observation"
 listed: false
 links: {}
 source: "google-sheet 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via the EO companies Google Sheet (2026-06); unverified.
+
+Careers page no confirmed listings; copyright 2021 (possibly dormant).

@@ -1,6 +1,6 @@
 ---
 name: "Agrosatellite"
-status: "unknown"
+status: "acquired"
 website: "https://agrosatelite.com.br"
 careers_urls: ["x"]
 locations: ["Florianópolis, Brazil"]
@@ -12,7 +12,9 @@ category: "Earth Observation"
 listed: false
 links: {}
 source: "google-sheet 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via the EO companies Google Sheet (2026-06); unverified.
+
+agrosatelite.com.br redirects to Serasa Experian Agro — likely absorbed; redirect target 403 so not fully confirmed.

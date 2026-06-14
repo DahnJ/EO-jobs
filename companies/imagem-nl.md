@@ -1,18 +1,20 @@
 ---
 name: "Imagem nl"
-status: "unknown"
-website: "https://imagemnl.com"
-careers_urls: ["https://www.imagemnl.com/career/"]
-locations: ["Capelle aan den IJssel, Netherlands"]
-remote: ""
-remote_evidence: ""
+status: "active"
+website: "https://imagem.nl/en/"
+careers_urls: ["https://imagem.nl/en/werken-bij/"]
+locations: ["🇳🇱 Apeldoorn, Netherlands"]
+remote: "Hybrid"
+remote_evidence: "'workspaces at our office, but you also have the option to work from home' (imagem.nl/en/werken-bij)"
 description: "EO+GIS: Asset Managment, mapping, location intelligence"
 satellites: ""
 category: "Earth Observation"
 listed: false
 links: {}
 source: "google-sheet 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via the EO companies Google Sheet (2026-06); unverified.
+
+Domain moved imagemnl.com → imagem.nl.

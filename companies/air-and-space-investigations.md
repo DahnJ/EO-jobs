@@ -1,18 +1,20 @@
 ---
 name: "Air and Space Investigations"
-status: "unknown"
+status: "active"
 website: "https://raymond-purdy-rqws.squarespace.com"
 careers_urls: ["x"]
-locations: ["Stroud, UK"]
+locations: ["🇬🇧 UK"]
 remote: ""
 remote_evidence: ""
-description: "Property monitoring, waste crime, evidence gathering"
+description: "Air & Space Evidence Ltd — uses satellite/aerial imagery for investigations and evidence"
 satellites: ""
 category: "Earth Observation"
 listed: false
 links: {}
 source: "google-sheet 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via the EO companies Google Sheet (2026-06); unverified.
+
+Trades as 'Air & Space Evidence', the 'world's first space detective agency'.

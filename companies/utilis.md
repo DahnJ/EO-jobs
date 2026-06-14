@@ -1,7 +1,7 @@
 ---
 name: "Utilis"
-status: "unknown"
-website: "https://utiliscorp.com"
+status: "renamed"
+website: "https://asterra.io/"
 careers_urls: ["x"]
 locations: ["Rosh Haayin, Israel"]
 remote: ""
@@ -12,7 +12,9 @@ category: "Earth Observation"
 listed: false
 links: {}
 source: "google-sheet 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via the EO companies Google Sheet (2026-06); unverified.
+
+Utilis rebranded to ASTERRA (~2021); utiliscorp.com refused, asterra.io 403. NOTE: 'Asterra' may already be in the list.

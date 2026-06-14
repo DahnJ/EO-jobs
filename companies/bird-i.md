@@ -1,9 +1,9 @@
 ---
 name: "Bird.i"
-status: "unknown"
-website: "https://www.hibirdi.com"
+status: "acquired"
+website: "https://zondahome.com"
 careers_urls: ["https://careers-zonda.icims.com/jobs/search?mobile=false&width=1728&height=500&bga=true&needsRedirect=false&jan1offset=-300&jun1offset=-240"]
-locations: ["Glasgow, UK"]
+locations: ["🇬🇧 Glasgow, UK"]
 remote: ""
 remote_evidence: ""
 description: "EO: Construction and commodity monitoring"
@@ -12,7 +12,9 @@ category: "Earth Observation"
 listed: false
 links: {}
 source: "google-sheet 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via the EO companies Google Sheet (2026-06); unverified.
+
+Acquired by Hanley Wood/Meyers Research (Zonda) 2020; hibirdi.com redirects to zondahome.com.

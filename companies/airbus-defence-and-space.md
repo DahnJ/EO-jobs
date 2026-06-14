@@ -1,7 +1,7 @@
 ---
 name: "Airbus Defence and Space"
-status: "unknown"
-website: "http://www.intelligence-airbusds.com"
+status: "active"
+website: "https://space-solutions.airbus.com/"
 careers_urls: ["x"]
 locations: ["Toulouse, France"]
 remote: ""
@@ -12,7 +12,9 @@ category: "Earth Observation"
 listed: false
 links: {}
 source: "google-sheet 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via the EO companies Google Sheet (2026-06); unverified.
+
+Old intelligence-airbusds.com now redirects to space-solutions.airbus.com. Likely duplicate of existing 'Airbus Space' entry.

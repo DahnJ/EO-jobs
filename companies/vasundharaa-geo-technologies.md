@@ -1,9 +1,9 @@
 ---
 name: "Vasundharaa Geo Technologies"
-status: "unknown"
+status: "active"
 website: "https://vasundharaa.in/"
-careers_urls: ["x"]
-locations: ["Pune, India"]
+careers_urls: ["https://vasundharaa.in/career/"]
+locations: ["🇮🇳 India"]
 remote: ""
 remote_evidence: ""
 description: "EO: Urban, Agriculture, Disaster & Environment"
@@ -12,7 +12,7 @@ category: "Earth Observation"
 listed: false
 links: {}
 source: "google-sheet 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via the EO companies Google Sheet (2026-06); unverified.

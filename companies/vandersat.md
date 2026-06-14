@@ -1,9 +1,9 @@
 ---
 name: "Vandersat"
-status: "unknown"
+status: "acquired"
 website: "https://www.vandersat.com"
 careers_urls: ["x"]
-locations: ["Haarlem, Netherlands"]
+locations: ["🇳🇱 Haarlem, Netherlands"]
 remote: ""
 remote_evidence: ""
 description: "EO: Soil moisture / temperature monitoring"
@@ -12,7 +12,9 @@ category: "Earth Observation"
 listed: false
 links: {}
 source: "google-sheet 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via the EO companies Google Sheet (2026-06); unverified.
+
+Acquired by Planet (2021); folded into Planetary Variables.

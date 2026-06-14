@@ -1,9 +1,9 @@
 ---
 name: "World from Space"
-status: "unknown"
+status: "active"
 website: "https://worldfrom.space/en/home/"
 careers_urls: ["https://worldfrom.space/about/careers/"]
-locations: ["Brno, Czech Republic"]
+locations: ["🇨🇿 Brno, Czech Republic"]
 remote: ""
 remote_evidence: ""
 description: "EO: Agriculture & urban"
@@ -12,7 +12,7 @@ category: "Earth Observation"
 listed: false
 links: {}
 source: "google-sheet 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via the EO companies Google Sheet (2026-06); unverified.

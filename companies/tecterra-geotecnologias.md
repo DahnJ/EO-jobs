@@ -1,9 +1,9 @@
 ---
 name: "TecTerra Geotecnologias"
-status: "unknown"
+status: "active"
 website: "https://tecterra.com.br"
 careers_urls: ["x"]
-locations: ["Nova Lima City, Brazil"]
+locations: ["🇧🇷 Belo Horizonte, Brazil"]
 remote: ""
 remote_evidence: ""
 description: "Land monitoring, digital terrain modeling, geospatial data reseller"
@@ -12,7 +12,7 @@ category: "Earth Observation"
 listed: false
 links: {}
 source: "google-sheet 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via the EO companies Google Sheet (2026-06); unverified.

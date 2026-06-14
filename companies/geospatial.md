@@ -1,9 +1,9 @@
 ---
 name: "Geospatial"
-status: "unknown"
+status: "active"
 website: "https://www.geospatial.com.co/"
 careers_urls: ["x"]
-locations: ["Bogotá, Colombia"]
+locations: ["🇨🇴 Bogota, Colombia"]
 remote: ""
 remote_evidence: ""
 description: "EO: All-purpose"
@@ -12,7 +12,7 @@ category: "Earth Observation"
 listed: false
 links: {}
 source: "google-sheet 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via the EO companies Google Sheet (2026-06); unverified.

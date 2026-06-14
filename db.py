@@ -29,6 +29,27 @@ def load_all() -> list:
     return [parse(p.read_text()) for p in sorted(DB.glob("*.md"))]
 
 
+FIELD_ORDER = ["name", "status", "website", "careers_urls", "locations",
+               "remote", "remote_evidence", "description", "satellites",
+               "category", "listed", "links", "source", "last_checked"]
+
+
+def dump(rec: dict) -> str:
+    """Serialize a record back to file text (frontmatter values as JSON)."""
+    body = rec.get("body", "")
+    keys = [k for k in FIELD_ORDER if k in rec] + \
+           [k for k in rec if k not in FIELD_ORDER and k != "body"]
+    lines = ["---"] + [f"{k}: {json.dumps(rec[k], ensure_ascii=False)}" for k in keys] + ["---"]
+    text = "\n".join(lines) + "\n"
+    if body.strip():
+        text += "\n" + body.strip() + "\n"
+    return text
+
+
+def save(slug: str, rec: dict) -> None:
+    (DB / f"{slug}.md").write_text(dump(rec))
+
+
 if __name__ == "__main__":
     from collections import Counter
     cos = load_all()

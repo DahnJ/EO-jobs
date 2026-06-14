@@ -1,9 +1,9 @@
 ---
 name: "DHI Gras"
-status: "unknown"
-website: "http://www.dhi-gras.com"
+status: "renamed"
+website: "https://eo.dhigroup.com/"
 careers_urls: ["x"]
-locations: ["Horlsholm, Denmark"]
+locations: ["🇩🇰 Hørsholm, Denmark"]
 remote: ""
 remote_evidence: ""
 description: "EO: environmental assessment, water resources and marine monitoring"
@@ -12,7 +12,9 @@ category: "Earth Observation"
 listed: false
 links: {}
 source: "google-sheet 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via the EO companies Google Sheet (2026-06); unverified.
+
+Now DHI Group's EO Centre of Excellence; dhi-gras.com redirects to eo.dhigroup.com.

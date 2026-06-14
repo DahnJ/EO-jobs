@@ -1,9 +1,9 @@
 ---
 name: "Riscognition GmbH"
-status: "unknown"
+status: "active"
 website: "https://riscognition.com/"
 careers_urls: ["x"]
-locations: ["Munich, Germany"]
+locations: ["🇩🇪 Geltendorf, Germany"]
 remote: ""
 remote_evidence: ""
 description: "Earth Observation Services for Developers"
@@ -12,7 +12,7 @@ category: "Earth Observation"
 listed: false
 links: {}
 source: "google-sheet 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via the EO companies Google Sheet (2026-06); unverified.

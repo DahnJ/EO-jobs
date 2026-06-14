@@ -1,9 +1,9 @@
 ---
 name: "Eftas"
-status: "unknown"
+status: "active"
 website: "http://www.eftas.de/en/"
 careers_urls: ["https://www.eftas.de/en/eftas.php#careers"]
-locations: ["Münster, Germany"]
+locations: ["🇩🇪 Münster, Germany"]
 remote: ""
 remote_evidence: ""
 description: "EO: All-purpose, GeoIT services"
@@ -12,7 +12,7 @@ category: "Earth Observation"
 listed: false
 links: {}
 source: "google-sheet 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via the EO companies Google Sheet (2026-06); unverified.

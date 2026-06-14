@@ -1,18 +1,20 @@
 ---
 name: "Cloud to Street"
-status: "unknown"
-website: "http://www.cloudtostreet.info"
+status: "renamed"
+website: "https://www.floodbase.com/"
 careers_urls: ["https://boards.greenhouse.io/floodbase"]
 locations: ["New York City, USA"]
 remote: ""
 remote_evidence: ""
-description: "EO: Flood and vulneravility mapping"
+description: "Parametric flood insurance using satellite imaging and AI flood mapping"
 satellites: ""
 category: "Earth Observation"
 listed: false
 links: {}
 source: "google-sheet 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via the EO companies Google Sheet (2026-06); unverified.
+
+Cloud to Street rebranded to Floodbase; cloudtostreet.info redirects to floodbase.com.

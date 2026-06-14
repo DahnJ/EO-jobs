@@ -1,9 +1,9 @@
 ---
 name: "Sobolt"
-status: "unknown"
+status: "active"
 website: "https://www.sobolt.com/"
 careers_urls: ["https://www.sobolt.com/careers/"]
-locations: ["Rotterdam, Netherlands"]
+locations: ["🇳🇱 Rotterdam, Netherlands"]
 remote: ""
 remote_evidence: ""
 description: "EO for sustainability"
@@ -12,7 +12,7 @@ category: "Earth Observation"
 listed: false
 links: {}
 source: "google-sheet 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via the EO companies Google Sheet (2026-06); unverified.

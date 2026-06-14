@@ -1,9 +1,9 @@
 ---
 name: "Assimila"
-status: "unknown"
-website: "http://www.assimila.eu"
+status: "active"
+website: "https://www.assimila.earth"
 careers_urls: ["https://www.assimila.earth/about/#careers"]
-locations: ["Reading, UK"]
+locations: ["🇬🇧 Reading, UK"]
 remote: ""
 remote_evidence: ""
 description: "EO: environmental monitoring, modelling and prediction"
@@ -12,7 +12,9 @@ category: "Earth Observation"
 listed: false
 links: {}
 source: "google-sheet 2026-06"
-last_checked: ""
+last_checked: "2026-06-14"
 ---
 
 Discovered via the EO companies Google Sheet (2026-06); unverified.
+
+Primary domain is assimila.earth; assimila.eu refused connection.
