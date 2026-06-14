@@ -4,9 +4,9 @@ status: "active"
 website: "https://catalyst.earth"
 careers_urls: ["https://catalyst.earth/about/careers/"]
 locations: ["🇨🇦 Markham, Canada"]
-remote: ""
-remote_evidence: "Careers page returns 403 Forbidden; cannot access listings"
-remote_confidence: "low"
+remote: "Yes (Canada)"
+remote_evidence: "Senior DevOps Engineer posting: 'Fully remote within Canada, with optional access to Toronto and Gatineau offices.'"
+remote_confidence: "high"
 description: "Climate and sustainability technology company."
 satellites: ""
 category: "Earth Observation"
