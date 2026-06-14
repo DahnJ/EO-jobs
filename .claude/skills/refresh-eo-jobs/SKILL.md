@@ -39,11 +39,14 @@ Design rationale: `docs/superpowers/specs/2026-06-14-eo-jobs-refresh-agent-desig
 ## Steps
 
 1. **Pick the batch.** Refresh the stalest entries (oldest `last_checked`) or a
-   slice — not all ~530 every run. `just check` (link-rot sweep) is a good way to
-   find which companies have dead sites/careers links and deserve attention first.
-   The **EO job boards** (see discover-eo-companies) are the other freshness signal:
-   a company currently posting there is active + hiring, so prioritize confirming
-   those. Split the chosen slugs into groups of ~18.
+   slice — not all ~530 every run. `just check` (link-rot sweep) finds companies
+   with dead sites/careers links — **these are top priority, because a dead careers
+   link is never an acceptable end state.** The per-company prompt requires
+   re-resolving a 404 careers URL (footer link → search for the ATS → LinkedIn jobs
+   page) rather than flagging it; a non-empty `careers_urls` that 404s is a bug, not
+   a valid listing. The **EO job boards** (see discover-eo-companies) are the other
+   freshness signal: a company currently posting there is active + hiring, so
+   prioritize confirming those. Split the chosen slugs into groups of ~18.
 
 2. **Verify (Haiku, parallel).** Dispatch one Haiku subagent per group (Agent tool,
    `model: haiku`, multiple calls per message) using `references/company-prompt.md`.
