@@ -19,12 +19,19 @@ For each company produce a JSON object with these exact keys:
 - "name": the company name.
 - "status": "active" | "acquired" | "defunct" | "renamed" | "unknown".
 - "website": canonical homepage (https). If it redirects, use the new URL.
-- "careers_url": careers/jobs page URL, else "". **Re-resolve it — don't trust the
-  stored URL.** ATS boards go stale constantly: a 404 almost always means the
-  company switched ATS (Lever↔Greenhouse↔Ashby↔JazzHR↔BambooHR↔Workable↔Personio),
-  NOT that they stopped hiring. If the stored URL 404s, find the live one: follow
-  the site's own "Careers"/"Jobs" link in the footer/header (don't give up if
-  `/careers` 404s), or search "<name> careers". This field decides README inclusion.
+- "careers_url": careers/jobs page URL, else "". **You MUST verify it resolves and
+  re-resolve a dead one — never leave or report a 404.** ATS boards go stale
+  constantly: a 404 almost always means the company switched ATS
+  (Lever↔Greenhouse↔Ashby↔JazzHR↔BambooHR↔Workable↔Personio), not that they stopped
+  hiring. If the stored URL 404s, work this ladder until something resolves:
+  (1) the site's own "Careers"/"Jobs" footer/header link (don't give up if
+  `/careers` 404s — try the homepage); (2) search "<name> careers" / "<name>
+  greenhouse|lever|ashby"; (3) the company's LinkedIn jobs page
+  (`linkedin.com/company/<slug>/jobs/` — loads without login). Use the first
+  working page as careers_url. Only if EVERY option fails — including LinkedIn
+  showing "no jobs right now" — record that in `note` ("no current openings") and
+  set careers_url to the working LinkedIn jobs page anyway (a valid pointer beats a
+  404). This field decides README inclusion.
 - "links": object with any of these you can find (omit keys you can't): "linkedin",
   "crunchbase", "twitter", "github", "youtube". Check the homepage footer/header.
 - "locations": array, HQ + major offices (e.g. ["San Francisco, US"]). [] if unknown.
