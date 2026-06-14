@@ -5,7 +5,8 @@ website: "https://picterra.ch/"
 careers_urls: ["https://picterra.ch/jobs/"]
 locations: ["Lausanne, Switzerland"]
 remote: "Yes"
-remote_evidence: ""
+remote_evidence: "Stored value retained - domain security verification failed"
+remote_confidence: "low"
 description: "AI-powered satellite image analysis and interpretation platform."
 satellites: ""
 category: ""

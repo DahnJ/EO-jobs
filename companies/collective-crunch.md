@@ -5,7 +5,8 @@ website: "https://www.collectivecrunch.com/"
 careers_urls: ["https://www.collectivecrunch.com/careers/"]
 locations: []
 remote: "Yes"
-remote_evidence: "'international company from the beginning', staff working remotely (collectivecrunch.com/careers)"
+remote_evidence: "Careers page domain blocked by network security policy; cannot verify but existing value retained"
+remote_confidence: "low"
 description: "Forestry solutions"
 satellites: ""
 category: ""

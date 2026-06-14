@@ -5,7 +5,8 @@ website: "https://spacept.com/"
 careers_urls: ["https://spacept.com/careers/"]
 locations: ["🇺🇸 Brooklyn, NY, USA", "🇸🇪 Stockholm, Sweden", "🇳🇴 Oslo, Norway"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "Careers page shows two open positions (GIS Specialist, Sales Intern) but no remote work policy specified."
+remote_confidence: "low"
 description: "AI-powered Earth observation and geospatial intelligence platform."
 satellites: ""
 category: "Earth Observation"

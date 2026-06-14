@@ -5,7 +5,8 @@ website: "https://www.earth-scan.com/"
 careers_urls: ["https://www.earth-scan.com/careers"]
 locations: ["London, UK"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "Careers URL unreachable (404); unable to access careers page or job listings"
+remote_confidence: "low"
 description: "Earth observation and geospatial analysis company providing satellite-based services."
 satellites: ""
 category: ""

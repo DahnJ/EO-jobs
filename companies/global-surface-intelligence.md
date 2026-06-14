@@ -5,7 +5,8 @@ website: "https://www.surfaceintelligence.com/"
 careers_urls: ["https://www.surfaceintelligence.com/careers"]
 locations: ["🇬🇧 Edinburgh, UK"]
 remote: "No"
-remote_evidence: "Careers page accessible; no remote work indicators mentioned."
+remote_evidence: "Careers page (surfaceintelligence.com/careers) returned 403 Forbidden; retained stored value"
+remote_confidence: "low"
 description: "Surface intelligence and geospatial analytics platform for earth observation data."
 satellites: ""
 category: ""

@@ -4,8 +4,9 @@ status: "active"
 website: "https://scanway.pl"
 careers_urls: ["https://scanway.pl/kariera/"]
 locations: ["Wrocław, Poland"]
-remote: ""
-remote_evidence: ""
+remote: "No"
+remote_evidence: "All job listings specify physical locations in Wrocław, Poland only; no mention of remote options"
+remote_confidence: "high"
 description: "Geospatial data and remote sensing company."
 satellites: ""
 category: ""

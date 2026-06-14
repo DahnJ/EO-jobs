@@ -5,7 +5,8 @@ website: "https://earthdaily.com/"
 careers_urls: ["https://earthdaily.com/careers/career-opportunities/"]
 locations: ["Vancouver, Canada"]
 remote: "Yes"
-remote_evidence: ""
+remote_evidence: "Stored value retained; careers page does not mention remote work but links to separate job openings page (not fetched); unable to confirm or contradict"
+remote_confidence: "low"
 description: "Satellite constellation and Earth observation data provider with API-first platform."
 satellites: ""
 category: ""

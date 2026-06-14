@@ -5,7 +5,8 @@ website: "https://earthwave.co.uk/"
 careers_urls: ["https://earthwave.co.uk/careers/"]
 locations: ["Edinburgh, UK"]
 remote: "Hybrid"
-remote_evidence: "'role is hybrid, based out of Earthwave's central Edinburgh office' (earthwave.co.uk/careers)"
+remote_evidence: "Careers page lists Software Engineer position (12-month FTC) as Hybrid, Edinburgh-based; requires UK work rights and office presence on some days"
+remote_confidence: "high"
 description: "Earth observation and satellite data analytics company for environmental monitoring."
 satellites: ""
 category: ""

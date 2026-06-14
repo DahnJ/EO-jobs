@@ -5,7 +5,8 @@ website: "https://sentera.com/"
 careers_urls: ["https://apply.workable.com/sentera/#jobs"]
 locations: ["Saint Paul, MN, USA"]
 remote: "Yes (US)"
-remote_evidence: "Workable job board with remote positions available."
+remote_evidence: "Stored value; Workable careers portal (JS-rendered) not readable via fetch"
+remote_confidence: "medium"
 description: "Agricultural drone and imaging technology company."
 satellites: ""
 category: ""

@@ -5,7 +5,8 @@ website: "https://about.qed.ai/"
 careers_urls: ["https://about.qed.ai/careers"]
 locations: ["🇺🇸 USA", "🇰🇪 Kenya"]
 remote: "No"
-remote_evidence: "Careers page emphasizes travel to exotic places with serious time commitments; no remote work policy mentioned."
+remote_evidence: "Stored value confirmed; careers page references positions but no listings or remote details visible."
+remote_confidence: "medium"
 description: "AI solutions for data scarcity in developing regions including geospatial analysis and field measurement."
 satellites: ""
 category: "Earth Observation"

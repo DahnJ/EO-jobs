@@ -5,7 +5,8 @@ website: "https://www.vantor.com/"
 careers_urls: ["https://www.vantor.com/careers/"]
 locations: []
 remote: ""
-remote_evidence: ""
+remote_evidence: "Careers page exists but job listings behind Workday portal; no remote policy stated on public careers page"
+remote_confidence: "low"
 description: "Spatial intelligence platform providing satellite imagery, geospatial data, and AI."
 satellites: ""
 category: ""

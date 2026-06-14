@@ -5,7 +5,8 @@ website: "https://www.mapizy.com"
 careers_urls: ["x"]
 locations: ["Australia"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "Website connection failed; unable to access."
+remote_confidence: "low"
 description: "GeoAI: property analytics, urban planning, insurance via aerial imagery (Mapizy Studio)"
 satellites: ""
 category: "Earth Observation"

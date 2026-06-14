@@ -5,7 +5,8 @@ website: "https://onesoil.ai/en/"
 careers_urls: ["https://onesoil.ai/en/careers"]
 locations: ["Minsk, Belarus", "Warsaw, Poland", "Zurich, Switzerland"]
 remote: "Yes"
-remote_evidence: "Multiple office locations and careers page indicate distributed team."
+remote_evidence: "Stored value retained - careers page returned 404, cannot verify but stored value appears reasonable"
+remote_confidence: "low"
 description: "AI agricultural analytics platform using satellite imagery."
 satellites: ""
 category: ""

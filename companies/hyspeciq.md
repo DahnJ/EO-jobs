@@ -5,7 +5,8 @@ website: "https://hyspeciq.com/"
 careers_urls: ["https://hyspeciq.breezy.hr/"]
 locations: ["Herndon, USA"]
 remote: "Yes (US)"
-remote_evidence: ""
+remote_evidence: "Breezy.hr careers board redirected from hyspeciq.breezy.hr; unable to extract specific listings from redirect"
+remote_confidence: "low"
 description: "Hyperspectral constellation, analytics platform, all-purpose"
 satellites: "Planned"
 category: ""

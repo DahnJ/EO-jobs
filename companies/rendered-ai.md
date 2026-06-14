@@ -5,7 +5,8 @@ website: "https://rendered.ai/"
 careers_urls: ["https://apply.workable.com/rendered-ai/?lng=en"]
 locations: ["🇺🇸 Bellevue, Washington, USA"]
 remote: "Yes (US)"
-remote_evidence: "Workable careers platform suggests distributed hiring; no specific remote policy stated on main site."
+remote_evidence: "Workable job board (JS-rendered, blocked); stored value indicates US remote"
+remote_confidence: "medium"
 description: "Synthetic data generation for computer vision and AI/ML model development."
 satellites: ""
 category: ""

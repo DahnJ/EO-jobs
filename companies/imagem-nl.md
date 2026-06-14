@@ -5,7 +5,8 @@ website: "https://imagem.nl/en/"
 careers_urls: ["https://imagem.nl/en/werken-bij/"]
 locations: ["Apeldoorn, Netherlands"]
 remote: "Hybrid"
-remote_evidence: "Careers page indicates hybrid work arrangement."
+remote_evidence: "Careers page states 'You can use workspaces at office, but also have the option to work from home' with flexible work policy"
+remote_confidence: "medium"
 description: "Geospatial data solutions for climate resilience, urban development, and safety."
 satellites: ""
 category: "Earth Observation"

@@ -5,7 +5,8 @@ website: "https://ecometrica.com/"
 careers_urls: ["https://ecometrica.com/about-us/work-at-ecometrica/"]
 locations: ["Edinburgh, UK", "London, UK", "Montreal, Canada", "Boston, US"]
 remote: "No"
-remote_evidence: ""
+remote_evidence: "Careers URL redirects to ASTERRA (different company); original policy unclear, keeping stored value"
+remote_confidence: "low"
 description: "Environmental monitoring and geospatial analytics platform using satellite imagery."
 satellites: ""
 category: ""

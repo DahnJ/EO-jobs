@@ -5,7 +5,8 @@ website: "https://www.piersight.space/"
 careers_urls: ["https://piersight.space/careers"]
 locations: ["India"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "Cannot access careers page - domain security verification failed"
+remote_confidence: "low"
 description: "Earth observation and geospatial intelligence services."
 satellites: ""
 category: ""

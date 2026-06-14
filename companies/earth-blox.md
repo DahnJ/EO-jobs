@@ -5,7 +5,8 @@ website: "https://www.earthblox.io/"
 careers_urls: ["https://www.earthblox.io/careers"]
 locations: ["Edinburgh, UK", "Remote"]
 remote: "Yes"
-remote_evidence: ""
+remote_evidence: "Careers page explicitly states 'Remote-first culture' with 'access to co-working or meetups as needed'; no specific job listings shown"
+remote_confidence: "medium"
 description: "Open-source geospatial data platform for Earth observation and climate impact analysis."
 satellites: ""
 category: ""

@@ -5,7 +5,8 @@ website: "https://www.visioterra.fr/web/?lang=en"
 careers_urls: ["x"]
 locations: ["Champs-sur-Marne, France"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "No careers section found on website; physical address listed but no remote policy or jobs information"
+remote_confidence: "low"
 description: "EO: All-purpose"
 satellites: ""
 category: "Earth Observation"

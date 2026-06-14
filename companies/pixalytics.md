@@ -5,7 +5,8 @@ website: "https://www.pixalytics.com"
 careers_urls: ["x"]
 locations: ["Plymouth, UK"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "No current job listings; vacancies page shows no openings available."
+remote_confidence: "low"
 description: "Satellite image analysis and geospatial intelligence."
 satellites: ""
 category: "Earth Observation"

@@ -5,7 +5,8 @@ website: "https://www.supervision.earth"
 careers_urls: ["x"]
 locations: ["🇩🇪 Darmstadt, Germany"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "No careers URL available (marked as 'x'), unable to verify"
+remote_confidence: "low"
 description: "Geospatial data-powered monitoring for real-time location intelligence."
 satellites: ""
 category: "Earth Observation"

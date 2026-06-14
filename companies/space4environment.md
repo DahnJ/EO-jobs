@@ -4,8 +4,9 @@ status: "active"
 website: "https://space4environment.com/"
 careers_urls: ["https://www.linkedin.com/company/space4environment"]
 locations: ["🇱🇺 Niederanven, Luxembourg"]
-remote: ""
-remote_evidence: ""
+remote: "Yes"
+remote_evidence: "LinkedIn job posting mentions 'flexible work' as part of employment package."
+remote_confidence: "medium"
 description: "Geospatial data and environmental monitoring using Earth observation and data intelligence."
 satellites: ""
 category: "Earth Observation"

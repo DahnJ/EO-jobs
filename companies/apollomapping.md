@@ -5,7 +5,8 @@ website: "https://apollomapping.com/"
 careers_urls: ["https://apollomapping.com/blog/are-you-looking-for-a-job-we-are-hiring"]
 locations: ["Boulder, CO, USA"]
 remote: "No"
-remote_evidence: ""
+remote_evidence: "Stored value retained; unable to access careers page."
+remote_confidence: "low"
 description: "Provides satellite imagery and geospatial data services."
 satellites: ""
 category: ""

@@ -5,7 +5,8 @@ website: "https://www.rezatec.com"
 careers_urls: ["https://www.rezatec.com/about/working-for-rezatec/"]
 locations: ["🇬🇧 Didcot, UK"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "Careers page accessible but no clear listings visible; insufficient data"
+remote_confidence: "low"
 description: "Geospatial analytics for dam monitoring, pipeline risk analysis, and forest monitoring."
 satellites: ""
 category: "Earth Observation"

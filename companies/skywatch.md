@@ -4,8 +4,9 @@ status: "active"
 website: "https://www.skywatch.com/"
 careers_urls: ["https://www.skywatch.com/careers"]
 locations: ["New York, USA", "Waterloo, Canada"]
-remote: "Yes (Canada)"
-remote_evidence: "Stored value indicates Yes (Canada); careers page mentions 'flexible work environment'."
+remote: "Yes"
+remote_evidence: "Careers page mentions 'flexible work environment' and globally distributed team across four continents."
+remote_confidence: "medium"
 description: "Geospatial data platform aggregating satellite, aerial, and drone imagery from 700+ sensors globally."
 satellites: ""
 category: ""

@@ -5,7 +5,8 @@ website: "https://kuvaspace.com/"
 careers_urls: ["https://careers.kuvaspace.com/"]
 locations: ["Espoo, Finland"]
 remote: "Yes (Finland +- 2 hours)"
-remote_evidence: "Careers page indicates remote work within Finland timezone."
+remote_evidence: "Careers page lists Senior Marketing Manager as 'Hybrid' in Espoo; retained stored value as it specifies location constraint"
+remote_confidence: "high"
 description: "AI-powered satellite Earth observation for agriculture and environment."
 satellites: "Planned"
 category: ""

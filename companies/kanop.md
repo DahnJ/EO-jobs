@@ -5,7 +5,8 @@ website: "https://www.kanop.io/"
 careers_urls: ["https://kanop.notion.site/kanop/Careers-kanop-c3b4779be5f34baea604292bc737da2c"]
 locations: ["France"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "Notion careers page not accessible via web fetch"
+remote_confidence: "low"
 description: "Voluntary Carbon Market reporting"
 satellites: ""
 category: ""

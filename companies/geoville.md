@@ -5,7 +5,8 @@ website: "https://www.geoville.com/"
 careers_urls: ["https://careers.geoville.com/"]
 locations: ["🇦🇹 Innsbruck, Austria"]
 remote: "No"
-remote_evidence: "Careers page 404; no remote policy stated on homepage."
+remote_evidence: "Careers page (careers.geoville.com) not accessible (404); retained stored value"
+remote_confidence: "low"
 description: "Earth Observation satellite-based information solutions: agriculture, climate, energy, forestry, security."
 satellites: ""
 category: ""

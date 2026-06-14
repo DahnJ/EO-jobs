@@ -5,7 +5,8 @@ website: "https://www.satrev.space/"
 careers_urls: ["https://www.satrev.space/careers"]
 locations: ["Wrocław, Poland"]
 remote: "No"
-remote_evidence: "Junior GIS Analyst listing 'Wroclaw, Poland', no remote (satrev.space/careers)"
+remote_evidence: "Careers page shows office-based roles; no remote mention"
+remote_confidence: "medium"
 description: "Satellite technology company."
 satellites: ""
 category: ""

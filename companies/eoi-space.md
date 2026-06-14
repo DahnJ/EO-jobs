@@ -5,7 +5,8 @@ website: "https://eoi.space/"
 careers_urls: ["https://earthobservantinc.applytojob.com/apply/"]
 locations: ["🇺🇸 Lafayette, Colorado, US"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "JazzHR career account is no longer active; cannot verify job listings or remote policy"
+remote_confidence: "low"
 description: "High-resolution satellite imagery and Earth observation via Very Low Earth Orbit constellation."
 satellites: ""
 category: ""

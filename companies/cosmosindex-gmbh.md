@@ -5,7 +5,8 @@ website: "https://cosmos-index.com/"
 careers_urls: ["https://cosmos-index.com/jobs/"]
 locations: ["Germany"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "Jobs page domain blocked by network security policy; cannot access"
+remote_confidence: "low"
 description: "EO for forest carbon, biodiversity, renewables, infrastructure"
 satellites: ""
 category: ""

@@ -5,7 +5,8 @@ website: "https://agroapps.gr/en/"
 careers_urls: ["https://agroapps.gr/career"]
 locations: ["Greece"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "Unable to access careers page."
+remote_confidence: "low"
 description: "Digital farming solutions using remote sensing and AI for crop monitoring and management."
 satellites: ""
 category: ""

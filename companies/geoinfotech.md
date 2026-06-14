@@ -5,7 +5,8 @@ website: "https://geoinfotech.ng"
 careers_urls: ["https://staff.geoinfotech.ng/careers"]
 locations: ["Lagos, Nigeria", "Abuja, Nigeria"]
 remote: ""
-remote_evidence: "Online training program suggests digital capability but no explicit remote work policy stated."
+remote_evidence: "Main website contains no mention of remote work policy; careers board returned 403 Forbidden"
+remote_confidence: "low"
 description: "Nigerian geospatial technology firm offering GIS, drone surveying, and remote sensing services."
 satellites: ""
 category: ""

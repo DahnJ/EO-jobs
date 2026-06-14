@@ -5,7 +5,8 @@ website: "http://www.auracleremotesensing.com"
 careers_urls: ["x"]
 locations: ["Vancouver, Canada"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "No reachable careers URL (marked 'x' in batch); unable to assess"
+remote_confidence: "low"
 description: "Remote sensing consulting services."
 satellites: ""
 category: "Earth Observation"

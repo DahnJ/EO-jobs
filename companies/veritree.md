@@ -5,7 +5,8 @@ website: "https://www.veritree.com/"
 careers_urls: ["https://apply.workable.com/veritree/"]
 locations: ["🇨🇦 Vancouver, Canada"]
 remote: "Hybrid (Canada)"
-remote_evidence: "Remote-first culture; current roles tagged Hybrid in Vancouver (Workable, 2026-06)"
+remote_evidence: "Roles tagged Hybrid, Vancouver; 'Remote-First Workplace' stated (Workable, 2026-06)"
+remote_confidence: "high"
 description: "Tree-planting and reforestation platform with geospatial monitoring and impact dashboards."
 satellites: ""
 category: ""

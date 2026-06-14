@@ -5,7 +5,8 @@ website: "https://orbitalsidekick.com/"
 careers_urls: ["https://jobs.lever.co/orbitalsidekick"]
 locations: ["San Francisco, USA"]
 remote: "Yes (US)"
-remote_evidence: "Lever ATS careers page; San Francisco HQ with US-based remote roles."
+remote_evidence: "Stored value retained - Lever job board returned 403 (JS-rendered, bot-blocked)"
+remote_confidence: "low"
 description: "Hyperspectral satellite imaging and analytics for industry."
 satellites: "Yes"
 category: ""

@@ -5,7 +5,8 @@ website: "http://www.polarview.org"
 careers_urls: ["x"]
 locations: ["Didcot, UK"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "No careers page or job listings found; no remote work policies mentioned."
+remote_confidence: "low"
 description: "Polar region monitoring and Earth observation."
 satellites: ""
 category: "Earth Observation"

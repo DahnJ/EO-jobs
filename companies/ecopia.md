@@ -5,7 +5,8 @@ website: "https://www.ecopiatech.com"
 careers_urls: ["https://www.ecopiatech.com/careers"]
 locations: ["Toronto, Canada"]
 remote: "Hybrid"
-remote_evidence: "'choice to work in-office, remote, or a combination' (ecopiatech.com/careers)"
+remote_evidence: "Careers page states 'Flexible work environment' - employees can work in-office, remote, or hybrid with office in Toronto MaRS"
+remote_confidence: "high"
 description: "AI-powered geospatial intelligence platform providing property and infrastructure data."
 satellites: ""
 category: "Earth Observation"

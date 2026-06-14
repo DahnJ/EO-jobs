@@ -5,7 +5,8 @@ website: "https://www.geospatial.com.co/"
 careers_urls: ["x"]
 locations: ["🇨🇴 Bogota, Colombia"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "Website blocked by enterprise security policy; could not access"
+remote_confidence: "low"
 description: "Geospatial solutions for infrastructure: BIM, UAV photography, satellite imagery, 3D scanning."
 satellites: ""
 category: "Earth Observation"

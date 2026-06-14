@@ -5,7 +5,8 @@ website: "https://blackshark.ai/"
 careers_urls: ["https://people.blackshark.ai/careers/"]
 locations: ["🇦🇹 Graz, Austria", "🇦🇹 Vienna, Austria", "🇭🇷 Zagreb, Croatia"]
 remote: "Yes"
-remote_evidence: "Global team across multiple European locations."
+remote_evidence: "Stored value indicates remote work; couldn't access careers board but value appears established"
+remote_confidence: "medium"
 description: "AI infrastructure converting satellite and aerial imagery into structured digital models."
 satellites: ""
 category: ""

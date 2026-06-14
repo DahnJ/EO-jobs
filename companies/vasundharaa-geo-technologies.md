@@ -5,7 +5,8 @@ website: "https://vasundharaa.in/"
 careers_urls: ["https://vasundharaa.in/career/"]
 locations: ["India"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "Career page lists 3 positions (GIS Developer, Full Stack Developer, Computer Vision Engineer) with no remote/location information"
+remote_confidence: "low"
 description: "EO: Urban, Agriculture, Disaster & Environment"
 satellites: ""
 category: "Earth Observation"

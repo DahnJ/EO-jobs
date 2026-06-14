@@ -4,8 +4,9 @@ status: "active"
 website: "https://www.sobolt.com/"
 careers_urls: ["https://sobolt.com/werken-bij/"]
 locations: ["Rotterdam, Netherlands"]
-remote: ""
-remote_evidence: ""
+remote: "Hybrid"
+remote_evidence: "Careers page states 'Hybride ritme & flexibele uren' (hybrid rhythm with flexible hours) with Rotterdam office."
+remote_confidence: "high"
 description: "Building sustainability and energy transition software using AI-driven analysis."
 satellites: ""
 category: "Earth Observation"

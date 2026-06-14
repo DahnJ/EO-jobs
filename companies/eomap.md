@@ -4,8 +4,9 @@ status: "active"
 website: "https://www.eomap.com"
 careers_urls: ["https://www.eomap.com/jobs/"]
 locations: ["🇩🇪 Seefeld, Germany", "🇦🇺 Perth, Australia", "🇺🇸 Santa Barbara, USA"]
-remote: ""
-remote_evidence: ""
+remote: "No"
+remote_evidence: "Jobs page emphasizes physical office in Seefeld, Germany with specific on-site perks (Biergarten, lake access, bike facilities, Monday bouldering); no remote options mentioned"
+remote_confidence: "medium"
 description: "EO: Aquatic"
 satellites: ""
 category: "Earth Observation"

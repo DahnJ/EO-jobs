@@ -5,7 +5,8 @@ website: "http://www.terracover.ai/"
 careers_urls: ["x"]
 locations: ["🇺🇸 USA"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "No careers URL available (marked as 'x'), unable to verify"
+remote_confidence: "low"
 description: "Satellite-based Earth observation and geospatial analysis platform."
 satellites: ""
 category: "Earth Observation"

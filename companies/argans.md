@@ -5,7 +5,8 @@ website: "https://argans.co.uk"
 careers_urls: ["https://argans.co.uk/careers.html"]
 locations: ["Plymouth, UK", "Sophia-Antipolis, France"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "Careers page shows no current job vacancies; unable to access listing-level confirmation"
+remote_confidence: "low"
 description: "Satellite-based Earth Observation and remote-sensing services."
 satellites: ""
 category: "Earth Observation"

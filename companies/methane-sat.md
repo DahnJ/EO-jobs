@@ -5,7 +5,8 @@ website: "https://www.methanesat.org/"
 careers_urls: ["https://www.methanesat.org/careers/"]
 locations: ["Austin, TX, USA"]
 remote: "Yes (US)"
-remote_evidence: "Career page available; Environmental Defense Fund backing"
+remote_evidence: "Domain security check blocked access; stored value retained."
+remote_confidence: "low"
 description: "Satellite system monitoring methane emissions from oil and gas industry."
 satellites: ""
 category: ""

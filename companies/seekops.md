@@ -5,7 +5,8 @@ website: "https://seekops.com/"
 careers_urls: ["https://seekops.com/careers/"]
 locations: []
 remote: ""
-remote_evidence: ""
+remote_evidence: "Careers page does not mention remote work; external ADP portal not accessible via fetch"
+remote_confidence: "low"
 description: "Operations and monitoring platform."
 satellites: ""
 category: ""

@@ -5,7 +5,8 @@ website: "http://www.geoterraimage.com"
 careers_urls: ["x"]
 locations: ["🇿🇦 Pretoria, South Africa"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "Homepage contains no mention of remote work policies"
+remote_confidence: "low"
 description: "Geospatial intelligence and earth observation: agriculture monitoring, risk analysis, urban planning."
 satellites: ""
 category: "Earth Observation"

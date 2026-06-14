@@ -5,7 +5,8 @@ website: "https://astrosat.net"
 careers_urls: ["https://astrosat.net/career/"]
 locations: ["Musselburgh, UK"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "Unable to access career listings; career page may be JS-rendered or behind bot detection"
+remote_confidence: "low"
 description: "Satellite data and Earth Observation services."
 satellites: ""
 category: "Earth Observation"

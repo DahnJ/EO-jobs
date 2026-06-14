@@ -5,7 +5,8 @@ website: "https://www.landiq.com/"
 careers_urls: ["https://www.landiq.com/careers"]
 locations: ["Sacramento, USA", "Los Angeles, USA"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "Careers page not accessible due to domain verification failure"
+remote_confidence: "low"
 description: "Agricultural and environmental solutions using remote sensing."
 satellites: ""
 category: ""

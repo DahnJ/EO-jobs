@@ -6,6 +6,7 @@ careers_urls: ["https://atlasai.applytojob.com/apply/"]
 locations: ["Palo Alto, CA, USA"]
 remote: "Yes (US/EU)"
 remote_evidence: "Open ML role tagged Remote; posting eligibility US or EU only (JazzHR board, 2026-06)"
+remote_confidence: "high"
 description: "AI-powered geospatial intelligence platform."
 satellites: ""
 category: ""

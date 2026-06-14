@@ -4,8 +4,9 @@ status: "active"
 website: "https://endurosat.com"
 careers_urls: ["https://www.endurosat.com/careers/"]
 locations: ["Sofia, Bulgaria"]
-remote: ""
-remote_evidence: ""
+remote: "No"
+remote_evidence: "EnduroSat careers page lists 8 specific office locations (Sofia, Denver, DC, LA, Berlin, Munich, Naples, Toulouse) with no remote options mentioned"
+remote_confidence: "high"
 description: "Satellite manufacturer and space service provider offering CubeSats, microsatellites, avionics components, and satellite data services."
 satellites: ""
 category: ""

@@ -5,7 +5,8 @@ website: "https://www.isardsat.co.uk"
 careers_urls: ["https://www.isardsat.co.uk/work-with-us"]
 locations: ["Barcelona, Spain", "Guildford, UK"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "Work-with-us page domain blocked by enterprise security policy; unable to fetch"
+remote_confidence: "low"
 description: "EO: R&D focus on altimetry, Passive Microwaves and SAR imaging"
 satellites: ""
 category: "Earth Observation"

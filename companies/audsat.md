@@ -5,7 +5,8 @@ website: "https://www.audsat.com.br/"
 careers_urls: ["https://audsat.vagas.solides.com.br/"]
 locations: ["Brazil"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "Careers board at audsat.vagas.solides.com.br is Portuguese-language job site; unable to read listings"
+remote_confidence: "low"
 description: "Satellite data and remote sensing services."
 satellites: ""
 category: ""

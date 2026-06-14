@@ -63,10 +63,18 @@ def main() -> None:
                 rec["careers_urls"] = [cu]
             if r.get("locations"):
                 rec["locations"] = r["locations"]
-            if r.get("remote"):
-                rec["remote"] = r["remote"]
-            if r.get("remote_evidence"):
-                rec["remote_evidence"] = r["remote_evidence"]
+            # don't let a lower-confidence remote finding overwrite a higher one
+            _co = {"high": 3, "medium": 2, "low": 1, "": 0}
+            _inc = _co.get(r.get("remote_confidence") or "", 0)
+            _exist = _co.get(rec.get("remote_confidence") or "", 0)
+            _downgrade = _inc > 0 and _exist > 0 and _inc < _exist
+            if not _downgrade:
+                if r.get("remote"):
+                    rec["remote"] = r["remote"]
+                if r.get("remote_evidence"):
+                    rec["remote_evidence"] = r["remote_evidence"]
+                if r.get("remote_confidence"):
+                    rec["remote_confidence"] = r["remote_confidence"]
             if r.get("description"):
                 rec["description"] = r["description"]
             # union social/business links without clobbering existing ones

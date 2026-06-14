@@ -5,7 +5,8 @@ website: "https://naraspace.com/"
 careers_urls: ["https://naraspace.careers.team"]
 locations: ["Seoul, South Korea"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "Careers page in Korean; insufficient content to assess remote policy."
+remote_confidence: "low"
 description: "Korea's integrated satellite service provider for Earth observation and imagery analysis."
 satellites: ""
 category: ""

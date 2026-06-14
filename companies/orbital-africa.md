@@ -5,7 +5,8 @@ website: "https://orbital.co.ke"
 careers_urls: ["https://orbital.co.ke/careers"]
 locations: ["Kenya"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "Careers page lists 4+ positions (Full Stack GIS Software Engineer, GIS and Remote Sensing Trainer, Assistant Land Surveyor) with no mention of work location flexibility or remote options (2026-06)"
+remote_confidence: "low"
 description: "African Earth observation and geospatial data services provider."
 satellites: ""
 category: ""

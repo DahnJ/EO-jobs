@@ -5,7 +5,8 @@ website: "https://boomitra.com/"
 careers_urls: ["https://boomitra.com/careers/"]
 locations: ["🇬🇧 Multiple continents: Africa, Asia, Mexico, South America"]
 remote: "Yes"
-remote_evidence: "Works seamlessly across time zones; team spans multiple countries. Flexible schedule listed as benefit."
+remote_evidence: "Stored value indicates remote work; couldn't access boomitra.com careers listings in this batch"
+remote_confidence: "medium"
 description: "Large-scale carbon removal projects using satellite monitoring and AI for soil carbon tracking."
 satellites: ""
 category: ""

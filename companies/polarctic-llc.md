@@ -5,7 +5,8 @@ website: "https://polarcticllc.com/"
 careers_urls: ["https://polarcticllc.com/join-us"]
 locations: ["USA"]
 remote: "Yes"
-remote_evidence: "'In our small remote team...' (polarcticllc.com/join-us)"
+remote_evidence: "Job posting describes 'small remote team' with work-from-home and flexible schedules emphasized."
+remote_confidence: "high"
 description: "Arctic and polar region remote sensing and data services."
 satellites: ""
 category: "Earth Observation"

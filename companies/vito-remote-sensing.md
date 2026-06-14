@@ -5,7 +5,8 @@ website: "https://remotesensing.vito.be/"
 careers_urls: ["https://vito.be/en/jobs"]
 locations: ["🇧🇪 Mol, Belgium"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "Jobs page lists categories but no specific listings shown; no remote policy mentioned; no confirmation of remote work"
+remote_confidence: "low"
 description: "Earth observation company providing geo intelligence and satellite analytics across agriculture, climate, environment, and water sectors."
 satellites: ""
 category: "Earth Observation"

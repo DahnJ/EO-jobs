@@ -5,7 +5,8 @@ website: "https://www.synthetaic.com/"
 careers_urls: ["https://www.synthetaic.com/careers"]
 locations: ["🇺🇸 Delafield, Wisconsin, USA"]
 remote: "No"
-remote_evidence: "Stored value kept (certificate expired)"
+remote_evidence: "Careers page certificate expired, unable to verify current listings; stored value retained"
+remote_confidence: "low"
 description: "AI and machine learning for geospatial intelligence."
 satellites: ""
 category: ""

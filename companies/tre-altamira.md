@@ -5,7 +5,8 @@ website: "https://site.tre-altamira.com/"
 careers_urls: ["https://site.tre-altamira.com/work-with-us/"]
 locations: ["Milan, Italy", "Barcelona, Spain", "Vancouver, Canada"]
 remote: "Hybrid"
-remote_evidence: "Multiple office locations suggest hybrid work arrangement."
+remote_evidence: "Stored value from previous research."
+remote_confidence: "high"
 description: "InSAR technology for infrastructure and geological hazard monitoring from satellites."
 satellites: ""
 category: "Earth Observation"

@@ -5,7 +5,8 @@ website: "https://www.gisat.cz/"
 careers_urls: ["https://www.gisat.cz/company/#careers"]
 locations: ["🇨🇿 Prague, Czech Republic"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "Careers section URL (gisat.cz/company/#careers) returned 404; unable to access"
+remote_confidence: "low"
 description: "Geospatial analytics company providing advanced earth observation solutions."
 satellites: ""
 category: "Earth Observation"

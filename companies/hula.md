@@ -5,7 +5,8 @@ website: "https://hula.earth/"
 careers_urls: ["https://hula.earth/jobs"]
 locations: ["🇩🇪 Munich, Germany"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "Jobs page redirects to Notion site which contains no extractable job or remote policy information"
+remote_confidence: "low"
 description: "Unknown - site unreachable."
 satellites: ""
 category: ""

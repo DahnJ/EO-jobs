@@ -5,7 +5,8 @@ website: "https://wherobots.com/"
 careers_urls: ["https://wherobots.com/careers/"]
 locations: []
 remote: ""
-remote_evidence: ""
+remote_evidence: "Careers page exists but no job listings displayed; no remote policy mentioned; candidates directed to email careers@wherobots.com"
+remote_confidence: "low"
 description: "AI context engine platform for geospatial analytics and satellite imagery analysis at planetary scale."
 satellites: ""
 category: ""

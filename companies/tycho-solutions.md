@@ -5,7 +5,8 @@ website: "https://tycho.solutions/"
 careers_urls: ["x"]
 locations: ["Mexico City, Mexico"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "Careers URL placeholder (x) - not available"
+remote_confidence: "low"
 description: "EO: Energy, Mobility, Land Ressources"
 satellites: ""
 category: "Earth Observation"

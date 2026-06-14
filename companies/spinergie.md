@@ -5,7 +5,8 @@ website: "https://www.spinergie.com/"
 careers_urls: ["https://www.spinergie.com/careers"]
 locations: ["🇫🇷 Paris, France", "🇺🇸 Austin, USA", "🇬🇧 London, UK", "🇸🇬 Singapore"]
 remote: "Hybrid (occasional)"
-remote_evidence: "Listings tagged 'Occasional remote'; roles tied to Paris/London/Austin/Singapore offices (Welcome to the Jungle, 2026-06)."
+remote_evidence: "Listing tagged 'Occasional remote', Paris (Welcome to the Jungle, 2026-06)"
+remote_confidence: "high"
 description: "Smart solutions for sustainable and efficient maritime industry using data insights."
 satellites: ""
 category: ""

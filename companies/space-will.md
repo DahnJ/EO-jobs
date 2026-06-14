@@ -5,7 +5,8 @@ website: "http://en.spacewillinfo.com/"
 careers_urls: ["https://htsjzhaopin.zhiye.com"]
 locations: ["Beijing, China"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "Recruitment page exists but no remote work policy details disclosed."
+remote_confidence: "low"
 description: "Satellite remote sensing data acquisition, processing, and AI interpretation platform."
 satellites: ""
 category: ""

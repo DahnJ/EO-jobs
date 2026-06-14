@@ -5,7 +5,8 @@ website: "https://www.scanworld.be/"
 careers_urls: ["https://www.scanworld.be/#jobs"]
 locations: ["Liège, Belgium", "Brussels, Belgium"]
 remote: "Yes"
-remote_evidence: "Positions marked as open/available."
+remote_evidence: "Stored value confirmed from previous research"
+remote_confidence: "medium"
 description: "Geospatial analysis and mapping company."
 satellites: "Planned"
 category: ""

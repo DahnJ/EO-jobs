@@ -5,7 +5,8 @@ website: "https://www.hydrosat.com/"
 careers_urls: ["https://www.hydrosat.com/careers/"]
 locations: ["Washington D.C., USA", "Carlsbad, CA, USA", "Luxembourg", "Wageningen, Netherlands"]
 remote: "Yes"
-remote_evidence: "Multiple office locations across continents (Luxembourg, USA, Netherlands) indicate remote-friendly distributed team."
+remote_evidence: "Careers page lists 'Remote (3)' positions available; also has hybrid and on-site roles across Luxembourg, US (Carlsbad CA, Washington DC), Netherlands"
+remote_confidence: "high"
 description: "Irrigation and crop management analytics using satellite thermal infrared imagery."
 satellites: "Planned"
 category: ""

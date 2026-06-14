@@ -4,8 +4,9 @@ status: "active"
 website: "https://eos.com/"
 careers_urls: ["https://eos.com/company/careers/"]
 locations: ["🇺🇸 Mountain View, CA, USA"]
-remote: "No jobs"
-remote_evidence: ""
+remote: "Hybrid"
+remote_evidence: "Careers page states 'enjoy working from home whenever needed' indicating flexibility but not fully remote"
+remote_confidence: "medium"
 description: "AI-powered satellite data analytics products"
 satellites: ""
 category: ""

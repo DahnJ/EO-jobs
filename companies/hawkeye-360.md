@@ -4,8 +4,9 @@ status: "active"
 website: "https://www.he360.com/"
 careers_urls: ["https://hawkeye360.applicantstack.com/x/openings"]
 locations: ["🇺🇸 Herndon, USA"]
-remote: "No"
-remote_evidence: "Single location; ATS board shows no remote positions."
+remote: "Some positions"
+remote_evidence: "Job listing 'Associate System Operator - HST/PST' tagged Remote - USA; majority of positions location-specific (Herndon VA, Richardson TX)"
+remote_confidence: "high"
 description: "Unknown - site unreachable."
 satellites: ""
 category: ""

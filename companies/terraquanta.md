@@ -5,7 +5,8 @@ website: "https://www.terraqt.com/"
 careers_urls: ["https://www.terraqt.com/en/team#Joinus"]
 locations: ["🇨🇳 Beijing, China"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "Team page does not contain a 'Join us' section or any job listings visible."
+remote_confidence: "low"
 description: "Quantum Earth technology for advanced Earth observation and geospatial analysis."
 satellites: ""
 category: "Earth Observation"

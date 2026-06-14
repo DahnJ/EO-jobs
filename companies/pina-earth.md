@@ -4,8 +4,9 @@ status: "active"
 website: "https://pina.earth/en"
 careers_urls: ["https://pina.jobs.personio.com"]
 locations: ["Munich, Germany"]
-remote: ""
-remote_evidence: ""
+remote: "No"
+remote_evidence: "Listings in Munich require on-site presence; no remote options mentioned (Personio)."
+remote_confidence: "high"
 description: "Climate tech and Earth observation for environmental monitoring."
 satellites: ""
 category: "Earth Observation"

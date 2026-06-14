@@ -5,7 +5,8 @@ website: "https://makepath.com"
 careers_urls: ["https://makepath.com/careers/"]
 locations: ["Austin, TX, USA"]
 remote: "Yes"
-remote_evidence: "Careers page active and company in growth mode."
+remote_evidence: "Careers page explicitly states 'Full flexibility to work anywhere, and live where you want'"
+remote_confidence: "high"
 description: "Geospatial data and mapping platform for enterprise analysis."
 satellites: ""
 category: ""

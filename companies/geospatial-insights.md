@@ -5,7 +5,8 @@ website: "https://geospatial-insight.com/"
 careers_urls: ["None?"]
 locations: ["🇬🇧 Birmingham, UK"]
 remote: "No jobs"
-remote_evidence: ""
+remote_evidence: "Website blocked by enterprise security policy; could not verify careers information"
+remote_confidence: "low"
 description: "Climate intelligence and AI-based geospatial analytics: emissions monitoring, wildfire/flood detection."
 satellites: ""
 category: ""

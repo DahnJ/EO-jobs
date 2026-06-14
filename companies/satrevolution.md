@@ -5,7 +5,8 @@ website: "https://www.satrevolution.com/"
 careers_urls: ["https://www.linkedin.com/company/satrev-s-a/jobs/"]
 locations: ["Wrocław, Poland"]
 remote: "Hybrid"
-remote_evidence: ""
+remote_evidence: "LinkedIn jobs page (accessible); stored value indicates hybrid"
+remote_confidence: "medium"
 description: "Satellite Earth observation technology company."
 satellites: ""
 category: ""

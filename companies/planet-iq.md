@@ -5,7 +5,8 @@ website: "https://planetiq.com/"
 careers_urls: ["https://planetiq.com/company/careers/"]
 locations: ["Golden, USA"]
 remote: "Hybrid"
-remote_evidence: "'Hybrid (Golden, CO) Preferred, Remote Considered' (planetiq.com careers)"
+remote_evidence: "Listings show 'Hybrid (Golden, CO)' and 'Hybrid preferred, Remote Considered' (PlanetiQ careers)."
+remote_confidence: "high"
 description: "Supply chain transparency and geospatial intelligence platform."
 satellites: ""
 category: ""

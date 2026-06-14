@@ -5,7 +5,8 @@ website: "https://simularity.com"
 careers_urls: ["x"]
 locations: ["Richmond, USA"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "No careers section on website; no job listings or employment information accessible"
+remote_confidence: "low"
 description: "AI-powered geospatial analysis platform for detecting and classifying changes in satellite imagery."
 satellites: ""
 category: "Earth Observation"

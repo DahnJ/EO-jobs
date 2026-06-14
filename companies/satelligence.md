@@ -5,7 +5,8 @@ website: "https://satelligence.com/"
 careers_urls: ["https://satelligence.com/careers"]
 locations: ["🇳🇱 Utrecht, Netherlands"]
 remote: "Yes"
-remote_evidence: "Company describes itself as having a remote workforce with ~50 people from 19 countries."
+remote_evidence: "Stored value indicates remote; careers page supports this designation"
+remote_confidence: "medium"
 description: "Sustainability monitoring and supply chain traceability using satellite imagery and field intelligence."
 satellites: "Yes"
 category: ""

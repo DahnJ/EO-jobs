@@ -5,7 +5,8 @@ website: "https://galaxeye.space/"
 careers_urls: ["https://careers.galaxeye.space/jobs/Careers"]
 locations: ["Bengaluru, India"]
 remote: ""
-remote_evidence: "Careers portal inaccessible for verification."
+remote_evidence: "Careers page content truncated; could not assess remote work options or list jobs"
+remote_confidence: "low"
 description: "Satellite imagery with SAR and multispectral sensors for Earth observation."
 satellites: ""
 category: ""

@@ -5,7 +5,8 @@ website: "https://skyfi.com/"
 careers_urls: ["https://skyfi.com/careers/"]
 locations: ["Houston, USA", "Austin, USA"]
 remote: "Yes"
-remote_evidence: "Careers page states 'Our team is fully remote and we offer work-from-home equipment and internet stipends.'"
+remote_evidence: "Careers page explicitly states 'Our team is fully remote and we offer work-from-home equipment and internet stipends'"
+remote_confidence: "high"
 description: "Self-service geospatial intelligence platform for satellite imagery access, tasking, and analytics."
 satellites: ""
 category: ""

@@ -5,7 +5,8 @@ website: "https://satsearch.co/"
 careers_urls: ["https://satsearch.co/about"]
 locations: ["Remote"]
 remote: "Yes"
-remote_evidence: "Company based remotely."
+remote_evidence: "Careers page indicates remote-first company"
+remote_confidence: "medium"
 description: "Satellite marketplace and sourcing platform."
 satellites: ""
 category: ""

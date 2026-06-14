@@ -5,7 +5,8 @@ website: "https://soilwatch.eu/"
 careers_urls: ["https://www.linkedin.com/company/soilwatch/jobs/"]
 locations: ["Finland"]
 remote: "Yes"
-remote_evidence: "Stored value indicates Yes; multiple office locations (Helsinki, Nairobi, Brussels) suggest some flexibility."
+remote_evidence: "LinkedIn shows multiple office locations across countries (Helsinki, Brussels, Dublin, Nairobi, Geneva, etc.) suggesting distributed teams."
+remote_confidence: "medium"
 description: "Carbon project developer implementing natural climate solutions in regenerative agriculture and soil restoration."
 satellites: ""
 category: ""

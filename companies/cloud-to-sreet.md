@@ -5,7 +5,8 @@ website: "https://www.cloudtostreet.ai/"
 careers_urls: ["https://www.cloudtostreet.ai/careers"]
 locations: ["New York, USA"]
 remote: "No jobs"
-remote_evidence: ""
+remote_evidence: "Page redirects to floodbase.com/careers; VP of Product role shown with Hybrid arrangement in New York/Boston"
+remote_confidence: "low"
 description: "Real-time flood monitoring"
 satellites: ""
 category: ""

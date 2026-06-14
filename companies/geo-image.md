@@ -5,7 +5,8 @@ website: "https://www.geoimage.com.au"
 careers_urls: ["https://www.geoimage.com.au/careers"]
 locations: ["Brisbane, Australia"]
 remote: "No"
-remote_evidence: "Careers page describes a close-knit Brisbane-based team with no mention of remote options."
+remote_evidence: "Careers page states team is 'Brisbane-based'; no mention of remote work flexibility. No current job listings."
+remote_confidence: "medium"
 description: "Satellite imagery and geospatial intelligence consulting."
 satellites: ""
 category: "Earth Observation"

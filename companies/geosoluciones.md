@@ -5,7 +5,8 @@ website: "http://www.geosoluciones.cl"
 careers_urls: ["x"]
 locations: ["🇨🇱 Santiago, Chile"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "Website blocked by enterprise security policy; could not access"
+remote_confidence: "low"
 description: "Geomatics and geospatial engineering solutions: surveying, satellite imagery, software distribution."
 satellites: ""
 category: "Earth Observation"

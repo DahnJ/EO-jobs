@@ -5,7 +5,8 @@ website: "https://www.terrafuse-ai.com/"
 careers_urls: ["https://apply.workable.com/terrafuse/"]
 locations: ["🇺🇸 Berkeley, USA"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "Workable job board is JS-rendered and content did not load properly in browser automation."
+remote_confidence: "low"
 description: "Hyperlocal climate risk scoring using machine learning and Earth observation."
 satellites: ""
 category: "Earth Observation"

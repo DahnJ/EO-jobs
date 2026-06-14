@@ -5,7 +5,8 @@ website: "https://mayday.ai/"
 careers_urls: ["https://mayday.ai/careers/"]
 locations: ["Darmstadt, Germany"]
 remote: "No"
-remote_evidence: ""
+remote_evidence: "Domain security check blocked access; stored value retained."
+remote_confidence: "low"
 description: "Data fusion for natural disasters management"
 satellites: ""
 category: ""

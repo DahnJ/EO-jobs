@@ -5,7 +5,8 @@ website: "https://www.bridgerphotonics.com/"
 careers_urls: ["https://www.bridgerphotonics.com/careers"]
 locations: ["🇺🇸 Bozeman, Montana, USA"]
 remote: "No"
-remote_evidence: "Headquarters emphasizes office location in Bozeman with outdoor recreation benefits."
+remote_evidence: "Stored value 'No' reflects hardware/manufacturing focus; bridgerphotonics.com typical of on-site requirements"
+remote_confidence: "medium"
 description: "Aerial methane detection using Gas Mapping LiDAR technology for energy industry."
 satellites: ""
 category: ""

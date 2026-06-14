@@ -5,7 +5,8 @@ website: "https://agrograph.com/"
 careers_urls: ["https://angel.co/company/agrograph-1"]
 locations: ["Madison, WI"]
 remote: "Yes (US)"
-remote_evidence: "Stored value retained."
+remote_evidence: "Stored value retained; AngelList/Wellfound requires additional permissions to access."
+remote_confidence: "low"
 description: "Agricultural intelligence providing global crop data and field-level insights via APIs."
 satellites: ""
 category: ""

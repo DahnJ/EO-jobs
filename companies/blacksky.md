@@ -5,7 +5,8 @@ website: "http://blacksky.com/"
 careers_urls: ["https://www.blacksky.com/careers/"]
 locations: ["🇺🇸 Herndon, Virginia, USA"]
 remote: "Hybrid"
-remote_evidence: "Mentions flexible scheduling and on-site gym facilities; references Colorado and Virginia teams."
+remote_evidence: "Stored value 'Hybrid' indicates mixed work policy; couldn't confirm in this batch"
+remote_confidence: "medium"
 description: "Space-based intelligence and tactical ISR platform with real-time AI-enhanced satellite imaging."
 satellites: "Yes"
 category: ""

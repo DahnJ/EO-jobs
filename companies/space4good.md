@@ -5,7 +5,8 @@ website: "https://www.space4good.com/"
 careers_urls: ["https://www.space4good.com/vacancies"]
 locations: ["🇳🇱 The Hague, Netherlands"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "Vacancies page exists but actual job listings not displayed in content."
+remote_confidence: "low"
 description: "Earth observation for social and environmental impact using geospatial and AI solutions."
 satellites: ""
 category: "Earth Observation"

@@ -5,7 +5,8 @@ website: "https://eofactory.ai/"
 careers_urls: ["x"]
 locations: ["🇸🇬 Singapore"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "Website fetch timed out; cannot access careers page or remote policy"
+remote_confidence: "low"
 description: "EO platform for geo insights"
 satellites: ""
 category: "Earth Observation"

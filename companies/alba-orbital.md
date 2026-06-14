@@ -5,7 +5,8 @@ website: "http://www.albaorbital.com/"
 careers_urls: ["http://www.albaorbital.com/careers"]
 locations: ["Glasgow, UK", "Berlin, Germany"]
 remote: "No"
-remote_evidence: "Stored value retained."
+remote_evidence: "Stored value retained; unable to access careers page."
+remote_confidence: "low"
 description: "Satellite developer and operator"
 satellites: ""
 category: ""

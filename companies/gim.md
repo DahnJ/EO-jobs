@@ -4,8 +4,9 @@ status: "active"
 website: "https://www.gim.be/en"
 careers_urls: ["https://jobs.gim.be/en"]
 locations: ["🇧🇪 Leuven, Belgium"]
-remote: ""
-remote_evidence: ""
+remote: "Hybrid"
+remote_evidence: "Careers page states 'teams are encouraged to find their own optimal balance with teleworking' at Leuven and Gembloux offices"
+remote_confidence: "medium"
 description: "Geodata-driven solutions and AI digital twins: FME data integration, satellite imagery, location data."
 satellites: ""
 category: ""

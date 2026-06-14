@@ -5,7 +5,8 @@ website: "https://www.synmax.com/"
 careers_urls: ["https://www.synmax.com/careers/"]
 locations: ["🇺🇸 Houston, USA"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "Careers page exists but no job listings visible; page suggests positions available via careers@synmax.com but remote policy not stated"
+remote_confidence: "low"
 description: "Maritime, energy, and strategic market intelligence through satellite data."
 satellites: ""
 category: ""

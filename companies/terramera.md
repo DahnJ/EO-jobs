@@ -5,7 +5,8 @@ website: "https://www.terramera.com/"
 careers_urls: ["https://www.terramera.com/careers#CurrentOpenings"]
 locations: ["🇨🇦 Vancouver, BC, Canada", "🇮🇳 Chennai, India"]
 remote: "Hybrid"
-remote_evidence: "Careers page states 'We equip our team with everything they need to comfortably work remotely'"
+remote_evidence: "Stored value from previous research."
+remote_confidence: "high"
 description: "Agricultural biotechnology with proprie proprietary Actigate technology for sustainable farming."
 satellites: ""
 category: ""

@@ -5,7 +5,8 @@ website: "https://www.terrabotics.co.uk/"
 careers_urls: ["https://www.terrabotics.co.uk/careers"]
 locations: ["🇬🇧 London, UK", "🇬🇧 Edinburgh, UK"]
 remote: "Hybrid"
-remote_evidence: "Careers page lists 'Hybrid / Remote / London or Edinburgh' and Global Remote positions"
+remote_evidence: "Careers page lists Associate Solutions Consultants as '[Freelance][Global][Remote]' and Client Solutions Consultant as '[Hybrid / Remote / London or Edinburgh]'"
+remote_confidence: "high"
 description: "3D terrain mapping and satellite image analysis for mining and energy."
 satellites: ""
 category: ""

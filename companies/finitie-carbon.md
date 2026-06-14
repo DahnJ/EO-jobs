@@ -5,7 +5,8 @@ website: "https://www.finitecarbon.com/"
 careers_urls: ["https://www.finitecarbon.com/about/careers/"]
 locations: ["San Francisco, USA"]
 remote: "Yes"
-remote_evidence: "Careers page mentions fast-paced remote work environments."
+remote_evidence: "Careers page describes 'fast-paced remote work environments' indicating fully remote operations"
+remote_confidence: "high"
 description: "North America's leading forest carbon project developer with offset credit services."
 satellites: ""
 category: "Earth Observation"

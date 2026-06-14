@@ -5,7 +5,8 @@ website: "https://www.sensar.nl"
 careers_urls: ["x"]
 locations: ["Rijswijk, Netherlands"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "No careers page (marked 'x'); homepage does not mention remote work arrangements"
+remote_confidence: "low"
 description: "Sensing and geospatial company."
 satellites: ""
 category: "Earth Observation"

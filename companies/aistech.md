@@ -5,7 +5,8 @@ website: "https://aistechspace.com/"
 careers_urls: ["https://aistechspace.com/careers/"]
 locations: ["Barcelona, Spain"]
 remote: "Yes"
-remote_evidence: "Stored value retained."
+remote_evidence: "Stored value retained; unable to access careers page."
+remote_confidence: "low"
 description: "Thermal imagery, AIS, agriculture, environment, security, aviation"
 satellites: "Planned"
 category: ""

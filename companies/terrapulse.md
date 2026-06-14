@@ -5,7 +5,8 @@ website: "https://www.terrapulse.com/"
 careers_urls: ["x"]
 locations: ["🇺🇸 North Potomac, USA"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "Careers URL placeholder (x) - not available"
+remote_confidence: "low"
 description: "Satellite-based monitoring for land, forest, crop and natural resource management."
 satellites: ""
 category: "Earth Observation"

@@ -5,7 +5,8 @@ website: "https://www.spottitt.com"
 careers_urls: ["x"]
 locations: ["🇬🇧 Harwell, UK"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "No careers URL available (marked as 'x'), unable to verify"
+remote_confidence: "low"
 description: "Satellite and AI monitoring solutions for Earth observation."
 satellites: ""
 category: "Earth Observation"

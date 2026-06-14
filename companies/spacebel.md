@@ -5,7 +5,8 @@ website: "https://www.spacebel.com/"
 careers_urls: ["https://career.spacebel.com/en/index.aspx"]
 locations: ["🇧🇪 Liège, Belgium", "🇫🇷 Labège, France"]
 remote: "No"
-remote_evidence: "Career page emphasizes positions based in specific office locations."
+remote_evidence: "Job postings emphasize in-office presence with specific locations: Hoeilaart (Brussels), Liège, Labège (Toulouse)."
+remote_confidence: "high"
 description: "Space systems and software engineering for satellite missions and systems."
 satellites: ""
 category: "Earth Observation"

@@ -5,7 +5,8 @@ website: "https://www.remote-sensing-solutions.com/"
 careers_urls: ["https://www.remote-sensing-solutions.com/job-postings-2410/"]
 locations: ["🇩🇪 Munich, Germany"]
 remote: "No"
-remote_evidence: "Job postings emphasize on-site internships at Munich office with no remote work mentioned."
+remote_evidence: "Careers page shows no remote listings; appears to be on-site only"
+remote_confidence: "medium"
 description: "Forest and carbon monitoring, deforestation tracking, and environmental remote sensing in Germany."
 satellites: ""
 category: "Earth Observation"

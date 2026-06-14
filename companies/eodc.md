@@ -5,7 +5,8 @@ website: "https://eodc.eu/"
 careers_urls: ["https://eodc.eu/career/"]
 locations: ["🇦🇹 Vienna, Austria"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "Career section shows only general invitation to apply; no remote policy or job listings visible"
+remote_confidence: "low"
 description: "EO: Data Centre for Water Resources Monitoring"
 satellites: ""
 category: ""

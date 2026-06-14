@@ -5,7 +5,8 @@ website: "https://www.imagesatintl.com/"
 careers_urls: ["https://www.imagesatintl.com/careers/"]
 locations: ["Or Yehuda, Israel"]
 remote: "No"
-remote_evidence: "Office-based operations in Israel."
+remote_evidence: "Careers page (imagesatintl.com/careers/) returned 404; retained stored value"
+remote_confidence: "low"
 description: "Space intelligence company providing satellite imagery and AI analytics."
 satellites: ""
 category: ""

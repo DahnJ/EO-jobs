@@ -5,7 +5,8 @@ website: "https://synspective.com/"
 careers_urls: ["https://careers.synspective.com/"]
 locations: ["🇯🇵 Tokyo, Japan", "🇸🇬 Singapore", "🇺🇸 United States"]
 remote: "No"
-remote_evidence: "Stored value kept; global offices suggest onsite focus"
+remote_evidence: "Careers page shows mostly hybrid/on-site roles in Tokyo and Yamato offices; most positions are 'Hybrid (based in Koto-ku, Tokyo)' not fully remote"
+remote_confidence: "medium"
 description: "Satellite technology provider for Earth observation with global team."
 satellites: ""
 category: ""

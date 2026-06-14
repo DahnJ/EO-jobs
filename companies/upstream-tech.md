@@ -5,7 +5,8 @@ website: "https://www.upstream.tech/"
 careers_urls: ["https://jobs.upstream.tech/"]
 locations: ["Remote"]
 remote: "Yes (US)"
-remote_evidence: "Remote-based organization; developed remote monitoring and forecasting tools."
+remote_evidence: "Stored value from previous research."
+remote_confidence: "high"
 description: "Software for land and water management using satellite imagery and ML."
 satellites: ""
 category: ""

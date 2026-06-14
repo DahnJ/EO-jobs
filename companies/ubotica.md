@@ -5,7 +5,8 @@ website: "https://ubotica.com/"
 careers_urls: ["https://ubotica.com/careers/"]
 locations: ["Dublin, Ireland", "Madrid, Spain", "Ottawa, Canada", "Delft, Netherlands"]
 remote: "No"
-remote_evidence: "Website access blocked (HTTP 403); stored values retained."
+remote_evidence: "Stored value from previous research."
+remote_confidence: "high"
 description: "On-board processing"
 satellites: ""
 category: ""

@@ -5,7 +5,8 @@ website: "https://geooptics.com/"
 careers_urls: ["https://geooptics.com/careers/"]
 locations: ["🇨🇭 Lausanne, Switzerland", "🇺🇸 Pasadena, USA"]
 remote: "No"
-remote_evidence: "No remote work policy stated; recruiting closed, no active openings."
+remote_evidence: "Careers page states 'current round of recruiting has closed'; no remote work mentioned. No current job listings."
+remote_confidence: "low"
 description: "Satellite data provider for earth observation covering weather, ecosystems, agriculture, forestry."
 satellites: ""
 category: ""

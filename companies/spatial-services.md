@@ -5,7 +5,8 @@ website: "https://www.spatial-services.com/en/spatial-services-ltd/"
 careers_urls: ["https://www.spatial-services.com/en/jobs-en/"]
 locations: ["🇦🇹 Salzburg, Austria"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "Jobs page mentions internships only; no remote work policy disclosed."
+remote_confidence: "low"
 description: "Geospatial intelligence and GIS solutions for decision-making."
 satellites: ""
 category: ""

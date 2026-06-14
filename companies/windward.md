@@ -5,7 +5,8 @@ website: "https://windward.ai/"
 careers_urls: ["https://windward.ai/company/careers/"]
 locations: ["🇮🇱 Tel Aviv, Israel", "🇺🇸 Washington DC, USA", "🇺🇸 Tampa, Florida, USA", "🇬🇧 London, UK"]
 remote: ""
-remote_evidence: ""
+remote_evidence: "21 job listings all specify physical locations (London, Tampa FL, Washington DC, Tel Aviv-Yafo); no mention of remote flexibility"
+remote_confidence: "high"
 description: "Maritime AI company fusing multi-source data into intelligence for defense, intelligence, and commercial operations."
 satellites: ""
 category: ""
