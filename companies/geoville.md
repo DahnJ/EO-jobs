@@ -2,7 +2,7 @@
 name: "GeoVille"
 status: "active"
 website: "https://www.geoville.com/"
-careers_urls: ["https://careers.geoville.com/"]
+careers_urls: ["https://www.geoville.com/careers"]
 locations: ["🇦🇹 Innsbruck, Austria"]
 remote: "No"
 remote_evidence: "Careers page (careers.geoville.com) not accessible (404); retained stored value"
@@ -21,3 +21,5 @@ type_reason: "EO analytics platform [agent]"
 [verify 2026-06 2026-06-14] Careers portal unreachable (404)
 
 [links 2026-06 2026-06-14] Careers portal unreachable (404)
+
+[careers-resolve 2026-06 2026-06-14] Career opportunities mentioned on company website

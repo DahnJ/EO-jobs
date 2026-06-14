@@ -2,7 +2,7 @@
 name: "Sensar"
 status: "active"
 website: "https://www.sensar.nl"
-careers_urls: ["x"]
+careers_urls: ["https://sensar.nl/en/careers/"]
 locations: ["🇳🇱 Rijswijk, Netherlands"]
 remote: ""
 remote_evidence: "No careers page (marked 'x'); homepage does not mention remote work arrangements"

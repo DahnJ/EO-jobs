@@ -2,7 +2,7 @@
 name: "Simularity"
 status: "active"
 website: "https://simularity.com"
-careers_urls: ["x"]
+careers_urls: ["https://www.linkedin.com/company/simularity/jobs"]
 locations: ["🇺🇸 Richmond, USA"]
 remote: ""
 remote_evidence: "No careers section on website; no job listings or employment information accessible"
@@ -23,3 +23,5 @@ Discovered via the EO companies Google Sheet (2026-06); unverified.
 [verify 2026-06 2026-06-14] No careers page found despite being listed as 'x' in input.
 
 [links 2026-06 2026-06-14] No careers page found despite being listed as 'x' in input.
+
+[careers-resolve 2026-06 2026-06-14] no own careers page found, using LinkedIn jobs

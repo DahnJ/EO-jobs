@@ -2,7 +2,7 @@
 name: "Riscognition GmbH"
 status: "active"
 website: "https://riscognition.com/"
-careers_urls: ["x"]
+careers_urls: ["https://www.linkedin.com/company/riscognition/jobs"]
 locations: ["🇩🇪 Geltendorf, Germany"]
 remote: ""
 remote_evidence: "Careers URL marked as 'x' (invalid); cannot access"
@@ -23,3 +23,5 @@ Discovered via the EO companies Google Sheet (2026-06); unverified.
 [verify 2026-06 2026-06-14] No dedicated careers page found
 
 [links 2026-06 2026-06-14] No dedicated careers page found
+
+[careers-resolve 2026-06 2026-06-14] no own careers page found, using LinkedIn jobs

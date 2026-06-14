@@ -2,7 +2,7 @@
 name: "RegrowAg"
 status: "active"
 website: "https://www.regrow.ag/"
-careers_urls: ["https://boards.greenhouse.io/regrow"]
+careers_urls: ["https://www.regrow.ag/careers"]
 locations: ["🇺🇸 San Francisco, USA", "🇦🇺 Sydney, Australia", "🌐 Remote"]
 remote: "Yes (US, AU)"
 remote_evidence: "Stored value verified - Greenhouse board shows US/AU remote positions"

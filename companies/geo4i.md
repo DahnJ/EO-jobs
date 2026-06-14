@@ -2,7 +2,7 @@
 name: "Geo4i"
 status: "active"
 website: "https://geo4i.com/en/"
-careers_urls: ["x"]
+careers_urls: ["https://www.linkedin.com/company/geo4i/jobs"]
 locations: ["🇫🇷 Copenhagen, France"]
 remote: ""
 remote_evidence: "Website contains no information about employment or remote work arrangements"
@@ -23,3 +23,5 @@ Discovered via the EO companies Google Sheet (2026-06); unverified.
 [verify 2026-06 2026-06-14] No dedicated careers page found.
 
 [links 2026-06 2026-06-14] No dedicated careers page found.
+
+[careers-resolve 2026-06 2026-06-14] No own careers page found; using LinkedIn company page

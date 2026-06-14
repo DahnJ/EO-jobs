@@ -2,7 +2,7 @@
 name: "Descartes Labs"
 status: "active"
 website: "https://descarteslabs.com/"
-careers_urls: ["https://jobs.lever.co/descarteslabs.com"]
+careers_urls: ["https://descarteslabs.com/careers"]
 locations: ["🇺🇸 Santa Fe, US"]
 remote: "Yes (US)"
 remote_evidence: "Stored value retained; Lever job board (403 forbidden) unreachable; unable to confirm current listings"
@@ -17,3 +17,5 @@ last_checked: "2026-06-14"
 type: "commercial-eo"
 type_reason: "Agriculture/sustainability monitoring with satellite data [agent]"
 ---
+
+[careers-resolve 2026-06 2026-06-14] Own careers page exists

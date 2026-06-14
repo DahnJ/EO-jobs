@@ -2,7 +2,7 @@
 name: "EarthScan"
 status: "active"
 website: "https://www.earth-scan.com/"
-careers_urls: ["https://www.earth-scan.com/careers"]
+careers_urls: ["https://www.linkedin.com/company/earthscan.io/jobs"]
 locations: ["🇬🇧 London, UK"]
 remote: ""
 remote_evidence: "Careers URL unreachable (404); unable to access careers page or job listings"
@@ -23,3 +23,5 @@ type_reason: "Uses geospatial and climate EO data for risk analytics. [agent]"
 [verify 2026-06 2026-06-14] Domain could not be verified; kept stored values.
 
 [links 2026-06 2026-06-14] Domain could not be verified; kept stored values.
+
+[careers-resolve 2026-06 2026-06-14] No dedicated careers page found; using LinkedIn company page

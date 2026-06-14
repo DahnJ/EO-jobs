@@ -2,7 +2,7 @@
 name: "LiveEO"
 status: "active"
 website: "https://live-eo.com/"
-careers_urls: ["https://live-eo.com/jobs/"]
+careers_urls: ["https://liveeo-gmbh.jobs.personio.de"]
 locations: ["🇩🇪 Berlin, Germany"]
 remote: "Hybrid"
 remote_evidence: "Careers page returns 404 error; stored value 'Hybrid' retained as reasonable given company location"
@@ -17,3 +17,5 @@ last_checked: "2026-06-14"
 type: "commercial-eo"
 type_reason: "Infrastructure monitoring via EO [agent]"
 ---
+
+[careers-resolve 2026-06 2026-06-14] Personio job board with active openings

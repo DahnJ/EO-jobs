@@ -2,7 +2,7 @@
 name: "Pixalytics"
 status: "active"
 website: "https://www.pixalytics.com"
-careers_urls: ["x"]
+careers_urls: ["https://www.pixalytics.com/contact-us/vacancies/"]
 locations: ["🇬🇧 Plymouth, UK"]
 remote: ""
 remote_evidence: "No current job listings; vacancies page shows no openings available."
@@ -23,3 +23,5 @@ Discovered via the EO companies Google Sheet (2026-06); unverified.
 [verify 2026-06 2026-06-14] Careers page marked invalid; requires verification
 
 [links 2026-06 2026-06-14] Careers page marked invalid; requires verification
+
+[careers-resolve 2026-06 2026-06-14] Careers page exists but currently has no vacancies

@@ -2,7 +2,7 @@
 name: "Canopy Remote Sensing Solutions"
 status: "active"
 website: "https://canopyrss.com.br"
-careers_urls: ["x"]
+careers_urls: ["https://www.linkedin.com/company/canopy-remote-sensing-solutions/jobs"]
 locations: ["🇧🇷 Brazil"]
 remote: ""
 remote_evidence: "No careers page found on website; unable to access job listings"
@@ -25,3 +25,5 @@ canopyrss.tech redirects to canopyrss.com.br.
 [verify 2026-06 2026-06-14] Careers link marked 'x' in source; no careers page accessible.
 
 [links 2026-06 2026-06-14] Careers link marked 'x' in source; no careers page accessible.
+
+[careers-resolve 2026-06 2026-06-14] No own careers page found; using LinkedIn company page

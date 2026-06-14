@@ -2,7 +2,7 @@
 name: "RMSI"
 status: "active"
 website: "https://www.rmsi.com"
-careers_urls: ["https://rmsi.zohorecruit.com/jobs/Careers"]
+careers_urls: ["https://www.rmsi.com/careers/opportunities/"]
 locations: ["🇮🇳 Noida, India"]
 remote: ""
 remote_evidence: "ZohoRecruit board (JS-rendered); cannot access listings"

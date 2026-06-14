@@ -2,7 +2,7 @@
 name: "Ozius Spatial"
 status: "active"
 website: "https://ozius.earth/"
-careers_urls: ["x"]
+careers_urls: ["https://www.linkedin.com/company/ozius"]
 locations: ["🇦🇺 Australia"]
 remote: ""
 remote_evidence: "No careers URL available (marked as 'x' in input)"
@@ -25,3 +25,5 @@ Website moved ozius.com.au → ozius.earth.
 [verify 2026-06 2026-06-14] Careers URL marked 'x' (invalid); company status unclear, treating as unknown.
 
 [links 2026-06 2026-06-14] Careers URL marked 'x' (invalid); company status unclear, treating as unknown.
+
+[careers-resolve 2026-06 2026-06-14] No careers page on own site; using LinkedIn company page

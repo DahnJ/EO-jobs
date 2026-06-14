@@ -2,7 +2,7 @@
 name: "Spacemetric"
 status: "active"
 website: "https://spacemetric.com"
-careers_urls: ["https://spacemetric.com/vacancies/"]
+careers_urls: ["https://www.spacemetricsinc.com/careers"]
 locations: ["🇸🇪 Sollentuna, Sweden"]
 remote: ""
 remote_evidence: "Vacancies page returns 404; main website has no remote policy information."

@@ -2,7 +2,7 @@
 name: "JBA Risk Management"
 status: "active"
 website: "https://www.jbarisk.com/"
-careers_urls: ["https://www.jbarisk.com/careers/"]
+careers_urls: ["https://www.jbarisk.com/about-us/careers-at-jba/"]
 locations: ["🇬🇧 Skipton, United Kingdom"]
 remote: ""
 remote_evidence: "Careers page not accessible (404 error)"
@@ -23,3 +23,5 @@ type_reason: "Flood risk mapping using geospatial/EO data. [agent]"
 [verify 2026-06 2026-06-14] Unable to verify website details due to network restrictions.
 
 [links 2026-06 2026-06-14] Unable to verify website details due to network restrictions.
+
+[careers-resolve 2026-06 2026-06-14] Careers page with link to external job board (jbagroup.current-vacancies.com); currently no open positions

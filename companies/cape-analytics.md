@@ -2,7 +2,7 @@
 name: "Cape Analytics"
 status: "active"
 website: "https://capeanalytics.com/"
-careers_urls: ["https://jobs.lever.co/capeanalytics"]
+careers_urls: ["https://builtin.com/company/cape-analytics/jobs"]
 locations: ["🇺🇸 Palo Alto, USA", "🇩🇪 Munich, Germany"]
 remote: "Yes"
 remote_evidence: "Lever job board returns 403 Forbidden; cannot access listings (JS-rendered board, needs browser)"
@@ -21,3 +21,5 @@ type_reason: "Property risk from aerial/satellite imagery [agent]"
 [verify 2026-06 2026-06-14] Part of Moody's Corporation.
 
 [links 2026-06 2026-06-14] Part of Moody's Corporation.
+
+[careers-resolve 2026-06 2026-06-14] Lever jobs page returned 403; using Built In job board
