@@ -13,4 +13,6 @@ listed: true
 links: {"crunchbase": "https://www.crunchbase.com/organization/sparkgeo", "linkedin": "https://www.linkedin.com/company/sparkgeo/", "twitter": "https://twitter.com/SparkgeoUK"}
 source: "original list"
 last_checked: ""
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

@@ -13,4 +13,6 @@ listed: true
 links: {"linkedin": "https://www.linkedin.com/company/fathom-global/", "twitter": "https://twitter.com/fathom_global", "youtube": "https://www.youtube.com/channel/UCeMu9yOWDuk1kUzc2_rOZAw"}
 source: "original list"
 last_checked: ""
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

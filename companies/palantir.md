@@ -9,8 +9,10 @@ remote_evidence: ""
 description: "Large data analysis and consultancy company. MetaConstellation product."
 satellites: ""
 category: ""
-listed: true
+listed: false
 links: {"crunchbase": "https://www.crunchbase.com/organization/palantir-technologies", "linkedin": "https://www.linkedin.com/company/palantir-technologies/", "twitter": "https://twitter.com/PalantirTech", "github": "https://github.com/palantir", "youtube": "https://www.youtube.com/channel/UCwed6_f0WcDIioXvMQfcP2Q", "stocks": "NYSE: PLTR"}
 source: "original list"
 last_checked: ""
+type: "consultancy"
+type_reason: "describes itself as a consultancy"
 ---

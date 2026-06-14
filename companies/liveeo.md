@@ -13,4 +13,6 @@ listed: true
 links: {"crunchbase": "https://www.crunchbase.com/organization/liveeo", "linkedin": "https://www.linkedin.com/company/liveeo/", "twitter": "https://twitter.com/LiveEO_space", "stocks": "$MAXR"}
 source: "original list"
 last_checked: ""
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

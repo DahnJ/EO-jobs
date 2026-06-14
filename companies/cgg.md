@@ -13,4 +13,6 @@ listed: true
 links: {"linkedin": "https://www.linkedin.com/company/cgg/", "twitter": "https://twitter.com/CGGcompany"}
 source: "original list"
 last_checked: ""
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

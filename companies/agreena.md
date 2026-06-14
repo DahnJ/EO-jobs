@@ -13,4 +13,6 @@ listed: true
 links: {"crunchbase": "https://www.crunchbase.com/organization/agreena", "linkedin": "https://www.linkedin.com/company/agreena/", "twitter": "https://twitter.com/agreenaapp?lang=en"}
 source: "original list"
 last_checked: ""
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

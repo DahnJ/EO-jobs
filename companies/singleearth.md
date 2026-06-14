@@ -13,4 +13,6 @@ listed: true
 links: {"crunchbase": "https://www.crunchbase.com/organization/single-earth", "linkedin": "https://www.linkedin.com/company/single-earth/?originalSubdomain=ee", "twitter": "https://twitter.com/SingleEarth1"}
 source: "original list"
 last_checked: ""
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

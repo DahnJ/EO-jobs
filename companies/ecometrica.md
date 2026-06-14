@@ -13,4 +13,6 @@ listed: true
 links: {"crunchbase": "https://www.crunchbase.com/organization/ecometrica", "linkedin": "https://www.linkedin.com/company/ecometrica/", "twitter": "https://twitter.com/Ecometrica", "github": "https://github.com/ecometrica", "youtube": "https://vimeo.com/user4955895"}
 source: "original list"
 last_checked: ""
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

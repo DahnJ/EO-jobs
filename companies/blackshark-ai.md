@@ -13,4 +13,6 @@ listed: true
 links: {"crunchbase": "https://www.crunchbase.com/organization/blackshark-ai", "linkedin": "https://www.linkedin.com/company/blackshark-ai/", "twitter": "https://twitter.com/aiblackshark", "youtube": "https://www.youtube.com/channel/UCMRDA-mbo9hGSHCwFMTp92w"}
 source: "original list"
 last_checked: ""
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

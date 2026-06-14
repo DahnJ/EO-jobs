@@ -13,4 +13,6 @@ listed: true
 links: {"crunchbase": "https://www.crunchbase.com/organization/near-space-labs", "linkedin": "https://www.linkedin.com/company/near-space/", "twitter": "https://twitter.com/NearSpaceLabs"}
 source: "original list"
 last_checked: "2026-06-14"
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

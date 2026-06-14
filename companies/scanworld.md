@@ -13,6 +13,8 @@ listed: true
 links: {"linkedin": "https://www.linkedin.com/company/scanworldeo/?originalSubdomain=be", "twitter": "https://twitter.com/scanworld2?lang=en"}
 source: "original list"
 last_checked: ""
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---
 
 Acquired by ConstelIR

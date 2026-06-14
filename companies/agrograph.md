@@ -13,4 +13,6 @@ listed: true
 links: {"crunchbase": "https://www.crunchbase.com/organization/agrograph", "linkedin": "https://www.linkedin.com/company/agrograph/", "twitter": "https://twitter.com/agrograph", "github": "https://github.com/Agrograph", "youtube": "https://www.youtube.com/channel/UCAa4hyHNsVUSabUVLxw6ecQ"}
 source: "original list"
 last_checked: ""
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

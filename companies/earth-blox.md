@@ -13,4 +13,6 @@ listed: true
 links: {"crunchbase": "https://www.crunchbase.com/organization/earth-blox", "linkedin": "https://www.linkedin.com/company/earthblox/", "twitter": "https://twitter.com/EarthBlox"}
 source: "original list"
 last_checked: ""
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

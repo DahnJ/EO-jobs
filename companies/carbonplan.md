@@ -9,8 +9,10 @@ remote_evidence: ""
 description: "Non-profit, data science for carbon removal"
 satellites: ""
 category: ""
-listed: true
+listed: false
 links: {"crunchbase": "https://carbonplan.org/funding", "linkedin": "https://www.linkedin.com/company/carbonplan/", "twitter": "https://twitter.com/carbonplanorg", "github": "https://github.com/carbonplan"}
 source: "original list"
 last_checked: ""
+type: "nonprofit"
+type_reason: "nonprofit/NGO language"
 ---

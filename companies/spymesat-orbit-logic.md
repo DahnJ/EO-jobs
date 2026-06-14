@@ -13,4 +13,6 @@ listed: true
 links: {"crunchbase": "https://www.crunchbase.com/organization/orbit-logic", "linkedin": "https://www.linkedin.com/company/orbit-logic/?originalSubdomain=ru", "twitter": "https://twitter.com/spymesat", "youtube": "https://www.youtube.com/channel/UCUjRQSlr2D26Pf9RP4k99Ig"}
 source: "original list"
 last_checked: ""
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

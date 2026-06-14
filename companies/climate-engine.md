@@ -13,4 +13,6 @@ listed: true
 links: {"linkedin": "https://linkedin.com/company/climateengine", "twitter": "https://twitter.com/ClimateEngine", "youtube": "https://www.youtube.com/channel/UCcc773oJTP9MQK8l_kIOl7w"}
 source: "original list"
 last_checked: ""
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

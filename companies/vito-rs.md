@@ -13,4 +13,6 @@ listed: true
 links: {"linkedin": "https://www.linkedin.com/company/vito/?originalSubdomain=be", "twitter": "https://twitter.com/VITO_RS_", "youtube": "https://vimeo.com/channels/vitors"}
 source: "original list"
 last_checked: ""
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

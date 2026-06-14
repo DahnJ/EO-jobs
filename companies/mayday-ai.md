@@ -13,4 +13,6 @@ listed: true
 links: {"crunchbase": "https://www.crunchbase.com/organization/mayday-ai", "linkedin": "https://www.linkedin.com/company/mayday-ai/", "twitter": "https://twitter.com/mayday_ai"}
 source: "original list"
 last_checked: ""
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

@@ -13,4 +13,6 @@ listed: true
 links: {"crunchbase": "https://www.crunchbase.com/organization/geooptics", "linkedin": "https://www.linkedin.com/company/geooptics/", "twitter": "https://twitter.com/geooptics?lang=en"}
 source: "original list"
 last_checked: ""
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

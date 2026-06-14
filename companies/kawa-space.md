@@ -13,4 +13,6 @@ listed: true
 links: {"crunchbase": "https://www.crunchbase.com/organization/kawa-space", "linkedin": "https://www.linkedin.com/company/kawaspace/", "twitter": "https://twitter.com/kawaspace?lang=en"}
 source: "original list"
 last_checked: ""
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

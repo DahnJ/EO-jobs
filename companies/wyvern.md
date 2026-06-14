@@ -13,4 +13,6 @@ listed: true
 links: {"crunchbase": "https://www.crunchbase.com/organization/wyvern-d3f9", "linkedin": "https://www.linkedin.com/company/wyvern-space/", "twitter": "https://twitter.com/WyvernSpace"}
 source: "original list"
 last_checked: "2026-06-14"
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

@@ -13,4 +13,6 @@ listed: true
 links: {"crunchbase": "https://www.crunchbase.com/organization/orbital-insight-inc", "linkedin": "https://www.linkedin.com/company/orbital-insight-inc-/", "twitter": "https://twitter.com/orbital_insight"}
 source: "original list"
 last_checked: ""
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

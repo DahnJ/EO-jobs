@@ -13,4 +13,6 @@ listed: true
 links: {"crunchbase": "https://www.crunchbase.com/organization/rendered-ai", "linkedin": "https://www.linkedin.com/company/rendered-ai/", "twitter": "https://twitter.com/renderedai?lang=en"}
 source: "original list"
 last_checked: ""
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

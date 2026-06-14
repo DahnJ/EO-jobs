@@ -13,4 +13,6 @@ listed: true
 links: {"crunchbase": "https://www.crunchbase.com/organization/climateai", "linkedin": "https://www.linkedin.com/company/climateai/", "twitter": "https://twitter.com/climateai?lang=en", "github": "https://github.com/ClimateAI"}
 source: "original list"
 last_checked: ""
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

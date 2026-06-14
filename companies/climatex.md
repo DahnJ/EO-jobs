@@ -13,4 +13,6 @@ listed: true
 links: {"crunchbase": "https://www.crunchbase.com/organization/climate-x", "linkedin": "https://www.linkedin.com/company/climate-x/", "twitter": "https://twitter.com/climatexltd"}
 source: "original list"
 last_checked: ""
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

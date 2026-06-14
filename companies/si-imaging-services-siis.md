@@ -13,4 +13,6 @@ listed: true
 links: {"crunchbase": "https://www.crunchbase.com/organization/si-imaging-services", "linkedin": "https://www.linkedin.com/company/si-imaging-services/?originalSubdomain=kr", "twitter": "https://twitter.com/si_imaging"}
 source: "original list"
 last_checked: ""
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

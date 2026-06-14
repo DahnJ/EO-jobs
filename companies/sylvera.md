@@ -13,4 +13,6 @@ listed: true
 links: {"crunchbase": "https://www.crunchbase.com/organization/sylvera", "linkedin": "https://www.linkedin.com/company/sylveracarbon", "twitter": "https://twitter.com/SylveraCarbon", "github": "https://github.com/SylveraIO", "youtube": "https://www.youtube.com/channel/UCzMumzm0k5GAfV-f9QQ3zUg", "medium": "https://medium.com/sylvera"}
 source: "original list"
 last_checked: ""
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

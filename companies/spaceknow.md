@@ -13,4 +13,6 @@ listed: true
 links: {"crunchbase": "https://www.crunchbase.com/organization/spaceknow", "linkedin": "https://www.linkedin.com/company/spaceknow/", "twitter": "https://twitter.com/spaceknow"}
 source: "original list"
 last_checked: ""
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

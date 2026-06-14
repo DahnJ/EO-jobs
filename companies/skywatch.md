@@ -13,4 +13,6 @@ listed: true
 links: {"crunchbase": "https://www.crunchbase.com/organization/skywatch-2", "linkedin": "https://www.linkedin.com/company/skywatch-apps/", "twitter": "https://twitter.com/SkyWatchApps"}
 source: "original list"
 last_checked: "2026-06-14"
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

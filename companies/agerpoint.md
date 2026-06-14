@@ -9,10 +9,12 @@ remote_evidence: "'Remote-Friendly', staff across the US (agerpoint.com/careers)
 description: "Crop insights platform"
 satellites: ""
 category: ""
-listed: false
+listed: true
 links: {}
 source: "sheet:Digital Farming 2026-06"
 last_checked: "2026-06-14"
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---
 
 Discovered via sheet:Digital Farming (2026-06); unverified.

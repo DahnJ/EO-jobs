@@ -13,4 +13,6 @@ listed: true
 links: {"crunchbase": "https://www.crunchbase.com/organization/e-geos", "linkedin": "https://www.linkedin.com/company/e-geos/", "twitter": "https://twitter.com/e_geos"}
 source: "original list"
 last_checked: ""
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

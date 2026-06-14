@@ -13,4 +13,6 @@ listed: true
 links: {"crunchbase": "https://www.crunchbase.com/organization/sentera", "linkedin": "https://www.linkedin.com/company/sentera/", "twitter": "https://twitter.com/sentera_uas", "github": "https://github.com/SenteraLLC", "youtube": "https://www.youtube.com/c/SenteraUS"}
 source: "original list"
 last_checked: ""
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

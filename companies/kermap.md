@@ -13,4 +13,6 @@ listed: true
 links: {"crunchbase": "https://www.crunchbase.com/organization/kermap", "linkedin": "https://www.linkedin.com/company/kermap/", "twitter": "https://twitter.com/kermap_info", "youtube": "https://www.youtube.com/channel/UC2q8oaFH4sKoJaWFOXvwAew"}
 source: "original list"
 last_checked: ""
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

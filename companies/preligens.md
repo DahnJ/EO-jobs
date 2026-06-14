@@ -13,4 +13,6 @@ listed: true
 links: {"crunchbase": "https://www.crunchbase.com/organization/earthcube", "linkedin": "https://www.linkedin.com/company/azavea/", "twitter": "https://twitter.com/Preligens"}
 source: "original list"
 last_checked: ""
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

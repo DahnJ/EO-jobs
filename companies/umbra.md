@@ -13,4 +13,6 @@ listed: true
 links: {"crunchbase": "https://www.crunchbase.com/organization/umbra-lab-inc", "linkedin": "https://www.linkedin.com/company/umbraspace/", "twitter": "https://twitter.com/umbraspace"}
 source: "original list"
 last_checked: ""
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

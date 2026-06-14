@@ -13,4 +13,6 @@ listed: true
 links: {"crunchbase": "https://www.crunchbase.com/organization/shadowbreak-intl", "linkedin": "https://www.linkedin.com/company/shadowbreak-intl/about/", "twitter": "https://twitter.com/sbreakintl"}
 source: "original list"
 last_checked: ""
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

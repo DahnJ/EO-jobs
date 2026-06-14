@@ -13,4 +13,6 @@ listed: true
 links: {"crunchbase": "https://www.crunchbase.com/organization/4-earth-intelligence", "linkedin": "https://www.linkedin.com/company/4-earth-intelligence/", "twitter": "https://twitter.com/4_intelligence", "youtube": "https://www.youtube.com/channel/UCE9wUQRs6B2Rdj6jEJGT2-Q"}
 source: "original list"
 last_checked: ""
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

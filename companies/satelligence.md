@@ -13,4 +13,6 @@ listed: true
 links: {"crunchbase": "https://www.crunchbase.com/organization/satelligence", "linkedin": "https://www.linkedin.com/company/satelligence", "twitter": "https://twitter.com/SatelligenceEO"}
 source: "original list"
 last_checked: ""
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

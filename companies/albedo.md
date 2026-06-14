@@ -13,4 +13,6 @@ listed: true
 links: {"crunchbase": "https://www.crunchbase.com/organization/albedo", "linkedin": "https://www.linkedin.com/company/albedo-space/", "twitter": "https://twitter.com/Albedo"}
 source: "original list"
 last_checked: "2026-06-14"
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

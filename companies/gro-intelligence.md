@@ -13,4 +13,6 @@ listed: true
 links: {"crunchbase": "https://www.crunchbase.com/organization/gro-intelligence", "linkedin": "https://www.linkedin.com/company/gro-intelligence/", "twitter": "https://twitter.com/GroIntel", "github": "https://github.com/gro-intelligence", "youtube": "https://www.youtube.com/channel/UC2w24XayZ6IW4XTYrcDBybw/videos"}
 source: "original list"
 last_checked: ""
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

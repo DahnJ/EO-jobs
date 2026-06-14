@@ -13,4 +13,6 @@ listed: true
 links: {"crunchbase": "https://www.crunchbase.com/organization/betterview", "linkedin": "https://www.linkedin.com/company/betterview/", "twitter": "https://twitter.com/betterv?lang=en", "github": "https://github.com/bettervu", "youtube": "https://www.youtube.com/channel/UCq-qBQzcyErD3e6rnZ83Xfw"}
 source: "original list"
 last_checked: ""
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---

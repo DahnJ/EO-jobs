@@ -13,4 +13,6 @@ listed: true
 links: {"linkedin": "https://www.linkedin.com/company/skyfi-imaging/?trk=public_jobs_jserp-result_job-search-card-subtitle"}
 source: "original list"
 last_checked: "2026-06-14"
+type: "commercial-eo"
+type_reason: "default (no exclusion signal)"
 ---
