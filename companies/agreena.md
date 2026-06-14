@@ -3,9 +3,9 @@ name: "Agreena"
 status: "active"
 website: "https://agreena.com/"
 careers_urls: ["https://jobs.ashbyhq.com/agreena"]
-locations: ["Copenhagen, Denmark", "London, United Kingdom"]
-remote: "Yes"
-remote_evidence: "Stored value retained."
+locations: ["🇩🇰 Copenhagen, Denmark", "🇬🇧 London, UK"]
+remote: "Yes (Europe)"
+remote_evidence: "Offers many remote roles across Europe; offices Copenhagen & London (Ashby board, 2026-06)"
 description: "Europe's leading soil carbon project enabling farmers to transition to regenerative agriculture."
 satellites: ""
 category: ""

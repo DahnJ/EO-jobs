@@ -24,3 +24,7 @@ Lever careers page 403'd to fetch; could not confirm.
 [verify 2026-06 2026-06-14] Unable to verify website details due to network restrictions.
 
 [links 2026-06 2026-06-14] Unable to verify website details due to network restrictions.
+
+[browser 2026-06 2026-06-14] Lever careers board live but no open roles (2026-06); remote undetermined
+
+[browser 2026-06 2026-06-14] Lever careers board live but no open roles (2026-06); remote undetermined
