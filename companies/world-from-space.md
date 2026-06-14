@@ -1,7 +1,7 @@
 ---
 name: "World from Space"
 status: "active"
-website: "https://worldfrom.space/en/home/"
+website: "https://worldfrom.space/"
 careers_urls: ["https://worldfrom.space/about/careers/"]
 locations: ["🇨🇿 Brno, Czech Republic"]
 remote: ""
