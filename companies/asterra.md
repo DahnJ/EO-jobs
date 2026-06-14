@@ -2,8 +2,8 @@
 name: "Asterra"
 status: "active"
 website: "https://asterra.io/"
-careers_urls: ["https://asterra.io/about/careers/", "https://www.linkedin.com/company/asterratech/jobs/"]
-locations: ["🇮🇱 Rosh Ha’ayin, Israel", "🇺🇸 San Diego, CA, USA"]
+careers_urls: ["https://asterra.io/about/careers/", "https://www.linkedin.com/company/asterratech/jobs/", "x"]
+locations: ["🇮🇱 Rosh Ha’ayin, Israel", "🇺🇸 San Diego, CA, USA", "🇮🇱 Rosh Haayin, Israel"]
 remote: "Yes"
 remote_evidence: ""
 description: "Using SAR to detect leaks"
@@ -16,3 +16,5 @@ last_checked: ""
 type: "commercial-eo"
 type_reason: "default (no exclusion signal)"
 ---
+
+[dedup] merged duplicate(s) utilis — Utilis rebranded to ASTERRA; same site asterra.io

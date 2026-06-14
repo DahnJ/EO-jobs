@@ -1,0 +1,34 @@
+[
+  {
+    "slugs": [
+      "asterra",
+      "utilis"
+    ],
+    "keep": "asterra",
+    "reason": "same domain asterra.io"
+  },
+  {
+    "slugs": [
+      "mckenzie-intelligence-services",
+      "mckenzie-intelligence"
+    ],
+    "keep": "mckenzie-intelligence",
+    "reason": "same domain mckenzieintelligence.com with redundant \"services\" suffix"
+  },
+  {
+    "slugs": [
+      "hera-systems",
+      "red-wire-space"
+    ],
+    "keep": "hera-systems",
+    "reason": "same domain rdw.com - likely rebranded from Red Wire Space to Hera Systems"
+  },
+  {
+    "slugs": [
+      "vito-remote-sensing",
+      "vito-rs"
+    ],
+    "keep": "vito-rs",
+    "reason": "same organization VITO with different domain prefixes: vito.be vs remotesensing.vito.be"
+  }
+]
