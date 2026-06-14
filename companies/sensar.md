@@ -4,16 +4,16 @@ status: "active"
 website: "https://www.sensar.nl"
 careers_urls: ["https://sensar.nl/en/careers/"]
 locations: ["🇳🇱 Rijswijk, Netherlands"]
-remote: ""
-remote_evidence: "No careers page (marked 'x'); homepage does not mention remote work arrangements"
-remote_confidence: "low"
+remote: "Hybrid"
+remote_evidence: "InSAR Engineer posting (Amersfoort/Rijswijk, NL): office-preferred but option to work partly from home, flexible hours."
+remote_confidence: "high"
 description: "Sensing and geospatial company."
 satellites: ""
 category: "Earth Observation"
 listed: true
 links: {"linkedin": "https://www.linkedin.com/company/sensarbv/", "crunchbase": "https://www.crunchbase.com/organization/sensar"}
 source: "google-sheet 2026-06"
-last_checked: "2026-06-14"
+last_checked: "2026-06-15"
 type: "commercial-eo"
 type_reason: "EO/satellite core business [agent]"
 ---
