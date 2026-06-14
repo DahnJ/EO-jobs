@@ -29,6 +29,10 @@ dedup:
 check args="--listed-only":
     uv run python check_links.py {{args}}
 
+# detect acquisitions/rebrands: listed sites that now redirect to a different domain
+redirects:
+    uv run python check_redirects.py
+
 # one-shot data hygiene: normalize `remote` values + backfill location flags
 fixup:
     uv run python fixup_data.py

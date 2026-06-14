@@ -1,7 +1,7 @@
 ---
 name: "Orbital Eye"
 status: "active"
-website: "https://orbitaleye.nl/"
+website: "https://orbitaleye.com"
 careers_urls: ["https://orbitaleye.nl/about-us-concept/"]
 locations: ["🇳🇱 Delft, Netherlands"]
 remote: "No"
@@ -21,3 +21,5 @@ type_reason: "Infrastructure and environment monitoring EO [agent]"
 [verify 2026-06 2026-06-14] No active job postings currently.
 
 [links 2026-06 2026-06-14] No active job postings currently.
+
+[data-check 2026-06] Domain moved orbitaleye.nl -> orbitaleye.com.

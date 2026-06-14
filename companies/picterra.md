@@ -1,7 +1,7 @@
 ---
 name: "Picterra"
 status: "active"
-website: "https://picterra.ch/"
+website: "https://picterra.ai"
 careers_urls: ["https://picterra.ch/jobs/"]
 locations: ["🇺🇸 Lausanne, Switzerland"]
 remote: "Yes"
@@ -17,3 +17,5 @@ last_checked: "2026-06-14"
 type: "commercial-eo"
 type_reason: "AI analysis platform for satellite EO imagery. [agent]"
 ---
+
+[data-check 2026-06] Domain moved picterra.ch -> picterra.ai.
