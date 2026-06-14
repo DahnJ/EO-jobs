@@ -1,0 +1,16 @@
+---
+name: "Influunt"
+status: "active"
+website: "https://www.influunt.ai/"
+careers_urls: []
+locations: ["🇺🇸 San Francisco, CA, USA"]
+remote: "No jobs"
+remote_evidence: ""
+description: "Water risk intelligence"
+satellites: ""
+category: ""
+listed: true
+links: {"crunchbase": "https://www.crunchbase.com/organization/influunt", "linkedin": "https://www.linkedin.com/company/influuntai/about/", "twitter": "https://twitter.com/InfluuntAI", "github": "https://github.com/Influunt-Systems"}
+source: "original list"
+last_checked: ""
+---

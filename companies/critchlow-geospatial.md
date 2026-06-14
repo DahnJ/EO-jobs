@@ -1,0 +1,18 @@
+---
+name: "Critchlow Geospatial"
+status: "unknown"
+website: "https://www.critchlow.co.nz/"
+careers_urls: ["x"]
+locations: ["Wellington, New Zealand"]
+remote: ""
+remote_evidence: ""
+description: "Geospatial consultancy & EO data reseller"
+satellites: ""
+category: "Earth Observation"
+listed: false
+links: {}
+source: "google-sheet 2026-06"
+last_checked: ""
+---
+
+Discovered via the EO companies Google Sheet (2026-06); unverified.
