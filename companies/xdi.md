@@ -2,11 +2,11 @@
 name: "XDI"
 status: "active"
 website: "https://xdi.systems/"
-careers_urls: ["https://jobs.swagapp.com/"]
+careers_urls: ["https://employmenthero.com/jobs/organisations/climatica-services-aqdvi/"]
 locations: ["🇦🇺 Sydney, Australia"]
-remote: ""
-remote_evidence: "Jobs redirected to EmploymentHero portal with no XDI listings visible; careers page doesn't mention remote policy"
-remote_confidence: "low"
+remote: "Hybrid"
+remote_evidence: "Careers page (The Climate Risk Group / XDI): open role 'Partnerships & BD Manager — Sydney, Hybrid'; benefits list 'Flexible working arrangements, including hybrid working'; team across Australia & Europe."
+remote_confidence: "high"
 description: "Physical climate risk analysis firm quantifying extreme weather and climate impacts to assets globally."
 satellites: ""
 category: ""
@@ -23,3 +23,5 @@ type_reason: "Climate risk analysis using satellite/climate EO data. [agent]"
 [verify 2026-06 2026-06-14] Careers URL redirects to Employment Hero general job platform; not XDI-specific.
 
 [links 2026-06 2026-06-14] Careers URL redirects to Employment Hero general job platform; not XDI-specific.
+
+[browser-check 2026-06] Resolved the real careers page via xdi.systems "Open positions": The Climate Risk Group / XDI on EmploymentHero (climatica-services-aqdvi). Replaced the generic jobs.swagapp.com root. Remote = Hybrid (Sydney role + stated hybrid policy; ~50 staff Australia & Europe).
