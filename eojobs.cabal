@@ -18,6 +18,7 @@ library
     EoJobs.Company
     EoJobs.Db
     EoJobs.Dedup
+    EoJobs.Fixup
     EoJobs.Flags
     EoJobs.Json
     EoJobs.Merge
