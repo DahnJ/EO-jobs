@@ -78,6 +78,8 @@ main = hspec $ do
           , ("Paris, France", "🇫🇷 Paris, France")
           , ("Austin, TX", "🇺🇸 Austin, TX")
           , ("Remote", "🌐 Remote")
+          , ("Remote (Europe)", "🌍 Remote (Europe)")
+          , ("Asia Pacific, Global", "🌏 Asia Pacific, Global")
           , ("Greater London Area", "🇬🇧 Greater London Area")
           , ("🇩🇪 Berlin", "🇩🇪 Berlin")
           , ("Atlantis", "Atlantis")

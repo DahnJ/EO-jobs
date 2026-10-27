@@ -88,10 +88,11 @@ city =
 
 region :: [(Text, Text)]
 region =
-  [ ("remote", "🌐"), ("global", "🌐"), ("worldwide", "🌐"), ("anywhere", "🌐")
+  -- continents before global words: "Remote (Europe)" is 🌍, not 🌐
+  [ ("europe", "🌍"), ("asia pacific", "🌏"), ("asia", "🌏"), ("africa", "🌍")
+  , ("remote", "🌐"), ("global", "🌐"), ("worldwide", "🌐"), ("anywhere", "🌐")
   , ("world", "🌐"), ("many locations", "🌐"), ("many countries", "🌐")
-  , ("multiple continents", "🌐"), ("europe", "🌍"), ("asia pacific", "🌏")
-  , ("asia", "🌏"), ("africa", "🌍")
+  , ("multiple continents", "🌐")
   ]
 
 countryByName, cityByName :: Map.Map Text Text
