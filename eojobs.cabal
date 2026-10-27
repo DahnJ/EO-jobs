@@ -1,0 +1,31 @@
+cabal-version:      3.0
+name:               eojobs
+version:            0.1.0.0
+synopsis:           Deterministic pipeline for the EO-jobs company database
+build-type:         Simple
+
+common shared
+  default-language:   GHC2021
+  default-extensions: OverloadedStrings OverloadedRecordDot LambdaCase
+  ghc-options:        -Wall
+  build-depends:      base >=4.18 && <5, text >=2.0, containers
+
+library
+  import:           shared
+  hs-source-dirs:   hs-src
+  exposed-modules:
+    EoJobs.Json
+    EoJobs.StringRules
+  build-depends:
+    , async
+    , bytestring
+    , directory
+    , filepath
+    , http-client
+    , http-client-tls
+    , http-types
+    , megaparsec
+    , network-uri
+    , optparse-applicative
+    , time
+
