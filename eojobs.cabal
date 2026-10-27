@@ -15,6 +15,7 @@ library
   hs-source-dirs:   hs-src
   exposed-modules:
     EoJobs.Company
+    EoJobs.Flags
     EoJobs.Json
     EoJobs.StringRules
   build-depends:
