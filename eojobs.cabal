@@ -18,6 +18,7 @@ library
     EoJobs.Db
     EoJobs.Flags
     EoJobs.Json
+    EoJobs.Merge
     EoJobs.StringRules
   build-depends:
     , async
