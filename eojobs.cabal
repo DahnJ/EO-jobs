@@ -17,6 +17,7 @@ library
     EoJobs.Classify
     EoJobs.Company
     EoJobs.Db
+    EoJobs.Dedup
     EoJobs.Flags
     EoJobs.Json
     EoJobs.Merge
