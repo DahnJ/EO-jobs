@@ -1,10 +1,8 @@
-# EO-jobs deterministic pipeline (Clojure).
+# EO-jobs deterministic pipeline (Haskell).
 # Agent judgment lives in the skills; these recipes are the mechanical spine —
 # runnable by a human, by CI, or by a skill.
 
-export JAVA_HOME := "/opt/homebrew/opt/openjdk"
-
-run := "clojure -M:run"
+run := "cabal run -v0 eojobs --"
 
 # list recipes
 default:
@@ -56,3 +54,7 @@ class-input out="/tmp/class_in.jsonl":
 # build the compact slug<TAB>name<TAB>domain index a dedup agent reads
 dedup-index out="/tmp/company_index.tsv":
     {{run}} dedup-index --out "{{out}}"
+
+# run the test suite (incl. byte-exact round-trip of every company file)
+test:
+    cabal test

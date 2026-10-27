@@ -6,9 +6,11 @@ published as the `README.md` table. The most valuable column is **Remote**.
 ## How it's built
 - **`companies/<slug>.md`** is the database (full coverage, incl. acquired/defunct).
   **`README.md` is generated** from it (`listed == True` rows only) — never hand-edit it.
-- **`just` recipes** (run via `uv`) are the deterministic spine: `just readme`,
-  `just merge`, `just check` (link-rot), `just redirects` (acquisitions). Agents do
-  judgment; recipes do mechanics.
+- **`just` recipes** are the deterministic spine: `just readme`, `just merge`,
+  `just check` (link-rot), `just redirects` (acquisitions). Agents do judgment;
+  recipes do mechanics. They run the Haskell `eojobs` CLI (`src/EoJobs/`, via
+  `cabal`; needs `ghc` + `cabal-install`). `just test` checks that every company
+  file round-trips byte-for-byte.
 - **Two skills** drive the work: **refresh-eo-jobs** (re-verify existing entries)
   and **discover-eo-companies** (find + add new). Each `SKILL.md` is a thin
   orchestrator; the shared substance lives in `.claude/skills/_shared/` — chiefly

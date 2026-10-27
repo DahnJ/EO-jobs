@@ -14,8 +14,8 @@ step. Read this once; each skill's SKILL.md only adds the part that's unique to 
   column; `""`, `No`, and `No jobs` render blank. So a confirmed `No` enriches the
   DB but never changes the table — spend verification effort on confirming the
   *region* of a Yes/Hybrid, not on proving a No.
-- **`just` + `uv` are the deterministic spine.** Agents do judgment; recipes do
-  mechanics. `just --list` shows them. They run via `uv` (stdlib-only, no installs).
+- **`just` is the deterministic spine.** Agents do judgment; recipes do
+  mechanics. `just --list` shows them. They run the Haskell `eojobs` CLI via `cabal`.
 
 ## Cost discipline
 

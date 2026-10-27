@@ -12,7 +12,7 @@ common shared
 
 library
   import:           shared
-  hs-source-dirs:   hs-src
+  hs-source-dirs:   src
   exposed-modules:
     EoJobs.Classify
     EoJobs.Cli
