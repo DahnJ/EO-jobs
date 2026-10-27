@@ -22,6 +22,7 @@ library
     EoJobs.Flags
     EoJobs.Json
     EoJobs.Merge
+    EoJobs.Net
     EoJobs.Readme
     EoJobs.StringRules
   build-depends:
