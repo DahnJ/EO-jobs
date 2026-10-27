@@ -15,17 +15,18 @@ library
   hs-source-dirs:   hs-src
   exposed-modules:
     EoJobs.Classify
+    EoJobs.Cli
     EoJobs.Company
     EoJobs.Db
     EoJobs.Dedup
     EoJobs.Export
     EoJobs.Fixup
     EoJobs.Flags
+    EoJobs.StringRules
     EoJobs.Json
     EoJobs.Merge
     EoJobs.Net
     EoJobs.Readme
-    EoJobs.StringRules
   build-depends:
     , async
     , bytestring
@@ -39,3 +40,15 @@ library
     , optparse-applicative
     , time
 
+executable eojobs
+  import:         shared
+  hs-source-dirs: app
+  main-is:        Main.hs
+  build-depends:  eojobs
+
+test-suite spec
+  import:         shared
+  type:           exitcode-stdio-1.0
+  hs-source-dirs: test
+  main-is:        Spec.hs
+  build-depends:  eojobs, hspec, directory, filepath, bytestring, time
