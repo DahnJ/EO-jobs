@@ -15,6 +15,7 @@ library
   hs-source-dirs:   hs-src
   exposed-modules:
     EoJobs.Company
+    EoJobs.Db
     EoJobs.Flags
     EoJobs.Json
     EoJobs.StringRules
