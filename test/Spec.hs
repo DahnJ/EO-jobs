@@ -46,6 +46,15 @@ main = hspec $ do
       -- Assert
       rendered `shouldBe` expected
 
+    it "ends the frontmatter only at a line that is exactly ---" $ do
+      -- Arrange
+      let withDashes = T.replace "\"Satellite analytics.\"" "\"SAR --- optical\"" sampleFile <> "\nbody\n---\nmore\n"
+      -- Act
+      let parsed = parseCompany withDashes
+      -- Assert
+      fmap (\c -> (c.description, c.body)) parsed `shouldBe` Right ("SAR --- optical", "body\n---\nmore")
+      fmap renderCompany parsed `shouldBe` Right withDashes
+
     it "fails with the field name when a required field is missing" $ do
       -- Arrange
       let withoutStatus = T.unlines (filter (not . ("status:" `T.isPrefixOf`)) (T.lines sampleFile))

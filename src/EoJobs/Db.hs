@@ -18,7 +18,7 @@ module EoJobs.Db
   , failAt
   ) where
 
-import Control.Monad (unless, (>=>))
+import Control.Monad ((>=>))
 import qualified Data.ByteString as BS
 import Data.Bifunctor (first)
 import Data.List (sortOn)
@@ -51,14 +51,18 @@ knownKeys =
 -- | Parse a company file's text; the error says which field is wrong.
 parseCompany :: Text -> Either Text Company
 parseCompany fileText = do
-  unless ("---" `T.isPrefixOf` fileText) (Left "missing frontmatter")
-  let (frontmatter, afterFrontmatter) = T.breakOn "---" (T.drop 3 fileText)
-      lines' = filter (not . isBlank) (splitLines (trim frontmatter))
-  pairs <- traverse parseLine lines'
-  -- a repeated key keeps its last value, as Clojure's `into {}` does
-  decodeCompany (Map.fromList pairs) (trim (T.drop 3 afterFrontmatter))
+  (frontmatter, bodyLines) <- case T.splitOn "\n" fileText of
+    opening : rest | isMarker opening -> case break isMarker rest of
+      (fieldLines, _closing : afterClosing) -> Right (fieldLines, afterClosing)
+      _ -> Left "frontmatter has no closing '---' line"
+    _ -> Left "missing frontmatter"
+  pairs <- traverse parseLine (filter (not . isBlank) (map dropCarriageReturn frontmatter))
+  -- a repeated key keeps its last value
+  decodeCompany (Map.fromList pairs) (trim (T.intercalate "\n" bodyLines))
   where
-    splitLines = map (T.dropWhileEnd (== '\r')) . T.splitOn "\n"
+    dropCarriageReturn = T.dropWhileEnd (== '\r')
+    -- only a line that is exactly @---@ opens or closes the frontmatter
+    isMarker line = dropCarriageReturn line == "---"
     parseLine line = case T.breakOn ": " line of
       (_, "") -> Left ("frontmatter line without ': ': " <> line)
       (key, rest) -> do
