@@ -5,7 +5,7 @@ record. Both the **refresh** and **discover** skills dispatch Haiku subagents th
 WebFetch a company and emit one JSON object per company following this contract.
 Optimize this file — not copies in each skill — when a field rule needs to change.
 
-The keys below match what `merge_inbox.py` (via `just merge`) consumes. Each rule
+The keys below match what `just merge` consumes. Each rule
 explains *why* it exists, because most of them encode a mistake we already made;
 understanding the failure lets you handle cases the examples don't cover.
 
