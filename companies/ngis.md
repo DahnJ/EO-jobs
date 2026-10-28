@@ -11,7 +11,7 @@ description: "Australian geospatial and surveying services provider."
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/ngis/", "crunchbase": "https://www.crunchbase.com/organization/ngis"}
+links: {"linkedin":"https://www.linkedin.com/company/ngis/","crunchbase":"https://www.crunchbase.com/organization/ngis"}
 source: "awesome 2026-06"
 last_checked: "2026-06-15"
 type: "commercial-eo"

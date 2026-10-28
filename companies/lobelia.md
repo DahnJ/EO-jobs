@@ -11,7 +11,7 @@ description: "Earth observation software for environmental monitoring and analys
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/lobelia-earth/?originalSubdomain=es", "twitter": "https://twitter.com/lobeliaearth?lang=en", "crunchbase": "https://www.crunchbase.com/organization/lobelia"}
+links: {"linkedin":"https://www.linkedin.com/company/lobelia-earth/?originalSubdomain=es","twitter":"https://twitter.com/lobeliaearth?lang=en","crunchbase":"https://www.crunchbase.com/organization/lobelia"}
 source: "original list"
 last_checked: "2026-06-15"
 type: "commercial-eo"

@@ -3,7 +3,7 @@ name: "GeoOptics"
 status: "active"
 website: "https://geooptics.com/"
 careers_urls: ["https://geooptics.com/careers/"]
-locations: ["🇨🇭 Lausanne, Switzerland", "🇺🇸 Pasadena, USA"]
+locations: ["🇨🇭 Lausanne, Switzerland","🇺🇸 Pasadena, USA"]
 remote: "No"
 remote_evidence: "Careers page states 'current round of recruiting has closed'; no remote work mentioned. No current job listings."
 remote_confidence: "low"
@@ -11,7 +11,7 @@ description: "Satellite data provider for earth observation covering weather, ec
 satellites: ""
 category: ""
 listed: true
-links: {"crunchbase": "https://www.crunchbase.com/organization/geooptics", "linkedin": "https://www.linkedin.com/company/geooptics/", "twitter": "https://twitter.com/geooptics?lang=en"}
+links: {"crunchbase":"https://www.crunchbase.com/organization/geooptics","linkedin":"https://www.linkedin.com/company/geooptics/","twitter":"https://twitter.com/geooptics?lang=en"}
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"

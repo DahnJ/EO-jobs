@@ -11,7 +11,7 @@ description: "Geospatial AI company providing satellite imagery analysis for lan
 satellites: ""
 category: ""
 listed: true
-links: {"crunchbase": "https://www.crunchbase.com/organization/dymaxion-labs", "linkedin": "https://www.linkedin.com/company/dymaxion-labs/", "twitter": "https://twitter.com/DymaxionLabs", "github": "https://github.com/dymaxionlabs", "youtube": "https://www.youtube.com/channel/UCoUy_EpsH_QaHeLdYvfJlaQ"}
+links: {"crunchbase":"https://www.crunchbase.com/organization/dymaxion-labs","linkedin":"https://www.linkedin.com/company/dymaxion-labs/","twitter":"https://twitter.com/DymaxionLabs","github":"https://github.com/dymaxionlabs","youtube":"https://www.youtube.com/channel/UCoUy_EpsH_QaHeLdYvfJlaQ"}
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"

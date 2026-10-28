@@ -10,7 +10,7 @@ description: "Environmental monitoring and climate intelligence platform for ter
 satellites: ""
 category: ""
 listed: false
-links: {"linkedin": "https://www.linkedin.com/company/meteorybv/"}
+links: {"linkedin":"https://www.linkedin.com/company/meteorybv/"}
 source: "awesome 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

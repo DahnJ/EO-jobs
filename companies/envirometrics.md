@@ -11,7 +11,7 @@ description: "EO: environmental monitoring & mining rehabilitation"
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {"linkedin": "https://au.linkedin.com/company/envirometrics", "crunchbase": "https://www.crunchbase.com/organization/envirometrics-io", "twitter": "https://x.com/envirometrics"}
+links: {"linkedin":"https://au.linkedin.com/company/envirometrics","crunchbase":"https://www.crunchbase.com/organization/envirometrics-io","twitter":"https://x.com/envirometrics"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

@@ -11,7 +11,7 @@ description: "SAR satellite data processing platform with AI analytics for urban
 satellites: ""
 category: ""
 listed: true
-links: {"crunchbase": "https://crunchbase.com/organization/space-shift-inc-", "linkedin": "https://www.linkedin.com/company/spcsft"}
+links: {"crunchbase":"https://crunchbase.com/organization/space-shift-inc-","linkedin":"https://www.linkedin.com/company/spcsft"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-15"
 type: "commercial-eo"

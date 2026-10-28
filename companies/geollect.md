@@ -11,7 +11,7 @@ description: "Unknown - site unreachable."
 satellites: ""
 category: ""
 listed: true
-links: {"crunchbase": "https://www.crunchbase.com/organization/geollect", "linkedin": "https://www.linkedin.com/company/geollect/", "twitter": "https://twitter.com/geollect_news", "youtube": "https://www.youtube.com/channel/UCzbRtYBeJb7sSDJmXBdsNhg"}
+links: {"crunchbase":"https://www.crunchbase.com/organization/geollect","linkedin":"https://www.linkedin.com/company/geollect/","twitter":"https://twitter.com/geollect_news","youtube":"https://www.youtube.com/channel/UCzbRtYBeJb7sSDJmXBdsNhg"}
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"

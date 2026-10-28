@@ -11,7 +11,7 @@ description: "Catastrophe intelligence: rapid observed damage assessment for ins
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {"crunchbase": "https://www.crunchbase.com/organization/mckenzie-intelligence-services-ltd", "linkedin": "https://www.linkedin.com/company/mckenzie-intelligence-services-ltd/", "twitter": "https://twitter.com/mckenzie_int", "youtube": "https://www.youtube.com/channel/UC2756RlVQipvKxgqUtZyCLA/playlists"}
+links: {"crunchbase":"https://www.crunchbase.com/organization/mckenzie-intelligence-services-ltd","linkedin":"https://www.linkedin.com/company/mckenzie-intelligence-services-ltd/","twitter":"https://twitter.com/mckenzie_int","youtube":"https://www.youtube.com/channel/UC2756RlVQipvKxgqUtZyCLA/playlists"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

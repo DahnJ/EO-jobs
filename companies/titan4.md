@@ -11,7 +11,7 @@ description: "AI-powered Earth observation platform for infrastructure monitorin
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://linkedin.com/company/titan4", "crunchbase": "https://crunchbase.com/organization/titan4"}
+links: {"linkedin":"https://linkedin.com/company/titan4","crunchbase":"https://crunchbase.com/organization/titan4"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

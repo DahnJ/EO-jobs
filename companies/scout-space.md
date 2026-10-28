@@ -11,7 +11,7 @@ description: "Satellite sensor systems, autonomy software, and data platforms fo
 satellites: ""
 category: ""
 listed: false
-links: {"linkedin": "https://www.linkedin.com/company/scoutdotspace"}
+links: {"linkedin":"https://www.linkedin.com/company/scoutdotspace"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-15"
 type: "not-eo"

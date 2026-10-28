@@ -10,7 +10,7 @@ description: "Geospatial intelligence services using commercial SAR satellite im
 satellites: ""
 category: ""
 listed: false
-links: {"linkedin": "linkedin.com/company/boxmica", "twitter": "twitter.com/boxMica"}
+links: {"linkedin":"linkedin.com/company/boxmica","twitter":"twitter.com/boxMica"}
 source: "awesome 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

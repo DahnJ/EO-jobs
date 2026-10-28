@@ -10,7 +10,7 @@ description: "Carbon sequestration evaluation through satellite imagery"
 satellites: ""
 category: ""
 listed: false
-links: {"crunchbase": "https://www.crunchbase.com/organization/albo-systems", "linkedin": "https://www.linkedin.com/company/albosys/?viewAsMember=true", "twitter": "https://twitter.com/AlboClimate"}
+links: {"crunchbase":"https://www.crunchbase.com/organization/albo-systems","linkedin":"https://www.linkedin.com/company/albosys/?viewAsMember=true","twitter":"https://twitter.com/AlboClimate"}
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"

@@ -11,7 +11,7 @@ description: "AI-powered geospatial analysis from satellite, aerial, and drone i
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/flypix-ai/", "crunchbase": "https://www.crunchbase.com/organization/flypix-ai"}
+links: {"linkedin":"https://www.linkedin.com/company/flypix-ai/","crunchbase":"https://www.crunchbase.com/organization/flypix-ai"}
 source: "awesome 2026-06"
 last_checked: "2026-06-15"
 type: "commercial-eo"

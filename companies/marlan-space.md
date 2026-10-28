@@ -11,7 +11,7 @@ description: "Space infrastructure company building satellites, launch vehicles,
 satellites: ""
 category: ""
 listed: false
-links: {"linkedin": "https://www.linkedin.com/company/marlanad/", "github": "https://github.com/wix/yoshi"}
+links: {"linkedin":"https://www.linkedin.com/company/marlanad/","github":"https://github.com/wix/yoshi"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

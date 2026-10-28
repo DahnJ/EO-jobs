@@ -11,7 +11,7 @@ description: "Fixed-wing professional drone manufacturer for industrial and geos
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/delair-tech", "youtube": "https://www.youtube.com/c/Delair-aerial-intelligence"}
+links: {"linkedin":"https://www.linkedin.com/company/delair-tech","youtube":"https://www.youtube.com/c/Delair-aerial-intelligence"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-15"
 type: "commercial-eo"

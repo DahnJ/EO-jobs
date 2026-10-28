@@ -11,7 +11,7 @@ description: "Space-based Earth observation and analytics company."
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/nuviewspace/", "twitter": "https://twitter.com/NUVIEWspace", "crunchbase": "https://www.crunchbase.com/organization/nuview-1f24"}
+links: {"linkedin":"https://www.linkedin.com/company/nuviewspace/","twitter":"https://twitter.com/NUVIEWspace","crunchbase":"https://www.crunchbase.com/organization/nuview-1f24"}
 source: "awesome 2026-06"
 last_checked: "2026-06-15"
 type: "commercial-eo"

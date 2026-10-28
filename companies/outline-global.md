@@ -3,7 +3,7 @@ name: "Outline Global"
 status: "active"
 website: "https://outlineglobal.com.au"
 careers_urls: ["https://www.outlineglobal.com.au/about-us/careers/"]
-locations: ["🇦🇺 Melbourne, Australia", "🇦🇺 Perth, Australia"]
+locations: ["🇦🇺 Melbourne, Australia","🇦🇺 Perth, Australia"]
 remote: ""
 remote_evidence: ""
 description: "EO data reseller, GIS services"

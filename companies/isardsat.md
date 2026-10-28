@@ -11,7 +11,7 @@ description: "EO: R&D focus on altimetry, Passive Microwaves and SAR imaging"
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/isardsat", "twitter": "https://twitter.com/isardSAT", "crunchbase": "https://crunchbase.com/organization/isardsat", "youtube": "https://youtube.com/c/isardsat"}
+links: {"linkedin":"https://www.linkedin.com/company/isardsat","twitter":"https://twitter.com/isardSAT","crunchbase":"https://crunchbase.com/organization/isardsat","youtube":"https://youtube.com/c/isardsat"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

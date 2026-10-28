@@ -10,7 +10,7 @@ description: "AI-powered satellite imagery analysis for defense and security (ac
 satellites: ""
 category: ""
 listed: false
-links: {"crunchbase": "https://www.crunchbase.com/organization/earthcube", "linkedin": "https://www.linkedin.com/company/azavea/", "twitter": "https://twitter.com/Preligens"}
+links: {"crunchbase":"https://www.crunchbase.com/organization/earthcube","linkedin":"https://www.linkedin.com/company/azavea/","twitter":"https://twitter.com/Preligens"}
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"

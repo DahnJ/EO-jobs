@@ -11,7 +11,7 @@ description: "Geo-data company using drones, uncrewed vessels, and sensors to un
 satellites: ""
 category: ""
 listed: false
-links: {"linkedin": "https://www.linkedin.com/company/fugro"}
+links: {"linkedin":"https://www.linkedin.com/company/fugro"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-15"
 type: "conglomerate"

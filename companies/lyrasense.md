@@ -10,7 +10,7 @@ description: "Hyperspectral satellite imaging and AI analysis for Earth observat
 satellites: ""
 category: ""
 listed: false
-links: {"linkedin": "https://www.linkedin.com/company/lyrasense"}
+links: {"linkedin":"https://www.linkedin.com/company/lyrasense"}
 source: "awesome 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

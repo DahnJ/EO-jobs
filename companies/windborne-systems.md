@@ -11,7 +11,7 @@ description: "Atmospheric data collection via long-duration autonomous balloons 
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/windborne/"}
+links: {"linkedin":"https://www.linkedin.com/company/windborne/"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-15"
 type: "commercial-eo"

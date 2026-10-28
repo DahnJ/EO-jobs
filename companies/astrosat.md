@@ -11,7 +11,7 @@ description: "Satellite data and Earth Observation services."
 satellites: ""
 category: "Earth Observation"
 listed: false
-links: {"linkedin": "https://www.linkedin.com/company/astrosat", "crunchbase": "https://www.crunchbase.com/organization/astrosat"}
+links: {"linkedin":"https://www.linkedin.com/company/astrosat","crunchbase":"https://www.crunchbase.com/organization/astrosat"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

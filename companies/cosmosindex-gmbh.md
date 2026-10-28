@@ -11,7 +11,7 @@ description: "EO for forest carbon, biodiversity, renewables, infrastructure"
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/cosmosindex-gmbh"}
+links: {"linkedin":"https://www.linkedin.com/company/cosmosindex-gmbh"}
 source: "awesome 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

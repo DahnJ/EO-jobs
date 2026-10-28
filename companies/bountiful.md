@@ -10,7 +10,7 @@ description: "Agricultural technology providing yield forecasting and analytics 
 satellites: ""
 category: ""
 listed: false
-links: {"linkedin": "http://linkedin.com/company/bountifulag", "twitter": "https://x.com/BountifulAg", "facebook": "https://www.facebook.com/BountifulAg/"}
+links: {"linkedin":"http://linkedin.com/company/bountifulag","twitter":"https://x.com/BountifulAg","facebook":"https://www.facebook.com/BountifulAg/"}
 source: "sheet:Digital Farming 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

@@ -11,7 +11,7 @@ description: "Decentralized mapping platform using dashcam networks for real-tim
 satellites: ""
 category: ""
 listed: false
-links: {"twitter": "https://x.com/hivemapper", "linkedin": "https://www.linkedin.com/company/hivemapper"}
+links: {"twitter":"https://x.com/hivemapper","linkedin":"https://www.linkedin.com/company/hivemapper"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-15"
 type: "commercial-eo"

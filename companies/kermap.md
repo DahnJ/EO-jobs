@@ -11,7 +11,7 @@ description: "Satellite and airborne imagery processing for agriculture and envi
 satellites: ""
 category: ""
 listed: true
-links: {"crunchbase": "https://www.crunchbase.com/organization/kermap", "linkedin": "https://www.linkedin.com/company/kermap/", "twitter": "https://twitter.com/kermap_info", "youtube": "https://www.youtube.com/channel/UC2q8oaFH4sKoJaWFOXvwAew"}
+links: {"crunchbase":"https://www.crunchbase.com/organization/kermap","linkedin":"https://www.linkedin.com/company/kermap/","twitter":"https://twitter.com/kermap_info","youtube":"https://www.youtube.com/channel/UC2q8oaFH4sKoJaWFOXvwAew"}
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"

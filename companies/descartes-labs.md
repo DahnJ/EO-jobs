@@ -11,7 +11,7 @@ description: "AI and Earth observation platform providing geospatial insights fo
 satellites: ""
 category: ""
 listed: true
-links: {"crunchbase": "https://www.crunchbase.com/organization/descartes-labs", "linkedin": "https://www.linkedin.com/company/descartes-labs/", "twitter": "https://twitter.com/DescartesLabs"}
+links: {"crunchbase":"https://www.crunchbase.com/organization/descartes-labs","linkedin":"https://www.linkedin.com/company/descartes-labs/","twitter":"https://twitter.com/DescartesLabs"}
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"

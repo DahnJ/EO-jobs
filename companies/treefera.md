@@ -11,7 +11,7 @@ description: "Information services company providing field-level clarity to agri
 satellites: ""
 category: ""
 listed: false
-links: {"linkedin": "https://www.linkedin.com/company/treefera/"}
+links: {"linkedin":"https://www.linkedin.com/company/treefera/"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-15"
 type: "commercial-eo"

@@ -11,7 +11,7 @@ description: "Farm management solutions"
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/cropin-technology/", "twitter": "https://x.com/CropInTech", "youtube": "https://www.youtube.com/channel/UCvlca6utL2wBUIvUlKlgObg", "crunchbase": "https://www.crunchbase.com/organization/cropin-technologies"}
+links: {"linkedin":"https://www.linkedin.com/company/cropin-technology/","twitter":"https://x.com/CropInTech","youtube":"https://www.youtube.com/channel/UCvlca6utL2wBUIvUlKlgObg","crunchbase":"https://www.crunchbase.com/organization/cropin-technologies"}
 source: "sheet:Digital Farming 2026-06"
 last_checked: "2026-06-15"
 type: "commercial-eo"

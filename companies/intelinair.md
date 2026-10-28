@@ -11,7 +11,7 @@ description: "UAV crop insights"
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/intelinair/", "twitter": "https://twitter.com/intelinair", "crunchbase": "https://crunchbase.com/organization/intelinair"}
+links: {"linkedin":"https://www.linkedin.com/company/intelinair/","twitter":"https://twitter.com/intelinair","crunchbase":"https://crunchbase.com/organization/intelinair"}
 source: "sheet:Digital Farming 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

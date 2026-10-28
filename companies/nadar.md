@@ -10,7 +10,7 @@ description: "Satellite-based deforestation monitoring and EUDR compliance for s
 satellites: ""
 category: ""
 listed: false
-links: {"linkedin": "https://www.linkedin.com/company/nadar-earth/"}
+links: {"linkedin":"https://www.linkedin.com/company/nadar-earth/"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

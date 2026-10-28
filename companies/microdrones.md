@@ -11,7 +11,7 @@ description: "Integrated drone systems with LiDAR and photogrammetry; surveying 
 satellites: ""
 category: ""
 listed: true
-links: {"twitter": "https://twitter.com/microdronesuavs", "youtube": "http://www.youtube.com/user/microdronesGMBH"}
+links: {"twitter":"https://twitter.com/microdronesuavs","youtube":"http://www.youtube.com/user/microdronesGMBH"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-15"
 type: "commercial-eo"

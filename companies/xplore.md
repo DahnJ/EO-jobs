@@ -11,7 +11,7 @@ description: "Space technology company providing 'Space as a Service' through hy
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/xplore", "crunchbase": "https://www.crunchbase.com/organization/xplore"}
+links: {"linkedin":"https://www.linkedin.com/company/xplore","crunchbase":"https://www.crunchbase.com/organization/xplore"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-15"
 type: "commercial-eo"

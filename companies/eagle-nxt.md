@@ -11,7 +11,7 @@ description: "Drone technology and remote sensing company providing integrated a
 satellites: ""
 category: ""
 listed: false
-links: {"linkedin": "https://www.linkedin.com/company/eagle-nxt/"}
+links: {"linkedin":"https://www.linkedin.com/company/eagle-nxt/"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-15"
 type: "commercial-eo"

@@ -11,7 +11,7 @@ description: "Satellite-based environmental monitoring for agriculture, climate,
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {"facebook": "https://www.facebook.com/meeosrl", "twitter": "https://www.twitter.com/meeosrl"}
+links: {"facebook":"https://www.facebook.com/meeosrl","twitter":"https://www.twitter.com/meeosrl"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

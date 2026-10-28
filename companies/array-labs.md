@@ -11,7 +11,7 @@ description: "Geospatial analytics and remote sensing solutions."
 satellites: ""
 category: ""
 listed: true
-links: {"crunchbase": "https://www.crunchbase.com/organization/array-labs", "linkedin": "https://www.linkedin.com/company/array-labs/", "twitter": "https://twitter.com/ArrayLabs"}
+links: {"crunchbase":"https://www.crunchbase.com/organization/array-labs","linkedin":"https://www.linkedin.com/company/array-labs/","twitter":"https://twitter.com/ArrayLabs"}
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"

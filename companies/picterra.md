@@ -11,7 +11,7 @@ description: "AI-powered satellite image analysis and interpretation platform."
 satellites: ""
 category: ""
 listed: true
-links: {"crunchbase": "https://www.crunchbase.com/organization/picterra", "linkedin": "https://www.linkedin.com/company/picterra/", "twitter": "https://twitter.com/picterraCH"}
+links: {"crunchbase":"https://www.crunchbase.com/organization/picterra","linkedin":"https://www.linkedin.com/company/picterra/","twitter":"https://twitter.com/picterraCH"}
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"

@@ -11,7 +11,7 @@ description: "Dutch Earth observation and satellite intelligence company."
 satellites: ""
 category: ""
 listed: false
-links: {"crunchbase": "https://www.crunchbase.com/organization/orbital-eye", "linkedin": "https://www.linkedin.com/company/orbitaleye/", "twitter": "https://twitter.com/OrbitalEye"}
+links: {"crunchbase":"https://www.crunchbase.com/organization/orbital-eye","linkedin":"https://www.linkedin.com/company/orbitaleye/","twitter":"https://twitter.com/OrbitalEye"}
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"

@@ -11,7 +11,7 @@ description: "Photogrammetry and drone mapping software; professional surveying 
 satellites: ""
 category: ""
 listed: false
-links: {"linkedin": "https://www.linkedin.com/company/pix4d", "twitter": "https://twitter.com/pix4d", "youtube": "https://www.youtube.com/channel/UCXHBqjCbv1wj_-itfvpVNIA"}
+links: {"linkedin":"https://www.linkedin.com/company/pix4d","twitter":"https://twitter.com/pix4d","youtube":"https://www.youtube.com/channel/UCXHBqjCbv1wj_-itfvpVNIA"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-15"
 type: "software"

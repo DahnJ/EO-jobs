@@ -11,7 +11,7 @@ description: "Multi-sensor satellite data and situational awareness platform wit
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/eartheye-space/"}
+links: {"linkedin":"https://www.linkedin.com/company/eartheye-space/"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-15"
 type: "commercial-eo"

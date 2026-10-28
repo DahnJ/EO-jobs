@@ -11,7 +11,7 @@ description: "Geospatial solutions and software engineering for digital transfor
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {"linkedin": "https://ar.linkedin.com/company/sur-emprendimientos-tecnol-gicos", "twitter": "https://twitter.com/SpaceSur", "youtube": "https://www.youtube.com/channel/UC82OTzEkWWGOodzR-tWq1cQ", "crunchbase": "https://www.crunchbase.com/organization/spacesur"}
+links: {"linkedin":"https://ar.linkedin.com/company/sur-emprendimientos-tecnol-gicos","twitter":"https://twitter.com/SpaceSur","youtube":"https://www.youtube.com/channel/UC82OTzEkWWGOodzR-tWq1cQ","crunchbase":"https://www.crunchbase.com/organization/spacesur"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

@@ -11,7 +11,7 @@ description: "Remote sensing technology for electricity network asset management
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/nmgroup", "youtube": "https://www.youtube.com/channel/UCS5b4XE4ERCn0S0WsF379FA"}
+links: {"linkedin":"https://www.linkedin.com/company/nmgroup","youtube":"https://www.youtube.com/channel/UCS5b4XE4ERCn0S0WsF379FA"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-15"
 type: "commercial-eo"

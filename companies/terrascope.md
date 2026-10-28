@@ -11,7 +11,7 @@ description: "Belgian Earth observation platform providing free satellite imager
 satellites: ""
 category: ""
 listed: false
-links: {"linkedin": "https://www.linkedin.com/company/17947", "twitter": "https://twitter.com/Terrascope_BE"}
+links: {"linkedin":"https://www.linkedin.com/company/17947","twitter":"https://twitter.com/Terrascope_BE"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-15"
 type: "nonprofit"

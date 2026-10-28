@@ -11,7 +11,7 @@ description: "Climate risk and sustainability solutions."
 satellites: ""
 category: ""
 listed: true
-links: {"crunchbase": "https://www.crunchbase.com/organization/axa-climate", "linkedin": "https://www.linkedin.com/company/axaclimate/?trk=public_profile_experience-item_profile-section-card_image-click", "twitter": "https://twitter.com/AXA"}
+links: {"crunchbase":"https://www.crunchbase.com/organization/axa-climate","linkedin":"https://www.linkedin.com/company/axaclimate/?trk=public_profile_experience-item_profile-section-card_image-click","twitter":"https://twitter.com/AXA"}
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"

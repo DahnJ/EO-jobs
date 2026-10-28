@@ -11,7 +11,7 @@ description: "Geospatial intelligence and GIS solutions for decision-making."
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/spatial-services"}
+links: {"linkedin":"https://www.linkedin.com/company/spatial-services"}
 source: "awesome 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

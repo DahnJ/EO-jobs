@@ -10,7 +10,7 @@ description: "Remote sensing and satellite data analysis for agriculture."
 satellites: ""
 category: ""
 listed: false
-links: {"linkedin": "https://www.linkedin.com/company/ariespace-s.r.l/", "twitter": "https://twitter.com/ariespacesrl"}
+links: {"linkedin":"https://www.linkedin.com/company/ariespace-s.r.l/","twitter":"https://twitter.com/ariespacesrl"}
 source: "awesome 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

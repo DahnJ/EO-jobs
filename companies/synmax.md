@@ -11,7 +11,7 @@ description: "Maritime, energy, and strategic market intelligence through satell
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/synmaxsolutions/", "twitter": "https://twitter.com/SynMaxEnergy", "crunchbase": "https://crunchbase.com/organization/synmax"}
+links: {"linkedin":"https://www.linkedin.com/company/synmaxsolutions/","twitter":"https://twitter.com/SynMaxEnergy","crunchbase":"https://crunchbase.com/organization/synmax"}
 source: "awesome 2026-06"
 last_checked: "2026-06-15"
 type: "commercial-eo"

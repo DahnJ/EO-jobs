@@ -11,7 +11,7 @@ description: "Satellite data provider for methane and greenhouse gas monitoring 
 satellites: ""
 category: ""
 listed: true
-links: {"crunchbase": "https://www.crunchbase.com/organization/ghgsat", "linkedin": "https://www.linkedin.com/company/ghgsat/", "twitter": "https://twitter.com/ghgsat"}
+links: {"crunchbase":"https://www.crunchbase.com/organization/ghgsat","linkedin":"https://www.linkedin.com/company/ghgsat/","twitter":"https://twitter.com/ghgsat"}
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"

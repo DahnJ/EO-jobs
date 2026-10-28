@@ -11,7 +11,7 @@ description: "LiDAR mapping hardware and point cloud software; surveying and civ
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/geocue-corporation", "youtube": "https://www.youtube.com/user/LIDARLAB/featured"}
+links: {"linkedin":"https://www.linkedin.com/company/geocue-corporation","youtube":"https://www.youtube.com/user/LIDARLAB/featured"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-15"
 type: "commercial-eo"

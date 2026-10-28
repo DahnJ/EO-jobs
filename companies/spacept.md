@@ -11,7 +11,7 @@ description: "AI-powered Earth observation and geospatial intelligence platform.
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/spacept/", "twitter": "https://twitter.com/SpaceptAI", "crunchbase": "https://www.crunchbase.com/organization/spacept"}
+links: {"linkedin":"https://www.linkedin.com/company/spacept/","twitter":"https://twitter.com/SpaceptAI","crunchbase":"https://www.crunchbase.com/organization/spacept"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

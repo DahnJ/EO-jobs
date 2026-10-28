@@ -11,7 +11,7 @@ description: "EO: Urban, Agriculture, Disaster & Environment"
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/vasundharaa-geo-technologies-pvt-ltd/?originalSubdomain=in", "youtube": "https://www.youtube.com/@VasundharaaGeoTechnologies"}
+links: {"linkedin":"https://www.linkedin.com/company/vasundharaa-geo-technologies-pvt-ltd/?originalSubdomain=in","youtube":"https://www.youtube.com/@VasundharaaGeoTechnologies"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

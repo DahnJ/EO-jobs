@@ -11,7 +11,7 @@ description: "Field intelligence platform integrating satellite, drone, and sens
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/agerpoint", "crunchbase": "https://www.crunchbase.com/organization/agerpoint"}
+links: {"linkedin":"https://www.linkedin.com/company/agerpoint","crunchbase":"https://www.crunchbase.com/organization/agerpoint"}
 source: "sheet:Digital Farming 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

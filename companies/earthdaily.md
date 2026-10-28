@@ -11,7 +11,7 @@ description: "Satellite constellation and Earth observation data provider with A
 satellites: ""
 category: ""
 listed: true
-links: {"crunchbase": "https://www.crunchbase.com/organization/earthdaily-analytics", "linkedin": "https://www.linkedin.com/company/earthdailyanalytics/", "twitter": "https://twitter.com/earthdailya"}
+links: {"crunchbase":"https://www.crunchbase.com/organization/earthdaily-analytics","linkedin":"https://www.linkedin.com/company/earthdailyanalytics/","twitter":"https://twitter.com/earthdailya"}
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"

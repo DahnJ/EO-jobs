@@ -4,3 +4,6 @@ spac-slides
 .venv/
 __pycache__/
 *.pyc
+
+.cpcache/
+target/

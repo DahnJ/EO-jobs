@@ -11,7 +11,7 @@ description: "AI-powered sustainability decisions combining Earth observation wi
 satellites: ""
 category: ""
 listed: true
-links: {"crunchbase": "https://www.crunchbase.com/organization/4-earth-intelligence", "linkedin": "https://www.linkedin.com/company/4-earth-intelligence/", "twitter": "https://twitter.com/4_intelligence", "youtube": "https://www.youtube.com/channel/UCE9wUQRs6B2Rdj6jEJGT2-Q"}
+links: {"crunchbase":"https://www.crunchbase.com/organization/4-earth-intelligence","linkedin":"https://www.linkedin.com/company/4-earth-intelligence/","twitter":"https://twitter.com/4_intelligence","youtube":"https://www.youtube.com/channel/UCE9wUQRs6B2Rdj6jEJGT2-Q"}
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"

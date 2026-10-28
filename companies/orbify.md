@@ -10,7 +10,7 @@ description: "Polish Earth observation and satellite analytics platform."
 satellites: ""
 category: ""
 listed: false
-links: {"crunchbase": "https://www.crunchbase.com/organization/orbify", "linkedin": "https://www.linkedin.com/company/orbify/", "twitter": "https://twitter.com/OrbifyInc", "medium": "https://blog.orbify.com/"}
+links: {"crunchbase":"https://www.crunchbase.com/organization/orbify","linkedin":"https://www.linkedin.com/company/orbify/","twitter":"https://twitter.com/OrbifyInc","medium":"https://blog.orbify.com/"}
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"

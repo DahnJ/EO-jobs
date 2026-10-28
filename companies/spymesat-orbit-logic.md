@@ -11,7 +11,7 @@ description: "Real-time EO satellite tracking and on-demand access to satellite 
 satellites: ""
 category: ""
 listed: true
-links: {"crunchbase": "https://www.crunchbase.com/organization/orbit-logic", "linkedin": "https://www.linkedin.com/company/orbit-logic/?originalSubdomain=ru", "twitter": "https://twitter.com/spymesat", "youtube": "https://www.youtube.com/channel/UCUjRQSlr2D26Pf9RP4k99Ig"}
+links: {"crunchbase":"https://www.crunchbase.com/organization/orbit-logic","linkedin":"https://www.linkedin.com/company/orbit-logic/?originalSubdomain=ru","twitter":"https://twitter.com/spymesat","youtube":"https://www.youtube.com/channel/UCUjRQSlr2D26Pf9RP4k99Ig"}
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"

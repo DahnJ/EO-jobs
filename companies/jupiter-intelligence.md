@@ -11,7 +11,7 @@ description: "Climate change risk analytics"
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/27218084/", "crunchbase": "https://crunchbase.com/organization/jupiter-intelligence"}
+links: {"linkedin":"https://www.linkedin.com/company/27218084/","crunchbase":"https://crunchbase.com/organization/jupiter-intelligence"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

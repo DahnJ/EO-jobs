@@ -11,7 +11,7 @@ description: "Spatial intelligence platform providing satellite imagery, geospat
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/vantortech", "twitter": "https://x.com/vantortech", "youtube": "https://www.youtube.com/@VantorTech", "crunchbase": "https://crunchbase.com/organization/vantor"}
+links: {"linkedin":"https://www.linkedin.com/company/vantortech","twitter":"https://x.com/vantortech","youtube":"https://www.youtube.com/@VantorTech","crunchbase":"https://crunchbase.com/organization/vantor"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

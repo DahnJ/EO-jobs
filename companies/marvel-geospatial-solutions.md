@@ -11,7 +11,7 @@ description: "Drone surveying, GIS/CAD, LiDAR mapping, and digital twins for mul
 satellites: ""
 category: ""
 listed: true
-links: {"crunchbase": "https://www.crunchbase.com/organization/marvel-geospatial-solutions", "linkedin": "https://in.linkedin.com/company/marvel-geospatial-solutions"}
+links: {"crunchbase":"https://www.crunchbase.com/organization/marvel-geospatial-solutions","linkedin":"https://in.linkedin.com/company/marvel-geospatial-solutions"}
 source: "awesome 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

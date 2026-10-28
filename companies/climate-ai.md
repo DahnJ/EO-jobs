@@ -11,7 +11,7 @@ description: "Enterprise climate resilience platform for food and agriculture se
 satellites: ""
 category: ""
 listed: true
-links: {"crunchbase": "https://www.crunchbase.com/organization/climateai", "linkedin": "https://www.linkedin.com/company/climateai/", "twitter": "https://twitter.com/climateai?lang=en", "github": "https://github.com/ClimateAI"}
+links: {"crunchbase":"https://www.crunchbase.com/organization/climateai","linkedin":"https://www.linkedin.com/company/climateai/","twitter":"https://twitter.com/climateai?lang=en","github":"https://github.com/ClimateAI"}
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"

@@ -11,7 +11,7 @@ description: "European aerial surveying and remote sensing company providing ima
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/eurosense", "twitter": "https://twitter.com/Eurosense_BE"}
+links: {"linkedin":"https://www.linkedin.com/company/eurosense","twitter":"https://twitter.com/Eurosense_BE"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-15"
 type: "commercial-eo"

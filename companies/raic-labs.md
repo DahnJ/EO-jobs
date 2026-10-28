@@ -11,7 +11,7 @@ description: "AI-powered visual data analysis for imagery; serves agriculture, e
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/synthetaic", "twitter": "https://twitter.com/RAICLabs"}
+links: {"linkedin":"https://www.linkedin.com/company/synthetaic","twitter":"https://twitter.com/RAICLabs"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-15"
 type: "commercial-eo"

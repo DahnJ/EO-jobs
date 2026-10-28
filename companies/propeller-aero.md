@@ -11,7 +11,7 @@ description: "Cloud-based drone mapping and 3D construction analytics; construct
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/propeller-aero/", "youtube": "https://www.youtube.com/c/PropellerAero"}
+links: {"linkedin":"https://www.linkedin.com/company/propeller-aero/","youtube":"https://www.youtube.com/c/PropellerAero"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-15"
 type: "commercial-eo"

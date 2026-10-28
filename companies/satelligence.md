@@ -11,7 +11,7 @@ description: "Sustainability monitoring and supply chain traceability using sate
 satellites: "Yes"
 category: ""
 listed: true
-links: {"crunchbase": "https://www.crunchbase.com/organization/satelligence", "linkedin": "https://www.linkedin.com/company/satelligence", "twitter": "https://twitter.com/SatelligenceEO", "youtube": "https://www.youtube.com/@Satelligence"}
+links: {"crunchbase":"https://www.crunchbase.com/organization/satelligence","linkedin":"https://www.linkedin.com/company/satelligence","twitter":"https://twitter.com/SatelligenceEO","youtube":"https://www.youtube.com/@Satelligence"}
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"

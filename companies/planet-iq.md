@@ -11,7 +11,7 @@ description: "Supply chain transparency and geospatial intelligence platform."
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/planetiq", "crunchbase": "https://www.crunchbase.com/organization/planetiq"}
+links: {"linkedin":"https://www.linkedin.com/company/planetiq","crunchbase":"https://www.crunchbase.com/organization/planetiq"}
 source: "awesome 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

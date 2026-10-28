@@ -11,7 +11,7 @@ description: "Very High-Resolution satellite imagery and analytics services with
 satellites: "Yes"
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/globaleosatellites/", "twitter": "https://twitter.com/geosat_sat", "youtube": "https://www.youtube.com/channel/UC1WWTLsYpFCMw_GwK4dZfUQ"}
+links: {"linkedin":"https://www.linkedin.com/company/globaleosatellites/","twitter":"https://twitter.com/geosat_sat","youtube":"https://www.youtube.com/channel/UC1WWTLsYpFCMw_GwK4dZfUQ"}
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"

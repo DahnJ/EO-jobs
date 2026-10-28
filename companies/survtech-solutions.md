@@ -11,7 +11,7 @@ description: "Geospatial and surveying firm providing land surveying, aerial map
 satellites: ""
 category: ""
 listed: false
-links: {"linkedin": "https://www.linkedin.com/company/survtech-solutions", "facebook": "https://www.facebook.com/survtechsolutions", "instagram": "https://www.instagram.com/survtechsolutions", "youtube": "https://www.youtube.com/channel/UCsomechannel"}
+links: {"linkedin":"https://www.linkedin.com/company/survtech-solutions","facebook":"https://www.facebook.com/survtechsolutions","instagram":"https://www.instagram.com/survtechsolutions","youtube":"https://www.youtube.com/channel/UCsomechannel"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-15"
 type: "consultancy"

@@ -11,7 +11,7 @@ description: "Drone automation and data analysis platform providing enterprise s
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/skycatch"}
+links: {"linkedin":"https://www.linkedin.com/company/skycatch"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-15"
 type: "commercial-eo"

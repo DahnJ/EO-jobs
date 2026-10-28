@@ -3,7 +3,7 @@ name: "Routescene"
 status: "active"
 website: "https://www.routescene.com"
 careers_urls: []
-locations: ["🇺🇸 Farmington, New Mexico, USA", "🇬🇧 Edinburgh, Scotland, United Kingdom"]
+locations: ["🇺🇸 Farmington, New Mexico, USA","🇬🇧 Edinburgh, Scotland, United Kingdom"]
 remote: ""
 remote_evidence: ""
 remote_confidence: "low"
@@ -11,7 +11,7 @@ description: "LiDAR 3D mapping solutions for drones and vehicles; surveying and 
 satellites: ""
 category: ""
 listed: false
-links: {"linkedin": "https://www.linkedin.com/company/routescene/", "twitter": "https://twitter.com/routescene", "youtube": "https://www.youtube.com/channel/UC0XDDy18u68_WIhbmJLk9QA"}
+links: {"linkedin":"https://www.linkedin.com/company/routescene/","twitter":"https://twitter.com/routescene","youtube":"https://www.youtube.com/channel/UC0XDDy18u68_WIhbmJLk9QA"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-15"
 type: "commercial-eo"

@@ -11,7 +11,7 @@ description: "Cloud-native GIS platform for creating maps, dashboards, and spati
 satellites: ""
 category: ""
 listed: false
-links: {"linkedin": "https://www.linkedin.com/company/feltmaps/", "twitter": "https://twitter.com/felt", "youtube": "https://www.youtube.com/@feltmaps/playlists", "bluesky": "https://bsky.app/profile/felt.com"}
+links: {"linkedin":"https://www.linkedin.com/company/feltmaps/","twitter":"https://twitter.com/felt","youtube":"https://www.youtube.com/@feltmaps/playlists","bluesky":"https://bsky.app/profile/felt.com"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-15"
 type: "software"

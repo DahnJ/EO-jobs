@@ -3,7 +3,7 @@ name: "Attentive AI"
 status: "renamed"
 website: "https://www.ibeam.ai"
 careers_urls: ["https://www.ibeam.ai/careers"]
-locations: ["🇮🇳 Noida, India", "🇺🇸 San Jose, USA"]
+locations: ["🇮🇳 Noida, India","🇺🇸 San Jose, USA"]
 remote: "Hybrid"
 remote_evidence: "'Flexible work arrangements — in-office, remote, or hybrid' (ibeam.ai/careers)"
 description: "EO: buiseness intelligence and asset monitoring"

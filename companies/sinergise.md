@@ -11,7 +11,7 @@ description: "Geospatial software company providing cloud platforms and Earth ob
 satellites: ""
 category: ""
 listed: true
-links: {"crunchbase": "https://www.crunchbase.com/organization/sinergise", "linkedin": "https://www.linkedin.com/company/sinergise/?originalSubdomain=si", "twitter": "https://twitter.com/sinergise", "youtube": "https://www.youtube.com/user/Sinergise"}
+links: {"crunchbase":"https://www.crunchbase.com/organization/sinergise","linkedin":"https://www.linkedin.com/company/sinergise/?originalSubdomain=si","twitter":"https://twitter.com/sinergise","youtube":"https://www.youtube.com/user/Sinergise"}
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"

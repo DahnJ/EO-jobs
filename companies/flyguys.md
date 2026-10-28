@@ -11,7 +11,7 @@ description: "Nationwide drone services company providing aerial imaging, LiDAR,
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/flyguys.io/"}
+links: {"linkedin":"https://www.linkedin.com/company/flyguys.io/"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-15"
 type: "commercial-eo"

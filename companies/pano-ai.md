@@ -11,7 +11,7 @@ description: "AI-powered wildfire and bushfire detection technology for early th
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/pano-ai/"}
+links: {"linkedin":"https://www.linkedin.com/company/pano-ai/"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-15"
 type: "commercial-eo"

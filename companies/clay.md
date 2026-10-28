@@ -11,7 +11,7 @@ description: "Platform or product company (limited information available)."
 satellites: ""
 category: ""
 listed: false
-links: {"github": "https://github.com/clay-foundation", "linkedin": "https://www.linkedin.com/company/made-with-clay"}
+links: {"github":"https://github.com/clay-foundation","linkedin":"https://www.linkedin.com/company/made-with-clay"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-15"
 type: "commercial-eo"

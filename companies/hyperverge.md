@@ -3,7 +3,7 @@ name: "Hyperverge"
 status: "active"
 website: "https://hyperverge.co/"
 careers_urls: ["https://apply.workable.com/hyperverge/#jobs"]
-locations: ["🇮🇳 Bangalore, India", "🇺🇸 Palo Alto, USA"]
+locations: ["🇮🇳 Bangalore, India","🇺🇸 Palo Alto, USA"]
 remote: ""
 remote_evidence: ""
 description: "AI identity verification / KYC platform"

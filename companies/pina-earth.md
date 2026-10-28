@@ -11,7 +11,7 @@ description: "Climate tech and Earth observation for environmental monitoring."
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/pina-de", "crunchbase": "https://www.crunchbase.com/organization/pina-earth", "twitter": "https://twitter.com/pinaearth"}
+links: {"linkedin":"https://www.linkedin.com/company/pina-de","crunchbase":"https://www.crunchbase.com/organization/pina-earth","twitter":"https://twitter.com/pinaearth"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

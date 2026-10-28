@@ -3,7 +3,7 @@ name: "TCarta Marine"
 status: "active"
 website: "https://www.tcarta.com"
 careers_urls: ["x"]
-locations: ["🇺🇸 Denver, USA", "🇬🇧 London, UK"]
+locations: ["🇺🇸 Denver, USA","🇬🇧 London, UK"]
 remote: ""
 remote_evidence: ""
 description: "Marine Geospatial Analysis + Imagery Reseller"

@@ -11,7 +11,7 @@ description: "AI-powered geospatial intelligence platform providing property and
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {"linkedin": "https://linkedin.com/company/ecopia-ai/", "twitter": "https://twitter.com/ecopiaAI", "crunchbase": "https://www.crunchbase.com/organization/ecopia-tech-corporation"}
+links: {"linkedin":"https://linkedin.com/company/ecopia-ai/","twitter":"https://twitter.com/ecopiaAI","crunchbase":"https://www.crunchbase.com/organization/ecopia-tech-corporation"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-15"
 type: "commercial-eo"

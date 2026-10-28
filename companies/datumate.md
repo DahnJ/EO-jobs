@@ -11,7 +11,7 @@ description: "Cloud-based drone mapping and progress tracking for heavy civil co
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/datumate/", "twitter": "https://twitter.com/datumate", "youtube": "https://www.youtube.com/@Datumate"}
+links: {"linkedin":"https://www.linkedin.com/company/datumate/","twitter":"https://twitter.com/datumate","youtube":"https://www.youtube.com/@Datumate"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-15"
 type: "commercial-eo"

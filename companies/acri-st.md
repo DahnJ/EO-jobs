@@ -11,7 +11,7 @@ description: "EO mission simulation, environmental monitoring"
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/acri-st/", "crunchbase": "https://www.crunchbase.com/organization/acrist"}
+links: {"linkedin":"https://www.linkedin.com/company/acri-st/","crunchbase":"https://www.crunchbase.com/organization/acrist"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

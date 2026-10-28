@@ -11,7 +11,7 @@ description: "Solar resource data and software provider for photovoltaic project
 satellites: ""
 category: ""
 listed: true
-links: {"crunchbase": "https://www.crunchbase.com/organization/solargis", "linkedin": "https://www.linkedin.com/company/solargis?originalSubdomain=sk", "twitter": "https://twitter.com/solargis", "youtube": "https://www.youtube.com/channel/UCJ3mbAUcrsT4kM9YEONd3kQ"}
+links: {"crunchbase":"https://www.crunchbase.com/organization/solargis","linkedin":"https://www.linkedin.com/company/solargis?originalSubdomain=sk","twitter":"https://twitter.com/solargis","youtube":"https://www.youtube.com/channel/UCJ3mbAUcrsT4kM9YEONd3kQ"}
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"

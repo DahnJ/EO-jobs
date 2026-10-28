@@ -11,7 +11,7 @@ description: "Geospatial intelligence company building AI-powered satellite imag
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/granular-ai"}
+links: {"linkedin":"https://www.linkedin.com/company/granular-ai"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-15"
 type: "commercial-eo"

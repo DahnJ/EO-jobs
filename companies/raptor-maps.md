@@ -11,7 +11,7 @@ description: "Solar asset management software with autonomous drones and visual 
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/raptor-maps"}
+links: {"linkedin":"https://www.linkedin.com/company/raptor-maps"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-15"
 type: "commercial-eo"

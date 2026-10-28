@@ -11,7 +11,7 @@ description: "Geospatial data and remote sensing company."
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/scanway-s-a/", "twitter": "https://x.com/Scanway_SA", "youtube": "https://www.youtube.com/channel/UCCqSRV8sZ4BMK2pFRHZ-7qw", "crunchbase": "https://www.crunchbase.com/organization/scanway-bb6d"}
+links: {"linkedin":"https://www.linkedin.com/company/scanway-s-a/","twitter":"https://x.com/Scanway_SA","youtube":"https://www.youtube.com/channel/UCCqSRV8sZ4BMK2pFRHZ-7qw","crunchbase":"https://www.crunchbase.com/organization/scanway-bb6d"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-15"
 type: "commercial-eo"

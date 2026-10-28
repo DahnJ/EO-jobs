@@ -11,7 +11,7 @@ description: "Agricultural intelligence providing global crop data and field-lev
 satellites: ""
 category: ""
 listed: true
-links: {"crunchbase": "https://www.crunchbase.com/organization/agrograph", "linkedin": "https://www.linkedin.com/company/agrograph/", "twitter": "https://twitter.com/agrograph", "github": "https://github.com/Agrograph", "youtube": "https://www.youtube.com/channel/UCAa4hyHNsVUSabUVLxw6ecQ"}
+links: {"crunchbase":"https://www.crunchbase.com/organization/agrograph","linkedin":"https://www.linkedin.com/company/agrograph/","twitter":"https://twitter.com/agrograph","github":"https://github.com/Agrograph","youtube":"https://www.youtube.com/channel/UCAa4hyHNsVUSabUVLxw6ecQ"}
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"

@@ -10,7 +10,7 @@ description: "Airborne hyperspectral remote sensing and digital aerial photograp
 satellites: ""
 category: ""
 listed: false
-links: {"linkedin": "https://www.linkedin.com/company/hyvista-corporation/", "twitter": "https://www.twitter.com/hymap/"}
+links: {"linkedin":"https://www.linkedin.com/company/hyvista-corporation/","twitter":"https://www.twitter.com/hymap/"}
 source: "awesome 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

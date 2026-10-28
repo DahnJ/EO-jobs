@@ -11,7 +11,7 @@ description: "Geospatial services including aerial surveys, land surveys, 3D mod
 satellites: ""
 category: ""
 listed: false
-links: {"linkedin": "https://www.linkedin.com/company/aam-pty-ltd", "twitter": "https://twitter.com/WoolpertAPAC", "youtube": "https://www.youtube.com/AAMPtyLtd"}
+links: {"linkedin":"https://www.linkedin.com/company/aam-pty-ltd","twitter":"https://twitter.com/WoolpertAPAC","youtube":"https://www.youtube.com/AAMPtyLtd"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-15"
 type: "consultancy"

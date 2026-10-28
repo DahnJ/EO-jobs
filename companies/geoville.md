@@ -11,7 +11,7 @@ description: "Earth Observation satellite-based information solutions: agricultu
 satellites: ""
 category: ""
 listed: true
-links: {"crunchbase": "https://www.crunchbase.com/organization/geoville", "linkedin": "https://www.linkedin.com/company/geoville-information-systems-gmbh/", "twitter": "https://twitter.com/geoville_gmbh"}
+links: {"crunchbase":"https://www.crunchbase.com/organization/geoville","linkedin":"https://www.linkedin.com/company/geoville-information-systems-gmbh/","twitter":"https://twitter.com/geoville_gmbh"}
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"

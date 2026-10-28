@@ -11,7 +11,7 @@ description: "Thermal Earth Observation satellite company."
 satellites: "Yes (2023)"
 category: ""
 listed: true
-links: {"crunchbase": "https://www.crunchbase.com/organization/global-satellite-vu", "linkedin": "https://www.linkedin.com/company/10487382/", "twitter": "https://twitter.com/satellitevu"}
+links: {"crunchbase":"https://www.crunchbase.com/organization/global-satellite-vu","linkedin":"https://www.linkedin.com/company/10487382/","twitter":"https://twitter.com/satellitevu"}
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"

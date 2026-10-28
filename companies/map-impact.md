@@ -10,7 +10,7 @@ description: "Satellite data and impact measurement platform."
 satellites: ""
 category: ""
 listed: false
-links: {"linkedin": "https://www.linkedin.com/company/map-impact"}
+links: {"linkedin":"https://www.linkedin.com/company/map-impact"}
 source: "awesome 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

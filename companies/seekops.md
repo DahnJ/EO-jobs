@@ -11,7 +11,7 @@ description: "Operations and monitoring platform."
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/seekops-inc./", "crunchbase": "https://www.crunchbase.com/organization/seekops"}
+links: {"linkedin":"https://www.linkedin.com/company/seekops-inc./","crunchbase":"https://www.crunchbase.com/organization/seekops"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-15"
 type: "commercial-eo"

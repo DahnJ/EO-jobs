@@ -11,7 +11,7 @@ description: "Geospatial AI company providing Earth observation and intelligence
 satellites: ""
 category: ""
 listed: false
-links: {"linkedin": "https://www.linkedin.com/company/askearth", "twitter": "https://twitter.com/iaskearth"}
+links: {"linkedin":"https://www.linkedin.com/company/askearth","twitter":"https://twitter.com/iaskearth"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-15"
 type: "commercial-eo"

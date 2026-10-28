@@ -3,7 +3,7 @@ name: "Wingtra"
 status: "active"
 website: "https://wingtra.com"
 careers_urls: ["https://wingtra.com/company/career/"]
-locations: ["🇨🇭 Zurich, Switzerland", "🇺🇸 Fort Lauderdale, USA"]
+locations: ["🇨🇭 Zurich, Switzerland","🇺🇸 Fort Lauderdale, USA"]
 remote: ""
 remote_evidence: ""
 remote_confidence: "low"
@@ -11,7 +11,7 @@ description: "VTOL drone surveying solutions for mapping and data collection; pr
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/9490361", "twitter": "https://x.com/Wingtra", "youtube": "https://www.youtube.com/c/Wingtra"}
+links: {"linkedin":"https://www.linkedin.com/company/9490361","twitter":"https://x.com/Wingtra","youtube":"https://www.youtube.com/c/Wingtra"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-15"
 type: "commercial-eo"

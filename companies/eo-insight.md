@@ -11,7 +11,7 @@ description: "Geospatial analysis and modeling platform transforming Earth obser
 satellites: ""
 category: ""
 listed: false
-links: {"facebook": "https://www.facebook.com/eo-insight", "twitter": "https://twitter.com/eo-insight", "github": "https://github.com/eo-insight", "youtube": "https://www.youtube.com/eo-insight"}
+links: {"facebook":"https://www.facebook.com/eo-insight","twitter":"https://twitter.com/eo-insight","github":"https://github.com/eo-insight","youtube":"https://www.youtube.com/eo-insight"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-15"
 type: "commercial-eo"

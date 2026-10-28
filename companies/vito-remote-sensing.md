@@ -11,7 +11,7 @@ description: "Earth observation company providing geo intelligence and satellite
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/vito/?originalSubdomain=be", "twitter": "https://twitter.com/VITO_RS_", "youtube": "https://vimeo.com/channels/vitors"}
+links: {"linkedin":"https://www.linkedin.com/company/vito/?originalSubdomain=be","twitter":"https://twitter.com/VITO_RS_","youtube":"https://vimeo.com/channels/vitors"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

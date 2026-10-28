@@ -11,7 +11,7 @@ description: "Surface intelligence and geospatial analytics platform for earth o
 satellites: ""
 category: ""
 listed: true
-links: {"crunchbase": "https://www.crunchbase.com/organization/global-surface-intelligence-ltd", "linkedin": "https://www.linkedin.com/company/global-surface-intelligence/", "twitter": "https://twitter.com/gsiearth", "youtube": "https://www.youtube.com/channel/UCtfeLVGv-hs3PHFXyQqpQHg/featured"}
+links: {"crunchbase":"https://www.crunchbase.com/organization/global-surface-intelligence-ltd","linkedin":"https://www.linkedin.com/company/global-surface-intelligence/","twitter":"https://twitter.com/gsiearth","youtube":"https://www.youtube.com/channel/UCtfeLVGv-hs3PHFXyQqpQHg/featured"}
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"

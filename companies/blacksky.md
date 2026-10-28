@@ -11,7 +11,7 @@ description: "Space-based intelligence and tactical ISR platform with real-time 
 satellites: "Yes"
 category: ""
 listed: true
-links: {"crunchbase": "https://www.crunchbase.com/organization/blacksky-global", "linkedin": "https://www.linkedin.com/company/blackskyinc/", "twitter": "https://twitter.com/BlackSky_Inc", "spac": "https://www.osprey-technology.com/s/BlackSky_Investor-Presentation-September-2021_v11-as-Filed.pdf", "stocks": "$BKSY", "youtube": "https://www.youtube.com/@blacksky_inc"}
+links: {"crunchbase":"https://www.crunchbase.com/organization/blacksky-global","linkedin":"https://www.linkedin.com/company/blackskyinc/","twitter":"https://twitter.com/BlackSky_Inc","spac":"https://www.osprey-technology.com/s/BlackSky_Investor-Presentation-September-2021_v11-as-Filed.pdf","stocks":"$BKSY","youtube":"https://www.youtube.com/@blacksky_inc"}
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"

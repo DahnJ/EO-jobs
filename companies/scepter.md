@@ -10,7 +10,7 @@ description: "Drone and aerial imaging company."
 satellites: ""
 category: ""
 listed: false
-links: {"linkedin": "https://www.linkedin.com/company/scepterair/", "twitter": "https://mobile.twitter.com/scepterinc"}
+links: {"linkedin":"https://www.linkedin.com/company/scepterair/","twitter":"https://mobile.twitter.com/scepterinc"}
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"

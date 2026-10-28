@@ -3,14 +3,14 @@ name: "Astraea"
 status: "acquired"
 website: "https://astraea.earth/"
 careers_urls: ["https://astraea.earth/careers/"]
-locations: ["🇺🇸 Charlottesville, USA", "🇺🇸 Boulder, CO, USA"]
+locations: ["🇺🇸 Charlottesville, USA","🇺🇸 Boulder, CO, USA"]
 remote: "No"
 remote_evidence: ""
 description: "Analytics platform, consulting"
 satellites: ""
 category: ""
 listed: false
-links: {"crunchbase": "https://www.crunchbase.com/organization/astraea-inc", "linkedin": "https://www.linkedin.com/company/astraea/", "twitter": "https://twitter.com/AstraeaInc"}
+links: {"crunchbase":"https://www.crunchbase.com/organization/astraea-inc","linkedin":"https://www.linkedin.com/company/astraea/","twitter":"https://twitter.com/AstraeaInc"}
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"

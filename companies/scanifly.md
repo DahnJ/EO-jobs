@@ -11,7 +11,7 @@ description: "Solar design software using drone 3D modeling for residential and 
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/scanifly/", "twitter": "https://x.com/scanifly", "youtube": "https://www.youtube.com/@Scanifly"}
+links: {"linkedin":"https://www.linkedin.com/company/scanifly/","twitter":"https://x.com/scanifly","youtube":"https://www.youtube.com/@Scanifly"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-15"
 type: "commercial-eo"

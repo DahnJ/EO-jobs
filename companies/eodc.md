@@ -11,7 +11,7 @@ description: "EO: Data Centre for Water Resources Monitoring"
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/eodc-earth-observation-data-centre-for-water-resources-monitoring-gmbh/?viewAsMember=true", "youtube": "https://www.youtube.com/channel/UCtpry4pkOJy5DCL_y1owFbg", "twitter": "https://twitter.com/", "crunchbase": "https://www.crunchbase.com/organization/earth-observation-data-centre"}
+links: {"linkedin":"https://www.linkedin.com/company/eodc-earth-observation-data-centre-for-water-resources-monitoring-gmbh/?viewAsMember=true","youtube":"https://www.youtube.com/channel/UCtpry4pkOJy5DCL_y1owFbg","twitter":"https://twitter.com/","crunchbase":"https://www.crunchbase.com/organization/earth-observation-data-centre"}
 source: "awesome 2026-06"
 last_checked: "2026-06-15"
 type: "commercial-eo"

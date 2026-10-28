@@ -11,7 +11,7 @@ description: "Space intelligence company providing satellite imagery and AI anal
 satellites: ""
 category: ""
 listed: true
-links: {"crunchbase": "https://www.crunchbase.com/organization/imagesat-international", "linkedin": "https://www.linkedin.com/company/imagesat-international/", "twitter": "https://twitter.com/ImageSatIntl", "youtube": "https://www.youtube.com/channel/UCKCDCCfyok2sc-xARzYJzJw"}
+links: {"crunchbase":"https://www.crunchbase.com/organization/imagesat-international","linkedin":"https://www.linkedin.com/company/imagesat-international/","twitter":"https://twitter.com/ImageSatIntl","youtube":"https://www.youtube.com/channel/UCKCDCCfyok2sc-xARzYJzJw"}
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"

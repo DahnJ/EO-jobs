@@ -10,7 +10,7 @@ description: "Earth data infrastructure company enabling AI to understand and pr
 satellites: ""
 category: ""
 listed: false
-links: {"linkedin": "https://www.linkedin.com/company/xoople", "youtube": "https://www.youtube.com/@xoopleworld"}
+links: {"linkedin":"https://www.linkedin.com/company/xoople","youtube":"https://www.youtube.com/@xoopleworld"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

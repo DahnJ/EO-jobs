@@ -11,7 +11,7 @@ description: "Agricultural monitoring and analytics using satellite imagery."
 satellites: ""
 category: ""
 listed: true
-links: {"crunchbase": "https://www.crunchbase.com/organization/satsure-d0b9", "linkedin": "https://www.linkedin.com/company/satsure/", "twitter": "https://twitter.com/sat_sure"}
+links: {"crunchbase":"https://www.crunchbase.com/organization/satsure-d0b9","linkedin":"https://www.linkedin.com/company/satsure/","twitter":"https://twitter.com/sat_sure"}
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"

@@ -11,7 +11,7 @@ description: "Satellite imaging and services company."
 satellites: ""
 category: ""
 listed: true
-links: {"crunchbase": "https://www.crunchbase.com/organization/si-imaging-services", "linkedin": "https://www.linkedin.com/company/si-imaging-services/?originalSubdomain=kr", "twitter": "https://twitter.com/si_imaging"}
+links: {"crunchbase":"https://www.crunchbase.com/organization/si-imaging-services","linkedin":"https://www.linkedin.com/company/si-imaging-services/?originalSubdomain=kr","twitter":"https://twitter.com/si_imaging"}
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"

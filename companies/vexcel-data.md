@@ -11,7 +11,7 @@ description: "World's largest aerial imagery and geospatial data program with 7.
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/vexcel"}
+links: {"linkedin":"https://www.linkedin.com/company/vexcel"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-15"
 type: "commercial-eo"

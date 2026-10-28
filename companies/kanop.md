@@ -11,7 +11,7 @@ description: "Voluntary Carbon Market reporting"
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/kanop/", "crunchbase": "https://crunchbase.com/organization/kanop"}
+links: {"linkedin":"https://www.linkedin.com/company/kanop/","crunchbase":"https://crunchbase.com/organization/kanop"}
 source: "awesome 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

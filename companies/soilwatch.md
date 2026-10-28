@@ -11,7 +11,7 @@ description: "Carbon project developer implementing natural climate solutions in
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/soilwatch", "twitter": "https://twitter.com/soilwatch", "github": "https://github.com/SoilWatch", "medium": "https://medium.com/soilwatch/about", "crunchbase": "https://crunchbase.com/organization/soilwatch"}
+links: {"linkedin":"https://www.linkedin.com/company/soilwatch","twitter":"https://twitter.com/soilwatch","github":"https://github.com/SoilWatch","medium":"https://medium.com/soilwatch/about","crunchbase":"https://crunchbase.com/organization/soilwatch"}
 source: "original list"
 last_checked: "2026-06-15"
 type: "commercial-eo"

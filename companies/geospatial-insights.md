@@ -11,7 +11,7 @@ description: "Climate intelligence and AI-based geospatial analytics: emissions 
 satellites: ""
 category: ""
 listed: true
-links: {"crunchbase": "https://www.crunchbase.com/organization/geospatial-insight", "linkedin": "https://www.linkedin.com/company/geospatial-insight-limited/", "twitter": "https://twitter.com/geo_insight"}
+links: {"crunchbase":"https://www.crunchbase.com/organization/geospatial-insight","linkedin":"https://www.linkedin.com/company/geospatial-insight-limited/","twitter":"https://twitter.com/geo_insight"}
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"

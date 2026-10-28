@@ -11,7 +11,7 @@ description: "Space-based RF detection system for maritime surveillance and dark
 satellites: ""
 category: ""
 listed: true
-links: {"crunchbase": "https://www.crunchbase.com/organization/unseenlabs", "linkedin": "https://www.linkedin.com/company/unseenlabs/", "twitter": "https://twitter.com/unseenlabs", "youtube": "https://www.youtube.com/channel/UCB_r4fheho1CQaLGdrzCECw"}
+links: {"crunchbase":"https://www.crunchbase.com/organization/unseenlabs","linkedin":"https://www.linkedin.com/company/unseenlabs/","twitter":"https://twitter.com/unseenlabs","youtube":"https://www.youtube.com/channel/UCB_r4fheho1CQaLGdrzCECw"}
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"

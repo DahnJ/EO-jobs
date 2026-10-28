@@ -11,7 +11,7 @@ description: "Thermal satellite imagery company providing high-resolution Earth 
 satellites: ""
 category: ""
 listed: false
-links: {"linkedin": "https://www.linkedin.com/company/satvu"}
+links: {"linkedin":"https://www.linkedin.com/company/satvu"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-15"
 type: "commercial-eo"

@@ -11,7 +11,7 @@ description: "Satellite remote sensing data acquisition, processing, and AI inte
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/spacewill/", "twitter": "https://twitter.com/spacewillinfo"}
+links: {"linkedin":"https://www.linkedin.com/company/spacewill/","twitter":"https://twitter.com/spacewillinfo"}
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"

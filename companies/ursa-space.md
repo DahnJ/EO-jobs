@@ -11,7 +11,7 @@ description: "GeoAI platform analyzing satellite data for actionable intelligenc
 satellites: ""
 category: ""
 listed: true
-links: {"crunchbase": "https://www.crunchbase.com/organization/ursa-space-systems", "linkedin": "https://www.linkedin.com/company/ursa-space-systems/", "twitter": "https://twitter.com/ursaspace?lang=en"}
+links: {"crunchbase":"https://www.crunchbase.com/organization/ursa-space-systems","linkedin":"https://www.linkedin.com/company/ursa-space-systems/","twitter":"https://twitter.com/ursaspace?lang=en"}
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"

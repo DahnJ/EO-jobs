@@ -11,7 +11,7 @@ description: "Nature financing platform connecting corporate sustainability goal
 satellites: ""
 category: ""
 listed: false
-links: {"crunchbase": "https://www.crunchbase.com/organization/single-earth", "linkedin": "https://www.linkedin.com/company/single-earth/?originalSubdomain=ee", "twitter": "https://twitter.com/SingleEarth1"}
+links: {"crunchbase":"https://www.crunchbase.com/organization/single-earth","linkedin":"https://www.linkedin.com/company/single-earth/?originalSubdomain=ee","twitter":"https://twitter.com/SingleEarth1"}
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"

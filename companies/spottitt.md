@@ -11,7 +11,7 @@ description: "Satellite and AI monitoring solutions for Earth observation."
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/spottitt", "youtube": "https://www.youtube.com/@spottitt", "crunchbase": "https://www.crunchbase.com/organization/spottitt"}
+links: {"linkedin":"https://www.linkedin.com/company/spottitt","youtube":"https://www.youtube.com/@spottitt","crunchbase":"https://www.crunchbase.com/organization/spottitt"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

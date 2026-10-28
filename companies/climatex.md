@@ -11,7 +11,7 @@ description: "Climate change resiliency, weather risk"
 satellites: ""
 category: ""
 listed: true
-links: {"crunchbase": "https://www.crunchbase.com/organization/climate-x", "linkedin": "https://www.linkedin.com/company/climate-x/", "twitter": "https://twitter.com/climatexltd"}
+links: {"crunchbase":"https://www.crunchbase.com/organization/climate-x","linkedin":"https://www.linkedin.com/company/climate-x/","twitter":"https://twitter.com/climatexltd"}
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"

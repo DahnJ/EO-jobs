@@ -11,7 +11,7 @@ description: "UK's leading aerial survey and geospatial data company providing h
 satellites: ""
 category: ""
 listed: false
-links: {"linkedin": "https://www.linkedin.com/company/bluesky-international"}
+links: {"linkedin":"https://www.linkedin.com/company/bluesky-international"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-15"
 type: "commercial-eo"

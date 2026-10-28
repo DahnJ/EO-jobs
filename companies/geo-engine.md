@@ -10,7 +10,7 @@ description: "Cloud-based data science platform for spatial-temporal geospatial 
 satellites: ""
 category: ""
 listed: false
-links: {"linkedin": "https://www.linkedin.com/company/geoengine-de", "twitter": "https://twitter.com/teamgeoengine", "github": "https://github.com/geo-engine"}
+links: {"linkedin":"https://www.linkedin.com/company/geoengine-de","twitter":"https://twitter.com/teamgeoengine","github":"https://github.com/geo-engine"}
 source: "awesome 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

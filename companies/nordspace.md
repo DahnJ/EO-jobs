@@ -11,7 +11,7 @@ description: "Space launch systems with reusable vehicles, satellite technology,
 satellites: ""
 category: ""
 listed: false
-links: {"linkedin": "https://www.linkedin.com/company/nordspace-ca/"}
+links: {"linkedin":"https://www.linkedin.com/company/nordspace-ca/"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-15"
 type: "not-eo"

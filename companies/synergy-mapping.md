@@ -11,7 +11,7 @@ description: "Geospatial surveying and digital mapping services including aerial
 satellites: ""
 category: ""
 listed: false
-links: {"linkedin": "https://www.linkedin.com/company/synergy-mapping-inc/", "twitter": "https://twitter.com/SynergyMapping", "facebook": "https://www.facebook.com/SynergyMapping/"}
+links: {"linkedin":"https://www.linkedin.com/company/synergy-mapping-inc/","twitter":"https://twitter.com/SynergyMapping","facebook":"https://www.facebook.com/SynergyMapping/"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-15"
 type: "consultancy"

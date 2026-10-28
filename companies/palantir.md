@@ -10,7 +10,7 @@ description: "Large data analysis and consultancy company. MetaConstellation pro
 satellites: ""
 category: ""
 listed: false
-links: {"crunchbase": "https://www.crunchbase.com/organization/palantir-technologies", "linkedin": "https://www.linkedin.com/company/palantir-technologies/", "twitter": "https://twitter.com/PalantirTech", "github": "https://github.com/palantir", "youtube": "https://www.youtube.com/channel/UCwed6_f0WcDIioXvMQfcP2Q", "stocks": "NYSE: PLTR"}
+links: {"crunchbase":"https://www.crunchbase.com/organization/palantir-technologies","linkedin":"https://www.linkedin.com/company/palantir-technologies/","twitter":"https://twitter.com/PalantirTech","github":"https://github.com/palantir","youtube":"https://www.youtube.com/channel/UCwed6_f0WcDIioXvMQfcP2Q","stocks":"NYSE: PLTR"}
 source: "original list"
 last_checked: ""
 type: "conglomerate"

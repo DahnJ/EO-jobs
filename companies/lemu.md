@@ -10,7 +10,7 @@ description: "Nature intelligence platform using biodiversity-focused satellite.
 satellites: ""
 category: ""
 listed: false
-links: {"linkedin": "https://www.linkedin.com/company/lemuearth"}
+links: {"linkedin":"https://www.linkedin.com/company/lemuearth"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

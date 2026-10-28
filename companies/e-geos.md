@@ -11,7 +11,7 @@ description: "Earth observation and geospatial services company providing satell
 satellites: ""
 category: ""
 listed: true
-links: {"crunchbase": "https://www.crunchbase.com/organization/e-geos", "linkedin": "https://www.linkedin.com/company/e-geos/", "twitter": "https://twitter.com/e_geos"}
+links: {"crunchbase":"https://www.crunchbase.com/organization/e-geos","linkedin":"https://www.linkedin.com/company/e-geos/","twitter":"https://twitter.com/e_geos"}
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"

@@ -11,7 +11,7 @@ description: "Environmental intelligence and Earth observation company providing
 satellites: ""
 category: ""
 listed: true
-links: {"crunchbase": "https://www.crunchbase.com/organization/wildsense", "linkedin": "https://www.linkedin.com/company/wildsenseco/"}
+links: {"crunchbase":"https://www.crunchbase.com/organization/wildsense","linkedin":"https://www.linkedin.com/company/wildsenseco/"}
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"

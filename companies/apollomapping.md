@@ -11,7 +11,7 @@ description: "Provides satellite imagery and geospatial data services."
 satellites: ""
 category: ""
 listed: true
-links: {"crunchbase": "https://www.crunchbase.com/organization/apollo-mapping", "linkedin": "https://www.linkedin.com/company/apollo-mapping/", "twitter": "https://twitter.com/ApolloMapping", "youtube": "https://www.youtube.com/user/ApolloMapping?app=desktop"}
+links: {"crunchbase":"https://www.crunchbase.com/organization/apollo-mapping","linkedin":"https://www.linkedin.com/company/apollo-mapping/","twitter":"https://twitter.com/ApolloMapping","youtube":"https://www.youtube.com/user/ApolloMapping?app=desktop"}
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"

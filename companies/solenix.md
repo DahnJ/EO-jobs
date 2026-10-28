@@ -3,7 +3,7 @@ name: "Solenix"
 status: "active"
 website: "https://www.solenix.ch/"
 careers_urls: ["https://solenix.careers.hibob.com/"]
-locations: ["🇩🇪 Darmstadt, Germany", "🇮🇹 Frascati, Italy", "🇨🇭 Härkingen, Switzerland"]
+locations: ["🇩🇪 Darmstadt, Germany","🇮🇹 Frascati, Italy","🇨🇭 Härkingen, Switzerland"]
 remote: ""
 remote_evidence: ""
 description: "Engineering services for space & EO"

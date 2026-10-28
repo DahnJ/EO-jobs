@@ -11,7 +11,7 @@ description: "Street-level imagery platform (Meta subsidiary) for collaborative 
 satellites: ""
 category: ""
 listed: false
-links: {"linkedin": "https://www.linkedin.com/company/mapillary"}
+links: {"linkedin":"https://www.linkedin.com/company/mapillary"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-15"
 type: "commercial-eo"

@@ -11,7 +11,7 @@ description: "Aerial mapping and photogrammetry processing platform using drone 
 satellites: ""
 category: ""
 listed: false
-links: {"instagram": "https://www.instagram.com/mappilot"}
+links: {"instagram":"https://www.instagram.com/mappilot"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-15"
 type: "software"

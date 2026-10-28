@@ -10,7 +10,7 @@ description: "Maritime intelligence platform using Earth observation and satelli
 satellites: ""
 category: ""
 listed: false
-links: {"linkedin": "https://www.linkedin.com/company/starboard-nz/", "twitter": "https://x.com/StarboardIntel"}
+links: {"linkedin":"https://www.linkedin.com/company/starboard-nz/","twitter":"https://x.com/StarboardIntel"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

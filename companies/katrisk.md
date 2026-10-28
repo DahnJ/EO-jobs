@@ -3,7 +3,7 @@ name: "KatRisk"
 status: "active"
 website: "https://www.katrisk.com/"
 careers_urls: ["https://katrisk.bamboohr.com/careers"]
-locations: ["🇺🇸 La Jolla, CA, USA", "🇩🇪 Freiburg, Germany", "🇮🇪 Dublin, Ireland"]
+locations: ["🇺🇸 La Jolla, CA, USA","🇩🇪 Freiburg, Germany","🇮🇪 Dublin, Ireland"]
 remote: "Yes (UK/Ireland)"
 remote_evidence: "Senior Backend Engineer listed Remote (UK, Ireland); other roles Hybrid in Pavia, Italy."
 remote_confidence: "high"
@@ -11,7 +11,7 @@ description: "Risk quantification: flood, wind, and other"
 satellites: ""
 category: ""
 listed: true
-links: {"crunchbase": "https://www.crunchbase.com/organization/katrisk", "linkedin": "https://www.linkedin.com/company/katrisk-llc/", "twitter": "https://twitter.com/KatRiskLLC"}
+links: {"crunchbase":"https://www.crunchbase.com/organization/katrisk","linkedin":"https://www.linkedin.com/company/katrisk-llc/","twitter":"https://twitter.com/KatRiskLLC"}
 source: "original list"
 last_checked: "2026-06-15"
 type: "commercial-eo"

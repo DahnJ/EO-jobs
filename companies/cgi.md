@@ -10,7 +10,7 @@ description: "IT business consulting, has space/EO teams"
 satellites: ""
 category: ""
 listed: false
-links: {"crunchbase": "https://www.crunchbase.com/organization/cgi", "linkedin": "https://www.linkedin.com/company/cgi/", "twitter": "https://twitter.com/CGI_Global"}
+links: {"crunchbase":"https://www.crunchbase.com/organization/cgi","linkedin":"https://www.linkedin.com/company/cgi/","twitter":"https://twitter.com/CGI_Global"}
 source: "original list"
 last_checked: ""
 type: "conglomerate"

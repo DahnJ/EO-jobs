@@ -10,7 +10,7 @@ description: "AI-powered geospatial analysis for querying satellite imagery."
 satellites: ""
 category: ""
 listed: false
-links: {"linkedin": "https://www.linkedin.com/company/lgnd-ai", "twitter": "https://x.com/lgnd_ai"}
+links: {"linkedin":"https://www.linkedin.com/company/lgnd-ai","twitter":"https://x.com/lgnd_ai"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

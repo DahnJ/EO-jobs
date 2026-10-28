@@ -11,7 +11,7 @@ description: "Advanced in-space radar technology for detection across medium, ge
 satellites: ""
 category: ""
 listed: false
-links: {"linkedin": "https://www.linkedin.com/company/mithril-technologies/"}
+links: {"linkedin":"https://www.linkedin.com/company/mithril-technologies/"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-15"
 type: "commercial-eo"

@@ -10,7 +10,7 @@ description: "Water risk intelligence"
 satellites: ""
 category: ""
 listed: false
-links: {"crunchbase": "https://www.crunchbase.com/organization/influunt", "linkedin": "https://www.linkedin.com/company/influuntai/about/", "twitter": "https://twitter.com/InfluuntAI", "github": "https://github.com/Influunt-Systems"}
+links: {"crunchbase":"https://www.crunchbase.com/organization/influunt","linkedin":"https://www.linkedin.com/company/influuntai/about/","twitter":"https://twitter.com/InfluuntAI","github":"https://github.com/Influunt-Systems"}
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"

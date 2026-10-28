@@ -11,7 +11,7 @@ description: "Quantum Earth technology for advanced Earth observation and geospa
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/yeegen/", "crunchbase": "https://www.crunchbase.com/organization/terraquanta", "twitter": "https://x.com/TerraQuanta_AI"}
+links: {"linkedin":"https://www.linkedin.com/company/yeegen/","crunchbase":"https://www.crunchbase.com/organization/terraquanta","twitter":"https://x.com/TerraQuanta_AI"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

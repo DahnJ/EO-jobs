@@ -10,7 +10,7 @@ description: "Very Low Earth Orbit CubeSat technology research and development."
 satellites: ""
 category: ""
 listed: false
-links: {"linkedin": "linkedin.com/company/captis-space-systems/"}
+links: {"linkedin":"linkedin.com/company/captis-space-systems/"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

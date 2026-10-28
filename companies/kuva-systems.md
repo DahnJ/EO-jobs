@@ -11,7 +11,7 @@ description: "Methane emissions detection and monitoring using optical imaging."
 satellites: ""
 category: ""
 listed: false
-links: {"linkedin": "https://www.linkedin.com/company/kuva-systems", "crunchbase": "https://crunchbase.com/organization/kuva-systems"}
+links: {"linkedin":"https://www.linkedin.com/company/kuva-systems","crunchbase":"https://crunchbase.com/organization/kuva-systems"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-15"
 type: "commercial-eo"

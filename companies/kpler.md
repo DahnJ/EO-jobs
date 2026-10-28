@@ -11,7 +11,7 @@ description: "Real-time trade intelligence and maritime vessel tracking via sate
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/kpler", "crunchbase": "https://crunchbase.com/organization/kpler"}
+links: {"linkedin":"https://www.linkedin.com/company/kpler","crunchbase":"https://crunchbase.com/organization/kpler"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-15"
 type: "commercial-eo"

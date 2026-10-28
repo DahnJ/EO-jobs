@@ -11,7 +11,7 @@ description: "Survey-grade 3D laser mapping solutions; LiDAR hardware for aircra
 satellites: ""
 category: ""
 listed: false
-links: {"linkedin": "https://www.linkedin.com/company/phoenixlidar/", "twitter": "https://twitter.com/phoenixlidar", "youtube": "https://www.youtube.com/channel/UC50ytCvaR47GlTeLiTeE44g"}
+links: {"linkedin":"https://www.linkedin.com/company/phoenixlidar/","twitter":"https://twitter.com/phoenixlidar","youtube":"https://www.youtube.com/channel/UC50ytCvaR47GlTeLiTeE44g"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-15"
 type: "commercial-eo"

@@ -11,7 +11,7 @@ description: "AI solutions for data scarcity in developing regions including geo
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/qed/", "twitter": "https://twitter.com/qed_ai", "youtube": "https://www.youtube.com/@QED"}
+links: {"linkedin":"https://www.linkedin.com/company/qed/","twitter":"https://twitter.com/qed_ai","youtube":"https://www.youtube.com/@QED"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

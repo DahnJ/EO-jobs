@@ -11,7 +11,7 @@ description: "Satellite and space technology company."
 satellites: ""
 category: ""
 listed: true
-links: {"crunchbase": "https://www.crunchbase.com/organization/axelspace", "linkedin": "https://www.linkedin.com/company/axelspace/", "twitter": "https://twitter.com/axelspace"}
+links: {"crunchbase":"https://www.crunchbase.com/organization/axelspace","linkedin":"https://www.linkedin.com/company/axelspace/","twitter":"https://twitter.com/axelspace"}
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"

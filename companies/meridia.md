@@ -11,7 +11,7 @@ description: "Supply chain compliance and risk verification using satellite imag
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://linkedin.com/company/meridia"}
+links: {"linkedin":"https://linkedin.com/company/meridia"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-15"
 type: "commercial-eo"

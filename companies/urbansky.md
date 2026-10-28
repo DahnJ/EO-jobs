@@ -11,7 +11,7 @@ description: "Stratospheric balloon technology for persistent surveillance and s
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/urban-sky-strato", "crunchbase": "https://crunchbase.com/organization/urbansky"}
+links: {"linkedin":"https://www.linkedin.com/company/urban-sky-strato","crunchbase":"https://crunchbase.com/organization/urbansky"}
 source: "awesome 2026-06"
 last_checked: "2026-06-15"
 type: "commercial-eo"

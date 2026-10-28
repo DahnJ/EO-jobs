@@ -11,7 +11,7 @@ description: "Earth observation and geospatial intelligence services."
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/piersight-space", "crunchbase": "https://www.crunchbase.com/organization/piersight-space"}
+links: {"linkedin":"https://www.linkedin.com/company/piersight-space","crunchbase":"https://www.crunchbase.com/organization/piersight-space"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

@@ -11,7 +11,7 @@ description: "AI and machine learning for geospatial intelligence."
 satellites: ""
 category: ""
 listed: true
-links: {"crunchbase": "https://www.crunchbase.com/organization/synthetaic", "linkedin": "https://www.linkedin.com/company/synthetaic/", "twitter": "https://twitter.com/synthetaic"}
+links: {"crunchbase":"https://www.crunchbase.com/organization/synthetaic","linkedin":"https://www.linkedin.com/company/synthetaic/","twitter":"https://twitter.com/synthetaic"}
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"

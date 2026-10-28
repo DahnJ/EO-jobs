@@ -11,7 +11,7 @@ description: "Korea's integrated satellite service provider for Earth observatio
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/naraspace", "facebook": "https://www.facebook.com/naraspace", "instagram": "https://www.instagram.com/naraspace.official", "youtube": "https://www.youtube.com/@naraspace", "crunchbase": "https://www.crunchbase.com/organization/nara-space-technology"}
+links: {"linkedin":"https://www.linkedin.com/company/naraspace","facebook":"https://www.facebook.com/naraspace","instagram":"https://www.instagram.com/naraspace.official","youtube":"https://www.youtube.com/@naraspace","crunchbase":"https://www.crunchbase.com/organization/nara-space-technology"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-15"
 type: "commercial-eo"

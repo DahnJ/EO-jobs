@@ -10,7 +10,7 @@ description: "AI-powered satellite Earth observation for agriculture and emissio
 satellites: ""
 category: ""
 listed: false
-links: {"linkedin": "https://www.linkedin.com/company/lc60-ai"}
+links: {"linkedin":"https://www.linkedin.com/company/lc60-ai"}
 source: "awesome 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

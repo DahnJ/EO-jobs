@@ -3,7 +3,7 @@ name: "HEAD Aerospatial Group France"
 status: "unknown"
 website: "https://www.head-aerospace.eu"
 careers_urls: ["https://www.head-aerospace.eu/careers"]
-locations: ["🇫🇷 Paris, France", "🇨🇳 Beijing, China"]
+locations: ["🇫🇷 Paris, France","🇨🇳 Beijing, China"]
 remote: ""
 remote_evidence: ""
 description: "EO: VHR, MR and Hyperspectral Images, SAR. 30 satellites constellation"

@@ -11,7 +11,7 @@ description: "AI-powered drone inspection and mapping software with flight plann
 satellites: ""
 category: ""
 listed: false
-links: {"linkedin": "https://www.linkedin.com/company/hammer-missions"}
+links: {"linkedin":"https://www.linkedin.com/company/hammer-missions"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-15"
 type: "commercial-eo"

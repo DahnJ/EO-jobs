@@ -3,7 +3,7 @@ name: "Gro intelligence"
 status: "active"
 website: "https://gro-intelligence.com/"
 careers_urls: ["https://gro-intelligence.com/careers"]
-locations: ["🇺🇸 New York, USA", "🇰🇪 Nairobi, Kenya", "🇸🇬 Singapore"]
+locations: ["🇺🇸 New York, USA","🇰🇪 Nairobi, Kenya","🇸🇬 Singapore"]
 remote: "Hybrid"
 remote_evidence: "Careers page (gro-intelligence.com/careers) returned empty content; retained stored value"
 remote_confidence: "low"
@@ -11,7 +11,7 @@ description: "Unknown - site unreachable."
 satellites: ""
 category: ""
 listed: true
-links: {"crunchbase": "https://www.crunchbase.com/organization/gro-intelligence", "linkedin": "https://www.linkedin.com/company/gro-intelligence/", "twitter": "https://twitter.com/GroIntel", "github": "https://github.com/gro-intelligence", "youtube": "https://www.youtube.com/channel/UC2w24XayZ6IW4XTYrcDBybw/videos"}
+links: {"crunchbase":"https://www.crunchbase.com/organization/gro-intelligence","linkedin":"https://www.linkedin.com/company/gro-intelligence/","twitter":"https://twitter.com/GroIntel","github":"https://github.com/gro-intelligence","youtube":"https://www.youtube.com/channel/UC2w24XayZ6IW4XTYrcDBybw/videos"}
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"

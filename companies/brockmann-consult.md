@@ -10,7 +10,7 @@ description: "Environmental data and EO, software solutions"
 satellites: ""
 category: ""
 listed: false
-links: {"crunchbase": "https://www.crunchbase.com/organization/brockmann-consult", "linkedin": "https://www.linkedin.com/company/brockmann-consult/", "twitter": "https://twitter.com/BrockmannCon"}
+links: {"crunchbase":"https://www.crunchbase.com/organization/brockmann-consult","linkedin":"https://www.linkedin.com/company/brockmann-consult/","twitter":"https://twitter.com/BrockmannCon"}
 source: "original list"
 last_checked: ""
 type: "consultancy"

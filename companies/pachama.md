@@ -11,7 +11,7 @@ description: "Carbon removal and climate tech via satellite monitoring and verif
 satellites: ""
 category: ""
 listed: false
-links: {"crunchbase": "https://www.crunchbase.com/organization/pachama", "linkedin": "https://www.linkedin.com/company/pachama/", "twitter": "https://twitter.com/pachamainc?lang=en"}
+links: {"crunchbase":"https://www.crunchbase.com/organization/pachama","linkedin":"https://www.linkedin.com/company/pachama/","twitter":"https://twitter.com/pachamainc?lang=en"}
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"

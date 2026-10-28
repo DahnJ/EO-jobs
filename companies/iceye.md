@@ -11,7 +11,7 @@ description: "World's largest SAR satellite constellation for continuous Earth m
 satellites: "Yes"
 category: ""
 listed: true
-links: {"crunchbase": "https://www.crunchbase.com/organization/iceye", "linkedin": "https://www.linkedin.com/company/iceye/", "twitter": "https://twitter.com/iceyefi", "youtube": "https://www.youtube.com/c/ICEYEcom"}
+links: {"crunchbase":"https://www.crunchbase.com/organization/iceye","linkedin":"https://www.linkedin.com/company/iceye/","twitter":"https://twitter.com/iceyefi","youtube":"https://www.youtube.com/c/ICEYEcom"}
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"

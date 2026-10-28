@@ -11,7 +11,7 @@ description: "Software for land and water management using satellite imagery and
 satellites: ""
 category: ""
 listed: true
-links: {"crunchbase": "https://www.crunchbase.com/organization/upstream-tech", "linkedin": "https://www.linkedin.com/company/upstream-pbc/", "twitter": "https://twitter.com/upstream_tech", "youtube": "https://www.youtube.com/channel/UCO4cjFHJFOygDM6UhsznUaA"}
+links: {"crunchbase":"https://www.crunchbase.com/organization/upstream-tech","linkedin":"https://www.linkedin.com/company/upstream-pbc/","twitter":"https://twitter.com/upstream_tech","youtube":"https://www.youtube.com/channel/UCO4cjFHJFOygDM6UhsznUaA"}
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"

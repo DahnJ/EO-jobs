@@ -11,7 +11,7 @@ description: "Diversified engineering and consulting firm offering land surveyin
 satellites: ""
 category: ""
 listed: false
-links: {"linkedin": "https://www.linkedin.com/company/bowman-consulting"}
+links: {"linkedin":"https://www.linkedin.com/company/bowman-consulting"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-15"
 type: "consultancy"

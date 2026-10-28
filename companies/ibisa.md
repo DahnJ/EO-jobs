@@ -10,7 +10,7 @@ description: "Parametric climate insurance products for farmers and renewable en
 satellites: ""
 category: ""
 listed: false
-links: {"linkedin": "https://www.linkedin.com/company/ibisa"}
+links: {"linkedin":"https://www.linkedin.com/company/ibisa"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

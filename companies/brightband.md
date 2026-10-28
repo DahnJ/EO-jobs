@@ -11,7 +11,7 @@ description: "Earth System AI for weather and climate forecasting with open-sour
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/brightbandtech"}
+links: {"linkedin":"https://www.linkedin.com/company/brightbandtech"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-15"
 type: "commercial-eo"

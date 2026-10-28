@@ -11,7 +11,7 @@ description: "Physical climate risk analysis firm quantifying extreme weather an
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/xdi-systems", "twitter": "https://twitter.com/xdi_systems", "crunchbase": "https://www.crunchbase.com/organization/xdi-the-cross-dependency-initiative"}
+links: {"linkedin":"https://www.linkedin.com/company/xdi-systems","twitter":"https://twitter.com/xdi_systems","crunchbase":"https://www.crunchbase.com/organization/xdi-the-cross-dependency-initiative"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

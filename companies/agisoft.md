@@ -11,7 +11,7 @@ description: "Metashape photogrammetry software for 3D geospatial data; GIS and 
 satellites: ""
 category: ""
 listed: false
-links: {"youtube": "http://www.youtube.com/channel/UCPheXwPeFLnWHo8u4ksSH7w"}
+links: {"youtube":"http://www.youtube.com/channel/UCPheXwPeFLnWHo8u4ksSH7w"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-15"
 type: "software"

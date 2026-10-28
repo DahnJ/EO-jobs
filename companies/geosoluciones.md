@@ -11,7 +11,7 @@ description: "Geomatics and geospatial engineering solutions: surveying, satelli
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/geosoluciones", "youtube": "https://www.youtube.com/channel/geosoluciones"}
+links: {"linkedin":"https://www.linkedin.com/company/geosoluciones","youtube":"https://www.youtube.com/channel/geosoluciones"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

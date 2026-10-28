@@ -11,7 +11,7 @@ description: "Geospatial and satellite data analytics platform."
 satellites: ""
 category: ""
 listed: false
-links: {"linkedin": "https://www.linkedin.com/company/mallontechnology"}
+links: {"linkedin":"https://www.linkedin.com/company/mallontechnology"}
 source: "awesome 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

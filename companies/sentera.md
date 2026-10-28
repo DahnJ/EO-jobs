@@ -11,7 +11,7 @@ description: "Agricultural drone and imaging technology company."
 satellites: ""
 category: ""
 listed: true
-links: {"crunchbase": "https://www.crunchbase.com/organization/sentera", "linkedin": "https://www.linkedin.com/company/sentera/", "twitter": "https://twitter.com/sentera_uas", "github": "https://github.com/SenteraLLC", "youtube": "https://www.youtube.com/c/SenteraUS"}
+links: {"crunchbase":"https://www.crunchbase.com/organization/sentera","linkedin":"https://www.linkedin.com/company/sentera/","twitter":"https://twitter.com/sentera_uas","github":"https://github.com/SenteraLLC","youtube":"https://www.youtube.com/c/SenteraUS"}
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"

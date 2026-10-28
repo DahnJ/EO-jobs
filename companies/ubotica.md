@@ -3,7 +3,7 @@ name: "Ubotica"
 status: "active"
 website: "https://ubotica.com/"
 careers_urls: ["https://ubotica.com/careers/"]
-locations: ["🇮🇪 Dublin, Ireland", "🇪🇸 Madrid, Spain", "🇨🇦 Ottawa, Canada", "🇳🇱 Delft, Netherlands"]
+locations: ["🇮🇪 Dublin, Ireland","🇪🇸 Madrid, Spain","🇨🇦 Ottawa, Canada","🇳🇱 Delft, Netherlands"]
 remote: "No"
 remote_evidence: "Stored value from previous research."
 remote_confidence: "high"
@@ -11,7 +11,7 @@ description: "On-board processing"
 satellites: ""
 category: ""
 listed: true
-links: {"crunchbase": "https://www.crunchbase.com/organization/ubotica", "linkedin": "https://www.linkedin.com/company/ubotica-technologies", "twitter": "https://twitter.com/ubotica?lang=en", "github": "https://github.com/Ubotica"}
+links: {"crunchbase":"https://www.crunchbase.com/organization/ubotica","linkedin":"https://www.linkedin.com/company/ubotica-technologies","twitter":"https://twitter.com/ubotica?lang=en","github":"https://github.com/Ubotica"}
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"

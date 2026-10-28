@@ -11,7 +11,7 @@ description: "Satellite imagery data marketplace and access platform."
 satellites: ""
 category: ""
 listed: true
-links: {"crunchbase": "https://www.crunchbase.com/organization/arlula", "linkedin": "https://www.linkedin.com/company/arlula/", "twitter": "https://twitter.com/Arlula_Space"}
+links: {"crunchbase":"https://www.crunchbase.com/organization/arlula","linkedin":"https://www.linkedin.com/company/arlula/","twitter":"https://twitter.com/Arlula_Space"}
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"

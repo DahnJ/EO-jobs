@@ -11,7 +11,7 @@ description: "Software solutions to generate analytics-ready data from satellite
 satellites: ""
 category: "Earth Observation"
 listed: false
-links: {"linkedin": "https://www.linkedin.com/company/spacemetric", "crunchbase": "https://www.crunchbase.com/organization/spacemetric"}
+links: {"linkedin":"https://www.linkedin.com/company/spacemetric","crunchbase":"https://www.crunchbase.com/organization/spacemetric"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

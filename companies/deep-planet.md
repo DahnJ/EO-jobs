@@ -11,7 +11,7 @@ description: "AI and satellite data for vineyards"
 satellites: ""
 category: ""
 listed: false
-links: {"crunchbase": "https://www.crunchbase.com/organization/deep-planet", "linkedin": "https://www.linkedin.com/company/deep-planet/", "twitter": "https://twitter.com/deepplanet3?lang=en"}
+links: {"crunchbase":"https://www.crunchbase.com/organization/deep-planet","linkedin":"https://www.linkedin.com/company/deep-planet/","twitter":"https://twitter.com/deepplanet3?lang=en"}
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"

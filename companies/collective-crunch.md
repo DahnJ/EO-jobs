@@ -11,7 +11,7 @@ description: "Forestry solutions"
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/collectivecrunch/", "youtube": "https://www.youtube.com/channel/UCnoke-b0rTz_idYD6EX1Amw", "crunchbase": "https://www.crunchbase.com/organization/collectivecrunch"}
+links: {"linkedin":"https://www.linkedin.com/company/collectivecrunch/","youtube":"https://www.youtube.com/channel/UCnoke-b0rTz_idYD6EX1Amw","crunchbase":"https://www.crunchbase.com/organization/collectivecrunch"}
 source: "awesome 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

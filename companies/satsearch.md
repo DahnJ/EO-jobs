@@ -11,7 +11,7 @@ description: "Satellite marketplace and sourcing platform."
 satellites: ""
 category: ""
 listed: true
-links: {"crunchbase": "https://www.crunchbase.com/organization/satsearch", "linkedin": "https://www.linkedin.com/company/satsearch/", "twitter": "https://twitter.com/satsearchco"}
+links: {"crunchbase":"https://www.crunchbase.com/organization/satsearch","linkedin":"https://www.linkedin.com/company/satsearch/","twitter":"https://twitter.com/satsearchco"}
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"

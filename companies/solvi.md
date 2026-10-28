@@ -10,7 +10,7 @@ description: "Drone imagery analytics platform for agricultural field trial digi
 satellites: ""
 category: ""
 listed: false
-links: {"linkedin": "https://linkedin.com/company/solvi-ab", "youtube": "https://youtube.com/@SolviAB"}
+links: {"linkedin":"https://linkedin.com/company/solvi-ab","youtube":"https://youtube.com/@SolviAB"}
 source: "sheet:Digital Farming 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

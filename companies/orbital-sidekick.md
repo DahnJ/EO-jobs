@@ -11,7 +11,7 @@ description: "Hyperspectral satellite imaging and analytics for industry."
 satellites: "Yes"
 category: ""
 listed: false
-links: {"crunchbase": "https://www.crunchbase.com/organization/orbital-sidekick", "linkedin": "https://www.linkedin.com/company/orbital-sidekick/", "twitter": "https://twitter.com/OrbitalSidekick"}
+links: {"crunchbase":"https://www.crunchbase.com/organization/orbital-sidekick","linkedin":"https://www.linkedin.com/company/orbital-sidekick/","twitter":"https://twitter.com/OrbitalSidekick"}
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"

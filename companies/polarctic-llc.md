@@ -11,7 +11,7 @@ description: "Arctic and polar region remote sensing and data services."
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/polarctic", "crunchbase": "https://www.crunchbase.com/organization/polarctic"}
+links: {"linkedin":"https://www.linkedin.com/company/polarctic","crunchbase":"https://www.crunchbase.com/organization/polarctic"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-15"
 type: "commercial-eo"

@@ -11,7 +11,7 @@ description: "Synthetic aperture radar satellite imagery and Earth intelligence.
 satellites: "Yes"
 category: ""
 listed: false
-links: {"crunchbase": "https://www.crunchbase.com/organization/predasar", "linkedin": "https://www.linkedin.com/company/predasar/jobs/", "twitter": "https://twitter.com/predasar?lang=en-GB"}
+links: {"crunchbase":"https://www.crunchbase.com/organization/predasar","linkedin":"https://www.linkedin.com/company/predasar/jobs/","twitter":"https://twitter.com/predasar?lang=en-GB"}
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"

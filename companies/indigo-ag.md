@@ -11,7 +11,7 @@ description: "Crop intelligence platform"
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://linkedin.com/company/indigoag", "youtube": "https://www.youtube.com/channel/UCaFYj4DSNyRhry4eqVMbk1Q", "crunchbase": "https://crunchbase.com/organization/indigo-ag"}
+links: {"linkedin":"https://linkedin.com/company/indigoag","youtube":"https://www.youtube.com/channel/UCaFYj4DSNyRhry4eqVMbk1Q","crunchbase":"https://crunchbase.com/organization/indigo-ag"}
 source: "sheet:Digital Farming 2026-06"
 last_checked: "2026-06-15"
 type: "commercial-eo"

@@ -11,7 +11,7 @@ description: "Geospatial analytics for dam monitoring, pipeline risk analysis, a
 satellites: ""
 category: "Earth Observation"
 listed: false
-links: {"linkedin": "https://www.linkedin.com/company/rezatec/", "crunchbase": "https://www.crunchbase.com/organization/rezatec"}
+links: {"linkedin":"https://www.linkedin.com/company/rezatec/","crunchbase":"https://www.crunchbase.com/organization/rezatec"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

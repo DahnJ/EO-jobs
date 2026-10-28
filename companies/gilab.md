@@ -10,7 +10,7 @@ description: "Geoinformatics and spatial technology: GIS solutions, remote sensi
 satellites: ""
 category: ""
 listed: false
-links: {"twitter": "https://twitter.com/GilabRs", "linkedin": "https://www.linkedin.com/company/gilab-rs/"}
+links: {"twitter":"https://twitter.com/GilabRs","linkedin":"https://www.linkedin.com/company/gilab-rs/"}
 source: "awesome 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

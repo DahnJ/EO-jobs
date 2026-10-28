@@ -10,7 +10,7 @@ description: "Satellite-based geospatial intelligence with optical and SAR image
 satellites: ""
 category: ""
 listed: false
-links: {"linkedin": "https://sg.linkedin.com/company/wearegeoinsights", "instagram": "https://www.instagram.com/wearegeoinsights/", "facebook": "https://www.facebook.com/wearegeoinsights/"}
+links: {"linkedin":"https://sg.linkedin.com/company/wearegeoinsights","instagram":"https://www.instagram.com/wearegeoinsights/","facebook":"https://www.facebook.com/wearegeoinsights/"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

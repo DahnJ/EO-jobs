@@ -11,7 +11,7 @@ description: "Reality capture and AI for construction site monitoring; drone and
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/dronedeploy/", "twitter": "https://twitter.com/DroneDeploy", "youtube": "https://www.youtube.com/dronedeploysf"}
+links: {"linkedin":"https://www.linkedin.com/company/dronedeploy/","twitter":"https://twitter.com/DroneDeploy","youtube":"https://www.youtube.com/dronedeploysf"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-15"
 type: "commercial-eo"

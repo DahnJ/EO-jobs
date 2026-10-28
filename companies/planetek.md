@@ -11,7 +11,7 @@ description: "Geospatial software and Earth observation solutions."
 satellites: ""
 category: ""
 listed: true
-links: {"crunchbase": "https://www.crunchbase.com/organization/planetek-italia/technology", "linkedin": "https://www.linkedin.com/company/planetek-italia/", "twitter": "https://twitter.com/planetek"}
+links: {"crunchbase":"https://www.crunchbase.com/organization/planetek-italia/technology","linkedin":"https://www.linkedin.com/company/planetek-italia/","twitter":"https://twitter.com/planetek"}
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"

@@ -11,7 +11,7 @@ description: "Real-time flood monitoring"
 satellites: ""
 category: ""
 listed: false
-links: {"crunchbase": "https://www.crunchbase.com/organization/cloud-to-street", "linkedin": "https://www.linkedin.com/company/cloud-to-street/", "twitter": "https://twitter.com/cloud2street?lang=en"}
+links: {"crunchbase":"https://www.crunchbase.com/organization/cloud-to-street","linkedin":"https://www.linkedin.com/company/cloud-to-street/","twitter":"https://twitter.com/cloud2street?lang=en"}
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"

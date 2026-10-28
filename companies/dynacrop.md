@@ -11,7 +11,7 @@ description: "Agricultural AI and remote sensing company for crop monitoring and
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/dynacrop", "youtube": "https://www.youtube.com/@dynacrop"}
+links: {"linkedin":"https://www.linkedin.com/company/dynacrop","youtube":"https://www.youtube.com/@dynacrop"}
 source: "awesome 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

@@ -11,7 +11,7 @@ description: "Satellite imagery with SAR and multispectral sensors for Earth obs
 satellites: ""
 category: ""
 listed: false
-links: {"linkedin": "https://www.linkedin.com/company/galaxeye", "twitter": "https://twitter.com/GalaxEye", "youtube": "https://www.youtube.com/channel/UCsgeBjHFXDm6_QighFikgLA"}
+links: {"linkedin":"https://www.linkedin.com/company/galaxeye","twitter":"https://twitter.com/GalaxEye","youtube":"https://www.youtube.com/channel/UCsgeBjHFXDm6_QighFikgLA"}
 source: "awesome 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

@@ -11,7 +11,7 @@ description: "Cloud platform for weather and climate data with tensor data manag
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/earthmover"}
+links: {"linkedin":"https://www.linkedin.com/company/earthmover"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-15"
 type: "commercial-eo"

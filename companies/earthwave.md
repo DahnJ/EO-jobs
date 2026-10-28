@@ -11,7 +11,7 @@ description: "Earth observation and satellite data analytics company for environ
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/earthwave-ltd/", "crunchbase": "https://www.crunchbase.com/organization/earthwave"}
+links: {"linkedin":"https://www.linkedin.com/company/earthwave-ltd/","crunchbase":"https://www.crunchbase.com/organization/earthwave"}
 source: "awesome 2026-06"
 last_checked: "2026-06-15"
 type: "commercial-eo"

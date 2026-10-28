@@ -10,7 +10,7 @@ description: "Carbon removal platform using satellite imagery and AI for ecosyst
 satellites: ""
 category: ""
 listed: false
-links: {"linkedin": "https://www.linkedin.com/company/treeconomyco/"}
+links: {"linkedin":"https://www.linkedin.com/company/treeconomyco/"}
 source: "awesome 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

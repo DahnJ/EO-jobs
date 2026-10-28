@@ -11,7 +11,7 @@ description: "Space technology company focused on Earth Observation applications
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/prom%C3%A9th%C3%A9e-newspace/", "crunchbase": "https://www.crunchbase.com/organization/promethee-earth-intelligence"}
+links: {"linkedin":"https://www.linkedin.com/company/prom%C3%A9th%C3%A9e-newspace/","crunchbase":"https://www.crunchbase.com/organization/promethee-earth-intelligence"}
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"

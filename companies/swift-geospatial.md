@@ -10,7 +10,7 @@ description: "Earth observation geospatial solutions provider based in South Afr
 satellites: ""
 category: ""
 listed: false
-links: {"linkedin": "https://www.linkedin.com/company/10935092/", "youtube": "https://www.youtube.com/channel/UCZKFxHvNfVCJAlAPs3U4DAw"}
+links: {"linkedin":"https://www.linkedin.com/company/10935092/","youtube":"https://www.youtube.com/channel/UCZKFxHvNfVCJAlAPs3U4DAw"}
 source: "awesome 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

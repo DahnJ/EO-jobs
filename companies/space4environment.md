@@ -11,7 +11,7 @@ description: "Geospatial data and environmental monitoring using Earth observati
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/space4environment", "twitter": "https://twitter.com/space4env"}
+links: {"linkedin":"https://www.linkedin.com/company/space4environment","twitter":"https://twitter.com/space4env"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

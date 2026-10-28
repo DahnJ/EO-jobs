@@ -10,7 +10,7 @@ description: "Cloud-native geospatial software solutions for Earth science and g
 satellites: ""
 category: ""
 listed: false
-links: {"crunchbase": "https://www.crunchbase.com/organization/azavea", "linkedin": "https://www.linkedin.com/company/azavea/", "twitter": "https://twitter.com/azavea", "github": "https://github.com/element84"}
+links: {"crunchbase":"https://www.crunchbase.com/organization/azavea","linkedin":"https://www.linkedin.com/company/azavea/","twitter":"https://twitter.com/azavea","github":"https://github.com/element84"}
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"

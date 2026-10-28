@@ -10,7 +10,7 @@ description: "Geointelligence platform applying AI to territorial decision-makin
 satellites: ""
 category: ""
 listed: false
-links: {"linkedin": "https://linkedin.com/company/descifra"}
+links: {"linkedin":"https://linkedin.com/company/descifra"}
 source: "awesome 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

@@ -10,7 +10,7 @@ description: "Geoinformatics services including aerial photography, 3D modeling,
 satellites: ""
 category: ""
 listed: false
-links: {"linkedin": "https://www.linkedin.com/company/map-%CE%B5%CF%80%CE%B5/?originalSubdomain=gr"}
+links: {"linkedin":"https://www.linkedin.com/company/map-%CE%B5%CF%80%CE%B5/?originalSubdomain=gr"}
 source: "awesome 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

@@ -10,7 +10,7 @@ description: "Marketplace for carbon credits, connecting corporations and landow
 satellites: ""
 category: ""
 listed: false
-links: {"crunchbase": "https://www.crunchbase.com/organization/silviaterra", "linkedin": "https://www.linkedin.com/company/ncx-carbon/", "twitter": "https://twitter.com/NCX"}
+links: {"crunchbase":"https://www.crunchbase.com/organization/silviaterra","linkedin":"https://www.linkedin.com/company/ncx-carbon/","twitter":"https://twitter.com/NCX"}
 source: "original list"
 last_checked: ""
 type: "not-eo"

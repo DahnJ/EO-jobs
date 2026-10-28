@@ -10,7 +10,7 @@ description: "Property intelligence platform using aerial imagery for insurance 
 satellites: ""
 category: ""
 listed: false
-links: {"crunchbase": "https://www.crunchbase.com/organization/betterview", "linkedin": "https://www.linkedin.com/company/betterview/", "twitter": "https://twitter.com/betterv?lang=en", "github": "https://github.com/bettervu", "youtube": "https://www.youtube.com/channel/UCq-qBQzcyErD3e6rnZ83Xfw"}
+links: {"crunchbase":"https://www.crunchbase.com/organization/betterview","linkedin":"https://www.linkedin.com/company/betterview/","twitter":"https://twitter.com/betterv?lang=en","github":"https://github.com/bettervu","youtube":"https://www.youtube.com/channel/UCq-qBQzcyErD3e6rnZ83Xfw"}
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"

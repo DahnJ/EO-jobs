@@ -11,7 +11,7 @@ description: "Photogrammetry software and geospatial services for drone imagery 
 satellites: ""
 category: ""
 listed: false
-links: {"github": "https://github.com/dronemapper-io"}
+links: {"github":"https://github.com/dronemapper-io"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-15"
 type: "software"

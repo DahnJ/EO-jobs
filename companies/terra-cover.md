@@ -11,7 +11,7 @@ description: "Satellite-based Earth observation and geospatial analysis platform
 satellites: ""
 category: "Earth Observation"
 listed: false
-links: {"crunchbase": "https://www.crunchbase.com/organization/terra-cover"}
+links: {"crunchbase":"https://www.crunchbase.com/organization/terra-cover"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

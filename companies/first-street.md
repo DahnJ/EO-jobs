@@ -10,7 +10,7 @@ description: "Research non-profit focused on climate risk"
 satellites: ""
 category: ""
 listed: false
-links: {"linkedin": "https://www.linkedin.com/company/first-street-foundation/?originalSubdomain=th", "twitter": "https://twitter.com/FirstStreetFdn"}
+links: {"linkedin":"https://www.linkedin.com/company/first-street-foundation/?originalSubdomain=th","twitter":"https://twitter.com/FirstStreetFdn"}
 source: "original list"
 last_checked: ""
 type: "nonprofit"

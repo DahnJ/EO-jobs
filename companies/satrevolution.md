@@ -11,7 +11,7 @@ description: "Satellite Earth observation technology company."
 satellites: ""
 category: ""
 listed: true
-links: {"crunchbase": "https://www.crunchbase.com/organization/satrevolution-s-a", "linkedin": "https://www.linkedin.com/company/satrevolution-s-a/", "twitter": "https://twitter.com/SatRevolution"}
+links: {"crunchbase":"https://www.crunchbase.com/organization/satrevolution-s-a","linkedin":"https://www.linkedin.com/company/satrevolution-s-a/","twitter":"https://twitter.com/SatRevolution"}
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"

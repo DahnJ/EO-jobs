@@ -11,7 +11,7 @@ description: "Hyperspectral constellation, analytics platform, all-purpose"
 satellites: "Planned"
 category: ""
 listed: true
-links: {"crunchbase": "https://www.crunchbase.com/organization/hyspeciq", "linkedin": "https://www.linkedin.com/company/hyspeciq/", "twitter": "https://mobile.twitter.com/HySpecIQ_"}
+links: {"crunchbase":"https://www.crunchbase.com/organization/hyspeciq","linkedin":"https://www.linkedin.com/company/hyspeciq/","twitter":"https://mobile.twitter.com/HySpecIQ_"}
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"

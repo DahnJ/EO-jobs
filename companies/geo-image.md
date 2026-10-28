@@ -11,7 +11,7 @@ description: "Satellite imagery and geospatial intelligence consulting."
 satellites: ""
 category: "Earth Observation"
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/geoimage", "crunchbase": "https://www.crunchbase.com/organization/geoimage"}
+links: {"linkedin":"https://www.linkedin.com/company/geoimage","crunchbase":"https://www.crunchbase.com/organization/geoimage"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-15"
 type: "commercial-eo"

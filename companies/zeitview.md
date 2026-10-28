@@ -11,7 +11,7 @@ description: "AI-powered asset intelligence platform combining drone imagery, Li
 satellites: ""
 category: ""
 listed: true
-links: {"linkedin": "https://www.linkedin.com/company/dronebase"}
+links: {"linkedin":"https://www.linkedin.com/company/dronebase"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-15"
 type: "commercial-eo"

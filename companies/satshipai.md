@@ -11,7 +11,7 @@ description: "AI-based satellite ship detection platform."
 satellites: ""
 category: "Earth Observation"
 listed: false
-links: {"twitter": "https://x.com/satshipai"}
+links: {"twitter":"https://x.com/satshipai"}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "commercial-eo"

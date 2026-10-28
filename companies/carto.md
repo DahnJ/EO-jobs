@@ -11,7 +11,7 @@ description: "Cloud-native GIS platform enabling spatial analysis and location i
 satellites: ""
 category: ""
 listed: false
-links: {"linkedin": "https://www.linkedin.com/company/carto", "twitter": "https://twitter.com/CARTO", "youtube": "https://www.youtube.com/user/CartoDB", "facebook": "https://www.facebook.com/CartoDB"}
+links: {"linkedin":"https://www.linkedin.com/company/carto","twitter":"https://twitter.com/CARTO","youtube":"https://www.youtube.com/user/CartoDB","facebook":"https://www.facebook.com/CartoDB"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-15"
 type: "software"
