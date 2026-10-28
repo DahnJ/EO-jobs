@@ -27,8 +27,7 @@ import Data.Maybe (fromMaybe)
 import qualified Data.Set as Set
 import Data.Text (Text)
 import qualified Data.Text as T
-import Data.Text.Encoding (decodeUtf8With, encodeUtf8)
-import Data.Text.Encoding.Error (lenientDecode)
+import Data.Text.Encoding (decodeUtf8', encodeUtf8)
 import EoJobs.Company
 import EoJobs.StringRules (isBlank, utf16Order, trim)
 import EoJobs.Json
@@ -161,8 +160,11 @@ loadAll = do
 save :: Slug -> Company -> IO ()
 save slug company = writeUtf8 (companyPath slug) (renderCompany company)
 
+-- | Read a UTF-8 file; invalid UTF-8 fails with the path instead of being replaced.
 readUtf8 :: FilePath -> IO Text
-readUtf8 path = decodeUtf8With lenientDecode <$> BS.readFile path
+readUtf8 path = do
+  bytes <- BS.readFile path
+  either (failAt path . ("invalid UTF-8: " <>) . T.pack . show) pure (decodeUtf8' bytes)
 
 writeUtf8 :: FilePath -> Text -> IO ()
 writeUtf8 path = BS.writeFile path . encodeUtf8

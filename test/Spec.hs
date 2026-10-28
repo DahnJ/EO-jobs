@@ -1,6 +1,9 @@
 module Main (main) where
 
+import Control.Exception (IOException, try)
 import Control.Monad (forM_)
+import qualified Data.ByteString as BS
+import Data.List (isInfixOf)
 import qualified Data.Map.Strict as Map
 import Data.Text (Text)
 import qualified Data.Text as T
@@ -14,6 +17,8 @@ import EoJobs.Json
 import EoJobs.Merge (InboxRecord (..), decodeInboxRecord, mergeOne)
 import EoJobs.Net (isAliveStatus, regDomain)
 import EoJobs.Readme (renderReadme)
+import System.Directory (createDirectoryIfMissing, getTemporaryDirectory, removePathForcibly, withCurrentDirectory)
+import System.FilePath ((</>))
 import Test.Hspec
 
 main :: IO ()
@@ -46,6 +51,15 @@ main = hspec $ do
       let result = parseCompany withoutStatus
       -- Assert
       result `shouldBe` Left "missing field 'status'"
+
+  describe "readUtf8" $ do
+    it "fails naming the file when its bytes are not UTF-8" $ inScratchDir "utf8" $ do
+      -- Arrange
+      BS.writeFile "bad.md" (BS.pack [0x61, 0xFF, 0x62])
+      -- Act
+      failure <- failureMessage (readUtf8 "bad.md")
+      -- Assert
+      failure `shouldSatisfy` maybe False ("bad.md: invalid UTF-8" `isInfixOf`)
 
   describe "encodeJson" $ do
     it "escapes only quotes, backslashes and control characters" $ do
@@ -240,6 +254,20 @@ main = hspec $ do
         let verdict = isAliveStatus status
         -- Assert
         verdict `shouldBe` expected
+
+-- | Run @action@ in a fresh empty directory, so commands that use the relative
+-- @companies/@ paths never touch the real DB.
+inScratchDir :: String -> IO a -> IO a
+inScratchDir label action = do
+  tmp <- getTemporaryDirectory
+  let dir = tmp </> ("eojobs-spec-" <> label)
+  removePathForcibly dir
+  createDirectoryIfMissing True dir
+  withCurrentDirectory dir action
+
+-- | The IO error @action@ fails with, or 'Nothing' when it succeeds.
+failureMessage :: IO a -> IO (Maybe String)
+failureMessage action = either (Just . show) (const Nothing) <$> try @IOException action
 
 roundTripMismatch :: FilePath -> IO [FilePath]
 roundTripMismatch path = do
