@@ -20,6 +20,7 @@ module EoJobs.Json
 import Data.Bifunctor (first)
 import Data.Char (chr, digitToInt, isDigit, isHexDigit, ord)
 import Data.Containers.ListUtils (nubOrd)
+import qualified Data.List as List
 import Data.Maybe (fromMaybe, mapMaybe)
 import qualified Data.Map.Strict as Map
 import Data.Text (Text)
@@ -107,7 +108,7 @@ stringLiteral = char '"' *> (T.pack . combineSurrogates <$> manyTill stringChar 
         , '\n' <$ char 'n'
         , '\r' <$ char 'r'
         , '\t' <$ char 't'
-        , char 'u' *> (chr . foldl' (\acc d -> acc * 16 + digitToInt d) 0 <$> count 4 (satisfy isHexDigit))
+        , char 'u' *> (chr . List.foldl' (\acc d -> acc * 16 + digitToInt d) 0 <$> count 4 (satisfy isHexDigit))
         ]
 
 -- | @\\uD83C\\uDF0D@ escapes arrive as two halves; join them into one code point.
