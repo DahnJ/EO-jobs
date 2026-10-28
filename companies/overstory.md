@@ -11,9 +11,11 @@ description: "AI-powered forest health and fire risk analytics from satellite da
 satellites: ""
 category: ""
 listed: true
-links: {"crunchbase":"https://www.crunchbase.com/organization/overstoryai","linkedin":"https://www.linkedin.com/company/overstoryai","twitter":"https://twitter.com/overstoryai"}
+links: {"linkedin":"https://www.linkedin.com/company/overstoryai","crunchbase":"https://www.crunchbase.com/organization/overstoryai","twitter":"https://twitter.com/overstoryai"}
 source: "original list"
 last_checked: "2026-06-14"
 type: "commercial-eo"
 type_reason: "Vegetation monitoring for wildfire prevention [agent]"
 ---
+
+[dedup] merged duplicate(s) 20tree-ai — 20tree.ai rebranded to Overstory; 20tree.ai redirects to overstory.com
