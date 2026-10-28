@@ -56,7 +56,7 @@ decodeInboxRecord json = do
       nonEmpty key = (>>= nonEmptyText) <$> opt key text
       trimmedNonEmpty key = (>>= nonEmptyText . trim) <$> opt key text
   inboxSlug <- maybe "" trim <$> opt "slug" text
-  inboxName <- opt "name" text
+  inboxName <- trimmedNonEmpty "name"
   inboxStatus <- opt "status" (vocabulary parseStatus)
   inboxWebsite <- nonEmpty "website"
   inboxCareersUrl <- trimmedNonEmpty "careers_url"
@@ -91,6 +91,8 @@ mergeOne today source existing record =
     . applyLocations
     . applyCareers
     . setIfPresent record.inboxWebsite (\v c -> c {website = v})
+    -- a rebrand renames the company in place
+    . setIfPresent record.inboxName (\v c -> c {name = v})
     . applyStatus
     $ fromMaybe (newCompany source record) existing
   where

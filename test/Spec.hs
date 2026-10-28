@@ -148,6 +148,22 @@ main = hspec $ do
         -- Assert
         (merged.remote, merged.remoteEvidence, merged.remoteConfidence) `shouldBe` ("Yes", "careers page", Just Low)
 
+    it "renames an existing company in place" $ do
+      -- Arrange
+      let record = inbox [("slug", JString "acme"), ("name", JString "Floodbase")]
+      -- Act
+      let merged = mergeOne today "sweep" (Just sampleCompany) record
+      -- Assert
+      merged.name `shouldBe` "Floodbase"
+
+    it "keeps the stored name when the finding's name is blank" $ do
+      -- Arrange
+      let record = inbox [("slug", JString "acme"), ("name", JString " ")]
+      -- Act
+      let merged = mergeOne today "sweep" (Just sampleCompany) record
+      -- Assert
+      merged.name `shouldBe` sampleCompany.name
+
     it "takes a finding without confidence when none is held" $ do
       -- Arrange
       let existing = sampleCompany {remote = "Yes", remoteConfidence = Nothing}
