@@ -15,6 +15,7 @@ module EoJobs.Db
   , writeUtf8
   , readJsonFile
   , hasExtension
+  , failAt
   ) where
 
 import Control.Monad (unless, (>=>))
@@ -176,5 +177,6 @@ readJsonFile path = do
 hasExtension :: String -> String -> Bool
 hasExtension suffix fileName = T.pack suffix `T.isSuffixOf` T.pack fileName
 
+-- | Fail with the path that caused the error, e.g. @companies/acme.md: missing field 'status'@.
 failAt :: FilePath -> Text -> IO a
 failAt path message = ioError (userError (path <> ": " <> T.unpack message))

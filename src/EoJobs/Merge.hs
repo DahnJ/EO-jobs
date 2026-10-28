@@ -158,7 +158,7 @@ run source = do
   files <- listMatching inboxDir (hasExtension ".json")
   outcomes <- fmap concat . forM files $ \file -> do
     json <- readJsonFile file
-    records <- either (failIn file) pure (list decodeInboxRecord json)
+    records <- either (failAt file) pure (list decodeInboxRecord json)
     -- sequential on purpose: a later record must see the file an earlier one wrote
     forM records $ \record ->
       if T.null record.inboxSlug
@@ -182,4 +182,3 @@ run source = do
     TIO.putStrLn ("skipped (no slug): " <> T.intercalate ", " skipped)
   where
     showT = T.pack . show
-    failIn file message = ioError (userError (file <> ": " <> T.unpack message))

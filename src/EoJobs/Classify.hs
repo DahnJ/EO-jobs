@@ -70,7 +70,7 @@ run = do
   files <- listMatching inboxDir (\n -> "class_" `isPrefixOf` n && hasExtension ".json" n)
   verdictLists <- forM files $ \file -> do
     json <- readJsonFile file
-    either (\e -> ioError (userError (file <> ": " <> T.unpack e))) pure (decodeVerdicts json)
+    either (failAt file) pure (decodeVerdicts json)
   let verdicts = Map.fromList (concat verdictLists) -- a later verdict wins
   companies <- loadAll
   results <- forM companies $ \(slug, company) -> do

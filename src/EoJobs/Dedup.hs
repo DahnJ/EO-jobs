@@ -52,10 +52,13 @@ absorbDuplicates group keeperCompany dropped =
 -- | Apply every group in @known_duplicates.json@ and print what merged.
 run :: IO ()
 run = do
-  json <- readJsonFile "known_duplicates.json"
-  groups <- either (\e -> ioError (userError ("known_duplicates.json: " <> T.unpack e))) pure (decodeGroups json)
+  json <- readJsonFile duplicatesFile
+  groups <- either (failAt duplicatesFile) pure (decodeGroups json)
   merged <- catMaybes <$> traverse foldGroup groups
   TIO.putStrLn ("done: " <> T.pack (show (length merged)) <> " group(s) merged")
+
+duplicatesFile :: FilePath
+duplicatesFile = "known_duplicates.json"
 
 foldGroup :: DuplicateGroup -> IO (Maybe Slug)
 foldGroup group = do
