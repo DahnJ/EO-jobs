@@ -23,6 +23,7 @@ import qualified EoJobs.Readme as Readme
 import EoJobs.StringRules (utf16Order)
 import Options.Applicative
 import System.IO (hSetEncoding, stderr, stdout, utf8)
+import Text.Read (readMaybe)
 
 data Command
   = MergeInbox Text
@@ -64,7 +65,10 @@ commandParser =
   where
     cmd name desc parser = command name (info parser (progDesc desc))
     timeoutOption d = option auto (long "timeout" <> metavar "SECS" <> value d <> showDefault)
-    workersOption = option auto (long "workers" <> metavar "N" <> value 16 <> showDefault <> help "requests in flight at once")
+    workersOption = option (eitherReader positiveInt) (long "workers" <> metavar "N" <> value 16 <> showDefault <> help "requests in flight at once")
+    positiveInt raw = case readMaybe raw of
+      Just n | n >= 1 -> Right n
+      _ -> Left ("expected a whole number of at least 1, got " <> show raw)
     outOption d = strOption (long "out" <> metavar "PATH" <> value d <> showDefault)
 
 dispatch :: Command -> IO ()
