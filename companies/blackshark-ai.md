@@ -13,7 +13,9 @@ category: ""
 listed: true
 links: {"crunchbase":"https://www.crunchbase.com/organization/blackshark-ai","linkedin":"https://www.linkedin.com/company/blackshark-ai/","twitter":"https://twitter.com/aiblackshark","youtube":"https://www.youtube.com/channel/UCMRDA-mbo9hGSHCwFMTp92w"}
 source: "original list"
-last_checked: "2026-06-14"
+last_checked: "2026-10-28"
 type: "commercial-eo"
 type_reason: "3D digital twin using EO data [agent]"
 ---
+
+[refresh 2026-10 2026-10-28] Careers host could not be resolved; stored careers URL kept unverified.

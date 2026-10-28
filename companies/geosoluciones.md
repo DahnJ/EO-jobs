@@ -2,10 +2,10 @@
 name: "Geosoluciones"
 status: "active"
 website: "http://www.geosoluciones.cl"
-careers_urls: ["https://www.linkedin.com/company/geosoluciones/jobs"]
+careers_urls: ["https://www.linkedin.com/company/geosoluciones/jobs/"]
 locations: ["🇨🇱 Santiago, Chile"]
 remote: ""
-remote_evidence: "Website blocked by enterprise security policy; could not access"
+remote_evidence: "No remote policy found; LinkedIn shows no company-specific job listings."
 remote_confidence: "low"
 description: "Geomatics and geospatial engineering solutions: surveying, satellite imagery, software distribution."
 satellites: ""
@@ -13,7 +13,7 @@ category: "Earth Observation"
 listed: true
 links: {"linkedin":"https://www.linkedin.com/company/geosoluciones","youtube":"https://www.youtube.com/channel/geosoluciones"}
 source: "google-sheet 2026-06"
-last_checked: "2026-06-14"
+last_checked: "2026-10-28"
 type: "commercial-eo"
 type_reason: "All-purpose EO analytics [agent]"
 ---
@@ -25,3 +25,5 @@ Discovered via the EO companies Google Sheet (2026-06); unverified.
 [links 2026-06 2026-06-14] No careers page found
 
 [careers-resolve 2026-06 2026-06-14] No own careers page found; using LinkedIn company page
+
+[refresh 2026-10 2026-10-28] Website returns HTTP 500 on re-check, so status unconfirmed. LinkedIn company page is live (Santiago, IT services). Careers moved to LinkedIn jobs page.
