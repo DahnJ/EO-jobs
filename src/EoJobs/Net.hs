@@ -2,16 +2,18 @@
 
 -- | Cheap, no-LLM HTTP sweeps over the DB: link-rot (dead website/careers URLs)
 -- and redirect detection (a site that now lands on a different company's domain
--- is likely acquired or rebranded). One green thread per URL: ~600 blocking
--- calls is what GHC's lightweight threads are for.
+-- is likely acquired or rebranded). Requests run on GHC green threads, at most
+-- @workers@ at a time.
 module EoJobs.Net
   ( regDomain
+  , isAliveStatus
   , checkLinks
   , checkRedirects
   ) where
 
 import Control.Concurrent.Async (mapConcurrently)
-import Control.Exception (SomeAsyncException, SomeException (..), fromException, throwIO, try)
+import Control.Concurrent.QSem (newQSem, signalQSem, waitQSem)
+import Control.Exception (SomeAsyncException, SomeException (..), bracket_, fromException, throwIO, try)
 import Data.List (nub, sortOn)
 import Data.Maybe (fromMaybe)
 import Data.Text (Text)
@@ -22,7 +24,7 @@ import EoJobs.Company
 import EoJobs.Db
 import EoJobs.StringRules (isBlank, utf16Order)
 import Network.HTTP.Client
-import Network.HTTP.Client.TLS (newTlsManager)
+import Network.HTTP.Client.TLS (newTlsManagerWith, tlsManagerSettings)
 import Network.HTTP.Types (Method, hUserAgent, methodGet, methodHead, statusCode)
 import Network.URI (parseURI, uriAuthority, uriRegName)
 
@@ -59,8 +61,13 @@ exceptionLabel e = case fromException e of
   Just (InvalidUrlException _ _) -> "InvalidUrlException"
   Nothing -> case e of SomeException inner -> T.pack (show (typeOf inner))
 
+-- | Whether an HTTP status means the page exists. 403, 416, 429 and LinkedIn's
+-- 999 mean "exists but blocks or rate-limits bots", so they count as alive.
+isAliveStatus :: Int -> Bool
+isAliveStatus s = s < 400 || s `elem` [403, 416, 429, 999]
+
 -- | @(alive, detail)@ for a URL: HEAD, falling back to GET when HEAD is refused
--- or fails. 403 and 416 mean "exists but blocks bots", so they count as alive.
+-- or fails.
 alive :: Manager -> Int -> Text -> IO (Bool, Text)
 alive manager timeoutSeconds url
   | not ("http" `T.isPrefixOf` url) = pure (False, "no-url")
@@ -75,7 +82,7 @@ alive manager timeoutSeconds url
         Left _ -> either (\e -> (False, exceptionLabel e)) (judge . replyStatus) <$> trySync (send methodGet)
   where
     send verb = sendOnce manager timeoutSeconds verb url
-    judge s = (s < 400 || s `elem` [403, 416], T.pack (show s))
+    judge s = (isAliveStatus s, T.pack (show s))
 
 -- | Naive registrable domain: the last 2 host labels (last 3 under common
 -- two-part TLDs such as @co.uk@), without @www.@; "" when there is no host.
@@ -111,10 +118,22 @@ finalOf manager timeoutSeconds url = do
 padRight :: Int -> Text -> Text
 padRight width t = t <> T.replicate (width - length (utf16Order t)) " "
 
+newSweepManager :: IO Manager
+newSweepManager =
+  -- Notion and Twitter pages send headers far over http-client's 4 KB default
+  newTlsManagerWith (managerSetMaxHeaderLength (1024 * 1024) tlsManagerSettings)
+
+-- | 'mapConcurrently' with at most @workers@ actions in flight; results keep
+-- input order. Unbounded, ~600 requests at once get LinkedIn to answer 429.
+mapBounded :: Int -> (a -> IO b) -> [a] -> IO [b]
+mapBounded workers action items = do
+  slots <- newQSem workers
+  mapConcurrently (bracket_ (waitQSem slots) (signalQSem slots) . action) items
+
 -- | Link-rot sweep over website and careers URLs; report in @/tmp/linkrot.txt@.
-checkLinks :: Bool -> Int -> IO ()
-checkLinks listedOnly timeoutSeconds = do
-  manager <- newTlsManager
+checkLinks :: Bool -> Int -> Int -> IO ()
+checkLinks listedOnly timeoutSeconds workers = do
+  manager <- newSweepManager
   companies <- loadAll
   let targets =
         [ (slug, kind, url)
@@ -122,7 +141,7 @@ checkLinks listedOnly timeoutSeconds = do
         , not listedOnly || c.listed
         , (kind, url) <- ("website", c.website) : [("careers", u) | u <- c.careersUrls]
         ]
-  results <- mapConcurrently (\(slug, kind, url) -> (slug, kind, url,) <$> alive manager timeoutSeconds url) targets
+  results <- mapBounded workers (\(slug, kind, url) -> (slug, kind, url,) <$> alive manager timeoutSeconds url) targets
   let bad =
         sortOn (\(slug, kind, _, _) -> (utf16Order slug, utf16Order kind))
           [(slug, kind, url, detail) | (slug, kind, url, (ok, detail)) <- results, not ok]
@@ -140,12 +159,12 @@ checkLinks listedOnly timeoutSeconds = do
 
 -- | Find listed sites that now redirect to a different domain; report in
 -- @/tmp/redirects.txt@.
-checkRedirects :: Int -> IO ()
-checkRedirects timeoutSeconds = do
-  manager <- newTlsManager
+checkRedirects :: Int -> Int -> IO ()
+checkRedirects timeoutSeconds workers = do
+  manager <- newSweepManager
   companies <- loadAll
   let listedSites = [(slug, c.name, c.website) | (slug, c) <- companies, c.listed]
-  finals <- mapConcurrently (\(_, _, web) -> finalOf manager timeoutSeconds web) listedSites
+  finals <- mapBounded workers (\(_, _, web) -> finalOf manager timeoutSeconds web) listedSites
   let moved =
         sortOn (\(s, n, a, b) -> map utf16Order [s, n, a, b])
           [ (slug, name', from, to)

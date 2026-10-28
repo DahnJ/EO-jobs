@@ -12,7 +12,7 @@ import EoJobs.Fixup (FixupResult (..), fixupOne)
 import EoJobs.Flags (addFlag)
 import EoJobs.Json
 import EoJobs.Merge (InboxRecord (..), decodeInboxRecord, mergeOne)
-import EoJobs.Net (regDomain)
+import EoJobs.Net (isAliveStatus, regDomain)
 import EoJobs.Readme (renderReadme)
 import Test.Hspec
 
@@ -229,6 +229,17 @@ main = hspec $ do
         let domain = regDomain url
         -- Assert
         domain `shouldBe` expected
+
+  describe "isAliveStatus" $ do
+    let cases =
+          [(200, True), (301, True), (403, True), (404, False), (410, False), (429, True), (500, False), (999, True)]
+    forM_ cases $ \(status, expected) ->
+      it ("judges " <> show status) $ do
+        -- Arrange (the case table above)
+        -- Act
+        let verdict = isAliveStatus status
+        -- Assert
+        verdict `shouldBe` expected
 
 roundTripMismatch :: FilePath -> IO [FilePath]
 roundTripMismatch path = do

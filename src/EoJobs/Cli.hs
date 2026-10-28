@@ -31,8 +31,8 @@ data Command
   | FixupData
   | BackfillFlags
   | WriteReadme
-  | CheckLinks Bool Int
-  | CheckRedirects Int
+  | CheckLinks Bool Int Int
+  | CheckRedirects Int Int
   | Stats
   | ClassInput FilePath
   | DedupIndex FilePath
@@ -52,9 +52,9 @@ commandParser =
           CheckLinks
             <$> switch (long "listed-only")
             <*> timeoutOption 8
-            <* workersOption
+            <*> workersOption
       , cmd "check-redirects" "Find listed sites that redirect to another domain" $
-          CheckRedirects <$> timeoutOption 10 <* workersOption
+          CheckRedirects <$> timeoutOption 10 <*> workersOption
       , cmd "stats" "DB summary" (pure Stats)
       , cmd "class-input" "Write the classification agent's JSONL input" $
           ClassInput <$> outOption "/tmp/class_in.jsonl"
@@ -64,8 +64,7 @@ commandParser =
   where
     cmd name desc parser = command name (info parser (progDesc desc))
     timeoutOption d = option auto (long "timeout" <> metavar "SECS" <> value d <> showDefault)
-    -- accepted for compatibility; one green thread per URL needs no pool size
-    workersOption = option auto (long "workers" <> metavar "N" <> value (16 :: Int) <> showDefault)
+    workersOption = option auto (long "workers" <> metavar "N" <> value 16 <> showDefault <> help "requests in flight at once")
     outOption d = strOption (long "out" <> metavar "PATH" <> value d <> showDefault)
 
 dispatch :: Command -> IO ()
@@ -76,8 +75,8 @@ dispatch = \case
   FixupData -> Fixup.run
   BackfillFlags -> backfillFlags
   WriteReadme -> Readme.run
-  CheckLinks listedOnly timeoutSeconds -> Net.checkLinks listedOnly timeoutSeconds
-  CheckRedirects timeoutSeconds -> Net.checkRedirects timeoutSeconds
+  CheckLinks listedOnly timeoutSeconds workers -> Net.checkLinks listedOnly timeoutSeconds workers
+  CheckRedirects timeoutSeconds workers -> Net.checkRedirects timeoutSeconds workers
   Stats -> stats
   ClassInput out -> Export.classInput out
   DedupIndex out -> Export.dedupIndex out
