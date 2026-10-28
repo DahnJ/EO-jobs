@@ -10,14 +10,15 @@ import qualified Data.Text as T
 import Data.Time (fromGregorian)
 import EoJobs.Classify (Verdict (..), classifyOne)
 import EoJobs.Company
-import EoJobs.Db (listMatching, parseCompany, readUtf8, renderCompany, hasExtension)
+import EoJobs.Db (hasExtension, listMatching, parseCompany, readUtf8, renderCompany, writeUtf8)
 import EoJobs.Fixup (FixupResult (..), fixupOne)
 import EoJobs.Flags (addFlag)
 import EoJobs.Json
 import EoJobs.Merge (InboxRecord (..), decodeInboxRecord, mergeOne)
+import qualified EoJobs.Merge as Merge
 import EoJobs.Net (isAliveStatus, regDomain)
 import EoJobs.Readme (renderReadme)
-import System.Directory (createDirectoryIfMissing, getTemporaryDirectory, removePathForcibly, withCurrentDirectory)
+import System.Directory (createDirectoryIfMissing, doesFileExist, getTemporaryDirectory, removePathForcibly, withCurrentDirectory)
 import System.FilePath ((</>))
 import Test.Hspec
 
@@ -171,6 +172,19 @@ main = hspec $ do
       let decoded = decodeInboxRecord json
       -- Assert
       decoded `shouldBe` Left "field 'status': unknown value \"dead\""
+
+  describe "Merge.run" $ do
+    it "saves nothing when a later inbox file has a bad record, and names it" $ inScratchDir "merge" $ do
+      -- Arrange
+      createDirectoryIfMissing True "companies/_inbox"
+      writeUtf8 "companies/_inbox/a.json" "[{\"slug\":\"acme\",\"note\":\"seen\"}]"
+      writeUtf8 "companies/_inbox/b.json" "[{\"slug\":\"beta\"},{\"slug\":\"gamma\",\"status\":\"dead\"}]"
+      -- Act
+      failure <- failureMessage (Merge.run "sweep")
+      -- Assert
+      failure `shouldSatisfy` maybe False ("companies/_inbox/b.json: record 1: field 'status'" `isInfixOf`)
+      saved <- traverse doesFileExist ["companies/acme.md", "companies/beta.md"]
+      saved `shouldBe` [False, False]
 
   describe "classifyOne" $ do
     let verdicts = Map.fromList [("trimble", Verdict Software "agent says"), ("acme", Verdict Consultancy "services")]

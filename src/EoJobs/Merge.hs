@@ -11,6 +11,7 @@ module EoJobs.Merge
   ) where
 
 import Control.Monad (forM, unless, (>=>))
+import Data.Bifunctor (first)
 import Data.Maybe (fromMaybe, mapMaybe)
 import Data.List (sortOn)
 import Data.Text (Text)
@@ -151,24 +152,23 @@ newCompany source record =
 
 data Outcome = Created Slug | Updated Slug | Skipped Text
 
--- | Merge every inbox file into the DB and print a summary.
+-- | Merge every inbox file into the DB and print a summary. Every file is
+-- decoded before the first save, so a bad record changes nothing on disk.
 run :: Text -> IO ()
 run source = do
   today <- localDay . zonedTimeToLocalTime <$> getZonedTime
   files <- listMatching inboxDir (hasExtension ".json")
-  outcomes <- fmap concat . forM files $ \file -> do
-    json <- readJsonFile file
-    records <- either (failAt file) pure (list decodeInboxRecord json)
-    -- sequential on purpose: a later record must see the file an earlier one wrote
-    forM records $ \record ->
-      if T.null record.inboxSlug
-        then pure (Skipped (fromMaybe "?" record.inboxName))
-        else do
-          let slug = record.inboxSlug
-          exists <- doesFileExist (companyPath slug)
-          existing <- if exists then Just <$> readCompany (companyPath slug) else pure Nothing
-          save slug (mergeOne today source existing record)
-          pure (if exists then Updated slug else Created slug)
+  records <- concat <$> traverse readInboxFile files
+  -- sequential on purpose: a later record must see the file an earlier one wrote
+  outcomes <- forM records $ \record ->
+    if T.null record.inboxSlug
+      then pure (Skipped (fromMaybe "?" record.inboxName))
+      else do
+        let slug = record.inboxSlug
+        exists <- doesFileExist (companyPath slug)
+        existing <- if exists then Just <$> readCompany (companyPath slug) else pure Nothing
+        save slug (mergeOne today source existing record)
+        pure (if exists then Updated slug else Created slug)
   let created = [s | Created s <- outcomes]
       updated = [s | Updated s <- outcomes]
       skipped = [n | Skipped n <- outcomes]
@@ -182,3 +182,13 @@ run source = do
     TIO.putStrLn ("skipped (no slug): " <> T.intercalate ", " skipped)
   where
     showT = T.pack . show
+
+-- | Decode one inbox file (a JSON array of records); fails with the file and
+-- the index of the first bad record.
+readInboxFile :: FilePath -> IO [InboxRecord]
+readInboxFile file = do
+  json <- readJsonFile file
+  items <- either (failAt file) pure (list Right json)
+  either (failAt file) pure (traverse decodeAt (zip [0 :: Int ..] items))
+  where
+    decodeAt (index, item) = first (\e -> "record " <> T.pack (show index) <> ": " <> e) (decodeInboxRecord item)
