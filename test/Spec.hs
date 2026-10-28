@@ -16,6 +16,7 @@ import EoJobs.Flags (addFlag)
 import EoJobs.Json
 import EoJobs.Merge (InboxRecord (..), decodeInboxRecord, mergeOne)
 import qualified EoJobs.Merge as Merge
+import qualified EoJobs.Dedup as Dedup
 import EoJobs.Net (isAliveStatus, regDomain)
 import EoJobs.Readme (renderReadme)
 import System.Directory (createDirectoryIfMissing, doesFileExist, getTemporaryDirectory, removePathForcibly, withCurrentDirectory)
@@ -185,6 +186,37 @@ main = hspec $ do
       failure `shouldSatisfy` maybe False ("companies/_inbox/b.json: record 1: field 'status'" `isInfixOf`)
       saved <- traverse doesFileExist ["companies/acme.md", "companies/beta.md"]
       saved `shouldBe` [False, False]
+
+  describe "Dedup.run" $ do
+    it "deletes no dropped file when a later one in the group fails to read" $ inScratchDir "dedup" $ do
+      -- Arrange
+      createDirectoryIfMissing True "companies"
+      writeUtf8 "companies/keep.md" sampleFile
+      writeUtf8 "companies/alpha.md" sampleFile
+      writeUtf8 "companies/broken.md" "not a company file"
+      writeUtf8 "known_duplicates.json" "[{\"slugs\":[\"keep\",\"alpha\",\"broken\"],\"keep\":\"keep\"}]"
+      -- Act
+      failure <- failureMessage Dedup.run
+      -- Assert
+      failure `shouldSatisfy` maybe False ("companies/broken.md" `isInfixOf`)
+      alphaKept <- doesFileExist "companies/alpha.md"
+      alphaKept `shouldBe` True
+      keeperText <- readUtf8 "companies/keep.md"
+      keeperText `shouldBe` sampleFile
+
+    it "saves the keeper with the absorbed duplicates, then deletes them" $ inScratchDir "dedup-ok" $ do
+      -- Arrange
+      createDirectoryIfMissing True "companies"
+      writeUtf8 "companies/keep.md" sampleFile
+      writeUtf8 "companies/alpha.md" (T.replace "acme.io/jobs" "alpha.io/jobs" sampleFile)
+      writeUtf8 "known_duplicates.json" "[{\"slugs\":[\"keep\",\"alpha\",\"alpha\"],\"keep\":\"keep\",\"reason\":\"same\"}]"
+      -- Act
+      Dedup.run
+      -- Assert
+      alphaKept <- doesFileExist "companies/alpha.md"
+      alphaKept `shouldBe` False
+      keeper <- either (error . T.unpack) id . parseCompany <$> readUtf8 "companies/keep.md"
+      keeper.careersUrls `shouldBe` ["https://acme.io/jobs", "https://alpha.io/jobs"]
 
   describe "classifyOne" $ do
     let verdicts = Map.fromList [("trimble", Verdict Software "agent says"), ("acme", Verdict Consultancy "services")]

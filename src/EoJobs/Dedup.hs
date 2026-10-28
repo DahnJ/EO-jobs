@@ -1,5 +1,6 @@
 -- | Merge confirmed duplicate entries from @known_duplicates.json@ into the
--- keeper, union their list and link fields, then delete the dropped files.
+-- keeper, union their list and link fields, save the keeper, then delete the
+-- dropped files.
 -- Re-runnable: a group whose dropped files are already gone is a no-op.
 module EoJobs.Dedup
   ( DuplicateGroup (..)
@@ -8,7 +9,9 @@ module EoJobs.Dedup
   , run
   ) where
 
-import Control.Monad (foldM, unless)
+import Control.Monad (unless)
+import Data.Containers.ListUtils (nubOrd)
+import Data.Foldable (traverse_)
 import Data.Maybe (catMaybes, fromMaybe)
 import Data.Text (Text)
 import qualified Data.Text as T
@@ -69,21 +72,19 @@ foldGroup group = do
       pure Nothing
     else do
       keeperCompany <- readCompany (companyPath group.keeper)
-      dropped <- foldM takeDropped [] group.groupSlugs
-      let survivors = reverse dropped
-      unless (null survivors) $ do
-        save group.keeper (absorbDuplicates group keeperCompany survivors)
-        TIO.putStrLn ("merged " <> showSlugs (map fst survivors) <> " -> " <> group.keeper)
-      pure (if null survivors then Nothing else Just group.keeper)
+      -- read every dropped file before touching disk, so a bad file loses nothing
+      dropped <- catMaybes <$> traverse readDropped (nubOrd group.groupSlugs)
+      unless (null dropped) $ do
+        save group.keeper (absorbDuplicates group keeperCompany dropped)
+        traverse_ (removeFile . companyPath . fst) dropped
+        TIO.putStrLn ("merged " <> showSlugs (map fst dropped) <> " -> " <> group.keeper)
+      pure (if null dropped then Nothing else Just group.keeper)
   where
-    -- read then delete each dropped file still on disk, in group order
-    takeDropped acc slug = do
+    -- a dropped slug still on disk, in group order
+    readDropped slug = do
       let path = companyPath slug
       exists <- doesFileExist path
       if slug == group.keeper || not exists
-        then pure acc
-        else do
-          company <- readCompany path
-          removeFile path
-          pure ((slug, company) : acc)
+        then pure Nothing
+        else Just . (slug,) <$> readCompany path
     showSlugs slugs = encodeJson (JArray (map JString slugs))
