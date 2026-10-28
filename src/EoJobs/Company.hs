@@ -24,7 +24,8 @@ import EoJobs.Json (Json)
 -- | A company's file name without @.md@, e.g. @planet-labs@.
 type Slug = Text
 
-data Status = Active | Acquired | Defunct | Renamed | Unknown
+-- | No @Renamed@: a rebrand updates the record in place and stays 'Active'.
+data Status = Active | Acquired | Defunct | Unknown
   deriving (Eq, Ord, Show, Enum, Bounded)
 
 data CompanyType = CommercialEo | Consultancy | Reseller | Software | Conglomerate | Nonprofit | NotEo
@@ -66,7 +67,6 @@ statusText = \case
   Active -> "active"
   Acquired -> "acquired"
   Defunct -> "defunct"
-  Renamed -> "renamed"
   Unknown -> "unknown"
 
 parseStatus :: Text -> Maybe Status
