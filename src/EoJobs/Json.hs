@@ -1,6 +1,6 @@
 -- | A JSON value that keeps object key order, with a parser and an encoder that
--- matches cheshire/Jackson @generate-string@ byte-for-byte. Not aeson: aeson
--- sorts object keys, which would rewrite the @links@ order of hundreds of files.
+-- writes the company files' byte format exactly (see 'encodeJson'). Not aeson:
+-- aeson sorts object keys, which would rewrite the @links@ order of hundreds of files.
 module EoJobs.Json
   ( Json (..)
   , JsonNumber (..)
@@ -49,7 +49,7 @@ data Json
 type Parser = Parsec Void Text
 
 -- | Parse one JSON document (surrounding whitespace allowed). A repeated object
--- key keeps its first position and its last value, as cheshire does.
+-- key keeps its first position and its last value.
 parseJson :: Text -> Either Text Json
 parseJson input = first (T.pack . errorBundlePretty) (parse (spaces *> value <* eof) "json" input)
 
@@ -126,8 +126,9 @@ combineSurrogates = \case
     isHigh c = c >= '\xD800' && c <= '\xDBFF'
     isLow c = c >= '\xDC00' && c <= '\xDFFF'
 
--- | Compact JSON exactly as Jackson writes it: no spaces, only @\"@, @\\@ and
--- control characters escaped; @/@ and non-ASCII are written raw.
+-- | Compact JSON in the company files' byte format: no spaces, only @\"@, @\\@ and
+-- control characters escaped (as @\\n@-style or upper-case @\\u00XX@); @/@ and
+-- non-ASCII are written raw.
 encodeJson :: Json -> Text
 encodeJson = TL.toStrict . B.toLazyText . build
   where
@@ -136,8 +137,8 @@ encodeJson = TL.toStrict . B.toLazyText . build
       JBool True -> "true"
       JBool False -> "false"
       JNumber (IntegerNumber n) -> B.fromString (show n)
-      -- Haskell's Double rendering differs from Java's for very large/small
-      -- magnitudes; no data on disk carries a decimal number.
+      -- 'show' is not a pinned format for decimals (e.g. it switches to exponent
+      -- form for very large/small magnitudes); no data on disk carries a decimal.
       JNumber (DecimalNumber d) -> B.fromString (show d)
       JString s -> quoted s
       JArray items -> "[" <> commaSeparated (map build items) <> "]"

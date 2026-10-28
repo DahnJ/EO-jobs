@@ -12,8 +12,8 @@ import Data.Char (ord)
 import Data.Text (Text)
 import qualified Data.Text as T
 
--- | Unicode space separators except the non-breaking ones, plus the ASCII
--- control separators (Java's @Character.isWhitespace@).
+-- | What 'trim' strips: Unicode space separators except the non-breaking ones,
+-- plus tab, newline, vertical tab, form feed, carriage return and U+001C..U+001F.
 isTrimmable :: Char -> Bool
 isTrimmable c
   | c `elem` ['\x00A0', '\x2007', '\x202F'] = False

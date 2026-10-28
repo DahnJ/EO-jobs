@@ -18,9 +18,9 @@ import EoJobs.StringRules (isBlank, trim)
 isoToFlag :: Text -> Text
 isoToFlag = T.map (\c -> chr (0x1F1E6 + ord (toUpper c) - ord 'A'))
 
--- The scans below walk these tables in the order written. The Clojure original
--- walked its hash maps in hash order, which differs; that matters only for a
--- location naming two keywords with different flags (e.g. "Remote (Europe)").
+-- The scans below walk these tables in the order written, and the first match
+-- wins. Order matters only for a location naming two keywords with different
+-- flags (e.g. "Remote (Europe)").
 country :: [(Text, Text)]
 country =
   [ ("united states", "US"), ("usa", "US"), ("u.s.", "US"), ("u.s.a", "US"), ("us", "US")

@@ -96,7 +96,7 @@ regDomain url
     withScheme = if "http" `T.isPrefixOf` url then url else "https://" <> url
     rawHost = maybe "" (T.pack . uriRegName) (parseURI (T.unpack withScheme) >>= uriAuthority)
     host = let lowered = T.toLower rawHost in fromMaybe lowered (T.stripPrefix "www." lowered)
-    -- like Java's String.split, trailing empty labels are dropped
+    -- trailing empty labels are dropped, so @example.com.@ reduces like @example.com@
     parts = reverse (dropWhile T.null (reverse (T.splitOn "." host)))
     lastN n = drop (length parts - n) parts
     (secondLast, lastLabel) = case reverse parts of

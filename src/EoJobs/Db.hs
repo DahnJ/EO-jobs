@@ -67,7 +67,7 @@ parseCompany fileText = do
       (_, "") -> Left ("frontmatter line without ': ': " <> line)
       (key, rest) -> do
         parsed <- first (\e -> "field '" <> key <> "': " <> e) (parseJson (T.drop 2 rest))
-        -- Clojure keywordizes `a-b` and `a_b` to the same key and writes `a_b`
+        -- `a-b` and `a_b` name the same field; it is always written as `a_b`
         pure (T.replace "-" "_" key, parsed)
 
 decodeCompany :: Map.Map Text Json -> Text -> Either Text Company

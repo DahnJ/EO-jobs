@@ -99,8 +99,8 @@ parseConfidence = parseEnum confidenceText
 parseEnum :: (Enum a, Bounded a) => (a -> Text) -> Text -> Maybe a
 parseEnum render raw = lookup raw [(render v, v) | v <- [minBound .. maxBound]]
 
--- | Clojure's @(merge base winner)@ on ordered maps: @base@'s keys in order with
--- @winner@'s value where both have the key, then @winner@'s other keys.
+-- | Merge two ordered link maps: @base@'s keys first, in order, with @winner@'s
+-- value where both have the key, then @winner@'s other keys in order.
 mergeLinks :: [(Text, Text)] -> [(Text, Text)] -> [(Text, Text)]
 mergeLinks base winner =
   [(key, fromMaybe baseValue (lookup key winner)) | (key, baseValue) <- base]
