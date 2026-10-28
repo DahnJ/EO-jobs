@@ -59,7 +59,7 @@ step. Read this once; each skill's SKILL.md only adds the part that's unique to 
   LinkedIn's 999 as alive (bot-block / rate-limit ≠ dead); a hard 404 on a careers URL is a
   bug to re-resolve, a 404 on a *website* often means a stale path (try the root).
 - `just redirects` — listed sites whose domain now redirects to a *different* domain:
-  almost always an acquisition/rebrand to mark and de-list. Catches what bot-blocked
+  an acquisition (de-list) or a rebrand (update in place). Catches what bot-blocked
   WebFetch agents miss.
 
 ## Hand off

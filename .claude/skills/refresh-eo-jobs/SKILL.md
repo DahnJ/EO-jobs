@@ -24,7 +24,8 @@ just how a *refresh* run feeds existing companies through it.
    - `just check` (link-rot) — dead site/careers links. A careers 404 is a bug to
      re-resolve (see the contract's careers ladder), not a valid listing.
    - `just redirects` — listed companies whose domain now redirects elsewhere:
-     almost always an acquisition/rebrand to mark `acquired`/`renamed` and de-list.
+     an acquisition (mark `acquired`, which de-lists) or a rebrand (update the
+     record in place and keep it `active` — see the contract).
    - **EO job boards** (see discover-eo-companies for the list) — a company posting
      there right now is active + hiring, so its row is worth confirming.
    Otherwise, refresh the stalest entries (oldest `last_checked`). Split the chosen

@@ -26,12 +26,19 @@ Budget ~1–3 WebFetch calls per company. This is a Haiku batch job — be terse
 
 - **`slug`** — keep the given slug (refresh) or derive it (discover, rule above).
 - **`name`** — the company name.
-- **`status`** — `active` | `acquired` | `defunct` | `renamed` | `unknown`.
+- **`status`** — `active` | `acquired` | `defunct` | `unknown`. There is no
+  `renamed`: a rename is not an exit.
   - **Follow redirects.** If the company's own domain lands on a *different*
     company's site (pachama.com → carbon-direct.com), that's an acquisition/merger:
-    set `acquired`/`renamed` and name the acquirer in `note`. *Why:* a bot-blocked
+    set `acquired` and name the acquirer in `note`. *Why:* a bot-blocked
     WebFetch once silently kept Pachama "active" long after it was absorbed — a
     cross-domain redirect is the signal that catches what a failed fetch hides.
+  - **A rebrand updates the record in place.** If the same company now trades
+    under a new name/domain (Cloud to Street → Floodbase), keep `status: active`,
+    set `name`, `website` and `careers_url` to the new ones, and record the old
+    name in `note` ("formerly Cloud to Street"). Keep the slug you were given.
+    *Why:* marking rebrands `renamed` de-listed them, and the new name was never
+    added — Floodbase vanished from the README while it was hiring.
   - **A site you can't load is not evidence it's alive.** Bot-block, "security
     verification", timeout → set `unknown` and say so in `note`. Don't default to
     `active` just because you couldn't disprove it.
@@ -103,7 +110,8 @@ Budget ~1–3 WebFetch calls per company. This is a Haiku batch job — be terse
   `low` is safe — a dishonest `high` quietly blocks future re-checks.
 - **`description`** — one sentence (≤ ~25 words) on what the company does; for
   discovery, note whether it's an EO/satellite/geospatial company.
-- **`note`** — `""` normally. Flag acquired/defunct/renamed (name the acquirer), a
+- **`note`** — `""` normally. Flag acquired/defunct (name the acquirer), a rebrand
+  (name the old name), a
   dead careers link you couldn't re-resolve, a pivot away from EO, or (discovery) a
   likely duplicate or a candidate you couldn't confirm exists (set status `unknown`
   so the orchestrator can drop it).
