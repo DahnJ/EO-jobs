@@ -64,8 +64,8 @@ decodeInboxRecord json = do
   inboxRemote <- nonEmpty "remote"
   inboxRemoteEvidence <- nonEmpty "remote_evidence"
   confidenceWord <- opt "remote_confidence" text
-  -- "" means the agent left it blank, not an unknown word
-  inboxRemoteConfidence <- traverse (vocabulary parseConfidence . JString) (confidenceWord >>= nonEmptyText)
+  -- a blank word means the agent left it out, not an unknown word
+  inboxRemoteConfidence <- traverse (vocabulary parseConfidence . JString) (confidenceWord >>= nonEmptyText . trim)
   inboxDescription <- nonEmpty "description"
   inboxLinks <- maybe [] (mapMaybe nonBlankLink) <$> opt "links" (object >=> traverse (traverse linkValue))
   inboxNote <- trimmedNonEmpty "note"
@@ -104,11 +104,9 @@ mergeOne today source existing record =
       | null record.inboxLocations = company
       | otherwise = company {locations = flagAll record.inboxLocations}
     applyRemote company
-      -- a lower-confidence remote finding never overwrites a higher one
-      | Just incoming <- record.inboxRemoteConfidence
-      , Just held <- company.remoteConfidence
-      , incoming < held =
-          company
+      -- a remote finding ranked below the held one changes nothing; a missing
+      -- confidence ranks below every confidence ('Nothing' < 'Just' in 'Ord')
+      | record.inboxRemoteConfidence < company.remoteConfidence = company
       | otherwise =
           setIfPresent record.inboxRemoteConfidence (\v c -> c {remoteConfidence = Just v})
             . setIfPresent record.inboxRemoteEvidence (\v c -> c {remoteEvidence = v})

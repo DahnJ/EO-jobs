@@ -129,6 +129,25 @@ main = hspec $ do
       -- Assert
       (merged.remote, merged.remoteConfidence) `shouldBe` ("Yes", Just High)
 
+    forM_ [("missing", []), ("blank", [("remote_confidence", JString " ")]), ("empty", [("remote_confidence", JString "")])] $ \(label, confidenceField) ->
+      it ("does not let a finding with a " <> label <> " confidence overwrite a held one") $ do
+        -- Arrange
+        let existing = sampleCompany {remote = "Yes", remoteEvidence = "careers page", remoteConfidence = Just Low}
+            record = inbox ([("slug", JString "acme"), ("remote", JString "No"), ("remote_evidence", JString "blog")] <> confidenceField)
+        -- Act
+        let merged = mergeOne today "sweep" (Just existing) record
+        -- Assert
+        (merged.remote, merged.remoteEvidence, merged.remoteConfidence) `shouldBe` ("Yes", "careers page", Just Low)
+
+    it "takes a finding without confidence when none is held" $ do
+      -- Arrange
+      let existing = sampleCompany {remote = "Yes", remoteConfidence = Nothing}
+          record = inbox [("slug", JString "acme"), ("remote", JString "No")]
+      -- Act
+      let merged = mergeOne today "sweep" (Just existing) record
+      -- Assert
+      (merged.remote, merged.remoteConfidence) `shouldBe` ("No", Nothing)
+
     it "keeps existing link values, incoming keys first, and drops blank links" $ do
       -- Arrange
       let existing = sampleCompany {links = [("linkedin", "old-li"), ("github", "old-gh")]}
