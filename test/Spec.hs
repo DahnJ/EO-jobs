@@ -8,7 +8,7 @@ import qualified Data.Map.Strict as Map
 import Data.Text (Text)
 import qualified Data.Text as T
 import Data.Time (fromGregorian)
-import EoJobs.Classify (Verdict (..), classifyOne)
+import EoJobs.Classify (Verdict (..), classifyOne, decodeVerdicts)
 import EoJobs.Company
 import EoJobs.Db (hasExtension, listMatching, parseCompany, readUtf8, renderCompany, writeUtf8)
 import EoJobs.Fixup (FixupResult (..), fixupOne)
@@ -276,16 +276,23 @@ main = hspec $ do
       keeper.careersUrls `shouldBe` ["https://acme.io/jobs", "https://alpha.io/jobs"]
 
   describe "classifyOne" $ do
-    let verdicts = Map.fromList [("trimble", Verdict Software "agent says"), ("acme", Verdict Consultancy "services")]
+    let verdicts = Map.fromList [("trimble", Verdict Software "agent says" Nothing), ("acme", Verdict Consultancy "services" Nothing)]
 
-    it "lets the conglomerate override beat an agent verdict" $ do
+    it "applies a verdict to every slug, with no forced override" $ do
       -- Arrange
-      let company = sampleCompany
+      let company = sampleCompany {companyType = Just Conglomerate}
       -- Act
       let classified = classifyOne verdicts "trimble" company
       -- Assert
-      (classified.companyType, classified.typeReason, classified.listed)
-        `shouldBe` (Just Conglomerate, Just "known large multi-division company", False)
+      (classified.companyType, classified.typeReason) `shouldBe` (Just Software, Just "agent says [agent]")
+
+    it "keeps the stored type when there is no verdict" $ do
+      -- Arrange
+      let company = sampleCompany {companyType = Just Conglomerate, typeReason = Just "many divisions"}
+      -- Act
+      let classified = classifyOne Map.empty "trimble" company
+      -- Assert
+      (classified.companyType, classified.typeReason) `shouldBe` (Just Conglomerate, Just "many divisions")
 
     it "lets an agent verdict beat the existing type" $ do
       -- Arrange
@@ -304,6 +311,47 @@ main = hspec $ do
       (classified.companyType, classified.typeReason, classified.listed)
         `shouldBe` (Just CommercialEo, Just "unclassified", True)
 
+    forM_ (filter (/= NotEo) [minBound .. maxBound]) $ \companyType ->
+      it ("lists an active " <> show companyType <> " company with an http careers URL") $ do
+        -- Arrange
+        let company = sampleCompany {companyType = Just companyType}
+        -- Act
+        let classified = classifyOne Map.empty "other" company
+        -- Assert
+        classified.listed `shouldBe` True
+
+    it "does not list a not-eo company" $ do
+      -- Arrange
+      let company = sampleCompany {companyType = Just NotEo}
+      -- Act
+      let classified = classifyOne Map.empty "other" company
+      -- Assert
+      classified.listed `shouldBe` False
+
+    it "does not list a company with an unlisted_reason, and keeps it without a verdict" $ do
+      -- Arrange
+      let company = sampleCompany {unlistedReason = Just "no EO roles"}
+      -- Act
+      let classified = classifyOne Map.empty "other" company
+      -- Assert
+      (classified.listed, classified.unlistedReason) `shouldBe` (False, Just "no EO roles")
+
+    it "sets unlisted_reason from a verdict" $ do
+      -- Arrange
+      let setting = Map.fromList [("acme", Verdict Conglomerate "big" (Just "no EO roles"))]
+      -- Act
+      let classified = classifyOne setting "acme" sampleCompany
+      -- Assert
+      (classified.listed, classified.unlistedReason) `shouldBe` (False, Just "no EO roles")
+
+    it "clears a stored unlisted_reason when a verdict has none" $ do
+      -- Arrange
+      let company = sampleCompany {unlistedReason = Just "no EO roles"}
+      -- Act
+      let classified = classifyOne verdicts "acme" company
+      -- Assert
+      (classified.listed, classified.unlistedReason) `shouldBe` (True, Nothing)
+
     it "does not list a company without an http careers URL" $ do
       -- Arrange
       let company = sampleCompany {careersUrls = ["mailto:jobs@acme.io"]}
@@ -311,6 +359,27 @@ main = hspec $ do
       let classified = classifyOne Map.empty "other" company
       -- Assert
       classified.listed `shouldBe` False
+
+  describe "decodeVerdicts" $ do
+    let verdictJson unlistedField =
+          JArray [JObject ([("slug", JString "acme"), ("type", JString "conglomerate"), ("reason", JString "big")] <> unlistedField)]
+
+    it "reads unlisted_reason" $ do
+      -- Arrange
+      let json = verdictJson [("unlisted_reason", JString "no EO roles")]
+      -- Act
+      let decoded = decodeVerdicts json
+      -- Assert
+      decoded `shouldBe` Right [("acme", Verdict Conglomerate "big" (Just "no EO roles"))]
+
+    forM_ [("missing", []), ("blank", [("unlisted_reason", JString " ")])] $ \(label, unlistedField) ->
+      it ("treats a " <> label <> " unlisted_reason as absent") $ do
+        -- Arrange
+        let json = verdictJson unlistedField
+        -- Act
+        let decoded = decodeVerdicts json
+        -- Assert
+        decoded `shouldBe` Right [("acme", Verdict Conglomerate "big" Nothing)]
 
   describe "fixupOne" $ do
     it "normalizes remote and flags unflagged locations" $ do

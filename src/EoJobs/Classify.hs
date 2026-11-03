@@ -1,6 +1,6 @@
--- | Set each company's type (from agent verdicts in
--- @companies/_inbox/class_*.json@, with a conglomerate override) and derive
--- @listed@ for the README.
+-- | Set each company's type and @unlisted_reason@ (from agent verdicts in
+-- @companies/_inbox/class_*.json@) and derive @listed@ for the README: a company
+-- is listed if it does EO work and hires for it, whatever its type.
 module EoJobs.Classify
   ( Verdict (..)
   , decodeVerdicts
@@ -8,31 +8,25 @@ module EoJobs.Classify
   , run
   ) where
 
-import Control.Monad (forM, forM_)
+import Control.Monad (forM, forM_, mfilter)
 import Data.List (isPrefixOf, sortOn)
 import qualified Data.Map.Strict as Map
-import Data.Maybe (catMaybes, fromMaybe)
-import qualified Data.Set as Set
+import Data.Maybe (catMaybes, fromMaybe, isNothing)
 import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.IO as TIO
 import EoJobs.Company
 import EoJobs.Db
 import EoJobs.Json
-import EoJobs.StringRules (utf16Order)
+import EoJobs.StringRules (isBlank, utf16Order)
 
--- | An agent's type decision for one company.
-data Verdict = Verdict {verdictType :: CompanyType, verdictReason :: Text}
+-- | An agent's decision for one company.
+data Verdict = Verdict
+  { verdictType :: CompanyType
+  , verdictReason :: Text
+  , verdictUnlistedReason :: Maybe Text
+  }
   deriving (Eq, Show)
-
--- | Large multi-division parents where EO is one small division: forced override.
-conglomerates :: Set.Set Slug
-conglomerates =
-  Set.fromList
-    [ "airbus-space", "airbus-defence-and-space", "trimble", "harris", "gmv"
-    , "telespazio", "hexagon-geospatial", "nv5", "merrick", "red-wire-space"
-    , "iabg", "l3harris"
-    ]
 
 -- | Verdicts by slug from one class file; records without a valid type (or
 -- slug) are skipped.
@@ -42,27 +36,40 @@ decodeVerdicts json = catMaybes <$> (list object json >>= traverse verdict)
     verdict pairs = do
       slug <- optionalField "slug" text pairs
       reason <- fromMaybe "" <$> optionalField "reason" text pairs
+      unlistedReason <- mfilter (not . isBlank) <$> optionalField "unlisted_reason" text pairs
       pure $ do
         s <- slug
         -- a missing or invalid type skips the verdict instead of failing
         t <- case lookup "type" pairs of
           Just (JString word) -> parseCompanyType word
           _ -> Nothing
-        pure (s, Verdict t reason)
+        pure (s, Verdict t reason unlistedReason)
 
--- | Decide the type (override > verdict > existing) and recompute @listed@.
+-- | Apply the company's verdict, if any, and recompute @listed@. A verdict
+-- replaces the stored type and @unlisted_reason@, including clearing the latter.
 classifyOne :: Map.Map Slug Verdict -> Slug -> Company -> Company
-classifyOne verdicts slug company =
-  company
-    { companyType = Just decidedType
-    , typeReason = Just reason
-    , listed = decidedType == CommercialEo && company.status == Active && any ("http" `T.isPrefixOf`) company.careersUrls
-    }
+classifyOne verdicts slug company = decided {listed = isListed decided}
   where
-    (decidedType, reason)
-      | slug `Set.member` conglomerates = (Conglomerate, "known large multi-division company")
-      | Just v <- Map.lookup slug verdicts = (v.verdictType, v.verdictReason <> " [agent]")
-      | otherwise = (fromMaybe CommercialEo company.companyType, fromMaybe "unclassified" company.typeReason)
+    decided = case Map.lookup slug verdicts of
+      Just v ->
+        company
+          { companyType = Just v.verdictType
+          , typeReason = Just (v.verdictReason <> " [agent]")
+          , unlistedReason = v.verdictUnlistedReason
+          }
+      Nothing ->
+        company
+          { companyType = Just (fromMaybe CommercialEo company.companyType)
+          , typeReason = Just (fromMaybe "unclassified" company.typeReason)
+          }
+
+-- | Does EO work, is reachable through a careers link, and was not kept off on purpose.
+isListed :: Company -> Bool
+isListed company =
+  company.companyType /= Just NotEo
+    && company.status == Active
+    && any ("http" `T.isPrefixOf`) company.careersUrls
+    && isNothing company.unlistedReason
 
 -- | Apply verdicts to every company, save, and print the type distribution.
 run :: IO ()
@@ -87,6 +94,6 @@ run = do
           , Just old /= new.companyType
           ]
   TIO.putStrLn ("type distribution: " <> encodeJson (JObject [(k, JNumber (IntegerNumber n)) | (k, n) <- counts]))
-  TIO.putStrLn ("LISTED (commercial-eo + active + has careers): " <> T.pack (show (length (filter (\(_, c) -> c.listed) results))))
+  TIO.putStrLn ("LISTED (type not not-eo + active + has careers + no unlisted_reason): " <> T.pack (show (length (filter (\(_, c) -> c.listed) results))))
   TIO.putStrLn ("\ntype changed vs previous: " <> T.pack (show (length changed)))
   forM_ changed $ \(n, o, t) -> TIO.putStrLn ("  " <> n <> ": " <> o <> " -> " <> t)
