@@ -458,6 +458,15 @@ main = hspec $ do
       (merged.remote, merged.remoteEvidence, merged.remoteConfidence, merged.description)
         `shouldBe` ("Hybrid", "site", Just Low, keeper.description)
 
+    it "keeps the keeper's evidence when the dropped remote is blank too" $ do
+      -- Arrange
+      let keeper = sampleCompany {remote = "", remoteEvidence = "page blocked", remoteConfidence = Just Low}
+          blank = sampleCompany {remote = "", remoteEvidence = "", remoteConfidence = Nothing}
+      -- Act
+      let merged = Dedup.absorbDuplicates group keeper [("drop", blank)]
+      -- Assert
+      (merged.remoteEvidence, merged.remoteConfidence) `shouldBe` ("page blocked", Just Low)
+
     it "joins the bodies and then notes the merge" $ do
       -- Arrange
       let keeper = sampleCompany {body = "kept notes\n"}

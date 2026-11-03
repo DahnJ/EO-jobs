@@ -55,7 +55,7 @@ absorbDuplicates group keeperCompany dropped =
         , body = appendParagraph kept.body duplicate.body
         }
       where
-        remoteSource = if isBlank kept.remote then duplicate else kept
+        remoteSource = if isBlank kept.remote && not (isBlank duplicate.remote) then duplicate else kept
     unionInOrder kept extra = kept <> filter (`notElem` kept) extra
     note = "[dedup] merged duplicate(s) " <> T.intercalate ", " (map fst dropped) <> " — " <> group.reason
     withNote c = c {body = appendParagraph c.body note}
