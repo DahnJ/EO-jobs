@@ -45,7 +45,7 @@ knownKeys :: [Text]
 knownKeys =
   [ "name", "status", "website", "careers_urls", "locations", "remote", "remote_evidence"
   , "remote_confidence", "description", "satellites", "category", "listed", "links"
-  , "source", "last_checked", "type", "type_reason"
+  , "source", "last_checked", "type", "type_reason", "unlisted_reason"
   ]
 
 -- | Parse a company file's text; the error says which field is wrong.
@@ -89,11 +89,12 @@ decodeCompany fields bodyText = do
   lastChecked <- optional' "last_checked" text
   companyType <- optional' "type" (vocabulary parseCompanyType)
   typeReason <- optional' "type_reason" text
+  unlistedReason <- optional' "unlisted_reason" text
   pure
     Company
       { name, status, website, careersUrls, locations, remote, remoteEvidence, remoteConfidence
       , description, satellites, category, listed, links, source, lastChecked, companyType
-      , typeReason, extras, body = bodyText
+      , typeReason, unlistedReason, extras, body = bodyText
       }
   where
     pairs = Map.toList fields
@@ -134,6 +135,7 @@ renderCompany company =
         <> [("last_checked", string d) | Just d <- [company.lastChecked]]
         <> [("type", string (companyTypeText t)) | Just t <- [company.companyType]]
         <> [("type_reason", string r) | Just r <- [company.typeReason]]
+        <> [("unlisted_reason", string r) | Just r <- [company.unlistedReason]]
         <> company.extras
 
 companyPath :: Slug -> FilePath

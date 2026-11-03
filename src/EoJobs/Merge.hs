@@ -146,6 +146,7 @@ newCompany source record =
     , lastChecked = Nothing
     , companyType = Nothing
     , typeReason = Nothing
+    , unlistedReason = Nothing
     , extras = []
     , body = ""
     }

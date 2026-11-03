@@ -55,6 +55,8 @@ data Company = Company
   , lastChecked :: Maybe Text
   , companyType :: Maybe CompanyType
   , typeReason :: Maybe Text
+  , unlistedReason :: Maybe Text
+  -- ^ Why the company is deliberately kept off the README; 'Nothing' = eligible.
   , extras :: [(Text, Json)]
   -- ^ Unknown frontmatter keys (snake_case), kept so a rewrite loses nothing.
   , body :: Text

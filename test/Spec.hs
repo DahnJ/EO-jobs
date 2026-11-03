@@ -55,6 +55,19 @@ main = hspec $ do
       fmap (\c -> (c.description, c.body)) parsed `shouldBe` Right ("SAR --- optical", "body\n---\nmore")
       fmap renderCompany parsed `shouldBe` Right withDashes
 
+    it "round-trips unlisted_reason right after type_reason" $ do
+      -- Arrange
+      let withReason =
+            T.replace
+              "type_reason: \"makes EO products\"\n"
+              "type_reason: \"makes EO products\"\nunlisted_reason: \"no EO roles\"\n"
+              sampleFile
+      -- Act
+      let parsed = parseCompany withReason
+      -- Assert
+      fmap (.unlistedReason) parsed `shouldBe` Right (Just "no EO roles")
+      fmap renderCompany parsed `shouldBe` Right withReason
+
     it "fails with the field name when a required field is missing" $ do
       -- Arrange
       let withoutStatus = T.unlines (filter (not . ("status:" `T.isPrefixOf`)) (T.lines sampleFile))
