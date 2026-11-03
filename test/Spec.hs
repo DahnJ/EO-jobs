@@ -76,6 +76,23 @@ main = hspec $ do
       -- Assert
       result `shouldBe` Left "missing field 'status'"
 
+  describe "renderReadme" $ do
+    it "labels a listed company whose type is not commercial-eo" $ do
+      -- Arrange
+      let company = sampleCompany {companyType = Just Conglomerate}
+      -- Act
+      let rendered = renderReadme "" [company]
+      -- Assert
+      rendered `shouldSatisfy` T.isInfixOf "| <a href=\"https://acme.io\">Acme EO</a> <sub>conglomerate</sub> | "
+
+    it "leaves a commercial-eo name cell without a label" $ do
+      -- Arrange
+      let company = sampleCompany {companyType = Just CommercialEo}
+      -- Act
+      let rendered = renderReadme "" [company]
+      -- Assert
+      rendered `shouldSatisfy` T.isInfixOf "| <a href=\"https://acme.io\">Acme EO</a> | "
+
   describe "readUtf8" $ do
     it "fails naming the file when its bytes are not UTF-8" $ inScratchDir "utf8" $ do
       -- Arrange

@@ -39,7 +39,7 @@ icons links iconSources =
 
 row :: Company -> [Text]
 row c =
-  [ "<a href=\"" <> c.website <> "\">" <> c.name <> "</a>"
+  [ "<a href=\"" <> c.website <> "\">" <> c.name <> "</a>" <> typeLabel c
   , c.description
   , T.concat ["<a href=\"" <> url <> "\">[" <> T.pack (show i) <> "]</a>" | (i, url) <- zip [1 :: Int ..] c.careersUrls]
   , T.intercalate "<br />" c.locations
@@ -47,6 +47,12 @@ row c =
   , icons c.links socialIcons
   , icons c.links businessIcons
   ]
+
+-- | Commercial EO is the table's default, so only other types get a label.
+typeLabel :: Company -> Text
+typeLabel c = case c.companyType of
+  Just t | t /= CommercialEo -> " <sub>" <> companyTypeText t <> "</sub>"
+  _ -> ""
 
 -- | README text: the intro, then a table of listed companies sorted by name.
 renderReadme :: Text -> [Company] -> Text
