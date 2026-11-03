@@ -389,6 +389,36 @@ main = hspec $ do
       keeper <- either (error . T.unpack) id . parseCompany <$> readUtf8 "companies/keep.md"
       keeper.careersUrls `shouldBe` ["https://acme.io/jobs", "https://alpha.io/jobs"]
 
+  describe "absorbDuplicates" $ do
+    let group = Dedup.DuplicateGroup ["keep", "drop"] "keep" "same"
+        finding = sampleCompany {remote = "Yes (US)", remoteEvidence = "posting", remoteConfidence = Just High, description = "From the dropped file.", body = "research notes"}
+
+    it "fills the keeper's blank remote and description from the dropped company" $ do
+      -- Arrange
+      let keeper = sampleCompany {remote = "", remoteEvidence = "", remoteConfidence = Just High, description = ""}
+      -- Act
+      let merged = Dedup.absorbDuplicates group keeper [("drop", finding)]
+      -- Assert
+      (merged.remote, merged.remoteEvidence, merged.remoteConfidence, merged.description)
+        `shouldBe` ("Yes (US)", "posting", Just High, "From the dropped file.")
+
+    it "keeps the keeper's filled remote and description" $ do
+      -- Arrange
+      let keeper = sampleCompany {remote = "Hybrid", remoteEvidence = "site", remoteConfidence = Just Low}
+      -- Act
+      let merged = Dedup.absorbDuplicates group keeper [("drop", finding)]
+      -- Assert
+      (merged.remote, merged.remoteEvidence, merged.remoteConfidence, merged.description)
+        `shouldBe` ("Hybrid", "site", Just Low, keeper.description)
+
+    it "joins the bodies and then notes the merge" $ do
+      -- Arrange
+      let keeper = sampleCompany {body = "kept notes\n"}
+      -- Act
+      let merged = Dedup.absorbDuplicates group keeper [("drop", finding)]
+      -- Assert
+      merged.body `shouldBe` "kept notes\n\nresearch notes\n\n[dedup] merged duplicate(s) drop — same"
+
   describe "classifyOne" $ do
     let verdicts = Map.fromList [("trimble", Verdict Software "agent says" Nothing), ("acme", Verdict Consultancy "services" Nothing)]
 

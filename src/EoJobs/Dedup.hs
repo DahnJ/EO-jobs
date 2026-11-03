@@ -34,8 +34,9 @@ decodeGroups = list $ \json -> do
     <*> field "keep" text pairs
     <*> (fromMaybe "" <$> optionalField "reason" text pairs)
 
--- | Fold the dropped companies into the keeper (keeper's values win) and note
--- the merge in its body; unchanged when nothing was dropped.
+-- | Fold the dropped companies into the keeper and note the merge in its body;
+-- unchanged when nothing was dropped. The keeper's values win, a blank remote or
+-- description takes the dropped one's, and the bodies are joined.
 absorbDuplicates :: DuplicateGroup -> Company -> [(Slug, Company)] -> Company
 absorbDuplicates _ keeperCompany [] = keeperCompany
 absorbDuplicates group keeperCompany dropped =
@@ -47,10 +48,21 @@ absorbDuplicates group keeperCompany dropped =
         , locations = unionInOrder kept.locations duplicate.locations
         , -- keep the keeper's links; add the dropped one's extras
           links = mergeLinks duplicate.links kept.links
+        , description = if isBlank kept.description then duplicate.description else kept.description
+        , remote = remoteSource.remote
+        , remoteEvidence = remoteSource.remoteEvidence
+        , remoteConfidence = remoteSource.remoteConfidence
+        , body = appendParagraph kept.body duplicate.body
         }
+      where
+        remoteSource = if isBlank kept.remote then duplicate else kept
     unionInOrder kept extra = kept <> filter (`notElem` kept) extra
     note = "[dedup] merged duplicate(s) " <> T.intercalate ", " (map fst dropped) <> " — " <> group.reason
-    withNote c = c {body = if isBlank c.body then note else trim c.body <> "\n\n" <> note}
+    withNote c = c {body = appendParagraph c.body note}
+    appendParagraph existing paragraph
+      | isBlank paragraph = existing
+      | isBlank existing = trim paragraph
+      | otherwise = trim existing <> "\n\n" <> trim paragraph
 
 -- | Apply every group in @known_duplicates.json@ and print what merged.
 run :: IO ()
