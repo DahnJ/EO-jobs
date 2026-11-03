@@ -115,7 +115,10 @@ mergeOne today source existing record =
       Just Unknown | company.status /= Unknown -> company
       Just s -> company {status = s}
       Nothing -> company
-    applyCareers company = maybe company (\url -> company {careersUrls = [url]}) record.inboxCareersUrl
+    -- a known URL confirms the list; a new one replaces the primary board only
+    applyCareers company = case record.inboxCareersUrl of
+      Just url | url `notElem` company.careersUrls -> company {careersUrls = url : drop 1 company.careersUrls}
+      _ -> company
     applyLocations company
       | null record.inboxLocations = company
       | otherwise = company {locations = flagAll record.inboxLocations}

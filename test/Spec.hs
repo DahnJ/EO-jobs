@@ -294,6 +294,24 @@ main = hspec $ do
       -- Assert
       (merged.remote, merged.remoteEvidence, merged.remoteConfidence) `shouldBe` ("Yes (Europe)", "", Just Medium)
 
+    it "keeps the list when the finding confirms a stored careers URL" $ do
+      -- Arrange
+      let existing = sampleCompany {careersUrls = ["https://a.io", "https://b.io"]}
+          record = inbox [("slug", JString "acme"), ("careers_url", JString "https://b.io")]
+      -- Act
+      let merged = mergeOne today "sweep" (Just existing) record
+      -- Assert
+      merged.careersUrls `shouldBe` ["https://a.io", "https://b.io"]
+
+    it "replaces only the first careers URL with a new one" $ do
+      -- Arrange
+      let existing = sampleCompany {careersUrls = ["https://a.io", "https://b.io"]}
+          record = inbox [("slug", JString "acme"), ("careers_url", JString "https://c.io")]
+      -- Act
+      let merged = mergeOne today "sweep" (Just existing) record
+      -- Assert
+      merged.careersUrls `shouldBe` ["https://c.io", "https://b.io"]
+
     it "rejects an unknown status word" $ do
       -- Arrange
       let json = JObject [("slug", JString "acme"), ("status", JString "dead")]
