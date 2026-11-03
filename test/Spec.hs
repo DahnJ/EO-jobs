@@ -300,14 +300,41 @@ main = hspec $ do
       -- Assert
       (merged.remote, merged.remoteEvidence, merged.remoteConfidence) `shouldBe` ("Yes (Europe)", "", Just Medium)
 
-    it "keeps the list when the finding confirms a stored careers URL" $ do
+    it "moves a stored careers URL that the finding names to the front" $ do
       -- Arrange
-      let existing = sampleCompany {careersUrls = ["https://a.io", "https://b.io"]}
-          record = inbox [("slug", JString "acme"), ("careers_url", JString "https://b.io")]
+      let existing = sampleCompany {careersUrls = ["https://dead.io", "https://live.io"]}
+          record = inbox [("slug", JString "acme"), ("careers_url", JString "https://live.io")]
       -- Act
       let merged = mergeOne today "sweep" (Just existing) record
       -- Assert
-      merged.careersUrls `shouldBe` ["https://a.io", "https://b.io"]
+      merged.careersUrls `shouldBe` ["https://live.io", "https://dead.io"]
+
+    it "keeps the stored evidence when a finding reconfirms the remote without any" $ do
+      -- Arrange
+      let existing = sampleCompany {remote = "Yes (US)", remoteEvidence = "posting", remoteConfidence = Just High}
+          record = inbox [("slug", JString "acme"), ("remote", JString "Yes (US)"), ("remote_confidence", JString "high")]
+      -- Act
+      let merged = mergeOne today "sweep" (Just existing) record
+      -- Assert
+      merged.remoteEvidence `shouldBe` "posting"
+
+    it "drops the stored evidence when a finding changes the remote without any" $ do
+      -- Arrange
+      let existing = sampleCompany {remote = "Yes (US)", remoteEvidence = "posting", remoteConfidence = Just Low}
+          record = inbox [("slug", JString "acme"), ("remote", JString "Hybrid"), ("remote_confidence", JString "high")]
+      -- Act
+      let merged = mergeOne today "sweep" (Just existing) record
+      -- Assert
+      merged.remoteEvidence `shouldBe` ""
+
+    it "treats a whitespace remote as no finding" $ do
+      -- Arrange
+      let existing = sampleCompany {remote = "Yes", remoteEvidence = "posting", remoteConfidence = Just High}
+          record = inbox [("slug", JString "acme"), ("remote", JString " "), ("remote_confidence", JString "high")]
+      -- Act
+      let merged = mergeOne today "sweep" (Just existing) record
+      -- Assert
+      (merged.remote, merged.remoteEvidence) `shouldBe` ("Yes", "posting")
 
     it "replaces only the first careers URL with a new one" $ do
       -- Arrange

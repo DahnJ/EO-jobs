@@ -42,7 +42,8 @@ step. Read this once; each skill's SKILL.md only adds the part that's unique to 
    restamping `last_checked` and appending notes to the body. Guards you can rely on:
    it won't downgrade a known status to `unknown`, won't let a lower
    `remote_confidence` overwrite a higher one, unions `links` without clobbering, and
-   replaces only the first careers URL.
+   puts the finding's careers URL first: a known one moves up, and a new one replaces
+   only the first.
    - **Only merge positive findings you trust.** A subagent that returns `remote: ""`
      with `low` confidence after a failed fetch should *not* overwrite a good stored
      value — filter those out (or rely on the confidence guard) so a blocked fetch

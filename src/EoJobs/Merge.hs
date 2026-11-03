@@ -66,7 +66,7 @@ decodeInboxRecord json = do
   inboxWebsite <- nonEmpty "website"
   inboxCareersUrl <- trimmedNonEmpty "careers_url"
   inboxLocations <- fromMaybe [] <$> opt "locations" (list text)
-  inboxRemote <- nonEmpty "remote"
+  inboxRemote <- trimmedNonEmpty "remote"
   inboxRemoteEvidence <- nonEmpty "remote_evidence"
   confidenceWord <- opt "remote_confidence" text
   -- a blank word means the agent left it out, not an unknown word
@@ -119,10 +119,12 @@ mergeOne today source existing record =
       Just Unknown | company.status /= Unknown -> company
       Just s -> company {status = s}
       Nothing -> company
-    -- a known URL confirms the list; a new one replaces the primary board only
+    -- the finding's URL goes first; a new one replaces the primary board only
     applyCareers company = case record.inboxCareersUrl of
-      Just url | url `notElem` company.careersUrls -> company {careersUrls = url : drop 1 company.careersUrls}
-      _ -> company
+      Nothing -> company
+      Just url
+        | url `elem` company.careersUrls -> company {careersUrls = url : filter (/= url) company.careersUrls}
+        | otherwise -> company {careersUrls = url : drop 1 company.careersUrls}
     applyLocations company
       | null record.inboxLocations = company
       | otherwise = company {locations = flagAll record.inboxLocations}
@@ -135,7 +137,7 @@ mergeOne today source existing record =
         | otherwise ->
             company
               { remote = value
-              , remoteEvidence = fromMaybe "" record.inboxRemoteEvidence
+              , remoteEvidence = fromMaybe (if value == company.remote then company.remoteEvidence else "") record.inboxRemoteEvidence
               , remoteConfidence = record.inboxRemoteConfidence
               }
     -- add new links, never clobber an existing one
