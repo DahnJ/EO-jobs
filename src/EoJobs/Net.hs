@@ -67,15 +67,15 @@ exceptionLabel e = case fromException e of
 isAliveStatus :: Int -> Bool
 isAliveStatus s = s < 400 || s `elem` [403, 416, 429, 999]
 
--- | @(alive, detail)@ for a URL: HEAD, falling back to GET when HEAD is refused
--- or fails.
+-- | @(alive, detail)@ for a URL: HEAD, falling back to GET when HEAD gives an error
+-- status or fails.
 alive :: Manager -> Int -> Text -> IO (Bool, Text)
 alive manager timeoutSeconds url
   | not ("http" `T.isPrefixOf` url) = pure (False, "no-url")
   | otherwise = do
       firstTry <- trySync $ do
         headReply <- send methodHead
-        if replyStatus headReply `elem` [403, 405, 416, 501]
+        if replyStatus headReply >= 400
           then judge . replyStatus <$> send methodGet
           else pure (judge (replyStatus headReply))
       case firstTry of
