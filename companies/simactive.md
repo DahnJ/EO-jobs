@@ -10,7 +10,7 @@ remote_confidence: "low"
 description: "Photogrammetry software (Correlator3D) converting drone, aircraft, and satellite imagery into 3D models, point clouds, and orthomosaics for surveying and mapping."
 satellites: ""
 category: ""
-listed: false
+listed: true
 links: {"linkedin":"https://www.linkedin.com/company/simactive/"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-15"

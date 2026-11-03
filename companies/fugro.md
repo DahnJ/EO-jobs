@@ -10,7 +10,7 @@ remote_confidence: "low"
 description: "Geo-data company using drones, uncrewed vessels, and sensors to understand Earth's subsurface for energy transition, ocean health, and infrastructure projects."
 satellites: ""
 category: ""
-listed: false
+listed: true
 links: {"linkedin":"https://www.linkedin.com/company/fugro"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-15"

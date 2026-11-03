@@ -14,7 +14,8 @@ links: {}
 source: "awesome 2026-06"
 last_checked: "2026-06-14"
 type: "conglomerate"
-type_reason: "known large multi-division company"
+type_reason: "known large multi-division company [agent]"
+unlisted_reason: "The site shows no Redwire EO work beyond an unattributed news headline, and the careers link is a general space jobs portal."
 ---
 
 Discovered via awesome (2026-06); unverified.

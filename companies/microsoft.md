@@ -15,4 +15,5 @@ source: "original list"
 last_checked: ""
 type: "conglomerate"
 type_reason: "Large tech conglomerate with EO division [agent]"
+unlisted_reason: "EO roles cannot be reached from a general careers portal of a huge tech firm; no EO team is named."
 ---

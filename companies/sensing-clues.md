@@ -15,6 +15,7 @@ source: "awesome 2026-06"
 last_checked: "2026-06-14"
 type: "nonprofit"
 type_reason: "Nonprofit/NGO [agent]"
+unlisted_reason: "No EO work is stated on the site, and the only open role is a non-EO volunteer ambassador post."
 ---
 
 Discovered via awesome (2026-06); unverified.

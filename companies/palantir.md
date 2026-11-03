@@ -15,4 +15,5 @@ source: "original list"
 last_checked: ""
 type: "conglomerate"
 type_reason: "Large data analysis company with MetaConstellation [agent]"
+unlisted_reason: "No EO work is shown on the site, and the careers page is a general portal with no geospatial or space team link."
 ---

@@ -10,7 +10,7 @@ remote_confidence: "low"
 description: "German national aerospace research centre and space agency; runs EO research and missions. Public research institute, EO-related but not a commercial software vendor."
 satellites: ""
 category: ""
-listed: false
+listed: true
 links: {"linkedin":"https://www.linkedin.com/company/dlr/","youtube":"https://www.youtube.com/dlrde"}
 source: "eoepca-partners 2026-10"
 last_checked: "2026-10-28"

@@ -15,6 +15,7 @@ source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"
 type: "consultancy"
 type_reason: "Climate risk analytics [agent]"
+unlisted_reason: "The site describes wind and climate analytics with no EO data work, and the jobs link returns 404."
 ---
 
 [discovery-sweep 2026-06-14] Uses EO data in analytics but primarily climate risk modeling, not EO/satellite provider.

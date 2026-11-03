@@ -15,4 +15,5 @@ source: "original list"
 last_checked: ""
 type: "nonprofit"
 type_reason: "Nonprofit for nature-based carbon projects [agent]"
+unlisted_reason: "The fetched site describes carbon-project tools and greenhouse gas accounting, with no satellite or Earth observation work."
 ---

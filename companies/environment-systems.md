@@ -9,7 +9,7 @@ remote_evidence: ""
 description: "Environmental and agricultural data consultancy"
 satellites: ""
 category: ""
-listed: false
+listed: true
 links: {"crunchbase":"https://www.crunchbase.com/organization/environment-systems","linkedin":"https://www.linkedin.com/company/environment-systems/jobs/","twitter":"https://twitter.com/Envsystems","github":"https://github.com/EnvSys"}
 source: "original list"
 last_checked: ""

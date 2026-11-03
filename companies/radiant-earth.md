@@ -15,6 +15,7 @@ source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "nonprofit"
 type_reason: "Nonprofit/NGO [agent]"
+unlisted_reason: "Careers link returns 404."
 ---
 
 Discovered via the EO companies Google Sheet (2026-06); unverified.

@@ -9,7 +9,7 @@ remote_evidence: "'modelo de trabalho presencial' (visionaespacial.com/trabalhe-
 description: "Satellite & EO coordination with defence focus, EO image reseller"
 satellites: ""
 category: "Earth Observation"
-listed: false
+listed: true
 links: {}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"

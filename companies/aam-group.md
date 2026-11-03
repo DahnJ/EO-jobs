@@ -10,7 +10,7 @@ remote_confidence: "low"
 description: "Geospatial services including aerial surveys, land surveys, 3D modeling, and GIS solutions."
 satellites: ""
 category: ""
-listed: false
+listed: true
 links: {"linkedin":"https://www.linkedin.com/company/aam-pty-ltd","twitter":"https://twitter.com/WoolpertAPAC","youtube":"https://www.youtube.com/AAMPtyLtd"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-15"

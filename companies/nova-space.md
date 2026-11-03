@@ -16,6 +16,7 @@ source: "eoepca-partners 2026-10"
 last_checked: "2026-10-28"
 type: "consultancy"
 type_reason: "Space-sector management consultancy; EO is one market. [agent]"
+unlisted_reason: "Nova Space is a consultancy that reports on the EO market; it does not do EO work itself."
 ---
 
 [eoepca-partners 2026-10 2026-10-28] Careers page loads but shows 0 roles in the rendered text; the page links to a Lever board (jobs.lever.co/novaspace). HQ not stated.

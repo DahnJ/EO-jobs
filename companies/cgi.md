@@ -15,4 +15,5 @@ source: "original list"
 last_checked: ""
 type: "conglomerate"
 type_reason: "Large IT consulting; space/EO teams within [agent]"
+unlisted_reason: "The fetched pages show general IT consulting and no Earth observation work."
 ---

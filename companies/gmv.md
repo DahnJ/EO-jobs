@@ -9,7 +9,7 @@ remote_evidence: "'internal mobility allows employees to work and grow in the co
 description: "EO: All-purpose"
 satellites: ""
 category: "Earth Observation"
-listed: false
+listed: true
 links: {}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"

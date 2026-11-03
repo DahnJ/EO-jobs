@@ -10,7 +10,7 @@ remote_confidence: "low"
 description: "Private applied research centre in Bolzano spanning many scientific fields. Research institute; EO work is not shown on the homepage."
 satellites: ""
 category: ""
-listed: false
+listed: true
 links: {"linkedin":"https://www.linkedin.com/company/euracresearch","twitter":"https://x.com/eurac","youtube":"https://www.youtube.com/user/EURACtv"}
 source: "eoepca-partners 2026-10"
 last_checked: "2026-10-28"

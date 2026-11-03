@@ -15,4 +15,5 @@ source: "original list"
 last_checked: ""
 type: "nonprofit"
 type_reason: "Nonprofit data science for carbon removal [agent]"
+unlisted_reason: "The fetched site shows no Earth observation work and the careers board showed no readable roles."
 ---

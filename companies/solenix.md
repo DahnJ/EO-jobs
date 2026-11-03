@@ -9,7 +9,7 @@ remote_evidence: ""
 description: "Engineering services for space & EO"
 satellites: ""
 category: ""
-listed: false
+listed: true
 links: {}
 source: "awesome 2026-06"
 last_checked: "2026-06-14"

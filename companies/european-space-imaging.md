@@ -9,7 +9,7 @@ remote_evidence: "'not a fully remote position, some presence in the office in M
 description: "EO data reseller"
 satellites: ""
 category: "Earth Observation"
-listed: false
+listed: true
 links: {}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"

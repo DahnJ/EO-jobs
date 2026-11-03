@@ -10,7 +10,7 @@ remote_confidence: "low"
 description: "Diversified engineering and consulting firm offering land surveying, 3D laser scanning, aerial mapping, LiDAR, bathymetric surveys, and GIS mapping services."
 satellites: ""
 category: ""
-listed: false
+listed: true
 links: {"linkedin":"https://www.linkedin.com/company/bowman-consulting"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-15"

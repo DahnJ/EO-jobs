@@ -16,4 +16,5 @@ source: "discovery-sweep 2026-06"
 last_checked: "2026-06-15"
 type: "software"
 type_reason: "Generic cloud GIS platform, not EO-specific analytics [agent]"
+unlisted_reason: "The fetched site describes general GIS and location intelligence, not Earth observation work."
 ---

@@ -15,4 +15,5 @@ source: "original list"
 last_checked: ""
 type: "nonprofit"
 type_reason: "Nonprofit research on climate risk [agent]"
+unlisted_reason: "Could not verify EO work: site text was unreadable to the fetcher."
 ---

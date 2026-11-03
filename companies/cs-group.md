@@ -10,7 +10,7 @@ remote_confidence: "low"
 description: "European systems integrator for defence, security, space and aerospace information systems. Not primarily an EO software or service vendor."
 satellites: ""
 category: ""
-listed: false
+listed: true
 links: {"linkedin":"https://www.linkedin.com/company/cs_group/","youtube":"https://www.youtube.com/channel/UCiWbeaYeRHgwwHZILUjS7Xw"}
 source: "eoepca-partners 2026-10"
 last_checked: "2026-10-28"

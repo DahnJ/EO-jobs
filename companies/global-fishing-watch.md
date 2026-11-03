@@ -9,7 +9,7 @@ remote_evidence: ""
 description: "Non-profit organization monitoring ocean activity and promoting sustainable fishing via satellite data analysis."
 satellites: ""
 category: ""
-listed: false
+listed: true
 links: {}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"

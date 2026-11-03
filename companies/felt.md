@@ -16,4 +16,5 @@ source: "discovery-sweep 2026-06"
 last_checked: "2026-06-15"
 type: "software"
 type_reason: "Generic cloud GIS mapping platform [agent]"
+unlisted_reason: "Felt is a general GIS mapping platform; the fetched pages show no Earth observation work of its own."
 ---

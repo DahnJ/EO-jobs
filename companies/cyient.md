@@ -15,4 +15,5 @@ source: "original list"
 last_checked: ""
 type: "conglomerate"
 type_reason: "Large tech company; EO/geospatial is subteam [agent]"
+unlisted_reason: "The fetched pages show road mapping only and no Earth observation work."
 ---

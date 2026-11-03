@@ -10,7 +10,7 @@ remote_confidence: "low"
 description: "Photogrammetry and drone mapping software; professional surveying and agriculture."
 satellites: ""
 category: ""
-listed: false
+listed: true
 links: {"linkedin":"https://www.linkedin.com/company/pix4d","twitter":"https://twitter.com/pix4d","youtube":"https://www.youtube.com/channel/UCXHBqjCbv1wj_-itfvpVNIA"}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-15"

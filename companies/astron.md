@@ -15,6 +15,7 @@ source: "google-sheet 2026-06"
 last_checked: "2026-06-14"
 type: "consultancy"
 type_reason: "Environmental consultancy with remote sensing [agent]"
+unlisted_reason: "Site and careers host do not resolve (ENOTFOUND)."
 ---
 
 Discovered via the EO companies Google Sheet (2026-06); unverified.

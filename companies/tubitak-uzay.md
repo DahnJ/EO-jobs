@@ -9,7 +9,7 @@ remote_evidence: ""
 description: "Turkey's leading space R&D organization; develops indigenous satellites, communication systems, and space exploration missions."
 satellites: ""
 category: ""
-listed: false
+listed: true
 links: {}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"

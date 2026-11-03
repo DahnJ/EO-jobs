@@ -9,7 +9,7 @@ remote_evidence: ""
 description: "Carbon emission monitoring"
 satellites: ""
 category: "Earth Observation"
-listed: false
+listed: true
 links: {}
 source: "google-sheet 2026-06"
 last_checked: "2026-06-14"

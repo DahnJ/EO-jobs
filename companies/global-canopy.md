@@ -15,6 +15,7 @@ source: "awesome 2026-06"
 last_checked: "2026-06-14"
 type: "nonprofit"
 type_reason: "NGO focused on deforestation [agent]"
+unlisted_reason: "Fetched pages describe nature and commodity market transparency work with no Earth observation work."
 ---
 
 Discovered via awesome (2026-06); unverified.
