@@ -12,6 +12,8 @@ module EoJobs.Merge
 
 import Control.Monad (forM, unless, (>=>))
 import Data.Bifunctor (first)
+import Data.Char (isAsciiLower, isDigit)
+import Data.Foldable (traverse_)
 import Data.Maybe (fromMaybe, mapMaybe)
 import Data.List (sortOn)
 import Data.Text (Text)
@@ -46,7 +48,8 @@ data InboxRecord = InboxRecord
   }
   deriving (Eq, Show)
 
--- | Decode one inbox record; an unknown @status@ or @remote_confidence@ word fails.
+-- | Decode one inbox record. An unknown @status@ or @remote_confidence@ word, a
+-- non-canonical slug, or a web link without a scheme fails.
 decodeInboxRecord :: Json -> Either Text InboxRecord
 decodeInboxRecord json = do
   pairs <- object json
@@ -56,6 +59,8 @@ decodeInboxRecord json = do
       nonEmpty key = (>>= nonEmptyText) <$> opt key text
       trimmedNonEmpty key = (>>= nonEmptyText . trim) <$> opt key text
   inboxSlug <- maybe "" trim <$> opt "slug" text
+  unless (T.null inboxSlug || isCanonicalSlug inboxSlug) $
+    Left ("field 'slug': not canonical: " <> inboxSlug)
   inboxName <- trimmedNonEmpty "name"
   inboxStatus <- opt "status" (vocabulary parseStatus)
   inboxWebsite <- nonEmpty "website"
@@ -68,6 +73,7 @@ decodeInboxRecord json = do
   inboxRemoteConfidence <- traverse (vocabulary parseConfidence . JString) (confidenceWord >>= nonEmptyText . trim)
   inboxDescription <- nonEmpty "description"
   inboxLinks <- maybe [] (mapMaybe nonBlankLink) <$> opt "links" (object >=> traverse (traverse linkValue))
+  traverse_ requireWebLink inboxLinks
   inboxNote <- trimmedNonEmpty "note"
   pure InboxRecord {..}
   where
@@ -78,6 +84,14 @@ decodeInboxRecord json = do
     nonBlankLink (key, value) = case value of
       Just v | not (isBlank v) -> Just (key, v)
       _ -> Nothing
+    requireWebLink link@(key, value) =
+      unless (isWebLink link) $ Left ("field 'links': " <> key <> " has no http scheme: " <> value)
+
+-- | Lowercase ASCII words joined by single hyphens, the form of every company file name.
+isCanonicalSlug :: Text -> Bool
+isCanonicalSlug slug = all isWord (T.splitOn "-" slug)
+  where
+    isWord word = not (T.null word) && T.all (\c -> isAsciiLower c || isDigit c) word
 
 -- | Merge an inbox record into the existing company ('Nothing' creates one),
 -- tagging a new company with @source@ and stamping notes with @today@.

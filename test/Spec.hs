@@ -3,6 +3,7 @@ module Main (main) where
 import Control.Exception (IOException, try)
 import Control.Monad (forM_)
 import qualified Data.ByteString as BS
+import Data.Either (isLeft)
 import Data.List (isInfixOf)
 import qualified Data.Map.Strict as Map
 import Data.Text (Text)
@@ -46,6 +47,15 @@ main = hspec $ do
       let rendered = renderReadme intro companies
       -- Assert
       rendered `shouldBe` expected
+
+    it "stores every link except a stocks ticker with an http scheme" $ do
+      -- Arrange
+      paths <- listMatching "companies" (hasExtension ".md")
+      -- Act
+      companies <- traverse (fmap (either (error . T.unpack) id . parseCompany) . readUtf8) paths
+      let schemeless = [link | c <- companies, link@(key, value) <- c.links, key /= "stocks", not ("http" `T.isPrefixOf` value)]
+      -- Assert
+      schemeless `shouldBe` []
 
     it "ends the frontmatter only at a line that is exactly ---" $ do
       -- Arrange
@@ -210,12 +220,12 @@ main = hspec $ do
           record =
             inbox
               [ ("slug", JString "acme")
-              , ("links", JObject [("twitter", JString "tw"), ("linkedin", JString "new-li"), ("youtube", JString " ")])
+              , ("links", JObject [("twitter", JString "https://tw"), ("linkedin", JString "https://new-li"), ("youtube", JString " ")])
               ]
       -- Act
       let merged = mergeOne today "sweep" (Just existing) record
       -- Assert
-      merged.links `shouldBe` [("twitter", "tw"), ("linkedin", "old-li"), ("github", "old-gh")]
+      merged.links `shouldBe` [("twitter", "https://tw"), ("linkedin", "old-li"), ("github", "old-gh")]
 
     it "stamps a note onto the trimmed body and sets last_checked" $ do
       -- Arrange
@@ -240,6 +250,31 @@ main = hspec $ do
       -- Assert
       (created.name, created.status, created.source, created.website) `shouldBe` ("newco", Unknown, "discovery-sweep", "")
       (created.careersUrls, created.locations, created.listed) `shouldBe` (["https://newco.io/jobs"], ["🇩🇪 Berlin"], False)
+
+    forM_ ["Acme Corp", "a/b", "../README", "-acme", "acme-", "a--b"] $ \slug ->
+      it ("rejects the slug " <> show slug) $ do
+        -- Arrange
+        let json = JObject [("slug", JString slug)]
+        -- Act
+        let decoded = decodeInboxRecord json
+        -- Assert
+        decoded `shouldSatisfy` isLeft
+
+    it "rejects a web link with no scheme" $ do
+      -- Arrange
+      let json = JObject [("slug", JString "acme"), ("links", JObject [("youtube", JString "youtube.com/@acme")])]
+      -- Act
+      let decoded = decodeInboxRecord json
+      -- Assert
+      decoded `shouldSatisfy` isLeft
+
+    it "accepts a stocks ticker" $ do
+      -- Arrange
+      let record = inbox [("slug", JString "acme"), ("links", JObject [("stocks", JString "$PL")])]
+      -- Act
+      let merged = mergeOne today "sweep" (Just sampleCompany {links = []}) record
+      -- Assert
+      merged.links `shouldBe` [("stocks", "$PL")]
 
     it "rejects an unknown status word" $ do
       -- Arrange

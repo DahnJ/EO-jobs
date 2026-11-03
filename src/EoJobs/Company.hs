@@ -15,14 +15,20 @@ module EoJobs.Company
   , confidenceText
   , parseConfidence
   , mergeLinks
+  , isWebLink
   ) where
 
 import Data.Maybe (fromMaybe)
 import Data.Text (Text)
+import qualified Data.Text as T
 import EoJobs.Json (Json)
 
 -- | A company's file name without @.md@, e.g. @planet-labs@.
 type Slug = Text
+
+-- | Whether a @links@ entry can be an href; @stocks@ holds a ticker, not a URL.
+isWebLink :: (Text, Text) -> Bool
+isWebLink (key, value) = key == "stocks" || "http" `T.isPrefixOf` value
 
 -- | No @Renamed@: a rebrand updates the record in place and stays 'Active'.
 data Status = Active | Acquired | Defunct | Unknown
