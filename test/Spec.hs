@@ -276,6 +276,24 @@ main = hspec $ do
       -- Assert
       merged.links `shouldBe` [("stocks", "$PL")]
 
+    it "ignores confidence and evidence from a record with no remote value" $ do
+      -- Arrange
+      let existing = sampleCompany {remote = "", remoteEvidence = "", remoteConfidence = Nothing}
+          record = inbox [("slug", JString "acme"), ("remote", JString ""), ("remote_evidence", JString "x"), ("remote_confidence", JString "high")]
+      -- Act
+      let merged = mergeOne today "sweep" (Just existing) record
+      -- Assert
+      (merged.remote, merged.remoteEvidence, merged.remoteConfidence) `shouldBe` ("", "", Nothing)
+
+    it "lets any finding fill a blank remote, whatever confidence is held" $ do
+      -- Arrange
+      let existing = sampleCompany {remote = "", remoteEvidence = "old", remoteConfidence = Just High}
+          record = inbox [("slug", JString "acme"), ("remote", JString "Yes (Europe)"), ("remote_confidence", JString "medium")]
+      -- Act
+      let merged = mergeOne today "sweep" (Just existing) record
+      -- Assert
+      (merged.remote, merged.remoteEvidence, merged.remoteConfidence) `shouldBe` ("Yes (Europe)", "", Just Medium)
+
     it "rejects an unknown status word" $ do
       -- Arrange
       let json = JObject [("slug", JString "acme"), ("status", JString "dead")]

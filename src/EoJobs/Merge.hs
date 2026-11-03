@@ -119,15 +119,18 @@ mergeOne today source existing record =
     applyLocations company
       | null record.inboxLocations = company
       | otherwise = company {locations = flagAll record.inboxLocations}
-    applyRemote company
-      -- a remote finding ranked below the held one changes nothing; a missing
-      -- confidence ranks below every confidence ('Nothing' < 'Just' in 'Ord')
-      | record.inboxRemoteConfidence < company.remoteConfidence = company
-      | otherwise =
-          setIfPresent record.inboxRemoteConfidence (\v c -> c {remoteConfidence = Just v})
-            . setIfPresent record.inboxRemoteEvidence (\v c -> c {remoteEvidence = v})
-            . setIfPresent record.inboxRemote (\v c -> c {remote = v})
-            $ company
+    applyRemote company = case record.inboxRemote of
+      Nothing -> company
+      Just value
+        -- a finding ranked below the held remote changes nothing; a missing
+        -- confidence ranks below every confidence ('Nothing' < 'Just' in 'Ord')
+        | not (isBlank company.remote) && record.inboxRemoteConfidence < company.remoteConfidence -> company
+        | otherwise ->
+            company
+              { remote = value
+              , remoteEvidence = fromMaybe "" record.inboxRemoteEvidence
+              , remoteConfidence = record.inboxRemoteConfidence
+              }
     -- add new links, never clobber an existing one
     applyLinks company = company {links = mergeLinks record.inboxLinks company.links}
     stampChecked company = company {lastChecked = Just (T.pack (show today))}
