@@ -18,6 +18,7 @@ import EoJobs.Flags (addFlag)
 import EoJobs.Json
 import EoJobs.Merge (InboxRecord (..), decodeInboxRecord, mergeOne)
 import qualified EoJobs.Merge as Merge
+import qualified EoJobs.Classify as Classify
 import qualified EoJobs.Dedup as Dedup
 import EoJobs.Net (introLinks, isAliveStatus, regDomain)
 import EoJobs.Readme (renderReadme)
@@ -402,14 +403,13 @@ main = hspec $ do
       -- Assert
       (classified.companyType, classified.typeReason) `shouldBe` (Just Consultancy, Just "services [agent]")
 
-    it "lists an active commercial-eo company with an http careers URL" $ do
+    it "does not give a type to a company without a verdict, or list it" $ do
       -- Arrange
       let company = sampleCompany {companyType = Nothing, typeReason = Nothing}
       -- Act
       let classified = classifyOne Map.empty "other" company
       -- Assert
-      (classified.companyType, classified.typeReason, classified.listed)
-        `shouldBe` (Just CommercialEo, Just "unclassified", True)
+      (classified.companyType, classified.typeReason, classified.listed) `shouldBe` (Nothing, Nothing, False)
 
     forM_ (filter (/= NotEo) [minBound .. maxBound]) $ \companyType ->
       it ("lists an active " <> show companyType <> " company with an http careers URL") $ do
@@ -460,6 +460,19 @@ main = hspec $ do
       -- Assert
       classified.listed `shouldBe` False
 
+  describe "Classify.run" $ do
+    it "saves nothing when a verdict names an unknown slug" $ inScratchDir "classify" $ do
+      -- Arrange
+      createDirectoryIfMissing True "companies/_inbox"
+      writeUtf8 "companies/acme.md" sampleFile
+      writeUtf8 "companies/_inbox/class_1.json" "[{\"slug\":\"typo\",\"type\":\"software\"}]"
+      -- Act
+      failure <- failureMessage Classify.run
+      -- Assert
+      failure `shouldSatisfy` maybe False ("unknown slug: typo" `isInfixOf`)
+      acmeText <- readUtf8 "companies/acme.md"
+      acmeText `shouldBe` sampleFile
+
   describe "decodeVerdicts" $ do
     let verdictJson unlistedField =
           JArray [JObject ([("slug", JString "acme"), ("type", JString "conglomerate"), ("reason", JString "big")] <> unlistedField)]
@@ -471,6 +484,15 @@ main = hspec $ do
       let decoded = decodeVerdicts json
       -- Assert
       decoded `shouldBe` Right [("acme", Verdict Conglomerate "big" (Just "no EO roles"))]
+
+    forM_ [("invalid", [("slug", JString "acme"), ("type", JString "softwre")]), ("missing", [("slug", JString "acme")])] $ \(label, pairs) ->
+      it ("fails on a verdict whose type is " <> label) $ do
+        -- Arrange
+        let json = JArray [JObject pairs]
+        -- Act
+        let decoded = decodeVerdicts json
+        -- Assert
+        decoded `shouldSatisfy` isLeft
 
     forM_ [("missing", []), ("blank", [("unlisted_reason", JString " ")])] $ \(label, unlistedField) ->
       it ("treats a " <> label <> " unlisted_reason as absent") $ do

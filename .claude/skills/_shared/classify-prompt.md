@@ -9,7 +9,8 @@ description — not keyword matching. Build the input with `just class-input`
 dispatch one **Haiku** subagent per batch. Output
 `[{slug, type, reason, unlisted_reason?}]` to `companies/_inbox/class_N.json`;
 `just readme` applies it. A verdict replaces the stored `unlisted_reason`, and a
-verdict without one clears it.
+verdict without one clears it. A verdict with an invalid type or an unknown slug
+stops the run. A company with no type stays off the README.
 
 **Standing decision: use the BROAD definition.** A previous strict pass that
 required the *product* to be EO wrongly excluded companies that build on EO data.
