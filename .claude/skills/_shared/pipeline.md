@@ -37,7 +37,8 @@ step. Read this once; each skill's SKILL.md only adds the part that's unique to 
 
 ## Merge → classify → finish
 
-1. **Merge:** `just merge "<source> YYYY-MM"` applies every `companies/_inbox/*.json`.
+1. **Merge:** `just merge "<source> YYYY-MM"` applies every `companies/_inbox/*.json`
+   except the `class_*.json` verdicts, then deletes the files it applied.
    It creates new files (tagging their source) and updates existing ones in place,
    restamping `last_checked` and appending notes to the body. Guards you can rely on:
    it won't downgrade a known status to `unknown`, won't let a lower

@@ -25,7 +25,7 @@ import EoJobs.Db
 import EoJobs.Flags (flagAll)
 import EoJobs.Json
 import EoJobs.StringRules (isBlank, trim, utf16Order)
-import System.Directory (doesFileExist)
+import System.Directory (doesFileExist, removeFile)
 
 -- | One verified finding about a company. Empty strings are already dropped
 -- here for the fields that never overwrite with "".
@@ -173,12 +173,13 @@ newCompany source record =
 
 data Outcome = Created Slug | Updated Slug | Skipped Text
 
--- | Merge every inbox file into the DB and print a summary. Every file is
--- decoded before the first save, so a bad record changes nothing on disk.
+-- | Merge the inbox's company records into the DB, delete those files, and print
+-- a summary. Verdict files stay for classify. Every file is decoded before the
+-- first save, so a bad record changes nothing on disk.
 run :: Text -> IO ()
 run source = do
   today <- localDay . zonedTimeToLocalTime <$> getZonedTime
-  files <- listMatching inboxDir (hasExtension ".json")
+  files <- listMatching inboxDir (\fileName -> hasExtension ".json" fileName && not (isVerdictFile fileName))
   records <- concat <$> traverse readInboxFile files
   -- sequential on purpose: a later record must see the file an earlier one wrote
   outcomes <- forM records $ \record ->
@@ -190,6 +191,7 @@ run source = do
         existing <- if exists then Just <$> readCompany (companyPath slug) else pure Nothing
         save slug (mergeOne today source existing record)
         pure (if exists then Updated slug else Created slug)
+  traverse_ removeFile files
   let created = [s | Created s <- outcomes]
       updated = [s | Updated s <- outcomes]
       skipped = [n | Skipped n <- outcomes]

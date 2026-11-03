@@ -333,6 +333,17 @@ main = hspec $ do
       saved <- traverse doesFileExist ["companies/acme.md", "companies/beta.md"]
       saved `shouldBe` [False, False]
 
+    it "leaves verdict files alone and deletes the files it merged" $ inScratchDir "merge-inbox" $ do
+      -- Arrange
+      createDirectoryIfMissing True "companies/_inbox"
+      writeUtf8 "companies/_inbox/class_1.json" "[{\"slug\":\"typo\",\"type\":\"software\"}]"
+      writeUtf8 "companies/_inbox/refresh_1.json" "[{\"slug\":\"acme\",\"note\":\"seen\"}]"
+      -- Act
+      Merge.run "sweep"
+      -- Assert
+      present <- traverse doesFileExist ["companies/acme.md", "companies/typo.md", "companies/_inbox/class_1.json", "companies/_inbox/refresh_1.json"]
+      present `shouldBe` [True, False, True, False]
+
   describe "Dedup.run" $ do
     it "deletes no dropped file when a later one in the group fails to read" $ inScratchDir "dedup" $ do
       -- Arrange

@@ -15,13 +15,14 @@ module EoJobs.Db
   , writeUtf8
   , readJsonFile
   , hasExtension
+  , isVerdictFile
   , failAt
   ) where
 
 import Control.Monad ((>=>))
 import qualified Data.ByteString as BS
 import Data.Bifunctor (first)
-import Data.List (sortOn)
+import Data.List (isPrefixOf, sortOn)
 import qualified Data.Map.Strict as Map
 import Data.Maybe (fromMaybe)
 import qualified Data.Set as Set
@@ -184,6 +185,10 @@ readJsonFile path = do
 -- | Whether a file name ends with @suffix@, e.g. @hasExtension ".json"@.
 hasExtension :: String -> String -> Bool
 hasExtension suffix fileName = T.pack suffix `T.isSuffixOf` T.pack fileName
+
+-- | An inbox file of classification verdicts, not company records.
+isVerdictFile :: String -> Bool
+isVerdictFile fileName = "class_" `isPrefixOf` fileName && hasExtension ".json" fileName
 
 -- | Fail with the path that caused the error, e.g. @companies/acme.md: missing field 'status'@.
 failAt :: FilePath -> Text -> IO a

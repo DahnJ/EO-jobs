@@ -9,7 +9,7 @@ module EoJobs.Classify
   ) where
 
 import Control.Monad (forM, forM_, mfilter)
-import Data.List (isPrefixOf, sortOn)
+import Data.List (sortOn)
 import qualified Data.Map.Strict as Map
 import Data.Maybe (catMaybes, fromMaybe, isNothing)
 import Data.Text (Text)
@@ -74,7 +74,7 @@ isListed company =
 -- | Apply verdicts to every company, save, and print the type distribution.
 run :: IO ()
 run = do
-  files <- listMatching inboxDir (\n -> "class_" `isPrefixOf` n && hasExtension ".json" n)
+  files <- listMatching inboxDir isVerdictFile
   verdictLists <- forM files $ \file -> do
     json <- readJsonFile file
     either (failAt file) pure (decodeVerdicts json)
