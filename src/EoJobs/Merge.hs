@@ -31,7 +31,7 @@ import System.Directory (doesFileExist, removeFile)
 -- here for the fields that never overwrite with "".
 data InboxRecord = InboxRecord
   { inboxSlug :: Text
-  -- ^ Trimmed; empty means the record is skipped.
+  -- ^ Trimmed and canonical.
   , inboxName :: Maybe Text
   , inboxStatus :: Maybe Status
   , inboxWebsite :: Maybe Text
@@ -59,7 +59,7 @@ decodeInboxRecord json = do
       nonEmpty key = (>>= nonEmptyText) <$> opt key text
       trimmedNonEmpty key = (>>= nonEmptyText . trim) <$> opt key text
   inboxSlug <- maybe "" trim <$> opt "slug" text
-  unless (T.null inboxSlug || isCanonicalSlug inboxSlug) $
+  unless (isCanonicalSlug inboxSlug) $
     Left ("field 'slug': not canonical: " <> inboxSlug)
   inboxName <- trimmedNonEmpty "name"
   inboxStatus <- opt "status" (vocabulary parseStatus)
@@ -171,7 +171,7 @@ newCompany source record =
     , body = ""
     }
 
-data Outcome = Created Slug | Updated Slug | Skipped Text
+data Outcome = Created Slug | Updated Slug
 
 -- | Merge the inbox's company records into the DB, delete those files, and print
 -- a summary. Verdict files stay for classify. Every file is decoded before the
@@ -182,27 +182,18 @@ run source = do
   files <- listMatching inboxDir (\fileName -> hasExtension ".json" fileName && not (isVerdictFile fileName))
   records <- concat <$> traverse readInboxFile files
   -- sequential on purpose: a later record must see the file an earlier one wrote
-  outcomes <- forM records $ \record ->
-    if T.null record.inboxSlug
-      then pure (Skipped (fromMaybe "?" record.inboxName))
-      else do
-        let slug = record.inboxSlug
-        exists <- doesFileExist (companyPath slug)
-        existing <- if exists then Just <$> readCompany (companyPath slug) else pure Nothing
-        save slug (mergeOne today source existing record)
-        pure (if exists then Updated slug else Created slug)
+  outcomes <- forM records $ \record -> do
+    let slug = record.inboxSlug
+    exists <- doesFileExist (companyPath slug)
+    existing <- if exists then Just <$> readCompany (companyPath slug) else pure Nothing
+    save slug (mergeOne today source existing record)
+    pure (if exists then Updated slug else Created slug)
   traverse_ removeFile files
   let created = [s | Created s <- outcomes]
       updated = [s | Updated s <- outcomes]
-      skipped = [n | Skipped n <- outcomes]
-  TIO.putStrLn
-    ( "created " <> showT (length created) <> ", updated " <> showT (length updated)
-        <> ", skipped " <> showT (length skipped)
-    )
+  TIO.putStrLn ("created " <> showT (length created) <> ", updated " <> showT (length updated))
   unless (null updated) $
     TIO.putStrLn ("updated: " <> T.intercalate ", " (sortOn utf16Order updated))
-  unless (null skipped) $
-    TIO.putStrLn ("skipped (no slug): " <> T.intercalate ", " skipped)
   where
     showT = T.pack . show
 

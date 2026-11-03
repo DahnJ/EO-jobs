@@ -257,7 +257,7 @@ main = hspec $ do
       (created.name, created.status, created.source, created.website) `shouldBe` ("newco", Unknown, "discovery-sweep", "")
       (created.careersUrls, created.locations, created.listed) `shouldBe` (["https://newco.io/jobs"], ["🇩🇪 Berlin"], False)
 
-    forM_ ["Acme Corp", "a/b", "../README", "-acme", "acme-", "a--b"] $ \slug ->
+    forM_ ["", " ", "Acme Corp", "a/b", "../README", "-acme", "acme-", "a--b"] $ \slug ->
       it ("rejects the slug " <> show slug) $ do
         -- Arrange
         let json = JObject [("slug", JString slug)]
@@ -349,6 +349,17 @@ main = hspec $ do
       -- Assert
       present <- traverse doesFileExist ["companies/acme.md", "companies/typo.md", "companies/_inbox/class_1.json", "companies/_inbox/refresh_1.json"]
       present `shouldBe` [True, False, True, False]
+
+    it "keeps the file when a record has no slug" $ inScratchDir "merge-no-slug" $ do
+      -- Arrange
+      createDirectoryIfMissing True "companies/_inbox"
+      writeUtf8 "companies/_inbox/disc_1.json" "[{\"name\":\"Acme\"}]"
+      -- Act
+      failure <- failureMessage (Merge.run "sweep")
+      -- Assert
+      failure `shouldSatisfy` maybe False ("field 'slug'" `isInfixOf`)
+      fileKept <- doesFileExist "companies/_inbox/disc_1.json"
+      fileKept `shouldBe` True
 
   describe "Dedup.run" $ do
     it "deletes no dropped file when a later one in the group fails to read" $ inScratchDir "dedup" $ do
