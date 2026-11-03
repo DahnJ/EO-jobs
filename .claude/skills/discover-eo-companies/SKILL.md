@@ -26,8 +26,7 @@ DB. Don't re-scrape static corpora every run.
 1. **Sweep recurring, pre-filtered feeds** (subagents in parallel, each returning a
    terse `Name|website` list):
    - **EO/space job boards** — the ones in README's "Portals & Jobs" section: Space
-     Talent (`jobs.spacetalent.org`), Payload Jobs, Careers in Space, SpaceCareers.uk,
-     ai-jobs.net, Climatebase. A company posting here is active and hiring — this is
+     Capital (`jobs.spacecapital.com`), SpaceCareers.uk, Foorilla, Climatebase. A company posting here is active and hiring — this is
      the highest-leverage source (and doubles as the freshness signal for refresh).
    - **Funding / news feeds** — TerraWatch Space, Payload, SpaceNews, the Seraphim
      Space index/quarterly reports, Space Capital. Pull recently-announced EO/space
