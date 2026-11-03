@@ -91,6 +91,13 @@ Budget ~1–3 WebFetch calls per company. This is a Haiku batch job — be terse
   3. If you find **no posting that mentions remote**, that is **not** evidence of
      `No`. Leave `remote` unchanged (refresh) or `""` (discover) and set confidence
      `low`. Don't assert `No` from mere absence.
+  - **"Remote is possible" counts as remote.** "Based in Pavia with the possibility
+    of remote working" is `Yes (Italy)`, not `Hybrid`. Use `Hybrid` only when the
+    posting requires office days.
+  - **New regions add to the stored ones.** Stored `Yes (UK/Ireland)` plus a new
+    Italy posting is `Yes (UK/Ireland/Italy)`. A role that left the board is not a
+    contradiction: keep its region unless a page says the policy changed. *Why:*
+    a refresh replaced real regions with whatever happened to be open that week.
   - **Export-control / work-authorization language scopes remoteness.** A "remote"
     role mentioning ITAR/EAR, "US export control", "must be a US person", or "US
     work authorization required" is effectively `Yes (US)` (analogously for other
