@@ -15,16 +15,18 @@ import EoJobs.Json
 import EoJobs.Net (regDomain)
 import EoJobs.StringRules (isBlank, takeUtf16)
 
--- | One JSONL line: @{slug,name,desc,body}@, body cut to its first 300 characters.
+-- | One JSONL line: @{slug,name,desc,body}@, body cut to its first 300 characters,
+-- plus any stored @unlisted_reason@: a verdict replaces it, so the agent must see it.
 classInputLine :: Slug -> Company -> Text
 classInputLine slug c =
   encodeJson $
-    JObject
+    JObject $
       [ ("slug", JString slug)
       , ("name", JString c.name)
       , ("desc", JString c.description)
       , ("body", JString (takeUtf16 300 (T.replace "\n" " " c.body)))
       ]
+        <> [("unlisted_reason", JString reason) | Just reason <- [c.unlistedReason]]
 
 -- | One TSV line: @slug<TAB>name<TAB>domain@.
 dedupIndexLine :: Slug -> Company -> Text

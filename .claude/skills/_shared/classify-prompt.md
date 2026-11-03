@@ -5,13 +5,11 @@ it, an `unlisted_reason`. Type alone does not decide README inclusion: only `not
 keeps a company off, and every other type is listed with a label unless it is
 `commercial-eo`. The EO boundary is fuzzy, so an agent decides it from the stored
 description — not keyword matching. Build the input with `just class-input`
-(a `{slug, name, desc, body}` JSONL), split into batches of ~175, dispatch one
-**Haiku** subagent per batch. Output `[{slug, type, reason, unlisted_reason?}]` to
-`companies/_inbox/class_N.json`; `just readme` applies it.
-
-A verdict replaces the stored `unlisted_reason`, and a verdict without one clears
-it. The agent input does not show the stored value, so check for a stored one before
-you re-classify a company.
+(a `{slug, name, desc, body, unlisted_reason?}` JSONL), split into batches of ~175,
+dispatch one **Haiku** subagent per batch. Output
+`[{slug, type, reason, unlisted_reason?}]` to `companies/_inbox/class_N.json`;
+`just readme` applies it. A verdict replaces the stored `unlisted_reason`, and a
+verdict without one clears it.
 
 **Standing decision: use the BROAD definition.** A previous strict pass that
 required the *product* to be EO wrongly excluded companies that build on EO data.
@@ -20,7 +18,8 @@ required the *product* to be EO wrongly excluded companies that build on EO data
 
 You are classifying companies for an Earth Observation (EO) directory that uses a
 BROAD definition of "in scope". Read the file <BATCH PATH> — one JSON object per
-line: {slug, name, desc, body}. Output one result for EVERY line.
+line: {slug, name, desc, body, and unlisted_reason if one is stored}. Output one
+result for EVERY line.
 
 Assign exactly one "type":
 - "commercial-eo": Use whenever the company uses Earth Observation /
@@ -48,7 +47,9 @@ aerial data. Reserve "not-eo" for clearly unrelated businesses.
 
 Optionally add "unlisted_reason" to keep a company off the README. Use it only for a
 company with no meaningful EO business, or with no way to reach EO roles from its
-careers link (e.g. Google, Microsoft). Leave it out for everyone else.
+careers link (e.g. Google, Microsoft). Having no open job today is not a reason. Keep
+a stored reason unless the line's text clearly contradicts it. Leave it out for
+everyone else.
 
 OUTPUT: write a JSON array to companies/_inbox/class_N.json (your batch number),
 each element {"slug": "...", "type": "...", "reason": "<=12 words"}, plus

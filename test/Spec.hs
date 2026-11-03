@@ -11,6 +11,7 @@ import Data.Time (fromGregorian)
 import EoJobs.Classify (Verdict (..), classifyOne, decodeVerdicts)
 import EoJobs.Company
 import EoJobs.Db (hasExtension, listMatching, parseCompany, readUtf8, renderCompany, writeUtf8)
+import EoJobs.Export (classInputLine)
 import EoJobs.Fixup (FixupResult (..), fixupOne)
 import EoJobs.Flags (addFlag)
 import EoJobs.Json
@@ -415,6 +416,23 @@ main = hspec $ do
       let result = fixupOne company
       -- Assert
       (result.fixed, result.remoteChanged, result.locationsFlagged) `shouldBe` (company, False, 0)
+
+  describe "classInputLine" $ do
+    it "shows a stored unlisted_reason to the classifying agent" $ do
+      -- Arrange
+      let company = sampleCompany {unlistedReason = Just "general portal"}
+      -- Act
+      let line = classInputLine "acme" company
+      -- Assert
+      line `shouldSatisfy` T.isInfixOf "\"unlisted_reason\":\"general portal\""
+
+    it "leaves unlisted_reason out when none is stored" $ do
+      -- Arrange
+      let company = sampleCompany {unlistedReason = Nothing}
+      -- Act
+      let line = classInputLine "acme" company
+      -- Assert
+      line `shouldNotSatisfy` T.isInfixOf "unlisted_reason"
 
   describe "regDomain" $ do
     let cases =
