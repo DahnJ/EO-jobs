@@ -27,7 +27,7 @@ merge source="discovery-sweep":
 dedup:
     {{run}} dedup
 
-# link-rot sweep over website + careers URLs (listed companies by default)
+# link-rot sweep over intro.md links + website + careers URLs (listed companies by default)
 check args="--listed-only":
     {{run}} check-links {{args}}
 

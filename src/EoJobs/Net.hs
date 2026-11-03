@@ -6,6 +6,7 @@
 -- @workers@ at a time.
 module EoJobs.Net
   ( regDomain
+  , introLinks
   , isAliveStatus
   , checkLinks
   , checkRedirects
@@ -130,17 +131,27 @@ mapBounded workers action items = do
   slots <- newQSem workers
   mapConcurrently (bracket_ (waitQSem slots) (signalQSem slots) . action) items
 
--- | Link-rot sweep over website and careers URLs; report in @/tmp/linkrot.txt@.
+-- | The distinct http(s) URLs in a markdown text, in order.
+introLinks :: Text -> [Text]
+introLinks =
+  nub . filter isUrl . map (T.takeWhile (`notElem` (" \t\n)>\"" :: String)) . snd) . T.breakOnAll "http"
+  where
+    isUrl url = any (`T.isPrefixOf` url) ["http://", "https://"]
+
+-- | Link-rot sweep over website and careers URLs and the links in @intro.md@;
+-- report in @/tmp/linkrot.txt@.
 checkLinks :: Bool -> Int -> Int -> IO ()
 checkLinks listedOnly timeoutSeconds workers = do
   manager <- newSweepManager
   companies <- loadAll
-  let targets =
+  intro <- readUtf8 "intro.md"
+  let companyTargets =
         [ (slug, kind, url)
         | (slug, c) <- companies
         , not listedOnly || c.listed
         , (kind, url) <- ("website", c.website) : [("careers", u) | u <- c.careersUrls]
         ]
+      targets = companyTargets <> [("intro.md", "intro", url) | url <- introLinks intro]
   results <- mapBounded workers (\(slug, kind, url) -> (slug, kind, url,) <$> alive manager timeoutSeconds url) targets
   let bad =
         sortOn (\(slug, kind, _, _) -> (utf16Order slug, utf16Order kind))
@@ -149,7 +160,7 @@ checkLinks listedOnly timeoutSeconds workers = do
     T.intercalate "\n" [slug <> "\t" <> kind <> "\t" <> detail <> "\t" <> url | (slug, kind, url, detail) <- bad] <> "\n"
   TIO.putStrLn
     ( "checked " <> showT (length targets) <> " urls across "
-        <> showT (length (nub [slug | (slug, _, _) <- targets]))
+        <> showT (length (nub [slug | (slug, _, _) <- companyTargets]))
         <> " companies; " <> showT (length bad) <> " dead/unreachable"
     )
   TIO.putStrLn "full report: /tmp/linkrot.txt"

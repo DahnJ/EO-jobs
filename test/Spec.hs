@@ -18,7 +18,7 @@ import EoJobs.Json
 import EoJobs.Merge (InboxRecord (..), decodeInboxRecord, mergeOne)
 import qualified EoJobs.Merge as Merge
 import qualified EoJobs.Dedup as Dedup
-import EoJobs.Net (isAliveStatus, regDomain)
+import EoJobs.Net (introLinks, isAliveStatus, regDomain)
 import EoJobs.Readme (renderReadme)
 import System.Directory (createDirectoryIfMissing, doesFileExist, getTemporaryDirectory, removePathForcibly, withCurrentDirectory)
 import System.FilePath ((</>))
@@ -433,6 +433,15 @@ main = hspec $ do
       let line = classInputLine "acme" company
       -- Assert
       line `shouldNotSatisfy` T.isInfixOf "unlisted_reason"
+
+  describe "introLinks" $ do
+    it "returns each markdown and html link once, without its closing punctuation" $ do
+      -- Arrange
+      let text = "[a](https://a.io/x?y=1) and <a href=\"http://b.io\">b</a>\n[again](https://a.io/x?y=1) http is a word"
+      -- Act
+      let links = introLinks text
+      -- Assert
+      links `shouldBe` ["https://a.io/x?y=1", "http://b.io"]
 
   describe "regDomain" $ do
     let cases =
