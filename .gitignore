@@ -1,4 +1,4 @@
 spac-slides
 .ipynb_checkpoints
 
-.venv/
+dist-newstyle/

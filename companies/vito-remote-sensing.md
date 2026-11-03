@@ -1,0 +1,25 @@
+---
+name: "Vito Remote Sensing"
+status: "active"
+website: "https://remotesensing.vito.be/"
+careers_urls: ["https://vito.be/en/jobs"]
+locations: ["🇧🇪 Mol, Belgium"]
+remote: ""
+remote_evidence: "Jobs page lists categories but no specific listings shown; no remote policy mentioned; no confirmation of remote work"
+remote_confidence: "low"
+description: "Earth observation company providing geo intelligence and satellite analytics across agriculture, climate, environment, and water sectors."
+satellites: ""
+category: "Earth Observation"
+listed: true
+links: {"linkedin":"https://www.linkedin.com/company/vito/?originalSubdomain=be","twitter":"https://twitter.com/VITO_RS_","youtube":"https://vimeo.com/channels/vitors"}
+source: "google-sheet 2026-06"
+last_checked: "2026-06-14"
+type: "commercial-eo"
+type_reason: "EO/satellite core business [agent]"
+---
+
+Discovered via the EO companies Google Sheet (2026-06); unverified.
+
+Part of VITO research org.
+
+[dedup] merged duplicate(s) vito-rs — same org VITO; keep the EO-specific remote-sensing entry

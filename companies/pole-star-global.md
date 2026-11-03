@@ -1,0 +1,23 @@
+---
+name: "Pole Star Global"
+status: "active"
+website: "https://www.polestarglobal.com/"
+careers_urls: ["https://www.polestarglobal.com/careers/"]
+locations: ["🇬🇧 London, UK"]
+remote: ""
+remote_evidence: "Careers page lists external portals but doesn't display listings or specify remote policies; offices in 5 regions."
+remote_confidence: "low"
+description: "Geospatial intelligence and Earth observation services."
+satellites: ""
+category: ""
+listed: true
+links: {"linkedin":"https://www.linkedin.com/company/pole-star-global","crunchbase":"https://www.crunchbase.com/organization/pole-star-0f8b"}
+source: "discovery-sweep 2026-06"
+last_checked: "2026-06-15"
+type: "commercial-eo"
+type_reason: "EO/satellite core business [agent]"
+---
+
+[verify 2026-06 2026-06-14] No locations or careers page found; requires verification
+
+[links 2026-06 2026-06-14] No locations or careers page found; requires verification

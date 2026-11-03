@@ -1,0 +1,21 @@
+---
+name: "Mundialis"
+status: "active"
+website: "https://www.mundialis.de"
+careers_urls: ["https://www.mundialis.de/en/karriere/"]
+locations: ["🇩🇪 Bonn, Germany"]
+remote: ""
+remote_evidence: "Careers page shows office in Bonn, Germany; positions (Sales, Sales Manager) have no remote designation mentioned."
+remote_confidence: "low"
+description: "Geoinformation solutions using remote sensing for environment and sustainability."
+satellites: ""
+category: "Earth Observation"
+listed: true
+links: {"linkedin":"https://www.linkedin.com/company/10446572","github":"https://github.com/mundialis","twitter":"https://mastodon.social/@mundialis","crunchbase":"https://www.crunchbase.com/organization/mundialis"}
+source: "google-sheet 2026-06"
+last_checked: "2026-06-15"
+type: "commercial-eo"
+type_reason: "EO data infrastructure and analytics [agent]"
+---
+
+Discovered via the EO companies Google Sheet (2026-06); unverified.
