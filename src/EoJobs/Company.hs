@@ -15,6 +15,7 @@ module EoJobs.Company
   , confidenceText
   , parseConfidence
   , mergeLinks
+  , isHttpUrl
   , isWebLink
   ) where
 
@@ -26,9 +27,13 @@ import EoJobs.Json (Json)
 -- | A company's file name without @.md@, e.g. @planet-labs@.
 type Slug = Text
 
+-- | Whether a value is an absolute web URL.
+isHttpUrl :: Text -> Bool
+isHttpUrl value = any (`T.isPrefixOf` value) ["http://", "https://"]
+
 -- | Whether a @links@ entry can be an href; @stocks@ holds a ticker, not a URL.
 isWebLink :: (Text, Text) -> Bool
-isWebLink (key, value) = key == "stocks" || "http" `T.isPrefixOf` value
+isWebLink (key, value) = key == "stocks" || isHttpUrl value
 
 -- | No @Renamed@: a rebrand updates the record in place and stays 'Active'.
 data Status = Active | Acquired | Defunct | Unknown

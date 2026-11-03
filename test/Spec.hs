@@ -54,7 +54,7 @@ main = hspec $ do
       paths <- listMatching "companies" (hasExtension ".md")
       -- Act
       companies <- traverse (fmap (either (error . T.unpack) id . parseCompany) . readUtf8) paths
-      let schemeless = [link | c <- companies, link@(key, value) <- c.links, key /= "stocks", not ("http" `T.isPrefixOf` value)]
+      let schemeless = [link | c <- companies, link <- c.links, not (isWebLink link)]
       -- Assert
       schemeless `shouldBe` []
 
@@ -317,6 +317,23 @@ main = hspec $ do
       let merged = mergeOne today "sweep" (Just existing) record
       -- Assert
       merged.careersUrls `shouldBe` ["https://c.io", "https://b.io"]
+
+    forM_ [("website", "acme.io"), ("careers_url", "jobs.acme.io"), ("careers_url", "httpbin.org/jobs")] $ \(key, value) ->
+      it ("rejects " <> show key <> " " <> show value) $ do
+        -- Arrange
+        let json = JObject [("slug", JString "acme"), (key, JString value)]
+        -- Act
+        let decoded = decodeInboxRecord json
+        -- Assert
+        decoded `shouldSatisfy` isLeft
+
+    it "rejects a link that only starts with the letters http" $ do
+      -- Arrange
+      let json = JObject [("slug", JString "acme"), ("links", JObject [("github", JString "httpbin.org/acme")])]
+      -- Act
+      let decoded = decodeInboxRecord json
+      -- Assert
+      decoded `shouldSatisfy` isLeft
 
     it "rejects an unknown status word" $ do
       -- Arrange
@@ -598,6 +615,7 @@ main = hspec $ do
           [ ("https://www.example.com/careers", "example.com")
           , ("https://jobs.bbc.co.uk/x", "bbc.co.uk")
           , ("example.com", "example.com")
+          , ("httpbin.org/x", "httpbin.org")
           , ("https://a.b.example.org", "example.org")
           , ("https://localhost:8080", "localhost")
           , ("", "")

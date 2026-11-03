@@ -58,7 +58,7 @@ isListed :: Company -> Bool
 isListed company =
   maybe False (/= NotEo) company.companyType
     && company.status == Active
-    && any ("http" `T.isPrefixOf`) company.careersUrls
+    && any isHttpUrl company.careersUrls
     && isNothing company.unlistedReason
 
 -- | Apply verdicts to every company, save, and print the type distribution.

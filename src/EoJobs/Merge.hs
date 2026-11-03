@@ -49,7 +49,7 @@ data InboxRecord = InboxRecord
   deriving (Eq, Show)
 
 -- | Decode one inbox record. An unknown @status@ or @remote_confidence@ word, a
--- non-canonical slug, or a web link without a scheme fails.
+-- non-canonical slug, or a website, careers URL or web link without a scheme fails.
 decodeInboxRecord :: Json -> Either Text InboxRecord
 decodeInboxRecord json = do
   pairs <- object json
@@ -73,6 +73,8 @@ decodeInboxRecord json = do
   inboxRemoteConfidence <- traverse (vocabulary parseConfidence . JString) (confidenceWord >>= nonEmptyText . trim)
   inboxDescription <- nonEmpty "description"
   inboxLinks <- maybe [] (mapMaybe nonBlankLink) <$> opt "links" (object >=> traverse (traverse linkValue))
+  traverse_ (requireHttpUrl "website") inboxWebsite
+  traverse_ (requireHttpUrl "careers_url") inboxCareersUrl
   traverse_ requireWebLink inboxLinks
   inboxNote <- trimmedNonEmpty "note"
   pure InboxRecord {..}
@@ -84,6 +86,8 @@ decodeInboxRecord json = do
     nonBlankLink (key, value) = case value of
       Just v | not (isBlank v) -> Just (key, v)
       _ -> Nothing
+    requireHttpUrl key value =
+      unless (isHttpUrl value) $ Left ("field '" <> key <> "': no http scheme: " <> value)
     requireWebLink link@(key, value) =
       unless (isWebLink link) $ Left ("field 'links': " <> key <> " has no http scheme: " <> value)
 
