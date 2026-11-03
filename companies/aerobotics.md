@@ -9,12 +9,12 @@ remote_evidence: "Careers page states 'We prioritise in-person collaboration, so
 description: "Yield forecasting platform using AI and smartphone imagery for fruit companies; drone scanning also available."
 satellites: ""
 category: ""
-listed: false
+listed: true
 links: {}
 source: "discovery-sweep 2026-06"
 last_checked: "2026-06-14"
-type: "not-eo"
-type_reason: "Smartphone imagery for yield, not satellite EO. [agent]"
+type: "commercial-eo"
+type_reason: "Crop analytics with a drone scanning product; borderline. [agent]"
 ---
 
 [discovery-sweep 2026-06 2026-06-14] not an EO company

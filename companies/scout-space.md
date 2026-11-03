@@ -2,7 +2,7 @@
 name: "Scout Space"
 status: "active"
 website: "https://scout.space"
-careers_urls: ["https://scoutdotspace.com/careers"]
+careers_urls: ["https://scout.space/careers"]
 locations: []
 remote: ""
 remote_evidence: ""
@@ -13,7 +13,7 @@ category: ""
 listed: false
 links: {"linkedin":"https://www.linkedin.com/company/scoutdotspace"}
 source: "discovery-sweep 2026-06"
-last_checked: "2026-06-15"
+last_checked: "2026-11-03"
 type: "not-eo"
 type_reason: "Space domain awareness, not Earth observation [owner]"
 ---
