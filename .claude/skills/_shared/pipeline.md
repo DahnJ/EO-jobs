@@ -10,8 +10,7 @@ step. Read this once; each skill's SKILL.md only adds the part that's unique to 
   acquired/defunct/non-EO companies we deliberately keep but don't list.
 - **`README.md` is a generated, curated view** — never hand-edit it. `just readme`
   renders only `listed == True` rows (type not `not-eo` + active + a real careers
-  URL + no `unlisted_reason`). A row whose type is not `commercial-eo` shows the type
-  as a label next to the name.
+  URL + no `unlisted_reason`).
 - **The README hides non-positive remote.** Only `Yes`/`Hybrid` show in the Remote
   column; `""`, `No`, and `No jobs` render blank. So a confirmed `No` enriches the
   DB but never changes the table — spend verification effort on confirming the
@@ -37,11 +36,14 @@ step. Read this once; each skill's SKILL.md only adds the part that's unique to 
 
 ## Merge → classify → finish
 
-1. **Merge:** `just merge "<source> YYYY-MM"` applies every `companies/_inbox/*.json`.
+1. **Merge:** `just merge "<source> YYYY-MM"` applies every `companies/_inbox/*.json`
+   except the `class_*.json` verdicts, then deletes the files it applied.
    It creates new files (tagging their source) and updates existing ones in place,
    restamping `last_checked` and appending notes to the body. Guards you can rely on:
    it won't downgrade a known status to `unknown`, won't let a lower
-   `remote_confidence` overwrite a higher one, and unions `links` without clobbering.
+   `remote_confidence` overwrite a higher one, unions `links` without clobbering, and
+   puts the finding's careers URL first: a known one moves up, and a new one replaces
+   only the first.
    - **Only merge positive findings you trust.** A subagent that returns `remote: ""`
      with `low` confidence after a failed fetch should *not* overwrite a good stored
      value — filter those out (or rely on the confidence guard) so a blocked fetch

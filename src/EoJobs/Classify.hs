@@ -8,10 +8,10 @@ module EoJobs.Classify
   , run
   ) where
 
-import Control.Monad (forM, forM_, mfilter)
-import Data.List (isPrefixOf, sortOn)
+import Control.Monad (forM, forM_, mfilter, unless, (>=>))
+import Data.List (sortOn)
 import qualified Data.Map.Strict as Map
-import Data.Maybe (catMaybes, fromMaybe, isNothing)
+import Data.Maybe (fromMaybe, isNothing)
 import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.IO as TIO
@@ -28,22 +28,16 @@ data Verdict = Verdict
   }
   deriving (Eq, Show)
 
--- | Verdicts by slug from one class file; records without a valid type (or
--- slug) are skipped.
+-- | Verdicts by slug from one class file; a missing slug or an invalid type fails.
 decodeVerdicts :: Json -> Either Text [(Slug, Verdict)]
-decodeVerdicts json = catMaybes <$> (list object json >>= traverse verdict)
+decodeVerdicts = list (object >=> verdict)
   where
     verdict pairs = do
-      slug <- optionalField "slug" text pairs
+      slug <- field "slug" text pairs
+      verdictType <- field "type" (vocabulary parseCompanyType) pairs
       reason <- fromMaybe "" <$> optionalField "reason" text pairs
       unlistedReason <- mfilter (not . isBlank) <$> optionalField "unlisted_reason" text pairs
-      pure $ do
-        s <- slug
-        -- a missing or invalid type skips the verdict instead of failing
-        t <- case lookup "type" pairs of
-          Just (JString word) -> parseCompanyType word
-          _ -> Nothing
-        pure (s, Verdict t reason unlistedReason)
+      pure (slug, Verdict verdictType reason unlistedReason)
 
 -- | Apply the company's verdict, if any, and recompute @listed@. A verdict
 -- replaces the stored type and @unlisted_reason@, including clearing the latter.
@@ -57,29 +51,28 @@ classifyOne verdicts slug company = decided {listed = isListed decided}
           , typeReason = Just (v.verdictReason <> " [agent]")
           , unlistedReason = v.verdictUnlistedReason
           }
-      Nothing ->
-        company
-          { companyType = Just (fromMaybe CommercialEo company.companyType)
-          , typeReason = Just (fromMaybe "unclassified" company.typeReason)
-          }
+      Nothing -> company
 
--- | Does EO work, is reachable through a careers link, and was not kept off on purpose.
+-- | Classified as doing EO work, reachable through a careers link, and not kept off on purpose.
 isListed :: Company -> Bool
 isListed company =
-  company.companyType /= Just NotEo
+  maybe False (/= NotEo) company.companyType
     && company.status == Active
-    && any ("http" `T.isPrefixOf`) company.careersUrls
+    && any isHttpUrl company.careersUrls
     && isNothing company.unlistedReason
 
 -- | Apply verdicts to every company, save, and print the type distribution.
 run :: IO ()
 run = do
-  files <- listMatching inboxDir (\n -> "class_" `isPrefixOf` n && hasExtension ".json" n)
+  files <- listMatching inboxDir isVerdictFile
   verdictLists <- forM files $ \file -> do
     json <- readJsonFile file
     either (failAt file) pure (decodeVerdicts json)
   let verdicts = Map.fromList (concat verdictLists) -- a later verdict wins
   companies <- loadAll
+  let unknownSlugs = filter (`notElem` map fst companies) (Map.keys verdicts)
+  unless (null unknownSlugs) $
+    failAt inboxDir ("verdict for unknown slug: " <> T.intercalate ", " unknownSlugs)
   results <- forM companies $ \(slug, company) -> do
     let classified = classifyOne verdicts slug company
     save slug classified
@@ -95,5 +88,8 @@ run = do
           ]
   TIO.putStrLn ("type distribution: " <> encodeJson (JObject [(k, JNumber (IntegerNumber n)) | (k, n) <- counts]))
   TIO.putStrLn ("LISTED (type not not-eo + active + has careers + no unlisted_reason): " <> T.pack (show (length (filter (\(_, c) -> c.listed) results))))
+  let unclassified = [slug | (slug, company) <- companies, isNothing (classifyOne verdicts slug company).companyType]
+  unless (null unclassified) $
+    TIO.putStrLn ("unclassified, so not listed: " <> T.intercalate ", " unclassified)
   TIO.putStrLn ("\ntype changed vs previous: " <> T.pack (show (length changed)))
   forM_ changed $ \(n, o, t) -> TIO.putStrLn ("  " <> n <> ": " <> o <> " -> " <> t)

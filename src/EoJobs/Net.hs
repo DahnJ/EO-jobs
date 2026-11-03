@@ -67,15 +67,15 @@ exceptionLabel e = case fromException e of
 isAliveStatus :: Int -> Bool
 isAliveStatus s = s < 400 || s `elem` [403, 416, 429, 999]
 
--- | @(alive, detail)@ for a URL: HEAD, falling back to GET when HEAD is refused
--- or fails.
+-- | @(alive, detail)@ for a URL: HEAD, falling back to GET when HEAD fails or gives
+-- an error status other than a rate limit.
 alive :: Manager -> Int -> Text -> IO (Bool, Text)
 alive manager timeoutSeconds url
-  | not ("http" `T.isPrefixOf` url) = pure (False, "no-url")
+  | not (isHttpUrl url) = pure (False, "no-url")
   | otherwise = do
       firstTry <- trySync $ do
         headReply <- send methodHead
-        if replyStatus headReply `elem` [403, 405, 416, 501]
+        if replyStatus headReply >= 400 && replyStatus headReply `notElem` [429, 999]
           then judge . replyStatus <$> send methodGet
           else pure (judge (replyStatus headReply))
       case firstTry of
@@ -94,7 +94,7 @@ regDomain url
   | length parts >= 2 = T.intercalate "." (lastN 2)
   | otherwise = host
   where
-    withScheme = if "http" `T.isPrefixOf` url then url else "https://" <> url
+    withScheme = if isHttpUrl url then url else "https://" <> url
     rawHost = maybe "" (T.pack . uriRegName) (parseURI (T.unpack withScheme) >>= uriAuthority)
     host = let lowered = T.toLower rawHost in fromMaybe lowered (T.stripPrefix "www." lowered)
     -- trailing empty labels are dropped, so @example.com.@ reduces like @example.com@
@@ -134,9 +134,7 @@ mapBounded workers action items = do
 -- | The distinct http(s) URLs in a markdown text, in order.
 introLinks :: Text -> [Text]
 introLinks =
-  nub . filter isUrl . map (T.takeWhile (`notElem` (" \t\n)>\"" :: String)) . snd) . T.breakOnAll "http"
-  where
-    isUrl url = any (`T.isPrefixOf` url) ["http://", "https://"]
+  nub . filter isHttpUrl . map (T.takeWhile (`notElem` (" \t\n)>\"" :: String)) . snd) . T.breakOnAll "http"
 
 -- | Link-rot sweep over website and careers URLs and the links in @intro.md@;
 -- report in @/tmp/linkrot.txt@.

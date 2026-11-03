@@ -12,6 +12,8 @@ module EoJobs.Merge
 
 import Control.Monad (forM, unless, (>=>))
 import Data.Bifunctor (first)
+import Data.Char (isAsciiLower, isDigit)
+import Data.Foldable (traverse_)
 import Data.Maybe (fromMaybe, mapMaybe)
 import Data.List (sortOn)
 import Data.Text (Text)
@@ -23,13 +25,13 @@ import EoJobs.Db
 import EoJobs.Flags (flagAll)
 import EoJobs.Json
 import EoJobs.StringRules (isBlank, trim, utf16Order)
-import System.Directory (doesFileExist)
+import System.Directory (doesFileExist, removeFile)
 
 -- | One verified finding about a company. Empty strings are already dropped
 -- here for the fields that never overwrite with "".
 data InboxRecord = InboxRecord
   { inboxSlug :: Text
-  -- ^ Trimmed; empty means the record is skipped.
+  -- ^ Trimmed and canonical.
   , inboxName :: Maybe Text
   , inboxStatus :: Maybe Status
   , inboxWebsite :: Maybe Text
@@ -46,7 +48,8 @@ data InboxRecord = InboxRecord
   }
   deriving (Eq, Show)
 
--- | Decode one inbox record; an unknown @status@ or @remote_confidence@ word fails.
+-- | Decode one inbox record. An unknown @status@ or @remote_confidence@ word, a
+-- non-canonical slug, or a website, careers URL or web link without a scheme fails.
 decodeInboxRecord :: Json -> Either Text InboxRecord
 decodeInboxRecord json = do
   pairs <- object json
@@ -56,18 +59,23 @@ decodeInboxRecord json = do
       nonEmpty key = (>>= nonEmptyText) <$> opt key text
       trimmedNonEmpty key = (>>= nonEmptyText . trim) <$> opt key text
   inboxSlug <- maybe "" trim <$> opt "slug" text
+  unless (isCanonicalSlug inboxSlug) $
+    Left ("field 'slug': not canonical: " <> inboxSlug)
   inboxName <- trimmedNonEmpty "name"
   inboxStatus <- opt "status" (vocabulary parseStatus)
   inboxWebsite <- nonEmpty "website"
   inboxCareersUrl <- trimmedNonEmpty "careers_url"
   inboxLocations <- fromMaybe [] <$> opt "locations" (list text)
-  inboxRemote <- nonEmpty "remote"
+  inboxRemote <- trimmedNonEmpty "remote"
   inboxRemoteEvidence <- nonEmpty "remote_evidence"
   confidenceWord <- opt "remote_confidence" text
   -- a blank word means the agent left it out, not an unknown word
   inboxRemoteConfidence <- traverse (vocabulary parseConfidence . JString) (confidenceWord >>= nonEmptyText . trim)
   inboxDescription <- nonEmpty "description"
   inboxLinks <- maybe [] (mapMaybe nonBlankLink) <$> opt "links" (object >=> traverse (traverse linkValue))
+  traverse_ (requireHttpUrl "website") inboxWebsite
+  traverse_ (requireHttpUrl "careers_url") inboxCareersUrl
+  traverse_ requireWebLink inboxLinks
   inboxNote <- trimmedNonEmpty "note"
   pure InboxRecord {..}
   where
@@ -78,6 +86,16 @@ decodeInboxRecord json = do
     nonBlankLink (key, value) = case value of
       Just v | not (isBlank v) -> Just (key, v)
       _ -> Nothing
+    requireHttpUrl key value =
+      unless (isHttpUrl value) $ Left ("field '" <> key <> "': no http scheme: " <> value)
+    requireWebLink link@(key, value) =
+      unless (isWebLink link) $ Left ("field 'links': " <> key <> " has no http scheme: " <> value)
+
+-- | Lowercase ASCII words joined by single hyphens, the form of every company file name.
+isCanonicalSlug :: Text -> Bool
+isCanonicalSlug slug = all isWord (T.splitOn "-" slug)
+  where
+    isWord word = not (T.null word) && T.all (\c -> isAsciiLower c || isDigit c) word
 
 -- | Merge an inbox record into the existing company ('Nothing' creates one),
 -- tagging a new company with @source@ and stamping notes with @today@.
@@ -101,19 +119,27 @@ mergeOne today source existing record =
       Just Unknown | company.status /= Unknown -> company
       Just s -> company {status = s}
       Nothing -> company
-    applyCareers company = maybe company (\url -> company {careersUrls = [url]}) record.inboxCareersUrl
+    -- the finding's URL goes first; a new one replaces the primary board only
+    applyCareers company = case record.inboxCareersUrl of
+      Nothing -> company
+      Just url
+        | url `elem` company.careersUrls -> company {careersUrls = url : filter (/= url) company.careersUrls}
+        | otherwise -> company {careersUrls = url : drop 1 company.careersUrls}
     applyLocations company
       | null record.inboxLocations = company
       | otherwise = company {locations = flagAll record.inboxLocations}
-    applyRemote company
-      -- a remote finding ranked below the held one changes nothing; a missing
-      -- confidence ranks below every confidence ('Nothing' < 'Just' in 'Ord')
-      | record.inboxRemoteConfidence < company.remoteConfidence = company
-      | otherwise =
-          setIfPresent record.inboxRemoteConfidence (\v c -> c {remoteConfidence = Just v})
-            . setIfPresent record.inboxRemoteEvidence (\v c -> c {remoteEvidence = v})
-            . setIfPresent record.inboxRemote (\v c -> c {remote = v})
-            $ company
+    applyRemote company = case record.inboxRemote of
+      Nothing -> company
+      Just value
+        -- a finding ranked below the held remote changes nothing; a missing
+        -- confidence ranks below every confidence ('Nothing' < 'Just' in 'Ord')
+        | not (isBlank company.remote) && record.inboxRemoteConfidence < company.remoteConfidence -> company
+        | otherwise ->
+            company
+              { remote = value
+              , remoteEvidence = fromMaybe (if value == company.remote then company.remoteEvidence else "") record.inboxRemoteEvidence
+              , remoteConfidence = record.inboxRemoteConfidence
+              }
     -- add new links, never clobber an existing one
     applyLinks company = company {links = mergeLinks record.inboxLinks company.links}
     stampChecked company = company {lastChecked = Just (T.pack (show today))}
@@ -151,36 +177,29 @@ newCompany source record =
     , body = ""
     }
 
-data Outcome = Created Slug | Updated Slug | Skipped Text
+data Outcome = Created Slug | Updated Slug
 
--- | Merge every inbox file into the DB and print a summary. Every file is
--- decoded before the first save, so a bad record changes nothing on disk.
+-- | Merge the inbox's company records into the DB, delete those files, and print
+-- a summary. Verdict files stay for classify. Every file is decoded before the
+-- first save, so a bad record changes nothing on disk.
 run :: Text -> IO ()
 run source = do
   today <- localDay . zonedTimeToLocalTime <$> getZonedTime
-  files <- listMatching inboxDir (hasExtension ".json")
+  files <- listMatching inboxDir (\fileName -> hasExtension ".json" fileName && not (isVerdictFile fileName))
   records <- concat <$> traverse readInboxFile files
   -- sequential on purpose: a later record must see the file an earlier one wrote
-  outcomes <- forM records $ \record ->
-    if T.null record.inboxSlug
-      then pure (Skipped (fromMaybe "?" record.inboxName))
-      else do
-        let slug = record.inboxSlug
-        exists <- doesFileExist (companyPath slug)
-        existing <- if exists then Just <$> readCompany (companyPath slug) else pure Nothing
-        save slug (mergeOne today source existing record)
-        pure (if exists then Updated slug else Created slug)
+  outcomes <- forM records $ \record -> do
+    let slug = record.inboxSlug
+    exists <- doesFileExist (companyPath slug)
+    existing <- if exists then Just <$> readCompany (companyPath slug) else pure Nothing
+    save slug (mergeOne today source existing record)
+    pure (if exists then Updated slug else Created slug)
+  traverse_ removeFile files
   let created = [s | Created s <- outcomes]
       updated = [s | Updated s <- outcomes]
-      skipped = [n | Skipped n <- outcomes]
-  TIO.putStrLn
-    ( "created " <> showT (length created) <> ", updated " <> showT (length updated)
-        <> ", skipped " <> showT (length skipped)
-    )
+  TIO.putStrLn ("created " <> showT (length created) <> ", updated " <> showT (length updated))
   unless (null updated) $
     TIO.putStrLn ("updated: " <> T.intercalate ", " (sortOn utf16Order updated))
-  unless (null skipped) $
-    TIO.putStrLn ("skipped (no slug): " <> T.intercalate ", " skipped)
   where
     showT = T.pack . show
 

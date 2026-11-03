@@ -69,8 +69,11 @@ Budget ~1–3 WebFetch calls per company. This is a Haiku batch job — be terse
     `""`: it gets the company listed in the README with a broken link. If you can't
     verify one, return `""` and explain in `note`. *Why:* agents once guessed ~10
     LinkedIn slugs that all 404'd and silently listed those companies as broken.
+  - **`""` never clears a stored link.** Merge ignores a blank `careers_url`, so a
+    blocked fetch cannot remove a company from the README. In refresh, when a stored
+    link is dead and you cannot re-resolve it, say so in `note`.
 - **`links`** — object with any of `linkedin`, `crunchbase`, `twitter`, `github`,
-  `youtube` (omit keys you can't find). Check the homepage footer/header and the
+  `youtube`, each a full `https://` URL (omit keys you can't find). Check the homepage footer/header and the
   Crunchbase result. *Why:* the README's Social/Business columns come from here, and
   the standing expectation is that **almost every company has a LinkedIn + a
   Crunchbase at minimum** — if you found none, look again before giving up; truly

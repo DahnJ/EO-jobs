@@ -7,7 +7,7 @@ module EoJobs.Flags
   , hasFlag
   ) where
 
-import Data.Char (chr, ord, toUpper)
+import Data.Char (chr, isAlphaNum, ord, toUpper)
 import Data.List (find)
 import qualified Data.Map.Strict as Map
 import Data.Maybe (listToMaybe, mapMaybe)
@@ -20,7 +20,8 @@ isoToFlag = T.map (\c -> chr (0x1F1E6 + ord (toUpper c) - ord 'A'))
 
 -- The scans below walk these tables in the order written, and the first match
 -- wins. Order matters only for a location naming two keywords with different
--- flags (e.g. "Remote (Europe)").
+-- flags (e.g. "Remote (Europe)"). "georgia" is in no table: it names a country and
+-- a US state, so only a known city or a second country name decides.
 country :: [(Text, Text)]
 country =
   [ ("united states", "US"), ("usa", "US"), ("u.s.", "US"), ("u.s.a", "US"), ("us", "US")
@@ -49,7 +50,7 @@ country =
   , ("lebanon", "LB"), ("egypt", "EG"), ("south africa", "ZA"), ("kenya", "KE")
   , ("nigeria", "NG"), ("ghana", "GH"), ("tanzania", "TZ"), ("uganda", "UG")
   , ("rwanda", "RW"), ("ethiopia", "ET"), ("morocco", "MA"), ("tunisia", "TN")
-  , ("senegal", "SN"), ("azerbaijan", "AZ"), ("georgia", "GE"), ("armenia", "AM")
+  , ("senegal", "SN"), ("azerbaijan", "AZ"), ("armenia", "AM")
   , ("iraq", "IQ"), ("iran", "IR")
   ]
 
@@ -66,11 +67,9 @@ city =
   , ("houston", "US"), ("midland", "US"), ("austin", "US"), ("madison", "US")
   , ("santa fe", "US"), ("washington", "US"), ("san mateo", "US"), ("bozeman", "US")
   , ("lafayette", "US"), ("north potomac", "US"), ("san francisco", "US")
-  , ("new york", "US"), ("montana", "US"), ("california", "US"), ("colorado", "US")
-  , ("texas", "US"), ("wi", "US"), ("tx", "US"), ("ca", "US"), ("wa", "US"), ("co", "US")
-  , ("ny", "US"), ("ma", "US")
+  , ("atlanta", "US"), ("wi", "US"), ("tx", "US"), ("ny", "US"), ("ma", "US")
   -- other
-  , ("sydney", "AU"), ("melbourne", "AU"), ("seoul", "KR"), ("tokyo", "JP")
+  , ("sydney", "AU"), ("melbourne", "AU"), ("perth", "AU"), ("seoul", "KR"), ("tokyo", "JP")
   , ("singapore", "SG"), ("amsterdam", "NL"), ("zwolle", "NL"), ("hamburg", "DE")
   , ("munich", "DE"), ("berlin", "DE"), ("paris", "FR"), ("toulouse", "FR")
   , ("hyderabad", "IN"), ("bangalore", "IN"), ("bengaluru", "IN"), ("changchun", "CN")
@@ -83,8 +82,26 @@ city =
   , ("sofia", "BG"), ("ljubljana", "SI"), ("bratislava", "SK"), ("tashkent", "UZ")
   , ("minsk", "BY"), ("lagos", "NG"), ("abuja", "NG"), ("johannesburg", "ZA")
   , ("nairobi", "KE"), ("buenos aires", "AR"), ("ayacucho", "PE")
-  , ("esch-sur-alzette", "LU"), ("abu dhabi", "AE"), ("dubai", "AE")
+  , ("esch-sur-alzette", "LU"), ("abu dhabi", "AE"), ("dubai", "AE"), ("tbilisi", "GE")
   ]
+
+usStates :: [(Text, Text)]
+usStates =
+  map (,"US")
+    [ "alabama", "alaska", "arizona", "arkansas", "california", "colorado", "connecticut"
+    , "delaware", "florida", "hawaii", "idaho", "illinois", "indiana", "iowa", "kansas"
+    , "kentucky", "louisiana", "maine", "maryland", "massachusetts", "michigan", "minnesota"
+    , "mississippi", "missouri", "montana", "nebraska", "nevada", "new hampshire"
+    , "new jersey", "new mexico", "new york", "north carolina", "north dakota", "ohio"
+    , "oklahoma", "oregon", "pennsylvania", "rhode island", "south carolina", "south dakota"
+    , "tennessee", "texas", "utah", "vermont", "virginia", "west virginia", "wisconsin"
+    , "wyoming"
+    ]
+
+-- | US state codes that also mean Canada, Western Australia and Colombia, so a known
+-- city elsewhere in the location wins over them.
+ambiguousStateCodes :: [(Text, Text)]
+ambiguousStateCodes = [("ca", "US"), ("wa", "US"), ("co", "US")]
 
 region :: [(Text, Text)]
 region =
@@ -97,7 +114,7 @@ region =
 
 countryByName, cityByName :: Map.Map Text Text
 countryByName = Map.fromList country
-cityByName = Map.fromList city
+cityByName = Map.fromList (city <> usStates)
 
 -- | True if the location already starts with a flag or globe.
 hasFlag :: Text -> Bool
@@ -115,16 +132,19 @@ detect loc =
     [ -- last token first: the country is usually rightmost and most reliable
       listToMaybe (mapMaybe tokenFlag (reverse tokens))
     , snd <$> find ((`T.isInfixOf` lowered) . fst) region
-    , -- fallback: any country/city name longer than 3 letters anywhere
-      nameAnywhere country
+    , -- fallback: any state/country/city name longer than 3 letters, as whole words
+      nameAnywhere usStates
+    , nameAnywhere country
     , nameAnywhere city
+    , isoToFlag <$> listToMaybe (mapMaybe (`lookup` ambiguousStateCodes) (reverse tokens))
     ]
   where
     lowered = T.toLower (trim loc)
     tokens = filter (not . isBlank) (map trim (T.splitOn "," (T.replace ";" "," lowered)))
     tokenFlag tok = isoToFlag <$> firstJust [Map.lookup tok countryByName, Map.lookup tok cityByName]
     nameAnywhere table =
-      isoToFlag . snd <$> find (\(n, _) -> T.length n > 3 && n `T.isInfixOf` lowered) table
+      isoToFlag . snd <$> find (\(n, _) -> T.length n > 3 && asWords n `T.isInfixOf` asWords lowered) table
+    asWords name = " " <> T.map (\c -> if isAlphaNum c then c else ' ') name <> " "
     firstJust = listToMaybe . concatMap (maybe [] pure)
 
 -- | The location with a leading flag or globe; unchanged if it has one already

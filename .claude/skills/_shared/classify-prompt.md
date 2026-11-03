@@ -2,14 +2,14 @@
 
 Classification decides each company's `type` and, for the rare company that needs
 it, an `unlisted_reason`. Type alone does not decide README inclusion: only `not-eo`
-keeps a company off, and every other type is listed with a label unless it is
-`commercial-eo`. The EO boundary is fuzzy, so an agent decides it from the stored
+keeps a company off. The EO boundary is fuzzy, so an agent decides it from the stored
 description — not keyword matching. Build the input with `just class-input`
 (a `{slug, name, desc, body, unlisted_reason?}` JSONL), split into batches of ~175,
 dispatch one **Haiku** subagent per batch. Output
 `[{slug, type, reason, unlisted_reason?}]` to `companies/_inbox/class_N.json`;
 `just readme` applies it. A verdict replaces the stored `unlisted_reason`, and a
-verdict without one clears it.
+verdict without one clears it. A verdict with an invalid type or an unknown slug
+stops the run. A company with no type stays off the README.
 
 **Standing decision: use the BROAD definition.** A previous strict pass that
 required the *product* to be EO wrongly excluded companies that build on EO data.
@@ -35,7 +35,7 @@ Assign exactly one "type":
   TOOL that is not itself an EO-data product. If it is an EO imagery/analytics
   platform, use commercial-eo.
 - "conglomerate": a large multi-division company where EO is a small part (Airbus,
-  Trimble, Hexagon, L3Harris, GMV, NV5, Google, Microsoft). This is a label, not an
+  Trimble, Hexagon, L3Harris, GMV, NV5, Google, Microsoft). This type is not an
   exclusion: a conglomerate with real EO work stays in the directory.
 - "nonprofit": an NGO, foundation, academic/research nonprofit, or government body.
 - "not-eo": genuinely NOT related to EO at all — does not use satellite/aerial/
