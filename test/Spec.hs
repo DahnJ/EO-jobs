@@ -89,17 +89,9 @@ main = hspec $ do
       result `shouldBe` Left "missing field 'status'"
 
   describe "renderReadme" $ do
-    it "labels a listed company whose type is not commercial-eo" $ do
+    it "shows only the name in the name cell, whatever the type" $ do
       -- Arrange
       let company = sampleCompany {companyType = Just Conglomerate}
-      -- Act
-      let rendered = renderReadme "" [company]
-      -- Assert
-      rendered `shouldSatisfy` T.isInfixOf "| <a href=\"https://acme.io\">Acme EO</a> <sub>conglomerate</sub> | "
-
-    it "leaves a commercial-eo name cell without a label" $ do
-      -- Arrange
-      let company = sampleCompany {companyType = Just CommercialEo}
       -- Act
       let rendered = renderReadme "" [company]
       -- Assert

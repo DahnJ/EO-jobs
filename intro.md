@@ -50,7 +50,7 @@ Country overviews
 
 ## Notes
 
-- This list covers organisations that do EO work and hire for it. A label after a name shows a type other than commercial EO, for example <sub>nonprofit</sub>.
+- This list covers organisations that do EO work and hire for it.
 - Remote positions: Based on careers pages and job postings. Absence of "Yes" does not necessarily mean remote work is not possible. 
 
 
