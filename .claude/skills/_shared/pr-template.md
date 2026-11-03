@@ -22,7 +22,7 @@ company sites/careers pages via WebFetch (+ browser fallback where used). DB now
 - [NEW] <Company> — <one-line rationale> (source: <where found>)
 
 ### Reclassified / excluded from README
-- <Company> — <commercial-eo → consultancy/nonprofit/not-eo, or acquired>
+- <Company> — <type change, e.g. commercial-eo → consultancy; or → not-eo, acquired, unlisted_reason set>
 
 ### Could not verify (left unchanged)
 - <Company> — <reason, e.g. site 502 / both fetch + browser blocked>

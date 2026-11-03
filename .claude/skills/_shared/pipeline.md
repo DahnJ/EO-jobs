@@ -9,7 +9,9 @@ step. Read this once; each skill's SKILL.md only adds the part that's unique to 
   (JSON-valued YAML frontmatter + free-text body), full coverage — including
   acquired/defunct/non-EO companies we deliberately keep but don't list.
 - **`README.md` is a generated, curated view** — never hand-edit it. `just readme`
-  renders only `listed == True` rows (commercial-EO + active + a real careers URL).
+  renders only `listed == True` rows (type not `not-eo` + active + a real careers
+  URL + no `unlisted_reason`). A row whose type is not `commercial-eo` shows the type
+  as a label next to the name.
 - **The README hides non-positive remote.** Only `Yes`/`Hybrid` show in the Remote
   column; `""`, `No`, and `No jobs` render blank. So a confirmed `No` enriches the
   DB but never changes the table — spend verification effort on confirming the
