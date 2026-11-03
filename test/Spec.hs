@@ -576,9 +576,9 @@ main = hspec $ do
   describe "introLinks" $ do
     it "returns each markdown and html link once, without its closing punctuation" $ do
       -- Arrange
-      let text = "[a](https://a.io/x?y=1) and <a href=\"http://b.io\">b</a>\n[again](https://a.io/x?y=1) http is a word"
+      let markdown = "[a](https://a.io/x?y=1) and <a href=\"http://b.io\">b</a>\n[again](https://a.io/x?y=1) http is a word"
       -- Act
-      let links = introLinks text
+      let links = introLinks markdown
       -- Assert
       links `shouldBe` ["https://a.io/x?y=1", "http://b.io"]
 
