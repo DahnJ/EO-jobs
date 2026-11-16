@@ -96,19 +96,20 @@ data CompanyType = CommercialEo | Consultancy | Reseller | Software | Conglomera
 data Confidence = Low | Medium | High
   deriving (Eq, Ord, Show, Enum, Bounded)
 
+-- | One company file. Every 'Nothing' text or URL field is stored as @""@.
 data Company = Company
   { name :: Text
   , status :: Status
   , website :: Maybe HttpUrl
-  -- ^ 'Nothing' is stored as @""@.
   , careersUrls :: [HttpUrl]
   , locations :: [Text]
-  , remote :: Text
-  , remoteEvidence :: Text
+  , remote :: Maybe Text
+  , remoteEvidence :: Maybe Text
+  -- ^ Independent of 'remote': evidence can explain why no remote value was found.
   , remoteConfidence :: Maybe Confidence
-  , description :: Text
-  , satellites :: Text
-  , category :: Text
+  , description :: Maybe Text
+  , satellites :: Maybe Text
+  , category :: Maybe Text
   , listed :: Bool
   , links :: [(Text, LinkTarget)]
   -- ^ Ordered as on disk, e.g. linkedin before twitter.

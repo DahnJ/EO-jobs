@@ -10,10 +10,11 @@ module EoJobs.Merge
   , run
   ) where
 
+import Control.Applicative ((<|>))
 import Control.Monad (forM, unless, (>=>))
 import Data.Bifunctor (first)
 import Data.Foldable (traverse_)
-import Data.Maybe (fromMaybe, mapMaybe)
+import Data.Maybe (fromMaybe, isJust, mapMaybe)
 import Data.List (sortOn)
 import Data.Text (Text)
 import qualified Data.Text as T
@@ -93,7 +94,7 @@ mergeOne today source existing record =
   applyNote
     . stampChecked
     . applyLinks
-    . setIfPresent record.inboxDescription (\v c -> c {description = v})
+    . setIfPresent record.inboxDescription (\v c -> c {description = Just v})
     . applyRemote
     . applyLocations
     . applyCareers
@@ -122,11 +123,11 @@ mergeOne today source existing record =
       Just value
         -- a finding ranked below the held remote changes nothing; a missing
         -- confidence ranks below every confidence ('Nothing' < 'Just' in 'Ord')
-        | not (isBlank company.remote) && record.inboxRemoteConfidence < company.remoteConfidence -> company
+        | isJust company.remote && record.inboxRemoteConfidence < company.remoteConfidence -> company
         | otherwise ->
             company
-              { remote = value
-              , remoteEvidence = fromMaybe (if value == company.remote then company.remoteEvidence else "") record.inboxRemoteEvidence
+              { remote = Just value
+              , remoteEvidence = record.inboxRemoteEvidence <|> (if Just value == company.remote then company.remoteEvidence else Nothing)
               , remoteConfidence = record.inboxRemoteConfidence
               }
     -- add new links, never clobber an existing one
@@ -149,12 +150,12 @@ newCompany source record =
     , website = Nothing
     , careersUrls = []
     , locations = []
-    , remote = ""
-    , remoteEvidence = ""
+    , remote = Nothing
+    , remoteEvidence = Nothing
     , remoteConfidence = Nothing
-    , description = ""
-    , satellites = ""
-    , category = ""
+    , description = Nothing
+    , satellites = Nothing
+    , category = Nothing
     , listed = False
     , links = []
     , source

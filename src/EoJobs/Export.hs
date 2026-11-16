@@ -6,6 +6,7 @@ module EoJobs.Export
   , dedupIndex
   ) where
 
+import Data.Maybe (fromMaybe)
 import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.IO as TIO
@@ -23,7 +24,7 @@ classInputLine slug c =
     JObject $
       [ ("slug", JString (slugText slug))
       , ("name", JString c.name)
-      , ("desc", JString c.description)
+      , ("desc", JString (fromMaybe "" c.description))
       , ("body", JString (takeUtf16 300 (T.replace "\n" " " c.body)))
       ]
         <> [("unlisted_reason", JString reason) | Just reason <- [c.unlistedReason]]

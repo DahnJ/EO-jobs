@@ -81,7 +81,7 @@ main = hspec $ do
       -- Act
       let parsed = parseCompany withDashes
       -- Assert
-      fmap (\c -> (c.description, c.body)) parsed `shouldBe` Right ("SAR --- optical", "body\n---\nmore")
+      fmap (\c -> (c.description, c.body)) parsed `shouldBe` Right (Just "SAR --- optical", "body\n---\nmore")
       fmap renderCompany parsed `shouldBe` Right withDashes
 
     it "round-trips unlisted_reason right after type_reason" $ do
@@ -213,22 +213,22 @@ main = hspec $ do
 
     it "does not let a lower-confidence remote finding overwrite a higher one" $ do
       -- Arrange
-      let existing = sampleCompany {remote = "Yes", remoteConfidence = Just High}
+      let existing = sampleCompany {remote = Just "Yes", remoteConfidence = Just High}
           record = inbox [("slug", JString "acme"), ("remote", JString "No"), ("remote_confidence", JString "low")]
       -- Act
       let merged = mergeOne today "sweep" (Just existing) record
       -- Assert
-      (merged.remote, merged.remoteConfidence) `shouldBe` ("Yes", Just High)
+      (merged.remote, merged.remoteConfidence) `shouldBe` (Just "Yes", Just High)
 
     forM_ [("missing", []), ("blank", [("remote_confidence", JString " ")]), ("empty", [("remote_confidence", JString "")])] $ \(label, confidenceField) ->
       it ("does not let a finding with a " <> label <> " confidence overwrite a held one") $ do
         -- Arrange
-        let existing = sampleCompany {remote = "Yes", remoteEvidence = "careers page", remoteConfidence = Just Low}
+        let existing = sampleCompany {remote = Just "Yes", remoteEvidence = Just "careers page", remoteConfidence = Just Low}
             record = inbox ([("slug", JString "acme"), ("remote", JString "No"), ("remote_evidence", JString "blog")] <> confidenceField)
         -- Act
         let merged = mergeOne today "sweep" (Just existing) record
         -- Assert
-        (merged.remote, merged.remoteEvidence, merged.remoteConfidence) `shouldBe` ("Yes", "careers page", Just Low)
+        (merged.remote, merged.remoteEvidence, merged.remoteConfidence) `shouldBe` (Just "Yes", Just "careers page", Just Low)
 
     it "renames an existing company in place" $ do
       -- Arrange
@@ -248,12 +248,12 @@ main = hspec $ do
 
     it "takes a finding without confidence when none is held" $ do
       -- Arrange
-      let existing = sampleCompany {remote = "Yes", remoteConfidence = Nothing}
+      let existing = sampleCompany {remote = Just "Yes", remoteConfidence = Nothing}
           record = inbox [("slug", JString "acme"), ("remote", JString "No")]
       -- Act
       let merged = mergeOne today "sweep" (Just existing) record
       -- Assert
-      (merged.remote, merged.remoteConfidence) `shouldBe` ("No", Nothing)
+      (merged.remote, merged.remoteConfidence) `shouldBe` (Just "No", Nothing)
 
     it "keeps existing link values, incoming keys first, and drops blank links" $ do
       -- Arrange
@@ -319,21 +319,21 @@ main = hspec $ do
 
     it "ignores confidence and evidence from a record with no remote value" $ do
       -- Arrange
-      let existing = sampleCompany {remote = "", remoteEvidence = "", remoteConfidence = Nothing}
+      let existing = sampleCompany {remote = Nothing, remoteEvidence = Nothing, remoteConfidence = Nothing}
           record = inbox [("slug", JString "acme"), ("remote", JString ""), ("remote_evidence", JString "x"), ("remote_confidence", JString "high")]
       -- Act
       let merged = mergeOne today "sweep" (Just existing) record
       -- Assert
-      (merged.remote, merged.remoteEvidence, merged.remoteConfidence) `shouldBe` ("", "", Nothing)
+      (merged.remote, merged.remoteEvidence, merged.remoteConfidence) `shouldBe` (Nothing, Nothing, Nothing)
 
     it "lets any finding fill a blank remote, whatever confidence is held" $ do
       -- Arrange
-      let existing = sampleCompany {remote = "", remoteEvidence = "old", remoteConfidence = Just High}
+      let existing = sampleCompany {remote = Nothing, remoteEvidence = Just "old", remoteConfidence = Just High}
           record = inbox [("slug", JString "acme"), ("remote", JString "Yes (Europe)"), ("remote_confidence", JString "medium")]
       -- Act
       let merged = mergeOne today "sweep" (Just existing) record
       -- Assert
-      (merged.remote, merged.remoteEvidence, merged.remoteConfidence) `shouldBe` ("Yes (Europe)", "", Just Medium)
+      (merged.remote, merged.remoteEvidence, merged.remoteConfidence) `shouldBe` (Just "Yes (Europe)", Nothing, Just Medium)
 
     it "moves a stored careers URL that the finding names to the front" $ do
       -- Arrange
@@ -346,30 +346,30 @@ main = hspec $ do
 
     it "keeps the stored evidence when a finding reconfirms the remote without any" $ do
       -- Arrange
-      let existing = sampleCompany {remote = "Yes (US)", remoteEvidence = "posting", remoteConfidence = Just High}
+      let existing = sampleCompany {remote = Just "Yes (US)", remoteEvidence = Just "posting", remoteConfidence = Just High}
           record = inbox [("slug", JString "acme"), ("remote", JString "Yes (US)"), ("remote_confidence", JString "high")]
       -- Act
       let merged = mergeOne today "sweep" (Just existing) record
       -- Assert
-      merged.remoteEvidence `shouldBe` "posting"
+      merged.remoteEvidence `shouldBe` Just "posting"
 
     it "drops the stored evidence when a finding changes the remote without any" $ do
       -- Arrange
-      let existing = sampleCompany {remote = "Yes (US)", remoteEvidence = "posting", remoteConfidence = Just Low}
+      let existing = sampleCompany {remote = Just "Yes (US)", remoteEvidence = Just "posting", remoteConfidence = Just Low}
           record = inbox [("slug", JString "acme"), ("remote", JString "Hybrid"), ("remote_confidence", JString "high")]
       -- Act
       let merged = mergeOne today "sweep" (Just existing) record
       -- Assert
-      merged.remoteEvidence `shouldBe` ""
+      merged.remoteEvidence `shouldBe` Nothing
 
     it "treats a whitespace remote as no finding" $ do
       -- Arrange
-      let existing = sampleCompany {remote = "Yes", remoteEvidence = "posting", remoteConfidence = Just High}
+      let existing = sampleCompany {remote = Just "Yes", remoteEvidence = Just "posting", remoteConfidence = Just High}
           record = inbox [("slug", JString "acme"), ("remote", JString " "), ("remote_confidence", JString "high")]
       -- Act
       let merged = mergeOne today "sweep" (Just existing) record
       -- Assert
-      (merged.remote, merged.remoteEvidence) `shouldBe` ("Yes", "posting")
+      (merged.remote, merged.remoteEvidence) `shouldBe` (Just "Yes", Just "posting")
 
     it "replaces only the first careers URL with a new one" $ do
       -- Arrange
@@ -473,34 +473,34 @@ main = hspec $ do
 
   describe "absorbDuplicates" $ do
     let group = Dedup.DuplicateGroup [slug "keep", slug "drop"] (slug "keep") "same"
-        finding = sampleCompany {remote = "Yes (US)", remoteEvidence = "posting", remoteConfidence = Just High, description = "From the dropped file.", body = "research notes"}
+        finding = sampleCompany {remote = Just "Yes (US)", remoteEvidence = Just "posting", remoteConfidence = Just High, description = Just "From the dropped file.", body = "research notes"}
 
     it "fills the keeper's blank remote and description from the dropped company" $ do
       -- Arrange
-      let keeper = sampleCompany {remote = "", remoteEvidence = "", remoteConfidence = Just High, description = ""}
+      let keeper = sampleCompany {remote = Nothing, remoteEvidence = Nothing, remoteConfidence = Just High, description = Nothing}
       -- Act
       let merged = Dedup.absorbDuplicates group keeper [(slug "drop", finding)]
       -- Assert
       (merged.remote, merged.remoteEvidence, merged.remoteConfidence, merged.description)
-        `shouldBe` ("Yes (US)", "posting", Just High, "From the dropped file.")
+        `shouldBe` (Just "Yes (US)", Just "posting", Just High, Just "From the dropped file.")
 
     it "keeps the keeper's filled remote and description" $ do
       -- Arrange
-      let keeper = sampleCompany {remote = "Hybrid", remoteEvidence = "site", remoteConfidence = Just Low}
+      let keeper = sampleCompany {remote = Just "Hybrid", remoteEvidence = Just "site", remoteConfidence = Just Low}
       -- Act
       let merged = Dedup.absorbDuplicates group keeper [(slug "drop", finding)]
       -- Assert
       (merged.remote, merged.remoteEvidence, merged.remoteConfidence, merged.description)
-        `shouldBe` ("Hybrid", "site", Just Low, keeper.description)
+        `shouldBe` (Just "Hybrid", Just "site", Just Low, keeper.description)
 
     it "keeps the keeper's evidence when the dropped remote is blank too" $ do
       -- Arrange
-      let keeper = sampleCompany {remote = "", remoteEvidence = "page blocked", remoteConfidence = Just Low}
-          blank = sampleCompany {remote = "", remoteEvidence = "", remoteConfidence = Nothing}
+      let keeper = sampleCompany {remote = Nothing, remoteEvidence = Just "page blocked", remoteConfidence = Just Low}
+          blank = sampleCompany {remote = Nothing, remoteEvidence = Nothing, remoteConfidence = Nothing}
       -- Act
       let merged = Dedup.absorbDuplicates group keeper [(slug "drop", blank)]
       -- Assert
-      (merged.remoteEvidence, merged.remoteConfidence) `shouldBe` ("page blocked", Just Low)
+      (merged.remoteEvidence, merged.remoteConfidence) `shouldBe` (Just "page blocked", Just Low)
 
     it "joins the bodies and then notes the merge" $ do
       -- Arrange
@@ -648,12 +648,20 @@ main = hspec $ do
   describe "fixupOne" $ do
     it "normalizes remote and flags unflagged locations" $ do
       -- Arrange
-      let company = sampleCompany {remote = "US-based", locations = ["Seattle", "🇬🇧 London"]}
+      let company = sampleCompany {remote = Just "US-based", locations = ["Seattle", "🇬🇧 London"]}
       -- Act
       let result = fixupOne company
       -- Assert
-      (result.fixed.remote, result.fixed.locations) `shouldBe` ("Yes (US)", ["🇺🇸 Seattle", "🇬🇧 London"])
+      (result.fixed.remote, result.fixed.locations) `shouldBe` (Just "Yes (US)", ["🇺🇸 Seattle", "🇬🇧 London"])
       (result.remoteChanged, result.locationsFlagged) `shouldBe` (True, 1)
+
+    it "clears a remote value that says nothing" $ do
+      -- Arrange
+      let company = sampleCompany {remote = Just "No jobs"}
+      -- Act
+      let result = fixupOne company
+      -- Assert
+      (result.fixed.remote, result.remoteChanged) `shouldBe` (Nothing, True)
 
     it "leaves a clean company unchanged" $ do
       -- Arrange

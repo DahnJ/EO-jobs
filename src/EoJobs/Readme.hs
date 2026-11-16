@@ -7,6 +7,7 @@ module EoJobs.Readme
   ) where
 
 import Data.List (sortOn)
+import Data.Maybe (fromMaybe)
 import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.IO as TIO
@@ -40,10 +41,10 @@ icons links iconSources =
 row :: Company -> [Text]
 row c =
   [ maybe c.name (\url -> "<a href=\"" <> urlText url <> "\">" <> c.name <> "</a>") c.website
-  , c.description
+  , fromMaybe "" c.description
   , T.concat ["<a href=\"" <> urlText url <> "\">[" <> T.pack (show i) <> "]</a>" | (i, url) <- zip [1 :: Int ..] c.careersUrls]
   , T.intercalate "<br />" c.locations
-  , if c.remote `elem` ["", "No", "No jobs"] then "" else c.remote
+  , maybe "" (\value -> if value `elem` ["No", "No jobs"] then "" else value) c.remote
   , icons c.links socialIcons
   , icons c.links businessIcons
   ]

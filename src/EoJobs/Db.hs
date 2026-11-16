@@ -78,12 +78,12 @@ decodeCompany fields bodyText = do
   website <- required "website" (text >=> websiteUrl)
   careersUrls <- required "careers_urls" (list (text >=> decodeHttpUrl))
   locations <- required "locations" (list text)
-  remote <- required "remote" text
-  remoteEvidence <- required "remote_evidence" text
+  remote <- required "remote" optionalText
+  remoteEvidence <- required "remote_evidence" optionalText
   remoteConfidence <- optional' "remote_confidence" (vocabulary parseConfidence)
-  description <- required "description" text
-  satellites <- required "satellites" text
-  category <- required "category" text
+  description <- required "description" optionalText
+  satellites <- required "satellites" optionalText
+  category <- required "category" optionalText
   listed <- required "listed" bool
   links <- required "links" (object >=> traverse linkEntry)
   source <- required "source" text
@@ -103,6 +103,7 @@ decodeCompany fields bodyText = do
     required key decode = field key decode pairs
     optional' :: Text -> Decoder a -> Either Text (Maybe a)
     optional' key decode = optionalField key decode pairs
+    optionalText = fmap (\t -> if isBlank t then Nothing else Just t) . text
     websiteUrl = \case
       "" -> Right Nothing
       raw -> Just <$> decodeHttpUrl raw
@@ -119,6 +120,7 @@ renderCompany company =
     header = T.intercalate "\n" (["---"] <> map renderLine fields <> ["---"]) <> "\n"
     renderLine (key, value) = key <> ": " <> encodeJson value
     string = JString
+    optionalString = JString . fromMaybe ""
     strings = JArray . map JString
     fields =
       [ ("name", string company.name)
@@ -126,13 +128,13 @@ renderCompany company =
       , ("website", string (maybe "" urlText company.website))
       , ("careers_urls", strings (map urlText company.careersUrls))
       , ("locations", strings company.locations)
-      , ("remote", string company.remote)
-      , ("remote_evidence", string company.remoteEvidence)
+      , ("remote", optionalString company.remote)
+      , ("remote_evidence", optionalString company.remoteEvidence)
       ]
         <> [("remote_confidence", string (confidenceText c)) | Just c <- [company.remoteConfidence]]
-        <> [ ("description", string company.description)
-           , ("satellites", string company.satellites)
-           , ("category", string company.category)
+        <> [ ("description", optionalString company.description)
+           , ("satellites", optionalString company.satellites)
+           , ("category", optionalString company.category)
            , ("listed", JBool company.listed)
            , ("links", JObject [(k, JString (linkTargetText v)) | (k, v) <- company.links])
            , ("source", string company.source)
