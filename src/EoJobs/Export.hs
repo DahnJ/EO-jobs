@@ -21,7 +21,7 @@ classInputLine :: Slug -> Company -> Text
 classInputLine slug c =
   encodeJson $
     JObject $
-      [ ("slug", JString slug)
+      [ ("slug", JString (slugText slug))
       , ("name", JString c.name)
       , ("desc", JString c.description)
       , ("body", JString (takeUtf16 300 (T.replace "\n" " " c.body)))
@@ -31,7 +31,7 @@ classInputLine slug c =
 -- | One TSV line: @slug<TAB>name<TAB>domain@.
 dedupIndexLine :: Slug -> Company -> Text
 dedupIndexLine slug c =
-  slug <> "\t" <> c.name <> "\t" <> (if isBlank c.website then "" else regDomain c.website)
+  slugText slug <> "\t" <> c.name <> "\t" <> (if isBlank c.website then "" else regDomain c.website)
 
 -- | Write the classification input to @out@.
 classInput :: FilePath -> IO ()

@@ -144,7 +144,7 @@ checkLinks listedOnly timeoutSeconds workers = do
   companies <- loadAll
   intro <- readUtf8 "intro.md"
   let companyTargets =
-        [ (slug, kind, url)
+        [ (slugText slug, kind, url)
         | (slug, c) <- companies
         , not listedOnly || c.listed
         , (kind, url) <- ("website", c.website) : [("careers", u) | u <- c.careersUrls]
@@ -176,7 +176,7 @@ checkRedirects timeoutSeconds workers = do
   finals <- mapBounded workers (\(_, _, web) -> finalOf manager timeoutSeconds web) listedSites
   let moved =
         sortOn (\(s, n, a, b) -> map utf16Order [s, n, a, b])
-          [ (slug, name', from, to)
+          [ (slugText slug, name', from, to)
           | ((slug, name', web), final) <- zip listedSites finals
           , let from = regDomain web
           , let to = regDomain final

@@ -5,6 +5,9 @@
 module EoJobs.Company
   ( Company (..)
   , Slug
+  , parseSlug
+  , decodeSlug
+  , slugText
   , Status (..)
   , statusText
   , parseStatus
@@ -19,13 +22,30 @@ module EoJobs.Company
   , isWebLink
   ) where
 
+import Data.Char (isAsciiLower, isDigit)
 import Data.Maybe (fromMaybe)
 import Data.Text (Text)
 import qualified Data.Text as T
 import EoJobs.Json (Json)
 
--- | A company's file name without @.md@, e.g. @planet-labs@.
-type Slug = Text
+-- | A company's file name without @.md@, e.g. @planet-labs@; always canonical.
+newtype Slug = Slug Text
+  deriving (Eq, Ord, Show)
+
+-- | Lowercase ASCII words joined by single hyphens, the form of every company file name.
+parseSlug :: Text -> Maybe Slug
+parseSlug raw
+  | all isWord (T.splitOn "-" raw) = Just (Slug raw)
+  | otherwise = Nothing
+  where
+    isWord word = not (T.null word) && T.all (\c -> isAsciiLower c || isDigit c) word
+
+-- | 'parseSlug' with an error that names the rejected value.
+decodeSlug :: Text -> Either Text Slug
+decodeSlug raw = maybe (Left ("not canonical: " <> raw)) Right (parseSlug raw)
+
+slugText :: Slug -> Text
+slugText (Slug raw) = raw
 
 -- | Whether a value is an absolute web URL.
 isHttpUrl :: Text -> Bool

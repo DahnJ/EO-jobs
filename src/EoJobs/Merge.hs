@@ -12,7 +12,6 @@ module EoJobs.Merge
 
 import Control.Monad (forM, unless, (>=>))
 import Data.Bifunctor (first)
-import Data.Char (isAsciiLower, isDigit)
 import Data.Foldable (traverse_)
 import Data.Maybe (fromMaybe, mapMaybe)
 import Data.List (sortOn)
@@ -30,8 +29,8 @@ import System.Directory (doesFileExist, removeFile)
 -- | One verified finding about a company. Empty strings are already dropped
 -- here for the fields that never overwrite with "".
 data InboxRecord = InboxRecord
-  { inboxSlug :: Text
-  -- ^ Trimmed and canonical.
+  { inboxSlug :: Slug
+  -- ^ Trimmed before parsing.
   , inboxName :: Maybe Text
   , inboxStatus :: Maybe Status
   , inboxWebsite :: Maybe Text
@@ -58,9 +57,8 @@ decodeInboxRecord json = do
       nonEmpty, trimmedNonEmpty :: Text -> Either Text (Maybe Text)
       nonEmpty key = (>>= nonEmptyText) <$> opt key text
       trimmedNonEmpty key = (>>= nonEmptyText . trim) <$> opt key text
-  inboxSlug <- maybe "" trim <$> opt "slug" text
-  unless (isCanonicalSlug inboxSlug) $
-    Left ("field 'slug': not canonical: " <> inboxSlug)
+  rawSlug <- maybe "" trim <$> opt "slug" text
+  inboxSlug <- first ("field 'slug': " <>) (decodeSlug rawSlug)
   inboxName <- trimmedNonEmpty "name"
   inboxStatus <- opt "status" (vocabulary parseStatus)
   inboxWebsite <- nonEmpty "website"
@@ -90,12 +88,6 @@ decodeInboxRecord json = do
       unless (isHttpUrl value) $ Left ("field '" <> key <> "': no http scheme: " <> value)
     requireWebLink link@(key, value) =
       unless (isWebLink link) $ Left ("field 'links': " <> key <> " has no http scheme: " <> value)
-
--- | Lowercase ASCII words joined by single hyphens, the form of every company file name.
-isCanonicalSlug :: Text -> Bool
-isCanonicalSlug slug = all isWord (T.splitOn "-" slug)
-  where
-    isWord word = not (T.null word) && T.all (\c -> isAsciiLower c || isDigit c) word
 
 -- | Merge an inbox record into the existing company ('Nothing' creates one),
 -- tagging a new company with @source@ and stamping notes with @today@.
@@ -155,7 +147,7 @@ setIfPresent value set company = maybe company (`set` company) value
 newCompany :: Text -> InboxRecord -> Company
 newCompany source record =
   Company
-    { name = fromMaybe record.inboxSlug record.inboxName
+    { name = fromMaybe (slugText record.inboxSlug) record.inboxName
     , status = Unknown
     , website = ""
     , careersUrls = []
@@ -199,7 +191,7 @@ run source = do
       updated = [s | Updated s <- outcomes]
   TIO.putStrLn ("created " <> showT (length created) <> ", updated " <> showT (length updated))
   unless (null updated) $
-    TIO.putStrLn ("updated: " <> T.intercalate ", " (sortOn utf16Order updated))
+    TIO.putStrLn ("updated: " <> T.intercalate ", " (sortOn utf16Order (map slugText updated)))
   where
     showT = T.pack . show
 

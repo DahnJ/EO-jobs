@@ -5,13 +5,14 @@ import Control.Monad (forM_)
 import qualified Data.ByteString as BS
 import Data.Either (isLeft)
 import Data.List (isInfixOf)
+import Data.Maybe (fromMaybe)
 import qualified Data.Map.Strict as Map
 import Data.Text (Text)
 import qualified Data.Text as T
 import Data.Time (fromGregorian)
 import EoJobs.Classify (Verdict (..), classifyOne, decodeVerdicts)
 import EoJobs.Company
-import EoJobs.Db (hasExtension, listMatching, parseCompany, readUtf8, renderCompany, writeUtf8)
+import EoJobs.Db (hasExtension, listMatching, loadAll, parseCompany, readUtf8, renderCompany, writeUtf8)
 import EoJobs.Export (classInputLine)
 import EoJobs.Fixup (FixupResult (..), fixupOne)
 import EoJobs.Flags (addFlag)
@@ -96,6 +97,16 @@ main = hspec $ do
       let rendered = renderReadme "" [company]
       -- Assert
       rendered `shouldSatisfy` T.isInfixOf "| <a href=\"https://acme.io\">Acme EO</a> | "
+
+  describe "loadAll" $ do
+    it "fails naming the file when its name is not a canonical slug" $ inScratchDir "load-slug" $ do
+      -- Arrange
+      createDirectoryIfMissing True "companies"
+      writeUtf8 "companies/Acme.md" sampleFile
+      -- Act
+      failure <- failureMessage loadAll
+      -- Assert
+      failure `shouldSatisfy` maybe False ("companies/Acme.md: file name: not canonical: Acme" `isInfixOf`)
 
   describe "readUtf8" $ do
     it "fails naming the file when its bytes are not UTF-8" $ inScratchDir "utf8" $ do
@@ -257,10 +268,10 @@ main = hspec $ do
       (created.name, created.status, created.source, created.website) `shouldBe` ("newco", Unknown, "discovery-sweep", "")
       (created.careersUrls, created.locations, created.listed) `shouldBe` (["https://newco.io/jobs"], ["🇩🇪 Berlin"], False)
 
-    forM_ ["", " ", "Acme Corp", "a/b", "../README", "-acme", "acme-", "a--b"] $ \slug ->
-      it ("rejects the slug " <> show slug) $ do
+    forM_ ["", " ", "Acme Corp", "a/b", "../README", "-acme", "acme-", "a--b"] $ \rawSlug ->
+      it ("rejects the slug " <> show rawSlug) $ do
         -- Arrange
-        let json = JObject [("slug", JString slug)]
+        let json = JObject [("slug", JString rawSlug)]
         -- Act
         let decoded = decodeInboxRecord json
         -- Assert
@@ -437,14 +448,14 @@ main = hspec $ do
       keeper.careersUrls `shouldBe` ["https://acme.io/jobs", "https://alpha.io/jobs"]
 
   describe "absorbDuplicates" $ do
-    let group = Dedup.DuplicateGroup ["keep", "drop"] "keep" "same"
+    let group = Dedup.DuplicateGroup [slug "keep", slug "drop"] (slug "keep") "same"
         finding = sampleCompany {remote = "Yes (US)", remoteEvidence = "posting", remoteConfidence = Just High, description = "From the dropped file.", body = "research notes"}
 
     it "fills the keeper's blank remote and description from the dropped company" $ do
       -- Arrange
       let keeper = sampleCompany {remote = "", remoteEvidence = "", remoteConfidence = Just High, description = ""}
       -- Act
-      let merged = Dedup.absorbDuplicates group keeper [("drop", finding)]
+      let merged = Dedup.absorbDuplicates group keeper [(slug "drop", finding)]
       -- Assert
       (merged.remote, merged.remoteEvidence, merged.remoteConfidence, merged.description)
         `shouldBe` ("Yes (US)", "posting", Just High, "From the dropped file.")
@@ -453,7 +464,7 @@ main = hspec $ do
       -- Arrange
       let keeper = sampleCompany {remote = "Hybrid", remoteEvidence = "site", remoteConfidence = Just Low}
       -- Act
-      let merged = Dedup.absorbDuplicates group keeper [("drop", finding)]
+      let merged = Dedup.absorbDuplicates group keeper [(slug "drop", finding)]
       -- Assert
       (merged.remote, merged.remoteEvidence, merged.remoteConfidence, merged.description)
         `shouldBe` ("Hybrid", "site", Just Low, keeper.description)
@@ -463,7 +474,7 @@ main = hspec $ do
       let keeper = sampleCompany {remote = "", remoteEvidence = "page blocked", remoteConfidence = Just Low}
           blank = sampleCompany {remote = "", remoteEvidence = "", remoteConfidence = Nothing}
       -- Act
-      let merged = Dedup.absorbDuplicates group keeper [("drop", blank)]
+      let merged = Dedup.absorbDuplicates group keeper [(slug "drop", blank)]
       -- Assert
       (merged.remoteEvidence, merged.remoteConfidence) `shouldBe` ("page blocked", Just Low)
 
@@ -471,18 +482,18 @@ main = hspec $ do
       -- Arrange
       let keeper = sampleCompany {body = "kept notes\n"}
       -- Act
-      let merged = Dedup.absorbDuplicates group keeper [("drop", finding)]
+      let merged = Dedup.absorbDuplicates group keeper [(slug "drop", finding)]
       -- Assert
       merged.body `shouldBe` "kept notes\n\nresearch notes\n\n[dedup] merged duplicate(s) drop — same"
 
   describe "classifyOne" $ do
-    let verdicts = Map.fromList [("trimble", Verdict Software "agent says" Nothing), ("acme", Verdict Consultancy "services" Nothing)]
+    let verdicts = Map.fromList [(slug "trimble", Verdict Software "agent says" Nothing), (slug "acme", Verdict Consultancy "services" Nothing)]
 
     it "applies a verdict to every slug, with no forced override" $ do
       -- Arrange
       let company = sampleCompany {companyType = Just Conglomerate}
       -- Act
-      let classified = classifyOne verdicts "trimble" company
+      let classified = classifyOne verdicts (slug "trimble") company
       -- Assert
       (classified.companyType, classified.typeReason) `shouldBe` (Just Software, Just "agent says [agent]")
 
@@ -490,7 +501,7 @@ main = hspec $ do
       -- Arrange
       let company = sampleCompany {companyType = Just Conglomerate, typeReason = Just "many divisions"}
       -- Act
-      let classified = classifyOne Map.empty "trimble" company
+      let classified = classifyOne Map.empty (slug "trimble") company
       -- Assert
       (classified.companyType, classified.typeReason) `shouldBe` (Just Conglomerate, Just "many divisions")
 
@@ -498,7 +509,7 @@ main = hspec $ do
       -- Arrange
       let company = sampleCompany {companyType = Just CommercialEo}
       -- Act
-      let classified = classifyOne verdicts "acme" company
+      let classified = classifyOne verdicts (slug "acme") company
       -- Assert
       (classified.companyType, classified.typeReason) `shouldBe` (Just Consultancy, Just "services [agent]")
 
@@ -506,7 +517,7 @@ main = hspec $ do
       -- Arrange
       let company = sampleCompany {companyType = Nothing, typeReason = Nothing}
       -- Act
-      let classified = classifyOne Map.empty "other" company
+      let classified = classifyOne Map.empty (slug "other") company
       -- Assert
       (classified.companyType, classified.typeReason, classified.listed) `shouldBe` (Nothing, Nothing, False)
 
@@ -515,7 +526,7 @@ main = hspec $ do
         -- Arrange
         let company = sampleCompany {companyType = Just companyType}
         -- Act
-        let classified = classifyOne Map.empty "other" company
+        let classified = classifyOne Map.empty (slug "other") company
         -- Assert
         classified.listed `shouldBe` True
 
@@ -523,7 +534,7 @@ main = hspec $ do
       -- Arrange
       let company = sampleCompany {companyType = Just NotEo}
       -- Act
-      let classified = classifyOne Map.empty "other" company
+      let classified = classifyOne Map.empty (slug "other") company
       -- Assert
       classified.listed `shouldBe` False
 
@@ -531,15 +542,15 @@ main = hspec $ do
       -- Arrange
       let company = sampleCompany {unlistedReason = Just "no EO roles"}
       -- Act
-      let classified = classifyOne Map.empty "other" company
+      let classified = classifyOne Map.empty (slug "other") company
       -- Assert
       (classified.listed, classified.unlistedReason) `shouldBe` (False, Just "no EO roles")
 
     it "sets unlisted_reason from a verdict" $ do
       -- Arrange
-      let setting = Map.fromList [("acme", Verdict Conglomerate "big" (Just "no EO roles"))]
+      let setting = Map.fromList [(slug "acme", Verdict Conglomerate "big" (Just "no EO roles"))]
       -- Act
-      let classified = classifyOne setting "acme" sampleCompany
+      let classified = classifyOne setting (slug "acme") sampleCompany
       -- Assert
       (classified.listed, classified.unlistedReason) `shouldBe` (False, Just "no EO roles")
 
@@ -547,7 +558,7 @@ main = hspec $ do
       -- Arrange
       let company = sampleCompany {unlistedReason = Just "no EO roles"}
       -- Act
-      let classified = classifyOne verdicts "acme" company
+      let classified = classifyOne verdicts (slug "acme") company
       -- Assert
       (classified.listed, classified.unlistedReason) `shouldBe` (True, Nothing)
 
@@ -555,7 +566,7 @@ main = hspec $ do
       -- Arrange
       let company = sampleCompany {careersUrls = ["mailto:jobs@acme.io"]}
       -- Act
-      let classified = classifyOne Map.empty "other" company
+      let classified = classifyOne Map.empty (slug "other") company
       -- Assert
       classified.listed `shouldBe` False
 
@@ -582,7 +593,7 @@ main = hspec $ do
       -- Act
       let decoded = decodeVerdicts json
       -- Assert
-      decoded `shouldBe` Right [("acme", Verdict Conglomerate "big" (Just "no EO roles"))]
+      decoded `shouldBe` Right [(slug "acme", Verdict Conglomerate "big" (Just "no EO roles"))]
 
     forM_ [("invalid", [("slug", JString "acme"), ("type", JString "softwre")]), ("missing", [("slug", JString "acme")])] $ \(label, pairs) ->
       it ("fails on a verdict whose type is " <> label) $ do
@@ -593,6 +604,14 @@ main = hspec $ do
         -- Assert
         decoded `shouldSatisfy` isLeft
 
+    it "fails on a verdict whose slug is not canonical" $ do
+      -- Arrange
+      let json = JArray [JObject [("slug", JString "Acme Corp"), ("type", JString "software")]]
+      -- Act
+      let decoded = decodeVerdicts json
+      -- Assert
+      decoded `shouldBe` Left "field 'slug': not canonical: Acme Corp"
+
     forM_ [("missing", []), ("blank", [("unlisted_reason", JString " ")])] $ \(label, unlistedField) ->
       it ("treats a " <> label <> " unlisted_reason as absent") $ do
         -- Arrange
@@ -600,7 +619,7 @@ main = hspec $ do
         -- Act
         let decoded = decodeVerdicts json
         -- Assert
-        decoded `shouldBe` Right [("acme", Verdict Conglomerate "big" Nothing)]
+        decoded `shouldBe` Right [(slug "acme", Verdict Conglomerate "big" Nothing)]
 
   describe "fixupOne" $ do
     it "normalizes remote and flags unflagged locations" $ do
@@ -625,7 +644,7 @@ main = hspec $ do
       -- Arrange
       let company = sampleCompany {unlistedReason = Just "general portal"}
       -- Act
-      let line = classInputLine "acme" company
+      let line = classInputLine (slug "acme") company
       -- Assert
       line `shouldSatisfy` T.isInfixOf "\"unlisted_reason\":\"general portal\""
 
@@ -633,7 +652,7 @@ main = hspec $ do
       -- Arrange
       let company = sampleCompany {unlistedReason = Nothing}
       -- Act
-      let line = classInputLine "acme" company
+      let line = classInputLine (slug "acme") company
       -- Assert
       line `shouldNotSatisfy` T.isInfixOf "unlisted_reason"
 
@@ -695,6 +714,10 @@ roundTripMismatch path = do
   pure $ case parseCompany original of
     Right company | renderCompany company == original -> []
     _ -> [path]
+
+-- | A slug from a literal known to be canonical.
+slug :: Text -> Slug
+slug raw = fromMaybe (error ("not a canonical slug: " <> T.unpack raw)) (parseSlug raw)
 
 inbox :: [(Text, Json)] -> InboxRecord
 inbox pairs = either (error . T.unpack) id (decodeInboxRecord (JObject pairs))

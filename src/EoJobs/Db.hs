@@ -140,7 +140,7 @@ renderCompany company =
         <> company.extras
 
 companyPath :: Slug -> FilePath
-companyPath slug = dbDir </> T.unpack slug <> ".md"
+companyPath slug = dbDir </> T.unpack (slugText slug) <> ".md"
 
 -- | Paths in @dir@ whose file name passes @keep@, sorted by name; a missing
 -- directory has no files.
@@ -156,13 +156,16 @@ readCompany path = do
   contents <- readUtf8 path
   either (failAt path) pure (parseCompany contents)
 
--- | Every company as @(slug, company)@, ordered by slug.
+-- | Every company as @(slug, company)@, ordered by slug; a file name that is
+-- not a canonical slug fails.
 loadAll :: IO [(Slug, Company)]
 loadAll = do
   paths <- listMatching dbDir (hasExtension ".md")
-  traverse (\p -> (slugOf p,) <$> readCompany p) paths
+  traverse (\p -> (,) <$> slugOf p <*> readCompany p) paths
   where
-    slugOf p = let n = T.pack (takeFileName p) in fromMaybe n (T.stripSuffix ".md" n)
+    slugOf p =
+      let n = T.pack (takeFileName p)
+       in either (failAt p . ("file name: " <>)) pure (decodeSlug (fromMaybe n (T.stripSuffix ".md" n)))
 
 save :: Slug -> Company -> IO ()
 save slug company = writeUtf8 (companyPath slug) (renderCompany company)

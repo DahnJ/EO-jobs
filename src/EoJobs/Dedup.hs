@@ -9,7 +9,7 @@ module EoJobs.Dedup
   , run
   ) where
 
-import Control.Monad (unless)
+import Control.Monad (unless, (>=>))
 import Data.Containers.ListUtils (nubOrd)
 import Data.Foldable (traverse_)
 import Data.Maybe (catMaybes, fromMaybe)
@@ -30,8 +30,8 @@ decodeGroups :: Json -> Either Text [DuplicateGroup]
 decodeGroups = list $ \json -> do
   pairs <- object json
   DuplicateGroup
-    <$> field "slugs" (list text) pairs
-    <*> field "keep" text pairs
+    <$> field "slugs" (list (text >=> decodeSlug)) pairs
+    <*> field "keep" (text >=> decodeSlug) pairs
     <*> (fromMaybe "" <$> optionalField "reason" text pairs)
 
 -- | Fold the dropped companies into the keeper and note the merge in its body;
@@ -57,7 +57,7 @@ absorbDuplicates group keeperCompany dropped =
       where
         remoteSource = if isBlank kept.remote && not (isBlank duplicate.remote) then duplicate else kept
     unionInOrder kept extra = kept <> filter (`notElem` kept) extra
-    note = "[dedup] merged duplicate(s) " <> T.intercalate ", " (map fst dropped) <> " — " <> group.reason
+    note = "[dedup] merged duplicate(s) " <> T.intercalate ", " (map (slugText . fst) dropped) <> " — " <> group.reason
     withNote c = c {body = appendParagraph c.body note}
     appendParagraph existing paragraph
       | isBlank paragraph = existing
@@ -80,7 +80,7 @@ foldGroup group = do
   keeperExists <- doesFileExist (companyPath group.keeper)
   if not keeperExists
     then do
-      TIO.putStrLn ("skip " <> showSlugs group.groupSlugs <> " : keeper " <> group.keeper <> " missing")
+      TIO.putStrLn ("skip " <> showSlugs group.groupSlugs <> " : keeper " <> slugText group.keeper <> " missing")
       pure Nothing
     else do
       keeperCompany <- readCompany (companyPath group.keeper)
@@ -89,7 +89,7 @@ foldGroup group = do
       unless (null dropped) $ do
         save group.keeper (absorbDuplicates group keeperCompany dropped)
         traverse_ (removeFile . companyPath . fst) dropped
-        TIO.putStrLn ("merged " <> showSlugs (map fst dropped) <> " -> " <> group.keeper)
+        TIO.putStrLn ("merged " <> showSlugs (map fst dropped) <> " -> " <> slugText group.keeper)
       pure (if null dropped then Nothing else Just group.keeper)
   where
     -- a dropped slug still on disk, in group order
@@ -99,4 +99,4 @@ foldGroup group = do
       if slug == group.keeper || not exists
         then pure Nothing
         else Just . (slug,) <$> readCompany path
-    showSlugs slugs = encodeJson (JArray (map JString slugs))
+    showSlugs slugs = encodeJson (JArray (map (JString . slugText) slugs))
