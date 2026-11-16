@@ -50,14 +50,30 @@ main = hspec $ do
       -- Assert
       rendered `shouldBe` expected
 
-    it "stores every link except a stocks ticker with an http scheme" $ do
+    forM_
+      [ ("website", "website: \"https://acme.io\"", "website: \"acme.io\"", "field 'website': no http scheme: acme.io")
+      , ("careers URL", "\"https://acme.io/jobs\"]", "\"acme.io/jobs\"]", "field 'careers_urls': no http scheme: acme.io/jobs")
+      , ("link", "\"https://linkedin.com/acme\"", "\"linkedin.com/acme\"", "field 'links': linkedin has no http scheme: linkedin.com/acme")
+      ]
+      $ \(label, stored, schemeless, expected) ->
+        it ("fails naming the field when a " <> label <> " has no http scheme") $ do
+          -- Arrange
+          let withoutScheme = T.replace stored schemeless sampleFile
+          -- Act
+          let result = parseCompany withoutScheme
+          -- Assert
+          result `shouldBe` Left expected
+
+    it "reads a stocks link as a ticker and an empty website as none" $ do
       -- Arrange
-      paths <- listMatching "companies" (hasExtension ".md")
+      let withTicker =
+            T.replace "website: \"https://acme.io\"" "website: \"\"" $
+              T.replace "\"https://linkedin.com/acme\"}" "\"https://linkedin.com/acme\",\"stocks\":\"$PL\"}" sampleFile
       -- Act
-      companies <- traverse (fmap (either (error . T.unpack) id . parseCompany) . readUtf8) paths
-      let schemeless = [link | c <- companies, link <- c.links, not (isWebLink link)]
+      let parsed = parseCompany withTicker
       -- Assert
-      schemeless `shouldBe` []
+      fmap (\c -> (c.website, c.links)) parsed `shouldBe` Right (Nothing, [("linkedin", web "https://linkedin.com/acme"), ("stocks", Ticker "$PL")])
+      fmap renderCompany parsed `shouldBe` Right withTicker
 
     it "ends the frontmatter only at a line that is exactly ---" $ do
       -- Arrange
@@ -97,6 +113,14 @@ main = hspec $ do
       let rendered = renderReadme "" [company]
       -- Assert
       rendered `shouldSatisfy` T.isInfixOf "| <a href=\"https://acme.io\">Acme EO</a> | "
+
+    it "shows the bare name when there is no website" $ do
+      -- Arrange
+      let company = sampleCompany {website = Nothing}
+      -- Act
+      let rendered = renderReadme "" [company]
+      -- Assert
+      rendered `shouldSatisfy` T.isInfixOf "| Acme EO | "
 
   describe "loadAll" $ do
     it "fails naming the file when its name is not a canonical slug" $ inScratchDir "load-slug" $ do
@@ -233,7 +257,7 @@ main = hspec $ do
 
     it "keeps existing link values, incoming keys first, and drops blank links" $ do
       -- Arrange
-      let existing = sampleCompany {links = [("linkedin", "old-li"), ("github", "old-gh")]}
+      let existing = sampleCompany {links = [("linkedin", web "https://old-li"), ("github", web "https://old-gh")]}
           record =
             inbox
               [ ("slug", JString "acme")
@@ -242,7 +266,7 @@ main = hspec $ do
       -- Act
       let merged = mergeOne today "sweep" (Just existing) record
       -- Assert
-      merged.links `shouldBe` [("twitter", "https://tw"), ("linkedin", "old-li"), ("github", "old-gh")]
+      merged.links `shouldBe` [("twitter", web "https://tw"), ("linkedin", web "https://old-li"), ("github", web "https://old-gh")]
 
     it "stamps a note onto the trimmed body and sets last_checked" $ do
       -- Arrange
@@ -265,8 +289,8 @@ main = hspec $ do
       -- Act
       let created = mergeOne today "discovery-sweep" Nothing record
       -- Assert
-      (created.name, created.status, created.source, created.website) `shouldBe` ("newco", Unknown, "discovery-sweep", "")
-      (created.careersUrls, created.locations, created.listed) `shouldBe` (["https://newco.io/jobs"], ["🇩🇪 Berlin"], False)
+      (created.name, created.status, created.source, created.website) `shouldBe` ("newco", Unknown, "discovery-sweep", Nothing)
+      (created.careersUrls, created.locations, created.listed) `shouldBe` ([url "https://newco.io/jobs"], ["🇩🇪 Berlin"], False)
 
     forM_ ["", " ", "Acme Corp", "a/b", "../README", "-acme", "acme-", "a--b"] $ \rawSlug ->
       it ("rejects the slug " <> show rawSlug) $ do
@@ -291,7 +315,7 @@ main = hspec $ do
       -- Act
       let merged = mergeOne today "sweep" (Just sampleCompany {links = []}) record
       -- Assert
-      merged.links `shouldBe` [("stocks", "$PL")]
+      merged.links `shouldBe` [("stocks", Ticker "$PL")]
 
     it "ignores confidence and evidence from a record with no remote value" $ do
       -- Arrange
@@ -313,12 +337,12 @@ main = hspec $ do
 
     it "moves a stored careers URL that the finding names to the front" $ do
       -- Arrange
-      let existing = sampleCompany {careersUrls = ["https://dead.io", "https://live.io"]}
+      let existing = sampleCompany {careersUrls = [url "https://dead.io", url "https://live.io"]}
           record = inbox [("slug", JString "acme"), ("careers_url", JString "https://live.io")]
       -- Act
       let merged = mergeOne today "sweep" (Just existing) record
       -- Assert
-      merged.careersUrls `shouldBe` ["https://live.io", "https://dead.io"]
+      merged.careersUrls `shouldBe` [url "https://live.io", url "https://dead.io"]
 
     it "keeps the stored evidence when a finding reconfirms the remote without any" $ do
       -- Arrange
@@ -349,12 +373,12 @@ main = hspec $ do
 
     it "replaces only the first careers URL with a new one" $ do
       -- Arrange
-      let existing = sampleCompany {careersUrls = ["https://a.io", "https://b.io"]}
+      let existing = sampleCompany {careersUrls = [url "https://a.io", url "https://b.io"]}
           record = inbox [("slug", JString "acme"), ("careers_url", JString "https://c.io")]
       -- Act
       let merged = mergeOne today "sweep" (Just existing) record
       -- Assert
-      merged.careersUrls `shouldBe` ["https://c.io", "https://b.io"]
+      merged.careersUrls `shouldBe` [url "https://c.io", url "https://b.io"]
 
     forM_ [("website", "acme.io"), ("careers_url", "jobs.acme.io"), ("careers_url", "httpbin.org/jobs")] $ \(key, value) ->
       it ("rejects " <> show key <> " " <> show value) $ do
@@ -445,7 +469,7 @@ main = hspec $ do
       alphaKept <- doesFileExist "companies/alpha.md"
       alphaKept `shouldBe` False
       keeper <- either (error . T.unpack) id . parseCompany <$> readUtf8 "companies/keep.md"
-      keeper.careersUrls `shouldBe` ["https://acme.io/jobs", "https://alpha.io/jobs"]
+      keeper.careersUrls `shouldBe` [url "https://acme.io/jobs", url "https://alpha.io/jobs"]
 
   describe "absorbDuplicates" $ do
     let group = Dedup.DuplicateGroup [slug "keep", slug "drop"] (slug "keep") "same"
@@ -562,9 +586,9 @@ main = hspec $ do
       -- Assert
       (classified.listed, classified.unlistedReason) `shouldBe` (True, Nothing)
 
-    it "does not list a company without an http careers URL" $ do
+    it "does not list a company without a careers URL" $ do
       -- Arrange
-      let company = sampleCompany {careersUrls = ["mailto:jobs@acme.io"]}
+      let company = sampleCompany {careersUrls = []}
       -- Act
       let classified = classifyOne Map.empty (slug "other") company
       -- Assert
@@ -663,7 +687,7 @@ main = hspec $ do
       -- Act
       let links = introLinks markdown
       -- Assert
-      links `shouldBe` ["https://a.io/x?y=1", "http://b.io"]
+      links `shouldBe` [url "https://a.io/x?y=1", url "http://b.io"]
 
   describe "regDomain" $ do
     let cases =
@@ -675,11 +699,11 @@ main = hspec $ do
           , ("https://localhost:8080", "localhost")
           , ("", "")
           ]
-    forM_ cases $ \(url, expected) ->
-      it ("reduces " <> show url) $ do
+    forM_ cases $ \(input, expected) ->
+      it ("reduces " <> show input) $ do
         -- Arrange (the case table above)
         -- Act
-        let domain = regDomain url
+        let domain = regDomain input
         -- Assert
         domain `shouldBe` expected
 
@@ -718,6 +742,14 @@ roundTripMismatch path = do
 -- | A slug from a literal known to be canonical.
 slug :: Text -> Slug
 slug raw = fromMaybe (error ("not a canonical slug: " <> T.unpack raw)) (parseSlug raw)
+
+-- | A URL from a literal known to have an http scheme.
+url :: Text -> HttpUrl
+url raw = fromMaybe (error ("no http scheme: " <> T.unpack raw)) (parseHttpUrl raw)
+
+-- | A web link from a literal known to have an http scheme.
+web :: Text -> LinkTarget
+web = WebLink . url
 
 inbox :: [(Text, Json)] -> InboxRecord
 inbox pairs = either (error . T.unpack) id (decodeInboxRecord (JObject pairs))

@@ -75,8 +75,8 @@ decodeCompany :: Map.Map Text Json -> Text -> Either Text Company
 decodeCompany fields bodyText = do
   name <- required "name" text
   status <- required "status" (vocabulary parseStatus)
-  website <- required "website" text
-  careersUrls <- required "careers_urls" (list text)
+  website <- required "website" (text >=> websiteUrl)
+  careersUrls <- required "careers_urls" (list (text >=> decodeHttpUrl))
   locations <- required "locations" (list text)
   remote <- required "remote" text
   remoteEvidence <- required "remote_evidence" text
@@ -85,7 +85,7 @@ decodeCompany fields bodyText = do
   satellites <- required "satellites" text
   category <- required "category" text
   listed <- required "listed" bool
-  links <- required "links" (object >=> traverse (traverse text))
+  links <- required "links" (object >=> traverse linkEntry)
   source <- required "source" text
   lastChecked <- optional' "last_checked" text
   companyType <- optional' "type" (vocabulary parseCompanyType)
@@ -103,6 +103,10 @@ decodeCompany fields bodyText = do
     required key decode = field key decode pairs
     optional' :: Text -> Decoder a -> Either Text (Maybe a)
     optional' key decode = optionalField key decode pairs
+    websiteUrl = \case
+      "" -> Right Nothing
+      raw -> Just <$> decodeHttpUrl raw
+    linkEntry (key, value) = (key,) <$> (text value >>= decodeLinkTarget key)
     extras =
       sortOn (utf16Order . T.replace "_" "-" . fst)
         (Map.toList (Map.withoutKeys fields (Set.fromList knownKeys)))
@@ -119,8 +123,8 @@ renderCompany company =
     fields =
       [ ("name", string company.name)
       , ("status", string (statusText company.status))
-      , ("website", string company.website)
-      , ("careers_urls", strings company.careersUrls)
+      , ("website", string (maybe "" urlText company.website))
+      , ("careers_urls", strings (map urlText company.careersUrls))
       , ("locations", strings company.locations)
       , ("remote", string company.remote)
       , ("remote_evidence", string company.remoteEvidence)
@@ -130,7 +134,7 @@ renderCompany company =
            , ("satellites", string company.satellites)
            , ("category", string company.category)
            , ("listed", JBool company.listed)
-           , ("links", JObject [(k, JString v) | (k, v) <- company.links])
+           , ("links", JObject [(k, JString (linkTargetText v)) | (k, v) <- company.links])
            , ("source", string company.source)
            ]
         <> [("last_checked", string d) | Just d <- [company.lastChecked]]

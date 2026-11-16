@@ -33,14 +33,14 @@ data InboxRecord = InboxRecord
   -- ^ Trimmed before parsing.
   , inboxName :: Maybe Text
   , inboxStatus :: Maybe Status
-  , inboxWebsite :: Maybe Text
-  , inboxCareersUrl :: Maybe Text
+  , inboxWebsite :: Maybe HttpUrl
+  , inboxCareersUrl :: Maybe HttpUrl
   , inboxLocations :: [Text]
   , inboxRemote :: Maybe Text
   , inboxRemoteEvidence :: Maybe Text
   , inboxRemoteConfidence :: Maybe Confidence
   , inboxDescription :: Maybe Text
-  , inboxLinks :: [(Text, Text)]
+  , inboxLinks :: [(Text, LinkTarget)]
   -- ^ Non-blank links only, in file order.
   , inboxNote :: Maybe Text
   -- ^ Trimmed, non-empty.
@@ -61,8 +61,8 @@ decodeInboxRecord json = do
   inboxSlug <- first ("field 'slug': " <>) (decodeSlug rawSlug)
   inboxName <- trimmedNonEmpty "name"
   inboxStatus <- opt "status" (vocabulary parseStatus)
-  inboxWebsite <- nonEmpty "website"
-  inboxCareersUrl <- trimmedNonEmpty "careers_url"
+  website <- nonEmpty "website"
+  careersUrl <- trimmedNonEmpty "careers_url"
   inboxLocations <- fromMaybe [] <$> opt "locations" (list text)
   inboxRemote <- trimmedNonEmpty "remote"
   inboxRemoteEvidence <- nonEmpty "remote_evidence"
@@ -70,10 +70,10 @@ decodeInboxRecord json = do
   -- a blank word means the agent left it out, not an unknown word
   inboxRemoteConfidence <- traverse (vocabulary parseConfidence . JString) (confidenceWord >>= nonEmptyText . trim)
   inboxDescription <- nonEmpty "description"
-  inboxLinks <- maybe [] (mapMaybe nonBlankLink) <$> opt "links" (object >=> traverse (traverse linkValue))
-  traverse_ (requireHttpUrl "website") inboxWebsite
-  traverse_ (requireHttpUrl "careers_url") inboxCareersUrl
-  traverse_ requireWebLink inboxLinks
+  rawLinks <- maybe [] (mapMaybe nonBlankLink) <$> opt "links" (object >=> traverse (traverse linkValue))
+  inboxWebsite <- traverse (httpUrl "website") website
+  inboxCareersUrl <- traverse (httpUrl "careers_url") careersUrl
+  inboxLinks <- first ("field 'links': " <>) (traverse (\(key, value) -> (key,) <$> decodeLinkTarget key value) rawLinks)
   inboxNote <- trimmedNonEmpty "note"
   pure InboxRecord {..}
   where
@@ -84,10 +84,7 @@ decodeInboxRecord json = do
     nonBlankLink (key, value) = case value of
       Just v | not (isBlank v) -> Just (key, v)
       _ -> Nothing
-    requireHttpUrl key value =
-      unless (isHttpUrl value) $ Left ("field '" <> key <> "': no http scheme: " <> value)
-    requireWebLink link@(key, value) =
-      unless (isWebLink link) $ Left ("field 'links': " <> key <> " has no http scheme: " <> value)
+    httpUrl key = first (\e -> "field '" <> key <> "': " <> e) . decodeHttpUrl
 
 -- | Merge an inbox record into the existing company ('Nothing' creates one),
 -- tagging a new company with @source@ and stamping notes with @today@.
@@ -100,7 +97,7 @@ mergeOne today source existing record =
     . applyRemote
     . applyLocations
     . applyCareers
-    . setIfPresent record.inboxWebsite (\v c -> c {website = v})
+    . setIfPresent record.inboxWebsite (\v c -> c {website = Just v})
     -- a rebrand renames the company in place
     . setIfPresent record.inboxName (\v c -> c {name = v})
     . applyStatus
@@ -149,7 +146,7 @@ newCompany source record =
   Company
     { name = fromMaybe (slugText record.inboxSlug) record.inboxName
     , status = Unknown
-    , website = ""
+    , website = Nothing
     , careersUrls = []
     , locations = []
     , remote = ""

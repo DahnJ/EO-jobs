@@ -13,7 +13,7 @@ import EoJobs.Company
 import EoJobs.Db
 import EoJobs.Json
 import EoJobs.Net (regDomain)
-import EoJobs.StringRules (isBlank, takeUtf16)
+import EoJobs.StringRules (takeUtf16)
 
 -- | One JSONL line: @{slug,name,desc,body}@, body cut to its first 300 characters,
 -- plus any stored @unlisted_reason@: a verdict replaces it, so the agent must see it.
@@ -31,7 +31,7 @@ classInputLine slug c =
 -- | One TSV line: @slug<TAB>name<TAB>domain@.
 dedupIndexLine :: Slug -> Company -> Text
 dedupIndexLine slug c =
-  slugText slug <> "\t" <> c.name <> "\t" <> (if isBlank c.website then "" else regDomain c.website)
+  slugText slug <> "\t" <> c.name <> "\t" <> maybe "" (regDomain . urlText) c.website
 
 -- | Write the classification input to @out@.
 classInput :: FilePath -> IO ()

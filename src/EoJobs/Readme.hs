@@ -29,19 +29,19 @@ socialIcons =
 columns :: [Text]
 columns = ["Name", "Description", "Jobs", "Locations", "Remote", "Social", "Business"]
 
-icons :: [(Text, Text)] -> [(Text, Text)] -> Text
+icons :: [(Text, LinkTarget)] -> [(Text, Text)] -> Text
 icons links iconSources =
   T.concat
-    [ "<a href=\"" <> url <> "\"><img src=" <> src <> " height=25></a>"
+    [ "<a href=\"" <> urlText url <> "\"><img src=" <> src <> " height=25></a>"
     | (key, src) <- iconSources
-    , Just url <- [lookup key links]
+    , Just (WebLink url) <- [lookup key links]
     ]
 
 row :: Company -> [Text]
 row c =
-  [ "<a href=\"" <> c.website <> "\">" <> c.name <> "</a>"
+  [ maybe c.name (\url -> "<a href=\"" <> urlText url <> "\">" <> c.name <> "</a>") c.website
   , c.description
-  , T.concat ["<a href=\"" <> url <> "\">[" <> T.pack (show i) <> "]</a>" | (i, url) <- zip [1 :: Int ..] c.careersUrls]
+  , T.concat ["<a href=\"" <> urlText url <> "\">[" <> T.pack (show i) <> "]</a>" | (i, url) <- zip [1 :: Int ..] c.careersUrls]
   , T.intercalate "<br />" c.locations
   , if c.remote `elem` ["", "No", "No jobs"] then "" else c.remote
   , icons c.links socialIcons

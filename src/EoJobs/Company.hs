@@ -17,9 +17,14 @@ module EoJobs.Company
   , Confidence (..)
   , confidenceText
   , parseConfidence
+  , HttpUrl
+  , parseHttpUrl
+  , decodeHttpUrl
+  , urlText
+  , LinkTarget (..)
+  , decodeLinkTarget
+  , linkTargetText
   , mergeLinks
-  , isHttpUrl
-  , isWebLink
   ) where
 
 import Data.Char (isAsciiLower, isDigit)
@@ -47,13 +52,37 @@ decodeSlug raw = maybe (Left ("not canonical: " <> raw)) Right (parseSlug raw)
 slugText :: Slug -> Text
 slugText (Slug raw) = raw
 
--- | Whether a value is an absolute web URL.
-isHttpUrl :: Text -> Bool
-isHttpUrl value = any (`T.isPrefixOf` value) ["http://", "https://"]
+-- | An absolute web URL: one that starts with @http://@ or @https://@.
+newtype HttpUrl = HttpUrl Text
+  deriving (Eq, Ord, Show)
 
--- | Whether a @links@ entry can be an href; @stocks@ holds a ticker, not a URL.
-isWebLink :: (Text, Text) -> Bool
-isWebLink (key, value) = key == "stocks" || isHttpUrl value
+parseHttpUrl :: Text -> Maybe HttpUrl
+parseHttpUrl raw
+  | any (`T.isPrefixOf` raw) ["http://", "https://"] = Just (HttpUrl raw)
+  | otherwise = Nothing
+
+-- | 'parseHttpUrl' with an error that names the rejected value.
+decodeHttpUrl :: Text -> Either Text HttpUrl
+decodeHttpUrl raw = maybe (Left ("no http scheme: " <> raw)) Right (parseHttpUrl raw)
+
+urlText :: HttpUrl -> Text
+urlText (HttpUrl raw) = raw
+
+-- | A @links@ value: a page to link to, or the stock ticker under key @stocks@.
+data LinkTarget = WebLink HttpUrl | Ticker Text
+  deriving (Eq, Show)
+
+-- | The value of the @links@ entry @key@; only @stocks@ holds a ticker.
+decodeLinkTarget :: Text -> Text -> Either Text LinkTarget
+decodeLinkTarget "stocks" raw = Right (Ticker raw)
+decodeLinkTarget key raw =
+  maybe (Left (key <> " has no http scheme: " <> raw)) (Right . WebLink) (parseHttpUrl raw)
+
+-- | The on-disk spelling of a link value.
+linkTargetText :: LinkTarget -> Text
+linkTargetText = \case
+  WebLink url -> urlText url
+  Ticker ticker -> ticker
 
 -- | No @Renamed@: a rebrand updates the record in place and stays 'Active'.
 data Status = Active | Acquired | Defunct | Unknown
@@ -70,8 +99,9 @@ data Confidence = Low | Medium | High
 data Company = Company
   { name :: Text
   , status :: Status
-  , website :: Text
-  , careersUrls :: [Text]
+  , website :: Maybe HttpUrl
+  -- ^ 'Nothing' is stored as @""@.
+  , careersUrls :: [HttpUrl]
   , locations :: [Text]
   , remote :: Text
   , remoteEvidence :: Text
@@ -80,7 +110,7 @@ data Company = Company
   , satellites :: Text
   , category :: Text
   , listed :: Bool
-  , links :: [(Text, Text)]
+  , links :: [(Text, LinkTarget)]
   -- ^ Ordered as on disk, e.g. linkedin before twitter.
   , source :: Text
   , lastChecked :: Maybe Text
@@ -134,7 +164,7 @@ parseEnum render raw = lookup raw [(render v, v) | v <- [minBound .. maxBound]]
 
 -- | Merge two ordered link maps: @base@'s keys first, in order, with @winner@'s
 -- value where both have the key, then @winner@'s other keys in order.
-mergeLinks :: [(Text, Text)] -> [(Text, Text)] -> [(Text, Text)]
+mergeLinks :: [(Text, a)] -> [(Text, a)] -> [(Text, a)]
 mergeLinks base winner =
   [(key, fromMaybe baseValue (lookup key winner)) | (key, baseValue) <- base]
     <> [(key, v) | (key, v) <- winner, key `notElem` map fst base]
