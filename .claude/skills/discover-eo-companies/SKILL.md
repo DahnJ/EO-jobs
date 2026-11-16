@@ -34,6 +34,12 @@ DB. Don't re-scrape static corpora every run.
    - *Occasional gap-fill only* (saturated — skip most runs): GitHub
      `chrieke/awesome-geospatial-companies`, the Google Sheet categories, or a
      targeted WebSearch for one specific under-covered region.
+   - **Consortium rosters, once a year.** Feeds above see only companies that raise
+     money or post on space job boards. They miss established ESA/Copernicus
+     contractors that hire through their own careers pages. Rosters find these:
+     EARSC members (public sheet `1C88jUnlGzcboorUggu9KuQF3CUHa8NfJ7rfbVU1CKf4`,
+     export as CSV), EOEPCA partners, Copernicus and Destination Earth contractors.
+     The 2026-11 EARSC run: 133 members, 63 new, 18 listed.
 
 2. **B1 dedup.** Concatenate candidates, then drop any whose slug or website domain
    already exists in the DB, plus any matching a known alias in
