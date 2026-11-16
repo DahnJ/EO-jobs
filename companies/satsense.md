@@ -2,7 +2,7 @@
 name: "Satsense"
 status: "unknown"
 website: "https://satsense.com/"
-careers_urls: ["x"]
+careers_urls: []
 locations: ["🇬🇧 Leeds, UK"]
 remote: ""
 remote_evidence: ""

@@ -10,11 +10,11 @@ module EoJobs.Merge
   , run
   ) where
 
+import Control.Applicative ((<|>))
 import Control.Monad (forM, unless, (>=>))
 import Data.Bifunctor (first)
-import Data.Char (isAsciiLower, isDigit)
 import Data.Foldable (traverse_)
-import Data.Maybe (fromMaybe, mapMaybe)
+import Data.Maybe (fromMaybe, isJust, mapMaybe)
 import Data.List (sortOn)
 import Data.Text (Text)
 import qualified Data.Text as T
@@ -24,24 +24,24 @@ import EoJobs.Company
 import EoJobs.Db
 import EoJobs.Flags (flagAll)
 import EoJobs.Json
-import EoJobs.StringRules (isBlank, trim, utf16Order)
+import EoJobs.StringRules (isBlank, nonBlank, trim, utf16Order)
 import System.Directory (doesFileExist, removeFile)
 
 -- | One verified finding about a company. Empty strings are already dropped
 -- here for the fields that never overwrite with "".
 data InboxRecord = InboxRecord
-  { inboxSlug :: Text
-  -- ^ Trimmed and canonical.
+  { inboxSlug :: Slug
+  -- ^ Trimmed before parsing.
   , inboxName :: Maybe Text
   , inboxStatus :: Maybe Status
-  , inboxWebsite :: Maybe Text
-  , inboxCareersUrl :: Maybe Text
+  , inboxWebsite :: Maybe HttpUrl
+  , inboxCareersUrl :: Maybe HttpUrl
   , inboxLocations :: [Text]
   , inboxRemote :: Maybe Text
   , inboxRemoteEvidence :: Maybe Text
   , inboxRemoteConfidence :: Maybe Confidence
   , inboxDescription :: Maybe Text
-  , inboxLinks :: [(Text, Text)]
+  , inboxLinks :: [(Text, LinkTarget)]
   -- ^ Non-blank links only, in file order.
   , inboxNote :: Maybe Text
   -- ^ Trimmed, non-empty.
@@ -55,47 +55,36 @@ decodeInboxRecord json = do
   pairs <- object json
   let opt :: Text -> Decoder a -> Either Text (Maybe a)
       opt key decode = optionalField key decode pairs
-      nonEmpty, trimmedNonEmpty :: Text -> Either Text (Maybe Text)
-      nonEmpty key = (>>= nonEmptyText) <$> opt key text
-      trimmedNonEmpty key = (>>= nonEmptyText . trim) <$> opt key text
-  inboxSlug <- maybe "" trim <$> opt "slug" text
-  unless (isCanonicalSlug inboxSlug) $
-    Left ("field 'slug': not canonical: " <> inboxSlug)
-  inboxName <- trimmedNonEmpty "name"
+      untrimmedField, trimmedField :: Text -> Either Text (Maybe Text)
+      untrimmedField key = (>>= nonBlank) <$> opt key text
+      trimmedField key = (>>= nonBlank . trim) <$> opt key text
+  rawSlug <- maybe "" trim <$> opt "slug" text
+  inboxSlug <- first ("field 'slug': " <>) (decodeSlug rawSlug)
+  inboxName <- trimmedField "name"
   inboxStatus <- opt "status" (vocabulary parseStatus)
-  inboxWebsite <- nonEmpty "website"
-  inboxCareersUrl <- trimmedNonEmpty "careers_url"
+  website <- trimmedField "website"
+  careersUrl <- trimmedField "careers_url"
   inboxLocations <- fromMaybe [] <$> opt "locations" (list text)
-  inboxRemote <- trimmedNonEmpty "remote"
-  inboxRemoteEvidence <- nonEmpty "remote_evidence"
+  inboxRemote <- trimmedField "remote"
+  inboxRemoteEvidence <- untrimmedField "remote_evidence"
   confidenceWord <- opt "remote_confidence" text
   -- a blank word means the agent left it out, not an unknown word
-  inboxRemoteConfidence <- traverse (vocabulary parseConfidence . JString) (confidenceWord >>= nonEmptyText . trim)
-  inboxDescription <- nonEmpty "description"
-  inboxLinks <- maybe [] (mapMaybe nonBlankLink) <$> opt "links" (object >=> traverse (traverse linkValue))
-  traverse_ (requireHttpUrl "website") inboxWebsite
-  traverse_ (requireHttpUrl "careers_url") inboxCareersUrl
-  traverse_ requireWebLink inboxLinks
-  inboxNote <- trimmedNonEmpty "note"
+  inboxRemoteConfidence <- traverse (vocabulary parseConfidence . JString) (confidenceWord >>= nonBlank . trim)
+  inboxDescription <- untrimmedField "description"
+  rawLinks <- maybe [] (mapMaybe nonBlankLink) <$> opt "links" (object >=> traverse (traverse linkValue))
+  inboxWebsite <- traverse (httpUrl "website") website
+  inboxCareersUrl <- traverse (httpUrl "careers_url") careersUrl
+  inboxLinks <- first ("field 'links': " <>) (traverse (\(key, value) -> (key,) <$> decodeLinkTarget key value) rawLinks)
+  inboxNote <- trimmedField "note"
   pure InboxRecord {..}
   where
-    nonEmptyText t = if T.null t then Nothing else Just t
     linkValue = \case
       JNull -> Right Nothing
       v -> Just <$> text v
     nonBlankLink (key, value) = case value of
       Just v | not (isBlank v) -> Just (key, v)
       _ -> Nothing
-    requireHttpUrl key value =
-      unless (isHttpUrl value) $ Left ("field '" <> key <> "': no http scheme: " <> value)
-    requireWebLink link@(key, value) =
-      unless (isWebLink link) $ Left ("field 'links': " <> key <> " has no http scheme: " <> value)
-
--- | Lowercase ASCII words joined by single hyphens, the form of every company file name.
-isCanonicalSlug :: Text -> Bool
-isCanonicalSlug slug = all isWord (T.splitOn "-" slug)
-  where
-    isWord word = not (T.null word) && T.all (\c -> isAsciiLower c || isDigit c) word
+    httpUrl key = first (\e -> "field '" <> key <> "': " <> e) . decodeHttpUrl
 
 -- | Merge an inbox record into the existing company ('Nothing' creates one),
 -- tagging a new company with @source@ and stamping notes with @today@.
@@ -104,11 +93,11 @@ mergeOne today source existing record =
   applyNote
     . stampChecked
     . applyLinks
-    . setIfPresent record.inboxDescription (\v c -> c {description = v})
+    . setIfPresent record.inboxDescription (\v c -> c {description = Just v})
     . applyRemote
     . applyLocations
     . applyCareers
-    . setIfPresent record.inboxWebsite (\v c -> c {website = v})
+    . setIfPresent record.inboxWebsite (\v c -> c {website = Just v})
     -- a rebrand renames the company in place
     . setIfPresent record.inboxName (\v c -> c {name = v})
     . applyStatus
@@ -133,11 +122,11 @@ mergeOne today source existing record =
       Just value
         -- a finding ranked below the held remote changes nothing; a missing
         -- confidence ranks below every confidence ('Nothing' < 'Just' in 'Ord')
-        | not (isBlank company.remote) && record.inboxRemoteConfidence < company.remoteConfidence -> company
+        | isJust company.remote && record.inboxRemoteConfidence < company.remoteConfidence -> company
         | otherwise ->
             company
-              { remote = value
-              , remoteEvidence = fromMaybe (if value == company.remote then company.remoteEvidence else "") record.inboxRemoteEvidence
+              { remote = Just value
+              , remoteEvidence = record.inboxRemoteEvidence <|> (if Just value == company.remote then company.remoteEvidence else Nothing)
               , remoteConfidence = record.inboxRemoteConfidence
               }
     -- add new links, never clobber an existing one
@@ -155,17 +144,17 @@ setIfPresent value set company = maybe company (`set` company) value
 newCompany :: Text -> InboxRecord -> Company
 newCompany source record =
   Company
-    { name = fromMaybe record.inboxSlug record.inboxName
+    { name = fromMaybe (slugText record.inboxSlug) record.inboxName
     , status = Unknown
-    , website = ""
+    , website = Nothing
     , careersUrls = []
     , locations = []
-    , remote = ""
-    , remoteEvidence = ""
+    , remote = Nothing
+    , remoteEvidence = Nothing
     , remoteConfidence = Nothing
-    , description = ""
-    , satellites = ""
-    , category = ""
+    , description = Nothing
+    , satellites = Nothing
+    , category = Nothing
     , listed = False
     , links = []
     , source
@@ -199,7 +188,7 @@ run source = do
       updated = [s | Updated s <- outcomes]
   TIO.putStrLn ("created " <> showT (length created) <> ", updated " <> showT (length updated))
   unless (null updated) $
-    TIO.putStrLn ("updated: " <> T.intercalate ", " (sortOn utf16Order updated))
+    TIO.putStrLn ("updated: " <> T.intercalate ", " (sortOn utf16Order (map slugText updated)))
   where
     showT = T.pack . show
 

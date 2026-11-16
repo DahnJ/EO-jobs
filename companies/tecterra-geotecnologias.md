@@ -2,7 +2,7 @@
 name: "TecTerra Geotecnologias"
 status: "active"
 website: "https://tecterra.com.br"
-careers_urls: ["x"]
+careers_urls: []
 locations: ["🇧🇷 Belo Horizonte, Brazil"]
 remote: ""
 remote_evidence: ""

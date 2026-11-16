@@ -5,6 +5,9 @@
 module EoJobs.Company
   ( Company (..)
   , Slug
+  , parseSlug
+  , decodeSlug
+  , slugText
   , Status (..)
   , statusText
   , parseStatus
@@ -14,26 +17,72 @@ module EoJobs.Company
   , Confidence (..)
   , confidenceText
   , parseConfidence
+  , HttpUrl
+  , parseHttpUrl
+  , decodeHttpUrl
+  , urlText
+  , LinkTarget (..)
+  , decodeLinkTarget
+  , linkTargetText
   , mergeLinks
-  , isHttpUrl
-  , isWebLink
   ) where
 
+import Data.Char (isAsciiLower, isDigit)
 import Data.Maybe (fromMaybe)
 import Data.Text (Text)
 import qualified Data.Text as T
 import EoJobs.Json (Json)
 
--- | A company's file name without @.md@, e.g. @planet-labs@.
-type Slug = Text
+-- | A company's file name without @.md@, e.g. @planet-labs@; always canonical.
+newtype Slug = Slug Text
+  deriving (Eq, Ord, Show)
 
--- | Whether a value is an absolute web URL.
-isHttpUrl :: Text -> Bool
-isHttpUrl value = any (`T.isPrefixOf` value) ["http://", "https://"]
+-- | Lowercase ASCII words joined by single hyphens, the form of every company file name.
+parseSlug :: Text -> Maybe Slug
+parseSlug raw
+  | all isWord (T.splitOn "-" raw) = Just (Slug raw)
+  | otherwise = Nothing
+  where
+    isWord word = not (T.null word) && T.all (\c -> isAsciiLower c || isDigit c) word
 
--- | Whether a @links@ entry can be an href; @stocks@ holds a ticker, not a URL.
-isWebLink :: (Text, Text) -> Bool
-isWebLink (key, value) = key == "stocks" || isHttpUrl value
+-- | 'parseSlug' with an error that names the rejected value.
+decodeSlug :: Text -> Either Text Slug
+decodeSlug raw = maybe (Left ("not canonical: " <> raw)) Right (parseSlug raw)
+
+slugText :: Slug -> Text
+slugText (Slug raw) = raw
+
+-- | An absolute web URL: one that starts with @http://@ or @https://@.
+newtype HttpUrl = HttpUrl Text
+  deriving (Eq, Ord, Show)
+
+parseHttpUrl :: Text -> Maybe HttpUrl
+parseHttpUrl raw
+  | any (`T.isPrefixOf` raw) ["http://", "https://"] = Just (HttpUrl raw)
+  | otherwise = Nothing
+
+-- | 'parseHttpUrl' with an error that names the rejected value.
+decodeHttpUrl :: Text -> Either Text HttpUrl
+decodeHttpUrl raw = maybe (Left ("no http scheme: " <> raw)) Right (parseHttpUrl raw)
+
+urlText :: HttpUrl -> Text
+urlText (HttpUrl raw) = raw
+
+-- | A @links@ value: a page to link to, or the stock ticker under key @stocks@.
+data LinkTarget = WebLink HttpUrl | Ticker Text
+  deriving (Eq, Show)
+
+-- | The value of the @links@ entry @key@; only @stocks@ holds a ticker.
+decodeLinkTarget :: Text -> Text -> Either Text LinkTarget
+decodeLinkTarget "stocks" raw = Right (Ticker raw)
+decodeLinkTarget key raw =
+  maybe (Left (key <> " has no http scheme: " <> raw)) (Right . WebLink) (parseHttpUrl raw)
+
+-- | The on-disk spelling of a link value.
+linkTargetText :: LinkTarget -> Text
+linkTargetText = \case
+  WebLink url -> urlText url
+  Ticker ticker -> ticker
 
 -- | No @Renamed@: a rebrand updates the record in place and stays 'Active'.
 data Status = Active | Acquired | Defunct | Unknown
@@ -47,20 +96,22 @@ data CompanyType = CommercialEo | Consultancy | Reseller | Software | Conglomera
 data Confidence = Low | Medium | High
   deriving (Eq, Ord, Show, Enum, Bounded)
 
+-- | One company file. Every 'Nothing' text or URL field is stored as @""@.
 data Company = Company
   { name :: Text
   , status :: Status
-  , website :: Text
-  , careersUrls :: [Text]
+  , website :: Maybe HttpUrl
+  , careersUrls :: [HttpUrl]
   , locations :: [Text]
-  , remote :: Text
-  , remoteEvidence :: Text
+  , remote :: Maybe Text
+  , remoteEvidence :: Maybe Text
+  -- ^ Independent of 'remote': evidence can explain why no remote value was found.
   , remoteConfidence :: Maybe Confidence
-  , description :: Text
-  , satellites :: Text
-  , category :: Text
+  , description :: Maybe Text
+  , satellites :: Maybe Text
+  , category :: Maybe Text
   , listed :: Bool
-  , links :: [(Text, Text)]
+  , links :: [(Text, LinkTarget)]
   -- ^ Ordered as on disk, e.g. linkedin before twitter.
   , source :: Text
   , lastChecked :: Maybe Text
@@ -114,7 +165,7 @@ parseEnum render raw = lookup raw [(render v, v) | v <- [minBound .. maxBound]]
 
 -- | Merge two ordered link maps: @base@'s keys first, in order, with @winner@'s
 -- value where both have the key, then @winner@'s other keys in order.
-mergeLinks :: [(Text, Text)] -> [(Text, Text)] -> [(Text, Text)]
+mergeLinks :: [(Text, a)] -> [(Text, a)] -> [(Text, a)]
 mergeLinks base winner =
   [(key, fromMaybe baseValue (lookup key winner)) | (key, baseValue) <- base]
     <> [(key, v) | (key, v) <- winner, key `notElem` map fst base]

@@ -2,7 +2,7 @@
 name: "Pasco"
 status: "active"
 website: "http://www.pasco.co.jp/eng/"
-careers_urls: ["x"]
+careers_urls: []
 locations: ["🇯🇵 Japan"]
 remote: ""
 remote_evidence: ""

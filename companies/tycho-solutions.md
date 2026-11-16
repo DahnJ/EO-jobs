@@ -2,7 +2,7 @@
 name: "Tycho Solutions"
 status: "defunct"
 website: "https://tycho.solutions/"
-careers_urls: ["x"]
+careers_urls: []
 locations: ["🇲🇽 Mexico City, Mexico"]
 remote: ""
 remote_evidence: "Careers URL placeholder (x) - not available"

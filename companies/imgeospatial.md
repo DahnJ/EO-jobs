@@ -2,7 +2,7 @@
 name: "Imgeospatial"
 status: "unknown"
 website: "http://www.imgeospatial.com"
-careers_urls: ["x"]
+careers_urls: []
 locations: ["🇬🇧 Burnham, UK"]
 remote: ""
 remote_evidence: ""

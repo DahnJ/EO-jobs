@@ -11,7 +11,7 @@ module EoJobs.Classify
 import Control.Monad (forM, forM_, mfilter, unless, (>=>))
 import Data.List (sortOn)
 import qualified Data.Map.Strict as Map
-import Data.Maybe (fromMaybe, isNothing)
+import Data.Maybe (fromMaybe, isJust, isNothing)
 import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.IO as TIO
@@ -33,7 +33,7 @@ decodeVerdicts :: Json -> Either Text [(Slug, Verdict)]
 decodeVerdicts = list (object >=> verdict)
   where
     verdict pairs = do
-      slug <- field "slug" text pairs
+      slug <- field "slug" (text >=> decodeSlug) pairs
       verdictType <- field "type" (vocabulary parseCompanyType) pairs
       reason <- fromMaybe "" <$> optionalField "reason" text pairs
       unlistedReason <- mfilter (not . isBlank) <$> optionalField "unlisted_reason" text pairs
@@ -53,12 +53,13 @@ classifyOne verdicts slug company = decided {listed = isListed decided}
           }
       Nothing -> company
 
--- | Classified as doing EO work, reachable through a careers link, and not kept off on purpose.
+-- | Classified as doing EO work, with a website and a careers link, and not kept off on purpose.
 isListed :: Company -> Bool
 isListed company =
   maybe False (/= NotEo) company.companyType
     && company.status == Active
-    && any isHttpUrl company.careersUrls
+    && isJust company.website
+    && not (null company.careersUrls)
     && isNothing company.unlistedReason
 
 -- | Apply verdicts to every company, save, and print the type distribution.
@@ -72,7 +73,7 @@ run = do
   companies <- loadAll
   let unknownSlugs = filter (`notElem` map fst companies) (Map.keys verdicts)
   unless (null unknownSlugs) $
-    failAt inboxDir ("verdict for unknown slug: " <> T.intercalate ", " unknownSlugs)
+    failAt inboxDir ("verdict for unknown slug: " <> T.intercalate ", " (map slugText unknownSlugs))
   results <- forM companies $ \(slug, company) -> do
     let classified = classifyOne verdicts slug company
     save slug classified
@@ -90,6 +91,6 @@ run = do
   TIO.putStrLn ("LISTED (type not not-eo + active + has careers + no unlisted_reason): " <> T.pack (show (length (filter (\(_, c) -> c.listed) results))))
   let unclassified = [slug | (slug, company) <- companies, isNothing (classifyOne verdicts slug company).companyType]
   unless (null unclassified) $
-    TIO.putStrLn ("unclassified, so not listed: " <> T.intercalate ", " unclassified)
+    TIO.putStrLn ("unclassified, so not listed: " <> T.intercalate ", " (map slugText unclassified))
   TIO.putStrLn ("\ntype changed vs previous: " <> T.pack (show (length changed)))
   forM_ changed $ \(n, o, t) -> TIO.putStrLn ("  " <> n <> ": " <> o <> " -> " <> t)

@@ -2,7 +2,7 @@
 name: "Pixpro"
 status: "active"
 website: "https://www.pix-pro.com/"
-careers_urls: ["x"]
+careers_urls: []
 locations: ["🇱🇹 Lithuania"]
 remote: ""
 remote_evidence: ""

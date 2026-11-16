@@ -2,7 +2,7 @@
 name: "AstraVigil"
 status: "active"
 website: "https://astravigil.com/"
-careers_urls: ["x"]
+careers_urls: []
 locations: ["🇸🇰 Presov, Slovakia"]
 remote: ""
 remote_evidence: ""

@@ -2,7 +2,7 @@
 name: "Terranea"
 status: "active"
 website: "http://www.terranea.de"
-careers_urls: ["x"]
+careers_urls: []
 locations: ["🇩🇪 Geltendorf, Germany"]
 remote: ""
 remote_evidence: ""

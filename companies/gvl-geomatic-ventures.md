@@ -2,7 +2,7 @@
 name: "Geospatial Ventures Limited"
 status: "active"
 website: "https://www.geospatialventures.co.uk/"
-careers_urls: ["x"]
+careers_urls: []
 locations: ["🇬🇧 Nottingham, UK"]
 remote: ""
 remote_evidence: ""

@@ -7,7 +7,12 @@
 module EoJobs.Net
   ( regDomain
   , introLinks
+  , Probe (..)
+  , isAlive
   , isAliveStatus
+  , probeDetail
+  , Scope (..)
+  , Sweep (..)
   , checkLinks
   , checkRedirects
   ) where
@@ -16,7 +21,7 @@ import Control.Concurrent.Async (mapConcurrently)
 import Control.Concurrent.QSem (newQSem, signalQSem, waitQSem)
 import Control.Exception (SomeAsyncException, SomeException (..), bracket_, fromException, throwIO, try)
 import Data.List (nub, sortOn)
-import Data.Maybe (fromMaybe)
+import Data.Maybe (fromMaybe, mapMaybe, maybeToList)
 import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.IO as TIO
@@ -29,12 +34,25 @@ import Network.HTTP.Client.TLS (newTlsManagerWith, tlsManagerSettings)
 import Network.HTTP.Types (Method, hUserAgent, methodGet, methodHead, statusCode)
 import Network.URI (parseURI, uriAuthority, uriRegName)
 
+-- | Which companies a link-rot sweep checks.
+data Scope = AllCompanies | ListedOnly
+  deriving (Eq, Show)
+
+-- | How a sweep sends its requests.
+data Sweep = Sweep
+  { timeoutSeconds :: Int
+  -- ^ Per request.
+  , workers :: Int
+  -- ^ Requests in flight at once; at least 1.
+  }
+  deriving (Eq, Show)
+
 data Reply = Reply {replyStatus :: Int, finalUrl :: Text}
 
 -- | One request with redirects followed; throws on network errors, not on 4xx/5xx.
-sendOnce :: Manager -> Int -> Method -> Text -> IO Reply
+sendOnce :: Manager -> Int -> Method -> HttpUrl -> IO Reply
 sendOnce manager timeoutSeconds verb url = do
-  initial <- parseRequest (T.unpack url)
+  initial <- parseRequest (T.unpack (urlText url))
   let request =
         initial
           { method = verb
@@ -67,23 +85,37 @@ exceptionLabel e = case fromException e of
 isAliveStatus :: Int -> Bool
 isAliveStatus s = s < 400 || s `elem` [403, 416, 429, 999]
 
--- | @(alive, detail)@ for a URL: HEAD, falling back to GET when HEAD fails or gives
--- an error status other than a rate limit.
-alive :: Manager -> Int -> Text -> IO (Bool, Text)
-alive manager timeoutSeconds url
-  | not (isHttpUrl url) = pure (False, "no-url")
-  | otherwise = do
-      firstTry <- trySync $ do
-        headReply <- send methodHead
-        if replyStatus headReply >= 400 && replyStatus headReply `notElem` [429, 999]
-          then judge . replyStatus <$> send methodGet
-          else pure (judge (replyStatus headReply))
-      case firstTry of
-        Right verdict -> pure verdict
-        Left _ -> either (\e -> (False, exceptionLabel e)) (judge . replyStatus) <$> trySync (send methodGet)
+-- | What checking a URL found: the final HTTP status, or the label of the
+-- exception that stopped the request.
+data Probe = Answered Int | Unreachable Text
+  deriving (Eq, Show)
+
+-- | Whether the page exists; an unreachable URL counts as dead.
+isAlive :: Probe -> Bool
+isAlive = \case
+  Answered status -> isAliveStatus status
+  Unreachable _ -> False
+
+-- | The link-rot report's detail column: the status number or the exception label.
+probeDetail :: Probe -> Text
+probeDetail = \case
+  Answered status -> showT status
+  Unreachable label -> label
+
+-- | Check a URL: HEAD, falling back to GET when HEAD fails or gives an error
+-- status other than a rate limit.
+probe :: Manager -> Int -> HttpUrl -> IO Probe
+probe manager timeoutSeconds url = do
+  firstTry <- trySync $ do
+    headReply <- send methodHead
+    if replyStatus headReply >= 400 && replyStatus headReply `notElem` [429, 999]
+      then replyStatus <$> send methodGet
+      else pure (replyStatus headReply)
+  case firstTry of
+    Right status -> pure (Answered status)
+    Left _ -> either (Unreachable . exceptionLabel) (Answered . replyStatus) <$> trySync (send methodGet)
   where
     send verb = sendOnce manager timeoutSeconds verb url
-    judge s = (isAliveStatus s, T.pack (show s))
 
 -- | Naive registrable domain: the last 2 host labels (last 3 under common
 -- two-part TLDs such as @co.uk@), without @www.@; "" when there is no host.
@@ -94,7 +126,7 @@ regDomain url
   | length parts >= 2 = T.intercalate "." (lastN 2)
   | otherwise = host
   where
-    withScheme = if isHttpUrl url then url else "https://" <> url
+    withScheme = maybe ("https://" <> url) urlText (parseHttpUrl url)
     rawHost = maybe "" (T.pack . uriRegName) (parseURI (T.unpack withScheme) >>= uriAuthority)
     host = let lowered = T.toLower rawHost in fromMaybe lowered (T.stripPrefix "www." lowered)
     -- trailing empty labels are dropped, so @example.com.@ reduces like @example.com@
@@ -105,7 +137,7 @@ regDomain url
       _ -> ("", "")
 
 -- | Final post-redirect URL of a site, or "" when unreachable.
-finalOf :: Manager -> Int -> Text -> IO Text
+finalOf :: Manager -> Int -> HttpUrl -> IO Text
 finalOf manager timeoutSeconds url = do
   firstTry <- trySync $ do
     headReply <- send methodHead
@@ -132,30 +164,30 @@ mapBounded workers action items = do
   mapConcurrently (bracket_ (waitQSem slots) (signalQSem slots) . action) items
 
 -- | The distinct http(s) URLs in a markdown text, in order.
-introLinks :: Text -> [Text]
+introLinks :: Text -> [HttpUrl]
 introLinks =
-  nub . filter isHttpUrl . map (T.takeWhile (`notElem` (" \t\n)>\"" :: String)) . snd) . T.breakOnAll "http"
+  nub . mapMaybe parseHttpUrl . map (T.takeWhile (`notElem` (" \t\n)>\"" :: String)) . snd) . T.breakOnAll "http"
 
 -- | Link-rot sweep over website and careers URLs and the links in @intro.md@;
 -- report in @/tmp/linkrot.txt@.
-checkLinks :: Bool -> Int -> Int -> IO ()
-checkLinks listedOnly timeoutSeconds workers = do
+checkLinks :: Scope -> Sweep -> IO ()
+checkLinks scope sweep = do
   manager <- newSweepManager
   companies <- loadAll
   intro <- readUtf8 "intro.md"
   let companyTargets =
-        [ (slug, kind, url)
+        [ (slugText slug, kind, url)
         | (slug, c) <- companies
-        , not listedOnly || c.listed
-        , (kind, url) <- ("website", c.website) : [("careers", u) | u <- c.careersUrls]
+        , scope == AllCompanies || c.listed
+        , (kind, url) <- [("website", w) | w <- maybeToList c.website] <> [("careers", u) | u <- c.careersUrls]
         ]
       targets = companyTargets <> [("intro.md", "intro", url) | url <- introLinks intro]
-  results <- mapBounded workers (\(slug, kind, url) -> (slug, kind, url,) <$> alive manager timeoutSeconds url) targets
+  results <- mapBounded sweep.workers (\(slug, kind, url) -> (slug, kind, url,) <$> probe manager sweep.timeoutSeconds url) targets
   let bad =
         sortOn (\(slug, kind, _, _) -> (utf16Order slug, utf16Order kind))
-          [(slug, kind, url, detail) | (slug, kind, url, (ok, detail)) <- results, not ok]
+          [(slug, kind, url, probeDetail result) | (slug, kind, url, result) <- results, not (isAlive result)]
   writeUtf8 "/tmp/linkrot.txt" $
-    T.intercalate "\n" [slug <> "\t" <> kind <> "\t" <> detail <> "\t" <> url | (slug, kind, url, detail) <- bad] <> "\n"
+    T.intercalate "\n" [slug <> "\t" <> kind <> "\t" <> detail <> "\t" <> urlText url | (slug, kind, url, detail) <- bad] <> "\n"
   TIO.putStrLn
     ( "checked " <> showT (length targets) <> " urls across "
         <> showT (length (nub [slug | (slug, _, _) <- companyTargets]))
@@ -163,22 +195,22 @@ checkLinks listedOnly timeoutSeconds workers = do
     )
   TIO.putStrLn "full report: /tmp/linkrot.txt"
   mapM_
-    (\(slug, kind, url, detail) -> TIO.putStrLn ("  " <> padRight 30 slug <> " " <> padRight 8 kind <> " " <> padRight 14 detail <> " " <> url))
+    (\(slug, kind, url, detail) -> TIO.putStrLn ("  " <> padRight 30 slug <> " " <> padRight 8 kind <> " " <> padRight 14 detail <> " " <> urlText url))
     (take 40 bad)
 
 -- | Find listed sites that now redirect to a different domain; report in
 -- @/tmp/redirects.txt@.
-checkRedirects :: Int -> Int -> IO ()
-checkRedirects timeoutSeconds workers = do
+checkRedirects :: Sweep -> IO ()
+checkRedirects sweep = do
   manager <- newSweepManager
   companies <- loadAll
-  let listedSites = [(slug, c.name, c.website) | (slug, c) <- companies, c.listed]
-  finals <- mapBounded workers (\(_, _, web) -> finalOf manager timeoutSeconds web) listedSites
+  let listedSites = [(slug, c.name, web) | (slug, c) <- companies, c.listed, Just web <- [c.website]]
+  finals <- mapBounded sweep.workers (\(_, _, web) -> finalOf manager sweep.timeoutSeconds web) listedSites
   let moved =
         sortOn (\(s, n, a, b) -> map utf16Order [s, n, a, b])
-          [ (slug, name', from, to)
+          [ (slugText slug, name', from, to)
           | ((slug, name', web), final) <- zip listedSites finals
-          , let from = regDomain web
+          , let from = regDomain (urlText web)
           , let to = regDomain final
           , not (T.null from) && not (T.null to) && from /= to
           ]
