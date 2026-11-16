@@ -56,8 +56,10 @@ Budget ~1–3 WebFetch calls per company. This is a Haiku batch job — be terse
     1. the site's own Careers/Jobs link (footer/header) — don't give up if
        `/careers` 404s; try the homepage and follow its link;
     2. search `"<name> careers"` / `"<name> greenhouse|lever|ashby"`;
-    3. the company's LinkedIn jobs page (`linkedin.com/company/<slug>/jobs/` —
-       loads without login).
+    3. the company's LinkedIn jobs page (`linkedin.com/company/<slug>/jobs/`).
+       WebFetch and curl get 403 here (2026-11). Do not guess: return `""`, put
+       the verified `linkedin` link in `links`, and the orchestrator checks the
+       jobs pages in a browser after the batch.
     Use the first page that resolves. If everything fails (incl. LinkedIn showing
     "no jobs right now"), note "no current openings" and still point `careers_url`
     at the working LinkedIn jobs page — a valid pointer beats a 404.

@@ -39,7 +39,8 @@ DB. Don't re-scrape static corpora every run.
      contractors that hire through their own careers pages. Rosters find these:
      EARSC members (public sheet `1C88jUnlGzcboorUggu9KuQF3CUHa8NfJ7rfbVU1CKf4`,
      export as CSV), EOEPCA partners, Copernicus and Destination Earth contractors.
-     The 2026-11 EARSC run: 133 members, 63 new, 18 listed.
+     The 2026-11 EARSC run: 133 members, 63 new, 38 listed (20 of them only after
+     a browser check of their LinkedIn jobs pages).
 
 2. **B1 dedup.** Concatenate candidates, then drop any whose slug or website domain
    already exists in the DB, plus any matching a known alias in
