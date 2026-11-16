@@ -21,7 +21,7 @@ import EoJobs.Merge (InboxRecord (..), decodeInboxRecord, mergeOne)
 import qualified EoJobs.Merge as Merge
 import qualified EoJobs.Classify as Classify
 import qualified EoJobs.Dedup as Dedup
-import EoJobs.Net (introLinks, isAliveStatus, regDomain)
+import EoJobs.Net (Probe (..), introLinks, isAlive, isAliveStatus, probeDetail, regDomain)
 import EoJobs.Readme (renderReadme)
 import System.Directory (createDirectoryIfMissing, doesFileExist, getTemporaryDirectory, removePathForcibly, withCurrentDirectory)
 import System.FilePath ((</>))
@@ -725,6 +725,17 @@ main = hspec $ do
         let verdict = isAliveStatus status
         -- Assert
         verdict `shouldBe` expected
+
+  describe "Probe" $ do
+    let cases =
+          [(Answered 200, True, "200"), (Answered 404, False, "404"), (Unreachable "ConnectionTimeout", False, "ConnectionTimeout")]
+    forM_ cases $ \(result, expectedAlive, expectedDetail) ->
+      it ("reports " <> show result) $ do
+        -- Arrange (the case table above)
+        -- Act
+        let reported = (isAlive result, probeDetail result)
+        -- Assert
+        reported `shouldBe` (expectedAlive, expectedDetail)
 
 -- | Run @action@ in a fresh empty directory, so commands that use the relative
 -- @companies/@ paths never touch the real DB.

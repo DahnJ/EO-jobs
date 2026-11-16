@@ -7,7 +7,10 @@
 module EoJobs.Net
   ( regDomain
   , introLinks
+  , Probe (..)
+  , isAlive
   , isAliveStatus
+  , probeDetail
   , checkLinks
   , checkRedirects
   ) where
@@ -16,7 +19,7 @@ import Control.Concurrent.Async (mapConcurrently)
 import Control.Concurrent.QSem (newQSem, signalQSem, waitQSem)
 import Control.Exception (SomeAsyncException, SomeException (..), bracket_, fromException, throwIO, try)
 import Data.List (nub, sortOn)
-import Data.Maybe (fromMaybe, mapMaybe)
+import Data.Maybe (fromMaybe, mapMaybe, maybeToList)
 import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.IO as TIO
@@ -67,22 +70,37 @@ exceptionLabel e = case fromException e of
 isAliveStatus :: Int -> Bool
 isAliveStatus s = s < 400 || s `elem` [403, 416, 429, 999]
 
--- | @(alive, detail)@ for a URL: HEAD, falling back to GET when HEAD fails or gives
--- an error status other than a rate limit.
-alive :: Manager -> Int -> Maybe HttpUrl -> IO (Bool, Text)
-alive _ _ Nothing = pure (False, "no-url")
-alive manager timeoutSeconds (Just url) = do
+-- | What checking a URL found: the final HTTP status, or the label of the
+-- exception that stopped the request.
+data Probe = Answered Int | Unreachable Text
+  deriving (Eq, Show)
+
+-- | Whether the page exists; an unreachable URL counts as dead.
+isAlive :: Probe -> Bool
+isAlive = \case
+  Answered status -> isAliveStatus status
+  Unreachable _ -> False
+
+-- | The link-rot report's detail column: the status number or the exception label.
+probeDetail :: Probe -> Text
+probeDetail = \case
+  Answered status -> showT status
+  Unreachable label -> label
+
+-- | Check a URL: HEAD, falling back to GET when HEAD fails or gives an error
+-- status other than a rate limit.
+probe :: Manager -> Int -> HttpUrl -> IO Probe
+probe manager timeoutSeconds url = do
   firstTry <- trySync $ do
     headReply <- send methodHead
     if replyStatus headReply >= 400 && replyStatus headReply `notElem` [429, 999]
-      then judge . replyStatus <$> send methodGet
-      else pure (judge (replyStatus headReply))
+      then replyStatus <$> send methodGet
+      else pure (replyStatus headReply)
   case firstTry of
-    Right verdict -> pure verdict
-    Left _ -> either (\e -> (False, exceptionLabel e)) (judge . replyStatus) <$> trySync (send methodGet)
+    Right status -> pure (Answered status)
+    Left _ -> either (Unreachable . exceptionLabel) (Answered . replyStatus) <$> trySync (send methodGet)
   where
     send verb = sendOnce manager timeoutSeconds verb url
-    judge s = (isAliveStatus s, T.pack (show s))
 
 -- | Naive registrable domain: the last 2 host labels (last 3 under common
 -- two-part TLDs such as @co.uk@), without @www.@; "" when there is no host.
@@ -146,15 +164,15 @@ checkLinks listedOnly timeoutSeconds workers = do
         [ (slugText slug, kind, url)
         | (slug, c) <- companies
         , not listedOnly || c.listed
-        , (kind, url) <- ("website", c.website) : [("careers", Just u) | u <- c.careersUrls]
+        , (kind, url) <- [("website", w) | w <- maybeToList c.website] <> [("careers", u) | u <- c.careersUrls]
         ]
-      targets = companyTargets <> [("intro.md", "intro", Just url) | url <- introLinks intro]
-  results <- mapBounded workers (\(slug, kind, url) -> (slug, kind, url,) <$> alive manager timeoutSeconds url) targets
+      targets = companyTargets <> [("intro.md", "intro", url) | url <- introLinks intro]
+  results <- mapBounded workers (\(slug, kind, url) -> (slug, kind, url,) <$> probe manager timeoutSeconds url) targets
   let bad =
         sortOn (\(slug, kind, _, _) -> (utf16Order slug, utf16Order kind))
-          [(slug, kind, url, detail) | (slug, kind, url, (ok, detail)) <- results, not ok]
+          [(slug, kind, url, probeDetail result) | (slug, kind, url, result) <- results, not (isAlive result)]
   writeUtf8 "/tmp/linkrot.txt" $
-    T.intercalate "\n" [slug <> "\t" <> kind <> "\t" <> detail <> "\t" <> maybe "" urlText url | (slug, kind, url, detail) <- bad] <> "\n"
+    T.intercalate "\n" [slug <> "\t" <> kind <> "\t" <> detail <> "\t" <> urlText url | (slug, kind, url, detail) <- bad] <> "\n"
   TIO.putStrLn
     ( "checked " <> showT (length targets) <> " urls across "
         <> showT (length (nub [slug | (slug, _, _) <- companyTargets]))
@@ -162,7 +180,7 @@ checkLinks listedOnly timeoutSeconds workers = do
     )
   TIO.putStrLn "full report: /tmp/linkrot.txt"
   mapM_
-    (\(slug, kind, url, detail) -> TIO.putStrLn ("  " <> padRight 30 slug <> " " <> padRight 8 kind <> " " <> padRight 14 detail <> " " <> maybe "" urlText url))
+    (\(slug, kind, url, detail) -> TIO.putStrLn ("  " <> padRight 30 slug <> " " <> padRight 8 kind <> " " <> padRight 14 detail <> " " <> urlText url))
     (take 40 bad)
 
 -- | Find listed sites that now redirect to a different domain; report in
