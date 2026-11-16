@@ -2,7 +2,7 @@
 name: "nFrames"
 status: "acquired"
 website: "https://www.esri.com/en-us/about/about-esri/stuttgart-rd"
-careers_urls: ["x"]
+careers_urls: []
 locations: ["🇩🇪 Stuttgart, Germany"]
 remote: ""
 remote_evidence: ""

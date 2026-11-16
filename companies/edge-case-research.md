@@ -2,7 +2,7 @@
 name: "Edge Case Research"
 status: "defunct"
 website: "http://www.terraloupe.com"
-careers_urls: ["x"]
+careers_urls: []
 locations: ["🇩🇪 Munich, Germany"]
 remote: ""
 remote_evidence: ""

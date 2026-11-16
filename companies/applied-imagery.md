@@ -2,7 +2,7 @@
 name: "Applied Imagery"
 status: "active"
 website: "http://appliedimagery.com"
-careers_urls: ["x"]
+careers_urls: []
 locations: ["🇺🇸 Chevy Chase, MD, USA"]
 remote: ""
 remote_evidence: ""

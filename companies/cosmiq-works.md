@@ -2,7 +2,7 @@
 name: "Cosmiq works"
 status: "defunct"
 website: "http://www.cosmiqworks.org"
-careers_urls: ["x"]
+careers_urls: []
 locations: ["🇺🇸 Arlington, USA"]
 remote: ""
 remote_evidence: ""

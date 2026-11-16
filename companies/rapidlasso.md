@@ -2,7 +2,7 @@
 name: "Rapidlasso"
 status: "active"
 website: "https://www.rapidlasso.de/"
-careers_urls: ["x"]
+careers_urls: []
 locations: ["🇩🇪 Gilching, Germany"]
 remote: ""
 remote_evidence: ""

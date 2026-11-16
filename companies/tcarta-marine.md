@@ -2,7 +2,7 @@
 name: "TCarta Marine"
 status: "active"
 website: "https://www.tcarta.com"
-careers_urls: ["x"]
+careers_urls: []
 locations: ["🇺🇸 Denver, USA","🇬🇧 London, UK"]
 remote: ""
 remote_evidence: ""

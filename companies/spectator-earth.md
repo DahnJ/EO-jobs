@@ -2,7 +2,7 @@
 name: "Spectator.earth"
 status: "unknown"
 website: "https://spectator.earth"
-careers_urls: ["x"]
+careers_urls: []
 locations: ["🇵🇱 Krakow, Poland"]
 remote: ""
 remote_evidence: ""

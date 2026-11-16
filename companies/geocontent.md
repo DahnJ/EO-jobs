@@ -2,7 +2,7 @@
 name: "Geocontent"
 status: "unknown"
 website: "http://www.geocontent.de"
-careers_urls: ["x"]
+careers_urls: []
 locations: ["🇩🇪 Magdeburg, Germany"]
 remote: ""
 remote_evidence: ""

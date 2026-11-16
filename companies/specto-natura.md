@@ -2,7 +2,7 @@
 name: "Specto Natura"
 status: "unknown"
 website: "http://www.specto-natura.co.uk"
-careers_urls: ["x"]
+careers_urls: []
 locations: ["🇬🇧 Cambridge, UK"]
 remote: ""
 remote_evidence: ""

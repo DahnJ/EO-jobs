@@ -2,7 +2,7 @@
 name: "Critchlow Geospatial"
 status: "active"
 website: "https://www.critchlow.co.nz/"
-careers_urls: ["x"]
+careers_urls: []
 locations: ["🇳🇿 Wellington, New Zealand"]
 remote: ""
 remote_evidence: ""

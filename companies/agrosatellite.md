@@ -2,7 +2,7 @@
 name: "Agrosatellite"
 status: "acquired"
 website: "https://agrosatelite.com.br"
-careers_urls: ["x"]
+careers_urls: []
 locations: ["🇧🇷 Florianópolis, Brazil"]
 remote: ""
 remote_evidence: ""

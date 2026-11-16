@@ -2,7 +2,7 @@
 name: "Geo Data Design"
 status: "unknown"
 website: "https://www.geodatadesign.co.za"
-careers_urls: ["x"]
+careers_urls: []
 locations: ["🇿🇦 Cape Town, South Africa"]
 remote: ""
 remote_evidence: ""

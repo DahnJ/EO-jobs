@@ -2,7 +2,7 @@
 name: "Air and Space Investigations"
 status: "active"
 website: "https://raymond-purdy-rqws.squarespace.com"
-careers_urls: ["x"]
+careers_urls: []
 locations: ["🇬🇧 UK"]
 remote: ""
 remote_evidence: ""

@@ -2,7 +2,7 @@
 name: "Vandersat"
 status: "acquired"
 website: "https://www.vandersat.com"
-careers_urls: ["x"]
+careers_urls: []
 locations: ["🇳🇱 Haarlem, Netherlands"]
 remote: ""
 remote_evidence: ""
