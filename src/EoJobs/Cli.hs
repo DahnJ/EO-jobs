@@ -32,8 +32,8 @@ data Command
   | FixupData
   | BackfillFlags
   | WriteReadme
-  | CheckLinks Bool Int Int
-  | CheckRedirects Int Int
+  | CheckLinks Net.Scope Net.Sweep
+  | CheckRedirects Net.Sweep
   | Stats
   | ClassInput FilePath
   | DedupIndex FilePath
@@ -51,11 +51,10 @@ commandParser =
       , cmd "readme" "Rebuild README.md from the DB" (pure WriteReadme)
       , cmd "check-links" "Link-rot sweep over website and careers URLs" $
           CheckLinks
-            <$> switch (long "listed-only")
-            <*> timeoutOption 8
-            <*> workersOption
+            <$> flag Net.AllCompanies Net.ListedOnly (long "listed-only")
+            <*> sweepOptions 8
       , cmd "check-redirects" "Find listed sites that redirect to another domain" $
-          CheckRedirects <$> timeoutOption 10 <*> workersOption
+          CheckRedirects <$> sweepOptions 10
       , cmd "stats" "DB summary" (pure Stats)
       , cmd "class-input" "Write the classification agent's JSONL input" $
           ClassInput <$> outOption "/tmp/class_in.jsonl"
@@ -64,6 +63,7 @@ commandParser =
       ]
   where
     cmd name desc parser = command name (info parser (progDesc desc))
+    sweepOptions defaultTimeout = Net.Sweep <$> timeoutOption defaultTimeout <*> workersOption
     timeoutOption d = option auto (long "timeout" <> metavar "SECS" <> value d <> showDefault)
     workersOption = option (eitherReader positiveInt) (long "workers" <> metavar "N" <> value 16 <> showDefault <> help "requests in flight at once")
     positiveInt raw = case readMaybe raw of
@@ -79,8 +79,8 @@ dispatch = \case
   FixupData -> Fixup.run
   BackfillFlags -> backfillFlags
   WriteReadme -> Readme.run
-  CheckLinks listedOnly timeoutSeconds workers -> Net.checkLinks listedOnly timeoutSeconds workers
-  CheckRedirects timeoutSeconds workers -> Net.checkRedirects timeoutSeconds workers
+  CheckLinks scope sweep -> Net.checkLinks scope sweep
+  CheckRedirects sweep -> Net.checkRedirects sweep
   Stats -> stats
   ClassInput out -> Export.classInput out
   DedupIndex out -> Export.dedupIndex out

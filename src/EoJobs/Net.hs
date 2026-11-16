@@ -11,6 +11,8 @@ module EoJobs.Net
   , isAlive
   , isAliveStatus
   , probeDetail
+  , Scope (..)
+  , Sweep (..)
   , checkLinks
   , checkRedirects
   ) where
@@ -31,6 +33,19 @@ import Network.HTTP.Client
 import Network.HTTP.Client.TLS (newTlsManagerWith, tlsManagerSettings)
 import Network.HTTP.Types (Method, hUserAgent, methodGet, methodHead, statusCode)
 import Network.URI (parseURI, uriAuthority, uriRegName)
+
+-- | Which companies a link-rot sweep checks.
+data Scope = AllCompanies | ListedOnly
+  deriving (Eq, Show)
+
+-- | How a sweep sends its requests.
+data Sweep = Sweep
+  { timeoutSeconds :: Int
+  -- ^ Per request.
+  , workers :: Int
+  -- ^ Requests in flight at once; at least 1.
+  }
+  deriving (Eq, Show)
 
 data Reply = Reply {replyStatus :: Int, finalUrl :: Text}
 
@@ -155,19 +170,19 @@ introLinks =
 
 -- | Link-rot sweep over website and careers URLs and the links in @intro.md@;
 -- report in @/tmp/linkrot.txt@.
-checkLinks :: Bool -> Int -> Int -> IO ()
-checkLinks listedOnly timeoutSeconds workers = do
+checkLinks :: Scope -> Sweep -> IO ()
+checkLinks scope sweep = do
   manager <- newSweepManager
   companies <- loadAll
   intro <- readUtf8 "intro.md"
   let companyTargets =
         [ (slugText slug, kind, url)
         | (slug, c) <- companies
-        , not listedOnly || c.listed
+        , scope == AllCompanies || c.listed
         , (kind, url) <- [("website", w) | w <- maybeToList c.website] <> [("careers", u) | u <- c.careersUrls]
         ]
       targets = companyTargets <> [("intro.md", "intro", url) | url <- introLinks intro]
-  results <- mapBounded workers (\(slug, kind, url) -> (slug, kind, url,) <$> probe manager timeoutSeconds url) targets
+  results <- mapBounded sweep.workers (\(slug, kind, url) -> (slug, kind, url,) <$> probe manager sweep.timeoutSeconds url) targets
   let bad =
         sortOn (\(slug, kind, _, _) -> (utf16Order slug, utf16Order kind))
           [(slug, kind, url, probeDetail result) | (slug, kind, url, result) <- results, not (isAlive result)]
@@ -185,12 +200,12 @@ checkLinks listedOnly timeoutSeconds workers = do
 
 -- | Find listed sites that now redirect to a different domain; report in
 -- @/tmp/redirects.txt@.
-checkRedirects :: Int -> Int -> IO ()
-checkRedirects timeoutSeconds workers = do
+checkRedirects :: Sweep -> IO ()
+checkRedirects sweep = do
   manager <- newSweepManager
   companies <- loadAll
   let listedSites = [(slug, c.name, web) | (slug, c) <- companies, c.listed, Just web <- [c.website]]
-  finals <- mapBounded workers (\(_, _, web) -> finalOf manager timeoutSeconds web) listedSites
+  finals <- mapBounded sweep.workers (\(_, _, web) -> finalOf manager sweep.timeoutSeconds web) listedSites
   let moved =
         sortOn (\(s, n, a, b) -> map utf16Order [s, n, a, b])
           [ (slugText slug, name', from, to)
