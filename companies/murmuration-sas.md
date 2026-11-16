@@ -2,14 +2,14 @@
 name: "Murmuration SAS"
 status: "active"
 website: "https://murmuration.earth/"
-careers_urls: []
+careers_urls: ["https://www.linkedin.com/company/murmuration-sas/jobs/"]
 locations: ["🇫🇷 Ramonville-Saint-Agne, France","🇲🇹 Valletta, Malta","🇪🇸 Barcelona, Spain"]
 remote: ""
 remote_evidence: ""
 description: "Location intelligence company producing environmental indicators from Earth observation data. EO company."
 satellites: ""
 category: ""
-listed: false
+listed: true
 links: {"linkedin":"https://www.linkedin.com/company/murmuration-sas"}
 source: "earsc-members 2026-11"
 last_checked: "2026-11-16"
@@ -18,3 +18,5 @@ type_reason: "Location intelligence and environmental indicators from EO data. [
 ---
 
 [earsc-members 2026-11 2026-11-16] murmuration-sas.com 301-redirects to murmuration.earth; same company (footer MURMURATION SAS). No careers page found.
+
+[linkedin-check 2026-11-16] Careers link is the LinkedIn jobs page (loaded in a browser): No jobs right now.

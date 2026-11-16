@@ -2,7 +2,7 @@
 name: "LOSA TECH"
 status: "active"
 website: "https://losa.tech"
-careers_urls: []
+careers_urls: ["https://www.linkedin.com/company/losa-technology/jobs/"]
 locations: ["🇵🇱 Poland"]
 remote: ""
 remote_evidence: ""
@@ -19,3 +19,5 @@ unlisted_reason: "Parking-availability app; no EO input stated."
 ---
 
 [earsc-members 2026-11 2026-11-16] Pivot: parking-availability product, EO-adjacent spatial analysis. Country inferred from +48 phone prefix [inferred]. No careers page; LinkedIn jobs page returned HTTP 403.
+
+[linkedin-check 2026-11-16] Careers link is the LinkedIn jobs page (loaded in a browser): No jobs right now.

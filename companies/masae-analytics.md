@@ -2,7 +2,7 @@
 name: "Masae Analytics"
 status: "active"
 website: "https://masae-analytics.com"
-careers_urls: []
+careers_urls: ["https://www.linkedin.com/company/4g-analytics/jobs/"]
 locations: []
 remote: ""
 remote_evidence: ""
@@ -19,3 +19,5 @@ unlisted_reason: "EO relevance not stated on site."
 ---
 
 [earsc-members 2026-11 2026-11-16] EO relevance not stated on fetched page. No careers page; LinkedIn jobs page returned HTTP 403. Location not stated.
+
+[linkedin-check 2026-11-16] Careers link is the LinkedIn jobs page (loaded in a browser): No jobs right now.
