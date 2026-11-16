@@ -64,7 +64,7 @@ commandParser =
   where
     cmd name desc parser = command name (info parser (progDesc desc))
     sweepOptions defaultTimeout = Net.Sweep <$> timeoutOption defaultTimeout <*> workersOption
-    timeoutOption d = option auto (long "timeout" <> metavar "SECS" <> value d <> showDefault)
+    timeoutOption d = option (eitherReader positiveInt) (long "timeout" <> metavar "SECS" <> value d <> showDefault)
     workersOption = option (eitherReader positiveInt) (long "workers" <> metavar "N" <> value 16 <> showDefault <> help "requests in flight at once")
     positiveInt raw = case readMaybe raw of
       Just n | n >= 1 -> Right n
