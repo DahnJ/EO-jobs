@@ -24,7 +24,7 @@ import EoJobs.Company
 import EoJobs.Db
 import EoJobs.Flags (flagAll)
 import EoJobs.Json
-import EoJobs.StringRules (isBlank, trim, utf16Order)
+import EoJobs.StringRules (isBlank, nonBlank, trim, utf16Order)
 import System.Directory (doesFileExist, removeFile)
 
 -- | One verified finding about a company. Empty strings are already dropped
@@ -55,30 +55,29 @@ decodeInboxRecord json = do
   pairs <- object json
   let opt :: Text -> Decoder a -> Either Text (Maybe a)
       opt key decode = optionalField key decode pairs
-      nonEmpty, trimmedNonEmpty :: Text -> Either Text (Maybe Text)
-      nonEmpty key = (>>= nonEmptyText) <$> opt key text
-      trimmedNonEmpty key = (>>= nonEmptyText . trim) <$> opt key text
+      untrimmedField, trimmedField :: Text -> Either Text (Maybe Text)
+      untrimmedField key = (>>= nonBlank) <$> opt key text
+      trimmedField key = (>>= nonBlank . trim) <$> opt key text
   rawSlug <- maybe "" trim <$> opt "slug" text
   inboxSlug <- first ("field 'slug': " <>) (decodeSlug rawSlug)
-  inboxName <- trimmedNonEmpty "name"
+  inboxName <- trimmedField "name"
   inboxStatus <- opt "status" (vocabulary parseStatus)
-  website <- nonEmpty "website"
-  careersUrl <- trimmedNonEmpty "careers_url"
+  website <- trimmedField "website"
+  careersUrl <- trimmedField "careers_url"
   inboxLocations <- fromMaybe [] <$> opt "locations" (list text)
-  inboxRemote <- trimmedNonEmpty "remote"
-  inboxRemoteEvidence <- nonEmpty "remote_evidence"
+  inboxRemote <- trimmedField "remote"
+  inboxRemoteEvidence <- untrimmedField "remote_evidence"
   confidenceWord <- opt "remote_confidence" text
   -- a blank word means the agent left it out, not an unknown word
-  inboxRemoteConfidence <- traverse (vocabulary parseConfidence . JString) (confidenceWord >>= nonEmptyText . trim)
-  inboxDescription <- nonEmpty "description"
+  inboxRemoteConfidence <- traverse (vocabulary parseConfidence . JString) (confidenceWord >>= nonBlank . trim)
+  inboxDescription <- untrimmedField "description"
   rawLinks <- maybe [] (mapMaybe nonBlankLink) <$> opt "links" (object >=> traverse (traverse linkValue))
   inboxWebsite <- traverse (httpUrl "website") website
   inboxCareersUrl <- traverse (httpUrl "careers_url") careersUrl
   inboxLinks <- first ("field 'links': " <>) (traverse (\(key, value) -> (key,) <$> decodeLinkTarget key value) rawLinks)
-  inboxNote <- trimmedNonEmpty "note"
+  inboxNote <- trimmedField "note"
   pure InboxRecord {..}
   where
-    nonEmptyText t = if T.null t then Nothing else Just t
     linkValue = \case
       JNull -> Right Nothing
       v -> Just <$> text v

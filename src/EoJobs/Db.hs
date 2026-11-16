@@ -30,7 +30,7 @@ import Data.Text (Text)
 import qualified Data.Text as T
 import Data.Text.Encoding (decodeUtf8', encodeUtf8)
 import EoJobs.Company
-import EoJobs.StringRules (isBlank, utf16Order, trim)
+import EoJobs.StringRules (isBlank, nonBlank, utf16Order, trim)
 import EoJobs.Json
 import System.Directory (doesDirectoryExist, listDirectory)
 import System.FilePath (takeFileName, (</>))
@@ -103,10 +103,8 @@ decodeCompany fields bodyText = do
     required key decode = field key decode pairs
     optional' :: Text -> Decoder a -> Either Text (Maybe a)
     optional' key decode = optionalField key decode pairs
-    optionalText = fmap (\t -> if isBlank t then Nothing else Just t) . text
-    websiteUrl = \case
-      "" -> Right Nothing
-      raw -> Just <$> decodeHttpUrl raw
+    optionalText = fmap nonBlank . text
+    websiteUrl raw = traverse decodeHttpUrl (nonBlank raw)
     linkEntry (key, value) = (key,) <$> (text value >>= decodeLinkTarget key)
     extras =
       sortOn (utf16Order . T.replace "_" "-" . fst)

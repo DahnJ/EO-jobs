@@ -4,6 +4,7 @@
 module EoJobs.StringRules
   ( trim
   , isBlank
+  , nonBlank
   , utf16Order
   , takeUtf16
   ) where
@@ -30,6 +31,10 @@ trim = T.dropAround isTrimmable
 -- | Empty or only whitespace.
 isBlank :: Text -> Bool
 isBlank = T.all isTrimmable
+
+-- | The text, or 'Nothing' when it is blank.
+nonBlank :: Text -> Maybe Text
+nonBlank t = if isBlank t then Nothing else Just t
 
 -- | Sort key that orders strings by UTF-16 code units.
 utf16Order :: Text -> [Int]
