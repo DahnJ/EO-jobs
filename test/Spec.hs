@@ -75,6 +75,16 @@ main = hspec $ do
       fmap (\c -> (c.website, c.links)) parsed `shouldBe` Right (Nothing, [("linkedin", web "https://linkedin.com/acme"), ("stocks", Ticker "$PL")])
       fmap renderCompany parsed `shouldBe` Right withTicker
 
+    it "reads a whitespace website or description as none" $ do
+      -- Arrange
+      let blankValues =
+            T.replace "website: \"https://acme.io\"" "website: \" \"" $
+              T.replace "description: \"Satellite analytics.\"" "description: \"  \"" sampleFile
+      -- Act
+      let parsed = parseCompany blankValues
+      -- Assert
+      fmap (\c -> (c.website, c.description)) parsed `shouldBe` Right (Nothing, Nothing)
+
     it "ends the frontmatter only at a line that is exactly ---" $ do
       -- Arrange
       let withDashes = T.replace "\"Satellite analytics.\"" "\"SAR --- optical\"" sampleFile <> "\nbody\n---\nmore\n"
@@ -371,6 +381,21 @@ main = hspec $ do
       -- Assert
       (merged.remote, merged.remoteEvidence) `shouldBe` (Just "Yes", Just "posting")
 
+    it "treats a whitespace description as no finding" $ do
+      -- Arrange
+      let existing = sampleCompany {description = Just "EO analytics"}
+          record = inbox [("slug", JString "acme"), ("description", JString " ")]
+      -- Act
+      let merged = mergeOne today "sweep" (Just existing) record
+      -- Assert
+      merged.description `shouldBe` Just "EO analytics"
+
+    it "trims padding around a finding's website" $ do
+      -- Act
+      let decoded = decodeInboxRecord (JObject [("slug", JString "acme"), ("website", JString " https://acme.io ")])
+      -- Assert
+      fmap (.inboxWebsite) decoded `shouldBe` Right (Just (url "https://acme.io"))
+
     it "replaces only the first careers URL with a new one" $ do
       -- Arrange
       let existing = sampleCompany {careersUrls = [url "https://a.io", url "https://b.io"]}
@@ -589,6 +614,14 @@ main = hspec $ do
     it "does not list a company without a careers URL" $ do
       -- Arrange
       let company = sampleCompany {careersUrls = []}
+      -- Act
+      let classified = classifyOne Map.empty (slug "other") company
+      -- Assert
+      classified.listed `shouldBe` False
+
+    it "does not list a company without a website" $ do
+      -- Arrange
+      let company = sampleCompany {website = Nothing}
       -- Act
       let classified = classifyOne Map.empty (slug "other") company
       -- Assert

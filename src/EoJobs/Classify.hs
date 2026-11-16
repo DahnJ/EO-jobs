@@ -11,7 +11,7 @@ module EoJobs.Classify
 import Control.Monad (forM, forM_, mfilter, unless, (>=>))
 import Data.List (sortOn)
 import qualified Data.Map.Strict as Map
-import Data.Maybe (fromMaybe, isNothing)
+import Data.Maybe (fromMaybe, isJust, isNothing)
 import Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.IO as TIO
@@ -53,11 +53,12 @@ classifyOne verdicts slug company = decided {listed = isListed decided}
           }
       Nothing -> company
 
--- | Classified as doing EO work, reachable through a careers link, and not kept off on purpose.
+-- | Classified as doing EO work, with a website and a careers link, and not kept off on purpose.
 isListed :: Company -> Bool
 isListed company =
   maybe False (/= NotEo) company.companyType
     && company.status == Active
+    && isJust company.website
     && not (null company.careersUrls)
     && isNothing company.unlistedReason
 
